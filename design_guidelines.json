@@ -1,0 +1,136 @@
+{
+  "theme": "light",
+  "archetype": "Swiss & High-Contrast",
+  "typography": {
+    "fonts": [
+      {
+        "family": "Cabinet Grotesk",
+        "usage": "Dashboard Main Headings and KPI numbers. Professional, authoritative.",
+        "weights": ["500", "700", "800"]
+      },
+      {
+        "family": "IBM Plex Sans",
+        "usage": "Dashboard Body text, tables, navigation. Crisp, technical, readable.",
+        "weights": ["400", "500", "600"]
+      },
+      {
+        "family": "Spectral",
+        "usage": "Book Preview Body text (inside the preview pane). Simulates the actual A4 PDF serif output.",
+        "weights": ["400", "400i", "600"]
+      },
+      {
+        "family": "Manrope",
+        "usage": "Book Preview Headings. Simulates the actual A4 PDF sans-serif headings.",
+        "weights": ["600", "800"]
+      }
+    ],
+    "hierarchy": {
+      "h1": "text-4xl tracking-tight font-extrabold",
+      "h2": "text-2xl tracking-tight font-bold",
+      "h3": "text-lg font-semibold",
+      "body": "text-sm leading-relaxed",
+      "overline": "text-xs uppercase tracking-[0.2em] font-semibold text-muted-foreground"
+    }
+  },
+  "colors": {
+    "dashboard_base": "#F8FAFC",
+    "dashboard_surface": "#FFFFFF",
+    "dashboard_foreground": "#0F172A",
+    "primary_action": "#0B1121",
+    "primary_foreground": "#FFFFFF",
+    "border": "#E2E8F0",
+    "status": {
+      "complete": {"bg": "#ECFDF5", "text": "#059669", "border": "#A7F3D0"},
+      "in_development": {"bg": "#FFFBEB", "text": "#D97706", "border": "#FDE68A"}
+    },
+    "book_preview_mock": {
+      "accent": "#0F4C5C", 
+      "background": "#FFFFFF",
+      "text": "#1A1A1A"
+    }
+  },
+  "layouts": {
+    "strategy": "High Density Grid (Mode B) + Left Sidebar Shell",
+    "sidebar": "w-64 fixed left-0 top-0 h-full border-r border-border bg-dashboard_surface",
+    "main_content": "ml-64 p-8 min-h-screen",
+    "grid_system": "grid grid-cols-1 lg:grid-cols-12 gap-6",
+    "sections": {
+      "kpi_stats": "col-span-12 grid grid-cols-4 gap-4",
+      "book_cover": "col-span-3 row-span-2 border border-border bg-white p-4 shadow-sm flex flex-col",
+      "toc_and_status": "col-span-4 row-span-2 border border-border bg-white overflow-hidden flex flex-col",
+      "live_preview": "col-span-5 row-span-2 border border-border bg-[#F1F5F9] p-4 flex flex-col"
+    }
+  },
+  "components": {
+    "customization_rules": {
+      "cards": "Go cardless or flat rectangular. 0px or max 4px border-radius. 1px solid border. NO soft drop shadows. Use optical clarity.",
+      "buttons": "Sharp edges (rounded-none or rounded-sm). High contrast hover states (e.g., hover:bg-slate-800 hover:text-white).",
+      "badges": "Flat background with 1px border matching the text hue (e.g., green-700 text with green-200 border).",
+      "tables": "Dense. border-collapse. Subdued header row. Use text-sm for data rows.",
+      "progress_bar": "Thin (h-2), completely flat, no gradients. Primary action color."
+    },
+    "required_shadcn": ["sidebar", "table", "button", "badge", "progress", "tabs", "scroll-area", "separator", "dialog", "toast"]
+  },
+  "visual_enhancers": {
+    "surfaces": "Grid Borders: Expose the skeleton. Data-heavy areas use 1px border-border/40 to separate items.",
+    "hover_effects": "Row highlight in TOC with subtle translation (-translate-y-[1px]) and border color darkening.",
+    "glassmorphism": "Not recommended for clinical/academic apps. Use Flat Solid surfaces instead to prevent visual refraction of data."
+  },
+  "icons_and_assets": {
+    "library": "@phosphor-icons/react",
+    "installation": "yarn add @phosphor-icons/react",
+    "usage": "Use Duotone or Regular weights. Crucial for scientific/academic authority."
+  },
+  "image_urls": [
+    {
+      "url": "https://images.unsplash.com/photo-1591951425600-d09958978584?crop=entropy&cs=srgb&fm=jpg&ixid=M3w4NjA4Mzl8MHwxfHNlYXJjaHwyfHxvcGVuJTIwdGV4dGJvb2t8ZW58MHx8fHwxNzg2MjA5MDg1fDA&ixlib=rb-4.1.0&q=85",
+      "category": "Book Preview Background / Blank Page Mock",
+      "description": "White book page with black background for the PDF preview frame."
+    },
+    {
+      "url": "https://images.unsplash.com/photo-1606206848010-83949917a080?crop=entropy&cs=srgb&fm=jpg&ixid=M3w4NjA4Mzl8MHwxfHNlYXJjaHw0fHxtZWRpY2FsJTIwZGV2aWNlJTIwYWJzdHJhY3R8ZW58MHx8fHwxNzg2MjA5MDg1fDA&ixlib=rb-4.1.0&q=85",
+      "category": "Book Cover Art",
+      "description": "Abstract medical machine element to serve as a placeholder cover art for 'Medical Devices: The Complete Textbook'."
+    },
+    {
+      "url": "https://images.unsplash.com/photo-1576086213369-97a306d36557?crop=entropy&cs=srgb&fm=jpg&ixid=M3w4NTYxOTF8MHwxfHNlYXJjaHwxfHxhYnN0cmFjdCUyMG1pY3Jvc2NvcGljJTIwY2VsbHN8ZW58MHx8fHwxNzg2MjA5MDk3fDA&ixlib=rb-4.1.0&q=85",
+      "category": "Section Graphic / Editorial Thumbnail",
+      "description": "Purple cells microscopic view for biological/medical chapter thumbnails."
+    }
+  ],
+  "accessibility": {
+    "contrast": "Ensure text meets APCA standards. All normal text minimum 4.5:1.",
+    "motion": "Respect prefers-reduced-motion. Simple fade-ins and micro-interactions only.",
+    "testing": "All interactive and key informational elements MUST include a data-testid attribute (e.g., data-testid='pdf-download-btn', data-testid='chapter-status-badge')."
+  },
+  "instructions_to_main_agent": [
+    "Build a Left-Sidebar application shell with a top action bar for global controls.",
+    "Implement a KPI strip at the top of the main area: Page Estimate, Chapter Count, Figures/Tables Count, Overall Progress.",
+    "Create a modular Grid (Bento style, high density) for the main dashboard view.",
+    "The 'Table of Contents' must be a dense, scannable list or table showing Chapter Name, Author, and a Status Badge (Complete / In Development).",
+    "The 'Book Cover Preview' should be a distinct card showcasing the cover art and publication details (ISBN-ready info).",
+    "The 'Live HTML Preview' widget must simulate an A4 page (aspect ratio approx 1:1.414) in an iframe or styled div. It must strictly use Spectral (serif) for body and Manrope (sans) for headings, with a deep teal (#0F4C5C) accent color for chapter titles to match the requested book aesthetic.",
+    "Add a prominent 'Download A4 PDF' button, ideally in the top right or within the Live Preview header, using the primary high-contrast action color.",
+    "Implement the 'Phase progress tracker' as a multi-step timeline or progress bar showing the 6 implementation phases.",
+    "Do not use generic 'Vercel-look' cards. Keep borders sharp (max 4px radius), 1px solid, with a strict high-contrast monochromatic base palette.",
+    "Run `yarn add @phosphor-icons/react` and use Phosphor icons to maintain an authoritative, technical academic look."
+  ],
+  "UNIVERSAL_GUIDELINES_FOR_MAIN_AGENT": [
+    "You tend to converge toward generic, 'on distribution' outputs. In frontend design, this creates what users call the 'AI slop' aesthetic. Avoid this: make creative, distinctive frontends that surprise and delight.",
+    "Dark colors look good when used independently without gradients. DO NOT use dark colors as gradients.",
+    "Don't make generic centered layouts, simplistic gradients, and uniform styling.",
+    "Create depth through layered design elements with z-index hierarchy.",
+    "You MUST NOT apply universal transition. Eg: transition: all. This results in breaking transforms. Always add transitions for specific interactive elements like button, input excluding transforms.",
+    "You MUST NOT center align the app container, ie do not add .App { text-align: center; } in the css file. This disrupts the human natural reading flow of text.",
+    "Always use modern button styles like pill-shaped, or sharp button with interaction animations & color relevant to the app style.",
+    "NEVER: use AI assistant Emoji characters like 🤖🧠💭💡🔮🎯 etc for icons.",
+    "Every interaction needs micro-animations - hover states, transitions, parallax effects, and entrance animations. Static = dead.",
+    "Use 2-3x more spacing than feels comfortable. Cramped designs look cheap.",
+    "Subtle grain textures, noise overlays, custom cursors, selection states, and loading animations: separates good from extraordinary.",
+    "Main agent relies on these image URLs. Missing categories (especially sponsor logos) = main agent will use placeholder text which is FORBIDDEN.",
+    "Prioritize using pre-existing components from src/components/ui when applicable.",
+    "Create new components that match the style and conventions of existing components when needed.",
+    "Use sonner for toasts. Sonner component are located in /app/src/components/ui/sonner.tsx.",
+    "All interactive elements MUST include data-testid attribute."
+  ]
+}
