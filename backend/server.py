@@ -1,5 +1,6 @@
 from fastapi import FastAPI, APIRouter, HTTPException
 from fastapi.responses import HTMLResponse, Response
+from fastapi.staticfiles import StaticFiles
 from dotenv import load_dotenv
 from starlette.middleware.cors import CORSMiddleware
 import os
@@ -90,6 +91,7 @@ async def get_pdf():
     )
 
 
+app.mount("/api/book/preview/fonts", StaticFiles(directory=str(ROOT_DIR / "book" / "fonts")), name="fonts")
 app.include_router(api_router)
 
 app.add_middleware(
