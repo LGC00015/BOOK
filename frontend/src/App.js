@@ -1,54 +1,145 @@
-import { useEffect } from "react";
+import { useEffect, useMemo, useState } from "react";
 import "@/App.css";
-import { BrowserRouter, Routes, Route } from "react-router-dom";
 import axios from "axios";
-import { HOME } from "@/constants/testIds";
+import { toast, Toaster } from "sonner";
+import { DownloadSimple, SpinnerGap } from "@phosphor-icons/react";
+import Sidebar from "@/components/Sidebar";
+import KpiStrip from "@/components/KpiStrip";
+import TocPanel from "@/components/TocPanel";
+import PreviewPane from "@/components/PreviewPane";
+import PhaseTracker from "@/components/PhaseTracker";
+import CoverCard from "@/components/CoverCard";
 
 const BACKEND_URL = process.env.REACT_APP_BACKEND_URL;
 const API = `${BACKEND_URL}/api`;
 
-const Home = () => {
-  const helloWorldApi = async () => {
+function App() {
+  const [meta, setMeta] = useState(null);
+  const [toc, setToc] = useState(null);
+  const [selected, setSelected] = useState("ch01");
+  const [pdfStatus, setPdfStatus] = useState(null);
+  const [downloading, setDownloading] = useState(false);
+  const [activeNav, setActiveNav] = useState("overview");
+
+  useEffect(() => {
+    axios.get(`${API}/book/meta`).then((r) => setMeta(r.data)).catch(() => {});
+    axios.get(`${API}/book/toc`).then((r) => setToc(r.data)).catch(() => {});
+  }, []);
+
+  useEffect(() => {
+    let timer;
+    const poll = async () => {
+      try {
+        const r = await axios.get(`${API}/book/pdf/status`);
+        setPdfStatus(r.data);
+        if (!r.data.ready) timer = setTimeout(poll, 4000);
+        else setMeta((m) => (m ? { ...m, pdf: r.data } : m));
+      } catch {
+        timer = setTimeout(poll, 6000);
+      }
+    };
+    poll();
+    return () => clearTimeout(timer);
+  }, []);
+
+  const sectionLabel = useMemo(() => {
+    if (!toc) return selected;
+    const all = [
+      ...toc.front_matter,
+      ...toc.parts.flatMap((p) => [{ id: `part${p.num}`, title: `Part ${p.num} — ${p.title}` }, ...p.chapters.map((c) => ({ id: c.id, title: `Ch ${c.num} · ${c.title}` }))]),
+      ...toc.back_matter,
+    ];
+    return all.find((s) => s.id === selected)?.title || selected;
+  }, [toc, selected]);
+
+  const handleSelect = (id) => {
+    setSelected(id);
+    setActiveNav("preview");
+  };
+
+  const handleNav = (id) => {
+    setActiveNav(id);
+    const el = document.getElementById(`section-${id === "overview" ? "overview" : id === "contents" ? "contents" : "contents"}`);
+    el?.scrollIntoView({ behavior: "smooth" });
+  };
+
+  const downloadPdf = async () => {
+    if (pdfStatus && !pdfStatus.ready && pdfStatus.building) {
+      toast.info("The A4 edition is still being typeset — one moment.");
+      return;
+    }
+    setDownloading(true);
+    toast.loading("Compiling the A4 PDF edition…", { id: "pdf" });
     try {
-      const response = await axios.get(`${API}/`);
-      console.log(response.data.message);
-    } catch (e) {
-      console.error(e, `errored out requesting / api`);
+      const r = await axios.get(`${API}/book/pdf`, { responseType: "blob", timeout: 300000 });
+      const url = URL.createObjectURL(new Blob([r.data], { type: "application/pdf" }));
+      const a = document.createElement("a");
+      a.href = url;
+      a.download = "Medical_Devices_Complete_Textbook_A4.pdf";
+      document.body.appendChild(a);
+      a.click();
+      a.remove();
+      URL.revokeObjectURL(url);
+      toast.success(`Downloaded — ${r.headers["x-page-count"] || pdfStatus?.pages || ""} A4 pages typeset.`, { id: "pdf" });
+    } catch {
+      toast.error("PDF compilation failed. Check the backend logs.", { id: "pdf" });
+    } finally {
+      setDownloading(false);
     }
   };
 
-  useEffect(() => {
-    helloWorldApi();
-  }, []);
+  const pdfReady = pdfStatus?.ready;
 
   return (
-    <div>
-      <header className="App-header">
-        <a
-          data-testid={HOME.emergentLink}
-          className="App-link"
-          href="https://emergent.sh"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          <img src="https://avatars.githubusercontent.com/in/1201222?s=120&u=2686cf91179bbafbc7a71bfbc43004cf9ae1acea&v=4" />
-        </a>
-        <p className="mt-5">Building something incredible ~!</p>
-      </header>
-    </div>
-  );
-};
+    <div className="grain min-h-screen">
+      <Toaster position="top-right" richColors />
+      <Sidebar meta={meta} active={activeNav} onNav={handleNav} />
 
-function App() {
-  return (
-    <div className="App">
-      <BrowserRouter>
-        <Routes>
-          <Route path="/" element={<Home />}>
-            <Route index element={<Home />} />
-          </Route>
-        </Routes>
-      </BrowserRouter>
+      <main className="ml-64 min-h-screen">
+        <header className="sticky top-0 z-30 bg-white/95 backdrop-blur border-b border-slate-200 px-8 py-4 flex items-center justify-between">
+          <div id="section-overview">
+            <div className="text-[10px] uppercase tracking-[0.22em] font-semibold text-[#0F4C5C]">
+              {meta?.series || "Core Textbook"}
+            </div>
+            <h1 className="font-display font-extrabold text-xl tracking-tight text-slate-900">
+              {meta ? `${meta.title}: ${meta.subtitle}` : "Loading…"}
+            </h1>
+          </div>
+          <button
+            data-testid="pdf-download-btn"
+            onClick={downloadPdf}
+            disabled={downloading}
+            className="flex items-center gap-2 bg-[#0B1121] text-white text-sm font-semibold px-5 py-2.5 border border-[#0B1121] hover:bg-[#0F4C5C] hover:border-[#0F4C5C] transition-colors duration-150 disabled:opacity-60"
+          >
+            {downloading || (pdfStatus && !pdfReady) ? (
+              <SpinnerGap size={17} className="animate-spin" />
+            ) : (
+              <DownloadSimple size={17} weight="bold" />
+            )}
+            {downloading ? "Compiling…" : pdfReady ? `Download A4 PDF (${pdfStatus.pages} pp)` : "Typesetting…"}
+          </button>
+        </header>
+
+        <div className="p-8 space-y-6">
+          <KpiStrip meta={meta} />
+
+          <div id="section-contents" className="grid grid-cols-1 lg:grid-cols-12 gap-6" style={{ minHeight: "640px" }}>
+            <div className="lg:col-span-3 rise rise-2"><CoverCard meta={meta} onSelect={handleSelect} /></div>
+            <div className="lg:col-span-4 rise rise-3" style={{ maxHeight: "760px" }}>
+              <TocPanel toc={toc} selected={selected} onSelect={handleSelect} />
+            </div>
+            <div className="lg:col-span-5 rise rise-4" style={{ minHeight: "640px" }}>
+              <PreviewPane sectionId={selected} sectionLabel={sectionLabel} />
+            </div>
+          </div>
+
+          <PhaseTracker phases={meta?.phases} />
+
+          <footer className="text-[11px] text-slate-400 pb-6">
+            Typeset with a print-optimized HTML/CSS → WeasyPrint A4 pipeline · Regulatory citations verified against CDSCO, US FDA, EUR-Lex, ISO, IEC & WHO sources · Figures rendered as vector SVG for print crispness
+          </footer>
+        </div>
+      </main>
     </div>
   );
 }

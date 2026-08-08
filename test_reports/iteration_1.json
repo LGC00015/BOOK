@@ -1,0 +1,33 @@
+{
+  "summary": "Full backend + frontend testing of Medical Devices textbook app. All 17 pytest backend tests passed (meta, TOC structure, 11 preview sections + 404, PDF status, PDF download w/ headers). Frontend dashboard renders correctly: sidebar with 6 phases, all 4 KPIs (93/2-of-14/8/9), TOC panel, chapter status badges, cover card, phase tracker, PDF download triggers valid application/pdf 200 response. Preview iframe successfully switches src on TOC row click and cover-thumb click, and iframe body content is served (ch01 preview loads full typeset HTML).",
+  "backend_issues": {
+    "critical": [],
+    "minor": [
+      {"endpoint": "/api/book/preview/{id}", "issue": "Returned HTML references fonts via relative path (e.g. 'fonts/Manrope-SemiBold.ttf'). When rendered inside the dashboard preview iframe, the browser resolves them to /api/book/preview/fonts/*.ttf which return 404 (7 font files x each section). PDF generation via WeasyPrint is unaffected (reads from filesystem). Recommend serving /api/book/preview/fonts/* as static or using absolute URLs / embedding as base64 for the browser preview."}
+    ]
+  },
+  "frontend_issues": {
+    "ui_bugs": [],
+    "integration_issues": [],
+    "design_issues": [
+      {"screen": "TOC status badges", "issues": ["Badge text is rendered uppercase via CSS (COMPLETE / IN DEV) though spec examples used title-case ('Complete', 'In Dev'). Cosmetic only; underlying values from API are correct."]}
+    ]
+  },
+  "test_report_links": ["/app/backend/tests/test_book_api.py", "/app/test_reports/pytest/pytest_results.xml"],
+  "action_items": [
+    "Serve /api/book/preview/fonts/* (mount StaticFiles pointing to backend/book/fonts) so the browser preview iframe can load the custom fonts and match the printed PDF typography.",
+    "(Optional cosmetic) Decide if badge label should render 'Complete'/'In Dev' rather than uppercase CSS transform."
+  ],
+  "critical_code_review_comments": [
+    "Preview HTML uses relative font paths without a corresponding static route — leads to 6-7 404s per preview load in the browser (only affects on-screen preview, not PDF).",
+    "PDF pre-warm at startup works well (status=ready with pages=93 on first hit)."
+  ],
+  "updated_files": ["/app/backend/tests/test_book_api.py"],
+  "success_rate": {"backend": "100%", "frontend": "100%"},
+  "test_credentials": "N/A — no auth",
+  "seed_data_creation": "None",
+  "retest_needed": false,
+  "main_agent_can_self_test": true,
+  "context_for_next_testing_agent": "backend_test suite at /app/backend/tests/test_book_api.py (17 tests, all pass). Preview iframe font 404s are the only outstanding issue; fix is to mount StaticFiles for /api/book/preview/fonts pointing at /app/backend/book/fonts.",
+  "rca of the issue": "Assembler embeds @font-face src: url('fonts/Xxx.ttf'). In the FastAPI preview response the base URL is /api/book/preview/{sid}, so relative 'fonts/…' resolves to /api/book/preview/fonts/… which has no route — 404. WeasyPrint resolves the same URL through its own base-url/file loader and finds the .ttf on disk, so the generated PDF is correct."
+}
