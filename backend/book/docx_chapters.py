@@ -4,6 +4,9 @@ import json
 from functools import lru_cache
 from pathlib import Path
 
+from . import figkit
+from .figure_specs import spec_for
+
 CONTENT_DIR = Path(__file__).parent / "content"
 
 
@@ -22,10 +25,15 @@ def load_manifest():
 
 
 def _fig_html(b):
-    cap = esc(b.get("caption") or "")
     num = b.get("num") or ""
+    spec = spec_for(num)
+    if spec:
+        cap = esc(spec.get("cap") or b.get("caption") or "")
+        caption = "<b>Figure %s</b>" % num + ("&nbsp; %s" % cap if cap else "")
+        return ('<div class="figure vector">%s<div class="figcaption">%s</div></div>'
+                % (figkit.render(spec), caption))
+    cap = esc(b.get("caption") or "")
     caption = "<b>Figure %s</b>" % num + ("&nbsp; %s" % cap if cap else "")
-    # keep tall images bounded so a figure never overflows a page
     ratio = (b.get("h") or 1) / max(b.get("w") or 1, 1)
     style = "max-height:110mm;" if ratio > 0.9 else ""
     return ('<div class="figure"><img src="%s" style="%s" alt="Figure %s"/>'

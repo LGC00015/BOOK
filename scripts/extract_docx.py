@@ -113,6 +113,56 @@ GLOSSARY_OVERRIDES = {
 # duplicates the visible figure; removed near figures during post-processing
 VISUAL_HINT_RE = re.compile(r"^(Colors?[ :]|Arrows indicate|Visual layout|Visual style|Layout shows|Diagram shows)", re.I)
 
+# pass 2: prose blocks that narrate the figure itself (chart-description residue)
+FP_ANCHOR_P = re.compile(
+    r"^(An? (comparative|vertical|horizontal|three-column|two-panel|three-panel|circular|"
+    r"flowchart|diagram|timeline|schematic|visual|multi-panel|stepped|layered|comprehensive)\b|"
+    r"Flowchart |Diagram \d|Matrix comparing|Circular lifecycle|X-axis|Y-axis)", re.I)
+FP_HINT = re.compile(
+    r"X-axis|Y-axis|[Cc]olor-cod|[Cc]olor cod|[Aa]nnotations (show|indicat)|[Bb]ars show|"
+    r"[Aa]rrows? (show|indicat|point)|[Ee]ach (panel|column|segment) (show|display|represent)")
+FP_CONT_P = re.compile(
+    r"^(Branching|Sub-branches|Further branches|End nodes|Color-coding|Colors?[ :]|Organized by|"
+    r"Force magnitudes|Annotations|Bars |Arrows )", re.I)
+FP_CONT_H = re.compile(r"^Level \d|^(Top|Middle|Bottom|Base|Apex)\b.*\)$|(Yellow|Red|Green|Blue|Orange|Grey|Gray)\)$")
+FP_UL0 = re.compile(r'^\s*(Column \d|Row \d|Label\s*[:"]|Subtitle\s*[:"])', re.I)
+
+
+def strip_figure_prompt_residue(blocks):
+    """Remove chart-narration paragraphs that ride along after figures."""
+    def plain(s):
+        return re.sub(r"<[^>]+>", "", s)
+
+    dels = set()
+    fig_positions = [i for i, b in enumerate(blocks) if b["t"] == "fig"]
+    for fi in fig_positions:
+        for j in range(fi + 1, min(len(blocks), fi + 4)):
+            b = blocks[j]
+            anchored = (
+                (b["t"] == "p" and (FP_ANCHOR_P.match(plain(b["html"])) or FP_HINT.search(plain(b["html"]))))
+                or (b["t"] == "ul" and b["items"] and FP_UL0.match(plain(b["items"][0])))
+            )
+            if not anchored:
+                continue
+            k = j
+            while k < len(blocks) and k < j + 12:
+                bb = blocks[k]
+                if bb["t"] == "p" and (k == j or FP_CONT_P.match(plain(bb["html"]))
+                                       or FP_HINT.search(plain(bb["html"]))
+                                       or FP_ANCHOR_P.match(plain(bb["html"]))):
+                    dels.add(k)
+                elif bb["t"] in ("h3", "h4") and FP_CONT_H.match(plain(bb["text"])):
+                    dels.add(k)
+                elif bb["t"] == "ul" and bb["items"] and FP_UL0.match(plain(bb["items"][0])):
+                    dels.add(k)
+                else:
+                    break
+                k += 1
+            break
+    if dels:
+        return [b for i, b in enumerate(blocks) if i not in dels]
+    return blocks
+
 
 def esc(t):
     return t.replace("&", "&amp;").replace("<", "&lt;").replace(">", "&gt;")
@@ -652,6 +702,9 @@ def parse_chapter(items, ch_num, doc):
                 to_del.add(j)
     if to_del:
         ch["blocks"] = [b for i, b in enumerate(blocks) if i not in to_del]
+
+    # pass 2: remove chart-narration residue anchored right after figures
+    ch["blocks"] = strip_figure_prompt_residue(ch["blocks"])
 
     # figure caption fallback: use nearest preceding heading captured at parse time
     for b in ch["blocks"]:

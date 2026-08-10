@@ -64,7 +64,18 @@ PHASES = [
     {"num": 6, "title": "Back matter & final typeset", "detail": "Consolidated glossary, references, standards index, A4 PDF", "status": "complete"},
 ]
 
-FIGURES = [(num, cap) for c in _MANIFEST["chapters"] for num, cap in c.get("figures", [])]
+def _fig_caption(num, cap):
+    try:
+        from .figure_specs import spec_for
+        spec = spec_for(num)
+        if spec and spec.get("cap"):
+            return spec["cap"]
+    except Exception:
+        pass
+    return cap
+
+
+FIGURES = [(num, _fig_caption(num, cap)) for c in _MANIFEST["chapters"] for num, cap in c.get("figures", [])]
 TABLES = [(num, cap or "Data table") for c in _MANIFEST["chapters"] for num, cap in c.get("tables", [])]
 
 

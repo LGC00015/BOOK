@@ -684,10 +684,6 @@
    "caption": "Global Software Classification Comparison Matrix Description:"
   },
   {
-   "t": "p",
-   "html": "Matrix comparing classification levels across FDA (I-III), EU MDR (I-III), India (A-D), with example software applications mapped to corresponding risk levels in each jurisdiction. Color-coded by risk level (green=low, yellow=moderate, red=high)."
-  },
-  {
    "t": "h2",
    "text": "AI/ML-Based Medical Devices",
    "num": "13.8"
@@ -941,10 +937,6 @@
    "h": 314,
    "num": "13.6",
    "caption": "AI/ML Device Development and Validation Lifecycle Description:"
-  },
-  {
-   "t": "p",
-   "html": "<strong>Circular lifecycle diagram showing:</strong> Data Collection → Data Curation → Model Training → Internal Validation → External Validation → Clinical Evaluation → Regulatory Submission → Market Release → Post-Market Surveillance → Performance Monitoring → Algorithm Updates (connecting back to Data Collection). Each stage includes key considerations and documentation requirements."
   },
   {
    "t": "h3",

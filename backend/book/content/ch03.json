@@ -566,10 +566,6 @@
    ]
   },
   {
-   "t": "p",
-   "html": "Each node has brief descriptive text. Color-coded for visual clarity."
-  },
-  {
    "t": "h2",
    "text": "US FDA Classification System",
    "num": "3.1"
@@ -992,48 +988,6 @@
    "h": 299,
    "num": "3.4",
    "caption": "FDA Three-Tier Classification System Description: Vertical ascending pyramid diagram showing three tiers: Base (Class I - Green):"
-  },
-  {
-   "t": "ul",
-   "items": [
-    "Label: \"Low Risk\"",
-    "Subtitle: \"General Controls\"",
-    "Examples: Gloves, Bandages, Stethoscope",
-    "Pathway: Mostly 510(k) exempt",
-    "Market entry: Days to weeks"
-   ]
-  },
-  {
-   "t": "h4",
-   "text": "Middle (Class II - Yellow)"
-  },
-  {
-   "t": "ul",
-   "items": [
-    "Label: \"Moderate Risk\"",
-    "Subtitle: \"General + Special Controls\"",
-    "Examples: Infusion pumps, BP monitors, Ultrasound",
-    "Pathway: 510(k) required",
-    "Market entry: 3–6 months"
-   ]
-  },
-  {
-   "t": "h4",
-   "text": "Top (Class III - Red)"
-  },
-  {
-   "t": "ul",
-   "items": [
-    "Label: \"High Risk\"",
-    "Subtitle: \"Premarket Approval (PMA)\"",
-    "Examples: Pacemakers, Heart valves, Stents",
-    "Pathway: PMA with clinical trials",
-    "Market entry: 1–3 years"
-   ]
-  },
-  {
-   "t": "p",
-   "html": "Arrows on side indicating \"Increasing Risk\" and \"Increasing Regulatory Requirements\""
   },
   {
    "t": "h3",
@@ -1494,15 +1448,6 @@
   {
    "t": "p",
    "html": "<strong>Figure 3.5 – EU MDR Four-Tier Classification Pyramid Description: </strong>Four-level pyramid diagram with increasing height and intensity: <strong>Base (Class I - Light Green):</strong>"
-  },
-  {
-   "t": "ul",
-   "items": [
-    "Label: \"Low Risk\"",
-    "Subdivisions shown: Basic | Is | Im | Ir",
-    "Examples: Bandages, crutches",
-    "NB involvement: None to limited"
-   ]
   },
   {
    "t": "h4",
@@ -2060,15 +2005,6 @@
   {
    "t": "h4",
    "text": "Bottom Rung (Class A - Green)"
-  },
-  {
-   "t": "ul",
-   "items": [
-    "Label: \"Low Risk\"",
-    "Authority: State Licensing Authority (SLA)",
-    "Examples: Thermometers, examination lights",
-    "Timeline: 3–6 months"
-   ]
   },
   {
    "t": "h4",

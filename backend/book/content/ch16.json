@@ -2060,23 +2060,6 @@
    "caption": "Medical Device Symbol Reference Chart (Placeholder) Description:"
   },
   {
-   "t": "p",
-   "html": "A comprehensive grid layout showing:"
-  },
-  {
-   "t": "ul",
-   "items": [
-    "<strong>Column 1: </strong>Symbol graphic",
-    "<strong>Column 2: </strong>Symbol name",
-    "<strong>Column 3: </strong>Meaning/purpose",
-    "<strong>Column 4: </strong>Regulatory standard reference"
-   ]
-  },
-  {
-   "t": "p",
-   "html": "<strong>Organized by categories:</strong> Sterilization, Dating, Storage, Safety, Regulatory."
-  },
-  {
    "t": "h3",
    "text": "Documentation Requirements for Packaging and Labeling"
   },
@@ -2415,10 +2398,6 @@
     "<strong>Months 3-6: </strong>Revalidation studies and verification",
     "<strong>Month 6+: </strong>Ongoing monitoring and continuous improvement"
    ]
-  },
-  {
-   "t": "p",
-   "html": "<strong>Color-coded bars indicate action types:</strong> Red (Immediate), Orange (Short-term), Green (Long-term/Preventive)."
   },
   {
    "t": "h3",

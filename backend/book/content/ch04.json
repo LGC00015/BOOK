@@ -1167,10 +1167,6 @@
   },
   {
    "t": "p",
-   "html": "<strong>Arrow pointing down to:</strong> Design Outputs (Drawings, Specifications, Software) Bottom: Verification Testing (\"Does it meet specs?\")"
-  },
-  {
-   "t": "p",
    "html": "<strong>Feedback arrow:</strong> If fail → design revision"
   },
   {
@@ -2751,10 +2747,6 @@
   },
   {
    "t": "p",
-   "html": "A comparative flowchart showing three parallel approval pathways:"
-  },
-  {
-   "t": "p",
    "html": "<strong>India (CDSCO): </strong>Classification (A/B/C/D) → SLA (A/B) or CLA (C/D) → Document Submission (DMF, PMF) → Factory Inspection → Notified Body Audit (C/D only) → License Issued"
   },
   {
@@ -3059,10 +3051,6 @@
   {
    "t": "p",
    "html": "In-process inspection results Deviations and investigations Final release approval"
-  },
-  {
-   "t": "p",
-   "html": "<strong>Arrows indicate </strong>that DMR → SOPs → WIs guide production, while DHR captures actual execution, enabling complete traceability from raw materials to finished device."
   },
   {
    "t": "h2",

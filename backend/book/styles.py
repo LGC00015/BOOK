@@ -152,16 +152,20 @@ h2.sec { font-family: 'Manrope'; font-weight: 800; font-size: 13.5pt; color: var
 h2.sec .secnum { color: #9BB6BE; margin-right: 2.5mm; }
 h3.subsec { font-family: 'Manrope'; font-weight: 600; font-size: 10.8pt; color: var(--ink); margin: 5.5mm 0 2.5mm 0; bookmark-level: 3; break-after: avoid; }
 h4.minisec { font-family: 'Manrope'; font-weight: 600; font-size: 9.6pt; color: var(--blue); margin: 4mm 0 2mm 0; break-after: avoid; }
-p { margin: 0 0 3.2mm 0; text-align: justify; hyphens: auto; }
+p { margin: 0 0 3.2mm 0; text-align: justify; hyphens: auto; orphans: 2; widows: 2; }
 p.lead { font-size: 11pt; color: #2A363C; }
 ul, ol { margin: 0 0 3.5mm 0; padding-left: 6mm; }
-li { margin-bottom: 1.4mm; text-align: justify; }
+li { margin-bottom: 1.4mm; text-align: justify; orphans: 2; widows: 2; }
+ul > li::marker { color: var(--teal); }
 strong { font-weight: 600; }
 .wframe { font-family: 'Manrope'; font-weight: 800; font-size: 8pt; letter-spacing: 0.1em; text-transform: uppercase; color: #fff; background: var(--blue); display: inline-block; padding: 0.8mm 2.8mm; margin: 3mm 0 2mm 0; }
 
 /* ---------- FIGURES ---------- */
 .figure { margin: 5mm 0 6mm 0; break-inside: avoid; text-align: center; }
 .figure svg { max-width: 100%; }
+.figure.vector { border: 0.7pt solid var(--rule); background: #FCFDFE; padding: 4mm 4mm 2.5mm 4mm; }
+.figure.vector svg { width: 100%; height: auto; }
+.figure.vector .figcaption { border-top: 0.6pt solid var(--rule); margin-top: 3mm; }
 .figure img { max-width: 86%; height: auto; border: 0.5pt solid var(--rule); }
 .figcaption { font-family: 'Manrope'; font-size: 8.4pt; color: var(--muted); text-align: left; margin-top: 2.5mm; border-top: 0.6pt solid var(--rule); padding-top: 1.8mm; }
 .figcaption b { font-weight: 800; color: var(--teal); }

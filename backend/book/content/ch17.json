@@ -777,10 +777,6 @@
   },
   {
    "t": "p",
-   "html": "Arrows connect sequential activities within lanes, and cross-lane arrows show inter-dependencies (e.g., manufacturing → sterilization → packaging)."
-  },
-  {
-   "t": "p",
    "html": "Critical control points marked with red diamonds: Batch release, Sterilization validation, Final QC, Delivery confirmation."
   },
   {

@@ -2119,10 +2119,6 @@
    ]
   },
   {
-   "t": "p",
-   "html": "Flowchart showing parallel paths for EtO, Gamma, and Steam validation:"
-  },
-  {
    "t": "ul",
    "items": [
     "<strong>All Methods: </strong>IQ (Equipment verification) → OQ (Empty chamber studies, parameter mapping) → PQ (Full load, biological indicators, product samples)",
@@ -3015,10 +3011,6 @@
    "items": [
     "<strong>Description:</strong>"
    ]
-  },
-  {
-   "t": "p",
-   "html": "Flowchart showing document hierarchy and relationships:"
   },
   {
    "t": "ul",

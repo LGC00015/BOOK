@@ -2781,10 +2781,6 @@
    "caption": "Global Vigilance Reporting Timeline Comparison (Placeholder) Description:"
   },
   {
-   "t": "p",
-   "html": "A comparative Gantt chart showing reporting timelines for India, USA, and EU. X-axis represents days (0-30). Bars show required reporting timeframes for different event types (death, serious injury, malfunction). Color-coded by jurisdiction. Annotations indicate immediate reporting requirements and extended timelines for different scenarios."
-  },
-  {
    "t": "h3",
    "text": "Regulatory Case Studies"
   },

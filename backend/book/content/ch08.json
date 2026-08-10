@@ -403,14 +403,6 @@
    "caption": "Forces on a Hip Implant Description: Anatomical diagram of hip implant showing:"
   },
   {
-   "t": "p",
-   "html": "Vertical compressive forces from body weight (arrows pointing downward) Shear forces at bone-implant interface (horizontal arrows) Rotational/torsional forces during walking (curved arrows)"
-  },
-  {
-   "t": "p",
-   "html": "Force magnitudes labeled (typically 3-5× body weight during walking) Stress concentration zones highlighted in red"
-  },
-  {
    "t": "h2",
    "text": "Mechanical Properties of Device Materials",
    "num": "8.4"
@@ -1620,46 +1612,6 @@
    "h": 361,
    "num": "8.7",
    "caption": "Method"
-  },
-  {
-   "t": "p",
-   "html": "<strong>Diagram 8.1 — ISO 10993 Test Selection Flowchart Description: </strong>Decision tree for biocompatibility testing:"
-  },
-  {
-   "t": "h3",
-   "text": "Level 1: Device Type Classification"
-  },
-  {
-   "t": "p",
-   "html": "<strong>Branching paths for:</strong> External devices, External communicating, Implant devices"
-  },
-  {
-   "t": "h3",
-   "text": "Level 2: Contact Duration"
-  },
-  {
-   "t": "p",
-   "html": "<strong>Sub-branches for:</strong> Limited (≤24h), Prolonged (24h-30d), Permanent (&gt;30d)"
-  },
-  {
-   "t": "h3",
-   "text": "Level 3: Body Contact Location"
-  },
-  {
-   "t": "p",
-   "html": "<strong>Further branches for:</strong> Skin, Mucosal membrane, Blood, Tissue, Bone"
-  },
-  {
-   "t": "h3",
-   "text": "Level 4: Required Tests Matrix"
-  },
-  {
-   "t": "p",
-   "html": "End nodes showing specific required tests for each device category"
-  },
-  {
-   "t": "p",
-   "html": "<strong>Color-coding:</strong> Green (always required), Yellow (risk-based decision), Blue (optional/informative)"
   },
   {
    "t": "h4",
