@@ -126,7 +126,7 @@ device-specific regulation arrived only with the <strong>Medical Devices Rules, 
   <tr><td>1958</td><td class="rowhead">Implantable pacemaker</td><td>Elmqvist &amp; Senning</td><td>Electronic therapy implanted in the body; millions paced today</td></tr>
   <tr><td>1962</td><td class="rowhead">Total hip replacement</td><td>John Charnley</td><td>Restored mobility to millions; template for all joint arthroplasty</td></tr>
   <tr><td>1971</td><td class="rowhead">CT scanner</td><td>Godfrey Hounsfield</td><td>Cross-sectional imaging; Nobel Prize, 1979</td></tr>
-  <tr><td>1987</td><td class="rowhead">Coronary stent (clinical use)</td><td>Sigwart et al.</td><td>Interventional cardiology transformed; later drug-eluting stents merged drug and device</td></tr>
+  <tr><td>1986</td><td class="rowhead">Coronary stent (first clinical implantation)</td><td>Puel &amp; Sigwart</td><td>Interventional cardiology transformed; later drug-eluting stents merged drug and device</td></tr>
   <tr><td>2000s</td><td class="rowhead">Continuous glucose monitors, SaMD</td><td>Multiple</td><td>Chronic disease self-management; software itself becomes the device</td></tr>
 </table>
 </div>
