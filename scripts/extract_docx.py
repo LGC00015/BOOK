@@ -56,15 +56,73 @@ CS_RE = re.compile(r"Case Study\s*(\d+\.\d+)\s*[—–:\-]*\s*(.*)$")
 II_RE = re.compile(r"Industry Insight\s*(\d+\.\d+)\s*[—–:\-]*\s*(.*)$")
 EB_RE = re.compile(r"Example Box\s*(\d+\.\d+)\s*[—–:\-]*\s*(.*)$")
 
+# ---- copy-editing rules for source-conversion artifacts --------------------
+# table-header rows that leaked into the text as pseudo-headings: drop them
+DROP_HEADINGS = {
+    "diagnostic monitoring therapeutic surgical",
+    "term definition",
+}
+
+# headings that fused two levels together in the source: split cleanly
+CURATED_SPLITS = {
+    "business and commercial roles sales and marketing executive": [
+        ("h3", "Business and Commercial Roles"), ("h4", "Sales and Marketing Executive")],
+    "emerging roles software validation specialist": [
+        ("h3", "Emerging Roles"), ("h4", "Software Validation Specialist")],
+    "field and application roles field service engineer": [
+        ("h3", "Field and Application Roles"), ("h4", "Field Service Engineer")],
+    "regulatory and compliance roles regulatory affairs (ra) associate": [
+        ("h3", "Regulatory and Compliance Roles"), ("h4", "Regulatory Affairs (RA) Associate")],
+    "engineering and development roles r&d engineer / design engineer": [
+        ("h3", "Engineering and Development Roles"), ("h4", "R&D Engineer / Design Engineer")],
+    "review questions multiple choice questions": [
+        ("h2", "Review Questions"), ("h4", "Multiple Choice Questions")],
+    "capa (corrective and preventive action) corrective action:": [
+        ("h3", "CAPA (Corrective and Preventive Action)"), ("h4", "Corrective Action")],
+    "risk management (iso 14971) integrated throughout device lifecycle:": [
+        ("h3", "Risk Management (ISO 14971)"), ("h4", "Integrated Throughout Device Lifecycle")],
+    "airflow patterns two primary types:": [
+        ("h3", "Airflow Patterns"), ("h4", "Two Primary Types")],
+}
+
+EXAMPLES_SPLIT_RE = re.compile(r"^(.{6,}?[^\s:])\s+(Examples?):$")
+# short "Label: long sentence" headings are really lead-in body lines
+LEADIN_RE = re.compile(r"^([A-Z][\w\)\(&/ ]{1,28}?):\s+(.{25,})$")
+LEADIN_EXCLUDE = re.compile(
+    r"^(Clause|Step|Phase|Stage|Unit|Rule|Part|Annex|Level|Grade|Class|Q\d|Question|"
+    r"Section|Module|Article|Schedule|Form|Chapter|Table|Figure|Fig|Tier|Zone|Route)\b", re.I)
+
+# Chapter 11's glossary table was destroyed in the source conversion;
+# reassembled here from the source's own fragments (author wording kept).
+GLOSSARY_OVERRIDES = {
+    11: [
+        ["AQL", "Acceptable Quality Limit — maximum tolerable defect percentage in a lot."],
+        ["Bioburden", "Population of viable microorganisms on a product before sterilization."],
+        ["Burst Pressure", "Maximum internal pressure before device rupture."],
+        ["CAPA", "Corrective and Preventive Action — systematic approach to eliminate problem causes."],
+        ["Cpk", "Process capability index measuring ability to meet specifications."],
+        ["DHR", "Device History Record — complete production and QC documentation for a specific lot."],
+        ["Fatigue Testing", "Cyclic loading test simulating long-term device use."],
+        ["Leakage Current", "Unwanted electrical current flowing from device to patient or ground."],
+        ["SAL", "Sterility Assurance Level — probability of viable microorganism presence (typically 10\u207b\u2076)."],
+        ["Tensile Strength", "Maximum stress a material withstands before breaking under tension."],
+    ],
+}
+
+# figure-prompt residue: descriptive text used to create the figures, which
+# duplicates the visible figure; removed near figures during post-processing
+VISUAL_HINT_RE = re.compile(r"^(Colors?[ :]|Arrows indicate|Visual layout|Visual style|Layout shows|Diagram shows)", re.I)
+
 
 def esc(t):
     return t.replace("&", "&amp;").replace("<", "&lt;").replace(">", "&gt;")
 
 
 def norm(t):
-    t = t.replace("\t", " ").replace("\u00a0", " ")
+    t = t.replace("\t", " ").replace("\u00a0", " ").replace("★", "")
     t = re.sub(r"[\uf000-\uf8ff]", "", t)  # symbol-font bullets etc.
     t = re.sub(r"\s+", " ", t).strip()
+    t = t.replace(" -- ", " — ")
     # fix pdf-conversion hyphen splits:  "Post- Market" -> "Post-Market"
     t = re.sub(r"(?<=[A-Za-z])- (?=[a-z])", "-", t)
     return t
@@ -88,9 +146,10 @@ def para_html(p):
             parts.append(t)
     html = "".join(parts)
     html = html.replace("</strong><strong>", "").replace("</em><em>", "")
-    html = html.replace("\t", " ").replace("\u00a0", " ")
+    html = html.replace("\t", " ").replace("\u00a0", " ").replace("★", "")
     html = re.sub(r"[\uf000-\uf8ff]", "", html)
     html = re.sub(r"\s+", " ", html).strip()
+    html = html.replace(" -- ", " — ").replace(">-- ", ">— ").replace(" --<", " —<")
     html = re.sub(r"(?<=[A-Za-z])- (?=[a-z])", "-", html)
     return html
 
@@ -251,7 +310,7 @@ def parse_chapter(items, ch_num, doc):
         nonlocal ref_current
         if ref_current:
             txt = re.sub(r"^\d+[\.\)]\s*", "", ref_current.strip(" ,;"))
-            if len(txt) > 3:
+            if len(txt) > 3 and not re.match(r"^\[?End of Chapter", txt, re.I):
                 ch["references"].append({"group": ref_group, "text": txt})
         ref_current = None
 
@@ -324,7 +383,7 @@ def parse_chapter(items, ch_num, doc):
             name, w, h = save_image(blob, ch_num, fig_seq)
             if name:
                 fig = {"t": "fig", "src": "images/" + name, "w": w, "h": h,
-                       "num": None, "caption": None}
+                       "num": None, "caption": None, "ctx": last_heading_text}
                 if pending_caption:
                     fig["num"], fig["caption"] = pending_caption
                     pending_caption = None
@@ -427,6 +486,8 @@ def parse_chapter(items, ch_num, doc):
                     ch["roadmap"].append(esc(item.strip()))
             continue
         if mode == "glossary":
+            if ch_num in GLOSSARY_OVERRIDES:
+                continue  # source glossary destroyed; curated override applied below
             raw = p.text.replace("\u00a0", " ")
             entry = None
             m = re.match(r"^([^:]{2,60}):\s+(.*)$", text)
@@ -506,6 +567,29 @@ def parse_chapter(items, ch_num, doc):
             if len(text) > 95 or (text.endswith(".") and len(text) > 60):
                 add_para(para_html(p) or esc(text))
                 continue
+            key = text.strip().lower()
+            if key in DROP_HEADINGS:
+                continue
+            if key in CURATED_SPLITS:
+                if box is not None:
+                    close_box()
+                for tag, htext in CURATED_SPLITS[key]:
+                    target().append({"t": tag, "text": esc(htext)})
+                    if tag in ("h2", "h3"):
+                        last_heading_text = htext
+                continue
+            m = EXAMPLES_SPLIT_RE.match(text)
+            if m:
+                if box is not None and not m.group(1).endswith(":"):
+                    close_box()
+                last_heading_text = m.group(1)
+                target().append({"t": "h3", "text": esc(m.group(1))})
+                target().append({"t": "h4", "text": esc(m.group(2))})
+                continue
+            m = LEADIN_RE.match(text)
+            if m and not LEADIN_EXCLUDE.match(m.group(1)):
+                add_para("<strong>%s:</strong> %s" % (esc(m.group(1)), esc(m.group(2))))
+                continue
             if box is not None and not text.endswith(":"):
                 close_box()
             last_heading_text = text.rstrip(":")
@@ -529,6 +613,52 @@ def parse_chapter(items, ch_num, doc):
 
     close_box()
     flush_ref()
+
+    if ch_num in GLOSSARY_OVERRIDES:
+        ch["glossary"] = [list(e) for e in GLOSSARY_OVERRIDES[ch_num]]
+
+    # split glossary definitions that fused multiple terms (source artifact)
+    fixed_gloss = []
+    for term, d in ch["glossary"]:
+        parts = re.split(r"(?<=[a-z\)]) ([A-Z][A-Za-z0-9\(\)\- ]{3,42}) — (?=[A-Z])", d)
+        if len(parts) > 1 and len(d) > 130:
+            fixed_gloss.append([term, parts[0].strip()])
+            for k in range(1, len(parts) - 1, 2):
+                fixed_gloss.append([parts[k].strip(), parts[k + 1].strip()])
+        else:
+            fixed_gloss.append([term, d])
+    ch["glossary"] = fixed_gloss
+
+    # -------- remove figure-prompt residue near figures --------
+    blocks = ch["blocks"]
+    to_del = set()
+    fig_positions = [i for i, b in enumerate(blocks) if b["t"] == "fig"]
+    for fi in fig_positions:
+        lo, hi = max(0, fi - 6), min(len(blocks), fi + 6)
+        for j in range(lo, hi):
+            b = blocks[j]
+            plain = ""
+            if b["t"] == "h4":
+                plain = b["text"].strip().lower()
+            elif b["t"] == "p":
+                plain = re.sub(r"<[^>]+>", "", b["html"]).strip().lower()
+            if b["t"] in ("h4", "p") and plain in ("description", "description:", "descriptions"):
+                to_del.add(j)
+                k = j + 1
+                while k < len(blocks) and k < j + 8 and blocks[k]["t"] in ("p", "ul"):
+                    to_del.add(k)
+                    k += 1
+            elif b["t"] == "p" and VISUAL_HINT_RE.match(re.sub(r"<[^>]+>", "", b["html"])):
+                to_del.add(j)
+    if to_del:
+        ch["blocks"] = [b for i, b in enumerate(blocks) if i not in to_del]
+
+    # figure caption fallback: use nearest preceding heading captured at parse time
+    for b in ch["blocks"]:
+        if b["t"] == "fig":
+            ctx = b.pop("ctx", "")
+            if not b.get("caption"):
+                b["caption"] = ctx or ""
 
     # -------- promote h3 -> numbered h2 via roadmap fuzzy matching --------
     roadmap_items = []

@@ -151,43 +151,11 @@
   },
   {
    "t": "p",
-   "html": "<strong>Description:</strong>"
-  },
-  {
-   "t": "p",
-   "html": "A circular diagram representing the continuous nature of device lifecycle management. Eight segments arranged clockwise:"
-  },
-  {
-   "t": "p",
-   "html": "<strong>Concept &amp; Feasibility </strong>(lightbulb icon)"
-  },
-  {
-   "t": "p",
-   "html": "<strong>Design &amp; Development </strong>(drafting tools icon)"
-  },
-  {
-   "t": "p",
-   "html": "<strong>Verification &amp; Validation </strong>(checkmark with magnifying glass icon)"
-  },
-  {
-   "t": "p",
-   "html": "<strong>Clinical Evaluation </strong>(medical clipboard icon) <strong>Regulatory Approval </strong>(government seal icon) <strong>Manufacturing Transfer </strong>(factory icon) <strong>Market Launch </strong>(rocket icon)"
-  },
-  {
-   "t": "p",
-   "html": "<strong>Post-Market Surveillance </strong>(radar/monitoring icon)"
-  },
-  {
-   "t": "p",
-   "html": "Central hub labeled <strong>\"Continuous Risk Management\" </strong>with bidirectional arrows connecting all segments, illustrating that risk assessment influences every phase. An outer ring shows <strong>\"Documentation &amp; Traceability\" </strong>encompassing the entire cycle."
-  },
-  {
-   "t": "p",
    "html": "<strong>Key Principle Illustrated: </strong>The lifecycle is not linear but cyclical, with post-market surveillance data feeding back into design improvements for next-generation devices or modifications to existing products. Risk management remains central throughout all phases."
   },
   {
    "t": "h2",
-   "text": "Phase 1 -- Concept Development &amp; Feasibility Assessment",
+   "text": "Phase 1 — Concept Development &amp; Feasibility Assessment",
    "num": "4.2"
   },
   {
@@ -370,7 +338,7 @@
   },
   {
    "t": "h2",
-   "text": "Phase 2 -- Design &amp; Development (Design Controls)",
+   "text": "Phase 2 — Design &amp; Development (Design Controls)",
    "num": "4.3"
   },
   {
@@ -408,38 +376,6 @@
    "h": 407,
    "num": "4.2",
    "caption": "Design Control Process Flow"
-  },
-  {
-   "t": "p",
-   "html": "<strong>Description:</strong>"
-  },
-  {
-   "t": "p",
-   "html": "A flowchart showing the systematic progression of design activities:"
-  },
-  {
-   "t": "p",
-   "html": "<strong>Design Planning </strong>→ <strong>Design Inputs </strong>(user needs, regulatory, standards) → <strong>Design Process</strong>"
-  },
-  {
-   "t": "p",
-   "html": "(engineering, CAD, simulations) → <strong>Design Outputs </strong>(drawings, specifications, software)"
-  },
-  {
-   "t": "p",
-   "html": "↓"
-  },
-  {
-   "t": "p",
-   "html": "<strong>Design Review </strong>(multi-disciplinary team evaluation)"
-  },
-  {
-   "t": "p",
-   "html": "↓"
-  },
-  {
-   "t": "p",
-   "html": "<strong>Design Verification </strong>(testing against specifications) ↔ <strong>Iterative Refinement </strong>(if verification fails)"
   },
   {
    "t": "p",
@@ -639,7 +575,7 @@
   },
   {
    "t": "h3",
-   "text": "Table 4.1 -- Sample Requirements Traceability Matrix"
+   "text": "Table 4.1 — Sample Requirements Traceability Matrix"
   },
   {
    "t": "p",
@@ -931,7 +867,7 @@
   },
   {
    "t": "h2",
-   "text": "Phase 3 -- Prototyping Strategies",
+   "text": "Phase 3 — Prototyping Strategies",
    "num": "4.4"
   },
   {
@@ -1157,36 +1093,8 @@
    "caption": "Prototype Evolution Pathway"
   },
   {
-   "t": "p",
-   "html": "<strong>Description:</strong>"
-  },
-  {
-   "t": "p",
-   "html": "A horizontal progression showing four prototype stages with increasing fidelity:"
-  },
-  {
-   "t": "p",
-   "html": "<strong>Proof-of-Concept: </strong>Sketch icon, breadboard schematic, crude model (Timeline: Weeks 1-8)"
-  },
-  {
-   "t": "p",
-   "html": "<strong>Engineering Prototype: </strong>CAD model, functional device with visible wiring (Timeline: Months 3-9)"
-  },
-  {
-   "t": "p",
-   "html": "<strong>Verification Prototype: </strong>Refined enclosure, production-intent materials (Timeline: Months 10- 15)"
-  },
-  {
-   "t": "p",
-   "html": "<strong>Validation Prototype: </strong>Final appearance, clinical-grade (Timeline: Months 16-20) Below each stage, key activities listed:"
-  },
-  {
-   "t": "p",
-   "html": "<strong>Proof-of-Concept:</strong> Concept testing, feasibility demonstration Engineering: Design refinement, preliminary testing Verification: Standards testing, specification compliance Validation: Clinical studies, usability testing, final approval"
-  },
-  {
    "t": "h2",
-   "text": "Phase 4 -- Verification and Validation (V&amp;V)",
+   "text": "Phase 4 — Verification and Validation (V&amp;V)",
    "num": "4.5"
   },
   {
@@ -1248,14 +1156,6 @@
    "h": 295,
    "num": "4.4",
    "caption": "Verification vs. Validation Conceptual Model"
-  },
-  {
-   "t": "p",
-   "html": "<strong>Description:</strong>"
-  },
-  {
-   "t": "p",
-   "html": "Two parallel columns with a V-shaped diagram:"
   },
   {
    "t": "h4",
@@ -1707,7 +1607,7 @@
   },
   {
    "t": "h2",
-   "text": "Phase 5 -- Risk Management Integration (ISO 14971:2019)",
+   "text": "Phase 5 — Risk Management Integration (ISO 14971:2019)",
    "num": "4.6"
   },
   {
@@ -1727,14 +1627,6 @@
    "h": 385,
    "num": "4.5",
    "caption": "ISO 14971 Risk Management Process Flow"
-  },
-  {
-   "t": "p",
-   "html": "<strong>Description:</strong>"
-  },
-  {
-   "t": "p",
-   "html": "A cyclical flowchart showing:"
   },
   {
    "t": "h3",
@@ -2289,7 +2181,7 @@
   },
   {
    "t": "h2",
-   "text": "Phase 6 -- Clinical Evaluation",
+   "text": "Phase 6 — Clinical Evaluation",
    "num": "4.7"
   },
   {
@@ -2556,7 +2448,7 @@
   },
   {
    "t": "h2",
-   "text": "Phase 7 -- Regulatory Submission and Approval",
+   "text": "Phase 7 — Regulatory Submission and Approval",
    "num": "4.8"
   },
   {
@@ -2565,7 +2457,7 @@
   },
   {
    "t": "h3",
-   "text": "India -- CDSCO Pathways Class A and B Devices"
+   "text": "India — CDSCO Pathways Class A and B Devices"
   },
   {
    "t": "p",
@@ -2653,7 +2545,7 @@
   },
   {
    "t": "h3",
-   "text": "USA -- FDA Pathways"
+   "text": "USA — FDA Pathways"
   },
   {
    "t": "ul",
@@ -2771,7 +2663,7 @@
   },
   {
    "t": "h3",
-   "text": "EU -- CE Marking Process"
+   "text": "EU — CE Marking Process"
   },
   {
    "t": "p",
@@ -2891,7 +2783,7 @@
   },
   {
    "t": "h2",
-   "text": "Phase 8 -- Manufacturing Transfer and Process Validation",
+   "text": "Phase 8 — Manufacturing Transfer and Process Validation",
    "num": "4.9"
   },
   {
@@ -3166,38 +3058,6 @@
   },
   {
    "t": "p",
-   "html": "<strong>Description:</strong>"
-  },
-  {
-   "t": "p",
-   "html": "A hierarchical pyramid with four levels:"
-  },
-  {
-   "t": "p",
-   "html": "<strong>Level 1 (Top): </strong>Device Master Record (DMR) Complete manufacturing specification package <strong>Level 2: </strong>Standard Operating Procedures (SOPs)"
-  },
-  {
-   "t": "p",
-   "html": "General procedures applicable across products (e.g., \"SOP for Injection Molding Operations\")"
-  },
-  {
-   "t": "p",
-   "html": "<strong>Level 3: </strong>Work Instructions (WIs)"
-  },
-  {
-   "t": "p",
-   "html": "Specific step-by-step instructions for particular operations (e.g., \"WI for Assembling Syringe Plunger\")"
-  },
-  {
-   "t": "p",
-   "html": "<strong>Level 4 (Bottom): </strong>Device History Record (DHR) / Batch Records Actual production documentation for specific lots/batches, including: Material lot numbers"
-  },
-  {
-   "t": "p",
-   "html": "Equipment used Operator signatures"
-  },
-  {
-   "t": "p",
    "html": "In-process inspection results Deviations and investigations Final release approval"
   },
   {
@@ -3206,7 +3066,7 @@
   },
   {
    "t": "h2",
-   "text": "Phase 9 -- Market Launch and Commercialization",
+   "text": "Phase 9 — Market Launch and Commercialization",
    "num": "4.10"
   },
   {
@@ -3359,7 +3219,7 @@
   },
   {
    "t": "h2",
-   "text": "Phase 10 -- Post-Market Surveillance (PMS) and Continuous Improvement",
+   "text": "Phase 10 — Post-Market Surveillance (PMS) and Continuous Improvement",
    "num": "4.11"
   },
   {
@@ -3389,22 +3249,6 @@
    "h": 340,
    "num": "4.8",
    "caption": "Post-Market Surveillance Cycle"
-  },
-  {
-   "t": "p",
-   "html": "<strong>Description:</strong>"
-  },
-  {
-   "t": "p",
-   "html": "A circular flow diagram showing:"
-  },
-  {
-   "t": "p",
-   "html": "<strong>Market Use </strong>(devices in clinical settings) → <strong>Data Collection </strong>(complaints, adverse events, returns, servicing data) → <strong>Analysis </strong>(trending, root cause investigation) → <strong>Risk Evaluation </strong>(reassess risks per ISO 14971) → <strong>CAPA Implementation </strong>(corrective/preventive actions) → <strong>Verification </strong>(effectiveness confirmation) → <strong>Updates to DHF/Risk File </strong>(documentation) → <strong>Regulatory Reporting </strong>(as required) → feeds back into <strong>Market Use</strong>"
-  },
-  {
-   "t": "p",
-   "html": "<strong>Continuous Loop: </strong>Illustrating that PMS never stops; ongoing monitoring and improvement throughout product lifecycle."
   },
   {
    "t": "h3",
@@ -4011,7 +3855,7 @@
   },
   {
    "t": "h3",
-   "text": "Table 4.2 -- Lifecycle Documentation Summary"
+   "text": "Table 4.2 — Lifecycle Documentation Summary"
   },
   {
    "t": "p",

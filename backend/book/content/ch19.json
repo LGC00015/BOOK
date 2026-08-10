@@ -153,18 +153,6 @@
    "caption": "Healthcare Data Ecosystem Architecture"
   },
   {
-   "t": "p",
-   "html": "<strong>Description:</strong>"
-  },
-  {
-   "t": "p",
-   "html": "<strong>Multi-layer architectural diagram showing:</strong> (Bottom layer) Data Sources including Medical Devices, Wearables, Laboratory Systems, Imaging Equipment, Patient-Reported Outcomes; (Middle layer) Integration Layer with HL7/FHIR interfaces, Data Lakes, and APIs; (Upper"
-  },
-  {
-   "t": "p",
-   "html": "layer) Applications including EHR Systems, Clinical Decision Support, Population Health Analytics, Research Databases; (Top layer) End Users including Clinicians, Patients, Researchers, Administrators. Bidirectional arrows indicate data flow between layers."
-  },
-  {
    "t": "h2",
    "text": "Types and Sources of Healthcare Data",
    "num": "19.4"
@@ -373,7 +361,7 @@
   },
   {
    "t": "h2",
-   "text": "Table 19.1 -- Healthcare Data Classification Matrix",
+   "text": "Table 19.1 — Healthcare Data Classification Matrix",
    "num": "19.5"
   },
   {
@@ -578,8 +566,8 @@
    "html": "<strong>Alarm and Alert Integration </strong>Critical value notifications Device malfunction alerts Battery low warnings Calibration due reminders"
   },
   {
-   "t": "h3",
-   "text": "EHR Implementation in India: Ayushman Bharat Digital Mission (ABDM)"
+   "t": "p",
+   "html": "<strong>EHR Implementation in India:</strong> Ayushman Bharat Digital Mission (ABDM)"
   },
   {
    "t": "p",
@@ -636,14 +624,6 @@
    "h": 462,
    "num": "19.2",
    "caption": "ABDM Ecosystem Architecture"
-  },
-  {
-   "t": "p",
-   "html": "<strong>Description:</strong>"
-  },
-  {
-   "t": "p",
-   "html": "<strong>Layered architecture diagram showing:</strong> (Foundation) ABHA ID, HPR, HFR registries; (Middleware) Open APIs, Security Gateway, Consent Manager; (Application Layer) PHR applications, Hospital EHR systems, Diagnostic centers, Pharmacies, Telemedicine platforms; (User Interface) Patient mobile apps, Provider portals. Arrows indicate data exchange flows governed by consent mechanisms."
   },
   {
    "t": "h2",
@@ -1105,14 +1085,6 @@
    "caption": "FHIR-Based Interoperability Architecture"
   },
   {
-   "t": "p",
-   "html": "<strong>Description:</strong>"
-  },
-  {
-   "t": "p",
-   "html": "<strong>System integration diagram showing:</strong> (Center) FHIR Server with RESTful API layer; (Left side) Data Sources including EHR systems, Laboratory systems, Medical devices, Wearables connecting via FHIR adapters; (Right side) Consumer Applications including Mobile health apps, Clinical portals, Analytics platforms, Research databases accessing via FHIR API; (Bottom) Standardized FHIR Resources flowing between components; (Top) Security layer with OAuth 2.0 authorization and TLS encryption."
-  },
-  {
    "t": "h2",
    "text": "DICOM for Medical Imaging",
    "num": "19.10"
@@ -1295,18 +1267,6 @@
    "caption": "IEEE 11073 Device Integration"
   },
   {
-   "t": "p",
-   "html": "<strong>Description:</strong>"
-  },
-  {
-   "t": "p",
-   "html": "<strong>Data flow diagram showing:</strong> Personal Health Devices (blood pressure monitor, glucose meter, weight scale) → Bluetooth/USB connection → Personal Health Gateway (smartphone/tablet)"
-  },
-  {
-   "t": "p",
-   "html": "→ Cloud Platform (IEEE 11073 to FHIR translation) → EHR System. Each transition point labelled with applicable standards (IEEE 11073-20601, FHIR Observation resources, HL7 v2 messages)."
-  },
-  {
    "t": "h3",
    "text": "Artificial Intelligence and Machine Learning Analytics"
   },
@@ -1485,14 +1445,6 @@
    "h": 264,
    "num": "19.5",
    "caption": "AI/ML Analytics Pipeline"
-  },
-  {
-   "t": "p",
-   "html": "<strong>Description:</strong>"
-  },
-  {
-   "t": "p",
-   "html": "<strong>End-to-end workflow diagram showing:</strong> (Input) Raw Medical Device Data + EHR Data + Imaging Data → (Preprocessing) Data Cleaning, Feature Engineering, Normalization → (Model Training) Algorithm Selection, Training, Validation → (Evaluation) Performance Metrics, Clinical Validation → (Deployment) Integration with Clinical Workflow → (Monitoring) Performance Tracking, Model Updates, Drift Detection. Feedback loops from monitoring back to preprocessing and model training illustrated with dashed arrows."
   },
   {
    "t": "h3",
@@ -1835,14 +1787,6 @@
    "caption": "IoMT Ecosystem Architecture"
   },
   {
-   "t": "p",
-   "html": "<strong>Description:</strong>"
-  },
-  {
-   "t": "p",
-   "html": "Comprehensive architecture diagram with five layers: (Bottom) Device icons representing wearables, hospital equipment, home health devices; (Second) Edge computing layer showing gateways and protocol converters; (Third) Network infrastructure with cellular towers, Wi-Fi, and LPWAN symbols; (Fourth) Cloud platform with data ingestion, storage, analytics, and device management modules; (Top) Application layer with patient apps, provider portals, analytics dashboards. Security mechanisms (encryption, authentication, firewalls) illustrated at each layer interface."
-  },
-  {
    "t": "h3",
    "text": "IoMT Clinical Applications Remote Patient Monitoring (RPM)"
   },
@@ -2123,14 +2067,6 @@
    "h": 453,
    "num": "19.7",
    "caption": "Healthcare Cloud Architecture"
-  },
-  {
-   "t": "p",
-   "html": "<strong>Description:</strong>"
-  },
-  {
-   "t": "p",
-   "html": "<strong>Multi-tier cloud architecture diagram showing:</strong> (Bottom) On-premise healthcare facilities with firewalls and VPN connections; (Middle) Cloud infrastructure layer with load balancers, application servers, FHIR/HL7 interfaces, and databases; (Top) Analytics and AI/ML services layer; (Right side) Security controls including encryption, authentication, monitoring; (Left side) Backup and disaster recovery systems. Data flow arrows indicate secure pathways with encryption symbols at each transition point."
   },
   {
    "t": "h3",
@@ -2462,8 +2398,8 @@
    "html": "Data localization considerations for cloud platforms"
   },
   {
-   "t": "h4",
-   "text": "United States: HIPAA (Health Insurance Portability and Accountability Act) Privacy Rule"
+   "t": "p",
+   "html": "<strong>United States:</strong> HIPAA (Health Insurance Portability and Accountability Act) Privacy Rule:"
   },
   {
    "t": "p",
@@ -2790,14 +2726,6 @@
    "h": 322,
    "num": "19.8",
    "caption": "Health Information Exchange Architecture"
-  },
-  {
-   "t": "p",
-   "html": "<strong>Description:</strong>"
-  },
-  {
-   "t": "p",
-   "html": "<strong>Comprehensive HIE diagram showing:</strong> (Center) HIE Hub with Master Patient Index, Record Locator Service, Consent Management, and Query/Response Engine; (Surrounding) Participating organizations including Hospitals, Clinics, Laboratories, Imaging Centers, Pharmacies, Public Health Agencies connecting via standardized interfaces (HL7, FHIR, DICOM); (Top) Patient Consent Portal; (Bottom) Security infrastructure including authentication, authorization, audit logging. Arrows indicate bidirectional data flow with different line styles representing various transaction types (ADT feeds, document queries, lab results)."
   },
   {
    "t": "h3",

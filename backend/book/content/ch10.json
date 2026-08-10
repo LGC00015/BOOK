@@ -87,18 +87,6 @@
    "caption": "Medical Device Production Flow Overview"
   },
   {
-   "t": "p",
-   "html": "<strong>Description:</strong>"
-  },
-  {
-   "t": "p",
-   "html": "A horizontal process flow diagram showing eight sequential stages: Raw Material Receiving → Material Processing → Component Fabrication → Assembly Operations → Quality Control Testing → Sterilization (if applicable) → Packaging &amp; Labeling"
-  },
-  {
-   "t": "p",
-   "html": "→ Final Release"
-  },
-  {
    "t": "h4",
    "text": "Visual elements"
   },
@@ -242,26 +230,6 @@
    "h": 264,
    "num": "10.2",
    "caption": "Injection Molding Process Schematic"
-  },
-  {
-   "t": "p",
-   "html": "<strong>Description:</strong>"
-  },
-  {
-   "t": "p",
-   "html": "A cutaway technical illustration showing:"
-  },
-  {
-   "t": "ul",
-   "items": [
-    "Hopper feeding polymer granules",
-    "Heated barrel with reciprocating screw",
-    "Injection nozzle",
-    "Two-plate mold (cavity and core)",
-    "Cooling channels within mold",
-    "Ejector pin mechanism",
-    "Finished part in ejection phase"
-   ]
   },
   {
    "t": "h4",
@@ -408,26 +376,6 @@
    "h": 264,
    "num": "10.3",
    "caption": "Medical Tubing Extrusion Line"
-  },
-  {
-   "t": "p",
-   "html": "<strong>Description:</strong>"
-  },
-  {
-   "t": "p",
-   "html": "A linear production line illustration showing:"
-  },
-  {
-   "t": "ul",
-   "items": [
-    "Extruder unit with hopper and barrel",
-    "Mandrel (for catheter production) or annular die (for tubing)",
-    "Vacuum sizing tank",
-    "Water cooling bath with temperature monitoring",
-    "Laser diameter measurement system",
-    "Puller unit (caterpillar haul-off)",
-    "Cutter or winding station"
-   ]
   },
   {
    "t": "h4",
@@ -590,14 +538,6 @@
    "h": 277,
    "num": "10.4",
    "caption": "CNC Machining Process Flow"
-  },
-  {
-   "t": "p",
-   "html": "<strong>Description:</strong>"
-  },
-  {
-   "t": "p",
-   "html": "<strong>A vertical process sequence showing:</strong> Raw Material Bar Stock → CNC Programming → Machine Setup → Roughing Operations → Finishing Operations → Deburring → Dimensional Inspection → Surface Treatment → Final Inspection"
   },
   {
    "t": "h4",
@@ -782,22 +722,6 @@
    "h": 340,
    "num": "10.5",
    "caption": "Metal Processing Workflow"
-  },
-  {
-   "t": "p",
-   "html": "<strong>Description:</strong>"
-  },
-  {
-   "t": "p",
-   "html": "Flowchart showing:"
-  },
-  {
-   "t": "p",
-   "html": "Metal Rod/Bar → CNC Machining → Deburring → Ultrasonic Cleaning → Electropolishing"
-  },
-  {
-   "t": "p",
-   "html": "→ Passivation → Final Cleaning → Packaging"
   },
   {
    "t": "h4",
@@ -1044,27 +968,6 @@
    "h": 457,
    "num": "10.6",
    "caption": "Medical Device Assembly Line Layout"
-  },
-  {
-   "t": "p",
-   "html": "<strong>Description:</strong>"
-  },
-  {
-   "t": "p",
-   "html": "Top-view schematic of a U-shaped assembly line showing:"
-  },
-  {
-   "t": "ul",
-   "items": [
-    "Component staging area (left side)",
-    "Sequential workstations (numbered 1–8)",
-    "Quality inspection stations (marked with Q symbols)",
-    "Conveyor system linking stations",
-    "Packaging area (right side)",
-    "Material flow arrows",
-    "Operator positions",
-    "Equipment placement (ultrasonic welders, vision systems)"
-   ]
   },
   {
    "t": "h4",
@@ -1572,23 +1475,6 @@
    "caption": "ETO Sterilization Cycle Profile"
   },
   {
-   "t": "p",
-   "html": "<strong>Description:</strong>"
-  },
-  {
-   "t": "p",
-   "html": "Time-series graph with three y-axes:"
-  },
-  {
-   "t": "ul",
-   "items": [
-    "Temperature (°C) – blue line",
-    "ETO concentration (mg/L) – red line",
-    "Relative humidity (%) – green line",
-    "axis shows cycle phases: Preconditioning → Gas Introduction → Exposure → Evacuation → Aeration"
-   ]
-  },
-  {
    "t": "h4",
    "text": "Key markers"
   },
@@ -1991,25 +1877,6 @@
    "caption": "Example Medical Device Label Layout"
   },
   {
-   "t": "p",
-   "html": "<strong>Description:</strong>"
-  },
-  {
-   "t": "p",
-   "html": "Sample primary package label showing:"
-  },
-  {
-   "t": "ul",
-   "items": [
-    "Top: Device name (bold, 14 pt font)",
-    "Center left: Manufacturer logo and details",
-    "Center: UDI barcode (GS1-128 format)",
-    "Center right: ISO symbols (single use, sterile, temperature limits)",
-    "Bottom: Batch number, expiry date, sterilization method",
-    "Color scheme: Blue header, white background, black text"
-   ]
-  },
-  {
    "t": "h4",
    "text": "Annotations pointing to"
   },
@@ -2108,14 +1975,6 @@
    "h": 264,
    "num": "10.9",
    "caption": "In-Process Quality Control Flow"
-  },
-  {
-   "t": "p",
-   "html": "<strong>Description:</strong>"
-  },
-  {
-   "t": "p",
-   "html": "Multi-stage flowchart showing quality gates:"
   },
   {
    "t": "h4",
@@ -2276,14 +2135,6 @@
    "h": 302,
    "num": "10.10",
    "caption": "Medical Device Factory Layout"
-  },
-  {
-   "t": "p",
-   "html": "<strong>Description:</strong>"
-  },
-  {
-   "t": "p",
-   "html": "Scaled floor plan (not to scale) showing:"
   },
   {
    "t": "h4",
@@ -2742,8 +2593,13 @@
    "html": "Manufacturing forms the operational heart of medical device companies, translating design concepts into reliable products that serve patient needs globally."
   },
   {
-   "t": "h3",
-   "text": "Review Questions Multiple Choice Questions"
+   "t": "h2",
+   "text": "Review Questions",
+   "num": "10.12"
+  },
+  {
+   "t": "h4",
+   "text": "Multiple Choice Questions"
   },
   {
    "t": "ul",

@@ -42,7 +42,8 @@
     "Global Classification Systems",
     "European Union MDR Classification System",
     "Cleanroom Basics",
-    "Quality Management Systems (QMS)"
+    "Quality Management Systems (QMS)",
+    "Risk Management (ISO 14971)"
    ],
    "glossary_count": 15,
    "references_count": 6
@@ -106,7 +107,7 @@
     ],
     [
      "3.5",
-     "(untitled figure)"
+     "Non-Implantable Class III"
     ],
     [
      "3.6",
@@ -124,7 +125,7 @@
     ],
     [
      "3.2",
-     "★ Class IIb – Moderate to High Risk Devices"
+     "Class IIb – Moderate to High Risk Devices"
     ],
     [
      "3.3",
@@ -196,16 +197,16 @@
    ],
    "sections": [
     "Regulatory Foundations",
-    "Phase 1 -- Concept Development &amp; Feasibility Assessment",
-    "Phase 2 -- Design &amp; Development (Design Controls)",
-    "Phase 3 -- Prototyping Strategies",
-    "Phase 4 -- Verification and Validation (V&amp;V)",
-    "Phase 5 -- Risk Management Integration (ISO 14971:2019)",
-    "Phase 6 -- Clinical Evaluation",
-    "Phase 7 -- Regulatory Submission and Approval",
-    "Phase 8 -- Manufacturing Transfer and Process Validation",
-    "Phase 9 -- Market Launch and Commercialization",
-    "Phase 10 -- Post-Market Surveillance (PMS) and Continuous Improvement",
+    "Phase 1 — Concept Development &amp; Feasibility Assessment",
+    "Phase 2 — Design &amp; Development (Design Controls)",
+    "Phase 3 — Prototyping Strategies",
+    "Phase 4 — Verification and Validation (V&amp;V)",
+    "Phase 5 — Risk Management Integration (ISO 14971:2019)",
+    "Phase 6 — Clinical Evaluation",
+    "Phase 7 — Regulatory Submission and Approval",
+    "Phase 8 — Manufacturing Transfer and Process Validation",
+    "Phase 9 — Market Launch and Commercialization",
+    "Phase 10 — Post-Market Surveillance (PMS) and Continuous Improvement",
     "Device Lifecycle Documentation Architecture"
    ],
    "glossary_count": 14,
@@ -231,7 +232,7 @@
     ],
     [
      "5.4",
-     "(untitled figure)"
+     "Risk-Based Decision Making"
     ],
     [
      "5.5",
@@ -242,8 +243,8 @@
    "sections": [
     "Introduction to Quality Management Systems (QMS)",
     "The Role of QMS in Patient Safety",
-    "ISO 13485:2016 -- The Global QMS Standard",
-    "Documentation Hierarchy -- The QMS Pyramid",
+    "ISO 13485:2016 — The Global QMS Standard",
+    "Documentation Hierarchy — The QMS Pyramid",
     "Document and Record Control",
     "Risk-Based Approach in QMS",
     "Supplier Quality Management",
@@ -364,11 +365,11 @@
    "figures": [
     [
      "8.1",
-     "(untitled figure)"
+     "Formula"
     ],
     [
      "8.2",
-     "(untitled figure)"
+     "Formula"
     ],
     [
      "8.3",
@@ -388,7 +389,7 @@
     ],
     [
      "8.7",
-     "(untitled figure)"
+     "Method"
     ]
    ],
    "tables": [],
@@ -444,12 +445,12 @@
    "sections": [
     "Introduction",
     "Design Controls (FDA and ISO Requirements)",
-    "Step 4 -- Human Factors and Usability Engineering",
-    "Step 8 -- Verification and Validation",
+    "Step 4 — Human Factors and Usability Engineering",
+    "Step 8 — Verification and Validation",
     "Design Inputs",
     "Design Outputs"
    ],
-   "glossary_count": 15,
+   "glossary_count": 18,
    "references_count": 11
   },
   {
@@ -524,7 +525,8 @@
     "Packaging and Labeling Operations",
     "In-Process Quality Control",
     "Factory Layout and Material Flow",
-    "Manufacturing Documentation Systems"
+    "Manufacturing Documentation Systems",
+    "Review Questions"
    ],
    "glossary_count": 13,
    "references_count": 17
@@ -568,13 +570,13 @@
     "11.2.2 In-Process Quality Control",
     "11.2.4 Sterilization Validation",
     "11.3 Mechanical Testing",
+    "Acceptance Criteria",
     "11.4 Electrical Safety Testing (IEC 60601 Series)",
     "11.5 Chemical and Material Testing",
     "11.7 Microbiological Testing",
-    "11.9 Packaging and Seal Integrity Testing",
-    "11.10 Sampling Plans and Acceptance Criteria"
+    "11.9 Packaging and Seal Integrity Testing"
    ],
-   "glossary_count": 3,
+   "glossary_count": 10,
    "references_count": 21
   },
   {
@@ -628,15 +630,15 @@
    "sections": [
     "Introduction to Medical Device Regulation",
     "Device performance and clinical efficacy validation",
-    "India -- Medical Device Rules (MDR) 2017",
+    "India — Medical Device Rules (MDR) 2017",
     "CDSCO Approval Pathways Class A and B Devices",
-    "United States -- FDA Regulatory System",
-    "European Union -- Medical Device Regulation (MDR) 2017/745",
+    "United States — FDA Regulatory System",
+    "European Union — Medical Device Regulation (MDR) 2017/745",
     "Technical Documentation Requirements (Annex II)",
     "Post-Market Surveillance and Vigilance"
    ],
    "glossary_count": 19,
-   "references_count": 11
+   "references_count": 10
   },
   {
    "num": 13,
@@ -708,7 +710,7 @@
     ],
     [
      "13.2",
-     "Table 13.2 -- IMDRF SaMD Risk Matrix"
+     "Table 13.2 — IMDRF SaMD Risk Matrix"
     ],
     [
      "13.3",
@@ -722,11 +724,11 @@
     "Types of Medical Software",
     "Global Regulatory Definitions and Frameworks",
     "Risk-Based Classification of SaMD",
-    "Table 13.2 -- IMDRF SaMD Risk Matrix",
+    "Table 13.2 — IMDRF SaMD Risk Matrix",
     "AI/ML-Based Medical Devices",
     "Definition and Scope",
     "Cybersecurity Requirements for Medical Software",
-    "Software Development Lifecycle (SDLC) -- IEC 62304",
+    "Software Development Lifecycle (SDLC) — IEC 62304",
     "Software Verification and Validation (V&amp;V)"
    ],
    "glossary_count": 19,
@@ -776,7 +778,7 @@
     ],
     [
      "14.10",
-     "(untitled figure)"
+     "Focus Areas"
     ],
     [
      "14.11",
@@ -802,14 +804,14 @@
     "Clinical Utility Demonstration",
     "When is Clinical Evaluation Required?",
     "Sources and Types of Clinical Data",
-    "India -- CDSCO Clinical Investigation Requirements",
-    "United States -- FDA Clinical Study Requirements",
-    "European Union -- EU MDR Clinical Evaluation Framework",
+    "India — CDSCO Clinical Investigation Requirements",
+    "United States — FDA Clinical Study Requirements",
+    "European Union — EU MDR Clinical Evaluation Framework",
     "Clinical Investigation Plan (CIP)",
     "Types of Clinical Studies for Medical Devices",
     "Clinical Study Design and Protocol Development",
     "Ethics and Informed Consent",
-    "Good Clinical Practice (GCP) Principles -- ISO 14155"
+    "Good Clinical Practice (GCP) Principles — ISO 14155"
    ],
    "glossary_count": 19,
    "references_count": 2
@@ -1081,7 +1083,7 @@
     "The Digital Health Data Challenge",
     "The Interoperability Imperative",
     "Types and Sources of Healthcare Data",
-    "Table 19.1 -- Healthcare Data Classification Matrix",
+    "Table 19.1 — Healthcare Data Classification Matrix",
     "Electronic Health Records (EHR) and Electronic Medical Records (EMR)",
     "Interoperability Standards and Frameworks",
     "HL7 Messaging Standards",

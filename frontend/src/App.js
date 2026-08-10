@@ -19,6 +19,7 @@ function App() {
   const [selected, setSelected] = useState("ch01");
   const [pdfStatus, setPdfStatus] = useState(null);
   const [downloading, setDownloading] = useState(false);
+  const [pendingDownload, setPendingDownload] = useState(false);
   const [activeNav, setActiveNav] = useState("overview");
 
   useEffect(() => {
@@ -59,17 +60,14 @@ function App() {
 
   const handleNav = (id) => {
     setActiveNav(id);
-    const el = document.getElementById(`section-${id === "overview" ? "overview" : id === "contents" ? "contents" : "contents"}`);
-    el?.scrollIntoView({ behavior: "smooth" });
+    const target = id === "overview" ? "section-overview" : id === "contents" ? "section-contents" : "section-preview";
+    const el = document.getElementById(target);
+    el?.scrollIntoView({ behavior: "smooth", block: id === "overview" ? "end" : "start" });
   };
 
-  const downloadPdf = async () => {
-    if (pdfStatus && !pdfStatus.ready && pdfStatus.building) {
-      toast.info("The A4 edition is still being typeset — one moment.");
-      return;
-    }
+  const performDownload = async () => {
     setDownloading(true);
-    toast.loading("Compiling the A4 PDF edition…", { id: "pdf" });
+    toast.loading("Preparing your A4 PDF…", { id: "pdf" });
     try {
       const r = await axios.get(`${API}/book/pdf`, { responseType: "blob", timeout: 300000 });
       const url = URL.createObjectURL(new Blob([r.data], { type: "application/pdf" }));
@@ -82,11 +80,28 @@ function App() {
       URL.revokeObjectURL(url);
       toast.success(`Downloaded — ${r.headers["x-page-count"] || pdfStatus?.pages || ""} A4 pages typeset.`, { id: "pdf" });
     } catch {
-      toast.error("PDF compilation failed. Check the backend logs.", { id: "pdf" });
+      toast.error("PDF download failed. Please try again.", { id: "pdf" });
     } finally {
       setDownloading(false);
+      setPendingDownload(false);
     }
   };
+
+  const downloadPdf = () => {
+    if (pdfStatus && !pdfStatus.ready) {
+      setPendingDownload(true);
+      toast.info("The A4 edition is being typeset — your download will start automatically when it's ready.", { id: "pdf" });
+      return;
+    }
+    performDownload();
+  };
+
+  useEffect(() => {
+    if (pendingDownload && pdfStatus?.ready && !downloading) {
+      performDownload();
+    }
+    // eslint-disable-next-line react-hooks/exhaustive-deps
+  }, [pdfStatus?.ready, pendingDownload]);
 
   const pdfReady = pdfStatus?.ready;
 
@@ -116,7 +131,13 @@ function App() {
             ) : (
               <DownloadSimple size={17} weight="bold" />
             )}
-            {downloading ? "Compiling…" : pdfReady ? `Download A4 PDF (${pdfStatus.pages} pp)` : "Typesetting…"}
+            {downloading
+              ? "Downloading…"
+              : pdfReady
+              ? `Download A4 PDF (${pdfStatus.pages} pp)`
+              : pendingDownload
+              ? "Typesetting… download queued"
+              : "Typesetting… click to queue download"}
           </button>
         </header>
 
@@ -128,7 +149,7 @@ function App() {
             <div className="lg:col-span-4 rise rise-3" style={{ maxHeight: "760px" }}>
               <TocPanel toc={toc} selected={selected} onSelect={handleSelect} />
             </div>
-            <div className="lg:col-span-5 rise rise-4" style={{ minHeight: "640px" }}>
+            <div id="section-preview" className="lg:col-span-5 rise rise-4" style={{ minHeight: "640px" }}>
               <PreviewPane sectionId={selected} sectionLabel={sectionLabel} />
             </div>
           </div>

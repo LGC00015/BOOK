@@ -117,8 +117,8 @@
    ]
   },
   {
-   "t": "h3",
-   "text": "Devices: Act through physical, mechanical, thermal, electrical, or software-based"
+   "t": "p",
+   "html": "<strong>Devices:</strong> Act through physical, mechanical, thermal, electrical, or software-based"
   },
   {
    "t": "p",
@@ -163,8 +163,8 @@
    ]
   },
   {
-   "t": "h3",
-   "text": "Drugs: Require absorption, distribution, metabolism, and excretion (ADME)"
+   "t": "p",
+   "html": "<strong>Drugs:</strong> Require absorption, distribution, metabolism, and excretion (ADME)"
   },
   {
    "t": "p",
@@ -363,33 +363,6 @@
    "caption": "Levels of Invasiveness"
   },
   {
-   "t": "p",
-   "html": "<strong>Description:</strong>"
-  },
-  {
-   "t": "p",
-   "html": "A horizontal gradient bar diagram showing four levels of invasiveness from left to right:"
-  },
-  {
-   "t": "p",
-   "html": "<strong>Non-invasive </strong>(light blue) → <strong>Minimally invasive </strong>(light yellow) → <strong>Invasive </strong>(light orange) →"
-  },
-  {
-   "t": "p",
-   "html": "<strong>Implantable </strong>(red)"
-  },
-  {
-   "t": "p",
-   "html": "An arrow below indicates <strong>\"Increasing Risk Level\" </strong>from left to right. Additional visual elements:"
-  },
-  {
-   "t": "ul",
-   "items": [
-    "Icons representing each category (stethoscope, catheter, syringe, pacemaker)",
-    "Risk indicators: Low → Moderate → High → Very High"
-   ]
-  },
-  {
    "t": "h3",
    "text": "Duration of Contact"
   },
@@ -480,22 +453,6 @@
    "h": 296,
    "num": "1.2",
    "caption": "Duration based classification"
-  },
-  {
-   "t": "p",
-   "html": "<strong>Description:</strong>"
-  },
-  {
-   "t": "p",
-   "html": "A three-column comparative table with visual timeline representation:"
-  },
-  {
-   "t": "p",
-   "html": "<strong>Duration Category Time Range Examples Risk Level Transient </strong>≤ 60 minutes Surgical instruments, examination gloves Low <strong>Short-term </strong>1–30 days Temporary catheters, wound dressings Moderate <strong>Long-term </strong>&gt; 30 days Pacemakers, joint implants, stents High"
-  },
-  {
-   "t": "p",
-   "html": "Arrows indicate <strong>increasing duration </strong>and <strong>increasing risk </strong>from left to right."
   },
   {
    "t": "h3",
@@ -776,50 +733,6 @@
   },
   {
    "t": "p",
-   "html": "<strong>Description:</strong>"
-  },
-  {
-   "t": "p",
-   "html": "A vertical three-tier pyramid diagram:"
-  },
-  {
-   "t": "p",
-   "html": "<strong>Top Tier (smallest): </strong>Class III — High Risk"
-  },
-  {
-   "t": "ul",
-   "items": [
-    "PMA Required",
-    "Clinical Trials Mandatory",
-    "Examples: Pacemakers, Heart Valves"
-   ]
-  },
-  {
-   "t": "p",
-   "html": "<strong>Middle Tier: </strong>Class II — Moderate Risk"
-  },
-  {
-   "t": "ul",
-   "items": [
-    "510(k) Clearance",
-    "Performance Testing",
-    "Examples: Infusion Pumps, BP Monitors"
-   ]
-  },
-  {
-   "t": "p",
-   "html": "<strong>Bottom Tier (largest): </strong>Class I — Low Risk"
-  },
-  {
-   "t": "ul",
-   "items": [
-    "General Controls",
-    "Many Exempt from 510(k)",
-    "Examples: Stethoscopes, Bandages"
-   ]
-  },
-  {
-   "t": "p",
    "html": "Arrows indicate <strong>increasing regulatory control </strong>from bottom to top."
   },
   {
@@ -836,8 +749,12 @@
    "html": "<strong>four classes </strong>with increasing conformity assessment requirements."
   },
   {
+   "t": "h3",
+   "text": "Class I — Low Risk"
+  },
+  {
    "t": "h4",
-   "text": "Class I — Low Risk Examples"
+   "text": "Examples"
   },
   {
    "t": "ul",
@@ -865,8 +782,12 @@
    "html": "<strong>Conformity Assessment: </strong>Self-declaration for basic Class I; Notified Body involvement required for Is, Im, Ir subcategories."
   },
   {
+   "t": "h3",
+   "text": "Class IIa — Low to Moderate Risk"
+  },
+  {
    "t": "h4",
-   "text": "Class IIa — Low to Moderate Risk Examples"
+   "text": "Examples"
   },
   {
    "t": "ul",
@@ -883,8 +804,12 @@
    "html": "<strong>Conformity Assessment: </strong>Notified Body involvement required for certain aspects (e.g., technical documentation review, quality management system assessment)."
   },
   {
+   "t": "h3",
+   "text": "Class IIb — Moderate to High Risk"
+  },
+  {
    "t": "h4",
-   "text": "Class IIb — Moderate to High Risk Examples"
+   "text": "Examples"
   },
   {
    "t": "ul",
@@ -902,8 +827,12 @@
    "html": "<strong>Conformity Assessment: </strong>More extensive Notified Body assessment, including clinical evaluation report review and quality management system certification."
   },
   {
+   "t": "h3",
+   "text": "Class III — High Risk"
+  },
+  {
    "t": "h4",
-   "text": "Class III — High Risk Examples"
+   "text": "Examples"
   },
   {
    "t": "ul",
@@ -940,50 +869,6 @@
   },
   {
    "t": "p",
-   "html": "<strong>Description:</strong>"
-  },
-  {
-   "t": "p",
-   "html": "A four-tier pyramid showing increasing risk and regulatory requirements:"
-  },
-  {
-   "t": "p",
-   "html": "<strong>Tier 4 (Top - smallest): </strong>Class III"
-  },
-  {
-   "t": "ul",
-   "items": [
-    "Highest Clinical Evidence",
-    "Full Notified Body Assessment",
-    "Examples: Pacemakers, Heart Valves"
-   ]
-  },
-  {
-   "t": "p",
-   "html": "<strong>Tier 3: </strong>Class IIb"
-  },
-  {
-   "t": "ul",
-   "items": [
-    "Significant Clinical Data",
-    "Notified Body Review",
-    "Examples: Ventilators, Infusion Pumps"
-   ]
-  },
-  {
-   "t": "p",
-   "html": "<strong>Tier 2: </strong>Class IIa"
-  },
-  {
-   "t": "ul",
-   "items": [
-    "Moderate Requirements",
-    "Notified Body Involvement",
-    "Examples: Hearing Aids, Dental Fillings"
-   ]
-  },
-  {
-   "t": "p",
    "html": "<strong>Tier 1 (Bottom - largest): </strong>Class I (including Is, Im, Ir)"
   },
   {
@@ -1002,8 +887,12 @@
    "html": "India's Medical Device Rules (MDR) 2017 align closely with <strong>International Medical Device Regulators Forum (IMDRF) </strong>principles and EU MDR structure."
   },
   {
+   "t": "h3",
+   "text": "Class A — Low Risk"
+  },
+  {
    "t": "h4",
-   "text": "Class A — Low Risk Examples"
+   "text": "Examples"
   },
   {
    "t": "ul",
@@ -1032,8 +921,12 @@
    ]
   },
   {
+   "t": "h3",
+   "text": "Class B — Low to Moderate Risk"
+  },
+  {
    "t": "h4",
-   "text": "Class B — Low to Moderate Risk Examples"
+   "text": "Examples"
   },
   {
    "t": "ul",
@@ -1125,49 +1018,6 @@
    "t": "ul",
    "items": [
     "Post-market surveillance plan"
-   ]
-  },
-  {
-   "t": "h4",
-   "text": "Description"
-  },
-  {
-   "t": "p",
-   "html": "A vertical ladder diagram with four rungs representing device classes:"
-  },
-  {
-   "t": "p",
-   "html": "<strong>Top Rung: Class D </strong>(Red) — High Risk"
-  },
-  {
-   "t": "ul",
-   "items": [
-    "CLA License",
-    "Full Clinical Evidence",
-    "Examples: Pacemakers, Joint Implants"
-   ]
-  },
-  {
-   "t": "p",
-   "html": "<strong>Third Rung: Class C </strong>(Orange) — Moderate-High Risk"
-  },
-  {
-   "t": "ul",
-   "items": [
-    "CLA License",
-    "Notified Body Required",
-    "Examples: Ventilators, Dialysis Machines"
-   ]
-  },
-  {
-   "t": "p",
-   "html": "<strong>Second Rung: Class B </strong>(Yellow) — Low-Moderate Risk"
-  },
-  {
-   "t": "ul",
-   "items": [
-    "SLA License + NB Audit",
-    "Examples: Syringes, Nebulizers"
    ]
   },
   {
@@ -1356,26 +1206,6 @@
    "caption": "Device Category Grid"
   },
   {
-   "t": "p",
-   "html": "<strong>Description:</strong>"
-  },
-  {
-   "t": "p",
-   "html": "A 2×4 grid with icons and brief descriptions:"
-  },
-  {
-   "t": "h3",
-   "text": "Diagnostic Monitoring Therapeutic Surgical"
-  },
-  {
-   "t": "p",
-   "html": "ECG, Glucometer Vital Signs Monitor Infusion Pump Surgical Instruments <strong>Implantable Life-Support Home-Care Rehabilitation </strong>Pacemaker Ventilator Oxygen Concentrator Prosthetics"
-  },
-  {
-   "t": "p",
-   "html": "Each cell includes representative icons and device names."
-  },
-  {
    "t": "h2",
    "text": "Cleanroom Basics",
    "num": "1.5"
@@ -1441,8 +1271,12 @@
    ]
   },
   {
+   "t": "h3",
+   "text": "Airflow Patterns"
+  },
+  {
    "t": "h4",
-   "text": "Airflow Patterns Two Primary Types"
+   "text": "Two Primary Types"
   },
   {
    "t": "ul",
@@ -1492,35 +1326,6 @@
    "caption": "Cleanroom Flow Layout"
   },
   {
-   "t": "p",
-   "html": "<strong>Description:</strong>"
-  },
-  {
-   "t": "p",
-   "html": "A schematic cleanroom layout showing sequential zones:"
-  },
-  {
-   "t": "p",
-   "html": "<strong>Entrance </strong>→ <strong>Gowning Room </strong>→ <strong>Air Shower </strong>→ <strong>ISO 8 Zone </strong>(material staging) → <strong>ISO 7 Zone </strong>(assembly) → <strong>ISO 5 Zone </strong>(critical assembly/filling) → <strong>Packaging Area</strong>"
-  },
-  {
-   "t": "p",
-   "html": "Arrows indicate personnel and material flow. Color coding shows increasing cleanliness (green"
-  },
-  {
-   "t": "p",
-   "html": "= ISO 8, blue = ISO 7, white = ISO 5). Additional elements shown:"
-  },
-  {
-   "t": "ul",
-   "items": [
-    "HEPA filter locations (ceiling-mounted)",
-    "Positive pressure indicators (+5 Pa, +10 Pa, +15 Pa)",
-    "Gowning benches",
-    "Pass-through chambers"
-   ]
-  },
-  {
    "t": "h2",
    "text": "Quality Management Systems (QMS)",
    "num": "1.6"
@@ -1567,8 +1372,12 @@
    ]
   },
   {
+   "t": "h3",
+   "text": "CAPA (Corrective and Preventive Action)"
+  },
+  {
    "t": "h4",
-   "text": "CAPA (Corrective and Preventive Action) Corrective Action"
+   "text": "Corrective Action"
   },
   {
    "t": "ul",
@@ -1651,8 +1460,13 @@
    ]
   },
   {
+   "t": "h2",
+   "text": "Risk Management (ISO 14971)",
+   "num": "1.7"
+  },
+  {
    "t": "h4",
-   "text": "Risk Management (ISO 14971) Integrated Throughout Device Lifecycle"
+   "text": "Integrated Throughout Device Lifecycle"
   },
   {
    "t": "ul",
@@ -1755,7 +1569,11 @@
   },
   {
    "t": "h3",
-   "text": "Regulatory and Compliance Roles Regulatory Affairs (RA) Associate"
+   "text": "Regulatory and Compliance Roles"
+  },
+  {
+   "t": "h4",
+   "text": "Regulatory Affairs (RA) Associate"
   },
   {
    "t": "ul",
@@ -1783,7 +1601,11 @@
   },
   {
    "t": "h3",
-   "text": "Engineering and Development Roles R&amp;D Engineer / Design Engineer"
+   "text": "Engineering and Development Roles"
+  },
+  {
+   "t": "h4",
+   "text": "R&amp;D Engineer / Design Engineer"
   },
   {
    "t": "ul",
@@ -1811,7 +1633,11 @@
   },
   {
    "t": "h3",
-   "text": "Field and Application Roles Field Service Engineer"
+   "text": "Field and Application Roles"
+  },
+  {
+   "t": "h4",
+   "text": "Field Service Engineer"
   },
   {
    "t": "ul",
@@ -1839,7 +1665,11 @@
   },
   {
    "t": "h3",
-   "text": "Business and Commercial Roles Sales and Marketing Executive"
+   "text": "Business and Commercial Roles"
+  },
+  {
+   "t": "h4",
+   "text": "Sales and Marketing Executive"
   },
   {
    "t": "ul",
@@ -1867,7 +1697,11 @@
   },
   {
    "t": "h3",
-   "text": "Emerging Roles Software Validation Specialist"
+   "text": "Emerging Roles"
+  },
+  {
+   "t": "h4",
+   "text": "Software Validation Specialist"
   },
   {
    "t": "ul",

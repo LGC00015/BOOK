@@ -58,10 +58,10 @@
    "t": "ul",
    "items": [
     "Quality Control (QC) represents the operational verification that manufactured medical devices conform to predetermined specifications and regulatory requirements. QC activities ensure:",
-    "<strong>Product safety </strong>-- devices do not pose unacceptable risks",
-    "<strong>Performance consistency </strong>-- devices function as intended",
-    "<strong>Regulatory compliance </strong>-- adherence to applicable standards",
-    "<strong>Patient protection </strong>-- prevention of defective devices reaching end-users",
+    "<strong>Product safety </strong>— devices do not pose unacceptable risks",
+    "<strong>Performance consistency </strong>— devices function as intended",
+    "<strong>Regulatory compliance </strong>— adherence to applicable standards",
+    "<strong>Patient protection </strong>— prevention of defective devices reaching end-users",
     "QC is mandated under:",
     "<strong>ISO 13485:2016 </strong>(Quality Management Systems for Medical Devices)",
     "<strong>FDA 21 CFR 820 </strong>(Quality System Regulation)",
@@ -91,14 +91,6 @@
    "h": 269,
    "num": "11.1",
    "caption": "QC Position in Manufacturing Flow"
-  },
-  {
-   "t": "h4",
-   "text": "Description"
-  },
-  {
-   "t": "p",
-   "html": "<strong>Linear flowchart showing:</strong> Raw Materials → Incoming Inspection → Processing → In- Process QC → Final Product Testing → Sterilization Validation → Packaging QC → Batch Release → Market"
   },
   {
    "t": "h2",
@@ -240,10 +232,10 @@
   {
    "t": "ul",
    "items": [
-    "<strong>Tensile strength </strong>-- maximum stress before failure (MPa or N/mm²)",
-    "<strong>Elongation at break </strong>-- percentage increase in length before rupture",
-    "<strong>Young's modulus </strong>-- material stiffness (slope of stress-strain curve)",
-    "<strong>Yield point </strong>-- stress at which permanent deformation begins"
+    "<strong>Tensile strength </strong>— maximum stress before failure (MPa or N/mm²)",
+    "<strong>Elongation at break </strong>— percentage increase in length before rupture",
+    "<strong>Young's modulus </strong>— material stiffness (slope of stress-strain curve)",
+    "<strong>Yield point </strong>— stress at which permanent deformation begins"
    ]
   },
   {
@@ -268,16 +260,13 @@
    "caption": "Tensile Testing Setup"
   },
   {
-   "t": "h4",
-   "text": "Description"
-  },
-  {
-   "t": "p",
-   "html": "Diagram showing a Universal Testing Machine with specimen clamped between upper and lower grips, load cell above, and extensometer attached to specimen. Arrows indicate direction of pulling force."
+   "t": "h2",
+   "text": "Acceptance Criteria",
+   "num": "11.6"
   },
   {
    "t": "h4",
-   "text": "Acceptance Criteria Example"
+   "text": "Example"
   },
   {
    "t": "p",
@@ -386,8 +375,12 @@
    "html": "Typically, burst pressure should be 3-5× the rated working pressure."
   },
   {
+   "t": "h3",
+   "text": "Acceptance Criteria"
+  },
+  {
    "t": "h4",
-   "text": "Acceptance Criteria Example"
+   "text": "Example"
   },
   {
    "t": "p",
@@ -467,7 +460,7 @@
   {
    "t": "ul",
    "items": [
-    "ISO 5840 (Heart valve prostheses -- fatigue)",
+    "ISO 5840 (Heart valve prostheses — fatigue)",
     "ASTM F1717 (Spinal implant constructs)",
     "ISO 14243 (Total knee joint prostheses)"
    ]
@@ -552,7 +545,7 @@
   {
    "t": "h2",
    "text": "11.4 Electrical Safety Testing (IEC 60601 Series)",
-   "num": "11.6"
+   "num": "11.7"
   },
   {
    "t": "ul",
@@ -621,9 +614,9 @@
    "t": "ul",
    "items": [
     "<strong>Types:</strong>",
-    "<strong>Earth leakage current </strong>-- current flowing through protective earth",
-    "<strong>Touch/enclosure leakage current </strong>-- current through accessible parts",
-    "<strong>Patient leakage current </strong>-- current through patient-applied parts"
+    "<strong>Earth leakage current </strong>— current flowing through protective earth",
+    "<strong>Touch/enclosure leakage current </strong>— current through accessible parts",
+    "<strong>Patient leakage current </strong>— current through patient-applied parts"
    ]
   },
   {
@@ -681,14 +674,6 @@
    "caption": "Electrical Safety Test Setup"
   },
   {
-   "t": "h4",
-   "text": "Description"
-  },
-  {
-   "t": "p",
-   "html": "Diagram showing medical device under test connected to Electrical Safety Analyzer. Connections shown for earth continuity probe, leakage current measurement circuit, and patient simulator. Display panel shows real-time measurements."
-  },
-  {
    "t": "h3",
    "text": "11.4.2 Electromagnetic Compatibility (EMC) Testing"
   },
@@ -737,7 +722,7 @@
   {
    "t": "h2",
    "text": "11.5 Chemical and Material Testing",
-   "num": "11.7"
+   "num": "11.8"
   },
   {
    "t": "ul",
@@ -858,8 +843,8 @@
   {
    "t": "ul",
    "items": [
-    "<strong>Extraction studies </strong>-- aggressive solvent extraction to identify potential leachables",
-    "<strong>Leaching studies </strong>-- simulated-use conditions to quantify actual leachables"
+    "<strong>Extraction studies </strong>— aggressive solvent extraction to identify potential leachables",
+    "<strong>Leaching studies </strong>— simulated-use conditions to quantify actual leachables"
    ]
   },
   {
@@ -979,7 +964,7 @@
   {
    "t": "h2",
    "text": "11.7 Microbiological Testing",
-   "num": "11.8"
+   "num": "11.9"
   },
   {
    "t": "ul",
@@ -1260,12 +1245,12 @@
     "<strong>Interpretation:</strong>",
     "<strong>Result </strong> <strong>Interpretation </strong> <strong>Action</strong>",
     "<strong>No growth in all containers after 14 days</strong>",
-    "<strong>PASS -- Sterile </strong> Release lot"
+    "<strong>PASS — Sterile </strong> Release lot"
    ]
   },
   {
    "t": "h3",
-   "text": "Growth in ≥ 1 container FAIL -- Non-"
+   "text": "Growth in ≥ 1 container FAIL — Non-"
   },
   {
    "t": "p",
@@ -1350,7 +1335,7 @@
   },
   {
    "t": "h3",
-   "text": "11.7.4 Bacterial Endotoxin Testing (BET) -- LAL Test"
+   "text": "11.7.4 Bacterial Endotoxin Testing (BET) — LAL Test"
   },
   {
    "t": "ul",
@@ -1870,8 +1855,8 @@
    ]
   },
   {
-   "t": "h3",
-   "text": "Method 2A: Overkill Approach (ISO 11137-2)"
+   "t": "p",
+   "html": "<strong>Method 2A:</strong> Overkill Approach (ISO 11137-2)"
   },
   {
    "t": "ul",
@@ -2150,7 +2135,7 @@
   {
    "t": "h2",
    "text": "11.9 Packaging and Seal Integrity Testing",
-   "num": "11.9"
+   "num": "11.10"
   },
   {
    "t": "ul",
@@ -2615,9 +2600,8 @@
    ]
   },
   {
-   "t": "h2",
-   "text": "11.10 Sampling Plans and Acceptance Criteria",
-   "num": "11.10"
+   "t": "h3",
+   "text": "11.10 Sampling Plans and Acceptance Criteria"
   },
   {
    "t": "ul",
@@ -2676,8 +2660,12 @@
    ]
   },
   {
+   "t": "h3",
+   "text": "Sampling"
+  },
+  {
    "t": "h4",
-   "text": "Sampling Example"
+   "text": "Example"
   },
   {
    "t": "ul",
@@ -3375,10 +3363,6 @@
    "html": "tension"
   },
   {
-   "t": "h3",
-   "text": "Term Definition"
-  },
-  {
    "t": "ul",
    "items": [
     "<strong>Cpk </strong> Process capability index measuring ability to meet"
@@ -3391,7 +3375,7 @@
   {
    "t": "ul",
    "items": [
-    "<strong>DHR </strong> Device History Record -- complete production and QC"
+    "<strong>DHR </strong> Device History Record — complete production and QC"
    ]
   },
   {
@@ -3401,7 +3385,7 @@
   {
    "t": "ul",
    "items": [
-    "<strong>CAPA </strong> Corrective and Preventive Action -- systematic approach to"
+    "<strong>CAPA </strong> Corrective and Preventive Action — systematic approach to"
    ]
   },
   {
@@ -3423,16 +3407,44 @@
  ],
  "glossary": [
   [
-   "Bioburden",
-   "Population of viable microorganisms on a product before sterilization"
+   "AQL",
+   "Acceptable Quality Limit — maximum tolerable defect percentage in a lot."
   ],
   [
-   "AQL",
-   "Acceptable Quality Limit -- maximum tolerable defect percentage in a lot"
+   "Bioburden",
+   "Population of viable microorganisms on a product before sterilization."
+  ],
+  [
+   "Burst Pressure",
+   "Maximum internal pressure before device rupture."
+  ],
+  [
+   "CAPA",
+   "Corrective and Preventive Action — systematic approach to eliminate problem causes."
+  ],
+  [
+   "Cpk",
+   "Process capability index measuring ability to meet specifications."
+  ],
+  [
+   "DHR",
+   "Device History Record — complete production and QC documentation for a specific lot."
+  ],
+  [
+   "Fatigue Testing",
+   "Cyclic loading test simulating long-term device use."
+  ],
+  [
+   "Leakage Current",
+   "Unwanted electrical current flowing from device to patient or ground."
   ],
   [
    "SAL",
-   "Sterility Assurance Level -- probability of viable microorganism presence (typically 10⁻⁶)"
+   "Sterility Assurance Level — probability of viable microorganism presence (typically 10⁻⁶)."
+  ],
+  [
+   "Tensile Strength",
+   "Maximum stress a material withstands before breaking under tension."
   ]
  ],
  "recap_intro": "",
@@ -3450,67 +3462,67 @@
  "references": [
   {
    "group": "International Standards",
-   "text": "ISO 13485:2016 -- Medical devices -- Quality management systems"
+   "text": "ISO 13485:2016 — Medical devices — Quality management systems"
   },
   {
    "group": "International Standards",
-   "text": "ISO 11135:2014 -- Sterilization of health-care products -- Ethylene oxide"
+   "text": "ISO 11135:2014 — Sterilization of health-care products — Ethylene oxide"
   },
   {
    "group": "International Standards",
-   "text": "ISO 11137 series -- Sterilization of health care products -- Radiation"
+   "text": "ISO 11137 series — Sterilization of health care products — Radiation"
   },
   {
    "group": "International Standards",
-   "text": "ISO 17665 series -- Sterilization of health care products -- Moist heat"
+   "text": "ISO 17665 series — Sterilization of health care products — Moist heat"
   },
   {
    "group": "International Standards",
-   "text": "ISO 11737-1:2018 -- Microbial methods -- Enumeration of microorganisms"
+   "text": "ISO 11737-1:2018 — Microbial methods — Enumeration of microorganisms"
   },
   {
    "group": "International Standards",
-   "text": "ISO 10993 series -- Biological evaluation of medical devices"
+   "text": "ISO 10993 series — Biological evaluation of medical devices"
   },
   {
    "group": "International Standards",
-   "text": "IEC 60601-1:2012 -- Medical electrical equipment -- General requirements for safety"
+   "text": "IEC 60601-1:2012 — Medical electrical equipment — General requirements for safety"
   },
   {
    "group": "International Standards",
-   "text": "ISO 2859-1:1999 -- Sampling procedures for inspection by attributes"
+   "text": "ISO 2859-1:1999 — Sampling procedures for inspection by attributes"
   },
   {
    "group": "ASTM Standards",
-   "text": "ASTM F88 -- Standard test method for seal strength of flexible barrier materials"
+   "text": "ASTM F88 — Standard test method for seal strength of flexible barrier materials"
   },
   {
    "group": "ASTM Standards",
-   "text": "ASTM F1980 -- Standard guide for accelerated aging of sterile barrier systems"
+   "text": "ASTM F1980 — Standard guide for accelerated aging of sterile barrier systems"
   },
   {
    "group": "ASTM Standards",
-   "text": "ASTM F2054 -- Standard test method for burst testing of flexible package seals"
+   "text": "ASTM F2054 — Standard test method for burst testing of flexible package seals"
   },
   {
    "group": "ASTM Standards",
-   "text": "ASTM D638 -- Standard test method for tensile properties of plastics"
+   "text": "ASTM D638 — Standard test method for tensile properties of plastics"
   },
   {
    "group": "ASTM Standards",
-   "text": "ASTM D4169 -- Standard practice for performance testing of shipping containers"
+   "text": "ASTM D4169 — Standard practice for performance testing of shipping containers"
   },
   {
    "group": "Regulatory Guidance",
-   "text": "FDA 21 CFR Part 820 -- Quality System Regulation"
+   "text": "FDA 21 CFR Part 820 — Quality System Regulation"
   },
   {
    "group": "Regulatory Guidance",
-   "text": "EU MDR 2017/745 -- Medical Device Regulation"
+   "text": "EU MDR 2017/745 — Medical Device Regulation"
   },
   {
    "group": "Regulatory Guidance",
-   "text": "India MDR 2017 -- Medical Devices Rules"
+   "text": "India MDR 2017 — Medical Devices Rules"
   },
   {
    "group": "Regulatory Guidance",

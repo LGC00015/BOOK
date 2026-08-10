@@ -96,14 +96,6 @@
    "caption": "Evolution of Software in Healthcare"
   },
   {
-   "t": "p",
-   "html": "<strong>Description:</strong>"
-  },
-  {
-   "t": "p",
-   "html": "Timeline diagram showing the progression from standalone medical devices (1980s) → embedded software (1990s) → SaMD (2010s) → AI/ML devices (2020s). Each phase includes representative examples and regulatory milestones."
-  },
-  {
    "t": "h2",
    "text": "What is Software as a Medical Device (SaMD)?",
    "num": "13.2"
@@ -123,9 +115,9 @@
   {
    "t": "ul",
    "items": [
-    "<strong>Functionality independence </strong>-- Operates autonomously without requiring specific hardware",
-    "<strong>Medical purpose </strong>-- Designed for diagnosis, prevention, monitoring, treatment, or alleviation of disease",
-    "<strong>Standalone nature </strong>-- Not integral to the operation of a medical device"
+    "<strong>Functionality independence </strong>— Operates autonomously without requiring specific hardware",
+    "<strong>Medical purpose </strong>— Designed for diagnosis, prevention, monitoring, treatment, or alleviation of disease",
+    "<strong>Standalone nature </strong>— Not integral to the operation of a medical device"
    ]
   },
   {
@@ -166,14 +158,6 @@
    "caption": "SaMD Concept Framework"
   },
   {
-   "t": "p",
-   "html": "<strong>Description:</strong>"
-  },
-  {
-   "t": "p",
-   "html": "Circular diagram with \"SaMD\" at center, surrounded by four quadrants showing: Medical Purpose (diagnosis/treatment), Independence (cloud/mobile platform), Regulatory Status (Class IIa-III), and Data Processing (AI/ML algorithms)."
-  },
-  {
    "t": "h2",
    "text": "SaMD versus SiMD (Software in a Medical Device)",
    "num": "13.3"
@@ -184,7 +168,7 @@
   },
   {
    "t": "p",
-   "html": "<strong>Table 13.1 -- Comparison of SaMD and SiMD</strong>"
+   "html": "<strong>Table 13.1 — Comparison of SaMD and SiMD</strong>"
   },
   {
    "t": "p",
@@ -204,7 +188,7 @@
   },
   {
    "t": "p",
-   "html": "None -- operates on general-purpose computing platforms"
+   "html": "None — operates on general-purpose computing platforms"
   },
   {
    "t": "p",
@@ -288,11 +272,11 @@
    "blocks": [
     {
      "t": "p",
-     "html": "<strong>Scenario 1 -- SiMD: </strong>A cardiac pacemaker contains embedded software that controls pacing algorithms, monitors heart rhythm, and adjusts therapy delivery. This software is <strong>SiMD </strong>because it is integral to the hardware device and cannot function independently."
+     "html": "<strong>Scenario 1 — SiMD: </strong>A cardiac pacemaker contains embedded software that controls pacing algorithms, monitors heart rhythm, and adjusts therapy delivery. This software is <strong>SiMD </strong>because it is integral to the hardware device and cannot function independently."
     },
     {
      "t": "p",
-     "html": "<strong>Scenario 2 -- SaMD: </strong>A smartphone application analyzes ECG data uploaded from any compatible wearable device and provides arrhythmia detection alerts. This application is <strong>SaMD </strong>because it performs medical analysis independently of specific hardware."
+     "html": "<strong>Scenario 2 — SaMD: </strong>A smartphone application analyzes ECG data uploaded from any compatible wearable device and provides arrhythmia detection alerts. This application is <strong>SaMD </strong>because it performs medical analysis independently of specific hardware."
     }
    ]
   },
@@ -379,14 +363,6 @@
    "caption": "Medical Software Classification Tree"
   },
   {
-   "t": "p",
-   "html": "<strong>Description:</strong>"
-  },
-  {
-   "t": "p",
-   "html": "Hierarchical tree diagram showing Medical Software branching into five main categories (Diagnostic, Monitoring, Therapeutic, Predictive, Companion), with specific examples under each branch and risk level indicators (low/moderate/high)."
-  },
-  {
    "t": "h2",
    "text": "Global Regulatory Definitions and Frameworks",
    "num": "13.5"
@@ -397,7 +373,7 @@
   },
   {
    "t": "h3",
-   "text": "India -- CDSCO Framework"
+   "text": "India — CDSCO Framework"
   },
   {
    "t": "p",
@@ -422,7 +398,7 @@
   },
   {
    "t": "h4",
-   "text": "United States -- FDA Framework FDA Definition (based on IMDRF)"
+   "text": "United States — FDA Framework FDA Definition (based on IMDRF)"
   },
   {
    "t": "p",
@@ -455,7 +431,7 @@
   },
   {
    "t": "h4",
-   "text": "European Union -- EU MDR Framework EU MDR 2017/745, Rule 11"
+   "text": "European Union — EU MDR Framework EU MDR 2017/745, Rule 11"
   },
   {
    "t": "p",
@@ -475,7 +451,7 @@
   },
   {
    "t": "h3",
-   "text": "International Harmonization -- IMDRF"
+   "text": "International Harmonization — IMDRF"
   },
   {
    "t": "p",
@@ -499,14 +475,6 @@
    "caption": "Global SaMD Regulatory Framework Alignment"
   },
   {
-   "t": "p",
-   "html": "<strong>Description:</strong>"
-  },
-  {
-   "t": "p",
-   "html": "Venn diagram showing overlap between IMDRF (center), FDA, EU MDR, and CDSCO frameworks, with common elements (risk-based classification, clinical evaluation, QMS) in the overlapping sections and region-specific requirements in non-overlapping areas."
-  },
-  {
    "t": "h2",
    "text": "Risk-Based Classification of SaMD",
    "num": "13.6"
@@ -523,31 +491,31 @@
   },
   {
    "t": "h4",
-   "text": "Dimension 1 -- Significance of Information Provided"
+   "text": "Dimension 1 — Significance of Information Provided"
   },
   {
    "t": "ul",
    "items": [
-    "<strong>Treat or Diagnose </strong>-- Information drives clinical management",
-    "<strong>Drive Clinical Management </strong>-- Information aids in diagnosis or treatment",
-    "<strong>Inform Clinical Management </strong>-- Information provides options"
+    "<strong>Treat or Diagnose </strong>— Information drives clinical management",
+    "<strong>Drive Clinical Management </strong>— Information aids in diagnosis or treatment",
+    "<strong>Inform Clinical Management </strong>— Information provides options"
    ]
   },
   {
    "t": "h4",
-   "text": "Dimension 2 -- Healthcare Situation or Condition"
+   "text": "Dimension 2 — Healthcare Situation or Condition"
   },
   {
    "t": "ul",
    "items": [
-    "<strong>Critical </strong>-- Where accurate information is vital to avoid death or serious deterioration",
-    "<strong>Serious </strong>-- Where accurate information is important to avoid unnecessary intervention or treatment",
-    "<strong>Non-Serious </strong>-- Where inaccurate information causes inconvenience but no serious consequences"
+    "<strong>Critical </strong>— Where accurate information is vital to avoid death or serious deterioration",
+    "<strong>Serious </strong>— Where accurate information is important to avoid unnecessary intervention or treatment",
+    "<strong>Non-Serious </strong>— Where inaccurate information causes inconvenience but no serious consequences"
    ]
   },
   {
    "t": "h2",
-   "text": "Table 13.2 -- IMDRF SaMD Risk Matrix",
+   "text": "Table 13.2 — IMDRF SaMD Risk Matrix",
    "num": "13.7"
   },
   {
@@ -557,7 +525,7 @@
   {
    "t": "table",
    "num": "13.2",
-   "caption": "Table 13.2 -- IMDRF SaMD Risk Matrix",
+   "caption": "Table 13.2 — IMDRF SaMD Risk Matrix",
    "rows": [
     [
      "Critical",
@@ -744,10 +712,10 @@
   {
    "t": "ul",
    "items": [
-    "<strong>Learning capability </strong>-- Algorithms improve with exposure to data",
-    "<strong>Adaptive algorithms </strong>-- Can modify behavior based on new information",
-    "<strong>Pattern recognition </strong>-- Identify complex relationships in medical data",
-    "<strong>Predictive analytics </strong>-- Forecast clinical outcomes or disease progression"
+    "<strong>Learning capability </strong>— Algorithms improve with exposure to data",
+    "<strong>Adaptive algorithms </strong>— Can modify behavior based on new information",
+    "<strong>Pattern recognition </strong>— Identify complex relationships in medical data",
+    "<strong>Predictive analytics </strong>— Forecast clinical outcomes or disease progression"
    ]
   },
   {
@@ -995,8 +963,8 @@
   {
    "t": "ul",
    "items": [
-    "<strong>Class B or C </strong>-- Most diagnostic AI applications",
-    "<strong>Class D </strong>-- Life-critical AI systems (e.g., AI triage for cardiac arrest, automated insulin dosing)"
+    "<strong>Class B or C </strong>— Most diagnostic AI applications",
+    "<strong>Class D </strong>— Life-critical AI systems (e.g., AI triage for cardiac arrest, automated insulin dosing)"
    ]
   },
   {
@@ -1433,16 +1401,8 @@
    "caption": "Medical Software Cybersecurity Framework"
   },
   {
-   "t": "p",
-   "html": "<strong>Description:</strong>"
-  },
-  {
-   "t": "p",
-   "html": "<strong>Layered security architecture diagram showing:</strong> Physical Layer (hardware security), Network Layer (firewalls, encryption), Application Layer (authentication, authorization), Data Layer (encryption, integrity), and Management Layer (monitoring, incident response). Each layer shows specific security controls and their interactions."
-  },
-  {
    "t": "h2",
-   "text": "Software Development Lifecycle (SDLC) -- IEC 62304",
+   "text": "Software Development Lifecycle (SDLC) — IEC 62304",
    "num": "13.11"
   },
   {
@@ -1455,7 +1415,7 @@
   },
   {
    "t": "p",
-   "html": "<strong>Standard Title: </strong>Medical device software -- Software life cycle processes"
+   "html": "<strong>Standard Title: </strong>Medical device software — Software life cycle processes"
   },
   {
    "t": "h4",
@@ -1472,9 +1432,9 @@
   {
    "t": "ul",
    "items": [
-    "<strong>Class A </strong>-- No injury or damage to health possible",
-    "<strong>Class B </strong>-- Non-serious injury possible",
-    "<strong>Class C </strong>-- Death or serious injury possible"
+    "<strong>Class A </strong>— No injury or damage to health possible",
+    "<strong>Class B </strong>— Non-serious injury possible",
+    "<strong>Class C </strong>— Death or serious injury possible"
    ]
   },
   {
@@ -1766,14 +1726,6 @@
    "caption": "IEC 62304 Software Lifecycle V-Model"
   },
   {
-   "t": "p",
-   "html": "<strong>Description:</strong>"
-  },
-  {
-   "t": "p",
-   "html": "V-shaped diagram showing left side (Development): Planning → Requirements → Architecture → Detailed Design → Implementation, connecting across to right side (Testing): Unit Testing → Integration Testing → System Testing → Acceptance Testing → Release. Risk Management and Configuration Management shown as continuous processes spanning entire lifecycle."
-  },
-  {
    "t": "h2",
    "text": "Software Verification and Validation (V&amp;V)",
    "num": "13.12"
@@ -1939,14 +1891,6 @@
    "caption": "Software V&V Traceability Matrix"
   },
   {
-   "t": "p",
-   "html": "<strong>Description:</strong>"
-  },
-  {
-   "t": "p",
-   "html": "Matrix showing vertical columns (User Needs, System Requirements, Software Requirements, Design Specifications, Code Units, Unit Tests, Integration Tests, System Tests, Validation Tests) with horizontal rows showing bidirectional traceability arrows ensuring each requirement traces through development and testing phases."
-  },
-  {
    "t": "h3",
    "text": "Key Documentation Requirements"
   },
@@ -2078,20 +2022,12 @@
    "caption": "SaMD Documentation Pyramid"
   },
   {
-   "t": "p",
-   "html": "<strong>Description:</strong>"
-  },
-  {
-   "t": "p",
-   "html": "Hierarchical pyramid showing documentation levels from base to apex: Quality Management System (ISO 13485) → Software Development Plan → Requirements and Design Specifications → Risk Management File → Verification and Validation Reports → Clinical Evaluation → Regulatory Submission Dossier. Each level shows key documents and their relationships."
-  },
-  {
    "t": "h3",
    "text": "Real-World Examples of SaMD and AI Devices"
   },
   {
    "t": "p",
-   "html": "<strong>Example 1: IDx-DR -- Autonomous AI Diabetic Retinopathy Detection</strong>"
+   "html": "<strong>Example 1: IDx-DR — Autonomous AI Diabetic Retinopathy Detection</strong>"
   },
   {
    "t": "p",
@@ -2110,8 +2046,8 @@
    "html": "<strong>Clinical Evidence: </strong>Pivotal trial with 900 patients; sensitivity 87.4%, specificity 89.5%"
   },
   {
-   "t": "h3",
-   "text": "Example 2: Apple Watch ECG Application"
+   "t": "p",
+   "html": "<strong>Example 2:</strong> Apple Watch ECG Application"
   },
   {
    "t": "p",
@@ -2122,16 +2058,16 @@
    "html": "<strong>Function: </strong>Records single-lead ECG and identifies atrial fibrillation <strong>Innovation: </strong>Consumer-accessible cardiac monitoring <strong>Limitations: </strong>Not for users with known arrhythmias; not continuous monitoring"
   },
   {
-   "t": "h3",
-   "text": "Example 3: Aidoc -- AI-Based CT Analysis for Stroke"
+   "t": "p",
+   "html": "<strong>Example 3:</strong> Aidoc — AI-Based CT Analysis for Stroke"
   },
   {
    "t": "p",
    "html": "<strong>Manufacturer: </strong>Aidoc Medical <strong>Regulatory Status: </strong>FDA cleared, CE marked <strong>Function: </strong>Analyzes non-contrast head CT scans to detect intracranial hemorrhage <strong>Clinical Application: </strong>Emergency triage and workflow prioritization <strong>Impact: </strong>Reduces time to treatment for stroke patients"
   },
   {
-   "t": "h3",
-   "text": "Example 4: Viz.ai -- Stroke Detection and Care Coordination"
+   "t": "p",
+   "html": "<strong>Example 4:</strong> Viz.ai — Stroke Detection and Care Coordination"
   },
   {
    "t": "p",
@@ -2142,8 +2078,8 @@
    "html": "<strong>FDA Status: </strong>510(k) cleared <strong>Function: </strong>Identifies large vessel occlusion strokes and alerts stroke team <strong>Integration: </strong>Direct integration with hospital stroke protocols <strong>Outcome: </strong>Significantly reduces time to thrombectomy"
   },
   {
-   "t": "h3",
-   "text": "Example 5: Butterfly iQ -- Handheld Ultrasound with AI"
+   "t": "p",
+   "html": "<strong>Example 5:</strong> Butterfly iQ — Handheld Ultrasound with AI"
   },
   {
    "t": "p",
@@ -2160,14 +2096,6 @@
    "h": 264,
    "num": "13.12",
    "caption": "SaMD/AI Device Market Landscape"
-  },
-  {
-   "t": "p",
-   "html": "<strong>Description:</strong>"
-  },
-  {
-   "t": "p",
-   "html": "Market segmentation chart showing AI/ML medical devices by clinical specialty (Radiology 45%, Cardiology 15%, Pathology 12%, Ophthalmology 8%, Oncology 10%, Other 10%), with examples of approved devices in each category and growth projections (2024-2030)."
   },
   {
    "t": "h3",
@@ -2334,14 +2262,6 @@
    "h": 264,
    "num": "13.13",
    "caption": "Ethical Framework for AI Medical Devices"
-  },
-  {
-   "t": "p",
-   "html": "<strong>Description:</strong>"
-  },
-  {
-   "t": "p",
-   "html": "Hexagonal framework diagram with six interconnected principles: Fairness and Equity (center), surrounded by Transparency, Accountability, Privacy and Security, Clinical Validation, and Human Oversight. Each principle connects to specific requirements and implementation strategies."
   },
   {
    "t": "box",
@@ -2518,14 +2438,6 @@
    "h": 248,
    "num": "13.14",
    "caption": "Algorithm Bias Prevention Framework"
-  },
-  {
-   "t": "p",
-   "html": "<strong>Description:</strong>"
-  },
-  {
-   "t": "p",
-   "html": "<strong>Flowchart showing bias prevention process:</strong> Dataset Composition Analysis → Diversity Assessment → Balanced Sampling Strategy → Representative Training → Subgroup Validation → Disparate Impact Testing → Continuous Monitoring → Bias Mitigation → Documentation and Transparency. Each step includes key considerations and quality gates."
   },
   {
    "t": "box",
@@ -2768,19 +2680,19 @@
  "references": [
   {
    "group": "International Standards",
-   "text": "IEC 62304:2006+AMD1:2015 -- Medical device software -- Software life cycle processes"
+   "text": "IEC 62304:2006+AMD1:2015 — Medical device software — Software life cycle processes"
   },
   {
    "group": "International Standards",
-   "text": "ISO 14971:2019 -- Medical devices -- Application of risk management to medical devices"
+   "text": "ISO 14971:2019 — Medical devices — Application of risk management to medical devices"
   },
   {
    "group": "International Standards",
-   "text": "IEC 62366-1:2015 -- Medical devices -- Part 1: Application of usability engineering to medical devices"
+   "text": "IEC 62366-1:2015 — Medical devices — Part 1: Application of usability engineering to medical devices"
   },
   {
    "group": "International Standards",
-   "text": "ISO 13485:2016 -- Medical devices -- Quality management systems -- Requirements for regulatory purposes"
+   "text": "ISO 13485:2016 — Medical devices — Quality management systems — Requirements for regulatory purposes"
   },
   {
    "group": "International Standards",
@@ -2788,19 +2700,19 @@
   },
   {
    "group": "International Standards",
-   "text": "IMDRF/SaMD WG/N10 FINAL:2013 -- Software as a Medical Device (SaMD): Key Definitions"
+   "text": "IMDRF/SaMD WG/N10 FINAL:2013 — Software as a Medical Device (SaMD): Key Definitions"
   },
   {
    "group": "International Standards",
-   "text": "IMDRF/SaMD WG/N12 FINAL:2014 -- Software as a Medical Device: Possible Framework for Risk Categorization and Corresponding Considerations"
+   "text": "IMDRF/SaMD WG/N12 FINAL:2014 — Software as a Medical Device: Possible Framework for Risk Categorization and Corresponding Considerations"
   },
   {
    "group": "International Standards",
-   "text": "IMDRF/SaMD WG/N41 FINAL:2017 -- Software as a Medical Device: Clinical Evaluation"
+   "text": "IMDRF/SaMD WG/N41 FINAL:2017 — Software as a Medical Device: Clinical Evaluation"
   },
   {
    "group": "International Standards",
-   "text": "IMDRF/SaMD WG/N23 FINAL:2015 -- Software as a Medical Device (SaMD): Quality Management System"
+   "text": "IMDRF/SaMD WG/N23 FINAL:2015 — Software as a Medical Device (SaMD): Quality Management System"
   },
   {
    "group": "International Standards",
@@ -2808,23 +2720,23 @@
   },
   {
    "group": "International Standards",
-   "text": "FDA (2022) -- Policy for Device Software Functions and Mobile Medical Applications"
+   "text": "FDA (2022) — Policy for Device Software Functions and Mobile Medical Applications"
   },
   {
    "group": "International Standards",
-   "text": "FDA (2021) -- Artificial Intelligence/Machine Learning (AI/ML)-Based Software as a Medical Device (SaMD) Action Plan"
+   "text": "FDA (2021) — Artificial Intelligence/Machine Learning (AI/ML)-Based Software as a Medical Device (SaMD) Action Plan"
   },
   {
    "group": "International Standards",
-   "text": "FDA (2019) -- Content of Premarket Submissions for Management of Cybersecurity in Medical Devices"
+   "text": "FDA (2019) — Content of Premarket Submissions for Management of Cybersecurity in Medical Devices"
   },
   {
    "group": "International Standards",
-   "text": "FDA (2021) -- Marketing Submission Recommendations for a Predetermined Change Control Plan for Artificial Intelligence/Machine Learning (AI/ML)-Enabled Device Software Functions"
+   "text": "FDA (2021) — Marketing Submission Recommendations for a Predetermined Change Control Plan for Artificial Intelligence/Machine Learning (AI/ML)-Enabled Device Software Functions"
   },
   {
    "group": "International Standards",
-   "text": "FDA (2021) -- Good Machine Learning Practice for Medical Device Development: Guiding Principles"
+   "text": "FDA (2021) — Good Machine Learning Practice for Medical Device Development: Guiding Principles"
   },
   {
    "group": "International Standards",
@@ -2832,15 +2744,15 @@
   },
   {
    "group": "International Standards",
-   "text": "Regulation (EU) 2017/745 -- Medical Devices Regulation (MDR)"
+   "text": "Regulation (EU) 2017/745 — Medical Devices Regulation (MDR)"
   },
   {
    "group": "International Standards",
-   "text": "MDCG 2019-11 -- Guidance on Qualification and Classification of Software in Regulation (EU) 2017/745 – MDR and Regulation (EU) 2017/746 – IVDR"
+   "text": "MDCG 2019-11 — Guidance on Qualification and Classification of Software in Regulation (EU) 2017/745 – MDR and Regulation (EU) 2017/746 – IVDR"
   },
   {
    "group": "International Standards",
-   "text": "MDCG 2020-1 -- Guidance on Clinical Evaluation (MDR)/Performance Evaluation (IVDR) of Medical Device Software"
+   "text": "MDCG 2020-1 — Guidance on Clinical Evaluation (MDR)/Performance Evaluation (IVDR) of Medical Device Software"
   },
   {
    "group": "International Standards",
@@ -2848,15 +2760,15 @@
   },
   {
    "group": "International Standards",
-   "text": "Medical Device Rules, 2017 (as amended 2020) -- Central Drugs Standard Control Organisation (CDSCO)"
+   "text": "Medical Device Rules, 2017 (as amended 2020) — Central Drugs Standard Control Organisation (CDSCO)"
   },
   {
    "group": "International Standards",
-   "text": "Digital Information Security in Healthcare Act (DISHA) -- Draft legislation on health data protection"
+   "text": "Digital Information Security in Healthcare Act (DISHA) — Draft legislation on health data protection"
   },
   {
    "group": "International Standards",
-   "text": "Ayushman Bharat Digital Mission (ABDM) -- Guidelines for digital health ecosystem"
+   "text": "Ayushman Bharat Digital Mission (ABDM) — Guidelines for digital health ecosystem"
   },
   {
    "group": "International Standards",
@@ -2864,15 +2776,15 @@
   },
   {
    "group": "International Standards",
-   "text": "WHO (2021) -- Ethics and Governance of Artificial Intelligence for Health"
+   "text": "WHO (2021) — Ethics and Governance of Artificial Intelligence for Health"
   },
   {
    "group": "International Standards",
-   "text": "IEEE P2089 -- Standard for an Age Appropriate Digital Services Framework Based on the 5Rights Principles for Children"
+   "text": "IEEE P2089 — Standard for an Age Appropriate Digital Services Framework Based on the 5Rights Principles for Children"
   },
   {
    "group": "International Standards",
-   "text": "NIST Special Publication 1270 -- Towards a Standard for Identifying and Managing Bias in Artificial Intelligence"
+   "text": "NIST Special Publication 1270 — Towards a Standard for Identifying and Managing Bias in Artificial Intelligence"
   }
  ]
 }

@@ -141,10 +141,6 @@
    "html": "<strong>Reverse flow</strong>: Post-market surveillance feedback, Returns, Recalls (shown as dotted lines flowing back)"
   },
   {
-   "t": "p",
-   "html": "<strong>Color coding:</strong> Green for manufacturing, Blue for logistics, Orange for healthcare delivery, Red for feedback loops."
-  },
-  {
    "t": "h3",
    "text": "Import Requirements for Medical Devices in India"
   },

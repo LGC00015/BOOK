@@ -66,7 +66,7 @@ async def book_toc():
 
 @api_router.get("/book/preview/{section_id}", response_class=HTMLResponse)
 async def preview(section_id: str):
-    html = assembler.preview_html(section_id)
+    html = await run_in_threadpool(assembler.preview_html, section_id)
     if html is None:
         raise HTTPException(status_code=404, detail="Unknown section id")
     return HTMLResponse(html)

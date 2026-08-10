@@ -101,18 +101,6 @@
    "caption": "Medical Device Industry Ecosystem Map"
   },
   {
-   "t": "p",
-   "html": "<strong>Description:</strong>"
-  },
-  {
-   "t": "p",
-   "html": "A circular diagram with \"Medical Device Industry\" at the center, surrounded by six interconnected sectors: Manufacturing (represented by factory icon), Regulatory (government building icon), QA/QC (microscope icon), Distribution (logistics truck icon), Healthcare (hospital icon), and Servicing (tools icon). Bidirectional arrows indicate continuous interaction among all sectors."
-  },
-  {
-   "t": "p",
-   "html": "<strong>Industry integration programme: </strong>Each sector depends on the others for information flow, quality data, and compliance documentation. For example, post-market surveillance data from servicing feeds back into manufacturing process improvements and regulatory reporting."
-  },
-  {
    "t": "h2",
    "text": "Manufacturing Sector",
    "num": "2.1"
@@ -210,22 +198,6 @@
    "h": 198,
    "num": "2.2",
    "caption": "Device Manufacturing Process Flowchart"
-  },
-  {
-   "t": "p",
-   "html": "<strong>Description:</strong>"
-  },
-  {
-   "t": "p",
-   "html": "A horizontal flowchart with sequential stages connected by arrows:"
-  },
-  {
-   "t": "p",
-   "html": "Concept Development → Design &amp; Engineering → Prototype Development → Design Verification → Design Validation → Process Validation → Batch Manufacturing → In- Process Quality Control → Packaging → Final Release Testing → Market Distribution"
-  },
-  {
-   "t": "p",
-   "html": "<strong>Each stage includes representative icons:</strong> lightbulb (concept), CAD drawing (design), 3D printer (prototype), test tubes (testing), assembly line (manufacturing), box (packaging), checkmark (release)."
   },
   {
    "t": "h4",
@@ -508,38 +480,6 @@
    "h": 321,
    "num": "2.3",
    "caption": "Medical Device Testing Laboratory Structure"
-  },
-  {
-   "t": "p",
-   "html": "<strong>Description:</strong>"
-  },
-  {
-   "t": "p",
-   "html": "A block diagram showing specialized laboratory sections:"
-  },
-  {
-   "t": "p",
-   "html": "<strong>Central Laboratory Building </strong>containing:"
-  },
-  {
-   "t": "p",
-   "html": "<strong>Electrical Safety Lab: </strong>Oscilloscopes, safety analyzers, leakage current testers"
-  },
-  {
-   "t": "p",
-   "html": "<strong>Mechanical Testing Lab: </strong>Universal testing machines, fatigue testers, environmental chambers"
-  },
-  {
-   "t": "p",
-   "html": "<strong>Microbiology Lab: </strong>Incubators, laminar flow hoods, autoclave, bioburden testing equipment"
-  },
-  {
-   "t": "p",
-   "html": "<strong>Biocompatibility Lab: </strong>Cell culture facilities, toxicity testing equipment, tissue sample preparation"
-  },
-  {
-   "t": "p",
-   "html": "<strong>Chemical Analysis Lab: </strong>FTIR, GC-MS, HPLC, elemental analysis instruments"
   },
   {
    "t": "p",
@@ -876,22 +816,6 @@
    "h": 366,
    "num": "2.4",
    "caption": "Healthcare Device Utilization Pathway"
-  },
-  {
-   "t": "p",
-   "html": "<strong>Description:</strong>"
-  },
-  {
-   "t": "p",
-   "html": "A flowchart showing device journey through healthcare:"
-  },
-  {
-   "t": "p",
-   "html": "Manufacturer → Distributor → Hospital/Clinic Procurement → Biomedical Engineering Department (receipt, inspection, installation) → Clinical Department (patient use) → Maintenance/Calibration (periodic) → Decommissioning/Disposal (end-of-life)"
-  },
-  {
-   "t": "p",
-   "html": "Bidirectional feedback arrows connect clinical use back to manufacturer for post-market surveillance data, and maintenance data feeds into procurement decisions."
   },
   {
    "t": "h2",

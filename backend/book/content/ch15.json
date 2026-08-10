@@ -94,7 +94,7 @@
   {
    "t": "ul",
    "items": [
-    "<strong>ISO 13485:2016 </strong>(Clause 8.2.1 -- Feedback)",
+    "<strong>ISO 13485:2016 </strong>(Clause 8.2.1 — Feedback)",
     "<strong>CDSCO MDR 2017 </strong>(Schedule III, Part XIII)",
     "<strong>FDA 21 CFR 820 </strong>(Quality System Regulation)",
     "<strong>EU MDR 2017/745 </strong>(Article 83-92, Annex III)"
@@ -107,14 +107,6 @@
    "h": 360,
    "num": "15.1",
    "caption": "Post-Market Surveillance Lifecycle"
-  },
-  {
-   "t": "p",
-   "html": "<strong>Description:</strong>"
-  },
-  {
-   "t": "p",
-   "html": "Circular diagram illustrating the continuous PMS cycle: Market Use → Data Collection → Complaint Investigation → Root Cause Analysis → CAPA Implementation → Regulatory Reporting → Risk Management Update → Market Monitoring (cycle repeats). Arrows indicate continuous flow with feedback loops connecting each stage."
   },
   {
    "t": "h2",
@@ -134,13 +126,13 @@
   {
    "t": "ul",
    "items": [
-    "<strong>Detect safety signals </strong>-- Identify patterns suggesting increased risk",
-    "<strong>Monitor device performance </strong>-- Verify continued effectiveness in real-world settings",
-    "<strong>Identify emerging risks </strong>-- Discover previously unknown hazards",
-    "<strong>Validate risk management </strong>-- Confirm pre-market risk controls remain effective",
-    "<strong>Support continuous improvement </strong>-- Drive design and process enhancements",
-    "<strong>Ensure regulatory compliance </strong>-- Meet post-market obligations",
-    "<strong>Protect patient safety </strong>-- Enable rapid response to safety concerns"
+    "<strong>Detect safety signals </strong>— Identify patterns suggesting increased risk",
+    "<strong>Monitor device performance </strong>— Verify continued effectiveness in real-world settings",
+    "<strong>Identify emerging risks </strong>— Discover previously unknown hazards",
+    "<strong>Validate risk management </strong>— Confirm pre-market risk controls remain effective",
+    "<strong>Support continuous improvement </strong>— Drive design and process enhancements",
+    "<strong>Ensure regulatory compliance </strong>— Meet post-market obligations",
+    "<strong>Protect patient safety </strong>— Enable rapid response to safety concerns"
    ]
   },
   {
@@ -154,13 +146,13 @@
   {
    "t": "ul",
    "items": [
-    "<strong>Complaint management </strong>-- Systematic handling of user feedback",
-    "<strong>Adverse event monitoring </strong>-- Tracking device-related injuries or malfunctions",
-    "<strong>Literature surveillance </strong>-- Monitoring published reports and studies",
-    "<strong>Market feedback </strong>-- Collecting information from distributors and healthcare providers",
-    "<strong>Field performance data </strong>-- Analyzing real-world usage patterns",
-    "<strong>Post-market clinical follow-up (PMCF) </strong>-- Conducting observational studies (EU MDR requirement)",
-    "<strong>Registry data analysis </strong>-- Utilizing device-specific registries for long-term monitoring"
+    "<strong>Complaint management </strong>— Systematic handling of user feedback",
+    "<strong>Adverse event monitoring </strong>— Tracking device-related injuries or malfunctions",
+    "<strong>Literature surveillance </strong>— Monitoring published reports and studies",
+    "<strong>Market feedback </strong>— Collecting information from distributors and healthcare providers",
+    "<strong>Field performance data </strong>— Analyzing real-world usage patterns",
+    "<strong>Post-market clinical follow-up (PMCF) </strong>— Conducting observational studies (EU MDR requirement)",
+    "<strong>Registry data analysis </strong>— Utilizing device-specific registries for long-term monitoring"
    ]
   },
   {
@@ -352,18 +344,6 @@
    "caption": "Complaint Handling Process Flowchart"
   },
   {
-   "t": "p",
-   "html": "<strong>Description:</strong>"
-  },
-  {
-   "t": "p",
-   "html": "<strong>Detailed flowchart showing sequential steps:</strong> Receipt → Documentation → Triage → Investigation (with decision diamond: \"Serious?\") → If Yes: RCA → CAPA → Regulatory"
-  },
-  {
-   "t": "p",
-   "html": "<strong>Report → Verification → Closure. If No:</strong> Investigation → Resolution → Closure. Parallel process shows Trending Analysis feeding back into system improvements."
-  },
-  {
    "t": "h2",
    "text": "Vigilance and Adverse Event Reporting",
    "num": "15.4"
@@ -400,7 +380,7 @@
   },
   {
    "t": "h3",
-   "text": "India -- Materiovigilance Programme of India (MvPI)"
+   "text": "India — Materiovigilance Programme of India (MvPI)"
   },
   {
    "t": "p",
@@ -451,7 +431,7 @@
   },
   {
    "t": "h3",
-   "text": "United States -- FDA Medical Device Reporting (MDR)"
+   "text": "United States — FDA Medical Device Reporting (MDR)"
   },
   {
    "t": "p",
@@ -513,7 +493,7 @@
   },
   {
    "t": "h3",
-   "text": "European Union -- Vigilance System (EU MDR)"
+   "text": "European Union — Vigilance System (EU MDR)"
   },
   {
    "t": "p",
@@ -591,14 +571,6 @@
    "h": 203,
    "num": "15.3",
    "caption": "Global Vigilance Reporting Timeline Comparison"
-  },
-  {
-   "t": "p",
-   "html": "<strong>Description:</strong>"
-  },
-  {
-   "t": "p",
-   "html": "Comparative table with three columns (India, USA, EU) and rows showing reporting requirements:"
   },
   {
    "t": "h3",
@@ -829,14 +801,14 @@
   {
    "t": "ul",
    "items": [
-    "<strong>Device modification </strong>-- Design changes or software updates",
-    "<strong>Device repair </strong>-- Fixing identified defects",
-    "<strong>Device replacement </strong>-- Exchanging affected devices",
-    "<strong>Device adjustment </strong>-- Calibration or settings changes",
-    "<strong>Device return </strong>-- Temporary removal from use",
-    "<strong>Device destruction </strong>-- Permanent removal and disposal",
-    "<strong>Advice to users </strong>-- Safety notices with risk mitigation instructions",
-    "<strong>Labeling changes </strong>-- Updated warnings or instructions"
+    "<strong>Device modification </strong>— Design changes or software updates",
+    "<strong>Device repair </strong>— Fixing identified defects",
+    "<strong>Device replacement </strong>— Exchanging affected devices",
+    "<strong>Device adjustment </strong>— Calibration or settings changes",
+    "<strong>Device return </strong>— Temporary removal from use",
+    "<strong>Device destruction </strong>— Permanent removal and disposal",
+    "<strong>Advice to users </strong>— Safety notices with risk mitigation instructions",
+    "<strong>Labeling changes </strong>— Updated warnings or instructions"
    ]
   },
   {
@@ -979,7 +951,7 @@
   },
   {
    "t": "h4",
-   "text": "Recall Classifications (FDA System -- Widely adopted) Class I Recall"
+   "text": "Recall Classifications (FDA System — Widely adopted) Class I Recall"
   },
   {
    "t": "ul",
@@ -1024,8 +996,8 @@
   {
    "t": "ul",
    "items": [
-    "<strong>Voluntary recall </strong>-- Manufacturer identifies issue and initiates recall",
-    "<strong>Regulatory-mandated recall </strong>-- Authority requires recall (rare, typically follows manufacturer delay)"
+    "<strong>Voluntary recall </strong>— Manufacturer identifies issue and initiates recall",
+    "<strong>Regulatory-mandated recall </strong>— Authority requires recall (rare, typically follows manufacturer delay)"
    ]
   },
   {
@@ -1180,18 +1152,6 @@
    "caption": "Recall Decision and Implementation Flow"
   },
   {
-   "t": "p",
-   "html": "<strong>Description:</strong>"
-  },
-  {
-   "t": "p",
-   "html": "Flowchart starting with \"Issue Identified\" → \"Risk Assessment\" → Decision diamond \"Recall Required?\" → If Yes: \"Classify Recall (I/II/III)\" → \"Notify Regulator\" → \"Notify Customers\""
-  },
-  {
-   "t": "p",
-   "html": "→ \"Implement Removal/Correction\" → \"Effectiveness Check\" → \"CAPA Implementation\" → \"Report &amp; Close\". If No: \"Implement CAPA without recall\" → \"Monitor closely\". Include parallel tracking: \"Document Every Step\"."
-  },
-  {
    "t": "h3",
    "text": "When is a Recall Required?"
   },
@@ -1202,18 +1162,18 @@
   {
    "t": "ul",
    "items": [
-    "<strong>Sterility compromise </strong>-- Packaging breach, sterilization failure, contamination",
-    "<strong>Labeling errors </strong>-- Incorrect instructions, missing warnings, wrong product information",
-    "<strong>Performance failures </strong>-- Device does not meet specifications, malfunction affecting patient care",
-    "<strong>Safety hazards </strong>-- Risk of injury (electrical shock, mechanical failure, sharp edges)",
-    "<strong>Software defects </strong>-- Calculation errors, logic flaws, security vulnerabilities",
-    "<strong>Material defects </strong>-- Component failures, degradation, incompatibility",
-    "<strong>Design flaws </strong>-- Inadequate risk controls, human factors issues",
-    "<strong>Manufacturing deviations </strong>-- Process failures, wrong materials, assembly errors",
-    "<strong>Biocompatibility issues </strong>-- Unexpected adverse reactions, material sensitization",
-    "<strong>Battery failures </strong>-- Premature depletion, overheating, explosion risk",
-    "<strong>Dosage errors </strong>-- Incorrect medication delivery (pumps, inhalers)",
-    "<strong>Product mix-up </strong>-- Wrong device shipped or labeled incorrectly"
+    "<strong>Sterility compromise </strong>— Packaging breach, sterilization failure, contamination",
+    "<strong>Labeling errors </strong>— Incorrect instructions, missing warnings, wrong product information",
+    "<strong>Performance failures </strong>— Device does not meet specifications, malfunction affecting patient care",
+    "<strong>Safety hazards </strong>— Risk of injury (electrical shock, mechanical failure, sharp edges)",
+    "<strong>Software defects </strong>— Calculation errors, logic flaws, security vulnerabilities",
+    "<strong>Material defects </strong>— Component failures, degradation, incompatibility",
+    "<strong>Design flaws </strong>— Inadequate risk controls, human factors issues",
+    "<strong>Manufacturing deviations </strong>— Process failures, wrong materials, assembly errors",
+    "<strong>Biocompatibility issues </strong>— Unexpected adverse reactions, material sensitization",
+    "<strong>Battery failures </strong>— Premature depletion, overheating, explosion risk",
+    "<strong>Dosage errors </strong>— Incorrect medication delivery (pumps, inhalers)",
+    "<strong>Product mix-up </strong>— Wrong device shipped or labeled incorrectly"
    ]
   },
   {
@@ -1354,12 +1314,12 @@
     "Verification results",
     "Effectiveness check records",
     "Closure approval",
-    "<strong>Global PMS Requirements -- Comparative Summary</strong>"
+    "<strong>Global PMS Requirements — Comparative Summary</strong>"
    ]
   },
   {
    "t": "p",
-   "html": "<strong>Table 15.1 -- International PMS and Vigilance Requirements Comparison</strong>"
+   "html": "<strong>Table 15.1 — International PMS and Vigilance Requirements Comparison</strong>"
   },
   {
    "t": "p",
@@ -1471,7 +1431,7 @@
   },
   {
    "t": "p",
-   "html": "III) -- every 1-2 years"
+   "html": "III) — every 1-2 years"
   },
   {
    "t": "p",
@@ -1677,13 +1637,13 @@
     {
      "t": "ul",
      "items": [
-      "<strong>Robust pre-market evaluation is essential </strong>-- Even \"similar\" devices can have significantly different performance; equivalence claims must be thoroughly validated.",
-      "<strong>Long-term clinical data is critical for implants </strong>-- Short-term studies may not reveal problems that develop over years.",
-      "<strong>Proactive PMS can detect issues early </strong>-- Systematic complaint analysis and trend monitoring enable earlier intervention.",
-      "<strong>Patient registries are valuable </strong>-- Centralized registries facilitate long-term outcome tracking and rapid problem identification.",
-      "<strong>Timely regulatory action saves lives </strong>-- Delays in issuing safety alerts and recalls extend patient exposure to risks.",
-      "<strong>Transparency builds trust </strong>-- Open communication with patients and healthcare providers, though difficult, is necessary.",
-      "<strong>Regulatory systems must evolve </strong>-- The MoM implant crisis directly influenced development of stricter EU MDR requirements."
+      "<strong>Robust pre-market evaluation is essential </strong>— Even \"similar\" devices can have significantly different performance; equivalence claims must be thoroughly validated.",
+      "<strong>Long-term clinical data is critical for implants </strong>— Short-term studies may not reveal problems that develop over years.",
+      "<strong>Proactive PMS can detect issues early </strong>— Systematic complaint analysis and trend monitoring enable earlier intervention.",
+      "<strong>Patient registries are valuable </strong>— Centralized registries facilitate long-term outcome tracking and rapid problem identification.",
+      "<strong>Timely regulatory action saves lives </strong>— Delays in issuing safety alerts and recalls extend patient exposure to risks.",
+      "<strong>Transparency builds trust </strong>— Open communication with patients and healthcare providers, though difficult, is necessary.",
+      "<strong>Regulatory systems must evolve </strong>— The MoM implant crisis directly influenced development of stricter EU MDR requirements."
      ]
     }
    ]
@@ -1825,43 +1785,43 @@
  "references": [
   {
    "group": null,
-   "text": "ISO 13485:2016 -- Medical devices -- Quality management systems -- Requirements for regulatory purposes"
+   "text": "ISO 13485:2016 — Medical devices — Quality management systems — Requirements for regulatory purposes"
   },
   {
    "group": null,
-   "text": "ISO 14971:2019 -- Medical devices -- Application of risk management to medical devices"
+   "text": "ISO 14971:2019 — Medical devices — Application of risk management to medical devices"
   },
   {
    "group": null,
-   "text": "EU MDR 2017/745 -- Regulation on medical devices (particularly Articles 83-92 and Annex III)"
+   "text": "EU MDR 2017/745 — Regulation on medical devices (particularly Articles 83-92 and Annex III)"
   },
   {
    "group": null,
-   "text": "FDA 21 CFR Part 803 -- Medical Device Reporting"
+   "text": "FDA 21 CFR Part 803 — Medical Device Reporting"
   },
   {
    "group": null,
-   "text": "FDA 21 CFR Part 806 -- Medical Devices; Reports of Corrections and Removals"
+   "text": "FDA 21 CFR Part 806 — Medical Devices; Reports of Corrections and Removals"
   },
   {
    "group": null,
-   "text": "India Medical Device Rules, 2017 -- Central Drugs Standard Control Organisation"
+   "text": "India Medical Device Rules, 2017 — Central Drugs Standard Control Organisation"
   },
   {
    "group": null,
-   "text": "MEDDEV 2.12/1 Rev 8 -- Guidelines on a Medical Devices Vigilance System"
+   "text": "MEDDEV 2.12/1 Rev 8 — Guidelines on a Medical Devices Vigilance System"
   },
   {
    "group": null,
-   "text": "ISO/TR 20416:2020 -- Medical devices -- Post-market surveillance for manufacturers"
+   "text": "ISO/TR 20416:2020 — Medical devices — Post-market surveillance for manufacturers"
   },
   {
    "group": null,
-   "text": "IMDRF/GHTF/SG2/N54R8:2012 -- Essential Principles of Safety and Performance of Medical Devices"
+   "text": "IMDRF/GHTF/SG2/N54R8:2012 — Essential Principles of Safety and Performance of Medical Devices"
   },
   {
    "group": null,
-   "text": "WHO Medical Device Technical Series -- Post-market surveillance guidelines"
+   "text": "WHO Medical Device Technical Series — Post-market surveillance guidelines"
   }
  ]
 }

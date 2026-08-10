@@ -79,14 +79,6 @@
    "caption": "Medical Device Industry Career Ecosystem"
   },
   {
-   "t": "p",
-   "html": "<strong>Description:</strong>"
-  },
-  {
-   "t": "p",
-   "html": "A circular ecosystem diagram showing interconnected sectors: Manufacturing, Quality Systems, Regulatory Affairs, R&amp;D, Clinical Research, Digital Health, Sales &amp; Marketing, Supply Chain, and Entrepreneurship, with \"MedTech Professional\" at the center."
-  },
-  {
    "t": "h3",
    "text": "Major Functional Sectors in the Medical Device Industry"
   },
@@ -177,7 +169,7 @@
   },
   {
    "t": "h3",
-   "text": "Table 20.1 -- Career Sectors and Primary Functions"
+   "text": "Table 20.1 — Career Sectors and Primary Functions"
   },
   {
    "t": "p",
@@ -383,14 +375,6 @@
    "h": 264,
    "num": "20.2",
    "caption": "Career Categories in Medical Devices"
-  },
-  {
-   "t": "p",
-   "html": "<strong>Description:</strong>"
-  },
-  {
-   "t": "p",
-   "html": "A quadrant diagram dividing careers into four sections: Technical/Engineering (top-left), Clinical/Scientific (top-right), Digital/Technology (bottom-left), and Business/Commercial (bottom-right), with representative job titles in each quadrant."
   },
   {
    "t": "h2",
@@ -684,14 +668,6 @@
    "caption": "Job Roles by Functional Department"
   },
   {
-   "t": "p",
-   "html": "<strong>Description:</strong>"
-  },
-  {
-   "t": "p",
-   "html": "An organizational chart showing departmental structure with representative job titles: Quality (QA Executive, QC Analyst), Regulatory (RA Officer), R&amp;D (Design Engineer), Manufacturing (Production Engineer), Clinical (CRA), Digital Health (SaMD Developer), Sales (Product Manager)."
-  },
-  {
    "t": "h2",
    "text": "Skill Matrix and Competency Frameworks",
    "num": "20.5"
@@ -822,7 +798,7 @@
   },
   {
    "t": "h3",
-   "text": "Table 20.2 -- Comprehensive Skill Matrix by Job Role"
+   "text": "Table 20.2 — Comprehensive Skill Matrix by Job Role"
   },
   {
    "t": "p",
@@ -1197,14 +1173,6 @@
    "caption": "Career Progression Ladder"
   },
   {
-   "t": "p",
-   "html": "<strong>Description:</strong>"
-  },
-  {
-   "t": "p",
-   "html": "A vertical ladder diagram showing career progression from entry-level positions (bottom) to leadership roles (top) across four tracks: QA, RA, R&amp;D, and Clinical Research, with typical tenure ranges at each level."
-  },
-  {
    "t": "h2",
    "text": "Professional Certifications and Training Programs",
    "num": "20.6"
@@ -1377,7 +1345,7 @@
   },
   {
    "t": "h3",
-   "text": "Table 20.3 -- Recommended Certifications by Career Stage"
+   "text": "Table 20.3 — Recommended Certifications by Career Stage"
   },
   {
    "t": "p",
@@ -1611,14 +1579,6 @@
    "h": 264,
    "num": "20.5",
    "caption": "Emerging Career Trends in MedTech"
-  },
-  {
-   "t": "p",
-   "html": "<strong>Description:</strong>"
-  },
-  {
-   "t": "p",
-   "html": "A growth curve chart showing projected job demand (Y-axis) over time (X-axis) for emerging roles: AI/ML, Cybersecurity, SaMD, Robotics, 3D Printing, and RegTech, with upward trending lines."
   },
   {
    "t": "h2",

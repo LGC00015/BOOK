@@ -161,24 +161,6 @@
    "caption": "Biomaterial Classification Tree"
   },
   {
-   "t": "p",
-   "html": "<strong>Description:</strong>"
-  },
-  {
-   "t": "p",
-   "html": "Hierarchical tree diagram with main trunk labeled \"Biomaterials\" branching into five major categories:"
-  },
-  {
-   "t": "ul",
-   "items": [
-    "<strong>Metals </strong>(further branches: Stainless Steel, Titanium, Cobalt-Chrome, Nitinol)",
-    "<strong>Polymers </strong>(branches: Polyethylene, Polypropylene, PMMA, Silicone, Polyurethane)",
-    "<strong>Ceramics </strong>(branches: Alumina, Zirconia, Hydroxyapatite, Bioactive Glass)",
-    "<strong>Composites </strong>(branches: Carbon Fiber Reinforced, Ceramic-Polymer, Metal-Polymer)",
-    "<strong>Natural Biomaterials </strong>(branches: Collagen, Chitosan, Alginate, Hyaluronic Acid)"
-   ]
-  },
-  {
    "t": "h3",
    "text": "Essential Material Properties for Medical Devices"
   },
@@ -724,23 +706,6 @@
    "caption": "Metallic Biomaterial Applications Chart"
   },
   {
-   "t": "p",
-   "html": "<strong>Description:</strong>"
-  },
-  {
-   "t": "p",
-   "html": "Comparative bar chart showing:"
-  },
-  {
-   "t": "ul",
-   "items": [
-    "<strong>X-axis</strong>: Application categories (Surgical Instruments, Temporary Implants, Long-term Implants, Cardiovascular, Dental)",
-    "<strong>Y-axis</strong>: Relative usage frequency (%)",
-    "<strong>Color-coded bars </strong>for each metal: Stainless Steel, Titanium, Cobalt-Chrome, Nitinol",
-    "Annotations showing key advantages for each application"
-   ]
-  },
-  {
    "t": "h2",
    "text": "Polymeric Biomaterials",
    "num": "7.3"
@@ -1019,24 +984,6 @@
    "caption": "Polymer Property Comparison Chart"
   },
   {
-   "t": "p",
-   "html": "<strong>Description:</strong>"
-  },
-  {
-   "t": "p",
-   "html": "Multi-axis radar/spider chart comparing six polymers (PE, PP, PVC, PU, Silicone, PMMA) across five properties:"
-  },
-  {
-   "t": "ul",
-   "items": [
-    "<strong>Flexibility </strong>(0-10 scale)",
-    "<strong>Biocompatibility </strong>(0-10 scale)",
-    "<strong>Durability </strong>(0-10 scale)",
-    "<strong>Chemical Resistance </strong>(0-10 scale)",
-    "<strong>Cost-Effectiveness </strong>(0-10 scale) Each polymer shown as different colored polygon overlay"
-   ]
-  },
-  {
    "t": "h2",
    "text": "Ceramic Biomaterials",
    "num": "7.4"
@@ -1251,23 +1198,6 @@
    "h": 264,
    "num": "7.4",
    "caption": "Ceramic Biomaterial Classification"
-  },
-  {
-   "t": "p",
-   "html": "<strong>Description:</strong>"
-  },
-  {
-   "t": "p",
-   "html": "Venn diagram showing three overlapping circles:"
-  },
-  {
-   "t": "ul",
-   "items": [
-    "<strong>Circle 1 (Bioinert)</strong>: Alumina, Zirconia, Pyrolytic Carbon - labelled \"Minimal tissue interaction, mechanical function\"",
-    "<strong>Circle 2 (Bioactive)</strong>: Hydroxyapatite, Bioactive Glass - labelled \"Chemical bonding with bone\"",
-    "<strong>Circle 3 (Bioresorbable)</strong>: TCP, Calcium phosphates - labelled \"Gradual resorption and replacement\"",
-    "Overlap zones showing combined properties"
-   ]
   },
   {
    "t": "h2",
@@ -1654,8 +1584,8 @@
    ]
   },
   {
-   "t": "h3",
-   "text": "ISO 10993: Biological Evaluation of Medical Devices"
+   "t": "p",
+   "html": "<strong>ISO 10993:</strong> Biological Evaluation of Medical Devices"
   },
   {
    "t": "p",
@@ -1734,23 +1664,6 @@
    "h": 340,
    "num": "7.5",
    "caption": "ISO 10993 Testing Selection Matrix"
-  },
-  {
-   "t": "p",
-   "html": "<strong>Description:</strong>"
-  },
-  {
-   "t": "p",
-   "html": "Complex decision matrix table with:"
-  },
-  {
-   "t": "ul",
-   "items": [
-    "<strong>Rows</strong>: Body contact types (Surface: Skin, Mucosal Membrane, Breached Surface; External Communicating: Blood Indirect, Tissue/Bone, Circulating Blood; Implant: Tissue/Bone, Blood)",
-    "<strong>Columns</strong>: Contact duration (Limited ≤24h, Prolonged &gt;24h-30d, Permanent &gt;30d)",
-    "<strong>Cell colors</strong>: Testing requirements coded (Green = Required, Yellow = May be needed based on risk, White = Not required)",
-    "<strong>Tests listed</strong>: Cytotoxicity, Sensitization, Irritation, Systemic Toxicity, Subchronic Toxicity, Genotoxicity, Implantation, Hemocompatibility"
-   ]
   },
   {
    "t": "h3",
@@ -1926,7 +1839,7 @@
   },
   {
    "t": "p",
-   "html": "<strong>Table 7.1 -- Common Medical Devices and Their Primary Materials</strong>"
+   "html": "<strong>Table 7.1 — Common Medical Devices and Their Primary Materials</strong>"
   },
   {
    "t": "p",
@@ -2587,51 +2500,51 @@
  "references": [
   {
    "group": null,
-   "text": "ISO 10993 Series -- Biological evaluation of medical devices (Parts 1-20)"
+   "text": "ISO 10993 Series — Biological evaluation of medical devices (Parts 1-20)"
   },
   {
    "group": null,
-   "text": "ASTM F136-13 -- Standard Specification for Wrought Titanium-6Aluminum- 4Vanadium ELI (Extra Low Interstitial) Alloy for Surgical Implant Applications"
+   "text": "ASTM F136-13 — Standard Specification for Wrought Titanium-6Aluminum- 4Vanadium ELI (Extra Low Interstitial) Alloy for Surgical Implant Applications"
   },
   {
    "group": null,
-   "text": "ASTM F138-19 -- Standard Specification for Wrought 18Chromium-14Nickel- 2.5Molybdenum Stainless Steel Bar and Wire for Surgical Implants"
+   "text": "ASTM F138-19 — Standard Specification for Wrought 18Chromium-14Nickel- 2.5Molybdenum Stainless Steel Bar and Wire for Surgical Implants"
   },
   {
    "group": null,
-   "text": "ASTM F75-18 -- Standard Specification for Cobalt-28 Chromium-6 Molybdenum Alloy Castings and Casting Alloy for Surgical Implants"
+   "text": "ASTM F75-18 — Standard Specification for Cobalt-28 Chromium-6 Molybdenum Alloy Castings and Casting Alloy for Surgical Implants"
   },
   {
    "group": null,
-   "text": "ISO 5832 Series -- Implants for surgery -- Metallic materials"
+   "text": "ISO 5832 Series — Implants for surgery — Metallic materials"
   },
   {
    "group": null,
-   "text": "ISO 5833:2002 -- Implants for surgery -- Acrylic resin cements (PMMA bone cement)"
+   "text": "ISO 5833:2002 — Implants for surgery — Acrylic resin cements (PMMA bone cement)"
   },
   {
    "group": null,
-   "text": "ISO 7206 Series -- Implants for surgery -- Partial and total hip joint prostheses (testing standards)"
+   "text": "ISO 7206 Series — Implants for surgery — Partial and total hip joint prostheses (testing standards)"
   },
   {
    "group": null,
-   "text": "Buddy D. Ratner et al. -- Biomaterials Science: An Introduction to Materials in Medicine, 4th Edition, Academic Press, 2020"
+   "text": "Buddy D. Ratner et al. — Biomaterials Science: An Introduction to Materials in Medicine, 4th Edition, Academic Press, 2020"
   },
   {
    "group": null,
-   "text": "Joon Park, R.S. Lakes -- Biomaterials: An Introduction, 3rd Edition, Springer, 2007"
+   "text": "Joon Park, R.S. Lakes — Biomaterials: An Introduction, 3rd Edition, Springer, 2007"
   },
   {
    "group": null,
-   "text": "FDA Guidance -- Use of International Standard ISO 10993-1, \"Biological evaluation of medical devices - Part 1: Evaluation and testing within a risk management process\" (2020)"
+   "text": "FDA Guidance — Use of International Standard ISO 10993-1, \"Biological evaluation of medical devices - Part 1: Evaluation and testing within a risk management process\" (2020)"
   },
   {
    "group": null,
-   "text": "Williams, D.F. -- \"On the mechanisms of biocompatibility,\" Biomaterials, 2008, 29(20), 2941-2953"
+   "text": "Williams, D.F. — \"On the mechanisms of biocompatibility,\" Biomaterials, 2008, 29(20), 2941-2953"
   },
   {
    "group": null,
-   "text": "Kurtz, S.M. -- UHMWPE Biomaterials Handbook: Ultra High Molecular Weight Polyethylene in Total Joint Replacement and Medical Devices, 3rd Edition, Elsevier, 2016"
+   "text": "Kurtz, S.M. — UHMWPE Biomaterials Handbook: Ultra High Molecular Weight Polyethylene in Total Joint Replacement and Medical Devices, 3rd Edition, Elsevier, 2016"
   }
  ]
 }

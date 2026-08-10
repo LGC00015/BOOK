@@ -106,14 +106,6 @@
    "caption": "Future Device Innovation Ecosystem"
   },
   {
-   "t": "p",
-   "html": "<strong>Description:</strong>"
-  },
-  {
-   "t": "p",
-   "html": "A central hub labeled \"Next-Generation Medical Devices\" with radiating spokes connecting to distinct innovation domains: Artificial Intelligence, Robotic Systems, 3D Printing &amp; Bioprinting, Wearable Sensors, Nanotechnology, Digital Health Platforms, and Regenerative Medicine. Each spoke includes representative icons illustrating the technology category."
-  },
-  {
    "t": "h3",
    "text": "3D Printing and Additive Manufacturing"
   },
@@ -192,18 +184,6 @@
    "h": 415,
    "num": "18.2",
    "caption": "3D Printing Workflow for Medical Devices"
-  },
-  {
-   "t": "p",
-   "html": "<strong>Description:</strong>"
-  },
-  {
-   "t": "p",
-   "html": "<strong>Sequential process flowchart showing:</strong> Medical Imaging (CT/MRI) → CAD Model"
-  },
-  {
-   "t": "p",
-   "html": "Development → Digital Slicing Software → Layer-by-Layer Printing → Post-Processing (cleaning, curing, sterilization) → Quality Inspection → Clinical Application. Each stage includes relevant icons and brief descriptions."
   },
   {
    "t": "h3",
@@ -327,14 +307,6 @@
    "caption": "Bioprinting Process Overview"
   },
   {
-   "t": "p",
-   "html": "<strong>Description:</strong>"
-  },
-  {
-   "t": "p",
-   "html": "<strong>Illustrated workflow showing:</strong> Cell Isolation → Bioink Preparation (cells + biomaterial + growth factors) → Bioprinter Setup → Layer-by-Layer Tissue Construction → Maturation in Bioreactor → Functional Testing → Clinical Translation. Visual representation of tissue structure development at each stage."
-  },
-  {
    "t": "h2",
    "text": "Robotics in Medical Devices",
    "num": "18.3"
@@ -438,14 +410,6 @@
    "h": 291,
    "num": "18.4",
    "caption": "Robotic Surgery System Architecture"
-  },
-  {
-   "t": "p",
-   "html": "<strong>Description:</strong>"
-  },
-  {
-   "t": "p",
-   "html": "<strong>Diagram showing three components:</strong> (1) Surgeon Console with viewing system and hand controls, (2) Patient-Side Cart with robotic arms and instruments, (3) Vision Cart with image processing systems. Arrows indicate information flow and control pathways between components."
   },
   {
    "t": "box",
@@ -576,18 +540,6 @@
    "caption": "Nanotechnology in Medicine"
   },
   {
-   "t": "p",
-   "html": "<strong>Description:</strong>"
-  },
-  {
-   "t": "p",
-   "html": "Conceptual illustration showing nanoparticle journey: Systemic Administration → Circulation"
-  },
-  {
-   "t": "p",
-   "html": "→ Active or Passive Targeting → Cellular Uptake → Drug Release → Therapeutic Effect. Includes magnified views of nanoparticle structure, surface functionalization, and cellular interaction mechanisms."
-  },
-  {
    "t": "h3",
    "text": "Safety Note 18.1"
   },
@@ -683,14 +635,6 @@
    "h": 264,
    "num": "18.6",
    "caption": "Wearable Device Ecosystem"
-  },
-  {
-   "t": "p",
-   "html": "<strong>Description:</strong>"
-  },
-  {
-   "t": "p",
-   "html": "<strong>Network diagram showing:</strong> Wearable Device (center) → Smartphone Application → Cloud- Based Platform → Healthcare Provider Portal → Patient Electronic Health Record. Bidirectional arrows indicate data flow and clinical decision pathways. Additional connections show integration with family caregivers and emergency services."
   },
   {
    "t": "h2",
@@ -795,14 +739,6 @@
    "caption": "IoMT Network Architecture"
   },
   {
-   "t": "p",
-   "html": "<strong>Description:</strong>"
-  },
-  {
-   "t": "p",
-   "html": "<strong>Multi-layer architecture diagram showing:</strong> Bottom layer (Medical Devices with sensors), Second layer (Edge Computing/Gateway devices), Third layer (Secure Cloud Infrastructure with encryption), Top layer (Clinical Applications, Analytics Dashboards, AI/ML Processing). Security measures illustrated at each layer with firewall and encryption symbols."
-  },
-  {
    "t": "h2",
    "text": "Extended Reality Technologies (XR/VR/AR)",
    "num": "18.7"
@@ -898,14 +834,6 @@
    "h": 264,
    "num": "18.8",
    "caption": "Extended Reality in Healthcare"
-  },
-  {
-   "t": "p",
-   "html": "<strong>Description:</strong>"
-  },
-  {
-   "t": "p",
-   "html": "<strong>Three-panel illustration:</strong> (1) VR panel showing surgeon with headset in simulated operating room, (2) AR panel showing real-time anatomical overlay during surgery with transparent digital structures, (3) MR panel showing collaborative planning session with holographic patient model viewable by multiple participants."
   },
   {
    "t": "box",
@@ -1033,14 +961,6 @@
    "caption": "Smart Implant Architecture"
   },
   {
-   "t": "p",
-   "html": "<strong>Description:</strong>"
-  },
-  {
-   "t": "p",
-   "html": "Cross-sectional diagram of smart implant showing: (1) Sensing element (load cell or biochemical sensor), (2) Microcontroller and signal processing circuitry, (3) Wireless communication module (Bluetooth/RF), (4) Power source (battery or energy harvesting), (5) Biocompatible encapsulation. External receiver device and smartphone app interface also illustrated."
-  },
-  {
    "t": "h3",
    "text": "Regenerative Medicine and Tissue Engineering"
   },
@@ -1165,14 +1085,6 @@
    "caption": "Tissue Engineering Paradigm"
   },
   {
-   "t": "p",
-   "html": "<strong>Description:</strong>"
-  },
-  {
-   "t": "p",
-   "html": "<strong>Circular process diagram showing:</strong> Cell Source Selection → Cell Isolation and Expansion → Scaffold Fabrication → Cell Seeding → In Vitro Maturation → In Vivo Implantation → Tissue Integration and Remodeling → Functional Tissue Formation. Each stage includes representative microscopy images or schematic illustrations."
-  },
-  {
    "t": "h2",
    "text": "AI-Powered and Cloud-Connected Medical Devices",
    "num": "18.9"
@@ -1272,14 +1184,6 @@
    "h": 264,
    "num": "18.11",
    "caption": "AI-Powered Device Architecture"
-  },
-  {
-   "t": "p",
-   "html": "<strong>Description:</strong>"
-  },
-  {
-   "t": "p",
-   "html": "<strong>Layered architecture diagram showing:</strong> Device Sensors (bottom) → Data Preprocessing → Feature Extraction → AI/ML Model (neural network visualization) → Clinical Decision Output → Healthcare Provider Interface. Parallel pathway showing cloud connection for model training, updates, and population analytics. Security and encryption layers illustrated throughout."
   },
   {
    "t": "h3",
@@ -1424,14 +1328,6 @@
    "h": 264,
    "num": "18.12",
    "caption": "Cybersecurity Framework for Medical Devices"
-  },
-  {
-   "t": "p",
-   "html": "<strong>Description:</strong>"
-  },
-  {
-   "t": "p",
-   "html": "Concentric circle diagram with device at center, surrounded by security layers: (1) Device-level security (encryption, authentication), (2) Network security (firewalls, VPN), (3) Cloud infrastructure security (access control, monitoring), (4) Organizational policies (training, incident response), (5) Regulatory compliance (external audits, reporting). Threat vectors illustrated with arrows attempting penetration at each layer."
   },
   {
    "t": "h3",

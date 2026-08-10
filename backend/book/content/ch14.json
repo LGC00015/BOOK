@@ -160,9 +160,9 @@
   {
    "t": "ul",
    "items": [
-    "<strong>High-risk devices </strong>(Class III/D) -- Extensive clinical data typically required",
-    "<strong>Moderate-risk devices </strong>(Class II/IIb/C) -- Clinical data often required, scope varies",
-    "<strong>Low-risk devices </strong>(Class I/A/B) -- Literature and clinical experience may suffice"
+    "<strong>High-risk devices </strong>(Class III/D) — Extensive clinical data typically required",
+    "<strong>Moderate-risk devices </strong>(Class II/IIb/C) — Clinical data often required, scope varies",
+    "<strong>Low-risk devices </strong>(Class I/A/B) — Literature and clinical experience may suffice"
    ]
   },
   {
@@ -198,9 +198,9 @@
   {
    "t": "ul",
    "items": [
-    "EU MDR -- Clinical evaluation mandatory for all devices",
-    "FDA -- Clinical data requirements vary by classification and pathway",
-    "India CDSCO -- Clinical investigation required for Class C/D and novel devices"
+    "EU MDR — Clinical evaluation mandatory for all devices",
+    "FDA — Clinical data requirements vary by classification and pathway",
+    "India CDSCO — Clinical investigation required for Class C/D and novel devices"
    ]
   },
   {
@@ -210,14 +210,6 @@
    "h": 259,
    "num": "14.1",
    "caption": "Clinical Evaluation Decision Tree"
-  },
-  {
-   "t": "p",
-   "html": "<strong>Description:</strong>"
-  },
-  {
-   "t": "p",
-   "html": "<strong>Flowchart showing decision pathway:</strong> Device Classification → Risk Assessment → Novelty Assessment → Clinical Impact → Equivalence Analysis → Clinical Data Requirement Determination. Each branch indicates whether literature review alone is sufficient or clinical investigation is required, with specific regulatory considerations noted."
   },
   {
    "t": "h2",
@@ -378,20 +370,6 @@
    "caption": "Clinical Evidence Hierarchy"
   },
   {
-   "t": "p",
-   "html": "<strong>Description:</strong>"
-  },
-  {
-   "t": "p",
-   "html": "Pyramid diagram showing levels of evidence from base to apex: Case Reports and Expert Opinion → Case Series → Observational Studies → Non-Randomized Controlled Studies → Randomized Controlled Trials → Systematic Reviews and Meta-Analyses. Right side indicates increasing quality of evidence; left side shows increasing quantity typically available."
-  },
-  {
-   "t": "ul",
-   "items": [
-    "<strong>Clinical Evaluation Report (CER</strong>he Clinical Evaluation Report is a comprehensive document summarizing all clinical data and demonstrating device safety and performance."
-   ]
-  },
-  {
    "t": "h4",
    "text": "Purpose and Regulatory Context EU MDR Requirement"
   },
@@ -406,9 +384,9 @@
   {
    "t": "ul",
    "items": [
-    "EU MDR Annex XIV -- Clinical evaluation and post-market clinical follow-up",
-    "MEDDEV 2.7/1 Rev. 4 -- Clinical evaluation: A guide for manufacturers and notified bodies",
-    "MDCG 2020-6 -- Regulation on clinical evaluation and post-market clinical follow-up"
+    "EU MDR Annex XIV — Clinical evaluation and post-market clinical follow-up",
+    "MEDDEV 2.7/1 Rev. 4 — Clinical evaluation: A guide for manufacturers and notified bodies",
+    "MDCG 2020-6 — Regulation on clinical evaluation and post-market clinical follow-up"
    ]
   },
   {
@@ -641,30 +619,14 @@
    "caption": "CER Development Process Flow"
   },
   {
-   "t": "p",
-   "html": "<strong>Description:</strong>"
-  },
-  {
-   "t": "p",
-   "html": "<strong>Flowchart showing CER development:</strong> Planning Phase → Literature Search → Data Appraisal"
-  },
-  {
-   "t": "p",
-   "html": "→ Equivalence Assessment → Clinical Data Analysis → Safety/Performance Evaluation →"
-  },
-  {
-   "t": "p",
-   "html": "Benefit-Risk Analysis → Conclusions and Recommendations → PMCF Plan → CER Document → Regular Updates. Feedback loops shown between stages for iterative refinement."
-  },
-  {
    "t": "h2",
-   "text": "India -- CDSCO Clinical Investigation Requirements",
+   "text": "India — CDSCO Clinical Investigation Requirements",
    "num": "14.6"
   },
   {
    "t": "ul",
    "items": [
-    "<strong>Regulatory Framework Medical Device Rules, 2017 -- Part VI:</strong>"
+    "<strong>Regulatory Framework Medical Device Rules, 2017 — Part VI:</strong>"
    ]
   },
   {
@@ -957,20 +919,8 @@
    "caption": "CDSCO Clinical Investigation Approval Process"
   },
   {
-   "t": "p",
-   "html": "<strong>Description:</strong>"
-  },
-  {
-   "t": "p",
-   "html": "<strong>Timeline flowchart showing:</strong> Protocol Development (2-3 months) → Ethics Committee"
-  },
-  {
-   "t": "p",
-   "html": "Submission and Approval (4-6 weeks) → CDSCO Application Preparation (2-3 weeks) → CDSCO Review (up to 90 days) → Approval/Conditional Approval → Study Initiation → Ongoing Monitoring and Reporting → Study Completion → Final Report Submission (90 days). Parallel tracks show sponsor activities, regulatory milestones, and reporting obligations."
-  },
-  {
    "t": "h2",
-   "text": "United States -- FDA Clinical Study Requirements",
+   "text": "United States — FDA Clinical Study Requirements",
    "num": "14.7"
   },
   {
@@ -1294,16 +1244,8 @@
    "caption": "FDA Clinical Study Pathways Comparison"
   },
   {
-   "t": "p",
-   "html": "<strong>Description:</strong>"
-  },
-  {
-   "t": "p",
-   "html": "<strong>Decision tree comparing pathways:</strong> NSR Study (IRB approval only) vs. SR Study (IDE + IRB approval) vs. PMA Pivotal Trial (IDE + comprehensive clinical data). Each pathway shows requirements, timeline, documentation needs, and regulatory milestones. Color-coded by complexity level."
-  },
-  {
    "t": "h2",
-   "text": "European Union -- EU MDR Clinical Evaluation Framework",
+   "text": "European Union — EU MDR Clinical Evaluation Framework",
    "num": "14.8"
   },
   {
@@ -1322,7 +1264,7 @@
   },
   {
    "t": "p",
-   "html": "<strong>Part A -- Clinical Evaluation:</strong>"
+   "html": "<strong>Part A — Clinical Evaluation:</strong>"
   },
   {
    "t": "ul",
@@ -1607,14 +1549,6 @@
    "caption": "EU MDR Clinical Investigation Timeline"
   },
   {
-   "t": "p",
-   "html": "<strong>Description:</strong>"
-  },
-  {
-   "t": "p",
-   "html": "<strong>Gantt chart showing parallel processes:</strong> Protocol Development (3-4 months) alongside Ethics Committee Submission → Competent Authority Notification → 60-day Review Period → Study Initiation → Subject Enrollment → Follow-up Period → Data Analysis → Final Report. Shows regulatory milestones, reporting obligations, and typical duration for each phase."
-  },
-  {
    "t": "h2",
    "text": "Types of Clinical Studies for Medical Devices",
    "num": "14.10"
@@ -1851,8 +1785,8 @@
   {
    "t": "ul",
    "items": [
-    "National Joint Registry (UK) -- hip and knee replacements",
-    "Society of Thoracic Surgeons Database -- cardiac devices",
+    "National Joint Registry (UK) — hip and knee replacements",
+    "Society of Thoracic Surgeons Database — cardiac devices",
     "Manufacturer-specific registries"
    ]
   },
@@ -1872,7 +1806,7 @@
   },
   {
    "t": "p",
-   "html": "<strong>Table 14.1 -- Comparison of Clinical Study Types</strong>"
+   "html": "<strong>Table 14.1 — Comparison of Clinical Study Types</strong>"
   },
   {
    "t": "p",
@@ -2013,14 +1947,6 @@
    "h": 219,
    "num": "14.7",
    "caption": "Clinical Development Pathway"
-  },
-  {
-   "t": "p",
-   "html": "<strong>Description:</strong>"
-  },
-  {
-   "t": "p",
-   "html": "<strong>Linear timeline showing progression:</strong> Pre-Clinical Testing → Feasibility Study (Phase I) → Pivotal Study (Phase II/III) → Regulatory Approval → PMCF and Registry Studies. Each phase shows typical duration, sample sizes, key objectives, and decision gates (Go/No-Go). Iterative feedback loops shown between phases for design modifications."
   },
   {
    "t": "h2",
@@ -2480,14 +2406,6 @@
    "caption": "Clinical Study Design Framework"
   },
   {
-   "t": "p",
-   "html": "<strong>Description:</strong>"
-  },
-  {
-   "t": "p",
-   "html": "Structured diagram showing interconnected design elements: Study Objective (center) connecting to Population (inclusion/exclusion), Intervention (device/procedure), Comparator (control selection), Outcomes (endpoints), and Timeframe (follow-up). Each element expands to show specific considerations. Statistical power calculation shown as foundation layer supporting all elements."
-  },
-  {
    "t": "h2",
    "text": "Ethics and Informed Consent",
    "num": "14.12"
@@ -2806,16 +2724,8 @@
    "caption": "Informed Consent Process Flow"
   },
   {
-   "t": "p",
-   "html": "<strong>Description:</strong>"
-  },
-  {
-   "t": "p",
-   "html": "<strong>Process flowchart showing:</strong> Initial Subject Contact → Eligibility Screening → Information Provision (verbal and written) → Subject Questions/Discussion → Assessment of Understanding → Consent Form Review → Voluntary Decision → Signature → Copy to Subject → Documentation → Ongoing Communication. Parallel track shows investigator responsibilities at each stage and quality checkpoints."
-  },
-  {
    "t": "h2",
-   "text": "Good Clinical Practice (GCP) Principles -- ISO 14155",
+   "text": "Good Clinical Practice (GCP) Principles — ISO 14155",
    "num": "14.13"
   },
   {
@@ -3080,15 +2990,15 @@
   {
    "t": "ul",
    "items": [
-    "<strong>A</strong>ttributable -- clearly identify who recorded data and when",
-    "<strong>L</strong>egible -- readable by others",
-    "<strong>C</strong>ontemporaneous -- recorded at time of observation/activity",
-    "<strong>O</strong>riginal -- first recording (or certified copy)",
-    "<strong>A</strong>ccurate -- error-free and correct",
-    "<strong>Complete </strong>-- all required data present",
-    "<strong>Consistent </strong>-- data matches across sources",
-    "<strong>Enduring </strong>-- permanent, not easily altered",
-    "<strong>Available </strong>-- accessible for review when needed"
+    "<strong>A</strong>ttributable — clearly identify who recorded data and when",
+    "<strong>L</strong>egible — readable by others",
+    "<strong>C</strong>ontemporaneous — recorded at time of observation/activity",
+    "<strong>O</strong>riginal — first recording (or certified copy)",
+    "<strong>A</strong>ccurate — error-free and correct",
+    "<strong>Complete </strong>— all required data present",
+    "<strong>Consistent </strong>— data matches across sources",
+    "<strong>Enduring </strong>— permanent, not easily altered",
+    "<strong>Available </strong>— accessible for review when needed"
    ]
   },
   {
@@ -3157,19 +3067,11 @@
    "w": 466,
    "h": 264,
    "num": "14.10",
-   "caption": ""
+   "caption": "Focus Areas"
   },
   {
    "t": "h3",
-   "text": "14.10 -- GCP Quality Management Framework"
-  },
-  {
-   "t": "p",
-   "html": "<strong>Description:</strong>"
-  },
-  {
-   "t": "p",
-   "html": "<strong>Pyramid structure showing quality layers:</strong> Foundation = Standard Operating Procedures (SOPs); Layer 2 = Training and Qualification; Layer 3 = Monitoring and Oversight; Layer 4 = Auditing and Inspection Readiness; Apex = Continuous Improvement. Horizontal cross-sections show specific activities for each layer (document control, personnel qualification, site monitoring, audit preparation, CAPA implementation)."
+   "text": "14.10 — GCP Quality Management Framework"
   },
   {
    "t": "h3",
@@ -3298,18 +3200,6 @@
    "h": 280,
    "num": "14.11",
    "caption": "Clinical Data Flow"
-  },
-  {
-   "t": "p",
-   "html": "<strong>Description:</strong>"
-  },
-  {
-   "t": "p",
-   "html": "<strong>Data lifecycle diagram:</strong> Source Documents → CRF/EDC Entry → Automated Validation → Query Generation → Site Response → Data Review → Database Lock → Statistical Analysis"
-  },
-  {
-   "t": "p",
-   "html": "→ Clinical Study Report. Parallel tracks show monitoring activities, quality control checkpoints, and audit trail documentation at each stage."
   },
   {
    "t": "h3",
@@ -3480,18 +3370,6 @@
    "caption": "Adverse Event Management Flow"
   },
   {
-   "t": "p",
-   "html": "<strong>Description:</strong>"
-  },
-  {
-   "t": "p",
-   "html": "<strong>Flowchart showing AE management:</strong> Event Occurrence → Detection and Documentation → Severity Assessment → Causality Assessment → Serious? (decision point) → If Yes: Expedited Reporting (timeline branches for different jurisdictions) + DSMB Notification +"
-  },
-  {
-   "t": "p",
-   "html": "<strong>IRB/EC Report; If No:</strong> Documentation in Study Records → Periodic Summary Reports. Parallel track shows follow-up procedures, resolution documentation, and final assessment."
-  },
-  {
    "t": "h3",
    "text": "Post-Market Clinical Follow-Up (PMCF)"
   },
@@ -3656,18 +3534,6 @@
    "h": 248,
    "num": "14.13",
    "caption": "PMCF Lifecycle Integration"
-  },
-  {
-   "t": "p",
-   "html": "<strong>Description:</strong>"
-  },
-  {
-   "t": "p",
-   "html": "<strong>Circular diagram showing continuous cycle:</strong> Product Launch → PMCF Plan Implementation"
-  },
-  {
-   "t": "p",
-   "html": "→ Data Collection (multiple sources: literature, registries, studies, complaints) → PMCF Evaluation → CER Update → Risk Management Update → Labeling/Design Changes (if needed) → Market → Ongoing PMCF. External inputs shown: Regulatory Requirements, Competitive Intelligence, Clinical Guidelines. Shows integration with quality management system and post-market surveillance."
   },
   {
    "t": "box",
@@ -3995,14 +3861,6 @@
    "caption": "MoM Hip Implant Timeline"
   },
   {
-   "t": "p",
-   "html": "<strong>Description:</strong>"
-  },
-  {
-   "t": "p",
-   "html": "<strong>Timeline from 2000-2015 showing:</strong> Market Introduction (2000-2003) → Peak Market Share (2005-2007) → Early Safety Signals (2008) → Registry Data Published (2009-2010) → Regulatory Warnings (2010-2011) → Market Withdrawal (2012-2013) → Ongoing Revisions and Litigation (2013-2015). Lower track shows cumulative implantations, revision rates over time, and regulatory milestones. Annotations indicate key publications, regulatory actions, and patient impact metrics."
-  },
-  {
    "t": "box",
    "kind": "insight",
    "label": "Industry Insight 14.1",
@@ -4314,11 +4172,11 @@
  "references": [
   {
    "group": "International Standards",
-   "text": "ISO 14155:2020 -- Clinical investigation of medical devices for human subjects -- Good clinical practice"
+   "text": "ISO 14155:2020 — Clinical investigation of medical devices for human subjects — Good clinical practice"
   },
   {
    "group": "International Standards",
-   "text": "ISO 14971:2019 -- Medical devices -- Application of risk management to medical devices"
+   "text": "ISO 14971:2019 — Medical devices — Application of risk management to medical devices"
   }
  ]
 }

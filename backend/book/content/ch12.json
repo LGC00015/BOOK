@@ -190,7 +190,7 @@
   },
   {
    "t": "h2",
-   "text": "India -- Medical Device Rules (MDR) 2017",
+   "text": "India — Medical Device Rules (MDR) 2017",
    "num": "12.3"
   },
   {
@@ -207,7 +207,7 @@
   },
   {
    "t": "h4",
-   "text": "Class A -- Low Risk Characteristics"
+   "text": "Class A — Low Risk Characteristics"
   },
   {
    "t": "ul",
@@ -239,7 +239,7 @@
    "items": [
     "State Licensing Authority (SLA) oversight",
     "Basic quality management system",
-    "Manufacturing license <strong>Class B -- Low to Moderate Risk Characteristics:</strong>",
+    "Manufacturing license <strong>Class B — Low to Moderate Risk Characteristics:</strong>",
     "Short-term invasive devices",
     "Active therapeutic devices with moderate risk profile",
     "Devices supplying energy to patients"
@@ -273,7 +273,7 @@
   },
   {
    "t": "h3",
-   "text": "Class C -- Moderate to High Risk"
+   "text": "Class C — Moderate to High Risk"
   },
   {
    "t": "p",
@@ -311,7 +311,7 @@
     "Comprehensive technical documentation",
     "Clinical evaluation data",
     "Notified Body certification",
-    "Rigorous pre-market review <strong>Class D -- High Risk Characteristics:</strong>",
+    "Rigorous pre-market review <strong>Class D — High Risk Characteristics:</strong>",
     "Life-sustaining or life-supporting devices",
     "Implantable devices",
     "Direct cardiac contact devices",
@@ -352,14 +352,6 @@
    "h": 318,
    "num": "12.2",
    "caption": "India MDR Risk-Based Classification Pyramid"
-  },
-  {
-   "t": "p",
-   "html": "<strong>Description:</strong>"
-  },
-  {
-   "t": "p",
-   "html": "A four-tier pyramid showing Class A at the base (widest), progressing upward through Classes B, C, and D (apex). Each tier displays representative device icons, regulatory authority (SLA/CLA), and increasing documentation requirements. Color gradient from green (low risk) to red (high risk)."
   },
   {
    "t": "h3",
@@ -549,14 +541,6 @@
    "caption": "India Class C/D Approval Process Flowchart"
   },
   {
-   "t": "p",
-   "html": "<strong>Description:</strong>"
-  },
-  {
-   "t": "p",
-   "html": "A detailed flowchart showing sequential steps from Notified Body engagement through CLA submission to final license issuance. Decision points, document requirements, and review timelines indicated at each stage. Parallel tracks shown for domestic manufacturing and import pathways."
-  },
-  {
    "t": "h3",
    "text": "Mandatory Documentation for India Device Master File (DMF)"
   },
@@ -673,7 +657,7 @@
   },
   {
    "t": "h2",
-   "text": "United States -- FDA Regulatory System",
+   "text": "United States — FDA Regulatory System",
    "num": "12.5"
   },
   {
@@ -690,7 +674,7 @@
   },
   {
    "t": "h3",
-   "text": "Class I -- General Controls (Low Risk)"
+   "text": "Class I — General Controls (Low Risk)"
   },
   {
    "t": "p",
@@ -730,7 +714,7 @@
    "items": [
     "Most Class I devices are <strong>exempt from 510(k)</strong>",
     "Register establishment and list devices",
-    "Comply with Quality System Regulation (QSR) <strong>Class II -- Special Controls (Moderate Risk) Regulatory Controls:</strong>",
+    "Comply with Quality System Regulation (QSR) <strong>Class II — Special Controls (Moderate Risk) Regulatory Controls:</strong>",
     "General controls plus:",
     "<strong>510(k) Premarket Notification </strong>(mandatory)",
     "Performance standards",
@@ -764,9 +748,9 @@
     "<strong>510(k) Clearance Required</strong>",
     "Demonstrate substantial equivalence to predicate device",
     "Submit performance data",
-    "Typical review: 90 days (may be longer) <strong>Class III -- Premarket Approval (High Risk) Regulatory Controls:</strong>",
+    "Typical review: 90 days (may be longer) <strong>Class III — Premarket Approval (High Risk) Regulatory Controls:</strong>",
     "General and special controls plus:",
-    "<strong>Premarket Approval (PMA) </strong>-- most stringent",
+    "<strong>Premarket Approval (PMA) </strong>— most stringent",
     "Clinical trials typically required",
     "Comprehensive design dossier review",
     "Manufacturing facility inspection",
@@ -808,14 +792,6 @@
    "h": 264,
    "num": "12.4",
    "caption": "FDA Three-Tier Classification System"
-  },
-  {
-   "t": "p",
-   "html": "<strong>Description:</strong>"
-  },
-  {
-   "t": "p",
-   "html": "A three-column comparison chart displaying Class I, II, and III devices. Each column shows: risk level indicator (low/moderate/high), regulatory controls (general/special/PMA), typical devices with icons, submission requirements, and average review timelines. Visual hierarchy emphasizes increasing regulatory burden from left to right."
   },
   {
    "t": "h4",
@@ -1066,28 +1042,16 @@
    "caption": "FDA Regulatory Pathways Decision Tree"
   },
   {
-   "t": "p",
-   "html": "<strong>Description:</strong>"
-  },
-  {
-   "t": "p",
-   "html": "A comprehensive decision flowchart beginning with \"Is there a predicate device?\" branching"
-  },
-  {
-   "t": "p",
-   "html": "to 510(k), De Novo, or PMA pathways. Additional decision points for SR/NSR IDE requirements, clinical data needs, and special circumstances. Color-coded paths indicate different submission types with estimated timelines at terminal nodes."
-  },
-  {
    "t": "h3",
-   "text": "Quality System Regulation (QSR) -- 21 CFR Part 820"
+   "text": "Quality System Regulation (QSR) — 21 CFR Part 820"
   },
   {
    "t": "p",
    "html": "The QSR establishes comprehensive quality management requirements for device manufacturers."
   },
   {
-   "t": "h4",
-   "text": "Key Requirements: Management Responsibility"
+   "t": "p",
+   "html": "<strong>Key Requirements:</strong> Management Responsibility:"
   },
   {
    "t": "ul",
@@ -1174,7 +1138,7 @@
   },
   {
    "t": "h2",
-   "text": "European Union -- Medical Device Regulation (MDR) 2017/745",
+   "text": "European Union — Medical Device Regulation (MDR) 2017/745",
    "num": "12.6"
   },
   {
@@ -1191,7 +1155,7 @@
   },
   {
    "t": "h4",
-   "text": "Class I -- Low Risk General Characteristics"
+   "text": "Class I — Low Risk General Characteristics"
   },
   {
    "t": "ul",
@@ -1209,9 +1173,9 @@
    "t": "ul",
    "items": [
     "<strong>Class I (non-sterile, non-measuring)</strong>",
-    "<strong>Class Is </strong>-- Supplied sterile",
-    "<strong>Class Im </strong>-- Have a measuring function",
-    "<strong>Class Ir </strong>-- Reusable surgical instruments"
+    "<strong>Class Is </strong>— Supplied sterile",
+    "<strong>Class Im </strong>— Have a measuring function",
+    "<strong>Class Ir </strong>— Reusable surgical instruments"
    ]
   },
   {
@@ -1240,7 +1204,7 @@
   },
   {
    "t": "h4",
-   "text": "Class IIa -- Low to Moderate Risk Characteristics"
+   "text": "Class IIa — Low to Moderate Risk Characteristics"
   },
   {
    "t": "ul",
@@ -1274,7 +1238,7 @@
     "Notified Body assessment required",
     "Technical documentation review",
     "Quality management system audit",
-    "Product verification procedures <strong>Class IIb -- Moderate to High Risk Characteristics:</strong>",
+    "Product verification procedures <strong>Class IIb — Moderate to High Risk Characteristics:</strong>",
     "Long-term invasive devices",
     "Active therapeutic devices with significant risk",
     "Devices administering or removing medicines"
@@ -1310,7 +1274,7 @@
   },
   {
    "t": "h3",
-   "text": "Class III -- High Risk"
+   "text": "Class III — High Risk"
   },
   {
    "t": "p",
@@ -1362,18 +1326,6 @@
    "h": 264,
    "num": "12.6",
    "caption": "EU MDR Four-Tier Classification Pyramid"
-  },
-  {
-   "t": "p",
-   "html": "<strong>Description:</strong>"
-  },
-  {
-   "t": "p",
-   "html": "A pyramid structure showing four levels (I, IIa, IIb, III) with increasing conformity assessment requirements. Left side indicates Notified Body involvement level (none for basic Class I,"
-  },
-  {
-   "t": "p",
-   "html": "increasing through Class III). Right side shows clinical evidence requirements (minimal to extensive). Color gradient from green (Class I) through yellow, orange, to red (Class III)."
   },
   {
    "t": "h3",
@@ -1456,7 +1408,7 @@
   },
   {
    "t": "h3",
-   "text": "Annex IX -- Quality Management System + Product Assessment"
+   "text": "Annex IX — Quality Management System + Product Assessment"
   },
   {
    "t": "ul",
@@ -1470,7 +1422,7 @@
   },
   {
    "t": "h3",
-   "text": "Annex X -- Type Examination"
+   "text": "Annex X — Type Examination"
   },
   {
    "t": "ul",
@@ -1483,7 +1435,7 @@
   },
   {
    "t": "h3",
-   "text": "Annex XI -- Product Conformity Based on Full QA"
+   "text": "Annex XI — Product Conformity Based on Full QA"
   },
   {
    "t": "ul",
@@ -1740,18 +1692,6 @@
    "caption": "EU MDR Clinical Evaluation Process"
   },
   {
-   "t": "p",
-   "html": "<strong>Description:</strong>"
-  },
-  {
-   "t": "p",
-   "html": "A comprehensive flowchart showing the clinical evaluation lifecycle: Literature Review → Appraisal → Clinical Data Analysis → CER Preparation → PMCF Planning → Market Launch"
-  },
-  {
-   "t": "p",
-   "html": "→ PMCF Execution → CER Updates. Feedback loops illustrated between post-market data and updated clinical evaluation. Notified Body review points indicated."
-  },
-  {
    "t": "h3",
    "text": "CE Marking Process"
   },
@@ -1896,14 +1836,6 @@
    "h": 280,
    "num": "12.8",
    "caption": "CE Marking Process Timeline"
-  },
-  {
-   "t": "p",
-   "html": "<strong>Description:</strong>"
-  },
-  {
-   "t": "p",
-   "html": "A horizontal timeline showing all phases of CE marking from classification (Month 0) through market launch (Month 18-24). Key milestones marked with icons: NB selection, QMS audit, tech file submission, certificate issuance, EUDAMED registration. Parallel tracks shown for QMS implementation and documentation preparation. Typical duration for each phase indicated."
   },
   {
    "t": "h3",
@@ -2085,7 +2017,7 @@
   },
   {
    "t": "p",
-   "html": "<strong>Table 12.1 -- International Classification Equivalency</strong>"
+   "html": "<strong>Table 12.1 — International Classification Equivalency</strong>"
   },
   {
    "t": "p",
@@ -2155,7 +2087,7 @@
   },
   {
    "t": "p",
-   "html": "<strong>Table 12.2 -- Market Authorization Routes by Region</strong>"
+   "html": "<strong>Table 12.2 — Market Authorization Routes by Region</strong>"
   },
   {
    "t": "p",
@@ -2237,7 +2169,7 @@
   },
   {
    "t": "p",
-   "html": "<strong>Table 12.3 -- QMS Standards Across Regions</strong>"
+   "html": "<strong>Table 12.3 — QMS Standards Across Regions</strong>"
   },
   {
    "t": "p",
@@ -2294,7 +2226,7 @@
   {
    "t": "ul",
    "items": [
-    "<strong>Post-Market Surveillance Comparison Table 12.4 -- PMS and Vigilance Requirements</strong>"
+    "<strong>Post-Market Surveillance Comparison Table 12.4 — PMS and Vigilance Requirements</strong>"
    ]
   },
   {
@@ -2534,10 +2466,6 @@
     "2D data matrices (QR codes, Data Matrix)",
     "RFID tags (where appropriate)"
    ]
-  },
-  {
-   "t": "h4",
-   "text": "Description"
   },
   {
    "t": "fig",
@@ -3091,7 +3019,7 @@
   ],
   [
    "CDSCO",
-   "Central Drugs Standard Control Organization -- India's national regulatory authority for medical devices"
+   "Central Drugs Standard Control Organization — India's national regulatory authority for medical devices"
   ],
   [
    "CE Marking",
@@ -3111,7 +3039,7 @@
   ],
   [
    "FDA",
-   "Food and Drug Administration -- United States regulatory authority for medical devices"
+   "Food and Drug Administration — United States regulatory authority for medical devices"
   ],
   [
    "FSCA (Field Safety Corrective Action)",
@@ -3192,15 +3120,15 @@
   },
   {
    "group": null,
-   "text": "International Organization for Standardization (ISO). ISO 13485:2016 -- Medical devices -- Quality management systems -- Requirements for regulatory purposes."
+   "text": "International Organization for Standardization (ISO). ISO 13485:2016 — Medical devices — Quality management systems — Requirements for regulatory purposes."
   },
   {
    "group": null,
-   "text": "International Organization for Standardization (ISO). ISO 14971:2019 -- Medical devices -- Application of risk management to medical devices."
+   "text": "International Organization for Standardization (ISO). ISO 14971:2019 — Medical devices — Application of risk management to medical devices."
   },
   {
    "group": null,
-   "text": "European Commission. MEDDEV 2.7/1 Revision 4 -- Clinical evaluation: A guide for manufacturers and notified bodies under Directives 93/42/EEC and 90/385/EEC. June 2016."
+   "text": "European Commission. MEDDEV 2.7/1 Revision 4 — Clinical evaluation: A guide for manufacturers and notified bodies under Directives 93/42/EEC and 90/385/EEC. June 2016."
   },
   {
    "group": null,
@@ -3213,10 +3141,6 @@
   {
    "group": null,
    "text": "Ministry of Health and Family Welfare, Government of India. Materiovigilance Programme of India (MvPI) Guidelines. CDSCO, New Delhi."
-  },
-  {
-   "group": null,
-   "text": "[End of Chapter 12]"
   }
  ]
 }

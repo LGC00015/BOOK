@@ -111,15 +111,15 @@
   {
    "t": "ul",
    "items": [
-    "<strong>Design Planning </strong>-- Establishing the design and development plan",
-    "<strong>Design Inputs </strong>-- Defining requirements and specifications",
-    "<strong>Design Outputs </strong>-- Creating design solutions and documentation",
-    "<strong>Design Review </strong>-- Conducting formal evaluations at critical stages",
-    "<strong>Design Verification </strong>-- Confirming outputs meet input requirements",
-    "<strong>Design Validation </strong>-- Ensuring the device meets user needs",
-    "<strong>Design Transfer </strong>-- Transitioning from development to production",
-    "<strong>Design Changes </strong>-- Managing modifications throughout the lifecycle",
-    "<strong>Design History File (DHF) </strong>-- Maintaining comprehensive documentation"
+    "<strong>Design Planning </strong>— Establishing the design and development plan",
+    "<strong>Design Inputs </strong>— Defining requirements and specifications",
+    "<strong>Design Outputs </strong>— Creating design solutions and documentation",
+    "<strong>Design Review </strong>— Conducting formal evaluations at critical stages",
+    "<strong>Design Verification </strong>— Confirming outputs meet input requirements",
+    "<strong>Design Validation </strong>— Ensuring the device meets user needs",
+    "<strong>Design Transfer </strong>— Transitioning from development to production",
+    "<strong>Design Changes </strong>— Managing modifications throughout the lifecycle",
+    "<strong>Design History File (DHF) </strong>— Maintaining comprehensive documentation"
    ]
   },
   {
@@ -131,20 +131,8 @@
    "caption": "Design Control Framework"
   },
   {
-   "t": "p",
-   "html": "<strong>Description:</strong>"
-  },
-  {
-   "t": "p",
-   "html": "A process flow diagram illustrating the design control cycle. The diagram shows a linear progression from \"User Needs\" through \"Design Inputs,\" \"Design Outputs,\" \"Design Verification,\" \"Design Validation,\" and \"Design Transfer,\" culminating in \"Final Device.\""
-  },
-  {
-   "t": "p",
-   "html": "Feedback loops connect each stage back to earlier phases, demonstrating iterative refinement. The entire process is enclosed within a box labeled \"Design History File (DHF)\" to indicate comprehensive documentation requirements."
-  },
-  {
    "t": "h3",
-   "text": "Step 1 -- Identifying and Documenting User Needs"
+   "text": "Step 1 — Identifying and Documenting User Needs"
   },
   {
    "t": "p",
@@ -164,11 +152,11 @@
     "<strong>Market research </strong>and competitive analysis",
     "<strong>Complaint data </strong>from existing devices",
     "<strong>Post-market surveillance </strong>findings <strong>Characteristics of Well-Defined User Needs </strong>Effective user needs statements are:",
-    "<strong>Clear and unambiguous </strong>-- Easily understood by all stakeholders",
-    "<strong>Focused on problems </strong>-- Not prescribing solutions",
-    "<strong>Measurable </strong>-- Capable of verification",
-    "<strong>Clinically relevant </strong>-- Addressing real healthcare challenges",
-    "<strong>Prioritized </strong>-- Ranked by importance and criticality"
+    "<strong>Clear and unambiguous </strong>— Easily understood by all stakeholders",
+    "<strong>Focused on problems </strong>— Not prescribing solutions",
+    "<strong>Measurable </strong>— Capable of verification",
+    "<strong>Clinically relevant </strong>— Addressing real healthcare challenges",
+    "<strong>Prioritized </strong>— Ranked by importance and criticality"
    ]
   },
   {
@@ -198,7 +186,7 @@
   },
   {
    "t": "h3",
-   "text": "Step 2 -- Creating Design Inputs"
+   "text": "Step 2 — Creating Design Inputs"
   },
   {
    "t": "p",
@@ -286,23 +274,8 @@
    "caption": "User Needs to Design Inputs Translation"
   },
   {
-   "t": "p",
-   "html": "<strong>Description:</strong>"
-  },
-  {
-   "t": "p",
-   "html": "A two-column comparison diagram with an arrow connecting them. The left column, labeled \"User Need,\" contains example statements in natural language. The right column, labeled \"Design Input (Engineering Requirement),\" shows the corresponding technical specifications. For example:"
-  },
-  {
-   "t": "ul",
-   "items": [
-    "User Need: \"Easy to hold\" → Design Input: \"Grip diameter: 25-30mm; Surface texture: Ra &lt; 1.6μm\"",
-    "User Need: \"Lightweight\" → Design Input: \"Maximum device weight: 150g ± 10g\""
-   ]
-  },
-  {
    "t": "h3",
-   "text": "Design Input Example -- Urinary Catheter"
+   "text": "Design Input Example — Urinary Catheter"
   },
   {
    "t": "p",
@@ -331,17 +304,17 @@
   {
    "t": "ul",
    "items": [
-    "<strong>Specific </strong>-- Quantified with measurable parameters",
-    "<strong>Complete </strong>-- Addressing all aspects of device performance",
-    "<strong>Unambiguous </strong>-- Clear interpretation by development team",
-    "<strong>Traceable </strong>-- Linked to originating user needs",
-    "<strong>Verifiable </strong>-- Testable through objective methods",
-    "<strong>Reviewed and approved </strong>-- Formally evaluated by cross-functional team"
+    "<strong>Specific </strong>— Quantified with measurable parameters",
+    "<strong>Complete </strong>— Addressing all aspects of device performance",
+    "<strong>Unambiguous </strong>— Clear interpretation by development team",
+    "<strong>Traceable </strong>— Linked to originating user needs",
+    "<strong>Verifiable </strong>— Testable through objective methods",
+    "<strong>Reviewed and approved </strong>— Formally evaluated by cross-functional team"
    ]
   },
   {
    "t": "h3",
-   "text": "Step 3 -- Design Outputs"
+   "text": "Step 3 — Design Outputs"
   },
   {
    "t": "p",
@@ -444,12 +417,12 @@
   {
    "t": "ul",
    "items": [
-    "<strong>Meet design input requirements </strong>-- Direct traceability",
-    "<strong>Be measurable or testable </strong>-- Enable objective verification",
-    "<strong>Include acceptance criteria </strong>-- Define pass/fail thresholds",
-    "<strong>Reference applicable standards </strong>-- Demonstrate compliance",
-    "<strong>Be properly documented </strong>-- Maintain in DHF",
-    "<strong>Undergo formal review </strong>-- Cross-functional approval"
+    "<strong>Meet design input requirements </strong>— Direct traceability",
+    "<strong>Be measurable or testable </strong>— Enable objective verification",
+    "<strong>Include acceptance criteria </strong>— Define pass/fail thresholds",
+    "<strong>Reference applicable standards </strong>— Demonstrate compliance",
+    "<strong>Be properly documented </strong>— Maintain in DHF",
+    "<strong>Undergo formal review </strong>— Cross-functional approval"
    ]
   },
   {
@@ -478,7 +451,7 @@
   },
   {
    "t": "h2",
-   "text": "Step 4 -- Human Factors and Usability Engineering",
+   "text": "Step 4 — Human Factors and Usability Engineering",
    "num": "9.3"
   },
   {
@@ -624,12 +597,12 @@
   {
    "t": "ul",
    "items": [
-    "<strong>Color-coded ports and connectors </strong>-- Prevent misconnections",
-    "<strong>Anti-slip handles and grips </strong>-- Improve device control",
-    "<strong>Audible and visual alarms </strong>-- Enhance situational awareness",
-    "<strong>Large, high-contrast displays </strong>-- Accommodate users with vision limitations",
-    "<strong>Simplified workflows </strong>-- Reduce training requirements",
-    "<strong>Standardized symbols (ISO 15223-1) </strong>-- Universal understanding"
+    "<strong>Color-coded ports and connectors </strong>— Prevent misconnections",
+    "<strong>Anti-slip handles and grips </strong>— Improve device control",
+    "<strong>Audible and visual alarms </strong>— Enhance situational awareness",
+    "<strong>Large, high-contrast displays </strong>— Accommodate users with vision limitations",
+    "<strong>Simplified workflows </strong>— Reduce training requirements",
+    "<strong>Standardized symbols (ISO 15223-1) </strong>— Universal understanding"
    ]
   },
   {
@@ -641,18 +614,6 @@
    "caption": "Usability Engineering Lifecycle"
   },
   {
-   "t": "p",
-   "html": "<strong>Description:</strong>"
-  },
-  {
-   "t": "p",
-   "html": "A circular process diagram illustrating the iterative nature of usability engineering. The cycle includes: \"User Research &amp; Observation\" → \"Requirements Definition\" → \"Preliminary Design\" → \"Prototype Development\" → \"Formative Testing\" → \"Design Refinement\" →"
-  },
-  {
-   "t": "p",
-   "html": "\"Final Design\" → \"Summative Validation\" → \"Post-Market Surveillance,\" with arrows indicating both forward progression and feedback loops back to earlier stages."
-  },
-  {
    "t": "h3",
    "text": "Safety Note 9.1"
   },
@@ -662,7 +623,7 @@
   },
   {
    "t": "h3",
-   "text": "Step 5 -- Risk-Based Design (ISO 14971)"
+   "text": "Step 5 — Risk-Based Design (ISO 14971)"
   },
   {
    "t": "p",
@@ -746,8 +707,8 @@
    "html": "The most effective risk controls address hazards at the design level:"
   },
   {
-   "t": "h3",
-   "text": "Priority 1: Inherent Safety by Design"
+   "t": "p",
+   "html": "<strong>Priority 1:</strong> Inherent Safety by Design"
   },
   {
    "t": "ul",
@@ -792,10 +753,10 @@
   {
    "t": "ul",
    "items": [
-    "<strong>Risk Management Plan </strong>-- Strategy and methodology",
-    "<strong>Risk Management File </strong>-- Comprehensive risk records",
-    "<strong>Traceability Matrix </strong>-- Links hazards to controls to verification",
-    "<strong>Risk Management Report </strong>-- Summary for review and approval"
+    "<strong>Risk Management Plan </strong>— Strategy and methodology",
+    "<strong>Risk Management File </strong>— Comprehensive risk records",
+    "<strong>Traceability Matrix </strong>— Links hazards to controls to verification",
+    "<strong>Risk Management Report </strong>— Summary for review and approval"
    ]
   },
   {
@@ -808,7 +769,7 @@
   },
   {
    "t": "h3",
-   "text": "Step 6 -- Prototyping"
+   "text": "Step 6 — Prototyping"
   },
   {
    "t": "p",
@@ -919,10 +880,10 @@
     "Qualified suppliers",
     "Full assembly processes",
     "Complete labeling and packaging <strong>Common Prototyping Methods Additive Manufacturing (3D Printing) Technologies:</strong>",
-    "<strong>Fused Deposition Modeling (FDM) </strong>-- Thermoplastic prototypes",
-    "<strong>Stereolithography (SLA) </strong>-- High-resolution polymer parts",
-    "<strong>Selective Laser Sintering (SLS) </strong>-- Functional plastic components",
-    "<strong>Metal 3D Printing </strong>-- Titanium and stainless steel prototypes"
+    "<strong>Fused Deposition Modeling (FDM) </strong>— Thermoplastic prototypes",
+    "<strong>Stereolithography (SLA) </strong>— High-resolution polymer parts",
+    "<strong>Selective Laser Sintering (SLS) </strong>— Functional plastic components",
+    "<strong>Metal 3D Printing </strong>— Titanium and stainless steel prototypes"
    ]
   },
   {
@@ -945,9 +906,9 @@
   {
    "t": "ul",
    "items": [
-    "<strong>CNC Machining </strong>-- Precision metal and plastic parts",
-    "<strong>Laser Cutting </strong>-- Flat components and panels",
-    "<strong>Wire EDM </strong>-- Complex metal geometries"
+    "<strong>CNC Machining </strong>— Precision metal and plastic parts",
+    "<strong>Laser Cutting </strong>— Flat components and panels",
+    "<strong>Wire EDM </strong>— Complex metal geometries"
    ]
   },
   {
@@ -957,9 +918,9 @@
   {
    "t": "ul",
    "items": [
-    "<strong>Silicone Molding </strong>-- Soft components and seals",
-    "<strong>Thermoforming </strong>-- Housing and covers",
-    "<strong>Vacuum Casting </strong>-- Multiple identical prototypes"
+    "<strong>Silicone Molding </strong>— Soft components and seals",
+    "<strong>Thermoforming </strong>— Housing and covers",
+    "<strong>Vacuum Casting </strong>— Multiple identical prototypes"
    ]
   },
   {
@@ -971,24 +932,8 @@
    "caption": "Prototype Development Stages"
   },
   {
-   "t": "p",
-   "html": "<strong>Description:</strong>"
-  },
-  {
-   "t": "p",
-   "html": "A three-stage progression diagram showing increasing fidelity:"
-  },
-  {
-   "t": "ul",
-   "items": [
-    "<strong>Stage 1: </strong>\"Concept Prototype\" with simple block diagram representation",
-    "<strong>Stage 2: </strong>\"Engineering Prototype\" with more detailed technical drawing",
-    "<strong>Stage 3: </strong>\"Pre-Production Prototype\" with photo-realistic rendering Arrows between stages indicate \"Iterate &amp; Refine\" with feedback loops showing \"Testing Results\" feeding back to earlier stages."
-   ]
-  },
-  {
    "t": "h3",
-   "text": "Step 7 -- Design Reviews"
+   "text": "Step 7 — Design Reviews"
   },
   {
    "t": "p",
@@ -1021,13 +966,13 @@
   {
    "t": "ul",
    "items": [
-    "<strong>Engineering </strong>-- Design feasibility and technical adequacy",
-    "<strong>Quality Assurance </strong>-- Compliance and documentation",
-    "<strong>Regulatory Affairs </strong>-- Regulatory strategy and submissions",
-    "<strong>Manufacturing </strong>-- Producibility and process capability",
-    "<strong>Clinical/Medical </strong>-- Clinical appropriateness and safety",
-    "<strong>Marketing/Product Management </strong>-- Market requirements and usability",
-    "<strong>Service/Support </strong>-- Maintainability and support requirements"
+    "<strong>Engineering </strong>— Design feasibility and technical adequacy",
+    "<strong>Quality Assurance </strong>— Compliance and documentation",
+    "<strong>Regulatory Affairs </strong>— Regulatory strategy and submissions",
+    "<strong>Manufacturing </strong>— Producibility and process capability",
+    "<strong>Clinical/Medical </strong>— Clinical appropriateness and safety",
+    "<strong>Marketing/Product Management </strong>— Market requirements and usability",
+    "<strong>Service/Support </strong>— Maintainability and support requirements"
    ]
   },
   {
@@ -1078,11 +1023,11 @@
   {
    "t": "ul",
    "items": [
-    "<strong>Design Review Agenda </strong>-- Topics to be covered",
-    "<strong>Design Review Minutes </strong>-- Decisions and discussions",
-    "<strong>Action Items </strong>-- Issues requiring resolution",
-    "<strong>Design Review Report </strong>-- Formal summary and approval",
-    "<strong>Follow-up Documentation </strong>-- Closure of action items"
+    "<strong>Design Review Agenda </strong>— Topics to be covered",
+    "<strong>Design Review Minutes </strong>— Decisions and discussions",
+    "<strong>Action Items </strong>— Issues requiring resolution",
+    "<strong>Design Review Report </strong>— Formal summary and approval",
+    "<strong>Follow-up Documentation </strong>— Closure of action items"
    ]
   },
   {
@@ -1091,7 +1036,7 @@
   },
   {
    "t": "h2",
-   "text": "Step 8 -- Verification and Validation",
+   "text": "Step 8 — Verification and Validation",
    "num": "9.4"
   },
   {
@@ -1253,14 +1198,6 @@
    "caption": "Verification vs. Validation"
   },
   {
-   "t": "p",
-   "html": "<strong>Description:</strong>"
-  },
-  {
-   "t": "p",
-   "html": "A side-by-side comparison diagram with two parallel columns:"
-  },
-  {
    "t": "h4",
    "text": "Left Column (Verification)"
   },
@@ -1295,16 +1232,16 @@
   {
    "t": "ul",
    "items": [
-    "<strong>V&amp;V Plan </strong>-- Strategy and test protocols",
-    "<strong>Test Protocols </strong>-- Detailed procedures and acceptance criteria",
-    "<strong>Test Reports </strong>-- Results and data analysis",
-    "<strong>Traceability Matrix </strong>-- Links requirements to tests to results",
-    "<strong>V&amp;V Summary Report </strong>-- Overall conclusions and approval"
+    "<strong>V&amp;V Plan </strong>— Strategy and test protocols",
+    "<strong>Test Protocols </strong>— Detailed procedures and acceptance criteria",
+    "<strong>Test Reports </strong>— Results and data analysis",
+    "<strong>Traceability Matrix </strong>— Links requirements to tests to results",
+    "<strong>V&amp;V Summary Report </strong>— Overall conclusions and approval"
    ]
   },
   {
    "t": "h3",
-   "text": "9.11 Step 9 -- Design Transfer"
+   "text": "9.11 Step 9 — Design Transfer"
   },
   {
    "t": "p",
@@ -1452,20 +1389,8 @@
    "caption": "Design Transfer Process Flow"
   },
   {
-   "t": "p",
-   "html": "<strong>Description:</strong>"
-  },
-  {
-   "t": "p",
-   "html": "<strong>A horizontal process flow diagram showing:</strong> \"R&amp;D Design Complete\" → \"Process Development\" → \"Equipment Qualification (IQ/OQ/PQ)\" → \"Supplier Qualification\" → \"Process Validation\" → \"Personnel Training\" → \"DMR Creation\" → \"Production Release\""
-  },
-  {
-   "t": "p",
-   "html": "Each step has a small checklist icon below indicating required documentation."
-  },
-  {
    "t": "h3",
-   "text": "9.12 Step 10 -- Design Documentation"
+   "text": "9.12 Step 10 — Design Documentation"
   },
   {
    "t": "p",
@@ -1632,14 +1557,6 @@
    "h": 264,
    "num": "9.7",
    "caption": "Documentation Hierarchy"
-  },
-  {
-   "t": "p",
-   "html": "<strong>Description:</strong>"
-  },
-  {
-   "t": "p",
-   "html": "A three-tier pyramid diagram showing documentation relationships:"
   },
   {
    "t": "h4",
@@ -1819,11 +1736,11 @@
   {
    "t": "ul",
    "items": [
-    "<strong>Usability engineering cannot be an afterthought </strong>-- Must be integrated from initial concept through final design",
-    "<strong>Representative users must participate in testing </strong>-- Engineers and developers are not appropriate surrogates",
-    "<strong>Realistic use environments matter </strong>-- Laboratory testing cannot fully predict real-world performance",
-    "<strong>Clear communication of critical information is paramount </strong>-- Design must minimize cognitive load during high-stress situations",
-    "<strong>Regulatory compliance requires demonstrated usability </strong>-- IEC 62366-1 and FDA Human Factors guidance are not optional"
+    "<strong>Usability engineering cannot be an afterthought </strong>— Must be integrated from initial concept through final design",
+    "<strong>Representative users must participate in testing </strong>— Engineers and developers are not appropriate surrogates",
+    "<strong>Realistic use environments matter </strong>— Laboratory testing cannot fully predict real-world performance",
+    "<strong>Clear communication of critical information is paramount </strong>— Design must minimize cognitive load during high-stress situations",
+    "<strong>Regulatory compliance requires demonstrated usability </strong>— IEC 62366-1 and FDA Human Factors guidance are not optional"
    ]
   },
   {
@@ -1845,7 +1762,7 @@
   },
   {
    "t": "p",
-   "html": "<strong>Key Takeaway: </strong>This case demonstrates that <strong>technical performance alone is insufficient </strong>-- devices must be designed with deep understanding of actual users, their capabilities, their limitations, and their real-world working conditions."
+   "html": "<strong>Key Takeaway: </strong>This case demonstrates that <strong>technical performance alone is insufficient </strong>— devices must be designed with deep understanding of actual users, their capabilities, their limitations, and their real-world working conditions."
   },
   {
    "t": "box",
@@ -1944,7 +1861,19 @@
   ],
   [
    "Device Master Record (DMR)",
-   "Compilation of manufacturing procedures and specifications Formative Evaluation -- Usability testing conducted during development to improve design Human Factors Engineering -- Application of human capabilities and limitations to design IEC 62366-1 -- International standard for usability engineering of medical devices"
+   "Compilation of manufacturing procedures and specifications"
+  ],
+  [
+   "Formative Evaluation",
+   "Usability testing conducted during development to improve design"
+  ],
+  [
+   "Human Factors Engineering",
+   "Application of human capabilities and limitations to design"
+  ],
+  [
+   "IEC 62366-1",
+   "International standard for usability engineering of medical devices"
   ],
   [
    "ISO 14971",
@@ -2014,23 +1943,23 @@
   },
   {
    "group": null,
-   "text": "International Organization for Standardization. (2016). ISO 13485:2016 -- Medical devices -- Quality management systems -- Requirements for regulatory purposes."
+   "text": "International Organization for Standardization. (2016). ISO 13485:2016 — Medical devices — Quality management systems — Requirements for regulatory purposes."
   },
   {
    "group": null,
-   "text": "International Electrotechnical Commission. (2015). IEC 62366-1:2015 -- Medical devices -- Part 1: Application of usability engineering to medical devices."
+   "text": "International Electrotechnical Commission. (2015). IEC 62366-1:2015 — Medical devices — Part 1: Application of usability engineering to medical devices."
   },
   {
    "group": null,
-   "text": "International Organization for Standardization. (2019). ISO 14971:2019 -- Medical devices -- Application of risk management to medical devices."
+   "text": "International Organization for Standardization. (2019). ISO 14971:2019 — Medical devices — Application of risk management to medical devices."
   },
   {
    "group": null,
-   "text": "U.S. Food and Drug Administration. 21 CFR Part 820 -- Quality System Regulation."
+   "text": "U.S. Food and Drug Administration. 21 CFR Part 820 — Quality System Regulation."
   },
   {
    "group": null,
-   "text": "European Commission. (2017). Regulation (EU) 2017/745 -- Medical Devices Regulation (MDR), Annex I and Annex II."
+   "text": "European Commission. (2017). Regulation (EU) 2017/745 — Medical Devices Regulation (MDR), Annex I and Annex II."
   },
   {
    "group": null,
@@ -2038,7 +1967,7 @@
   },
   {
    "group": null,
-   "text": "ANSI/AAMI HE75:2018 -- Human factors engineering -- Design of medical devices."
+   "text": "ANSI/AAMI HE75:2018 — Human factors engineering — Design of medical devices."
   },
   {
    "group": null,
@@ -2046,7 +1975,7 @@
   },
   {
    "group": null,
-   "text": "International Organization for Standardization. (2020). ISO 15223-1:2020 -- Medical devices -- Symbols to be used with information to be supplied by the manufacturer."
+   "text": "International Organization for Standardization. (2020). ISO 15223-1:2020 — Medical devices — Symbols to be used with information to be supplied by the manufacturer."
   }
  ]
 }

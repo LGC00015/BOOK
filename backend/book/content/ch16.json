@@ -98,18 +98,6 @@
    "caption": "Functions of Medical Device Packaging"
   },
   {
-   "t": "p",
-   "html": "<strong>Description:</strong>"
-  },
-  {
-   "t": "p",
-   "html": "A radial diagram with \"Medical Device Packaging\" at the center, connected to six outer nodes:"
-  },
-  {
-   "t": "p",
-   "html": "(1) Physical Protection, (2) Sterility Maintenance, (3) Barrier Properties, (4) Information Communication, (5) Transport Safety, (6) Regulatory Compliance. Each node includes representative icons."
-  },
-  {
    "t": "h3",
    "text": "Functions of Medical Device Packaging"
   },
@@ -375,22 +363,6 @@
    "caption": "Packaging Hierarchy"
   },
   {
-   "t": "p",
-   "html": "<strong>Description:</strong>"
-  },
-  {
-   "t": "p",
-   "html": "A three-tier pyramid diagram showing:"
-  },
-  {
-   "t": "ul",
-   "items": [
-    "<strong>Base (Tertiary): </strong>Shipping cartons and pallets (largest tier)",
-    "<strong>Middle (Secondary): </strong>Cartons and outer boxes (medium tier)",
-    "<strong>Top (Primary): </strong>Sterile pouches and trays in direct device contact (smallest tier) Arrow annotations indicate \"Increasing proximity to device\" from base to top."
-   ]
-  },
-  {
    "t": "h3",
    "text": "Packaging Materials for Medical Devices"
   },
@@ -595,22 +567,6 @@
    "caption": "Packaging Material Selection Matrix"
   },
   {
-   "t": "p",
-   "html": "<strong>Description:</strong>"
-  },
-  {
-   "t": "p",
-   "html": "<strong>A comparative table with columns:</strong> Material Type | Barrier Properties | Sterilization Compatibility | Typical Applications | Cost Level."
-  },
-  {
-   "t": "p",
-   "html": "<strong>Rows include:</strong> Tyvek, Medical Paper, PET, PE, PVC, PP, Aluminum Foil."
-  },
-  {
-   "t": "p",
-   "html": "Visual indicators (e.g., ●●● for high, ●● for medium, ● for low) rate each property."
-  },
-  {
    "t": "h2",
    "text": "Sterile Barrier Systems (SBS)",
    "num": "16.3"
@@ -730,23 +686,6 @@
    "caption": "Sterile Barrier System Components"
   },
   {
-   "t": "p",
-   "html": "<strong>Description:</strong>"
-  },
-  {
-   "t": "p",
-   "html": "An exploded-view diagram showing layered packaging components:"
-  },
-  {
-   "t": "ul",
-   "items": [
-    "<strong>Innermost Layer: </strong>Device positioned in cavity",
-    "<strong>Primary Sterile Barrier: </strong>Tyvek-lidded tray",
-    "<strong>Secondary Packaging: </strong>Protective carton",
-    "<strong>Tertiary Packaging: </strong>Shipping container Arrows and labels identify each component's function."
-   ]
-  },
-  {
    "t": "h2",
    "text": "Packaging Validation and Testing (ISO 11607-2)",
    "num": "16.4"
@@ -848,23 +787,6 @@
    "h": 264,
    "num": "16.5",
    "caption": "Peel Strength Testing Setup"
-  },
-  {
-   "t": "p",
-   "html": "<strong>Description:</strong>"
-  },
-  {
-   "t": "p",
-   "html": "Diagram showing universal testing machine with:"
-  },
-  {
-   "t": "ul",
-   "items": [
-    "Upper grip holding sealed pouch edge",
-    "Lower grip holding opposite edge",
-    "Force gauge displaying real-time measurements",
-    "Controlled peel rate (300 mm/min) indicated by arrow"
-   ]
   },
   {
    "t": "h3",
@@ -1062,28 +984,6 @@
    "caption": "Packaging Validation Workflow"
   },
   {
-   "t": "p",
-   "html": "<strong>Description:</strong>"
-  },
-  {
-   "t": "p",
-   "html": "A process flowchart showing:"
-  },
-  {
-   "t": "ul",
-   "items": [
-    "<strong>Design Phase: </strong>Material selection → SBS design",
-    "<strong>IQ/OQ/PQ: </strong>Equipment and process qualification",
-    "<strong>Testing Phase: </strong>Seal integrity → Aging → Transportation",
-    "<strong>Verification: </strong>Sterility maintenance → Device function",
-    "<strong>Release: </strong>Documentation → Batch release approval"
-   ]
-  },
-  {
-   "t": "p",
-   "html": "Arrows connect sequential stages with decision points (pass/fail gates)."
-  },
-  {
    "t": "h2",
    "text": "Shelf-Life Determination",
    "num": "16.5"
@@ -1214,25 +1114,6 @@
    "h": 264,
    "num": "16.7",
    "caption": "Shelf-Life Determination Strategy"
-  },
-  {
-   "t": "p",
-   "html": "<strong>Description:</strong>"
-  },
-  {
-   "t": "p",
-   "html": "A dual-path flowchart showing:"
-  },
-  {
-   "t": "ul",
-   "items": [
-    "<strong>Path A (Accelerated Aging): </strong>Fast track → Preliminary shelf-life claim → Product launch",
-    "<strong>Path B (Real-Time Aging): </strong>Parallel ongoing study → Shelf-life confirmation → Potential extension"
-   ]
-  },
-  {
-   "t": "p",
-   "html": "Both paths converge at \"Validated Shelf-Life Claim\" with supporting documentation."
   },
   {
    "t": "h3",
@@ -1579,14 +1460,6 @@
    "caption": "Example Medical Device Label Layout"
   },
   {
-   "t": "p",
-   "html": "<strong>Description:</strong>"
-  },
-  {
-   "t": "p",
-   "html": "A rectangular label template divided into sections:"
-  },
-  {
    "t": "h4",
    "text": "Top Section"
   },
@@ -1773,28 +1646,6 @@
    "h": 264,
    "num": "16.9",
    "caption": "UDI Structure and Components"
-  },
-  {
-   "t": "p",
-   "html": "<strong>Description:</strong>"
-  },
-  {
-   "t": "p",
-   "html": "A visual breakdown showing:"
-  },
-  {
-   "t": "p",
-   "html": "<strong>Top Section: </strong>Complete UDI barcode (GS1-128 or Data Matrix)"
-  },
-  {
-   "t": "p",
-   "html": "<strong>Middle Section: </strong>UDI dissected into components:"
-  },
-  {
-   "t": "ul",
-   "items": [
-    "<strong>Device Identifier (DI): </strong>(01)12345678901234"
-   ]
   },
   {
    "t": "h4",
@@ -1987,27 +1838,6 @@
    "h": 264,
    "num": "16.10",
    "caption": "UDI Implementation Timeline by Device Risk"
-  },
-  {
-   "t": "p",
-   "html": "<strong>Description:</strong>"
-  },
-  {
-   "t": "p",
-   "html": "A horizontal timeline chart showing phased UDI implementation:"
-  },
-  {
-   "t": "ul",
-   "items": [
-    "<strong>Phase 1 (Year 1): </strong>Class III/D devices (highest risk)",
-    "<strong>Phase 2 (Year 2): </strong>Implantable devices and Class II/C",
-    "<strong>Phase 3 (Year 3): </strong>Class II/B devices",
-    "<strong>Phase 4 (Year 4+): </strong>Class I/A devices (lowest risk)"
-   ]
-  },
-  {
-   "t": "p",
-   "html": "Different colors indicate device classes with regulatory deadlines marked."
   },
   {
    "t": "h2",

@@ -59,8 +59,12 @@
    "html": "Medical devices must simultaneously meet two critical requirements: they must withstand mechanical forces within the human body without breaking, deforming, or failing, and they must not trigger harmful biological reactions. The integration of biomechanics and biocompatibility is fundamental to device safety and efficacy."
   },
   {
+   "t": "h3",
+   "text": "Real-World"
+  },
+  {
    "t": "h4",
-   "text": "Real-World Examples"
+   "text": "Examples"
   },
   {
    "t": "p",
@@ -117,7 +121,7 @@
    "w": 21,
    "h": 3,
    "num": "8.1",
-   "caption": ""
+   "caption": "Formula"
   },
   {
    "t": "p",
@@ -225,7 +229,7 @@
    "w": 20,
    "h": 2,
    "num": "8.2",
-   "caption": ""
+   "caption": "Formula"
   },
   {
    "t": "p",
@@ -489,7 +493,7 @@
   },
   {
    "t": "h3",
-   "text": "Table 8.1 -- Mechanical Properties of Common Device Materials"
+   "text": "Table 8.1 — Mechanical Properties of Common Device Materials"
   },
   {
    "t": "p",
@@ -585,8 +589,12 @@
    "html": "Sudden catastrophic failure when crack reaches critical size"
   },
   {
+   "t": "h3",
+   "text": "Clinical"
+  },
+  {
    "t": "h4",
-   "text": "Clinical Examples"
+   "text": "Examples"
   },
   {
    "t": "p",
@@ -864,7 +872,7 @@
   },
   {
    "t": "p",
-   "html": "<strong>Table 8.2 -- Corrosion Resistance of Implant Metals</strong>"
+   "html": "<strong>Table 8.2 — Corrosion Resistance of Implant Metals</strong>"
   },
   {
    "t": "p",
@@ -1611,11 +1619,11 @@
    "w": 497,
    "h": 361,
    "num": "8.7",
-   "caption": ""
+   "caption": "Method"
   },
   {
    "t": "p",
-   "html": "<strong>Diagram 8.1 -- ISO 10993 Test Selection Flowchart Description: </strong>Decision tree for biocompatibility testing:"
+   "html": "<strong>Diagram 8.1 — ISO 10993 Test Selection Flowchart Description: </strong>Decision tree for biocompatibility testing:"
   },
   {
    "t": "h3",
@@ -2277,11 +2285,11 @@
   },
   {
    "group": null,
-   "text": "ISO 14971:2019. Medical devices -- Application of risk management to medical devices."
+   "text": "ISO 14971:2019. Medical devices — Application of risk management to medical devices."
   },
   {
    "group": null,
-   "text": "ISO 7206-4:2010. Implants for surgery -- Partial and total hip joint prostheses -- Part 4: Determination of endurance properties and performance of stemmed femoral components."
+   "text": "ISO 7206-4:2010. Implants for surgery — Partial and total hip joint prostheses — Part 4: Determination of endurance properties and performance of stemmed femoral components."
   },
   {
    "group": null,

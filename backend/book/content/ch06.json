@@ -112,14 +112,6 @@
    "caption": "Basic Cleanroom Layout"
   },
   {
-   "t": "p",
-   "html": "<strong>Description:</strong>"
-  },
-  {
-   "t": "p",
-   "html": "Sequential room layout diagram showing contamination control progression: Personnel Entry → Gowning Room → Air Shower → Grade D Area → Grade C Area → Grade B Background → Grade A Laminar Flow Zone (critical manufacturing area)."
-  },
-  {
    "t": "h3",
    "text": "Why Cleanrooms Are Essential"
   },
@@ -242,24 +234,6 @@
    "h": 340,
    "num": "6.2",
    "caption": "ISO Cleanroom Classification Pyramid"
-  },
-  {
-   "t": "p",
-   "html": "<strong>Description:</strong>"
-  },
-  {
-   "t": "p",
-   "html": "Inverted pyramid diagram showing:"
-  },
-  {
-   "t": "ul",
-   "items": [
-    "Top (smallest): ISO Class 5 (Cleanest, most controlled)",
-    "Middle layers: ISO Class 6, ISO Class 7",
-    "Bottom (largest): ISO Class 8 (Less controlled)",
-    "Arrow indicating \"Increasing cleanliness\" from bottom to top",
-    "Particle concentration values labeled for each level"
-   ]
   },
   {
    "t": "h2",
@@ -442,22 +416,6 @@
    "caption": "Laminar vs. Turbulent Airflow Patterns"
   },
   {
-   "t": "p",
-   "html": "<strong>Description:</strong>"
-  },
-  {
-   "t": "p",
-   "html": "Side-by-side comparison diagram:"
-  },
-  {
-   "t": "ul",
-   "items": [
-    "<strong>Left panel (Laminar)</strong>: Straight, parallel arrows flowing uniformly downward/across",
-    "<strong>Right panel (Turbulent)</strong>: Swirling, mixed arrow patterns showing air circulation",
-    "Labels indicating velocity, flow characteristics, and typical ISO class usage"
-   ]
-  },
-  {
    "t": "h3",
    "text": "HVAC Systems in Cleanroom Facilities"
   },
@@ -591,14 +549,6 @@
    "h": 302,
    "num": "6.4",
    "caption": "HVAC System Cycle"
-  },
-  {
-   "t": "p",
-   "html": "<strong>Description:</strong>"
-  },
-  {
-   "t": "p",
-   "html": "<strong>Circular flow diagram showing:</strong> Air Handling Unit (AHU) → Pre-filtration → Cooling/Heating Coils → Humidification → HEPA Filtration → Supply to Cleanroom → Return Air Duct → Back to AHU (with labels for temperature, humidity, and filtration stages)"
   },
   {
    "t": "h3",
@@ -737,27 +687,6 @@
    "h": 264,
    "num": "6.5",
    "caption": "Gowning Procedure Steps (Placeholder)"
-  },
-  {
-   "t": "p",
-   "html": "<strong>Description:</strong>"
-  },
-  {
-   "t": "p",
-   "html": "Sequential illustrated steps showing:"
-  },
-  {
-   "t": "ul",
-   "items": [
-    "<strong>Step 1</strong>: Remove personal items (watches, jewelry, mobile phones)",
-    "<strong>Step 2</strong>: Wear shoe covers or change to dedicated cleanroom shoes",
-    "<strong>Step 3</strong>: Don hair cover, ensuring complete hair coverage",
-    "<strong>Step 4</strong>: Apply face mask, covering nose and mouth completely",
-    "<strong>Step 5</strong>: Perform hand washing and sanitization",
-    "<strong>Step 6</strong>: Don cleanroom coverall in designated gowning area",
-    "<strong>Step 7</strong>: Apply sterile gloves (for Grade A/B areas)",
-    "<strong>Step 8</strong>: Pass through air shower before cleanroom entry"
-   ]
   },
   {
    "t": "h4",
@@ -1076,26 +1005,6 @@
    "caption": "Environmental Monitoring Program Flow"
   },
   {
-   "t": "p",
-   "html": "<strong>Description:</strong>"
-  },
-  {
-   "t": "p",
-   "html": "Flowchart showing:"
-  },
-  {
-   "t": "p",
-   "html": "Sampling → Testing → Data Recording → Trending Analysis → Alert Limit Exceeded? (Yes"
-  },
-  {
-   "t": "p",
-   "html": "→ Investigation → CAPA) / (No → Continue Routine Monitoring) → Action Limit Exceeded?"
-  },
-  {
-   "t": "p",
-   "html": "→ Stop Production → Root Cause Analysis → CAPA → Verification → Resume Production"
-  },
-  {
    "t": "h3",
    "text": "Cleanroom Validation and Qualification"
   },
@@ -1358,22 +1267,6 @@
    "caption": "Sterilization Method Selection Flowchart"
   },
   {
-   "t": "p",
-   "html": "<strong>Description:</strong>"
-  },
-  {
-   "t": "p",
-   "html": "Decision tree flowchart:"
-  },
-  {
-   "t": "ul",
-   "items": [
-    "<strong>Start</strong>: Material heat-stable?",
-    "<strong>Yes </strong>→ Use Steam Sterilization (121°C or 134°C)",
-    "<strong>No </strong>→ Proceed to next decision"
-   ]
-  },
-  {
    "t": "h3",
    "text": "Material radiation-stable?"
   },
@@ -1575,43 +1468,43 @@
  "references": [
   {
    "group": null,
-   "text": "ISO 14644-1:2015 -- Cleanrooms and associated controlled environments -- Part 1: Classification of air cleanliness by particle concentration"
+   "text": "ISO 14644-1:2015 — Cleanrooms and associated controlled environments — Part 1: Classification of air cleanliness by particle concentration"
   },
   {
    "group": null,
-   "text": "ISO 14644-2:2015 -- Cleanrooms and associated controlled environments -- Part 2: Monitoring to provide evidence of cleanroom performance"
+   "text": "ISO 14644-2:2015 — Cleanrooms and associated controlled environments — Part 2: Monitoring to provide evidence of cleanroom performance"
   },
   {
    "group": null,
-   "text": "ISO 13485:2016 -- Medical devices -- Quality management systems -- Requirements for regulatory purposes"
+   "text": "ISO 13485:2016 — Medical devices — Quality management systems — Requirements for regulatory purposes"
   },
   {
    "group": null,
-   "text": "EU GMP Annex 1 -- Manufacture of Sterile Medicinal Products (Revised 2022)"
+   "text": "EU GMP Annex 1 — Manufacture of Sterile Medicinal Products (Revised 2022)"
   },
   {
    "group": null,
-   "text": "Indian Medical Device Rules 2017 -- Schedule IV: Good Manufacturing Practices requirements"
+   "text": "Indian Medical Device Rules 2017 — Schedule IV: Good Manufacturing Practices requirements"
   },
   {
    "group": null,
-   "text": "ISO 11135:2014 -- Sterilization of health-care products -- Ethylene oxide"
+   "text": "ISO 11135:2014 — Sterilization of health-care products — Ethylene oxide"
   },
   {
    "group": null,
-   "text": "ISO 11137-1:2006 -- Sterilization of health care products -- Radiation"
+   "text": "ISO 11137-1:2006 — Sterilization of health care products — Radiation"
   },
   {
    "group": null,
-   "text": "ISO 17665-1:2006 -- Sterilization of health care products -- Moist heat"
+   "text": "ISO 17665-1:2006 — Sterilization of health care products — Moist heat"
   },
   {
    "group": null,
-   "text": "PDA Technical Report No. 13 -- Fundamentals of an Environmental Monitoring Program (Revised 2014)"
+   "text": "PDA Technical Report No. 13 — Fundamentals of an Environmental Monitoring Program (Revised 2014)"
   },
   {
    "group": null,
-   "text": "FDA Guidance -- Sterile Drug Products Produced by Aseptic Processing — Current Good Manufacturing Practice (2004)"
+   "text": "FDA Guidance — Sterile Drug Products Produced by Aseptic Processing — Current Good Manufacturing Practice (2004)"
   }
  ]
 }
