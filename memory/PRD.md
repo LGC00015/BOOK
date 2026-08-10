@@ -43,10 +43,21 @@ frontend/.env → REACT_APP_BACKEND_URL=https://happy-kowalevski-8.preview.emerg
 backend/.env → MONGO_URL=mongodb://localhost:27017, DB_NAME=medical_devices_book, CORS_ORIGINS=*
 (Mongo still unused — content is file-based.)
 
-## Status (Aug 2026)
-- All phases COMPLETE. Backend tested by testing agent: 100% pass (meta/toc/38 previews/
-  images/pdf 754pp). Frontend visually verified via screenshots (user permission pending for
-  automated frontend testing).
+## Status (Aug 2026 — FINAL EDITION)
+- All phases COMPLETE. Book: 726 A4 pages, ~3.5MB PDF, 20 chapters, 6 parts.
+- ALL 156 FIGURES are agent-generated vector SVG via backend/book/figkit.py (18 templates:
+  flow, vflow, cycle, pyramid, ladder, columns, hub, timeline, layers, matrix, decide, bars,
+  vmodel, curve, formulabox, zones, labelcard, profile) + figure_specs_a/b/c.py (one spec per
+  figure, keyed "1.1".."20.5", incl. clean captions used in chapter + List of Figures).
+  Manuscript JPEGs in book/images/ are UNUSED fallbacks now.
+- Typography: widows/orphans, teal list markers, framed .figure.vector panels.
+- Two-pass figure-prompt residue removal in extractor (h4/p "Description" anchors + chart-
+  narration anchors: FP_ANCHOR_P/FP_CONT_* rules). QA scan: 0 artifacts, 156/156 captions,
+  TOC cross-refs exact.
+- Robustness: sections lru_cached; preview via threadpool (~4ms); PDF disk cache
+  (book/build/book.pdf + content-hash meta) -> instant readiness after restarts; frontend
+  auto-download when typesetting finishes; PreviewPane loading/error states.
+- Tested: backend 100% (testing agent, iterations 3-4), frontend UI 100% (testing agent).
 
 ## Known minor source-inherited artifacts (acceptable, fix on request)
 - ~6 "Description:" figure-prompt blocks remain near some figures; ch11 glossary mangled in
