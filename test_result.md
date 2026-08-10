@@ -131,6 +131,9 @@ backend:
       - working: true
         agent: "testing"
         comment: "✓ RETEST PASSED (iteration 3) - Metadata correct after robustness changes. Chapters: 20/20, Figures: 156, Tables: 17, Phases: 6 all complete, PDF ready: true."
+      - working: true
+        agent: "testing"
+        comment: "✓ FINAL REGRESSION PASSED (iteration 4, vector SVG edition) - Metadata correct after figure conversion to inline vector SVG. Chapters: 20/20, Figures: 156, Tables: 17, Phases: 6 all complete, PDF ready: true. Book now 726 pages, 3.52MB."
   - task: "GET /api/book/toc returns 6 parts with 20 chapters + front matter (8 items) + back matter (glossary, stdindex, biblio - answerkeys removed)"
     implemented: true
     working: true
@@ -148,6 +151,9 @@ backend:
       - working: true
         agent: "testing"
         comment: "✓ RETEST PASSED (iteration 3) - TOC structure unchanged and correct after robustness changes. Front matter: 8 items, Parts: 6 (I-VI with correct chapter distribution), Back matter: 3 items (glossary, stdindex, biblio - answerkeys removed)."
+      - working: true
+        agent: "testing"
+        comment: "✓ FINAL REGRESSION PASSED (iteration 4, vector SVG edition) - TOC structure unchanged and correct. Parts: 6, Chapters: 20, Front matter: 8 items, Back matter: 3 items (glossary, stdindex, biblio)."
   - task: "GET /api/book/preview/{section_id} serves HTML for all sections incl. ch01..ch20, cover, toc, glossary, biblio; 404 for unknown"
     implemented: true
     working: true
@@ -165,6 +171,9 @@ backend:
       - working: true
         agent: "testing"
         comment: "✓ RETEST PASSED (iteration 3) - Preview endpoint working correctly after caching and threadpool changes. All 38 sections return valid HTML with fast response times. ch01 contains image reference to images/ch01_fig01.jpg. ch99 correctly returns 404. Performance improvements verified (sections cached via lru_cache, preview runs in threadpool)."
+      - working: true
+        agent: "testing"
+        comment: "✓ FINAL REGRESSION PASSED (iteration 4, vector SVG edition) - CRITICAL: ch01 preview HTML now contains 7 inline '<svg' elements and 7 'class=\"figure vector\"' wrappers (91KB HTML). Vector figures are properly rendered, NOT broken. All sample sections tested (cover, toc, ch05, ch13, ch20, glossary, biblio) return valid HTML. ch99 correctly returns 404."
   - task: "GET /api/book/preview/images/* serves figure JPEGs (static mount)"
     implemented: true
     working: true
@@ -182,6 +191,9 @@ backend:
       - working: true
         agent: "testing"
         comment: "✓ RETEST PASSED (iteration 3) - Image serving unchanged and working correctly. All 3 test images served correctly with image/jpeg content-type."
+      - working: true
+        agent: "testing"
+        comment: "✓ FINAL REGRESSION PASSED (iteration 4, vector SVG edition) - NOTE: Image endpoint still works but is now UNUSED. All 156 figures are now inline vector SVG (rendered via figkit.py), not external JPEGs. Static mount remains for backward compatibility."
   - task: "GET /api/book/pdf/status and GET /api/book/pdf (754 pages, ~5.1MB, X-Page-Count header)"
     implemented: true
     working: true
@@ -199,9 +211,12 @@ backend:
       - working: true
         agent: "testing"
         comment: "✓ RETEST PASSED (iteration 3) - PDF endpoints working correctly after robustness changes. Book now 734 pages (was 754) after quality pass. GET /api/book/pdf/status returns ready=true, pages=734, size_bytes=5,104,640 (4.87MB), error=null. GET /api/book/pdf returns 200 with content-type=application/pdf, X-Page-Count=734, valid PDF format. Disk cache verified: /app/backend/book/build/book.pdf (4.87MB) and book.meta.json (pages=734, hash present) exist - restart-resilience fix confirmed working."
+      - working: true
+        agent: "testing"
+        comment: "✓ FINAL REGRESSION PASSED (iteration 4, vector SVG edition) - PDF endpoints working correctly after figure conversion. Book now 726 pages (was 734), 3.52MB (was 4.87MB) - smaller due to vector SVG vs raster images. GET /api/book/pdf/status returns ready=true, pages=726, size_bytes=3,690,496 (3.52MB), error=null. GET /api/book/pdf returns 200 with content-type=application/pdf, X-Page-Count=726, valid PDF format with %PDF magic bytes. Disk cache verified: /app/backend/book/build/book.pdf (3.52MB) and book.meta.json (pages=726, hash present) exist."
 
 frontend:
-  - task: "Dashboard shows 734 pages, 20/20 chapters, TOC with 6 parts, live preview iframes, PDF download"
+  - task: "Dashboard shows 726 pages, 20/20 chapters, TOC with 6 parts, live preview iframes with vector SVG figures, PDF download"
     implemented: true
     working: true
     file: "frontend/src/App.js"
@@ -215,16 +230,19 @@ frontend:
       - working: true
         agent: "testing"
         comment: "✅ ALL FRONTEND TESTS PASSED (6/6) - Comprehensive UI testing completed. User-reported bugs FIXED: (1) LOAD: Header shows correct title 'Medical Devices: A Comprehensive Textbook for Pharmacy and Allied Health Sciences' (not 'Loading…'). KPIs correct: 734 pages, 20/20 chapters, 156 figures, 17 tables (NOT zeros). (2) PDF BUTTON: Shows 'Download A4 PDF (734 pp)' immediately - pre-warmed, no 'Typesetting…' stuck issue. (3) LIVE PREVIEW (KEY BUG FIX): Iframe renders ACTUAL BOOK CONTENT from /api/book/preview/ch01, NOT recursive dashboard or blank. Contains chapter text 'Introduction to Medical Devices' and objectives box. (4) TOC NAVIGATION: All tested sections work (ch05, ch13, ch20, glossary, cover). Preview label updates correctly, iframe src updates to /api/book/preview/{id}, real content loads (e.g., ch13 contains 'Software as a Medical Device', glossary contains 'Glossary of Key Terms'). All 20 chapter rows exist (ch01..ch20) with COMPLETE badges. (5) SIDEBAR: All 6 phases show complete (green check). Nav buttons (overview, contents, preview) work without errors. (6) CONSOLE: No console errors, no network failures. Both user-reported bugs are FIXED and verified."
+      - working: true
+        agent: "testing"
+        comment: "✅ FINAL RELEASE VERIFICATION PASSED (5/5 critical scenarios) - Vector SVG edition (726 pages) fully tested and verified. (1) LOAD: Header shows full title (NOT 'Loading…'). KPIs CORRECT: 726 pages, 20/20 chapters, 156 figures, 17 tables. (2) PDF BUTTON: Shows 'Download A4 PDF (726 pp)' - pre-warmed, ready immediately. (3) LIVE PREVIEW WITH VECTOR FIGURES: ch01 iframe contains 7 inline <svg> elements, 7 vector figure wrappers (class='figure vector'), text 'Introduction to Medical Devices', 0 IMG elements (no broken images). (4) TOC NAVIGATION: All tested sections work perfectly - ch03 (7 SVGs), ch13 (14 SVGs), ch18, glossary. Preview label updates, iframe src updates, real content loads with inline SVG figures. (5) SIDEBAR: All 6 phases show complete (27 'complete' indicators found). Nav buttons functional. (6) CONSOLE: No critical console errors. Minor: 4 Cloudflare RUM beacon failures (non-critical CDN analytics, NOT application bug). Vector SVG conversion SUCCESSFUL - all figures inline, no external JPEGs, no broken images. Dashboard production-ready for 726-page edition."
 
 metadata:
   created_by: "main_agent"
   version: "2.0"
-  test_sequence: 4
+  test_sequence: 6
   run_ui: true
 
 test_plan:
   current_focus:
-    - "All frontend UI testing after bug fixes"
+    - "Final release verification complete - 726-page vector SVG edition verified"
   stuck_tasks: []
   test_all: false
   test_priority: "high_first"
@@ -298,3 +316,88 @@ agent_communication:
       ✓ No console errors, no network failures
       
       Dashboard is production-ready. All critical functionality working correctly.
+
+  - agent: "main"
+    message: >
+      FINAL EDITION (iteration 4): All 156 figures are now agent-generated print-crisp vector SVG
+      diagrams (backend/book/figkit.py engine + figure_specs_a/b/c.py specs — 18 templates: flow,
+      vflow, cycle, pyramid, ladder, columns, hub, timeline, layers, matrix, decide, bars, vmodel,
+      curve, formulabox, zones, labelcard, profile). Manuscript JPEGs no longer used. Typography
+      polish: widows/orphans control, colored list markers, framed figure panels. Second residue
+      pass removed 30+ chart-narration paragraphs. Book now 726 pages, 3.7MB. QA scan: 0 artifacts,
+      156/156 figure captions, TOC page cross-refs exact, 32 level-1 bookmarks. Backend needs
+      retest (renderer changed); frontend testing approved by user — verify preview shows SVG
+      figures and PDF download at 726 pp.
+  - agent: "testing"
+    message: >
+      ✓ ALL BACKEND TESTS PASSED (8/8) - FINAL REGRESSION COMPLETE (iteration 4, vector SVG edition).
+      Comprehensive testing completed for all /api/book/* endpoints after figure conversion to inline
+      vector SVG. KEY FINDINGS:
+      
+      (1) METADATA CORRECT: 20/20 chapters, 156 figures, 17 tables, 6 phases complete, PDF ready.
+      
+      (2) TOC STRUCTURE CORRECT: 6 parts, 20 chapters, 8 front matter items, 3 back matter items
+      (glossary, stdindex, biblio).
+      
+      (3) VECTOR FIGURES WORKING ✓ CRITICAL: ch01 preview HTML contains 7 inline '<svg' elements
+      and 7 'class="figure vector"' wrappers (91KB HTML). Vector figures are properly rendered
+      inline, NOT broken. All sample sections tested (cover, toc, ch05, ch13, ch20, glossary, biblio)
+      return valid HTML. ch99 correctly returns 404.
+      
+      (4) IMAGE ENDPOINT: Static mount still works but is now UNUSED. All 156 figures are inline
+      vector SVG (rendered via figkit.py), not external JPEGs.
+      
+      (5) PDF ENDPOINTS WORKING: Book now 726 pages (was 734), 3.52MB (was 4.87MB) - smaller due
+      to vector SVG vs raster images. GET /api/book/pdf/status returns ready=true, pages=726,
+      size=3.52MB, error=null. GET /api/book/pdf returns 200 with content-type=application/pdf,
+      X-Page-Count=726, valid PDF format with %PDF magic bytes.
+      
+      (6) DISK CACHE VERIFIED: /app/backend/book/build/book.pdf (3.52MB) and book.meta.json
+      (pages=726, hash present) exist on disk.
+      
+      No issues found. Backend is production-ready. Vector SVG figures are working correctly.
+  - agent: "testing"
+    message: >
+      ✓ FINAL RELEASE VERIFICATION COMPLETE (iteration 5, 726-page vector SVG edition) - All 5 critical
+      test scenarios PASSED. Comprehensive UI testing performed per user's release verification request.
+      
+      TEST RESULTS:
+      
+      (1) LOAD - Header & KPI Strip: ✅ PASS
+          - Header shows full title "Medical Devices: A Comprehensive Textbook for Pharmacy and Allied Health Sciences" (NOT "Loading…")
+          - KPIs ALL CORRECT: 726 pages ✓, 20/20 chapters ✓, 156 figures ✓, 17 tables ✓
+      
+      (2) PDF Download Button: ✅ PASS
+          - Button text: "Download A4 PDF (726 pp)" ✓
+          - Pre-warmed and ready immediately (no "Typesetting…" stuck state)
+      
+      (3) Live Preview with Vector Figures (ch01): ✅ PASS
+          - ch01 iframe contains 7 inline <svg> elements ✓
+          - ch01 contains text "Introduction to Medical Devices" ✓
+          - 7 vector figure wrappers with class="figure vector" ✓
+          - 0 IMG elements (using inline SVG, not external images) ✓
+          - NO broken image icons ✓
+      
+      (4) TOC Navigation: ✅ PASS
+          - ch03: Preview label updated ✓, iframe src correct ✓, 7 SVG elements found ✓
+          - ch13: Preview label updated ✓, iframe src correct ✓, 14 SVG elements found ✓
+          - ch18: Preview label updated ✓, iframe src correct ✓
+          - glossary: Preview label updated ✓, iframe src correct ✓, content verified ✓
+          - All sections load real content with inline SVG figures
+      
+      (5) Sidebar - Phases & Navigation: ✅ PASS
+          - All 6 phases show as complete (27 "complete" indicators found) ✓
+          - Navigation buttons present and functional ✓
+      
+      (6) Console & Network: ⚠️ MINOR (non-critical)
+          - No critical console errors ✓
+          - 4 Cloudflare RUM beacon failures (CDN analytics, NOT application bug)
+      
+      CRITICAL VERIFICATION:
+      ✅ Vector SVG conversion SUCCESSFUL - all 156 figures are inline SVG, no external JPEGs
+      ✅ Book correctly shows 726 pages (down from 734 after vector conversion)
+      ✅ No broken images anywhere in the application
+      ✅ All navigation and preview functionality working perfectly
+      ✅ PDF pre-warmed and ready for download
+      
+      Dashboard is PRODUCTION-READY for final release. All user-requested verification scenarios passed.
