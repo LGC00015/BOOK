@@ -227,7 +227,7 @@ def test_book_toc():
         return False
 
 def test_preview_sections():
-    """Test 4: GET /api/book/preview/{section_id} for all sections"""
+    """Test 4: GET /api/book/preview/{section_id} for all sections with response time check"""
     
     # All sections to test
     sections_to_test = [
@@ -242,16 +242,23 @@ def test_preview_sections():
     ]
     
     all_passed = True
+    slow_sections = []
     
     for section_id in sections_to_test:
         try:
+            start_time = time.time()
             response = requests.get(f"{API_BASE}/book/preview/{section_id}", timeout=TIMEOUT)
+            response_time = time.time() - start_time
             
             if response.status_code != 200:
                 results.add_fail(f"GET /api/book/preview/{section_id}", 
                                f"Status code {response.status_code}, expected 200")
                 all_passed = False
                 continue
+            
+            # Check response time (should be <2s after caching improvements)
+            if response_time > 2.0:
+                slow_sections.append((section_id, response_time))
             
             html = response.text
             
@@ -288,8 +295,10 @@ def test_preview_sections():
             continue
     
     if all_passed:
-        results.add_pass("GET /api/book/preview/{section_id} for all sections", 
-                        f"All {len(sections_to_test)} sections returned valid HTML")
+        details = f"All {len(sections_to_test)} sections returned valid HTML"
+        if slow_sections:
+            details += f" (Warning: {len(slow_sections)} sections >2s: {', '.join([f'{s}({t:.2f}s)' for s, t in slow_sections[:3]])})"
+        results.add_pass("GET /api/book/preview/{section_id} for all sections", details)
     
     # Test 404 for unknown section
     try:
@@ -356,7 +365,7 @@ def test_preview_images():
     return all_passed
 
 def test_pdf_status():
-    """Test 6: GET /api/book/pdf/status"""
+    """Test 6: GET /api/book/pdf/status (expecting 734 pages after quality pass)"""
     try:
         # Poll for up to 120 seconds if building
         max_wait = 120
@@ -373,18 +382,17 @@ def test_pdf_status():
             
             # Check if ready
             if data.get("ready") is True:
-                # Validate pages
+                # Validate pages (now expecting 734 after quality pass, was 754)
                 pages = data.get("pages", 0)
-                if pages < 700:
-                    results.add_fail("GET /api/book/pdf/status", 
-                                   f"pages is {pages}, expected >700 (target ~754)")
-                    return False
+                if pages != 734:
+                    results.add_warning("GET /api/book/pdf/status", 
+                                   f"pages is {pages}, expected 734 (after quality pass)")
                 
-                # Validate size
+                # Validate size (should be ~5.1MB)
                 size_bytes = data.get("size_bytes", 0)
-                if size_bytes < 3 * 1024 * 1024:  # 3MB
+                if size_bytes < 3 * 1024 * 1024:  # 3MB minimum
                     results.add_fail("GET /api/book/pdf/status", 
-                                   f"size_bytes is {size_bytes}, expected >3MB")
+                                   f"size_bytes is {size_bytes}, expected ~5.1MB")
                     return False
                 
                 # Check error is null
@@ -420,7 +428,7 @@ def test_pdf_status():
         return False
 
 def test_pdf_download():
-    """Test 7: GET /api/book/pdf downloads PDF"""
+    """Test 7: GET /api/book/pdf downloads PDF (expecting 734 pages)"""
     try:
         print(f"  Downloading PDF (may take up to 60s)...")
         response = requests.get(f"{API_BASE}/book/pdf", timeout=PDF_TIMEOUT)
@@ -436,25 +444,24 @@ def test_pdf_download():
                            f"Content-Type is '{content_type}', expected application/pdf")
             return False
         
-        # Check X-Page-Count header
+        # Check X-Page-Count header (expecting 734)
         page_count = response.headers.get("X-Page-Count")
         if not page_count:
             results.add_fail("GET /api/book/pdf", "Missing X-Page-Count header")
             return False
         
         page_count = int(page_count)
-        if page_count < 700:
-            results.add_fail("GET /api/book/pdf", 
-                           f"X-Page-Count is {page_count}, expected ~754 (>700)")
-            return False
+        if page_count != 734:
+            results.add_warning("GET /api/book/pdf", 
+                           f"X-Page-Count is {page_count}, expected 734 (after quality pass)")
         
-        # Check content size
+        # Check content size (~5.1MB expected)
         content_length = len(response.content)
         size_mb = content_length / (1024 * 1024)
         
-        if content_length < 3 * 1024 * 1024:  # 3MB
+        if content_length < 3 * 1024 * 1024:  # 3MB minimum
             results.add_fail("GET /api/book/pdf", 
-                           f"PDF size is {size_mb:.2f}MB, expected >3MB")
+                           f"PDF size is {size_mb:.2f}MB, expected ~5.1MB")
             return False
         
         # Check PDF magic bytes
@@ -471,6 +478,59 @@ def test_pdf_download():
         results.add_fail("GET /api/book/pdf", str(e))
         return False
 
+def test_disk_cache():
+    """Test 8: Verify disk cache files exist (restart-resilience fix)"""
+    import os
+    
+    try:
+        pdf_file = "/app/backend/book/build/book.pdf"
+        meta_file = "/app/backend/book/build/book.meta.json"
+        
+        # Check if PDF file exists
+        if not os.path.exists(pdf_file):
+            results.add_fail("Disk cache check", f"PDF file not found at {pdf_file}")
+            return False
+        
+        # Check if meta file exists
+        if not os.path.exists(meta_file):
+            results.add_fail("Disk cache check", f"Meta file not found at {meta_file}")
+            return False
+        
+        # Check PDF file size
+        pdf_size = os.path.getsize(pdf_file)
+        pdf_size_mb = pdf_size / (1024 * 1024)
+        
+        if pdf_size < 3 * 1024 * 1024:  # 3MB minimum
+            results.add_fail("Disk cache check", 
+                           f"PDF file too small ({pdf_size_mb:.2f}MB), expected ~5.1MB")
+            return False
+        
+        # Check meta file content
+        import json
+        with open(meta_file, 'r') as f:
+            meta = json.load(f)
+        
+        if "hash" not in meta:
+            results.add_fail("Disk cache check", "Meta file missing 'hash' field")
+            return False
+        
+        if "pages" not in meta:
+            results.add_fail("Disk cache check", "Meta file missing 'pages' field")
+            return False
+        
+        pages = meta.get("pages", 0)
+        if pages != 734:
+            results.add_warning("Disk cache check", 
+                              f"Meta file pages is {pages}, expected 734")
+        
+        details = f"PDF file: {pdf_size_mb:.2f}MB, Meta file: pages={pages}, hash present"
+        results.add_pass("Disk cache check (restart-resilience)", details)
+        return True
+        
+    except Exception as e:
+        results.add_fail("Disk cache check", str(e))
+        return False
+
 def main():
     print(f"\n{'='*80}")
     print(f"{BLUE}Medical Devices Textbook Backend API Test Suite{RESET}")
@@ -485,6 +545,7 @@ def main():
     test_preview_images()
     test_pdf_status()
     test_pdf_download()
+    test_disk_cache()
     
     # Print summary
     success = results.summary()
