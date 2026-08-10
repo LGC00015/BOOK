@@ -4,7 +4,7 @@ export default function KpiStrip({ meta }) {
   const pages = meta?.pdf?.pages || 0;
   const kpis = [
     { id: "pages", label: "Typeset A4 Pages", value: pages ? pages : "…", sub: pages ? "compiled edition" : "typesetting", icon: FileText },
-    { id: "chapters", label: "Chapters Authored", value: `${meta?.chapters_complete ?? 0}/${meta?.chapters_total ?? 14}`, sub: "Part I complete", icon: BookOpen },
+    { id: "chapters", label: "Chapters Typeset", value: `${meta?.chapters_complete ?? 0}/${meta?.chapters_total ?? 20}`, sub: "complete edition", icon: BookOpen },
     { id: "figures", label: "Figures", value: meta?.figures_count ?? 0, sub: "numbered & captioned", icon: ChartBar },
     { id: "tables", label: "Tables", value: meta?.tables_count ?? 0, sub: "comparison & data", icon: Table },
   ];

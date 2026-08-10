@@ -2,19 +2,18 @@ import threading
 from pathlib import Path
 
 from .styles import PRINT_CSS, PREVIEW_EXTRA_CSS
-from .outline import BOOK_META, PARTS, CHAPTERS, part_divider_html, stub_chapter_html
+from .outline import BOOK_META, PARTS, CHAPTERS, part_divider_html, part_of
 from . import front_matter as fm
 from . import back_matter as bm
-from .ch01 import CH01_HTML
-from .ch02 import CH02_HTML
+from . import docx_chapters
 
 BOOK_DIR = Path(__file__).parent
 
-AUTHORED = {"ch01": CH01_HTML, "ch02": CH02_HTML}
-
 
 def _chapter_html(ch):
-    return AUTHORED.get(ch["id"]) or stub_chapter_html(ch)
+    part_num, part_title = part_of(ch["num"])
+    label = "Part %s &middot; %s" % (part_num, part_title)
+    return docx_chapters.chapter_html(ch["num"], label)
 
 
 def build_sections():
@@ -37,7 +36,6 @@ def build_sections():
     sections += [
         ("glossary", "Glossary", bm.glossary_html()),
         ("stdindex", "Standards & Regulations Index", bm.standards_index_html()),
-        ("answerkeys", "Answer Keys", bm.answer_keys_html()),
         ("biblio", "Consolidated References", bm.consolidated_refs_html()),
     ]
     return sections

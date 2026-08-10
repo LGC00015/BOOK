@@ -162,8 +162,19 @@ strong { font-weight: 600; }
 /* ---------- FIGURES ---------- */
 .figure { margin: 5mm 0 6mm 0; break-inside: avoid; text-align: center; }
 .figure svg { max-width: 100%; }
+.figure img { max-width: 86%; height: auto; border: 0.5pt solid var(--rule); }
 .figcaption { font-family: 'Manrope'; font-size: 8.4pt; color: var(--muted); text-align: left; margin-top: 2.5mm; border-top: 0.6pt solid var(--rule); padding-top: 1.8mm; }
 .figcaption b { font-weight: 800; color: var(--teal); }
+
+/* ---------- KEYWORDS & ROADMAP ---------- */
+.kwline { font-family: 'Manrope'; font-size: 8.8pt; color: #2A363C; margin: 3mm 0; border-left: 2pt solid var(--amber); padding-left: 3.5mm; }
+.kwlab { font-weight: 800; font-size: 7.6pt; letter-spacing: 0.14em; text-transform: uppercase; color: var(--amber); margin-right: 2.5mm; }
+.roadmap { margin: 3mm 0 5mm 0; }
+.roadmap .kwlab { color: var(--blue); display: block; margin-bottom: 1.6mm; }
+.rm-chip { display: inline-block; font-family: 'Manrope'; font-size: 7.8pt; color: var(--blue); border: 0.6pt solid #C4D4E2; background: #F4F8FB; padding: 0.8mm 2.6mm; margin: 0 1.4mm 1.4mm 0; }
+.gl-ch { font-family: 'Manrope'; font-size: 7.4pt; color: var(--muted); }
+.callout table.data { font-size: 8pt; margin: 2mm 0; }
+.case-study table.data { font-size: 8pt; margin: 2mm 0; }
 
 /* ---------- TABLES ---------- */
 .tablewrap { margin: 5mm 0 6mm 0; break-inside: avoid; }

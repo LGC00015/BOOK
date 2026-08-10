@@ -95,22 +95,25 @@ def preface_html():
   system; with the National Medical Device Policy 2023, it declared the sector a national priority; and with
   the NEP 2020-aligned PCI curriculum, <strong>Medical Devices (BP708T)</strong> entered the B.Pharm classroom as a
   dedicated elective. This textbook was written to serve that course &mdash; and to go beyond it.</p>
-  <p>Three convictions shaped the writing:</p>
+  <p>Three convictions shaped this book:</p>
   <ul>
-    <li><strong>Devices deserve rigour.</strong> Every chapter follows a disciplined architecture &mdash; learning objectives
-    mapped to course outcomes and Bloom's levels, a What&ndash;Why&ndash;How&ndash;Where&ndash;When narrative, verified
-    regulatory citations, and a complete assessment battery from MCQs to higher-order thinking questions.</li>
+    <li><strong>Devices deserve rigour.</strong> Every chapter follows a disciplined architecture &mdash; chapter learning
+    outcomes, keywords and a roadmap up front; figures, tables, worked example boxes, case studies and
+    industry insights through the body; and a chapter glossary, quick recap and references to close.</li>
     <li><strong>Regulation must be exact.</strong> Classifications, rule numbers, licence forms and standards cited here
     are drawn from official CDSCO, US FDA, European Commission, ISO, IEC and WHO sources. Where a fact
     could not be verified, it was omitted rather than invented.</li>
-    <li><strong>Students learn from stories.</strong> Case studies &mdash; from the Dalkon Shield to the PIP implant scandal &mdash;
-    show why device law looks the way it does, and callout boxes connect each concept to the clinic,
-    the industry and the regulator's desk.</li>
+    <li><strong>Students learn from stories.</strong> Case studies and industry insights
+    show why device law and practice look the way they do, and connect each concept to the clinic,
+    the factory floor and the regulator's desk.</li>
   </ul>
-  <p>Part I builds the foundation: the device universe, its history, its economics, and the classification
-  logic that underpins every regulatory decision worldwide. Parts II&ndash;V &mdash; design and biomaterials,
-  manufacturing and quality, regulatory pathways and post-market vigilance, and professional practice &mdash;
-  complete the journey from concept to career.</p>
+  <p>The journey runs across six parts and twenty chapters. Part I builds the foundation &mdash; the device
+  universe, the structure of the industry, and the classification logic that underpins every regulatory
+  decision worldwide. Parts II and III follow the device from lifecycle and quality systems through
+  cleanrooms, materials, biocompatibility and design. Part IV covers manufacturing and quality control;
+  Part V the regulatory, clinical, post-market, labeling and supply-chain landscape &mdash; including Software
+  as a Medical Device and AI/ML regulation. Part VI looks forward: emerging technologies, healthcare data
+  and interoperability, and the career pathways that await you in this sector.</p>
   <p>I hope this book makes the device world as intellectually alive for you as it has become for the
   pharmacists, engineers and regulators who build it every day.</p>
   <p style="margin-top:8mm;text-align:left;"><strong>%(author)s</strong><br/><span style="color:#5B6770;">%(affiliation)s &middot; %(year)s</span></p>
@@ -125,20 +128,21 @@ def howto_html():
   <div class="tablewrap">
   <table class="data">
     <tr><th style="width:38mm;">Element</th><th>What it gives you</th></tr>
-    <tr><td class="rowhead">Chapter opener</td><td>Learning objectives mapped to Course Outcomes (CO) and Bloom's taxonomy levels, so you can see exactly what you should be able to do after studying.</td></tr>
-    <tr><td class="rowhead">What&ndash;Why&ndash;How&ndash;Where&ndash;When</td><td>Core content moves from definition (What), to rationale (Why), to mechanism and procedure (How), to context of use (Where), to timing and lifecycle (When) &mdash; foundational to advanced.</td></tr>
-    <tr><td class="rowhead">Figures &amp; tables</td><td>Numbered flowcharts, decision trees and comparison tables. Cite them in exams as &ldquo;Fig. 2.2&rdquo; style.</td></tr>
-    <tr><td class="rowhead">Callout boxes</td><td><strong>Regulatory Spotlight</strong> (law &amp; guidance), <strong>Clinical Insight</strong> (bedside relevance), <strong>Industry Connect</strong> (business &amp; careers), <strong>Did You Know</strong> (memorable facts).</td></tr>
-    <tr><td class="rowhead">Case studies</td><td>Real events with guided analysis questions &mdash; ideal for tutorials and viva preparation.</td></tr>
-    <tr><td class="rowhead">Assessment battery</td><td>MCQs with answer rationales, True/False, Fill-in-the-Blanks, Assertion&ndash;Reasoning, Short-Answer, Long-Answer and HOTS questions. Answer keys are consolidated in the back matter.</td></tr>
-    <tr><td class="rowhead">Quality Gate dashboard</td><td>A completion checklist confirming the chapter passed editorial, factual and pedagogical review.</td></tr>
+    <tr><td class="rowhead">Chapter opener</td><td>Chapter Learning Outcomes (CLOs), keywords and a chapter roadmap, so you can see exactly what you should be able to do after studying and how the chapter unfolds.</td></tr>
+    <tr><td class="rowhead">Figures &amp; tables</td><td>Numbered illustrations, flowcharts and comparison tables. Cite them in exams as &ldquo;Fig. 3.2&rdquo; style.</td></tr>
+    <tr><td class="rowhead">Example boxes</td><td>Worked examples and applied comparisons that turn definitions into practice.</td></tr>
+    <tr><td class="rowhead">Case studies</td><td>Real events and devices with regulatory analysis &mdash; ideal for tutorials and viva preparation.</td></tr>
+    <tr><td class="rowhead">Industry insights</td><td>Market, policy and career context connecting each topic to the working world of medical devices.</td></tr>
+    <tr><td class="rowhead">Chapter glossary</td><td>The chapter's key terms defined in place, consolidated again in the back-matter glossary.</td></tr>
+    <tr><td class="rowhead">Quick recap</td><td>A closing summary of the chapter's essential takeaways for rapid revision.</td></tr>
+    <tr><td class="rowhead">References</td><td>Regulatory documents, international standards and technical publications backing the chapter.</td></tr>
   </table></div>
   <h3 class="subsec">Suggested study workflow</h3>
   <ol>
-    <li>Read the learning objectives first; they are your examination contract.</li>
+    <li>Read the chapter learning outcomes first; they are your examination contract.</li>
     <li>Work through the narrative once without stopping, then a second time making margin notes on figures and tables.</li>
-    <li>Attempt the full assessment battery <em>before</em> checking the keys; use MCQ rationales to repair misconceptions.</li>
-    <li>Use case studies for group discussion &mdash; they map to the HOTS questions.</li>
+    <li>Close each chapter by writing your own recap before reading the Quick Recap &mdash; then compare.</li>
+    <li>Use case studies and industry insights for group discussion and viva practice.</li>
   </ol>
   <div class="callout regulatory">
     <div class="co-head">Regulatory Spotlight</div>
@@ -159,17 +163,17 @@ def syllabus_html():
   <div class="tablewrap">
   <table class="data">
     <tr><th style="width:20mm;">Unit</th><th>Syllabus topics</th><th style="width:34mm;">Covered in</th></tr>
-    <tr><td class="rowhead">Unit I</td><td>Introduction to medical devices; history and evolution; global and Indian medical device industry; market trends; National Medical Device Policy; Government of India initiatives</td><td>Chapter 1</td></tr>
-    <tr><td class="rowhead">Unit II</td><td>Definitions and classification of medical devices &mdash; CDSCO (MDR 2017, Class A&ndash;D), US FDA (Class I&ndash;III), EU MDR/CE marking; global harmonization (IMDRF)</td><td>Chapter 2</td></tr>
-    <tr><td class="rowhead">Unit III</td><td>Medical device design and development; biomaterials and their selection; biocompatibility and ISO 10993 testing</td><td>Chapters 3&ndash;5</td></tr>
-    <tr><td class="rowhead">Unit IV</td><td>Manufacturing technologies; quality management systems (ISO 13485); risk management (ISO 14971); electrical safety (IEC 60601); sterilization, packaging and labeling</td><td>Chapters 6&ndash;10</td></tr>
-    <tr><td class="rowhead">Unit V</td><td>Licensing and conformity pathways; clinical evaluation; post-market surveillance and Materiovigilance (MvPI); role of the pharmacist; careers and entrepreneurship</td><td>Chapters 11&ndash;14</td></tr>
+    <tr><td class="rowhead">Unit I</td><td>Introduction to medical devices; history and evolution; global and Indian medical device industry; market trends; structure of the industry</td><td>Chapters 1&ndash;2</td></tr>
+    <tr><td class="rowhead">Unit II</td><td>Definitions and classification of medical devices &mdash; CDSCO (MDR 2017, Class A&ndash;D), US FDA (Class I&ndash;III), EU MDR/CE marking; global harmonization</td><td>Chapter 3</td></tr>
+    <tr><td class="rowhead">Unit III</td><td>Medical device lifecycle, design and development; materials and their selection; biomechanics and biocompatibility</td><td>Chapters 4, 7&ndash;9</td></tr>
+    <tr><td class="rowhead">Unit IV</td><td>Quality management systems (ISO 13485); cleanrooms and sterile manufacturing; manufacturing technologies; quality control and testing; packaging, labeling and UDI</td><td>Chapters 5&ndash;6, 10&ndash;11, 16</td></tr>
+    <tr><td class="rowhead">Unit V</td><td>Regulatory requirements and pathways; SaMD and digital health; clinical evaluation; post-market surveillance and vigilance; import-export and supply chain; emerging technologies; healthcare data; careers</td><td>Chapters 12&ndash;15, 17&ndash;20</td></tr>
   </table></div>
   <div class="callout industry">
     <div class="co-head">Industry Connect</div>
-    <p>Chapters 13 and 14 add device-category deep dives, IP fundamentals and NSQF/LSSSDC-aligned career
-    pathways that exceed the syllabus minimum &mdash; the material recruiters and regulatory-affairs interview
-    panels actually probe.</p>
+    <p>Chapters 13 and 18&ndash;20 add Software as a Medical Device and AI/ML regulation, emerging technologies,
+    healthcare data and interoperability, and skill-mapped career pathways that exceed the syllabus
+    minimum &mdash; the material recruiters and regulatory-affairs interview panels actually probe.</p>
   </div>
 </section>"""
 
@@ -186,14 +190,13 @@ def toc_html():
         rows.append('<div class="toc-part">Part %s &mdash; %s</div>' % (part["num"], part["title"]))
         for ch in CHAPTERS:
             if ch["num"] in part["chapters"]:
-                badge = '' if ch["status"] == "complete" else '<span class="toc-status">In development</span>'
-                rows.append('<span class="toc-entry"><a href="#%s"><span class="toc-chnum">%d</span>%s</a>%s</span>'
-                            % (ch["id"], ch["num"], ch["title"], badge))
-                if ch["status"] == "complete":
+                rows.append('<span class="toc-entry"><a href="#%s"><span class="toc-chnum">%d</span>%s</a></span>'
+                            % (ch["id"], ch["num"], ch["title"]))
+                if ch["sections"]:
                     rows.append('<span class="toc-sub">%s</span>' % " &middot; ".join(ch["sections"][:4]))
     rows.append('<div class="toc-part">Back Matter</div>')
     for sid, label in [("glossary", "Glossary of Key Terms"), ("stdindex", "Standards &amp; Regulations Index"),
-                       ("answerkeys", "Answer Keys"), ("biblio", "Consolidated References (Vancouver Style)")]:
+                       ("biblio", "Consolidated References")]:
         rows.append('<span class="toc-entry"><a href="#%s">%s</a></span>' % (sid, label))
     return """
 <section class="front-section toc" id="toc">

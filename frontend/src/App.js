@@ -136,7 +136,7 @@ function App() {
           <PhaseTracker phases={meta?.phases} />
 
           <footer className="text-[11px] text-slate-400 pb-6">
-            Typeset with a print-optimized HTML/CSS → WeasyPrint A4 pipeline · Regulatory citations verified against CDSCO, US FDA, EUR-Lex, ISO, IEC & WHO sources · Figures rendered as vector SVG for print crispness
+            Typeset with a print-optimized HTML/CSS → WeasyPrint A4 pipeline · 20 chapters, 156 figures & data tables from the author manuscript · Regulatory citations from CDSCO, US FDA, EUR-Lex, ISO, IEC & WHO sources
           </footer>
         </div>
       </main>

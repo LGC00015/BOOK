@@ -59,7 +59,6 @@ async def book_toc():
     back = [
         {"id": "glossary", "title": "Glossary"},
         {"id": "stdindex", "title": "Standards & Regulations Index"},
-        {"id": "answerkeys", "title": "Answer Keys"},
         {"id": "biblio", "title": "Consolidated References"},
     ]
     return {"front_matter": front, "parts": parts, "back_matter": back}
@@ -92,6 +91,7 @@ async def get_pdf():
 
 
 app.mount("/api/book/preview/fonts", StaticFiles(directory=str(ROOT_DIR / "book" / "fonts")), name="fonts")
+app.mount("/api/book/preview/images", StaticFiles(directory=str(ROOT_DIR / "book" / "images")), name="images")
 app.include_router(api_router)
 
 app.add_middleware(
