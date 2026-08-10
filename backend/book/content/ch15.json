@@ -1,0 +1,1867 @@
+{
+ "num": 15,
+ "id": "ch15",
+ "title": "Post-Market Surveillance (PMS), Vigilance & Recalls",
+ "subtitle": "Monitoring • Complaint Handling • Adverse Events • FSCA • CAPA • Risk Management",
+ "overview": [
+  "Post-Market Surveillance (PMS) represents the systematic and continuous monitoring of medical devices after their market introduction. This chapter comprehensively addresses PMS requirements, complaint management systems, vigilance reporting obligations, field safety corrective actions (FSCA), and recall procedures. The content integrates regulatory expectations from CDSCO, FDA, EU MDR, and ISO 13485, preparing learners to maintain device safety throughout the product lifecycle and respond effectively to post-market safety signals."
+ ],
+ "clos": [
+  "Explain the purpose, scope, and regulatory requirements of Post-Market Surveillance systems.",
+  "Implement systematic complaint handling procedures aligned with ISO 13485 and regulatory standards.",
+  "Differentiate between vigilance reporting requirements across India, USA, and EU regulatory frameworks.",
+  "Analyze complaint data and adverse event trends to identify potential safety signals.",
+  "Execute field safety corrective actions (FSCA) and recall procedures following regulatory guidelines.",
+  "Prepare mandatory PMS documentation including PMSR, PSUR, and vigilance reports.",
+  "Apply risk-based decision-making to post-market safety management.",
+  "Evaluate real-world device failures and derive lessons learned for continuous improvement."
+ ],
+ "keywords": [
+  "Post-Market Surveillance",
+  "vigilance",
+  "adverse event",
+  "FSCA",
+  "recall",
+  "trend analysis",
+  "complaint handling",
+  "CAPA",
+  "PSUR",
+  "PMSR",
+  "MDR 2017",
+  "MEDDEV",
+  "UDI",
+  "safety signal",
+  "root cause analysis"
+ ],
+ "roadmap": [
+  "Introduction to",
+  "Post-Market",
+  "Surveillance",
+  "PMS regulatory framework and requirements",
+  "Complaint handling systems",
+  "Vigilance and adverse event reporting",
+  "PMS documentation requirements",
+  "Trend analysis and safety signal detection",
+  "Field safety corrective actions (FSCA)",
+  "Recall classification and procedures",
+  "Risk-based post-market strategies",
+  "Global regulatory comparison (India, USA, EU)",
+  "Case studies and lessons learned",
+  "Glossary"
+ ],
+ "blocks": [
+  {
+   "t": "ul",
+   "items": [
+    "Chapter recap"
+   ]
+  },
+  {
+   "t": "h2",
+   "text": "Introduction to Post-Market Surveillance",
+   "num": "15.1"
+  },
+  {
+   "t": "p",
+   "html": "Post-Market Surveillance (PMS) constitutes a critical component of medical device lifecycle management. Despite rigorous pre-market evaluation, real-world conditions may reveal previously undetected issues that require continuous monitoring and timely intervention."
+  },
+  {
+   "t": "p",
+   "html": "Medical devices can experience:"
+  },
+  {
+   "t": "ul",
+   "items": [
+    "Performance degradation over time",
+    "Manufacturing variations affecting quality",
+    "Unforeseen interactions with patient populations",
+    "Malfunctions under diverse usage conditions",
+    "Long-term effects not apparent during clinical trials"
+   ]
+  },
+  {
+   "t": "p",
+   "html": "Post-Market Surveillance ensures ongoing safety, effectiveness, and performance through systematic data collection, analysis, and risk management."
+  },
+  {
+   "t": "p",
+   "html": "<strong>Regulatory Mandate</strong>"
+  },
+  {
+   "t": "p",
+   "html": "PMS is mandated globally under:"
+  },
+  {
+   "t": "ul",
+   "items": [
+    "<strong>ISO 13485:2016 </strong>(Clause 8.2.1 -- Feedback)",
+    "<strong>CDSCO MDR 2017 </strong>(Schedule III, Part XIII)",
+    "<strong>FDA 21 CFR 820 </strong>(Quality System Regulation)",
+    "<strong>EU MDR 2017/745 </strong>(Article 83-92, Annex III)"
+   ]
+  },
+  {
+   "t": "fig",
+   "src": "images/ch15_fig01.jpg",
+   "w": 427,
+   "h": 360,
+   "num": "15.1",
+   "caption": "Post-Market Surveillance Lifecycle"
+  },
+  {
+   "t": "p",
+   "html": "<strong>Description:</strong>"
+  },
+  {
+   "t": "p",
+   "html": "Circular diagram illustrating the continuous PMS cycle: Market Use → Data Collection → Complaint Investigation → Root Cause Analysis → CAPA Implementation → Regulatory Reporting → Risk Management Update → Market Monitoring (cycle repeats). Arrows indicate continuous flow with feedback loops connecting each stage."
+  },
+  {
+   "t": "h2",
+   "text": "Objectives and Scope of Post-Market Surveillance",
+   "num": "15.2"
+  },
+  {
+   "t": "ul",
+   "items": [
+    "<strong>Primary Objectives</strong>"
+   ]
+  },
+  {
+   "t": "p",
+   "html": "PMS systems are designed to:"
+  },
+  {
+   "t": "ul",
+   "items": [
+    "<strong>Detect safety signals </strong>-- Identify patterns suggesting increased risk",
+    "<strong>Monitor device performance </strong>-- Verify continued effectiveness in real-world settings",
+    "<strong>Identify emerging risks </strong>-- Discover previously unknown hazards",
+    "<strong>Validate risk management </strong>-- Confirm pre-market risk controls remain effective",
+    "<strong>Support continuous improvement </strong>-- Drive design and process enhancements",
+    "<strong>Ensure regulatory compliance </strong>-- Meet post-market obligations",
+    "<strong>Protect patient safety </strong>-- Enable rapid response to safety concerns"
+   ]
+  },
+  {
+   "t": "h3",
+   "text": "Scope of PMS Activities"
+  },
+  {
+   "t": "p",
+   "html": "PMS encompasses multiple data sources and activities:"
+  },
+  {
+   "t": "ul",
+   "items": [
+    "<strong>Complaint management </strong>-- Systematic handling of user feedback",
+    "<strong>Adverse event monitoring </strong>-- Tracking device-related injuries or malfunctions",
+    "<strong>Literature surveillance </strong>-- Monitoring published reports and studies",
+    "<strong>Market feedback </strong>-- Collecting information from distributors and healthcare providers",
+    "<strong>Field performance data </strong>-- Analyzing real-world usage patterns",
+    "<strong>Post-market clinical follow-up (PMCF) </strong>-- Conducting observational studies (EU MDR requirement)",
+    "<strong>Registry data analysis </strong>-- Utilizing device-specific registries for long-term monitoring"
+   ]
+  },
+  {
+   "t": "h2",
+   "text": "Complaint Handling Systems",
+   "num": "15.3"
+  },
+  {
+   "t": "ul",
+   "items": [
+    "<strong>Definition and Scope</strong>"
+   ]
+  },
+  {
+   "t": "p",
+   "html": "According to ISO 13485, a <strong>complaint </strong>is any written, electronic, or oral communication that alleges deficiencies related to:"
+  },
+  {
+   "t": "ul",
+   "items": [
+    "Identity of a medical device",
+    "Quality of a medical device",
+    "Durability of a medical device",
+    "Reliability of a medical device",
+    "Safety of a medical device",
+    "Performance of a medical device Complaints may originate from:",
+    "Healthcare professionals",
+    "Patients or caregivers",
+    "Distributors or importers",
+    "Regulatory authorities",
+    "Internal quality systems"
+   ]
+  },
+  {
+   "t": "h3",
+   "text": "Complaint Classification"
+  },
+  {
+   "t": "p",
+   "html": "Complaints are typically classified based on severity and reportability:"
+  },
+  {
+   "t": "h4",
+   "text": "Non-serious complaints"
+  },
+  {
+   "t": "ul",
+   "items": [
+    "Minor cosmetic defects",
+    "Packaging issues not affecting sterility",
+    "Non-critical labeling concerns",
+    "Minor usability inconveniences"
+   ]
+  },
+  {
+   "t": "h4",
+   "text": "Serious complaints"
+  },
+  {
+   "t": "ul",
+   "items": [
+    "Device malfunction causing or potentially causing harm",
+    "Sterility compromise",
+    "Performance failure affecting diagnosis or treatment",
+    "Design flaws with safety implications"
+   ]
+  },
+  {
+   "t": "h3",
+   "text": "Complaint Handling Process"
+  },
+  {
+   "t": "p",
+   "html": "The systematic complaint management process includes eight critical stages:"
+  },
+  {
+   "t": "h3",
+   "text": "Step 1: Complaint Receipt and Documentation"
+  },
+  {
+   "t": "ul",
+   "items": [
+    "Assign unique complaint reference number",
+    "Record date, time, and source of complaint",
+    "Document all relevant information (device details, lot number, UDI)",
+    "Acknowledge receipt within defined timeframe"
+   ]
+  },
+  {
+   "t": "h3",
+   "text": "Step 2: Initial Triage and Categorization"
+  },
+  {
+   "t": "ul",
+   "items": [
+    "Assess severity and potential patient impact",
+    "Determine reportability to regulatory authorities",
+    "Classify complaint type (quality, performance, safety)",
+    "Assign priority level (urgent, high, medium, low)"
+   ]
+  },
+  {
+   "t": "h3",
+   "text": "Step 3: Investigation"
+  },
+  {
+   "t": "ul",
+   "items": [
+    "Review complaint details thoroughly",
+    "Request device return if necessary",
+    "Examine returned device (physical inspection, testing)",
+    "Review manufacturing records (DHR, batch records)",
+    "Interview relevant personnel",
+    "Consult technical experts"
+   ]
+  },
+  {
+   "t": "h3",
+   "text": "Step 4: Root Cause Analysis (RCA)"
+  },
+  {
+   "t": "ul",
+   "items": [
+    "Apply systematic RCA methodologies (5 Whys, Fishbone diagrams, Fault Tree Analysis)",
+    "Identify immediate causes and underlying systemic issues",
+    "Differentiate between one-time events and systematic problems",
+    "Document findings comprehensively"
+   ]
+  },
+  {
+   "t": "h3",
+   "text": "Step 5: Corrective and Preventive Actions (CAPA)"
+  },
+  {
+   "t": "ul",
+   "items": [
+    "Develop actions to address root causes",
+    "Implement corrective actions (eliminate existing problems)",
+    "Implement preventive actions (prevent potential problems)",
+    "Define responsibilities and timelines",
+    "Document action plans"
+   ]
+  },
+  {
+   "t": "h3",
+   "text": "Step 6: Regulatory Reporting (if required)"
+  },
+  {
+   "t": "ul",
+   "items": [
+    "Determine if complaint meets reporting criteria",
+    "Submit reports within regulatory timelines",
+    "Provide investigation findings and CAPA plans",
+    "Maintain communication with authorities"
+   ]
+  },
+  {
+   "t": "h3",
+   "text": "Step 7: Verification and Effectiveness Check"
+  },
+  {
+   "t": "ul",
+   "items": [
+    "Monitor CAPA implementation",
+    "Verify actions achieved intended results",
+    "Conduct follow-up inspections or testing",
+    "Review complaint trends for similar issues"
+   ]
+  },
+  {
+   "t": "h3",
+   "text": "Step 8: Closure and Trending"
+  },
+  {
+   "t": "ul",
+   "items": [
+    "Close complaint with documented justification",
+    "Update complaint database",
+    "Analyze trends across complaint categories",
+    "Incorporate lessons learned into quality system"
+   ]
+  },
+  {
+   "t": "fig",
+   "src": "images/ch15_fig02.jpg",
+   "w": 383,
+   "h": 365,
+   "num": "15.2",
+   "caption": "Complaint Handling Process Flowchart"
+  },
+  {
+   "t": "p",
+   "html": "<strong>Description:</strong>"
+  },
+  {
+   "t": "p",
+   "html": "<strong>Detailed flowchart showing sequential steps:</strong> Receipt → Documentation → Triage → Investigation (with decision diamond: \"Serious?\") → If Yes: RCA → CAPA → Regulatory"
+  },
+  {
+   "t": "p",
+   "html": "<strong>Report → Verification → Closure. If No:</strong> Investigation → Resolution → Closure. Parallel process shows Trending Analysis feeding back into system improvements."
+  },
+  {
+   "t": "h2",
+   "text": "Vigilance and Adverse Event Reporting",
+   "num": "15.4"
+  },
+  {
+   "t": "ul",
+   "items": [
+    "<strong>Vigilance System Overview</strong>"
+   ]
+  },
+  {
+   "t": "p",
+   "html": "Medical device vigilance refers to the systematic surveillance, assessment, and reporting of adverse events and incidents involving medical devices. Vigilance systems aim to detect safety signals early and facilitate rapid corrective action."
+  },
+  {
+   "t": "h3",
+   "text": "Serious Adverse Event Definition"
+  },
+  {
+   "t": "p",
+   "html": "A serious adverse event includes any occurrence that:"
+  },
+  {
+   "t": "ul",
+   "items": [
+    "Led to death",
+    "Led to serious deterioration in health resulting in:",
+    "Life-threatening illness or injury",
+    "Permanent impairment of body structure or function",
+    "Hospitalization or prolongation of hospitalization",
+    "Medical or surgical intervention to prevent permanent impairment",
+    "Could lead to any of the above if suitable action had not been taken"
+   ]
+  },
+  {
+   "t": "h3",
+   "text": "India -- Materiovigilance Programme of India (MvPI)"
+  },
+  {
+   "t": "p",
+   "html": "The Central Drugs Standard Control Organisation (CDSCO) operates the Materiovigilance Programme of India (MvPI) to monitor device safety."
+  },
+  {
+   "t": "h4",
+   "text": "Reporting Obligations"
+  },
+  {
+   "t": "p",
+   "html": "<strong>For Manufacturers/Importers:</strong>"
+  },
+  {
+   "t": "ul",
+   "items": [
+    "Report serious adverse events within <strong>15 calendar days </strong>of awareness",
+    "Submit detailed investigation report within <strong>30 days</strong>",
+    "Report trends and patterns that may indicate systematic issues",
+    "Maintain adverse event database"
+   ]
+  },
+  {
+   "t": "h4",
+   "text": "For Healthcare Establishments"
+  },
+  {
+   "t": "ul",
+   "items": [
+    "Report serious adverse events to MvPI portal",
+    "Provide patient and device information",
+    "Support investigations as needed"
+   ]
+  },
+  {
+   "t": "h4",
+   "text": "Reporting Process"
+  },
+  {
+   "t": "ul",
+   "items": [
+    "Access MvPI online portal ()",
+    "Register manufacturer/healthcare facility details",
+    "Submit adverse event report with required documentation",
+    "Track report status and respond to queries",
+    "Submit investigation findings and CAPA plans"
+   ]
+  },
+  {
+   "t": "h3",
+   "text": "United States -- FDA Medical Device Reporting (MDR)"
+  },
+  {
+   "t": "p",
+   "html": "The FDA mandates Medical Device Reporting under 21 CFR 803 for manufacturers, importers, and user facilities."
+  },
+  {
+   "t": "h4",
+   "text": "Reporting Timelines"
+  },
+  {
+   "t": "p",
+   "html": "<strong>5-Day Reports:</strong>"
+  },
+  {
+   "t": "ul",
+   "items": [
+    "Device has caused or contributed to death or serious injury",
+    "Malfunction would be likely to recur and cause/contribute to death or serious injury",
+    "Report to FDA within <strong>5 work days 30-Day Reports:</strong>",
+    "Device-related death or serious injury",
+    "Device malfunction requiring reporting",
+    "Submit within <strong>30 calendar days </strong>of becoming aware"
+   ]
+  },
+  {
+   "t": "h4",
+   "text": "Manufacturer Reporting Requirements"
+  },
+  {
+   "t": "ul",
+   "items": [
+    "Death or serious injury → Report to FDA and, if death occurred, to user facility",
+    "Malfunction → Report to FDA only",
+    "Maintain MDR event files for minimum 2 years"
+   ]
+  },
+  {
+   "t": "h4",
+   "text": "User Facility Reporting"
+  },
+  {
+   "t": "ul",
+   "items": [
+    "Death → Report to FDA and manufacturer within <strong>10 work days</strong>",
+    "Serious injury → Report to manufacturer within <strong>10 work days </strong>or FDA if manufacturer unknown"
+   ]
+  },
+  {
+   "t": "h4",
+   "text": "Exemptions"
+  },
+  {
+   "t": "ul",
+   "items": [
+    "Devices used solely for research under IDE",
+    "Class I devices exempt by FDA regulation",
+    "Events involving similar devices already reported (with conditions)"
+   ]
+  },
+  {
+   "t": "h3",
+   "text": "European Union -- Vigilance System (EU MDR)"
+  },
+  {
+   "t": "p",
+   "html": "The EU MDR 2017/745 establishes the most comprehensive vigilance system globally, requiring coordinated reporting through the European Database on Medical Devices (EUDAMED)."
+  },
+  {
+   "t": "p",
+   "html": "<strong>Reporting Timelines:</strong>"
+  },
+  {
+   "t": "p",
+   "html": "<strong>Serious Incidents Involving:</strong>"
+  },
+  {
+   "t": "p",
+   "html": "<strong>Death or serious deterioration of health:</strong>"
+  },
+  {
+   "t": "ul",
+   "items": [
+    "Immediate preliminary report: <strong>Within 2 calendar days </strong>of awareness",
+    "Updated report: <strong>Within 10 calendar days </strong>following preliminary report",
+    "Final report: <strong>Within 60 calendar days </strong>or as soon as investigation concludes"
+   ]
+  },
+  {
+   "t": "h4",
+   "text": "Serious public health threat"
+  },
+  {
+   "t": "ul",
+   "items": [
+    "Immediate notification: <strong>Without delay Other serious incidents:</strong>",
+    "Report: <strong>Within 15 calendar days </strong>of awareness"
+   ]
+  },
+  {
+   "t": "h4",
+   "text": "Manufacturer Obligations"
+  },
+  {
+   "t": "ul",
+   "items": [
+    "Report to competent authority of country where incident occurred",
+    "Report to EUDAMED when operational",
+    "Investigate all serious incidents",
+    "Implement FSCAs when necessary",
+    "Maintain incident database",
+    "Submit Periodic Safety Update Reports (PSUR)"
+   ]
+  },
+  {
+   "t": "h4",
+   "text": "Incident Investigation"
+  },
+  {
+   "t": "p",
+   "html": "Manufacturers must conduct thorough investigation including:"
+  },
+  {
+   "t": "ul",
+   "items": [
+    "Device examination and testing",
+    "Review of manufacturing records",
+    "Clinical evaluation review",
+    "Root cause analysis",
+    "Risk assessment update",
+    "CAPA documentation"
+   ]
+  },
+  {
+   "t": "fig",
+   "src": "images/ch15_fig03.jpg",
+   "w": 450,
+   "h": 203,
+   "num": "15.3",
+   "caption": "Global Vigilance Reporting Timeline Comparison"
+  },
+  {
+   "t": "p",
+   "html": "<strong>Description:</strong>"
+  },
+  {
+   "t": "p",
+   "html": "Comparative table with three columns (India, USA, EU) and rows showing reporting requirements:"
+  },
+  {
+   "t": "h3",
+   "text": "Criterion India (MvPI) USA (MDR) EU (MDR)"
+  },
+  {
+   "t": "p",
+   "html": "Serious events 15 days 30 days 10-15 days"
+  },
+  {
+   "t": "p",
+   "html": "Death/urgent 15 days 5 days 2 days (preliminary) Investigation report 30 days With initial report 60 days (final) Public health threat As applicable 5 days Immediate"
+  },
+  {
+   "t": "h2",
+   "text": "Post-Market Surveillance Documentation",
+   "num": "15.5"
+  },
+  {
+   "t": "ul",
+   "items": [
+    "<strong>PMS Plan</strong>"
+   ]
+  },
+  {
+   "t": "p",
+   "html": "Every medical device must have a documented PMS Plan outlining:"
+  },
+  {
+   "t": "h4",
+   "text": "Plan Elements"
+  },
+  {
+   "t": "ul",
+   "items": [
+    "Device identification and classification",
+    "Data collection methods and sources",
+    "Analysis methodology",
+    "Roles and responsibilities",
+    "Reporting procedures",
+    "Review frequency",
+    "Update procedures"
+   ]
+  },
+  {
+   "t": "h4",
+   "text": "Data Sources"
+  },
+  {
+   "t": "ul",
+   "items": [
+    "Complaint database",
+    "Vigilance reports",
+    "Customer feedback",
+    "Literature surveillance",
+    "Registry data",
+    "PMCF studies",
+    "Field performance reports",
+    "<strong>Post-Market Surveillance Report (PMSR) Applicable to: </strong>EU MDR Class I and IIa devices <strong>Content Requirements:</strong>",
+    "Complaints summary and analysis",
+    "Trends identified",
+    "CAPA summary",
+    "Risk management updates",
+    "Literature review findings",
+    "Conclusion on continued safety and performance"
+   ]
+  },
+  {
+   "t": "p",
+   "html": "<strong>Frequency: </strong>Periodically as specified in PMS plan"
+  },
+  {
+   "t": "ul",
+   "items": [
+    "<strong>Periodic Safety Update Report (PSUR) Applicable to: </strong>EU MDR Class IIb and Class III devices <strong>Content Requirements:</strong>",
+    "Comprehensive complaint analysis",
+    "Serious incident summary",
+    "Trend analysis with statistical methods",
+    "Volume of sales and installed base",
+    "FSCA summary",
+    "Risk-benefit assessment update",
+    "Clinical evaluation updates",
+    "PMCF results",
+    "Conclusions and planned actions"
+   ]
+  },
+  {
+   "t": "h4",
+   "text": "Frequency"
+  },
+  {
+   "t": "ul",
+   "items": [
+    "Class IIb: Minimum every <strong>2 years</strong>",
+    "Class III: Annually",
+    "More frequent if risk profile changes"
+   ]
+  },
+  {
+   "t": "h3",
+   "text": "Risk Management File Updates"
+  },
+  {
+   "t": "p",
+   "html": "ISO 14971 requires continuous risk management throughout device lifecycle:"
+  },
+  {
+   "t": "ul",
+   "items": [
+    "Update hazards based on PMS data",
+    "Revise risk estimates if new information available",
+    "Evaluate effectiveness of risk controls",
+    "Assess residual risks with current data",
+    "Update benefit-risk analysis",
+    "Document all changes",
+    "Maintain traceability"
+   ]
+  },
+  {
+   "t": "h2",
+   "text": "Trend Analysis and Safety Signal Detection",
+   "num": "15.6"
+  },
+  {
+   "t": "ul",
+   "items": [
+    "<strong>Purpose of Trend Analysis</strong>"
+   ]
+  },
+  {
+   "t": "p",
+   "html": "Trend analysis identifies patterns in post-market data that may indicate:"
+  },
+  {
+   "t": "ul",
+   "items": [
+    "Systematic quality problems",
+    "Design deficiencies",
+    "Manufacturing process issues",
+    "Increased failure rates",
+    "Emerging safety concerns",
+    "Effectiveness of previous CAPA"
+   ]
+  },
+  {
+   "t": "h4",
+   "text": "Trending Methodologies Quantitative Trending"
+  },
+  {
+   "t": "ul",
+   "items": [
+    "Calculate complaint rates (complaints per units sold)",
+    "Track failure rates over time",
+    "Monitor return rates",
+    "Analyze defect types statistically",
+    "Use control charts (X-bar, R charts)",
+    "Apply Pareto analysis (80/20 rule)"
+   ]
+  },
+  {
+   "t": "h4",
+   "text": "Qualitative Trending"
+  },
+  {
+   "t": "ul",
+   "items": [
+    "Categorize complaints by type",
+    "Identify recurring themes",
+    "Assess severity patterns",
+    "Review customer feedback narratives",
+    "Monitor social media and online reviews"
+   ]
+  },
+  {
+   "t": "h3",
+   "text": "Safety Signal Criteria"
+  },
+  {
+   "t": "p",
+   "html": "A safety signal may be triggered by:"
+  },
+  {
+   "t": "ul",
+   "items": [
+    "Sudden increase in complaint rate (≥50% increase)",
+    "Multiple serious adverse events with common characteristics",
+    "Emergence of previously unreported complications",
+    "Increase in specific failure mode",
+    "Correlation with specific lots or production periods",
+    "Reports from multiple independent sources"
+   ]
+  },
+  {
+   "t": "h4",
+   "text": "Response to Safety Signals"
+  },
+  {
+   "t": "ul",
+   "items": [
+    "Immediately escalate to management",
+    "Conduct urgent risk assessment",
+    "Initiate comprehensive investigation",
+    "Consider precautionary measures (including temporary distribution hold)",
+    "Notify regulatory authorities if required",
+    "Implement enhanced monitoring",
+    "Evaluate need for FSCA or recall"
+   ]
+  },
+  {
+   "t": "h2",
+   "text": "Field Safety Corrective Actions (FSCA)",
+   "num": "15.7"
+  },
+  {
+   "t": "ul",
+   "items": [
+    "<strong>Definition and Scope</strong>"
+   ]
+  },
+  {
+   "t": "p",
+   "html": "A Field Safety Corrective Action (FSCA) is any action taken by a manufacturer to reduce a risk of death or serious deterioration in health associated with a medical device that is already placed on the market."
+  },
+  {
+   "t": "p",
+   "html": "FSCAs may include:"
+  },
+  {
+   "t": "ul",
+   "items": [
+    "<strong>Device modification </strong>-- Design changes or software updates",
+    "<strong>Device repair </strong>-- Fixing identified defects",
+    "<strong>Device replacement </strong>-- Exchanging affected devices",
+    "<strong>Device adjustment </strong>-- Calibration or settings changes",
+    "<strong>Device return </strong>-- Temporary removal from use",
+    "<strong>Device destruction </strong>-- Permanent removal and disposal",
+    "<strong>Advice to users </strong>-- Safety notices with risk mitigation instructions",
+    "<strong>Labeling changes </strong>-- Updated warnings or instructions"
+   ]
+  },
+  {
+   "t": "h3",
+   "text": "When FSCA is Required"
+  },
+  {
+   "t": "p",
+   "html": "FSCA must be initiated when:"
+  },
+  {
+   "t": "ul",
+   "items": [
+    "Device poses unacceptable risk",
+    "Risk cannot be mitigated through existing information",
+    "Users cannot implement adequate risk mitigation independently",
+    "Regulatory authority mandates action",
+    "Risk-benefit balance shifts unfavorably"
+   ]
+  },
+  {
+   "t": "h3",
+   "text": "FSCA Implementation Process Phase 1: Risk Assessment and Decision"
+  },
+  {
+   "t": "ul",
+   "items": [
+    "Evaluate severity and probability of harm",
+    "Assess risk acceptability",
+    "Determine need for FSCA",
+    "Define scope (affected products, lots, serial numbers)",
+    "Document decision rationale"
+   ]
+  },
+  {
+   "t": "h3",
+   "text": "Phase 2: Planning"
+  },
+  {
+   "t": "ul",
+   "items": [
+    "Develop FSCA strategy",
+    "Define corrective actions",
+    "Prepare Field Safety Notice (FSN)",
+    "Identify affected parties",
+    "Establish communication plan",
+    "Set timelines and milestones"
+   ]
+  },
+  {
+   "t": "h3",
+   "text": "Phase 3: Regulatory Notification"
+  },
+  {
+   "t": "ul",
+   "items": [
+    "Notify competent authorities <strong>before </strong>implementing FSCA",
+    "Provide FSN draft for review",
+    "Submit supporting documentation (investigation, risk assessment)",
+    "Respond to authority questions",
+    "Obtain approval where required"
+   ]
+  },
+  {
+   "t": "h3",
+   "text": "Phase 4: Customer Notification"
+  },
+  {
+   "t": "ul",
+   "items": [
+    "Distribute FSN to all affected parties:",
+    "Direct customers",
+    "Distributors",
+    "Healthcare facilities",
+    "Regulatory authorities",
+    "Notified Bodies (if applicable)",
+    "Use multiple communication channels (email, registered mail, phone)",
+    "Maintain confirmation of receipt records",
+    "Follow up on non-responses"
+   ]
+  },
+  {
+   "t": "h3",
+   "text": "Phase 5: Implementation and Monitoring"
+  },
+  {
+   "t": "ul",
+   "items": [
+    "Track FSCA progress (devices returned, modified, etc.)",
+    "Monitor effectiveness",
+    "Provide technical support",
+    "Document all activities",
+    "Update stakeholders regularly"
+   ]
+  },
+  {
+   "t": "h3",
+   "text": "Phase 6: Completion and Reporting"
+  },
+  {
+   "t": "ul",
+   "items": [
+    "Verify FSCA objectives achieved",
+    "Submit completion report to authorities",
+    "Close FSCA formally",
+    "Conduct effectiveness review",
+    "Update risk management file"
+   ]
+  },
+  {
+   "t": "h4",
+   "text": "Field Safety Notice (FSN) Content"
+  },
+  {
+   "t": "ul",
+   "items": [
+    "Device identification (name, model, UDI, affected lots)",
+    "Problem description",
+    "Associated risks",
+    "Actions required from users",
+    "Instructions for implementation",
+    "Contact information",
+    "Urgency level",
+    "Deadline for action"
+   ]
+  },
+  {
+   "t": "h3",
+   "text": "Medical Device Recalls"
+  },
+  {
+   "t": "ul",
+   "items": [
+    "<strong>Recall Definition and Classification</strong>"
+   ]
+  },
+  {
+   "t": "p",
+   "html": "A <strong>recall </strong>is the removal or correction of a marketed product that violates regulations or presents a risk to public health."
+  },
+  {
+   "t": "h4",
+   "text": "Recall Classifications (FDA System -- Widely adopted) Class I Recall"
+  },
+  {
+   "t": "ul",
+   "items": [
+    "Situation where there is reasonable probability that use or exposure will cause <strong>serious adverse health consequences or death</strong>",
+    "Highest urgency",
+    "Examples: Pacemaker software error causing device shutdown, sterility breach in surgical implants"
+   ]
+  },
+  {
+   "t": "h4",
+   "text": "Class II Recall"
+  },
+  {
+   "t": "ul",
+   "items": [
+    "Situation where use or exposure <strong>may cause temporary or medically reversible adverse health consequences</strong>, or probability of serious adverse consequences is remote",
+    "Moderate urgency",
+    "Examples: Infusion pump dosage calculation error, catheter with increased risk of infection"
+   ]
+  },
+  {
+   "t": "h4",
+   "text": "Class III Recall"
+  },
+  {
+   "t": "ul",
+   "items": [
+    "Situation where use or exposure <strong>is not likely to cause adverse health consequences</strong>",
+    "Low urgency",
+    "Examples: Minor labeling errors, packaging defects not affecting sterility, cosmetic issues"
+   ]
+  },
+  {
+   "t": "h3",
+   "text": "Recall Initiation"
+  },
+  {
+   "t": "p",
+   "html": "Recalls may be initiated by:"
+  },
+  {
+   "t": "ul",
+   "items": [
+    "<strong>Voluntary recall </strong>-- Manufacturer identifies issue and initiates recall",
+    "<strong>Regulatory-mandated recall </strong>-- Authority requires recall (rare, typically follows manufacturer delay)"
+   ]
+  },
+  {
+   "t": "h3",
+   "text": "Recall Procedure"
+  },
+  {
+   "t": "p",
+   "html": "<strong>Step 1: Identification of Issue</strong>"
+  },
+  {
+   "t": "ul",
+   "items": [
+    "Detect problem through PMS, testing, or complaint",
+    "Assess severity and scope",
+    "Document initial findings"
+   ]
+  },
+  {
+   "t": "h3",
+   "text": "Step 2: Risk Assessment"
+  },
+  {
+   "t": "ul",
+   "items": [
+    "Evaluate potential patient harm",
+    "Determine recall classification",
+    "Define affected population",
+    "Calculate extent of distribution"
+   ]
+  },
+  {
+   "t": "h3",
+   "text": "Step 3: Regulatory Notification"
+  },
+  {
+   "t": "ul",
+   "items": [
+    "Notify regulatory authority immediately",
+    "Provide recall strategy",
+    "Submit supporting documentation",
+    "Obtain necessary approvals"
+   ]
+  },
+  {
+   "t": "h3",
+   "text": "Step 4: Notification to Affected Parties"
+  },
+  {
+   "t": "ul",
+   "items": [
+    "Prepare recall communication (clear, urgent, actionable)",
+    "Identify all distribution points",
+    "Contact customers, distributors, hospitals",
+    "Use multiple communication methods",
+    "Ensure message reaches end users"
+   ]
+  },
+  {
+   "t": "h4",
+   "text": "Recall Communication Content"
+  },
+  {
+   "t": "ul",
+   "items": [
+    "Device identification",
+    "Problem description",
+    "Risks involved",
+    "Actions required (stop use, return device, etc.)",
+    "Instructions for return or disposal",
+    "Timeline for action",
+    "Manufacturer contact information",
+    "Replacement or refund procedures"
+   ]
+  },
+  {
+   "t": "h3",
+   "text": "Step 5: Product Removal or Correction"
+  },
+  {
+   "t": "ul",
+   "items": [
+    "Stop distribution immediately",
+    "Quarantine existing inventory",
+    "Collect returned devices",
+    "Track recall progress (recall effectiveness checks)",
+    "Implement corrections or replacements",
+    "Document all activities"
+   ]
+  },
+  {
+   "t": "h3",
+   "text": "Step 6: Effectiveness Checks"
+  },
+  {
+   "t": "ul",
+   "items": [
+    "Verify notification reached recipients",
+    "Confirm recipients took required actions",
+    "Conduct audits of high-risk accounts",
+    "Follow up with non-responders",
+    "Document effectiveness"
+   ]
+  },
+  {
+   "t": "h3",
+   "text": "Step 7: Investigation and CAPA"
+  },
+  {
+   "t": "ul",
+   "items": [
+    "Complete root cause analysis",
+    "Implement corrective actions",
+    "Prevent recurrence",
+    "Update design/process/QMS as needed",
+    "Validate effectiveness"
+   ]
+  },
+  {
+   "t": "h3",
+   "text": "Step 8: Final Reporting and Closure"
+  },
+  {
+   "t": "ul",
+   "items": [
+    "Submit termination report to regulatory authority",
+    "Document total recalled vs. returned",
+    "Provide CAPA summary",
+    "Close recall officially",
+    "Conduct post-recall review"
+   ]
+  },
+  {
+   "t": "h3",
+   "text": "Step 9: Disposal or Rework"
+  },
+  {
+   "t": "ul",
+   "items": [
+    "Handle returned devices per procedures",
+    "Destroy devices if required",
+    "Rework if appropriate and validated",
+    "Maintain disposition records"
+   ]
+  },
+  {
+   "t": "fig",
+   "src": "images/ch15_fig04.jpg",
+   "w": 444,
+   "h": 472,
+   "num": "15.4",
+   "caption": "Recall Decision and Implementation Flow"
+  },
+  {
+   "t": "p",
+   "html": "<strong>Description:</strong>"
+  },
+  {
+   "t": "p",
+   "html": "Flowchart starting with \"Issue Identified\" → \"Risk Assessment\" → Decision diamond \"Recall Required?\" → If Yes: \"Classify Recall (I/II/III)\" → \"Notify Regulator\" → \"Notify Customers\""
+  },
+  {
+   "t": "p",
+   "html": "→ \"Implement Removal/Correction\" → \"Effectiveness Check\" → \"CAPA Implementation\" → \"Report &amp; Close\". If No: \"Implement CAPA without recall\" → \"Monitor closely\". Include parallel tracking: \"Document Every Step\"."
+  },
+  {
+   "t": "h3",
+   "text": "When is a Recall Required?"
+  },
+  {
+   "t": "p",
+   "html": "Recalls are mandated or recommended when:"
+  },
+  {
+   "t": "ul",
+   "items": [
+    "<strong>Sterility compromise </strong>-- Packaging breach, sterilization failure, contamination",
+    "<strong>Labeling errors </strong>-- Incorrect instructions, missing warnings, wrong product information",
+    "<strong>Performance failures </strong>-- Device does not meet specifications, malfunction affecting patient care",
+    "<strong>Safety hazards </strong>-- Risk of injury (electrical shock, mechanical failure, sharp edges)",
+    "<strong>Software defects </strong>-- Calculation errors, logic flaws, security vulnerabilities",
+    "<strong>Material defects </strong>-- Component failures, degradation, incompatibility",
+    "<strong>Design flaws </strong>-- Inadequate risk controls, human factors issues",
+    "<strong>Manufacturing deviations </strong>-- Process failures, wrong materials, assembly errors",
+    "<strong>Biocompatibility issues </strong>-- Unexpected adverse reactions, material sensitization",
+    "<strong>Battery failures </strong>-- Premature depletion, overheating, explosion risk",
+    "<strong>Dosage errors </strong>-- Incorrect medication delivery (pumps, inhalers)",
+    "<strong>Product mix-up </strong>-- Wrong device shipped or labeled incorrectly"
+   ]
+  },
+  {
+   "t": "h3",
+   "text": "Integration of CAPA Systems"
+  },
+  {
+   "t": "ul",
+   "items": [
+    "<strong>CAPA Overview</strong>"
+   ]
+  },
+  {
+   "t": "p",
+   "html": "Corrective and Preventive Action (CAPA) is a systematic approach to:"
+  },
+  {
+   "t": "ul",
+   "items": [
+    "Investigate problems",
+    "Identify root causes",
+    "Implement solutions",
+    "Verify effectiveness",
+    "Prevent recurrence"
+   ]
+  },
+  {
+   "t": "h3",
+   "text": "CAPA Process Flow Step 1: Problem Identification"
+  },
+  {
+   "t": "ul",
+   "items": [
+    "Source: Complaint, audit finding, test failure, nonconformance, trend"
+   ]
+  },
+  {
+   "t": "h3",
+   "text": "Step 2: Evaluation"
+  },
+  {
+   "t": "ul",
+   "items": [
+    "Assess significance and priority",
+    "Determine need for CAPA",
+    "Assign ownership"
+   ]
+  },
+  {
+   "t": "h3",
+   "text": "Step 3: Investigation"
+  },
+  {
+   "t": "ul",
+   "items": [
+    "Gather data",
+    "Conduct root cause analysis (5 Whys, Fishbone, FMEA)",
+    "Identify contributing factors"
+   ]
+  },
+  {
+   "t": "h3",
+   "text": "Step 4: Action Planning"
+  },
+  {
+   "t": "ul",
+   "items": [
+    "Define corrective actions (address existing problem)",
+    "Define preventive actions (prevent future problems)",
+    "Set timelines and responsibilities",
+    "Document plan"
+   ]
+  },
+  {
+   "t": "h3",
+   "text": "Step 5: Implementation"
+  },
+  {
+   "t": "ul",
+   "items": [
+    "Execute planned actions",
+    "Update procedures, training, or design as needed",
+    "Communicate changes"
+   ]
+  },
+  {
+   "t": "h3",
+   "text": "Step 6: Verification"
+  },
+  {
+   "t": "ul",
+   "items": [
+    "Verify actions implemented",
+    "Test effectiveness",
+    "Monitor for recurrence"
+   ]
+  },
+  {
+   "t": "h3",
+   "text": "Step 7: Closure"
+  },
+  {
+   "t": "ul",
+   "items": [
+    "Document results",
+    "Obtain approval for closure",
+    "Update affected systems"
+   ]
+  },
+  {
+   "t": "h3",
+   "text": "Step 8: Follow-up"
+  },
+  {
+   "t": "ul",
+   "items": [
+    "Conduct periodic review",
+    "Ensure sustained effectiveness"
+   ]
+  },
+  {
+   "t": "h2",
+   "text": "CAPA Documentation Requirements",
+   "num": "15.8"
+  },
+  {
+   "t": "p",
+   "html": "Required documents:"
+  },
+  {
+   "t": "ul",
+   "items": [
+    "CAPA request form",
+    "Investigation report",
+    "Root cause analysis",
+    "Action plan",
+    "Implementation records",
+    "Verification results",
+    "Effectiveness check records",
+    "Closure approval",
+    "<strong>Global PMS Requirements -- Comparative Summary</strong>"
+   ]
+  },
+  {
+   "t": "p",
+   "html": "<strong>Table 15.1 -- International PMS and Vigilance Requirements Comparison</strong>"
+  },
+  {
+   "t": "p",
+   "html": "<strong>Requirement</strong>"
+  },
+  {
+   "t": "p",
+   "html": "<strong>India (MvPI/MDR 2017)</strong>"
+  },
+  {
+   "t": "p",
+   "html": "<strong>USA (FDA/MDR)</strong>"
+  },
+  {
+   "t": "h3",
+   "text": "EU (MDR ISO 13485 2017/745)"
+  },
+  {
+   "t": "p",
+   "html": "<strong>PMS Plan </strong>Required Recommended Mandatory Required"
+  },
+  {
+   "t": "p",
+   "html": "<strong>Serious Adverse </strong>15 days"
+  },
+  {
+   "t": "h3",
+   "text": "Event Reporting"
+  },
+  {
+   "t": "p",
+   "html": "30 days (5 days if urgent)"
+  },
+  {
+   "t": "p",
+   "html": "2-15 days depending on severity"
+  },
+  {
+   "t": "p",
+   "html": "Not specified (follows regulations)"
+  },
+  {
+   "t": "p",
+   "html": "<strong>Requirement</strong>"
+  },
+  {
+   "t": "p",
+   "html": "<strong>India (MvPI/MDR 2017)</strong>"
+  },
+  {
+   "t": "p",
+   "html": "<strong>USA (FDA/MDR)</strong>"
+  },
+  {
+   "t": "h3",
+   "text": "EU (MDR ISO 13485 2017/745)"
+  },
+  {
+   "t": "p",
+   "html": "<strong>Investigation Timeline</strong>"
+  },
+  {
+   "t": "p",
+   "html": "30 days With report 60 days final"
+  },
+  {
+   "t": "p",
+   "html": "report"
+  },
+  {
+   "t": "p",
+   "html": "Per quality system"
+  },
+  {
+   "t": "h3",
+   "text": "Recall Requirement"
+  },
+  {
+   "t": "p",
+   "html": "Mandatory for serious issues"
+  },
+  {
+   "t": "p",
+   "html": "Mandatory Mandatory (FSCA)"
+  },
+  {
+   "t": "p",
+   "html": "Required by QMS"
+  },
+  {
+   "t": "p",
+   "html": "<strong>PMS Report </strong>As required Not specified PMSR (Class I,"
+  },
+  {
+   "t": "p",
+   "html": "IIa)"
+  },
+  {
+   "t": "p",
+   "html": "PSUR (Class IIb,"
+  },
+  {
+   "t": "p",
+   "html": "Required"
+  },
+  {
+   "t": "p",
+   "html": "<strong>PSUR </strong>Not mandated Not required"
+  },
+  {
+   "t": "p",
+   "html": "III) -- every 1-2 years"
+  },
+  {
+   "t": "p",
+   "html": "Not specified"
+  },
+  {
+   "t": "p",
+   "html": "<strong>Trend Reporting </strong>Expected Required Required Required"
+  },
+  {
+   "t": "p",
+   "html": "<strong>PMCF </strong>Not specified Not required Mandatory for"
+  },
+  {
+   "t": "p",
+   "html": "high-risk devices"
+  },
+  {
+   "t": "p",
+   "html": "Not specified"
+  },
+  {
+   "t": "h3",
+   "text": "Complaint Database"
+  },
+  {
+   "t": "p",
+   "html": "Required Required Required Required"
+  },
+  {
+   "t": "h3",
+   "text": "Special Considerations"
+  },
+  {
+   "t": "ul",
+   "items": [
+    "<strong>PMS for Software as a Medical Device (SaMD)</strong>"
+   ]
+  },
+  {
+   "t": "p",
+   "html": "SaMD requires enhanced post-market monitoring:"
+  },
+  {
+   "t": "ul",
+   "items": [
+    "Software performance monitoring",
+    "Algorithm validation on real-world data",
+    "Cybersecurity incident tracking",
+    "Update effectiveness evaluation",
+    "User interface feedback",
+    "Integration issues with hospital systems"
+   ]
+  },
+  {
+   "t": "h3",
+   "text": "PMS for Combination Products"
+  },
+  {
+   "t": "p",
+   "html": "Devices with drugs or biologics require:"
+  },
+  {
+   "t": "ul",
+   "items": [
+    "Coordinated vigilance reporting",
+    "Interaction monitoring",
+    "Dual regulatory compliance (drug and device)",
+    "Pharmacovigilance integration"
+   ]
+  },
+  {
+   "t": "h3",
+   "text": "PMS for Implantable Devices"
+  },
+  {
+   "t": "p",
+   "html": "Long-term monitoring requirements:"
+  },
+  {
+   "t": "ul",
+   "items": [
+    "Registry participation",
+    "Long-term patient follow-up",
+    "Material degradation monitoring",
+    "Revision/explant analysis",
+    "PMCF studies (EU MDR)"
+   ]
+  },
+  {
+   "t": "box",
+   "kind": "case",
+   "label": "Case Study 15.1",
+   "title": "Global Recall of Metal-on-Metal Hip Implants Background:",
+   "blocks": [
+    {
+     "t": "p",
+     "html": "In 2010-2012, several manufacturers initiated worldwide recalls of metal-on-metal (MoM) hip implants due to reports of adverse reactions to metal debris (ARMD), metallosis, and unexpectedly high revision rates."
+    },
+    {
+     "t": "h4",
+     "text": "Problem Description"
+    },
+    {
+     "t": "ul",
+     "items": [
+      "Excessive wear at metal-on-metal articulating surfaces",
+      "Release of cobalt and chromium ions into bloodstream",
+      "Severe tissue reactions including pseudotumors",
+      "Pain, inflammation, and implant loosening",
+      "Revision surgery required much earlier than expected"
+     ]
+    },
+    {
+     "t": "h4",
+     "text": "Root Causes Identified"
+    },
+    {
+     "t": "ul",
+     "items": [
+      "Inadequate pre-market clinical evaluation (under previous EU MDD)",
+      "Insufficient long-term performance data",
+      "Design issues causing accelerated wear",
+      "Patient selection criteria not properly defined",
+      "Post-market surveillance gaps delaying problem detection"
+     ]
+    },
+    {
+     "t": "h4",
+     "text": "Regulatory Actions"
+    },
+    {
+     "t": "p",
+     "html": "<strong>Europe:</strong>"
+    },
+    {
+     "t": "ul",
+     "items": [
+      "Issued Medical Device Alerts",
+      "Manufacturers issued Field Safety Notices (FSN)",
+      "Enhanced surveillance mandated",
+      "Multiple devices withdrawn from market"
+     ]
+    },
+    {
+     "t": "h4",
+     "text": "United States"
+    },
+    {
+     "t": "ul",
+     "items": [
+      "FDA issued Class 2 Device Recall",
+      "Mandated post-market surveillance studies (522 studies)",
+      "Required patient registries",
+      "Issued safety communications"
+     ]
+    },
+    {
+     "t": "h4",
+     "text": "India"
+    },
+    {
+     "t": "ul",
+     "items": [
+      "CDSCO issued safety alerts",
+      "Enhanced import scrutiny",
+      "Mandatory adverse event reporting strengthened"
+     ]
+    },
+    {
+     "t": "h4",
+     "text": "Manufacturer Actions"
+    },
+    {
+     "t": "ul",
+     "items": [
+      "Voluntary recall of affected models",
+      "Patient notification programs",
+      "Covered revision surgery costs",
+      "Established dedicated patient support hotlines",
+      "Blood metal ion testing programs",
+      "Compensation schemes in some regions"
+     ]
+    },
+    {
+     "t": "h4",
+     "text": "Outcomes"
+    },
+    {
+     "t": "ul",
+     "items": [
+      "Tens of thousands of patients underwent revision surgeries globally",
+      "Manufacturers faced substantial legal liabilities",
+      "Strengthened regulatory requirements for orthopedic implants",
+      "Drove development of EU MDR (replacing MDD)",
+      "Increased emphasis on post-market clinical follow-up (PMCF)"
+     ]
+    },
+    {
+     "t": "h4",
+     "text": "Lessons Learned"
+    },
+    {
+     "t": "ul",
+     "items": [
+      "<strong>Robust pre-market evaluation is essential </strong>-- Even \"similar\" devices can have significantly different performance; equivalence claims must be thoroughly validated.",
+      "<strong>Long-term clinical data is critical for implants </strong>-- Short-term studies may not reveal problems that develop over years.",
+      "<strong>Proactive PMS can detect issues early </strong>-- Systematic complaint analysis and trend monitoring enable earlier intervention.",
+      "<strong>Patient registries are valuable </strong>-- Centralized registries facilitate long-term outcome tracking and rapid problem identification.",
+      "<strong>Timely regulatory action saves lives </strong>-- Delays in issuing safety alerts and recalls extend patient exposure to risks.",
+      "<strong>Transparency builds trust </strong>-- Open communication with patients and healthcare providers, though difficult, is necessary.",
+      "<strong>Regulatory systems must evolve </strong>-- The MoM implant crisis directly influenced development of stricter EU MDR requirements."
+     ]
+    }
+   ]
+  },
+  {
+   "t": "box",
+   "kind": "insight",
+   "label": "Industry Insight 15.1",
+   "title": "",
+   "blocks": [
+    {
+     "t": "p",
+     "html": "<strong>Post-Market Surveillance: Industry Statistics and Trends</strong>"
+    },
+    {
+     "t": "p",
+     "html": "According to global medical device safety data:"
+    },
+    {
+     "t": "ul",
+     "items": [
+      "Approximately <strong>55% of all device recalls </strong>globally are attributed to design or manufacturing defects rather than clinical factors, emphasizing the critical role of PMS in detecting systematic issues.",
+      "<strong>Over 70% of serious adverse events </strong>are identified through voluntary manufacturer PMS systems rather than mandatory reporting, highlighting the value of proactive surveillance.",
+      "Studies indicate that <strong>devices with robust PMS programs </strong>experience 40% fewer serious adverse events in years 2-5 post-launch compared to devices with minimal PMS.",
+      "The <strong>average time from first complaint to recall </strong>for Class I recalls has decreased from 18 months (2010) to 8 months (2023), reflecting improved PMS systems and regulatory pressure.",
+      "<strong>EU MDR implementation </strong>has increased PMS documentation requirements by approximately 300%, creating substantial demand for PMS specialists, regulatory affairs professionals, and data analysts."
+     ]
+    },
+    {
+     "t": "h4",
+     "text": "Career Opportunities"
+    },
+    {
+     "t": "p",
+     "html": "The expansion of PMS requirements globally has created high demand for:"
+    },
+    {
+     "t": "ul",
+     "items": [
+      "PMS Managers",
+      "Complaint Handling Specialists",
+      "Vigilance Officers",
+      "CAPA Coordinators",
+      "Clinical Data Analysts",
+      "Regulatory Affairs Associates specializing in post-market",
+      "Medical Device Safety Officers"
+     ]
+    }
+   ]
+  }
+ ],
+ "glossary": [
+  [
+   "Adverse Event",
+   "Any untoward medical occurrence, unintended disease or injury, or untoward clinical signs associated with the use of a medical device."
+  ],
+  [
+   "CAPA (Corrective and Preventive Action)",
+   "Systematic process for investigating problems, identifying root causes, implementing solutions, and preventing recurrence."
+  ],
+  [
+   "Complaint",
+   "Any written, electronic, or oral communication alleging deficiencies related to device identity, quality, durability, reliability, safety, or performance."
+  ],
+  [
+   "Field Safety Corrective Action (FSCA)",
+   "Action taken by manufacturer to reduce risk of death or serious deterioration in health associated with a device already on the market."
+  ],
+  [
+   "Field Safety Notice (FSN)",
+   "Communication to users informing them of FSCA being undertaken."
+  ],
+  [
+   "Materiovigilance Programme of India (MvPI)",
+   "National program for monitoring medical device safety coordinated by CDSCO."
+  ],
+  [
+   "MDR (Medical Device Reporting)",
+   "FDA system for mandatory reporting of device-related deaths, serious injuries, and malfunctions."
+  ],
+  [
+   "PMCF (Post-Market Clinical Follow-up)",
+   "Continuous process of updating clinical evaluation with data from use of device after market placement (EU MDR requirement)."
+  ],
+  [
+   "PMS (Post-Market Surveillance)",
+   "Systematic collection and analysis of experience gained from devices placed on the market."
+  ],
+  [
+   "PMSR (Post-Market Surveillance Report)",
+   "Summary report of PMS data and activities for lower-risk devices under EU MDR."
+  ],
+  [
+   "PSUR (Periodic Safety Update Report)",
+   "Comprehensive summary of PMS data for higher-risk devices under EU MDR, submitted periodically."
+  ],
+  [
+   "Recall",
+   "Removal or correction of distributed product that violates regulations or presents risk to health."
+  ],
+  [
+   "Root Cause Analysis (RCA)",
+   "Systematic process for identifying underlying causes of problems or events."
+  ],
+  [
+   "Safety Signal",
+   "Information suggesting new or changed adverse effect or risk associated with Continue 9:03 PM a device."
+  ],
+  [
+   "Serious Adverse Event",
+   "Event that led to or could lead to death, serious deterioration of health, or required medical/surgical intervention to prevent such outcomes."
+  ],
+  [
+   "Trend Analysis",
+   "Systematic evaluation of data over time to identify patterns suggesting quality or safety issues."
+  ],
+  [
+   "UDI (Unique Device Identification)",
+   "Unique numeric or alphanumeric code enabling device identification throughout distribution and use."
+  ],
+  [
+   "Vigilance",
+   "Systematic surveillance, assessment, and reporting of adverse events and incidents involving medical devices."
+  ]
+ ],
+ "recap_intro": "This chapter comprehensively addressed post-market surveillance systems, establishing their critical role in ongoing device safety management. Key concepts covered include:",
+ "recap_items": [
+  "<strong>PMS regulatory framework </strong>across India (MvPI), USA (FDA MDR), and EU (MDR 2017/745), emphasizing the mandatory nature and scope of post-market obligations.",
+  "<strong>Complaint handling systems </strong>following ISO 13485 requirements, detailing the eight-step process from receipt through investigation, CAPA, regulatory reporting, verification, and closure.",
+  "<strong>Vigilance reporting requirements</strong>, including serious adverse event definitions, reporting timelines (15 days India, 5-30 days USA, 2-15 days EU), and investigation obligations.",
+  "<strong>PMS documentation</strong>, encompassing PMS Plans, Post-Market Surveillance Reports (PMSR), Periodic Safety Update Reports (PSUR), and risk management file updates.",
+  "<strong>Trend analysis methodologies </strong>for detecting safety signals through quantitative and qualitative data evaluation, enabling early problem identification.",
+  "<strong>Field Safety Corrective Actions (FSCA) </strong>and recall procedures, including classification systems (Class I/II/III), implementation phases, effectiveness checks, and completion reporting.",
+  "<strong>CAPA integration </strong>within PMS systems, ensuring systematic problem resolution and continuous improvement.",
+  "<strong>Global regulatory comparisons</strong>, highlighting differences and commonalities in PMS requirements across major regulatory jurisdictions.",
+  "The Metal-on-Metal hip implant case study illustrated real-world consequences of PMS gaps and reinforced the critical importance of proactive surveillance, timely action, and regulatory responsiveness in protecting patient safety.",
+  "Mastery of PMS principles and procedures is essential for all medical device professionals, as post-market safety management directly impacts patient outcomes, regulatory compliance, organizational reputation, and long-term market success."
+ ],
+ "references": [
+  {
+   "group": null,
+   "text": "ISO 13485:2016 -- Medical devices -- Quality management systems -- Requirements for regulatory purposes"
+  },
+  {
+   "group": null,
+   "text": "ISO 14971:2019 -- Medical devices -- Application of risk management to medical devices"
+  },
+  {
+   "group": null,
+   "text": "EU MDR 2017/745 -- Regulation on medical devices (particularly Articles 83-92 and Annex III)"
+  },
+  {
+   "group": null,
+   "text": "FDA 21 CFR Part 803 -- Medical Device Reporting"
+  },
+  {
+   "group": null,
+   "text": "FDA 21 CFR Part 806 -- Medical Devices; Reports of Corrections and Removals"
+  },
+  {
+   "group": null,
+   "text": "India Medical Device Rules, 2017 -- Central Drugs Standard Control Organisation"
+  },
+  {
+   "group": null,
+   "text": "MEDDEV 2.12/1 Rev 8 -- Guidelines on a Medical Devices Vigilance System"
+  },
+  {
+   "group": null,
+   "text": "ISO/TR 20416:2020 -- Medical devices -- Post-market surveillance for manufacturers"
+  },
+  {
+   "group": null,
+   "text": "IMDRF/GHTF/SG2/N54R8:2012 -- Essential Principles of Safety and Performance of Medical Devices"
+  },
+  {
+   "group": null,
+   "text": "WHO Medical Device Technical Series -- Post-market surveillance guidelines"
+  }
+ ]
+}

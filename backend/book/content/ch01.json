@@ -1,0 +1,2131 @@
+{
+ "num": 1,
+ "id": "ch01",
+ "title": "Introduction to Medical Devices",
+ "subtitle": "",
+ "overview": [
+  "This chapter introduces fundamental concepts, definitions, global perspectives, and classification principles of medical devices. It explains the characteristics that distinguish medical devices from drugs and outlines the key parameters used worldwide to classify devices based on risk, invasiveness, duration of contact, and technology. Students will gain a foundational understanding of the medical device ecosystem, quality management systems, cleanroom environments, and career opportunities in this rapidly growing industry."
+ ],
+ "clos": [
+  "Define a medical device using internationally harmonized terminology (WHO, FDA, EU MDR, India MDR 2017).",
+  "Distinguish medical devices from drugs based on mechanism of action, testing requirements, and regulatory pathways.",
+  "Explain classification criteria including invasiveness, duration of contact, risk level, and technology used.",
+  "Compare classification systems of US FDA, EU MDR, and India MDR 2017.",
+  "Identify different categories of medical devices used across healthcare settings.",
+  "Describe cleanroom functioning, environmental control principles, and their importance in device manufacturing.",
+  "Understand the significance of Quality Management Systems (QMS), particularly ISO 13485, in ensuring device safety and effectiveness.",
+  "Recognize diverse career roles and opportunities within the medical device sector."
+ ],
+ "keywords": [
+  "Medical device",
+  "classification",
+  "MDR 2017",
+  "FDA",
+  "EU MDR",
+  "ISO 13485",
+  "invasiveness",
+  "QMS",
+  "cleanroom",
+  "risk level",
+  "implant",
+  "device categories",
+  "biocompatibility",
+  "sterility"
+ ],
+ "roadmap": [
+  "Definition of medical devices",
+  "Difference between devices and drugs",
+  "Classification criteria (invasiveness, duration, technology)",
+  "Global classification systems (FDA, EU MDR, India",
+  "MDR)",
+  "Device categories",
+  "Cleanroom basics",
+  "Quality",
+  "Management",
+  "Systems (QMS) fundamentals",
+  "Career pathways in medical devices"
+ ],
+ "blocks": [
+  {
+   "t": "h2",
+   "text": "Definition of a Medical Device",
+   "num": "1.1"
+  },
+  {
+   "t": "p",
+   "html": "A <strong>medical device </strong>is any instrument, apparatus, appliance, software, implant, material, or other article intended by the manufacturer to be used, alone or in combination, for one or more of the following medical purposes:"
+  },
+  {
+   "t": "ul",
+   "items": [
+    "Diagnosis, prevention, monitoring, prediction, or treatment of disease or disorder",
+    "Supporting or sustaining life",
+    "Control of conception",
+    "Disinfection of medical devices"
+   ]
+  },
+  {
+   "t": "p",
+   "html": "<strong>Critical Distinction: </strong>A medical device <strong>does not achieve its primary intended action by pharmacological, immunological, or metabolic means</strong>, although it may be assisted in its function by such means."
+  },
+  {
+   "t": "p",
+   "html": "This definition aligns with internationally recognized standards from:"
+  },
+  {
+   "t": "ul",
+   "items": [
+    "<strong>World Health Organization (WHO)</strong>",
+    "<strong>US Food and Drug Administration (FDA)</strong>",
+    "<strong>European Union Medical Device Regulation (EU MDR 2017/745)</strong>",
+    "India's Medical Device Rules (MDR) 2017"
+   ]
+  },
+  {
+   "t": "box",
+   "kind": "example",
+   "label": "Example Box 1.1",
+   "title": "Understanding the Definition",
+   "blocks": [
+    {
+     "t": "p",
+     "html": "<strong>Pulse Oximeter: </strong>A medical device that measures blood oxygen saturation using light sensors (physical mechanism) — classified as a medical device."
+    },
+    {
+     "t": "p",
+     "html": "<strong>Insulin: </strong>A hormone that regulates blood glucose through metabolic action — classified as a drug."
+    }
+   ]
+  },
+  {
+   "t": "h2",
+   "text": "Difference Between Medical Devices and Drugs",
+   "num": "1.2"
+  },
+  {
+   "t": "p",
+   "html": "Medical devices and drugs serve distinct roles in healthcare and differ fundamentally in several aspects:"
+  },
+  {
+   "t": "h3",
+   "text": "Mechanism of Action"
+  },
+  {
+   "t": "ul",
+   "items": [
+    "<strong>Drugs: </strong>Act through <strong>chemical, pharmacological, immunological, or metabolic </strong>means within the body."
+   ]
+  },
+  {
+   "t": "h3",
+   "text": "Devices: Act through physical, mechanical, thermal, electrical, or software-based"
+  },
+  {
+   "t": "p",
+   "html": "pathways."
+  },
+  {
+   "t": "h4",
+   "text": "Testing Requirements Drugs"
+  },
+  {
+   "t": "ul",
+   "items": [
+    "Clinical pharmacology studies",
+    "Toxicology assessment",
+    "Bioequivalence testing",
+    "Pharmacokinetics and pharmacodynamics",
+    "Extensive clinical trials (Phase I–IV)"
+   ]
+  },
+  {
+   "t": "h4",
+   "text": "Devices"
+  },
+  {
+   "t": "ul",
+   "items": [
+    "Mechanical and electrical performance testing",
+    "Biocompatibility evaluation (ISO 10993)",
+    "Usability and human factors testing",
+    "Sterilization validation",
+    "Software verification and validation (for software-containing devices)"
+   ]
+  },
+  {
+   "t": "h3",
+   "text": "Timing of Action"
+  },
+  {
+   "t": "ul",
+   "items": [
+    "<strong>Devices: </strong>Often provide <strong>immediate </strong>results or action (e.g., pulse oximeter displays oxygen saturation instantly; defibrillator delivers shock immediately)."
+   ]
+  },
+  {
+   "t": "h3",
+   "text": "Drugs: Require absorption, distribution, metabolism, and excretion (ADME)"
+  },
+  {
+   "t": "p",
+   "html": "processes before exerting therapeutic effects."
+  },
+  {
+   "t": "box",
+   "kind": "example",
+   "label": "Example Box 1.2",
+   "title": "Device vs. Drug Comparison",
+   "blocks": [
+    {
+     "t": "p",
+     "html": "<strong>Product Classification Mechanism Example</strong>"
+    },
+    {
+     "t": "p",
+     "html": "Insulin injection"
+    },
+    {
+     "t": "p",
+     "html": "Drug Acts metabolically to regulate"
+    },
+    {
+     "t": "p",
+     "html": "blood glucose"
+    },
+    {
+     "t": "p",
+     "html": "Pharmaceutical preparation"
+    },
+    {
+     "t": "p",
+     "html": "Insulin pump Medical"
+    },
+    {
+     "t": "p",
+     "html": "Device"
+    },
+    {
+     "t": "p",
+     "html": "Mechanically delivers insulin subcutaneously"
+    },
+    {
+     "t": "p",
+     "html": "Programmable infusion device"
+    }
+   ]
+  },
+  {
+   "t": "h3",
+   "text": "Basis of Medical Device Classification (Risk Factors)"
+  },
+  {
+   "t": "p",
+   "html": "Global regulatory authorities classify medical devices based on several critical factors that determine the level of risk posed to patients and users:"
+  },
+  {
+   "t": "ul",
+   "items": [
+    "Degree of invasiveness",
+    "Duration of contact with the body",
+    "Technology and complexity involved",
+    "Body part or system affected",
+    "Potential consequences of device failure"
+   ]
+  },
+  {
+   "t": "h3",
+   "text": "Degree of Invasiveness"
+  },
+  {
+   "t": "p",
+   "html": "Invasiveness refers to the extent to which a device penetrates or enters the human body."
+  },
+  {
+   "t": "h3",
+   "text": "Non-invasive Devices"
+  },
+  {
+   "t": "p",
+   "html": "<strong>Definition: </strong>Do not penetrate the body surface or contact internal tissues."
+  },
+  {
+   "t": "h4",
+   "text": "Examples"
+  },
+  {
+   "t": "ul",
+   "items": [
+    "Blood pressure cuff (sphygmomanometer)",
+    "Stethoscope",
+    "Thermometer",
+    "Wheelchairs",
+    "Walking aids"
+   ]
+  },
+  {
+   "t": "p",
+   "html": "<strong>Risk Level: </strong>Generally low risk due to external use only."
+  },
+  {
+   "t": "h3",
+   "text": "Minimally Invasive Devices"
+  },
+  {
+   "t": "p",
+   "html": "<strong>Definition: </strong>Enter the body through natural body openings (orifices) or contact body surfaces."
+  },
+  {
+   "t": "h4",
+   "text": "Examples"
+  },
+  {
+   "t": "ul",
+   "items": [
+    "Nasogastric tube",
+    "Urinary catheter",
+    "Endoscope",
+    "Rectal thermometer",
+    "Contact lenses"
+   ]
+  },
+  {
+   "t": "p",
+   "html": "<strong>Risk Level: </strong>Low to moderate risk, depending on duration and location."
+  },
+  {
+   "t": "h3",
+   "text": "Invasive Devices"
+  },
+  {
+   "t": "p",
+   "html": "<strong>Definition: </strong>Penetrate the skin or mucous membranes through artificial openings."
+  },
+  {
+   "t": "h4",
+   "text": "Examples"
+  },
+  {
+   "t": "ul",
+   "items": [
+    "Hypodermic needles and syringes",
+    "Biopsy needles",
+    "Surgical instruments",
+    "Intravenous catheters",
+    "Surgical drains"
+   ]
+  },
+  {
+   "t": "p",
+   "html": "<strong>Risk Level: </strong>Moderate to high risk due to breach of body's natural barriers."
+  },
+  {
+   "t": "h3",
+   "text": "Implantable / Surgically Invasive Devices"
+  },
+  {
+   "t": "p",
+   "html": "<strong>Definition: </strong>Remain wholly or partially inside the body after a surgical procedure, often for extended periods."
+  },
+  {
+   "t": "h4",
+   "text": "Examples"
+  },
+  {
+   "t": "ul",
+   "items": [
+    "Cardiac pacemakers",
+    "Coronary stents",
+    "Orthopaedic implants (hip, knee replacements)",
+    "Cochlear implants",
+    "Intraocular lenses",
+    "Drug-eluting stents"
+   ]
+  },
+  {
+   "t": "p",
+   "html": "<strong>Risk Level: </strong>High to very high risk due to:"
+  },
+  {
+   "t": "ul",
+   "items": [
+    "Long-term body contact",
+    "Difficulty in removal or replacement",
+    "Potential for serious complications if failure occurs",
+    "Direct interaction with critical body systems"
+   ]
+  },
+  {
+   "t": "fig",
+   "src": "images/ch01_fig01.jpg",
+   "w": 524,
+   "h": 213,
+   "num": "1.1",
+   "caption": "Levels of Invasiveness"
+  },
+  {
+   "t": "p",
+   "html": "<strong>Description:</strong>"
+  },
+  {
+   "t": "p",
+   "html": "A horizontal gradient bar diagram showing four levels of invasiveness from left to right:"
+  },
+  {
+   "t": "p",
+   "html": "<strong>Non-invasive </strong>(light blue) → <strong>Minimally invasive </strong>(light yellow) → <strong>Invasive </strong>(light orange) →"
+  },
+  {
+   "t": "p",
+   "html": "<strong>Implantable </strong>(red)"
+  },
+  {
+   "t": "p",
+   "html": "An arrow below indicates <strong>\"Increasing Risk Level\" </strong>from left to right. Additional visual elements:"
+  },
+  {
+   "t": "ul",
+   "items": [
+    "Icons representing each category (stethoscope, catheter, syringe, pacemaker)",
+    "Risk indicators: Low → Moderate → High → Very High"
+   ]
+  },
+  {
+   "t": "h3",
+   "text": "Duration of Contact"
+  },
+  {
+   "t": "p",
+   "html": "The length of time a device remains in contact with the body significantly influences risk classification."
+  },
+  {
+   "t": "ul",
+   "items": [
+    "<strong>Transient Contact (≤ 60 minutes) Definition: </strong>Device use is brief and temporary. <strong>Examples:</strong>",
+    "Surgical forceps",
+    "Examination gloves",
+    "Tongue depressors",
+    "Single-use diagnostic devices"
+   ]
+  },
+  {
+   "t": "p",
+   "html": "<strong>Risk Consideration: </strong>Limited exposure time reduces potential for adverse reactions."
+  },
+  {
+   "t": "h3",
+   "text": "Short-term Contact (1–30 days)"
+  },
+  {
+   "t": "p",
+   "html": "<strong>Definition: </strong>Device remains in contact for more than one hour but less than 30 days."
+  },
+  {
+   "t": "h4",
+   "text": "Examples"
+  },
+  {
+   "t": "ul",
+   "items": [
+    "Temporary urinary catheters",
+    "Short-term IV catheters",
+    "Wound dressings",
+    "External fixation devices"
+   ]
+  },
+  {
+   "t": "p",
+   "html": "<strong>Risk Consideration: </strong>Increased risk of infection, inflammation, or device-related complications."
+  },
+  {
+   "t": "h3",
+   "text": "Long-term Contact (&gt; 30 days)"
+  },
+  {
+   "t": "p",
+   "html": "<strong>Definition: </strong>Device intended for continuous or repeated use exceeding 30 days."
+  },
+  {
+   "t": "h4",
+   "text": "Examples"
+  },
+  {
+   "t": "ul",
+   "items": [
+    "Cardiac pacemakers",
+    "Orthopedic joint prostheses (hip, knee)",
+    "Intraocular lenses",
+    "Breast implants",
+    "Neurostimulators",
+    "Vascular grafts"
+   ]
+  },
+  {
+   "t": "p",
+   "html": "<strong>Risk Consideration: </strong>Highest risk due to:"
+  },
+  {
+   "t": "ul",
+   "items": [
+    "Extended exposure to body tissues",
+    "Potential for chronic inflammation",
+    "Material degradation over time",
+    "Long-term biocompatibility requirements",
+    "Difficulty in removal or revision"
+   ]
+  },
+  {
+   "t": "fig",
+   "src": "images/ch01_fig02.jpg",
+   "w": 461,
+   "h": 296,
+   "num": "1.2",
+   "caption": "Duration based classification"
+  },
+  {
+   "t": "p",
+   "html": "<strong>Description:</strong>"
+  },
+  {
+   "t": "p",
+   "html": "A three-column comparative table with visual timeline representation:"
+  },
+  {
+   "t": "p",
+   "html": "<strong>Duration Category Time Range Examples Risk Level Transient </strong>≤ 60 minutes Surgical instruments, examination gloves Low <strong>Short-term </strong>1–30 days Temporary catheters, wound dressings Moderate <strong>Long-term </strong>&gt; 30 days Pacemakers, joint implants, stents High"
+  },
+  {
+   "t": "p",
+   "html": "Arrows indicate <strong>increasing duration </strong>and <strong>increasing risk </strong>from left to right."
+  },
+  {
+   "t": "h3",
+   "text": "Technology Used"
+  },
+  {
+   "t": "p",
+   "html": "The complexity and type of technology employed in a device significantly impacts its classification and regulatory requirements."
+  },
+  {
+   "t": "h3",
+   "text": "Mechanical Devices"
+  },
+  {
+   "t": "p",
+   "html": "<strong>Description: </strong>Operate through physical or mechanical principles."
+  },
+  {
+   "t": "h4",
+   "text": "Examples"
+  },
+  {
+   "t": "ul",
+   "items": [
+    "Surgical scissors and clamps",
+    "Bone drills",
+    "Manual wheelchairs",
+    "Orthopedic fixation plates and screws"
+   ]
+  },
+  {
+   "t": "p",
+   "html": "<strong>Characteristics: </strong>Generally simpler design, predictable performance, lower technological risk."
+  },
+  {
+   "t": "h3",
+   "text": "Electrical and Electronic Devices"
+  },
+  {
+   "t": "p",
+   "html": "<strong>Description: </strong>Rely on electrical power or electronic components for operation."
+  },
+  {
+   "t": "h3",
+   "text": "Examples"
+  },
+  {
+   "t": "ul",
+   "items": [
+    "Electrocardiogram (ECG) machines",
+    "Defibrillators",
+    "Patient monitors",
+    "Infusion pumps",
+    "Ventilators"
+   ]
+  },
+  {
+   "t": "p",
+   "html": "<strong>Characteristics: </strong>Require electrical safety testing (IEC 60601 series), electromagnetic compatibility (EMC) testing, software validation (if applicable)."
+  },
+  {
+   "t": "h3",
+   "text": "Software as a Medical Device (SaMD)"
+  },
+  {
+   "t": "p",
+   "html": "<strong>Description: </strong>Software intended for medical purposes that operates independently of hardware medical devices."
+  },
+  {
+   "t": "h4",
+   "text": "Examples"
+  },
+  {
+   "t": "ul",
+   "items": [
+    "AI-based diagnostic algorithms",
+    "Mobile health applications for disease diagnosis",
+    "Clinical decision support systems",
+    "Radiology image analysis software"
+   ]
+  },
+  {
+   "t": "p",
+   "html": "<strong>Characteristics: </strong>Rapidly evolving field, requires rigorous validation, cybersecurity considerations, and compliance with IEC 62304 (medical device software lifecycle)."
+  },
+  {
+   "t": "h3",
+   "text": "Implantable Devices"
+  },
+  {
+   "t": "p",
+   "html": "<strong>Description: </strong>Designed to be placed inside the body, often combining multiple technologies."
+  },
+  {
+   "t": "h4",
+   "text": "Examples"
+  },
+  {
+   "t": "ul",
+   "items": [
+    "Cochlear implants (electronic + mechanical)",
+    "Drug-eluting stents (mechanical + pharmaceutical)",
+    "Neurostimulators (electronic)",
+    "Artificial heart valves (mechanical/biological)"
+   ]
+  },
+  {
+   "t": "p",
+   "html": "<strong>Characteristics: </strong>Highest complexity, stringent biocompatibility requirements, long-term performance validation."
+  },
+  {
+   "t": "h3",
+   "text": "Diagnostic Systems"
+  },
+  {
+   "t": "p",
+   "html": "<strong>Description: </strong>Complex imaging and diagnostic equipment."
+  },
+  {
+   "t": "h4",
+   "text": "Examples"
+  },
+  {
+   "t": "ul",
+   "items": [
+    "Magnetic Resonance Imaging (MRI) scanners",
+    "Computed Tomography (CT) scanners",
+    "Ultrasound systems",
+    "In-vitro diagnostic (IVD) devices"
+   ]
+  },
+  {
+   "t": "p",
+   "html": "<strong>Characteristics: </strong>High technological sophistication, require specialized maintenance, calibration, and quality control."
+  },
+  {
+   "t": "h2",
+   "text": "Global Classification Systems",
+   "num": "1.3"
+  },
+  {
+   "t": "p",
+   "html": "Medical device classification systems vary across regions but share common risk-based principles. Understanding these systems is essential for manufacturers seeking global market access."
+  },
+  {
+   "t": "h3",
+   "text": "US FDA Classification System"
+  },
+  {
+   "t": "p",
+   "html": "The United States Food and Drug Administration (FDA) classifies medical devices into <strong>three classes </strong>based on risk and the level of regulatory control required."
+  },
+  {
+   "t": "h3",
+   "text": "Class I — Low Risk"
+  },
+  {
+   "t": "p",
+   "html": "<strong>Regulatory Controls: </strong>General controls only"
+  },
+  {
+   "t": "p",
+   "html": "<strong>Premarket Requirements: </strong>Most Class I devices are <strong>exempt from premarket notification (510(k))</strong>"
+  },
+  {
+   "t": "h4",
+   "text": "Examples"
+  },
+  {
+   "t": "ul",
+   "items": [
+    "Stethoscopes",
+    "Elastic bandages",
+    "Manual wheelchairs",
+    "Examination gloves",
+    "Tongue depressors"
+   ]
+  },
+  {
+   "t": "h4",
+   "text": "Requirements"
+  },
+  {
+   "t": "ul",
+   "items": [
+    "Establishment registration and device listing",
+    "Good Manufacturing Practices (GMP) / Quality System Regulation (QSR)",
+    "Labeling requirements",
+    "Adverse event reporting"
+   ]
+  },
+  {
+   "t": "h3",
+   "text": "Class II — Moderate Risk"
+  },
+  {
+   "t": "p",
+   "html": "<strong>Regulatory Controls: </strong>General controls + special controls"
+  },
+  {
+   "t": "p",
+   "html": "<strong>Premarket Requirements: 510(k) premarket notification </strong>required (demonstration of substantial equivalence to a legally marketed predicate device)"
+  },
+  {
+   "t": "h4",
+   "text": "Examples"
+  },
+  {
+   "t": "ul",
+   "items": [
+    "Infusion pumps",
+    "Blood pressure monitors",
+    "Surgical drapes",
+    "Ultrasound imaging systems",
+    "Glucose meters"
+   ]
+  },
+  {
+   "t": "h4",
+   "text": "Requirements"
+  },
+  {
+   "t": "ul",
+   "items": [
+    "All Class I requirements",
+    "Performance standards",
+    "Post-market surveillance",
+    "Specific labeling requirements",
+    "Sometimes clinical data"
+   ]
+  },
+  {
+   "t": "h3",
+   "text": "Class III — High Risk"
+  },
+  {
+   "t": "p",
+   "html": "<strong>Regulatory Controls: </strong>General controls + premarket approval (PMA)"
+  },
+  {
+   "t": "p",
+   "html": "<strong>Premarket Requirements: Premarket Approval (PMA) </strong>— most stringent regulatory pathway requiring:"
+  },
+  {
+   "t": "ul",
+   "items": [
+    "Extensive clinical trials",
+    "Design dossier review",
+    "Manufacturing facility inspection",
+    "Demonstration of safety and effectiveness"
+   ]
+  },
+  {
+   "t": "h4",
+   "text": "Examples"
+  },
+  {
+   "t": "ul",
+   "items": [
+    "Cardiac pacemakers",
+    "Prosthetic heart valves",
+    "Implantable defibrillators",
+    "Cochlear implants",
+    "Drug-eluting stents"
+   ]
+  },
+  {
+   "t": "p",
+   "html": "<strong>Justification for Class III: </strong>These devices support or sustain life, prevent serious health impairment, or present significant risk of illness or injury."
+  },
+  {
+   "t": "fig",
+   "src": "images/ch01_fig03.jpg",
+   "w": 482,
+   "h": 292,
+   "num": "1.3",
+   "caption": "FDA Classification Flowchart"
+  },
+  {
+   "t": "p",
+   "html": "<strong>Description:</strong>"
+  },
+  {
+   "t": "p",
+   "html": "A vertical three-tier pyramid diagram:"
+  },
+  {
+   "t": "p",
+   "html": "<strong>Top Tier (smallest): </strong>Class III — High Risk"
+  },
+  {
+   "t": "ul",
+   "items": [
+    "PMA Required",
+    "Clinical Trials Mandatory",
+    "Examples: Pacemakers, Heart Valves"
+   ]
+  },
+  {
+   "t": "p",
+   "html": "<strong>Middle Tier: </strong>Class II — Moderate Risk"
+  },
+  {
+   "t": "ul",
+   "items": [
+    "510(k) Clearance",
+    "Performance Testing",
+    "Examples: Infusion Pumps, BP Monitors"
+   ]
+  },
+  {
+   "t": "p",
+   "html": "<strong>Bottom Tier (largest): </strong>Class I — Low Risk"
+  },
+  {
+   "t": "ul",
+   "items": [
+    "General Controls",
+    "Many Exempt from 510(k)",
+    "Examples: Stethoscopes, Bandages"
+   ]
+  },
+  {
+   "t": "p",
+   "html": "Arrows indicate <strong>increasing regulatory control </strong>from bottom to top."
+  },
+  {
+   "t": "h2",
+   "text": "European Union MDR Classification System",
+   "num": "1.4"
+  },
+  {
+   "t": "p",
+   "html": "The European Union Medical Device Regulation (EU MDR 2017/745) classifies devices into"
+  },
+  {
+   "t": "p",
+   "html": "<strong>four classes </strong>with increasing conformity assessment requirements."
+  },
+  {
+   "t": "h4",
+   "text": "Class I — Low Risk Examples"
+  },
+  {
+   "t": "ul",
+   "items": [
+    "Non-sterile examination gloves",
+    "Tongue depressors",
+    "Walking sticks",
+    "Non-measuring reusable surgical instruments"
+   ]
+  },
+  {
+   "t": "h4",
+   "text": "Subcategories"
+  },
+  {
+   "t": "ul",
+   "items": [
+    "<strong>Class Is: </strong>Sterile devices (e.g., sterile surgical drapes)",
+    "<strong>Class Im: </strong>Devices with measuring function (e.g., non-invasive thermometers)",
+    "<strong>Class Ir: </strong>Reusable surgical instruments (e.g., surgical scissors)"
+   ]
+  },
+  {
+   "t": "p",
+   "html": "<strong>Conformity Assessment: </strong>Self-declaration for basic Class I; Notified Body involvement required for Is, Im, Ir subcategories."
+  },
+  {
+   "t": "h4",
+   "text": "Class IIa — Low to Moderate Risk Examples"
+  },
+  {
+   "t": "ul",
+   "items": [
+    "Dental fillings",
+    "Suction equipment",
+    "Hearing aids",
+    "Hydrocolloid dressings",
+    "Ultrasonic surgical equipment"
+   ]
+  },
+  {
+   "t": "p",
+   "html": "<strong>Conformity Assessment: </strong>Notified Body involvement required for certain aspects (e.g., technical documentation review, quality management system assessment)."
+  },
+  {
+   "t": "h4",
+   "text": "Class IIb — Moderate to High Risk Examples"
+  },
+  {
+   "t": "ul",
+   "items": [
+    "Ventilators",
+    "Infusion pumps",
+    "Blood bags",
+    "Surgical lasers",
+    "Bone cement",
+    "Contraceptive devices"
+   ]
+  },
+  {
+   "t": "p",
+   "html": "<strong>Conformity Assessment: </strong>More extensive Notified Body assessment, including clinical evaluation report review and quality management system certification."
+  },
+  {
+   "t": "h4",
+   "text": "Class III — High Risk Examples"
+  },
+  {
+   "t": "ul",
+   "items": [
+    "Coronary stents",
+    "Heart valves",
+    "Cardiac pacemakers",
+    "Hip and knee implants",
+    "Breast implants",
+    "Drug-delivery devices in direct contact with vital organs"
+   ]
+  },
+  {
+   "t": "p",
+   "html": "<strong>Conformity Assessment: </strong>Most stringent requirements:"
+  },
+  {
+   "t": "ul",
+   "items": [
+    "Full Notified Body technical documentation review",
+    "Clinical evaluation with robust clinical data",
+    "Quality management system certification",
+    "Design dossier assessment",
+    "Post-market clinical follow-up (PMCF) plan"
+   ]
+  },
+  {
+   "t": "fig",
+   "src": "images/ch01_fig04.jpg",
+   "w": 452,
+   "h": 283,
+   "num": "1.4",
+   "caption": "EU MDR Classification Pyramid"
+  },
+  {
+   "t": "p",
+   "html": "<strong>Description:</strong>"
+  },
+  {
+   "t": "p",
+   "html": "A four-tier pyramid showing increasing risk and regulatory requirements:"
+  },
+  {
+   "t": "p",
+   "html": "<strong>Tier 4 (Top - smallest): </strong>Class III"
+  },
+  {
+   "t": "ul",
+   "items": [
+    "Highest Clinical Evidence",
+    "Full Notified Body Assessment",
+    "Examples: Pacemakers, Heart Valves"
+   ]
+  },
+  {
+   "t": "p",
+   "html": "<strong>Tier 3: </strong>Class IIb"
+  },
+  {
+   "t": "ul",
+   "items": [
+    "Significant Clinical Data",
+    "Notified Body Review",
+    "Examples: Ventilators, Infusion Pumps"
+   ]
+  },
+  {
+   "t": "p",
+   "html": "<strong>Tier 2: </strong>Class IIa"
+  },
+  {
+   "t": "ul",
+   "items": [
+    "Moderate Requirements",
+    "Notified Body Involvement",
+    "Examples: Hearing Aids, Dental Fillings"
+   ]
+  },
+  {
+   "t": "p",
+   "html": "<strong>Tier 1 (Bottom - largest): </strong>Class I (including Is, Im, Ir)"
+  },
+  {
+   "t": "ul",
+   "items": [
+    "Self-Declaration (basic)",
+    "Examples: Gloves, Tongue Depressors"
+   ]
+  },
+  {
+   "t": "h3",
+   "text": "India MDR 2017 Classification System"
+  },
+  {
+   "t": "p",
+   "html": "India's Medical Device Rules (MDR) 2017 align closely with <strong>International Medical Device Regulators Forum (IMDRF) </strong>principles and EU MDR structure."
+  },
+  {
+   "t": "h4",
+   "text": "Class A — Low Risk Examples"
+  },
+  {
+   "t": "ul",
+   "items": [
+    "Thermometers (non-invasive)",
+    "Basic surgical instruments",
+    "Stethoscopes",
+    "Manual wheelchairs",
+    "Examination tables"
+   ]
+  },
+  {
+   "t": "p",
+   "html": "<strong>Regulatory Authority: </strong>State Licensing Authority (SLA)"
+  },
+  {
+   "t": "h4",
+   "text": "Requirements"
+  },
+  {
+   "t": "ul",
+   "items": [
+    "Manufacturing license from SLA",
+    "Good Manufacturing Practices (GMP)",
+    "Basic documentation"
+   ]
+  },
+  {
+   "t": "h4",
+   "text": "Class B — Low to Moderate Risk Examples"
+  },
+  {
+   "t": "ul",
+   "items": [
+    "Hypodermic syringes and needles",
+    "Nebulizers",
+    "Suction machines",
+    "Simple catheters",
+    "Wound dressings"
+   ]
+  },
+  {
+   "t": "p",
+   "html": "<strong>Regulatory Authority: </strong>State Licensing Authority (SLA) with Notified Body audit for certain aspects"
+  },
+  {
+   "t": "h4",
+   "text": "Requirements"
+  },
+  {
+   "t": "ul",
+   "items": [
+    "SLA manufacturing license",
+    "ISO 13485 certification",
+    "Notified Body audit (for certain manufacturers)",
+    "Device Master File (DMF)",
+    "Plant Master File (PMF) <strong>Class C — Moderate to High Risk Examples:</strong>",
+    "Ventilators",
+    "Infusion pumps",
+    "Dialysis machines",
+    "Anesthesia machines",
+    "Blood gas analyzers"
+   ]
+  },
+  {
+   "t": "p",
+   "html": "<strong>Regulatory Authority: </strong>Central Licensing Authority (CLA) — CDSCO"
+  },
+  {
+   "t": "h4",
+   "text": "Requirements"
+  },
+  {
+   "t": "ul",
+   "items": [
+    "CLA manufacturing license",
+    "ISO 13485 mandatory",
+    "Notified Body certification",
+    "Comprehensive technical documentation",
+    "Clinical evidence (may be required)",
+    "Risk management file <strong>Class D — High Risk Examples:</strong>",
+    "Cardiac pacemakers",
+    "Heart valves",
+    "Drug-eluting stents",
+    "Orthopedic joint implants",
+    "Neurostimulators",
+    "Cochlear implants"
+   ]
+  },
+  {
+   "t": "p",
+   "html": "<strong>Regulatory Authority: </strong>Central Licensing Authority (CLA) — CDSCO"
+  },
+  {
+   "t": "h4",
+   "text": "Requirements"
+  },
+  {
+   "t": "ul",
+   "items": [
+    "Most stringent regulatory pathway",
+    "CLA license mandatory",
+    "ISO 13485 certification required",
+    "Notified Body assessment",
+    "Comprehensive Device Master File (DMF) and Plant Master File (PMF)",
+    "Robust clinical evaluation",
+    "Risk management documentation"
+   ]
+  },
+  {
+   "t": "fig",
+   "src": "images/ch01_fig05.jpg",
+   "w": 455,
+   "h": 275,
+   "num": "1.5",
+   "caption": "India MDR 2017 Risk Ladder"
+  },
+  {
+   "t": "ul",
+   "items": [
+    "Post-market surveillance plan"
+   ]
+  },
+  {
+   "t": "h4",
+   "text": "Description"
+  },
+  {
+   "t": "p",
+   "html": "A vertical ladder diagram with four rungs representing device classes:"
+  },
+  {
+   "t": "p",
+   "html": "<strong>Top Rung: Class D </strong>(Red) — High Risk"
+  },
+  {
+   "t": "ul",
+   "items": [
+    "CLA License",
+    "Full Clinical Evidence",
+    "Examples: Pacemakers, Joint Implants"
+   ]
+  },
+  {
+   "t": "p",
+   "html": "<strong>Third Rung: Class C </strong>(Orange) — Moderate-High Risk"
+  },
+  {
+   "t": "ul",
+   "items": [
+    "CLA License",
+    "Notified Body Required",
+    "Examples: Ventilators, Dialysis Machines"
+   ]
+  },
+  {
+   "t": "p",
+   "html": "<strong>Second Rung: Class B </strong>(Yellow) — Low-Moderate Risk"
+  },
+  {
+   "t": "ul",
+   "items": [
+    "SLA License + NB Audit",
+    "Examples: Syringes, Nebulizers"
+   ]
+  },
+  {
+   "t": "p",
+   "html": "<strong>Bottom Rung: Class A </strong>(Green) — Low Risk"
+  },
+  {
+   "t": "ul",
+   "items": [
+    "SLA License",
+    "Examples: Thermometers, Stethoscopes"
+   ]
+  },
+  {
+   "t": "p",
+   "html": "An arrow on the side indicates <strong>\"Increasing Regulatory Requirements\" </strong>from bottom to top."
+  },
+  {
+   "t": "h3",
+   "text": "Categories of Medical Devices"
+  },
+  {
+   "t": "p",
+   "html": "Medical devices can be functionally categorized based on their intended use and clinical application:"
+  },
+  {
+   "t": "h3",
+   "text": "Diagnostic Devices"
+  },
+  {
+   "t": "p",
+   "html": "<strong>Purpose: </strong>Detect, measure, or monitor physiological conditions or diseases."
+  },
+  {
+   "t": "h4",
+   "text": "Examples"
+  },
+  {
+   "t": "ul",
+   "items": [
+    "Blood glucose meters",
+    "ECG machines",
+    "X-ray and CT scanners",
+    "Laboratory diagnostic equipment",
+    "Pregnancy test kits"
+   ]
+  },
+  {
+   "t": "h3",
+   "text": "Monitoring Devices"
+  },
+  {
+   "t": "p",
+   "html": "<strong>Purpose: </strong>Continuously or periodically track patient parameters."
+  },
+  {
+   "t": "h4",
+   "text": "Examples"
+  },
+  {
+   "t": "ul",
+   "items": [
+    "Patient monitors (vital signs)",
+    "Holter monitors (24-hour ECG)",
+    "Blood pressure monitors",
+    "Pulse oximeters",
+    "Wearable health trackers"
+   ]
+  },
+  {
+   "t": "h3",
+   "text": "Therapeutic Devices"
+  },
+  {
+   "t": "p",
+   "html": "<strong>Purpose: </strong>Treat diseases, relieve symptoms, or support healing."
+  },
+  {
+   "t": "h4",
+   "text": "Examples"
+  },
+  {
+   "t": "ul",
+   "items": [
+    "Infusion pumps",
+    "Nebulizers",
+    "Dialysis machines",
+    "Radiation therapy equipment",
+    "TENS (Transcutaneous Electrical Nerve Stimulation) units"
+   ]
+  },
+  {
+   "t": "h3",
+   "text": "Surgical Devices"
+  },
+  {
+   "t": "p",
+   "html": "<strong>Purpose: </strong>Facilitate surgical procedures."
+  },
+  {
+   "t": "h4",
+   "text": "Examples"
+  },
+  {
+   "t": "ul",
+   "items": [
+    "Surgical instruments (scalpels, forceps)",
+    "Electrosurgical units",
+    "Surgical lasers",
+    "Anesthesia machines",
+    "Operating tables"
+   ]
+  },
+  {
+   "t": "h3",
+   "text": "Implantable Devices"
+  },
+  {
+   "t": "p",
+   "html": "<strong>Purpose: </strong>Replace, support, or enhance body structures or functions."
+  },
+  {
+   "t": "h4",
+   "text": "Examples"
+  },
+  {
+   "t": "ul",
+   "items": [
+    "Cardiac pacemakers",
+    "Orthopedic implants",
+    "Intraocular lenses",
+    "Vascular stents",
+    "Cochlear implants"
+   ]
+  },
+  {
+   "t": "h3",
+   "text": "Life-Support Devices"
+  },
+  {
+   "t": "p",
+   "html": "<strong>Purpose: </strong>Sustain or support vital body functions."
+  },
+  {
+   "t": "h4",
+   "text": "Examples"
+  },
+  {
+   "t": "ul",
+   "items": [
+    "Mechanical ventilators",
+    "Extracorporeal membrane oxygenation (ECMO) systems",
+    "Heart-lung machines",
+    "Defibrillators",
+    "Intensive care monitors"
+   ]
+  },
+  {
+   "t": "h3",
+   "text": "Home-Care Devices"
+  },
+  {
+   "t": "p",
+   "html": "<strong>Purpose: </strong>Enable patient care outside clinical settings."
+  },
+  {
+   "t": "h4",
+   "text": "Examples"
+  },
+  {
+   "t": "ul",
+   "items": [
+    "Home oxygen concentrators",
+    "CPAP/BiPAP machines (sleep apnea)",
+    "Insulin pens and pumps",
+    "Mobility aids (walkers, wheelchairs)",
+    "Blood pressure monitors"
+   ]
+  },
+  {
+   "t": "fig",
+   "src": "images/ch01_fig06.jpg",
+   "w": 546,
+   "h": 294,
+   "num": "1.6",
+   "caption": "Device Category Grid"
+  },
+  {
+   "t": "p",
+   "html": "<strong>Description:</strong>"
+  },
+  {
+   "t": "p",
+   "html": "A 2×4 grid with icons and brief descriptions:"
+  },
+  {
+   "t": "h3",
+   "text": "Diagnostic Monitoring Therapeutic Surgical"
+  },
+  {
+   "t": "p",
+   "html": "ECG, Glucometer Vital Signs Monitor Infusion Pump Surgical Instruments <strong>Implantable Life-Support Home-Care Rehabilitation </strong>Pacemaker Ventilator Oxygen Concentrator Prosthetics"
+  },
+  {
+   "t": "p",
+   "html": "Each cell includes representative icons and device names."
+  },
+  {
+   "t": "h2",
+   "text": "Cleanroom Basics",
+   "num": "1.5"
+  },
+  {
+   "t": "p",
+   "html": "Cleanrooms are controlled environments essential for manufacturing sterile and contamination-sensitive medical devices. They maintain specified levels of airborne particulate contamination and environmental parameters."
+  },
+  {
+   "t": "h3",
+   "text": "Purpose of Cleanrooms"
+  },
+  {
+   "t": "ul",
+   "items": [
+    "Prevent microbial contamination",
+    "Control particulate matter",
+    "Ensure product sterility",
+    "Maintain consistent manufacturing conditions",
+    "Comply with regulatory requirements (ISO 13485, GMP)",
+    "<strong>Key Elements of Cleanroom Design</strong>",
+    "<strong>HEPA Filtration</strong>"
+   ]
+  },
+  {
+   "t": "p",
+   "html": "<strong>HEPA (High-Efficiency Particulate Air) Filters:</strong>"
+  },
+  {
+   "t": "ul",
+   "items": [
+    "Remove <strong>99.97% </strong>of particles ≥ 0.3 microns",
+    "Provide clean, filtered air supply",
+    "Critical for maintaining ISO cleanroom classifications"
+   ]
+  },
+  {
+   "t": "h3",
+   "text": "Positive Pressure"
+  },
+  {
+   "t": "ul",
+   "items": [
+    "Cleanrooms maintain <strong>higher pressure </strong>than surrounding areas",
+    "Prevents contaminated air from entering when doors open",
+    "Pressure cascades: cleanest area has highest pressure"
+   ]
+  },
+  {
+   "t": "h3",
+   "text": "Gowning Procedures"
+  },
+  {
+   "t": "p",
+   "html": "Personnel entering cleanrooms must follow strict gowning protocols:"
+  },
+  {
+   "t": "ul",
+   "items": [
+    "Remove personal items and jewelry",
+    "Don cleanroom-approved garments (coveralls, hoods, masks, gloves, boots)",
+    "Pass through air shower (high-velocity filtered air removes loose particles)"
+   ]
+  },
+  {
+   "t": "h4",
+   "text": "Airflow Patterns Two Primary Types"
+  },
+  {
+   "t": "ul",
+   "items": [
+    "<strong>Unidirectional (Laminar) Flow:</strong>",
+    "Air moves in parallel streams (horizontal or vertical)",
+    "Used in critical zones (ISO Class 5 and cleaner)",
+    "Minimizes turbulence and particle resuspension"
+   ]
+  },
+  {
+   "t": "h4",
+   "text": "Turbulent (Non-unidirectional) Flow"
+  },
+  {
+   "t": "ul",
+   "items": [
+    "Mixed airflow patterns",
+    "Used in less critical areas (ISO Class 7, 8)",
+    "Relies on air changes per hour (ACH) for cleanliness"
+   ]
+  },
+  {
+   "t": "h3",
+   "text": "Environmental Monitoring"
+  },
+  {
+   "t": "p",
+   "html": "Regular monitoring ensures cleanroom compliance:"
+  },
+  {
+   "t": "ul",
+   "items": [
+    "<strong>Particulate counting </strong>(airborne particle concentration)",
+    "<strong>Microbial monitoring </strong>(settle plates, active air sampling, surface swabs)",
+    "<strong>Temperature and humidity </strong>(typically 20–24°C, 40–60% RH)",
+    "<strong>Differential pressure </strong>monitoring",
+    "<strong>Air velocity </strong>measurements"
+   ]
+  },
+  {
+   "t": "fig",
+   "src": "images/ch01_fig07.jpg",
+   "w": 601,
+   "h": 276,
+   "num": "1.7",
+   "caption": "Cleanroom Flow Layout"
+  },
+  {
+   "t": "p",
+   "html": "<strong>Description:</strong>"
+  },
+  {
+   "t": "p",
+   "html": "A schematic cleanroom layout showing sequential zones:"
+  },
+  {
+   "t": "p",
+   "html": "<strong>Entrance </strong>→ <strong>Gowning Room </strong>→ <strong>Air Shower </strong>→ <strong>ISO 8 Zone </strong>(material staging) → <strong>ISO 7 Zone </strong>(assembly) → <strong>ISO 5 Zone </strong>(critical assembly/filling) → <strong>Packaging Area</strong>"
+  },
+  {
+   "t": "p",
+   "html": "Arrows indicate personnel and material flow. Color coding shows increasing cleanliness (green"
+  },
+  {
+   "t": "p",
+   "html": "= ISO 8, blue = ISO 7, white = ISO 5). Additional elements shown:"
+  },
+  {
+   "t": "ul",
+   "items": [
+    "HEPA filter locations (ceiling-mounted)",
+    "Positive pressure indicators (+5 Pa, +10 Pa, +15 Pa)",
+    "Gowning benches",
+    "Pass-through chambers"
+   ]
+  },
+  {
+   "t": "h2",
+   "text": "Quality Management Systems (QMS)",
+   "num": "1.6"
+  },
+  {
+   "t": "p",
+   "html": "A Quality Management System (QMS) is a formalized system documenting processes, procedures, and responsibilities for achieving quality policies and objectives. In the medical device industry, QMS ensures devices are consistently designed, manufactured, and controlled to meet regulatory and customer requirements."
+  },
+  {
+   "t": "h3",
+   "text": "ISO 13485 — The Global QMS Standard"
+  },
+  {
+   "t": "p",
+   "html": "<strong>ISO 13485:2016 </strong>is the internationally recognized standard specifically designed for medical device quality management systems."
+  },
+  {
+   "t": "h4",
+   "text": "Key Features of ISO 13485"
+  },
+  {
+   "t": "ul",
+   "items": [
+    "<strong>Process-based approach: </strong>Defines interrelated processes affecting product quality",
+    "<strong>Risk-based thinking: </strong>Integrates risk management (ISO 14971) throughout the lifecycle",
+    "<strong>Regulatory focus: </strong>Designed to facilitate compliance with global regulatory requirements",
+    "<strong>Documentation emphasis: </strong>Requires comprehensive, controlled documentation",
+    "<strong>Traceability: </strong>Ensures complete product and process traceability"
+   ]
+  },
+  {
+   "t": "h3",
+   "text": "Core QMS Elements"
+  },
+  {
+   "t": "ul",
+   "items": [
+    "<strong>Documentation Control</strong>",
+    "Systematic management of all quality documents",
+    "Version control and change management",
+    "Approval processes before document issuance",
+    "Distribution control (controlled copies vs. obsolete documents)",
+    "Periodic review and updates"
+   ]
+  },
+  {
+   "t": "h4",
+   "text": "CAPA (Corrective and Preventive Action) Corrective Action"
+  },
+  {
+   "t": "ul",
+   "items": [
+    "Eliminates causes of detected nonconformities or undesirable situations",
+    "Prevents recurrence"
+   ]
+  },
+  {
+   "t": "h4",
+   "text": "Preventive Action"
+  },
+  {
+   "t": "ul",
+   "items": [
+    "Eliminates causes of potential nonconformities",
+    "Proactive risk mitigation"
+   ]
+  },
+  {
+   "t": "h4",
+   "text": "CAPA Process"
+  },
+  {
+   "t": "ul",
+   "items": [
+    "Problem identification",
+    "Root cause analysis",
+    "Action implementation",
+    "Effectiveness verification",
+    "Closure and documentation"
+   ]
+  },
+  {
+   "t": "h3",
+   "text": "Process Validation"
+  },
+  {
+   "t": "p",
+   "html": "<strong>Definition: </strong>Establishing documented evidence that a process consistently produces results meeting predetermined specifications."
+  },
+  {
+   "t": "h4",
+   "text": "Types of Validation"
+  },
+  {
+   "t": "ul",
+   "items": [
+    "<strong>Installation Qualification (IQ): </strong>Verifies equipment installation",
+    "<strong>Operational Qualification (OQ): </strong>Confirms equipment operates within specifications",
+    "<strong>Performance Qualification (PQ): </strong>Demonstrates consistent process output"
+   ]
+  },
+  {
+   "t": "h4",
+   "text": "Applicable to"
+  },
+  {
+   "t": "ul",
+   "items": [
+    "Sterilization processes",
+    "Manufacturing processes",
+    "Cleaning and disinfection",
+    "Software systems",
+    "Packaging processes"
+   ]
+  },
+  {
+   "t": "h3",
+   "text": "Internal Audits"
+  },
+  {
+   "t": "ul",
+   "items": [
+    "Systematic, independent examinations of QMS elements",
+    "Verify compliance with ISO 13485, regulatory requirements, and internal procedures",
+    "Conducted by trained, impartial auditors",
+    "Scheduled audits (annual) and unscheduled audits (triggered by specific events)",
+    "Findings documented, corrective actions implemented"
+   ]
+  },
+  {
+   "t": "h4",
+   "text": "Risk Management (ISO 14971) Integrated Throughout Device Lifecycle"
+  },
+  {
+   "t": "ul",
+   "items": [
+    "Design and development",
+    "Production and manufacturing",
+    "Post-market surveillance"
+   ]
+  },
+  {
+   "t": "h4",
+   "text": "Risk Management Process"
+  },
+  {
+   "t": "ul",
+   "items": [
+    "Risk analysis (hazard identification, estimation)",
+    "Risk evaluation (acceptability assessment)",
+    "Risk control (mitigation measures)",
+    "Residual risk evaluation",
+    "Risk management review",
+    "Production and post-production information review"
+   ]
+  },
+  {
+   "t": "p",
+   "html": "<strong>Safety Note 1.1</strong>"
+  },
+  {
+   "t": "p",
+   "html": "<strong>All medical device processes must follow risk-based thinking aligned with ISO 14971. Risk management is not a one-time activity but a continuous process throughout the device lifecycle, from conception through post-market surveillance.</strong>"
+  },
+  {
+   "t": "ul",
+   "items": [
+    "<strong>Careers in Medical Devices</strong>"
+   ]
+  },
+  {
+   "t": "p",
+   "html": "The medical device industry offers diverse, rewarding career opportunities across technical, scientific, regulatory, clinical, and business domains."
+  },
+  {
+   "t": "h3",
+   "text": "Technical Roles"
+  },
+  {
+   "t": "p",
+   "html": "<strong>Quality Control (QC) Analyst</strong>"
+  },
+  {
+   "t": "ul",
+   "items": [
+    "Conduct physical, chemical, and microbiological testing",
+    "Verify product specifications and compliance",
+    "Document test results and deviations",
+    "Operate analytical equipment"
+   ]
+  },
+  {
+   "t": "h3",
+   "text": "Quality Assurance (QA) Executive"
+  },
+  {
+   "t": "ul",
+   "items": [
+    "Maintain and improve QMS",
+    "Conduct internal audits",
+    "Manage documentation systems",
+    "Oversee CAPA processes",
+    "Liaise with regulatory inspectors"
+   ]
+  },
+  {
+   "t": "h3",
+   "text": "Manufacturing Technician"
+  },
+  {
+   "t": "ul",
+   "items": [
+    "Operate production equipment",
+    "Follow Standard Operating Procedures (SOPs)",
+    "Perform in-process quality checks",
+    "Maintain batch manufacturing records",
+    "Troubleshoot production issues"
+   ]
+  },
+  {
+   "t": "h3",
+   "text": "Validation Engineer"
+  },
+  {
+   "t": "ul",
+   "items": [
+    "Design and execute validation protocols (IQ/OQ/PQ)",
+    "Validate manufacturing processes, equipment, and systems",
+    "Author validation reports",
+    "Maintain validation documentation"
+   ]
+  },
+  {
+   "t": "h3",
+   "text": "Regulatory and Compliance Roles Regulatory Affairs (RA) Associate"
+  },
+  {
+   "t": "ul",
+   "items": [
+    "Prepare regulatory submissions (510(k), PMA, CE marking, India MDR)",
+    "Compile technical documentation (DMF, PMF, Design Dossier)",
+    "Ensure labeling compliance",
+    "Track regulatory changes and updates",
+    "Liaise with regulatory authorities"
+   ]
+  },
+  {
+   "t": "h3",
+   "text": "Clinical Research Associate (CRA)"
+  },
+  {
+   "t": "ul",
+   "items": [
+    "Monitor clinical trials",
+    "Ensure Good Clinical Practice (GCP) compliance",
+    "Verify clinical data accuracy",
+    "Conduct site visits",
+    "Report adverse events"
+   ]
+  },
+  {
+   "t": "h3",
+   "text": "Engineering and Development Roles R&amp;D Engineer / Design Engineer"
+  },
+  {
+   "t": "ul",
+   "items": [
+    "Develop new medical devices",
+    "Create prototypes",
+    "Conduct design verification and validation",
+    "Apply design controls (FDA 21 CFR 820.30)",
+    "Collaborate with cross-functional teams"
+   ]
+  },
+  {
+   "t": "h3",
+   "text": "Biomedical Engineer"
+  },
+  {
+   "t": "ul",
+   "items": [
+    "Hospital-based equipment management",
+    "Device troubleshooting and repair",
+    "Preventive maintenance",
+    "Equipment selection and procurement",
+    "Staff training on device use"
+   ]
+  },
+  {
+   "t": "h3",
+   "text": "Field and Application Roles Field Service Engineer"
+  },
+  {
+   "t": "ul",
+   "items": [
+    "Install and commission medical devices at customer sites",
+    "Perform preventive and corrective maintenance",
+    "Provide technical support and troubleshooting",
+    "Train end-users",
+    "Manage spare parts inventory"
+   ]
+  },
+  {
+   "t": "h3",
+   "text": "Application Specialist / Clinical Specialist"
+  },
+  {
+   "t": "ul",
+   "items": [
+    "Demonstrate devices to healthcare professionals",
+    "Provide clinical and technical training",
+    "Support sales teams during customer interactions",
+    "Gather customer feedback for product improvement",
+    "Assist with clinical evaluations"
+   ]
+  },
+  {
+   "t": "h3",
+   "text": "Business and Commercial Roles Sales and Marketing Executive"
+  },
+  {
+   "t": "ul",
+   "items": [
+    "Promote medical devices to hospitals and clinics",
+    "Build and maintain customer relationships",
+    "Conduct product demonstrations",
+    "Achieve sales targets",
+    "Provide market feedback to product development teams"
+   ]
+  },
+  {
+   "t": "h3",
+   "text": "Product Manager"
+  },
+  {
+   "t": "ul",
+   "items": [
+    "Define product strategy and roadmap",
+    "Conduct market analysis",
+    "Manage product lifecycle",
+    "Coordinate with R&amp;D, regulatory, and marketing teams",
+    "Monitor competitive landscape"
+   ]
+  },
+  {
+   "t": "h3",
+   "text": "Emerging Roles Software Validation Specialist"
+  },
+  {
+   "t": "ul",
+   "items": [
+    "Validate Software as a Medical Device (SaMD)",
+    "Ensure compliance with IEC 62304",
+    "Conduct cybersecurity assessments",
+    "Verify AI/ML algorithms"
+   ]
+  },
+  {
+   "t": "h3",
+   "text": "Data Analyst (Healthcare)"
+  },
+  {
+   "t": "ul",
+   "items": [
+    "Analyze device performance data",
+    "Support post-market surveillance",
+    "Generate reports for regulatory submissions",
+    "Apply statistical methods to clinical and quality data"
+   ]
+  },
+  {
+   "t": "box",
+   "kind": "case",
+   "label": "Case Study 1.1",
+   "title": "Why Is a Pacemaker High Risk? Device: Cardiac Pacemaker",
+   "blocks": [
+    {
+     "t": "p",
+     "html": "<strong>Function: </strong>Electronic device that regulates heart rhythm by delivering electrical impulses to the heart muscle."
+    },
+    {
+     "t": "h4",
+     "text": "Risk Classification"
+    },
+    {
+     "t": "ul",
+     "items": [
+      "<strong>US FDA: </strong>Class III",
+      "<strong>EU MDR: </strong>Class III",
+      "<strong>India MDR: </strong>Class D"
+     ]
+    },
+    {
+     "t": "h4",
+     "text": "Justification for High-Risk Classification"
+    },
+    {
+     "t": "ul",
+     "items": [
+      "<strong>Life-Sustaining Function:</strong>",
+      "Pacemakers provide critical cardiac pacing for patients with arrhythmias",
+      "Device failure can result in syncope, cardiac arrest, or death Implantable Device:",
+      "Surgically placed inside the body (subcutaneous pocket, with leads in heart chambers)",
+      "Remains implanted for years (5–10 years typical battery life)",
+      "Removal or replacement requires invasive surgery"
+     ]
+    },
+    {
+     "t": "h4",
+     "text": "Long-Term Contact"
+    },
+    {
+     "t": "ul",
+     "items": [
+      "Continuous body contact for extended periods",
+      "Requires long-term biocompatibility",
+      "Potential for chronic complications (infection, lead fracture, pocket erosion)"
+     ]
+    },
+    {
+     "t": "h4",
+     "text": "Complex Technology"
+    },
+    {
+     "t": "ul",
+     "items": [
+      "Electronic circuitry and software control",
+      "Battery power management",
+      "Electromagnetic compatibility requirements",
+      "Telemetry systems for remote monitoring"
+     ]
+    },
+    {
+     "t": "h4",
+     "text": "Critical Performance Requirements"
+    },
+    {
+     "t": "ul",
+     "items": [
+      "Must function reliably under all physiological conditions",
+      "Precise electrical parameters (pulse amplitude, duration, rate)",
+      "Failure consequences are severe"
+     ]
+    },
+    {
+     "t": "h4",
+     "text": "Regulatory Requirements for Pacemakers"
+    },
+    {
+     "t": "ul",
+     "items": [
+      "<strong>Extensive clinical trials </strong>demonstrating safety and efficacy",
+      "<strong>Premarket Approval (PMA) </strong>in the US (most stringent FDA pathway)",
+      "<strong>Comprehensive technical documentation </strong>(design dossier, risk management file)",
+      "<strong>Biocompatibility testing </strong>(ISO 10993 series)",
+      "<strong>Electrical safety and EMC testing </strong>(IEC 60601 series)",
+      "<strong>Software validation </strong>(IEC 62304)",
+      "<strong>Post-market surveillance </strong>(adverse event reporting, periodic safety updates)",
+      "<strong>Clinical evaluation report </strong>with robust long-term data (EU MDR)"
+     ]
+    }
+   ]
+  },
+  {
+   "t": "box",
+   "kind": "insight",
+   "label": "Industry Insight 1.1",
+   "title": "",
+   "blocks": [
+    {
+     "t": "p",
+     "html": "<strong>India's Medical Device Market Landscape:</strong>"
+    },
+    {
+     "t": "p",
+     "html": "Over <strong>75% of high-risk medical devices (Class C and D) </strong>used in India are currently imported. This presents significant opportunities under the Government of India's <strong>\"Make in India\" </strong>initiative, which aims to:"
+    },
+    {
+     "t": "ul",
+     "items": [
+      "Boost domestic manufacturing capacity",
+      "Reduce import dependence",
+      "Create employment in the MedTech sector",
+      "Enhance healthcare accessibility and affordability",
+      "Develop indigenous innovation capabilities"
+     ]
+    },
+    {
+     "t": "h4",
+     "text": "Key Government Initiatives"
+    },
+    {
+     "t": "ul",
+     "items": [
+      "<strong>Production Linked Incentive (PLI) Scheme </strong>for medical devices",
+      "<strong>Medical Device Parks </strong>established in states (Tamil Nadu, Andhra Pradesh, Himachal Pradesh)",
+      "<strong>Simplified regulatory pathways </strong>for domestic manufacturers (MDR 2017)",
+      "<strong>Skill development programs </strong>for medical device professionals"
+     ]
+    },
+    {
+     "t": "p",
+     "html": "<strong>Career Opportunities: </strong>This landscape creates expanding career opportunities for engineers, technicians, quality professionals, and regulatory specialists in domestic medical device manufacturing and innovation."
+    }
+   ]
+  }
+ ],
+ "glossary": [
+  [
+   "510(k)",
+   "FDA premarket notification pathway for demonstrating substantial equivalence of Class II (moderate-risk) devices to legally marketed predicate devices."
+  ],
+  [
+   "Biocompatibility",
+   "The ability of a material or device to perform with an appropriate host response when in contact with body tissues or fluids."
+  ],
+  [
+   "CAPA (Corrective and Preventive Action)",
+   "Systematic approach to investigating, correcting, and preventing quality problems."
+  ],
+  [
+   "Cleanroom",
+   "Controlled environment with specified low levels of airborne particulates, designed for manufacturing sterile or contamination-sensitive products."
+  ],
+  [
+   "Device",
+   "In medical context, a non-pharmacological product used for diagnosis, prevention, monitoring, treatment, or alleviation of disease."
+  ],
+  [
+   "HEPA Filter",
+   "High-Efficiency Particulate Air filter that removes ≥99.97% of particles ≥0.3 microns in diameter."
+  ],
+  [
+   "Implant",
+   "Medical device intended to be wholly or partially placed inside the human body through surgical intervention and remain there after the procedure."
+  ],
+  [
+   "Invasiveness",
+   "The degree to which a medical device penetrates or enters the human body."
+  ],
+  [
+   "ISO 13485",
+   "International standard specifying requirements for a quality management system specific to medical devices."
+  ],
+  [
+   "ISO 14971",
+   "International standard for application of risk management to medical devices."
+  ],
+  [
+   "MDR 2017",
+   "India's Medical Device Rules, 2017 — regulatory framework governing medical device manufacture, import, and sale in India."
+  ],
+  [
+   "PMA (Premarket Approval)",
+   "FDA's most stringent regulatory pathway for high-risk Class III medical devices, requiring clinical trials and extensive documentation."
+  ],
+  [
+   "QMS (Quality Management System)",
+   "Formalized system documenting processes, procedures, and responsibilities for achieving quality objectives and ensuring regulatory compliance."
+  ],
+  [
+   "Risk Level",
+   "Classification of potential harm associated with device failure or malfunction, considering severity and probability."
+  ],
+  [
+   "Sterility",
+   "State of being free from viable microorganisms."
+  ]
+ ],
+ "recap_intro": "This chapter established the foundational understanding of medical devices by covering:",
+ "recap_items": [
+  "<strong>Internationally harmonized definition </strong>of medical devices (WHO, FDA, EU, India)",
+  "<strong>Key distinctions </strong>between devices and drugs (mechanism, testing, action timing)",
+  "<strong>Classification criteria </strong>— invasiveness, duration of contact, technology, risk",
+  "<strong>Global classification systems </strong>— FDA (I/II/III), EU MDR (I/IIa/IIb/III), India MDR (A/B/C/D)",
+  "<strong>Device categories </strong>— diagnostic, monitoring, therapeutic, surgical, implantable, life-support, home-care",
+  "<strong>Cleanroom fundamentals </strong>— HEPA filtration, pressure control, gowning, airflow, environmental monitoring",
+  "<strong>Quality Management Systems </strong>— ISO 13485 structure, documentation control, CAPA, validation, audits, risk management",
+  "<strong>Career pathways </strong>— diverse opportunities in technical, regulatory, clinical, engineering, and business roles",
+  "This foundational knowledge prepares students for deeper exploration of device development, manufacturing, testing, regulation, and clinical applications in subsequent chapters."
+ ],
+ "references": [
+  {
+   "group": "Regulatory Documents",
+   "text": "Central Drugs Standard Control Organisation (CDSCO). (2017). Medical Device Rules, 2017. Government of India, Ministry of Health and Family Welfare."
+  },
+  {
+   "group": "Regulatory Documents",
+   "text": "European Commission. (2017). Regulation (EU) 2017/745 on Medical Devices (MDR). Official Journal of the European Union."
+  },
+  {
+   "group": "Regulatory Documents",
+   "text": "US Food and Drug Administration (FDA). (2024). Code of Federal Regulations, Title 21 — Food and Drugs. US Government Publishing Office."
+  },
+  {
+   "group": "Regulatory Documents",
+   "text": "International Standards: 4. International Organization for Standardization. (2016). ISO 13485:2016 — Medical devices — Quality management systems — Requirements for regulatory purposes."
+  },
+  {
+   "group": "Regulatory Documents",
+   "text": "International Organization for Standardization. (2019). ISO 14971:2019 — Medical devices — Application of risk management to medical devices."
+  },
+  {
+   "group": "Regulatory Documents",
+   "text": "International Organization for Standardization. (2015). ISO 14644 Series — Cleanrooms and associated controlled environments."
+  }
+ ]
+}

@@ -1,0 +1,3267 @@
+{
+ "num": 3,
+ "id": "ch03",
+ "title": "Classification of Medical Devices",
+ "subtitle": "Risk-Based Classification • Global Regulatory Systems • FDA • EU MDR • India MDR 2017",
+ "overview": [
+  "Medical device classification is the cornerstone of global regulatory frameworks. This chapter provides a comprehensive understanding of how devices are classified based on risk, invasiveness, duration of contact, and intended use. It examines the classification systems of major regulatory authorities—US FDA, EU MDR, and India MDR 2017—and explains how classification determines regulatory pathways, clinical evidence requirements, and post-market obligations. Understanding classification is essential for anyone involved in device development, manufacturing, or regulatory affairs."
+ ],
+ "clos": [
+  "Explain the fundamental purpose and principles of medical device classification systems.",
+  "Describe the key criteria used internationally for classifying medical devices.",
+  "Interpret classification schemes under US FDA (Class I/II/III), EU MDR (Class I/IIa/IIb/III), and India MDR 2017 (Class A/B/C/D).",
+  "Classify common medical devices with appropriate justification based on risk factors.",
+  "Analyze the relationship between device classification and regulatory requirements.",
+  "Compare classification approaches across different regulatory jurisdictions.",
+  "Evaluate how classification impacts clinical evidence, conformity assessment, and market approval pathways."
+ ],
+ "keywords": [
+  "Risk-based classification",
+  "FDA Class I/II/III",
+  "EU MDR classification",
+  "India MDR 2017",
+  "CDSCO",
+  "invasiveness",
+  "duration of contact",
+  "intended purpose",
+  "regulatory pathway",
+  "conformity assessment",
+  "Software as a Medical Device (SaMD)"
+ ],
+ "roadmap": [
+  "Introduction to classification principles",
+  "Purpose and importance of classification",
+  "Global classification criteria",
+  "US FDA classification system",
+  "EU MDR classification framework",
+  "India",
+  "MDR 2017 classification structure",
+  "Comparative analysis across jurisdictions",
+  "Classification examples and case studies",
+  "Practical applications",
+  "Chapter summary and key takeaways",
+  "Introduction",
+  "Classification forms the foundation of medical device regulation worldwide. Every medical device, from a simple tongue depressor to a complex implantable cardioverter-defibrillator, must be assigned to a specific regulatory class. This classification determines:",
+  "Regulatory approval pathway – The type of submission required for market authorization"
+ ],
+ "blocks": [
+  {
+   "t": "ul",
+   "items": [
+    "<strong>Documentation requirements </strong>– The depth and breadth of technical and clinical data needed",
+    "<strong>Clinical evaluation standards </strong>– Whether literature review suffices or clinical investigations are mandatory",
+    "<strong>Post-market surveillance obligations </strong>– The intensity and frequency of ongoing monitoring",
+    "<strong>Quality management system requirements </strong>– The level of manufacturing controls and audits needed"
+   ]
+  },
+  {
+   "t": "p",
+   "html": "Classification is inherently <strong>risk-based</strong>: the greater the potential harm to a patient if the device fails or malfunctions, the higher the regulatory class and the more stringent the requirements."
+  },
+  {
+   "t": "p",
+   "html": "Regulatory Harmonization"
+  },
+  {
+   "t": "p",
+   "html": "While classification systems vary across jurisdictions, international efforts—particularly through the International Medical Device Regulators Forum (IMDRF)—have promoted harmonization. Most modern regulatory frameworks share common principles:"
+  },
+  {
+   "t": "ul",
+   "items": [
+    "Risk assessment based on intended use",
+    "Consideration of invasiveness and duration of contact",
+    "Technology-specific considerations",
+    "Systematic classification rules",
+    "Why Is Classification Needed?"
+   ]
+  },
+  {
+   "t": "p",
+   "html": "Medical device classification serves multiple critical functions in ensuring public health and safety:"
+  },
+  {
+   "t": "ul",
+   "items": [
+    "Safety Assurance"
+   ]
+  },
+  {
+   "t": "p",
+   "html": "Classification ensures that devices posing greater risks undergo more rigorous evaluation. High-risk devices receive intensive scrutiny through clinical trials, design reviews, and comprehensive technical assessments, while low-risk devices follow streamlined pathways."
+  },
+  {
+   "t": "ul",
+   "items": [
+    "Regulatory Clarity"
+   ]
+  },
+  {
+   "t": "p",
+   "html": "Classification provides manufacturers with clear expectations regarding:"
+  },
+  {
+   "t": "ul",
+   "items": [
+    "Required documentation",
+    "Testing protocols",
+    "Approval timelines",
+    "Quality system standards",
+    "Global Standardization"
+   ]
+  },
+  {
+   "t": "p",
+   "html": "Harmonized classification principles facilitate international trade by creating predictable regulatory pathways. Manufacturers can more easily navigate multiple markets when classification logic is consistent."
+  },
+  {
+   "t": "ul",
+   "items": [
+    "Clinical Evidence Determination"
+   ]
+  },
+  {
+   "t": "p",
+   "html": "Classification directly influences clinical evaluation requirements:"
+  },
+  {
+   "t": "ul",
+   "items": [
+    "<strong>Low-risk devices</strong>: Literature review may suffice",
+    "<strong>Moderate-risk devices</strong>: Clinical performance data often required",
+    "<strong>High-risk devices</strong>: Prospective clinical investigations typically mandatory",
+    "Resource Optimization"
+   ]
+  },
+  {
+   "t": "p",
+   "html": "Risk-based classification allows regulatory authorities to focus resources on devices that pose the greatest potential harm, while enabling faster market access for lower-risk devices."
+  },
+  {
+   "t": "ul",
+   "items": [
+    "Post-Market Surveillance"
+   ]
+  },
+  {
+   "t": "p",
+   "html": "Classification determines the intensity of post-market monitoring, including:"
+  },
+  {
+   "t": "ul",
+   "items": [
+    "Adverse event reporting requirements",
+    "Periodic safety update reports",
+    "Post-market clinical follow-up obligations Safety Note 3.1"
+   ]
+  },
+  {
+   "t": "p",
+   "html": "High-risk devices (FDA Class III, EU MDR Class III, India MDR Class D) require the most comprehensive regulatory oversight, including mandatory clinical trials, design dossier reviews, and rigorous conformity assessment procedures. This intensive scrutiny is essential because these devices typically:"
+  },
+  {
+   "t": "ul",
+   "items": [
+    "Support or sustain life",
+    "Are implanted long-term",
+    "Present significant risks if they fail",
+    "Cannot easily be removed or reversed",
+    "Global Classification Criteria"
+   ]
+  },
+  {
+   "t": "p",
+   "html": "Despite variations in implementation, regulatory authorities worldwide evaluate devices using similar fundamental criteria. Understanding these criteria is essential for determining appropriate device classification."
+  },
+  {
+   "t": "ul",
+   "items": [
+    "Degree of Invasiveness"
+   ]
+  },
+  {
+   "t": "p",
+   "html": "Invasiveness refers to how deeply a device penetrates the body. This criterion significantly influences risk assessment because greater invasiveness typically increases potential for complications."
+  },
+  {
+   "t": "p",
+   "html": "Classification by Invasiveness:"
+  },
+  {
+   "t": "h3",
+   "text": "Non-invasive devices"
+  },
+  {
+   "t": "ul",
+   "items": [
+    "Do not penetrate the body surface",
+    "Contact only intact external surfaces",
+    "<em>Examples</em>: Blood pressure cuffs, stethoscopes, examination gloves, wheelchairs"
+   ]
+  },
+  {
+   "t": "h3",
+   "text": "Minimally invasive devices"
+  },
+  {
+   "t": "ul",
+   "items": [
+    "Enter the body through natural orifices",
+    "Minimal disruption to body structure",
+    "<em>Examples</em>: Nasogastric tubes, urinary catheters, endoscopes, thermometers"
+   ]
+  },
+  {
+   "t": "h3",
+   "text": "Invasive devices"
+  },
+  {
+   "t": "ul",
+   "items": [
+    "Penetrate the skin or mucous membranes mechanically",
+    "Create artificial openings",
+    "<em>Examples</em>: Syringes, surgical needles, biopsy instruments, laparoscopic tools"
+   ]
+  },
+  {
+   "t": "h3",
+   "text": "Surgically invasive/Implantable devices"
+  },
+  {
+   "t": "ul",
+   "items": [
+    "Remain in the body after surgical procedures. Long-term or permanent placement",
+    "<em>Examples</em>: Pacemakers, coronary stents, orthopedic implants, intraocular lenses"
+   ]
+  },
+  {
+   "t": "fig",
+   "src": "images/ch03_fig01.jpg",
+   "w": 569,
+   "h": 213,
+   "num": "3.1",
+   "caption": "Levels of Invasiveness and Associated Risk"
+  },
+  {
+   "t": "p",
+   "html": "<strong>Description: </strong>A horizontal gradient bar diagram illustrating the invasiveness spectrum:"
+  },
+  {
+   "t": "ul",
+   "items": [
+    "<strong>Left end</strong>: Non-invasive (Lowest Risk) – Icon: stethoscope",
+    "<strong>Second section</strong>: Minimally invasive (Low to Moderate Risk) – Icon: catheter",
+    "<strong>Third section</strong>: Invasive (Moderate to High Risk) – Icon: syringe",
+    "<strong>Right end</strong>: Implantable/Surgically Invasive (Highest Risk) – Icon: pacemaker"
+   ]
+  },
+  {
+   "t": "p",
+   "html": "Arrow below indicating \"Increasing Risk and Regulatory Scrutiny\" from left to right. Color gradient from green (low risk) through yellow and orange to red (high risk)."
+  },
+  {
+   "t": "h3",
+   "text": "Duration of Contact"
+  },
+  {
+   "t": "p",
+   "html": "The length of time a device remains in contact with the body directly correlates with potential for adverse biological responses. Longer exposure increases risks of:"
+  },
+  {
+   "t": "ul",
+   "items": [
+    "Inflammatory responses",
+    "Tissue irritation",
+    "Material degradation",
+    "Infection",
+    "Immunological reactions Duration Categories:"
+   ]
+  },
+  {
+   "t": "h3",
+   "text": "Transient Contact (≤ 60 minutes)"
+  },
+  {
+   "t": "ul",
+   "items": [
+    "Brief, temporary use",
+    "Minimal time for biological interaction",
+    "<em>Examples</em>: Surgical forceps, examination gloves, diagnostic electrodes"
+   ]
+  },
+  {
+   "t": "h3",
+   "text": "Short-term Contact (1–30 days)"
+  },
+  {
+   "t": "ul",
+   "items": [
+    "Extended but temporary placement",
+    "Moderate time for tissue response",
+    "<em>Examples</em>: Temporary urinary catheters, short-term IV lines, wound dressings"
+   ]
+  },
+  {
+   "t": "h3",
+   "text": "Long-term Contact (&gt; 30 days)"
+  },
+  {
+   "t": "ul",
+   "items": [
+    "Extended or permanent implantation",
+    "Significant time for chronic biological responses",
+    "<em>Examples</em>: Pacemakers, hip implants, intraocular lenses, drug-eluting stents"
+   ]
+  },
+  {
+   "t": "fig",
+   "src": "images/ch03_fig02.jpg",
+   "w": 498,
+   "h": 266,
+   "num": "3.2",
+   "caption": "Duration-Based Risk Classification Description: Three-column comparative table with visual timeline:"
+  },
+  {
+   "t": "p",
+   "html": "Duration Category"
+  },
+  {
+   "t": "p",
+   "html": "Time Period Risk Considerations Examples"
+  },
+  {
+   "t": "p",
+   "html": "<strong>Transient </strong>≤ 60 minutes"
+  },
+  {
+   "t": "p",
+   "html": "Minimal tissue interaction Surgical instruments, gloves"
+  },
+  {
+   "t": "p",
+   "html": "<strong>Short-term </strong>1–30 days Moderate interaction"
+  },
+  {
+   "t": "p",
+   "html": "potential"
+  },
+  {
+   "t": "p",
+   "html": "Temporary catheters, IV lines"
+  },
+  {
+   "t": "p",
+   "html": "<strong>Long-term </strong>&gt; 30 days Chronic exposure risks Implants, pacemakers Arrows indicate increasing duration and corresponding risk levels."
+  },
+  {
+   "t": "h3",
+   "text": "Body Systems and Anatomical Locations"
+  },
+  {
+   "t": "p",
+   "html": "Certain body systems are considered more critical due to their physiological importance. Devices affecting these systems typically receive higher classifications:"
+  },
+  {
+   "t": "h4",
+   "text": "Critical Anatomical Sites"
+  },
+  {
+   "t": "ul",
+   "items": [
+    "<strong>Central circulatory system </strong>(heart, major vessels)",
+    "<strong>Central nervous system </strong>(brain, spinal cord)",
+    "<strong>Vital organs </strong>(lungs, liver, kidneys)"
+   ]
+  },
+  {
+   "t": "p",
+   "html": "<strong>Rationale:</strong> Malfunction in these areas can cause immediate life-threatening consequences."
+  },
+  {
+   "t": "h4",
+   "text": "Less Critical Sites"
+  },
+  {
+   "t": "ul",
+   "items": [
+    "Peripheral circulation",
+    "Superficial tissues",
+    "Non-vital organ systems"
+   ]
+  },
+  {
+   "t": "h3",
+   "text": "Technology and Mechanism of Action"
+  },
+  {
+   "t": "p",
+   "html": "The technology employed by a device influences its risk profile and regulatory classification. Technology Categories:"
+  },
+  {
+   "t": "h3",
+   "text": "Mechanical Devices"
+  },
+  {
+   "t": "ul",
+   "items": [
+    "Physical, non-powered mechanisms",
+    "<em>Examples</em>: Surgical scissors, bone clamps, manual wheelchairs",
+    "Generally lower risk unless used in critical anatomical locations"
+   ]
+  },
+  {
+   "t": "h3",
+   "text": "Electrical/Electronic Devices"
+  },
+  {
+   "t": "ul",
+   "items": [
+    "Powered equipment with electronic controls",
+    "<em>Examples</em>: ECG machines, defibrillators, patient monitors",
+    "Risk depends on energy delivery and criticality of function"
+   ]
+  },
+  {
+   "t": "h3",
+   "text": "Software-Based Devices (SaMD)"
+  },
+  {
+   "t": "ul",
+   "items": [
+    "Standalone software performing medical functions",
+    "<em>Examples</em>: AI diagnostic algorithms, clinical decision support systems",
+    "Risk based on intended use and clinical significance of information provided"
+   ]
+  },
+  {
+   "t": "h3",
+   "text": "Implantable Active Devices"
+  },
+  {
+   "t": "ul",
+   "items": [
+    "Powered devices implanted in the body",
+    "<em>Examples</em>: Pacemakers, neurostimulators, cochlear implants",
+    "Typically high-risk due to combination of invasiveness, duration, and active function"
+   ]
+  },
+  {
+   "t": "h3",
+   "text": "Diagnostic Devices"
+  },
+  {
+   "t": "ul",
+   "items": [
+    "Used for disease detection or monitoring",
+    "Risk depends on clinical consequences of incorrect results",
+    "<em>Examples</em>: Blood glucose meters, pregnancy tests, imaging systems"
+   ]
+  },
+  {
+   "t": "h3",
+   "text": "Intended Purpose and Clinical Significance"
+  },
+  {
+   "t": "p",
+   "html": "The manufacturer's stated intended use fundamentally determines classification. Regulatory authorities consider:"
+  },
+  {
+   "t": "h3",
+   "text": "Clinical Decision Impact"
+  },
+  {
+   "t": "ul",
+   "items": [
+    "Will the device information drive critical treatment decisions?",
+    "What are consequences of incorrect information or device failure?"
+   ]
+  },
+  {
+   "t": "h3",
+   "text": "Life-Supporting vs. Non-Life-Supporting"
+  },
+  {
+   "t": "ul",
+   "items": [
+    "Does the device sustain life?",
+    "Can failure cause death or serious injury?"
+   ]
+  },
+  {
+   "t": "h3",
+   "text": "Diagnostic vs. Therapeutic"
+  },
+  {
+   "t": "ul",
+   "items": [
+    "Purely informational vs. treatment delivery",
+    "Criticality of diagnosis or intervention"
+   ]
+  },
+  {
+   "t": "h3",
+   "text": "Patient Risk Assessment"
+  },
+  {
+   "t": "p",
+   "html": "Classification ultimately centers on potential harm to the patient. Risk assessment considers:"
+  },
+  {
+   "t": "h3",
+   "text": "Severity of Potential Harm"
+  },
+  {
+   "t": "ul",
+   "items": [
+    "Death",
+    "Serious deterioration of health",
+    "Reversible injury",
+    "Minimal or no injury"
+   ]
+  },
+  {
+   "t": "h3",
+   "text": "Probability of Harm"
+  },
+  {
+   "t": "ul",
+   "items": [
+    "Likelihood of device failure",
+    "Frequency of use",
+    "Patient vulnerability"
+   ]
+  },
+  {
+   "t": "h3",
+   "text": "Benefit-Risk Balance"
+  },
+  {
+   "t": "ul",
+   "items": [
+    "Clinical benefits vs. potential risks",
+    "Availability of alternative treatments"
+   ]
+  },
+  {
+   "t": "fig",
+   "src": "images/ch03_fig03.jpg",
+   "w": 496,
+   "h": 313,
+   "num": "3.3",
+   "caption": "Classification Criteria Overview"
+  },
+  {
+   "t": "p",
+   "html": "<strong>Description: </strong>A mind-map style diagram with \"RISK CLASSIFICATION\" at center, connected to six surrounding nodes:"
+  },
+  {
+   "t": "ul",
+   "items": [
+    "<strong>Invasiveness </strong>(Icon: body with penetration levels)",
+    "<strong>Duration of Contact </strong>(Icon: clock/calendar)",
+    "<strong>Body System Affected </strong>(Icon: heart and brain)",
+    "<strong>Technology Used </strong>(Icon: gear and computer chip)",
+    "<strong>Intended Purpose </strong>(Icon: medical cross)",
+    "<strong>Patient Risk </strong>(Icon: warning triangle)"
+   ]
+  },
+  {
+   "t": "p",
+   "html": "Each node has brief descriptive text. Color-coded for visual clarity."
+  },
+  {
+   "t": "h2",
+   "text": "US FDA Classification System",
+   "num": "3.1"
+  },
+  {
+   "t": "p",
+   "html": "The United States Food and Drug Administration (FDA) employs a three-tiered classification system for medical devices. This system is codified in the Code of Federal Regulations (CFR), Title 21, and is administered by the Center for Devices and Radiological Health (CDRH)."
+  },
+  {
+   "t": "p",
+   "html": "FDA Classification Philosophy The FDA system balances:"
+  },
+  {
+   "t": "ul",
+   "items": [
+    "Public health protection",
+    "Innovation encouragement",
+    "Administrative efficiency",
+    "Risk-based regulation"
+   ]
+  },
+  {
+   "t": "p",
+   "html": "Devices are classified based on the level of control necessary to ensure safety and effectiveness."
+  },
+  {
+   "t": "h3",
+   "text": "★ Class I – Low Risk Devices Definition"
+  },
+  {
+   "t": "p",
+   "html": "Class I devices present minimal potential for harm to the user. They are typically simple in design and have well-understood risks that can be managed through general controls."
+  },
+  {
+   "t": "p",
+   "html": "Regulatory Controls"
+  },
+  {
+   "t": "h4",
+   "text": "General Controls Include"
+  },
+  {
+   "t": "ul",
+   "items": [
+    "<strong>Establishment registration </strong>– Manufacturers must register facilities with FDA",
+    "<strong>Device listing </strong>– All manufactured devices must be listed",
+    "<strong>Premarket notification exemption </strong>– Most Class I devices are exempt from 510(k)",
+    "<strong>Good Manufacturing Practices (GMP) </strong>– Compliance with Quality System Regulation (QSR)",
+    "<strong>Labeling requirements </strong>– Clear instructions and warnings",
+    "<strong>Medical Device Reporting (MDR) </strong>– Adverse event reporting when applicable"
+   ]
+  },
+  {
+   "t": "h3",
+   "text": "Examples of Class I Devices"
+  },
+  {
+   "t": "p",
+   "html": "Device Type Application Risk Profile"
+  },
+  {
+   "t": "p",
+   "html": "Manual wheelchairs Patient mobility Mechanical failure, minimal harm"
+  },
+  {
+   "t": "p",
+   "html": "Device Type Application Risk Profile Examination gloves Barrier protection Material failure, minimal risk"
+  },
+  {
+   "t": "p",
+   "html": "Elastic bandages Wound support Compression injury, low risk Tongue depressors Oral examination Mechanical, negligible risk"
+  },
+  {
+   "t": "p",
+   "html": "Bedpans Patient care Sanitation, minimal harm Stethoscopes Auscultation Diagnostic accuracy, low consequence"
+  },
+  {
+   "t": "p",
+   "html": "Regulatory Pathway"
+  },
+  {
+   "t": "p",
+   "html": "<strong>Most Class I devices are exempt from premarket notification [510(k)]</strong>, allowing manufacturers to market devices without FDA clearance, provided they:"
+  },
+  {
+   "t": "ul",
+   "items": [
+    "Comply with general controls",
+    "Do not support or sustain life",
+    "Are not critical to health",
+    "Do not present unreasonable risk"
+   ]
+  },
+  {
+   "t": "p",
+   "html": "<strong>Timeline</strong>: Immediate market entry upon establishment registration and device listing (typically 1–2 weeks)."
+  },
+  {
+   "t": "p",
+   "html": "Post-Market Obligations"
+  },
+  {
+   "t": "ul",
+   "items": [
+    "Medical Device Reporting (MDR) for serious adverse events",
+    "Corrections and removals reporting",
+    "QSR compliance and FDA inspections"
+   ]
+  },
+  {
+   "t": "h3",
+   "text": "★ Class II – Moderate Risk Devices"
+  },
+  {
+   "t": "p",
+   "html": "Definition"
+  },
+  {
+   "t": "p",
+   "html": "Class II devices pose moderate risk to patients and require special controls in addition to general controls to ensure safety and effectiveness."
+  },
+  {
+   "t": "p",
+   "html": "Regulatory Controls"
+  },
+  {
+   "t": "h4",
+   "text": "Special Controls May Include"
+  },
+  {
+   "t": "ul",
+   "items": [
+    "<strong>Performance standards </strong>– Specific technical criteria devices must meet",
+    "<strong>Post-market surveillance </strong>– Ongoing monitoring of device performance",
+    "<strong>Patient registries </strong>– Long-term data collection",
+    "<strong>Device-specific guidance documents </strong>– FDA recommendations for testing and validation",
+    "<strong>Special labeling requirements </strong>– Enhanced instructions or warnings Premarket Notification [510(k) Process]"
+   ]
+  },
+  {
+   "t": "p",
+   "html": "The majority of Class II devices require FDA clearance through 510(k) submission, demonstrating the device is <strong>substantially equivalent </strong>to a legally marketed predicate device."
+  },
+  {
+   "t": "h4",
+   "text": "510(k) Requirements"
+  },
+  {
+   "t": "ul",
+   "items": [
+    "Device description and specifications",
+    "Indications for use statement",
+    "Technological characteristics comparison",
+    "Performance testing data (bench, animal, or clinical)",
+    "Biocompatibility assessment",
+    "Sterilization validation (if applicable)",
+    "Software documentation (if applicable)",
+    "Labelling"
+   ]
+  },
+  {
+   "t": "p",
+   "html": "<strong>Review Timeline</strong>: FDA aims for 90-day review; actual timelines often 3–6 months depending on complexity."
+  },
+  {
+   "t": "p",
+   "html": "Examples of Class II Devices"
+  },
+  {
+   "t": "p",
+   "html": "Device Type Application Special Controls"
+  },
+  {
+   "t": "p",
+   "html": "Infusion pumps Drug delivery Performance standards, software"
+  },
+  {
+   "t": "p",
+   "html": "validation"
+  },
+  {
+   "t": "p",
+   "html": "Blood pressure monitors Cardiovascular"
+  },
+  {
+   "t": "p",
+   "html": "monitoring"
+  },
+  {
+   "t": "p",
+   "html": "Accuracy standards, clinical validation"
+  },
+  {
+   "t": "p",
+   "html": "Surgical drapes Sterile barrier Fluid resistance, biocompatibility"
+  },
+  {
+   "t": "p",
+   "html": "Ultrasound imaging systems"
+  },
+  {
+   "t": "p",
+   "html": "Diagnostic imaging Output standards, operator training"
+  },
+  {
+   "t": "p",
+   "html": "Powered wheelchairs Patient mobility Electrical safety, stability testing Glucose meters Diabetes management Accuracy standards, patient labeling Suction devices Surgical use Vacuum performance, noise limits"
+  },
+  {
+   "t": "p",
+   "html": "Regulatory Pathway Variations"
+  },
+  {
+   "t": "p",
+   "html": "<strong>510(k) Exempt Class II Devices</strong>: Certain low-moderate risk Class II devices are exempt from 510(k) requirements but must still comply with general and special controls."
+  },
+  {
+   "t": "p",
+   "html": "<strong>De Novo Pathway</strong>: Novel Class II devices without predicates may use the De Novo process, establishing a new device classification."
+  },
+  {
+   "t": "p",
+   "html": "Post-Market Requirements"
+  },
+  {
+   "t": "ul",
+   "items": [
+    "MDR (Medical Device Reporting)",
+    "Corrections and removals reporting",
+    "Post-market surveillance studies (if ordered)",
+    "QSR compliance"
+   ]
+  },
+  {
+   "t": "h3",
+   "text": "★ Class III – High Risk Devices"
+  },
+  {
+   "t": "p",
+   "html": "Definition"
+  },
+  {
+   "t": "p",
+   "html": "Class III devices support or sustain human life, are of substantial importance in preventing impairment of health, or present potential unreasonable risk of illness or injury. These devices require the highest level of regulatory oversight."
+  },
+  {
+   "t": "p",
+   "html": "Regulatory Controls"
+  },
+  {
+   "t": "p",
+   "html": "Class III devices require <strong>Premarket Approval (PMA)</strong>, the most stringent type of device marketing application. PMA is based on a determination by FDA that the PMA contains sufficient valid scientific evidence to ensure device safety and effectiveness."
+  },
+  {
+   "t": "p",
+   "html": "Premarket Approval (PMA) Requirements A PMA application must include:"
+  },
+  {
+   "t": "h3",
+   "text": "Administrative Information"
+  },
+  {
+   "t": "ul",
+   "items": [
+    "Applicant information",
+    "Device description",
+    "Indications for use",
+    "Summary of studies"
+   ]
+  },
+  {
+   "t": "h3",
+   "text": "Non-Clinical Laboratory Studies"
+  },
+  {
+   "t": "ul",
+   "items": [
+    "Bench testing results",
+    "Animal studies",
+    "Material characterization",
+    "Biocompatibility data"
+   ]
+  },
+  {
+   "t": "h3",
+   "text": "Clinical Investigations"
+  },
+  {
+   "t": "ul",
+   "items": [
+    "Investigational Device Exemption (IDE) studies",
+    "Pivotal clinical trials",
+    "Statistical analysis of safety and effectiveness",
+    "Risk-benefit analysis"
+   ]
+  },
+  {
+   "t": "h3",
+   "text": "Manufacturing Information"
+  },
+  {
+   "t": "ul",
+   "items": [
+    "Quality System (QS) documentation",
+    "Device Master Record",
+    "Labelling",
+    "Facilities description"
+   ]
+  },
+  {
+   "t": "h3",
+   "text": "Proposed Labelling"
+  },
+  {
+   "t": "ul",
+   "items": [
+    "Instructions for use",
+    "Patient information",
+    "Warning statements"
+   ]
+  },
+  {
+   "t": "h4",
+   "text": "Review Process"
+  },
+  {
+   "t": "ul",
+   "items": [
+    "Administrative filing review (45 days)",
+    "In-depth scientific review (180 days for standard PMA)",
+    "Advisory panel meeting (often required for novel devices)",
+    "FDA decision: approval, approvable with conditions, or not approvable <strong>Timeline</strong>: Typically 1–3 years from IDE initiation through PMA approval. Examples of Class III Devices"
+   ]
+  },
+  {
+   "t": "p",
+   "html": "Device Type Application Critical Risk Factors Implantable pacemakers Cardiac rhythm management Life-sustaining, long-term implant"
+  },
+  {
+   "t": "p",
+   "html": "Mechanical heart valves Valve replacement Circulatory system, permanent"
+  },
+  {
+   "t": "p",
+   "html": "implant"
+  },
+  {
+   "t": "p",
+   "html": "Coronary stents Vessel patency Central circulation, thrombosis risk"
+  },
+  {
+   "t": "p",
+   "html": "Implantable defibrillators Sudden cardiac death"
+  },
+  {
+   "t": "p",
+   "html": "prevention"
+  },
+  {
+   "t": "p",
+   "html": "Life-sustaining, active implant"
+  },
+  {
+   "t": "p",
+   "html": "Left ventricular assist devices"
+  },
+  {
+   "t": "p",
+   "html": "Heart failure support Life-sustaining, complex"
+  },
+  {
+   "t": "p",
+   "html": "technology"
+  },
+  {
+   "t": "p",
+   "html": "Cochlear implants Hearing restoration Permanent CNS implant"
+  },
+  {
+   "t": "p",
+   "html": "Absorbable surgical mesh Hernia repair Long-term implant, degradation"
+  },
+  {
+   "t": "p",
+   "html": "concerns"
+  },
+  {
+   "t": "p",
+   "html": "Post-Market Requirements for Class III Devices"
+  },
+  {
+   "t": "h4",
+   "text": "Enhanced Surveillance"
+  },
+  {
+   "t": "ul",
+   "items": [
+    "Post-approval studies (often required)",
+    "Annual reporting",
+    "Medical Device Reporting (MDR)",
+    "Device tracking for life-sustaining devices"
+   ]
+  },
+  {
+   "t": "h4",
+   "text": "Continued Oversight"
+  },
+  {
+   "t": "ul",
+   "items": [
+    "Manufacturing facility inspections",
+    "Post-market surveillance orders",
+    "Risk management updates"
+   ]
+  },
+  {
+   "t": "fig",
+   "src": "images/ch03_fig04.jpg",
+   "w": 498,
+   "h": 299,
+   "num": "3.4",
+   "caption": "FDA Three-Tier Classification System Description: Vertical ascending pyramid diagram showing three tiers: Base (Class I - Green):"
+  },
+  {
+   "t": "ul",
+   "items": [
+    "Label: \"Low Risk\"",
+    "Subtitle: \"General Controls\"",
+    "Examples: Gloves, Bandages, Stethoscope",
+    "Pathway: Mostly 510(k) exempt",
+    "Market entry: Days to weeks"
+   ]
+  },
+  {
+   "t": "h4",
+   "text": "Middle (Class II - Yellow)"
+  },
+  {
+   "t": "ul",
+   "items": [
+    "Label: \"Moderate Risk\"",
+    "Subtitle: \"General + Special Controls\"",
+    "Examples: Infusion pumps, BP monitors, Ultrasound",
+    "Pathway: 510(k) required",
+    "Market entry: 3–6 months"
+   ]
+  },
+  {
+   "t": "h4",
+   "text": "Top (Class III - Red)"
+  },
+  {
+   "t": "ul",
+   "items": [
+    "Label: \"High Risk\"",
+    "Subtitle: \"Premarket Approval (PMA)\"",
+    "Examples: Pacemakers, Heart valves, Stents",
+    "Pathway: PMA with clinical trials",
+    "Market entry: 1–3 years"
+   ]
+  },
+  {
+   "t": "p",
+   "html": "Arrows on side indicating \"Increasing Risk\" and \"Increasing Regulatory Requirements\""
+  },
+  {
+   "t": "h3",
+   "text": "3.5 European Union MDR Classification System"
+  },
+  {
+   "t": "p",
+   "html": "The European Union Medical Device Regulation (MDR 2017/745) established a comprehensive framework that replaced the previous Medical Device Directive (MDD). The EU MDR employs a four-tier classification system with detailed classification rules outlined in Annex VIII."
+  },
+  {
+   "t": "p",
+   "html": "EU MDR Philosophy"
+  },
+  {
+   "t": "p",
+   "html": "The EU MDR emphasizes:"
+  },
+  {
+   "t": "ul",
+   "items": [
+    "Patient safety as paramount concern",
+    "Transparency in regulatory processes",
+    "Robust clinical evidence requirements",
+    "Enhanced post-market surveillance",
+    "Traceability throughout device lifecycle"
+   ]
+  },
+  {
+   "t": "h3",
+   "text": "★ Class I – Low Risk Devices"
+  },
+  {
+   "t": "p",
+   "html": "Definition"
+  },
+  {
+   "t": "p",
+   "html": "Class I devices under EU MDR pose minimal risk to patients and users. However, the MDR introduces important subcategories that require increased scrutiny."
+  },
+  {
+   "t": "p",
+   "html": "Class I Subcategories"
+  },
+  {
+   "t": "h3",
+   "text": "Class I (Basic)"
+  },
+  {
+   "t": "ul",
+   "items": [
+    "Non-sterile, non-measuring, non-reusable surgical instruments",
+    "Manufacturer self-declares conformity",
+    "<em>Examples</em>: Non-sterile tongue depressors, manual examination tables"
+   ]
+  },
+  {
+   "t": "h3",
+   "text": "Class Is (Sterile)"
+  },
+  {
+   "t": "ul",
+   "items": [
+    "Class I devices supplied in sterile condition",
+    "Requires Notified Body involvement for sterility aspects",
+    "<em>Examples</em>: Sterile examination gloves, sterile dressings"
+   ]
+  },
+  {
+   "t": "h3",
+   "text": "Class Im (Measuring)"
+  },
+  {
+   "t": "ul",
+   "items": [
+    "Class I devices with measuring function",
+    "Requires Notified Body involvement for measuring aspects",
+    "<em>Examples</em>: Measuring spoons, non-invasive thermometers (some types)"
+   ]
+  },
+  {
+   "t": "h3",
+   "text": "Class Ir (Reusable Surgical Instruments)"
+  },
+  {
+   "t": "ul",
+   "items": [
+    "Reusable surgical instruments (Class I otherwise)",
+    "Requires Notified Body involvement",
+    "<em>Examples</em>: Surgical scissors, forceps, retractors Conformity Assessment"
+   ]
+  },
+  {
+   "t": "h4",
+   "text": "Class I (Basic)"
+  },
+  {
+   "t": "ul",
+   "items": [
+    "Manufacturer self-declaration",
+    "Technical Documentation prepared",
+    "No Notified Body required",
+    "CE marking affixed by manufacturer"
+   ]
+  },
+  {
+   "t": "h4",
+   "text": "Class Is, Im, Ir"
+  },
+  {
+   "t": "ul",
+   "items": [
+    "Notified Body audits specific aspects (sterility, measuring function, or reprocessing)",
+    "Manufacturer maintains Technical Documentation",
+    "CE marking with Notified Body number Examples of Class I Devices"
+   ]
+  },
+  {
+   "t": "table",
+   "num": "3.1",
+   "caption": "Class Is, Im, Ir",
+   "rows": [
+    [
+     "Subcategory",
+     "Device Examples",
+     "Notified Body Role"
+    ],
+    [
+     "Class I",
+     "Hospital beds, crutches",
+     "None"
+    ],
+    [
+     "Class Is",
+     "Sterile gauze, sterile gloves",
+     "Sterility validation"
+    ],
+    [
+     "Class Im",
+     "Measuring cups (medical)",
+     "Measuring function"
+    ],
+    [
+     "Class Ir",
+     "Surgical scalpels (reusable)",
+     "Reprocessing validation"
+    ]
+   ]
+  },
+  {
+   "t": "h3",
+   "text": "★ Class IIa – Low to Moderate Risk Devices"
+  },
+  {
+   "t": "p",
+   "html": "Definition"
+  },
+  {
+   "t": "p",
+   "html": "Class IIa devices present low to moderate risk and require moderate regulatory controls and Notified Body involvement."
+  },
+  {
+   "t": "p",
+   "html": "Regulatory Requirements"
+  },
+  {
+   "t": "ul",
+   "items": [
+    "Technical Documentation (Annex II or III)",
+    "Quality Management System certification",
+    "Notified Body conformity assessment",
+    "Clinical evaluation per Annex XIV",
+    "Risk management per ISO 14971",
+    "Post-Market Surveillance (PMS) plan",
+    "Periodic Safety Update Reports (PSUR)"
+   ]
+  },
+  {
+   "t": "h3",
+   "text": "Examples of Class IIa Devices"
+  },
+  {
+   "t": "p",
+   "html": "<strong>Device Type Application Risk Justification </strong>Hearing aids Auditory amplification Non-invasive, chronic use Dental fillings Tooth restoration Short-term tissue contact"
+  },
+  {
+   "t": "p",
+   "html": "Corrective lenses Vision correction Non-invasive, chronic use Suction equipment Fluid removal Short-term invasive use"
+  },
+  {
+   "t": "p",
+   "html": "Ultrasound physiotherapy devices Therapeutic heating Energy delivery to body Conformity Assessment Route"
+  },
+  {
+   "t": "p",
+   "html": "Manufacturers typically choose between:"
+  },
+  {
+   "t": "h3",
+   "text": "Annex IX (Full QMS + Technical Documentation)"
+  },
+  {
+   "t": "ul",
+   "items": [
+    "<strong>Annex X (Type Examination) + Annex XI (Product Conformity) Timeline</strong>: 6–12 months for initial certification."
+   ]
+  },
+  {
+   "t": "h3",
+   "text": "★ Class IIb – Moderate to High Risk Devices"
+  },
+  {
+   "t": "p",
+   "html": "Definition"
+  },
+  {
+   "t": "p",
+   "html": "Class IIb devices present moderate to high risk, requiring more comprehensive clinical evidence and stricter conformity assessment."
+  },
+  {
+   "t": "p",
+   "html": "Enhanced Requirements Beyond Class IIa requirements:"
+  },
+  {
+   "t": "ul",
+   "items": [
+    "<strong>More robust clinical evidence </strong>– Often requiring clinical investigations",
+    "<strong>Detailed risk-benefit analysis</strong>",
+    "<strong>Enhanced PMS activities</strong>",
+    "<strong>More frequent PSUR submissions</strong>",
+    "<strong>Stricter Notified Body oversight</strong>"
+   ]
+  },
+  {
+   "t": "p",
+   "html": "<strong>Examples of Class IIb Devices</strong>"
+  },
+  {
+   "t": "table",
+   "num": "3.2",
+   "caption": "★ Class IIb – Moderate to High Risk Devices",
+   "rows": [
+    [
+     "Device Type",
+     "Application",
+     "Risk Factors"
+    ],
+    [
+     "Ventilators",
+     "Respiratory support",
+     "Life-supporting, critical function"
+    ],
+    [
+     "Infusion pumps",
+     "Drug delivery",
+     "Dose accuracy critical"
+    ],
+    [
+     "Blood bags",
+     "Blood storage",
+     "Contact with circulating blood"
+    ],
+    [
+     "Surgical lasers",
+     "Tissue ablation",
+     "High energy, tissue damage risk"
+    ]
+   ]
+  },
+  {
+   "t": "p",
+   "html": "Device Type Application Risk Factors"
+  },
+  {
+   "t": "p",
+   "html": "Bone cement Orthopedic fixation Long-term implant material Condoms Contraception Critical intended purpose"
+  },
+  {
+   "t": "p",
+   "html": "Clinical Evaluation Requirements"
+  },
+  {
+   "t": "p",
+   "html": "Class IIb devices typically require:"
+  },
+  {
+   "t": "ul",
+   "items": [
+    "Comprehensive literature review",
+    "Clinical data from equivalent devices (if available)",
+    "Clinical investigations for novel devices or new indications",
+    "Long-term performance data",
+    "Post-Market Clinical Follow-up (PMCF) plans Conformity Assessment"
+   ]
+  },
+  {
+   "t": "p",
+   "html": "Same routes as Class IIa but with enhanced scrutiny:"
+  },
+  {
+   "t": "ul",
+   "items": [
+    "More detailed Technical Documentation review",
+    "More comprehensive clinical evaluation",
+    "Stricter manufacturing audits"
+   ]
+  },
+  {
+   "t": "p",
+   "html": "<strong>Timeline</strong>: 9–18 months for initial certification."
+  },
+  {
+   "t": "h3",
+   "text": "★ Class III – High Risk Devices"
+  },
+  {
+   "t": "p",
+   "html": "Definition"
+  },
+  {
+   "t": "p",
+   "html": "Class III devices under EU MDR represent the highest risk category, requiring the most stringent regulatory oversight and comprehensive clinical evidence."
+  },
+  {
+   "t": "p",
+   "html": "Maximum Regulatory Requirements"
+  },
+  {
+   "t": "ul",
+   "items": [
+    "<strong>Comprehensive Technical Documentation </strong>(Annex II)",
+    "<strong>Extensive clinical investigations </strong>– Prospective studies often mandatory",
+    "<strong>Clinical Evaluation Report (CER) </strong>– Highly detailed, updated regularly",
+    "<strong>PMS Plan </strong>– Comprehensive surveillance strategy",
+    "<strong>PMCF Plan </strong>– Mandatory post-market clinical follow-up",
+    "<strong>PSUR </strong>– Annual submission required",
+    "<strong>Design examination </strong>by Notified Body"
+   ]
+  },
+  {
+   "t": "h3",
+   "text": "Full QMS certification"
+  },
+  {
+   "t": "p",
+   "html": "<strong>Examples of Class III Devices</strong>"
+  },
+  {
+   "t": "p",
+   "html": "Device Type Application Critical Risk Factors"
+  },
+  {
+   "t": "p",
+   "html": "Drug-eluting coronary stents Coronary artery disease Central circulation, drug"
+  },
+  {
+   "t": "p",
+   "html": "delivery, long-term"
+  },
+  {
+   "t": "p",
+   "html": "Heart valves (mechanical/biological)"
+  },
+  {
+   "t": "p",
+   "html": "Hip and knee implants (certain types)"
+  },
+  {
+   "t": "p",
+   "html": "Valve replacement Central circulation, permanent, life-sustaining"
+  },
+  {
+   "t": "p",
+   "html": "Joint replacement Long-term implant, load-"
+  },
+  {
+   "t": "p",
+   "html": "bearing"
+  },
+  {
+   "t": "p",
+   "html": "Breast implants Reconstruction/augmentation Long-term implant, safety"
+  },
+  {
+   "t": "p",
+   "html": "concerns"
+  },
+  {
+   "t": "p",
+   "html": "Neurostimulators Pain management, movement"
+  },
+  {
+   "t": "p",
+   "html": "disorders"
+  },
+  {
+   "t": "p",
+   "html": "CNS interface, active implant"
+  },
+  {
+   "t": "p",
+   "html": "Absorbable surgical sutures (certain types)"
+  },
+  {
+   "t": "p",
+   "html": "Tissue closure Degradation in critical anatomical sites"
+  },
+  {
+   "t": "p",
+   "html": "Clinical Investigation Requirements EU MDR mandates particularly strict clinical evidence for Class III: <strong>Implantable Devices:</strong>"
+  },
+  {
+   "t": "ul",
+   "items": [
+    "Prospective clinical investigations required (with limited exceptions)",
+    "Multi-center studies",
+    "Long-term follow-up data",
+    "Comparison to current state of art",
+    "Benefit-risk analysis demonstrating superiority or non-inferiority"
+   ]
+  },
+  {
+   "t": "h4",
+   "text": "Non-Implantable Class III"
+  },
+  {
+   "t": "ul",
+   "items": [
+    "Clinical investigations based on risk assessment",
+    "May rely on equivalent device data with justification Conformity Assessment"
+   ]
+  },
+  {
+   "t": "h3",
+   "text": "Mandatory Route: Annex IX (Full QMS) + Design Examination"
+  },
+  {
+   "t": "ul",
+   "items": [
+    "Notified Body reviews complete Technical Documentation",
+    "Assessment of clinical data adequacy",
+    "Review of risk management file",
+    "Manufacturing facility audits",
+    "Ongoing surveillance audits"
+   ]
+  },
+  {
+   "t": "p",
+   "html": "<strong>Timeline</strong>: 18–36 months for initial certification, including clinical investigation time."
+  },
+  {
+   "t": "fig",
+   "src": "images/ch03_fig05.jpg",
+   "w": 468,
+   "h": 308,
+   "num": "3.5",
+   "caption": ""
+  },
+  {
+   "t": "p",
+   "html": "<strong>Figure 3.5 – EU MDR Four-Tier Classification Pyramid Description: </strong>Four-level pyramid diagram with increasing height and intensity: <strong>Base (Class I - Light Green):</strong>"
+  },
+  {
+   "t": "ul",
+   "items": [
+    "Label: \"Low Risk\"",
+    "Subdivisions shown: Basic | Is | Im | Ir",
+    "Examples: Bandages, crutches",
+    "NB involvement: None to limited"
+   ]
+  },
+  {
+   "t": "h4",
+   "text": "Second Level (Class IIa - Yellow)"
+  },
+  {
+   "t": "ul",
+   "items": [
+    "Label: \"Low to Moderate Risk\"",
+    "Examples: Hearing aids, dental fillings",
+    "NB involvement: Required",
+    "Clinical data: Literature-based"
+   ]
+  },
+  {
+   "t": "h4",
+   "text": "Third Level (Class IIb - Orange)"
+  },
+  {
+   "t": "ul",
+   "items": [
+    "Label: \"Moderate to High Risk\"",
+    "Examples: Ventilators, infusion pumps",
+    "NB involvement: Enhanced",
+    "Clinical data: Often required"
+   ]
+  },
+  {
+   "t": "h4",
+   "text": "Top (Class III - Red)"
+  },
+  {
+   "t": "ul",
+   "items": [
+    "Label: \"High Risk\"",
+    "Examples: Heart valves, implants",
+    "NB involvement: Comprehensive",
+    "Clinical data: Prospective studies often mandatory"
+   ]
+  },
+  {
+   "t": "p",
+   "html": "Side arrow indicating \"Increasing Risk, Clinical Evidence, and Notified Body Scrutiny\""
+  },
+  {
+   "t": "h2",
+   "text": "India MDR 2017 Classification System",
+   "num": "3.2"
+  },
+  {
+   "t": "p",
+   "html": "India's Medical Device Rules (MDR) 2017 represent a significant modernization of medical device regulation in the country. The classification system is based on IMDRF principles and closely aligns with the EU MDR structure while maintaining India-specific requirements."
+  },
+  {
+   "t": "p",
+   "html": "Regulatory Framework"
+  },
+  {
+   "t": "h4",
+   "text": "Governing Body"
+  },
+  {
+   "t": "ul",
+   "items": [
+    "Central Drugs Standard Control Organization (CDSCO)",
+    "Directorate General of Health Services (DGHS)"
+   ]
+  },
+  {
+   "t": "h4",
+   "text": "Classification Basis"
+  },
+  {
+   "t": "ul",
+   "items": [
+    "Risk-based approach",
+    "IMDRF Global Harmonization Task Force (GHTF) principles",
+    "Four-tier system: Class A, B, C, D"
+   ]
+  },
+  {
+   "t": "h3",
+   "text": "★ Class A – Low Risk Devices"
+  },
+  {
+   "t": "p",
+   "html": "Definition"
+  },
+  {
+   "t": "p",
+   "html": "Class A devices pose minimal risk to patient safety and typically involve non-invasive applications or minimal body contact."
+  },
+  {
+   "t": "p",
+   "html": "Regulatory Pathway"
+  },
+  {
+   "t": "ul",
+   "items": [
+    "<strong>Licensing Authority</strong>: State Licensing Authority (SLA)"
+   ]
+  },
+  {
+   "t": "h4",
+   "text": "Requirements"
+  },
+  {
+   "t": "ul",
+   "items": [
+    "Manufacturing license (Form-28)",
+    "Device Master File (DMF)",
+    "Plant Master File (PMF)",
+    "ISO 13485 certification (recommended but not always mandatory)",
+    "Basic safety and performance documentation Examples of Class A Devices"
+   ]
+  },
+  {
+   "t": "p",
+   "html": "Device Type Application Risk Profile"
+  },
+  {
+   "t": "p",
+   "html": "Non-contact thermometers Temperature measurement Non-invasive, minimal risk Examination lights Illumination External use only"
+  },
+  {
+   "t": "table",
+   "num": "3.3",
+   "caption": "Requirements",
+   "rows": [
+    [
+     "Device Type",
+     "Application",
+     "Risk Profile"
+    ],
+    [
+     "Hospital furniture",
+     "Patient support",
+     "Mechanical, minimal harm potential"
+    ],
+    [
+     "Bandages (non-sterile)",
+     "Wound covering",
+     "External, passive"
+    ],
+    [
+     "Walking aids",
+     "Mobility support",
+     "Mechanical support"
+    ],
+    [
+     "Manual wheelchairs",
+     "Patient transport",
+     "Mechanical, limited risk"
+    ]
+   ]
+  },
+  {
+   "t": "p",
+   "html": "<strong>Timeline:</strong> 3–6 months for license approval after complete application submission."
+  },
+  {
+   "t": "h3",
+   "text": "★ Class B – Low to Moderate Risk Devices"
+  },
+  {
+   "t": "p",
+   "html": "Definition"
+  },
+  {
+   "t": "p",
+   "html": "Class B devices present low to moderate risk, involving some degree of invasiveness or chronic contact with the body."
+  },
+  {
+   "t": "p",
+   "html": "Regulatory Pathway"
+  },
+  {
+   "t": "ul",
+   "items": [
+    "<strong>Licensing Authority</strong>: State Licensing Authority (SLA)"
+   ]
+  },
+  {
+   "t": "h4",
+   "text": "Enhanced Requirements"
+  },
+  {
+   "t": "ul",
+   "items": [
+    "Manufacturing license with detailed DMF/PMF",
+    "ISO 13485 certification (typically required)",
+    "Biocompatibility data (for devices contacting body)",
+    "Clinical performance data",
+    "Sterilization validation (if applicable)",
+    "Notified Body audit for certain devices"
+   ]
+  },
+  {
+   "t": "h3",
+   "text": "Examples of Class B Devices"
+  },
+  {
+   "t": "p",
+   "html": "Device Type Application Risk Justification"
+  },
+  {
+   "t": "p",
+   "html": "Syringes (sterile) Drug/fluid delivery Short-term invasive, sterility"
+  },
+  {
+   "t": "p",
+   "html": "critical"
+  },
+  {
+   "t": "p",
+   "html": "Nebulizers Respiratory therapy Drug delivery, performance"
+  },
+  {
+   "t": "p",
+   "html": "critical"
+  },
+  {
+   "t": "p",
+   "html": "Suction machines Fluid removal Short-term invasive use"
+  },
+  {
+   "t": "p",
+   "html": "Blood pressure monitors (automated)"
+  },
+  {
+   "t": "p",
+   "html": "Cardiovascular monitoring"
+  },
+  {
+   "t": "p",
+   "html": "Measurement accuracy important"
+  },
+  {
+   "t": "p",
+   "html": "Surgical drapes Sterile barrier Infection control"
+  },
+  {
+   "t": "p",
+   "html": "Thermometers (contact type) Temperature"
+  },
+  {
+   "t": "p",
+   "html": "measurement"
+  },
+  {
+   "t": "p",
+   "html": "Body contact, accuracy needed"
+  },
+  {
+   "t": "p",
+   "html": "Conformity Assessment"
+  },
+  {
+   "t": "p",
+   "html": "Many Class B devices require:"
+  },
+  {
+   "t": "ul",
+   "items": [
+    "Third-party testing laboratory reports",
+    "Notified Body quality system audit",
+    "Technical file review"
+   ]
+  },
+  {
+   "t": "p",
+   "html": "<strong>Timeline:</strong> 6–12 months for initial license with Notified Body involvement."
+  },
+  {
+   "t": "h3",
+   "text": "★ Class C – Moderate to High Risk Devices"
+  },
+  {
+   "t": "p",
+   "html": "Definition"
+  },
+  {
+   "t": "p",
+   "html": "Class C devices present moderate to high risk, typically involving invasive use, contact with critical body systems, or life-supporting functions."
+  },
+  {
+   "t": "p",
+   "html": "Regulatory Pathway"
+  },
+  {
+   "t": "ul",
+   "items": [
+    "<strong>Licensing Authority</strong>: Central Licensing Authority (CDSCO)"
+   ]
+  },
+  {
+   "t": "h4",
+   "text": "Comprehensive Requirements"
+  },
+  {
+   "t": "ul",
+   "items": [
+    "Manufacturing license from CDSCO",
+    "Detailed Device Master File (DMF)",
+    "Detailed Plant Master File (PMF)",
+    "ISO 13485 certification (mandatory)",
+    "Notified Body conformity assessment certificate",
+    "Clinical evaluation report",
+    "Biocompatibility testing per ISO 10993",
+    "Sterilization validation",
+    "Stability data",
+    "Risk management file per ISO 14971"
+   ]
+  },
+  {
+   "t": "h3",
+   "text": "Examples of Class C Devices"
+  },
+  {
+   "t": "table",
+   "num": "3.4",
+   "caption": "Examples of Class C Devices",
+   "rows": [
+    [
+     "Device Type",
+     "Application",
+     "Risk Factors"
+    ],
+    [
+     "Ventilators",
+     "Respiratory support",
+     "Life-supporting, critical function"
+    ],
+    [
+     "Infusion pumps",
+     "Drug delivery",
+     "Dose accuracy, continuous use"
+    ],
+    [
+     "Dialysis machines",
+     "Renal replacement",
+     "Blood contact, life-sustaining"
+    ],
+    [
+     "Anesthesia machines",
+     "Surgical anesthesia",
+     "Life critical, complex function"
+    ],
+    [
+     "| Patient monitors (ICU)",
+     "Vital signs monitoring",
+     "Critical decision-making"
+    ]
+   ]
+  },
+  {
+   "t": "p",
+   "html": "<strong>Clinical Evaluation</strong>"
+  },
+  {
+   "t": "p",
+   "html": "Class C devices typically require:"
+  },
+  {
+   "t": "ul",
+   "items": [
+    "Comprehensive literature review",
+    "Clinical performance data from Indian or comparable populations",
+    "Clinical investigation for novel devices",
+    "Post-market surveillance plan Conformity Assessment",
+    "Notified Body audit of quality management system",
+    "Technical documentation review",
+    "Manufacturing site inspection by CDSCO",
+    "Batch release testing oversight"
+   ]
+  },
+  {
+   "t": "p",
+   "html": "<strong>Timeline:</strong> 12–24 months for initial approval including clinical evaluation and Notified Body certification."
+  },
+  {
+   "t": "h3",
+   "text": "★ Class D – High Risk Devices"
+  },
+  {
+   "t": "p",
+   "html": "Definition"
+  },
+  {
+   "t": "p",
+   "html": "Class D devices represent the highest risk category in India, typically involving implantable devices, life-sustaining functions, or contact with the central circulatory or nervous systems."
+  },
+  {
+   "t": "p",
+   "html": "Maximum Regulatory Oversight"
+  },
+  {
+   "t": "ul",
+   "items": [
+    "<strong>Licensing Authority</strong>: Central Licensing Authority (CDSCO) with Expert Committee review"
+   ]
+  },
+  {
+   "t": "h4",
+   "text": "Most Stringent Requirements"
+  },
+  {
+   "t": "ul",
+   "items": [
+    "All Class C requirements plus:",
+    "Clinical investigation in Indian population (often required)",
+    "Expert Committee evaluation",
+    "Enhanced post-market surveillance",
+    "Device tracking system implementation",
+    "Annual performance reports",
+    "Risk management updates"
+   ]
+  },
+  {
+   "t": "h3",
+   "text": "Examples of Class D Devices"
+  },
+  {
+   "t": "p",
+   "html": "<strong>Device Type Application Critical Risk Factors</strong>"
+  },
+  {
+   "t": "p",
+   "html": "Cardiac pacemakers Heart rhythm management Implantable, life-sustaining"
+  },
+  {
+   "t": "p",
+   "html": "Drug-eluting coronary stents"
+  },
+  {
+   "t": "p",
+   "html": "Coronary artery disease Central circulation, drug"
+  },
+  {
+   "t": "p",
+   "html": "delivery"
+  },
+  {
+   "t": "table",
+   "num": "3.5",
+   "caption": "Examples of Class D Devices",
+   "rows": [
+    [
+     "Device Type",
+     "Application",
+     "Critical Risk Factors"
+    ],
+    [
+     "Heart valves",
+     "Valve replacement",
+     "Central circulation, permanent"
+    ]
+   ]
+  },
+  {
+   "t": "p",
+   "html": "Hip/knee implants Joint replacement Long-term implant, load-"
+  },
+  {
+   "t": "p",
+   "html": "bearing"
+  },
+  {
+   "t": "p",
+   "html": "Intraocular lenses Cataract surgery Permanent ocular implant"
+  },
+  {
+   "t": "p",
+   "html": "Implantable defibrillators Sudden cardiac death"
+  },
+  {
+   "t": "p",
+   "html": "prevention"
+  },
+  {
+   "t": "p",
+   "html": "Neurostimulators Chronic pain, movement"
+  },
+  {
+   "t": "p",
+   "html": "disorders"
+  },
+  {
+   "t": "p",
+   "html": "Life-sustaining, active device"
+  },
+  {
+   "t": "p",
+   "html": "CNS interface, active implant"
+  },
+  {
+   "t": "p",
+   "html": "Clinical Investigation Requirements"
+  },
+  {
+   "t": "p",
+   "html": "For Class D devices, CDSCO often requires:"
+  },
+  {
+   "t": "h4",
+   "text": "Novel Devices"
+  },
+  {
+   "t": "ul",
+   "items": [
+    "Prospective clinical investigation in Indian sites",
+    "Multi-center trials",
+    "Adequate sample size for safety and effectiveness",
+    "Independent data monitoring",
+    "Ethics committee approvals"
+   ]
+  },
+  {
+   "t": "h4",
+   "text": "Devices with International Data"
+  },
+  {
+   "t": "ul",
+   "items": [
+    "Bridge study in Indian population may be accepted",
+    "Demonstration of relevance to Indian patients",
+    "Post-market clinical follow-up mandatory Expert Committee Review"
+   ]
+  },
+  {
+   "t": "p",
+   "html": "High-risk novel Class D devices undergo additional scrutiny:"
+  },
+  {
+   "t": "ul",
+   "items": [
+    "Clinical experts evaluate data",
+    "Technical experts assess design",
+    "Patient representatives may be involved",
+    "Committee recommendations guide approval"
+   ]
+  },
+  {
+   "t": "p",
+   "html": "<strong>Timeline:</strong> 24–48 months including clinical investigation and approval process."
+  },
+  {
+   "t": "fig",
+   "src": "images/ch03_fig06.jpg",
+   "w": 504,
+   "h": 340,
+   "num": "3.6",
+   "caption": "India MDR 2017 Risk Classification Ladder Description: Vertical ladder diagram with four ascending rungs:"
+  },
+  {
+   "t": "h4",
+   "text": "Bottom Rung (Class A - Green)"
+  },
+  {
+   "t": "ul",
+   "items": [
+    "Label: \"Low Risk\"",
+    "Authority: State Licensing Authority (SLA)",
+    "Examples: Thermometers, examination lights",
+    "Timeline: 3–6 months"
+   ]
+  },
+  {
+   "t": "h4",
+   "text": "Second Rung (Class B - Yellow)"
+  },
+  {
+   "t": "ul",
+   "items": [
+    "Label: \"Low to Moderate Risk\"",
+    "Authority: State Licensing Authority (SLA) + NB audit",
+    "Examples: Syringes, nebulizers",
+    "Timeline: 6–12 months"
+   ]
+  },
+  {
+   "t": "h4",
+   "text": "Third Rung (Class C - Orange)"
+  },
+  {
+   "t": "ul",
+   "items": [
+    "Label: \"Moderate to High Risk\"",
+    "Authority: Central Licensing Authority (CDSCO) + NB",
+    "Examples: Ventilators, infusion pumps",
+    "Timeline: 12–24 months"
+   ]
+  },
+  {
+   "t": "h4",
+   "text": "Top Rung (Class D - Red)"
+  },
+  {
+   "t": "ul",
+   "items": [
+    "Label: \"High Risk\"",
+    "Authority: CDSCO + Expert Committee",
+    "Examples: Pacemakers, heart valves",
+    "Timeline: 24–48 months"
+   ]
+  },
+  {
+   "t": "p",
+   "html": "Arrows showing \"Increasing Risk,\" \"Regulatory Complexity,\" and \"Clinical Evidence Requirements\""
+  },
+  {
+   "t": "h3",
+   "text": "Comparative Analysis of Global Classification Systems"
+  },
+  {
+   "t": "p",
+   "html": "Understanding how different regulatory jurisdictions classify devices is essential for manufacturers seeking international market access. While classification philosoph6ies are similar, practical implementation varies <strong>significantly.</strong>"
+  },
+  {
+   "t": "p",
+   "html": "<strong>Table 3.1 – Global </strong>Classification Comparison"
+  },
+  {
+   "t": "p",
+   "html": "Risk Level"
+  },
+  {
+   "t": "p",
+   "html": "India MDR 2017"
+  },
+  {
+   "t": "p",
+   "html": "US FDA"
+  },
+  {
+   "t": "p",
+   "html": "EU Key Similarities Key Differences MDR"
+  },
+  {
+   "t": "p",
+   "html": "<strong>Low Risk </strong>Class A"
+  },
+  {
+   "t": "h3",
+   "text": "Low- Moderate"
+  },
+  {
+   "t": "p",
+   "html": "<strong>Moderate- High</strong>"
+  },
+  {
+   "t": "p",
+   "html": "Class B Class C"
+  },
+  {
+   "t": "p",
+   "html": "<strong>High Risk </strong>Class D"
+  },
+  {
+   "t": "h3",
+   "text": "Licensing Authority Comparison"
+  },
+  {
+   "t": "p",
+   "html": "Jurisdiction Low Risk Authority High Risk Authority Third-Party"
+  },
+  {
+   "t": "p",
+   "html": "Involvement"
+  },
+  {
+   "t": "p",
+   "html": "<strong>India </strong>State Licensing Authority"
+  },
+  {
+   "t": "p",
+   "html": "Central Licensing Authority + Expert Committee"
+  },
+  {
+   "t": "p",
+   "html": "Notified Body (Classes B, C, D)"
+  },
+  {
+   "t": "p",
+   "html": "<strong>USA </strong>FDA (Self-registration) FDA CDRH None (FDA reviews"
+  },
+  {
+   "t": "p",
+   "html": "directly)"
+  },
+  {
+   "t": "p",
+   "html": "<strong>EU </strong>Manufacturer Self- Declaration (Class I basic)"
+  },
+  {
+   "t": "p",
+   "html": "Notified Body Notified Body (all except Class I basic)"
+  },
+  {
+   "t": "h3",
+   "text": "Clinical Evidence Requirements"
+  },
+  {
+   "t": "p",
+   "html": "Risk Category"
+  },
+  {
+   "t": "p",
+   "html": "India USA EU"
+  },
+  {
+   "t": "p",
+   "html": "<strong>Low Risk </strong>Basic documentation Minimal Technical file"
+  },
+  {
+   "t": "h3",
+   "text": "Low- Moderate"
+  },
+  {
+   "t": "p",
+   "html": "Performance data, sometimes clinical"
+  },
+  {
+   "t": "p",
+   "html": "Bench + limited clinical"
+  },
+  {
+   "t": "p",
+   "html": "Literature + performance"
+  },
+  {
+   "t": "h3",
+   "text": "Moderate- High"
+  },
+  {
+   "t": "p",
+   "html": "Clinical evaluation report Clinical data or"
+  },
+  {
+   "t": "p",
+   "html": "substantial equivalence"
+  },
+  {
+   "t": "p",
+   "html": "Clinical investigation often needed"
+  },
+  {
+   "t": "p",
+   "html": "<strong>High Risk </strong>Clinical investigation in"
+  },
+  {
+   "t": "p",
+   "html": "India often required"
+  },
+  {
+   "t": "p",
+   "html": "Prospective clinical trials (PMA)"
+  },
+  {
+   "t": "p",
+   "html": "Prospective trials for implants mandatory"
+  },
+  {
+   "t": "h3",
+   "text": "Timeline Comparison"
+  },
+  {
+   "t": "p",
+   "html": "Device Class India USA EU"
+  },
+  {
+   "t": "p",
+   "html": "<strong>Low Risk </strong>3–6 months Days to weeks 1–3 months"
+  },
+  {
+   "t": "p",
+   "html": "<strong>Low-Moderate </strong>6–12 months 3–6 months (510(k)) 6–12 months"
+  },
+  {
+   "t": "p",
+   "html": "<strong>Moderate-High </strong>12–24 months 3–6 months (510(k)) 9–18 months"
+  },
+  {
+   "t": "p",
+   "html": "<strong>High Risk </strong>24–48 months 1–3 years (PMA) 18–36 months"
+  },
+  {
+   "t": "p",
+   "html": "<strong>Note:</strong> Timelines include clinical investigation periods where applicable."
+  },
+  {
+   "t": "h3",
+   "text": "Post-Market Surveillance Comparison"
+  },
+  {
+   "t": "p",
+   "html": "Requirement India USA EU"
+  },
+  {
+   "t": "h3",
+   "text": "Adverse Event Reporting"
+  },
+  {
+   "t": "p",
+   "html": "Materiovigilance Programme (MvPI) – 15 days"
+  },
+  {
+   "t": "p",
+   "html": "MDR – 30 days"
+  },
+  {
+   "t": "p",
+   "html": "Annual for PMA"
+  },
+  {
+   "t": "p",
+   "html": "Vigilance system – 10- 15 days"
+  },
+  {
+   "t": "p",
+   "html": "PSUR for IIb/III"
+  },
+  {
+   "t": "p",
+   "html": "<strong>Periodic Reports </strong>Annual for Class C/D"
+  },
+  {
+   "t": "p",
+   "html": "devices"
+  },
+  {
+   "t": "p",
+   "html": "(annually or more frequently)"
+  },
+  {
+   "t": "h3",
+   "text": "Post-Market Studies"
+  },
+  {
+   "t": "p",
+   "html": "CDSCO may require FDA may require"
+  },
+  {
+   "t": "p",
+   "html": "as PMA condition"
+  },
+  {
+   "t": "p",
+   "html": "PMCF mandatory for high risk"
+  },
+  {
+   "t": "p",
+   "html": "<strong>Device Tracking </strong>Class D devices Class III life-"
+  },
+  {
+   "t": "p",
+   "html": "sustaining"
+  },
+  {
+   "t": "p",
+   "html": "UDI-based tracking"
+  },
+  {
+   "t": "h3",
+   "text": "Practical Implications for Manufacturers"
+  },
+  {
+   "t": "p",
+   "html": "<strong>Global Market Strategy Considerations:</strong>"
+  },
+  {
+   "t": "ul",
+   "items": [
+    "<strong>Start with Stringent Market</strong>: Many companies pursue EU MDR or FDA approval first, then leverage data for other markets.",
+    "<strong>Clinical Data Harmonization</strong>: Design clinical studies to meet requirements of multiple jurisdictions simultaneously when possible.",
+    "<strong>Classification Differences</strong>: A device may fall into different classes across jurisdictions:",
+    "Example: Blood glucose meters",
+    "FDA: Class II (510(k) required)",
+    "EU MDR: Often Class IIb",
+    "India: Class C",
+    "<strong>Documentation Synergies</strong>: Technical files prepared for EU MDR can often be adapted for India DMF/PMF with additions.",
+    "<strong>Notified Body Selection</strong>: For India and EU, selecting an experienced Notified Body familiar with device type accelerates approval."
+   ]
+  },
+  {
+   "t": "h2",
+   "text": "Device Classification Examples and Case Studies",
+   "num": "3.3"
+  },
+  {
+   "t": "p",
+   "html": "Practical application of classification principles through real-world examples enhances understanding. The following examples illustrate how classification criteria are applied."
+  },
+  {
+   "t": "p",
+   "html": "Example 3.1 – Digital Thermometer"
+  },
+  {
+   "t": "p",
+   "html": "<strong>Device Description</strong>: Non-contact infrared thermometer for measuring body temperature."
+  },
+  {
+   "t": "h4",
+   "text": "Classification Analysis"
+  },
+  {
+   "t": "p",
+   "html": "Criterion Assessment"
+  },
+  {
+   "t": "p",
+   "html": "<strong>Invasiveness </strong>Non-invasive (no body contact)"
+  },
+  {
+   "t": "p",
+   "html": "<strong>Duration </strong>Transient (seconds)"
+  },
+  {
+   "t": "p",
+   "html": "<strong>Body System </strong>General (surface measurement)"
+  },
+  {
+   "t": "p",
+   "html": "<strong>Technology </strong>Electronic measuring device"
+  },
+  {
+   "t": "p",
+   "html": "<strong>Intended Purpose </strong>Diagnostic screening (low clinical consequence if inaccurate)"
+  },
+  {
+   "t": "h4",
+   "text": "Classification Outcomes"
+  },
+  {
+   "t": "ul",
+   "items": [
+    "<strong>India</strong>: Class A (Low risk, non-invasive)",
+    "<strong>FDA</strong>: Class II (Measuring function requires controls; many models 510(k) exempt)",
+    "<strong>EU MDR</strong>: Class I (Im) (Measuring function requires Notified Body involvement)"
+   ]
+  },
+  {
+   "t": "p",
+   "html": "<strong>Rationale</strong>: While the device measures a physiological parameter, the clinical consequences of inaccuracy are minimal. Temperature measurement guides but does not solely determine critical treatment decision."
+  },
+  {
+   "t": "p",
+   "html": "Example 3.2 – Blood Glucose Monitoring System"
+  },
+  {
+   "t": "p",
+   "html": "<strong>Device Description</strong>: Self-monitoring blood glucose meter with test strips for diabetes management."
+  },
+  {
+   "t": "h4",
+   "text": "Classification Analysis"
+  },
+  {
+   "t": "p",
+   "html": "Criterion Assessment"
+  },
+  {
+   "t": "p",
+   "html": "<strong>Invasiveness </strong>Minimally invasive (capillary blood sample)"
+  },
+  {
+   "t": "p",
+   "html": "<strong>Duration </strong>Transient (single measurement)"
+  },
+  {
+   "t": "p",
+   "html": "<strong>Body System </strong>Systemic (glucose metabolism)"
+  },
+  {
+   "t": "p",
+   "html": "<strong>Technology </strong>Electrochemical sensor + software"
+  },
+  {
+   "t": "p",
+   "html": "<strong>Intended Purpose </strong>Critical for diabetes management decisions (medication dosing)"
+  },
+  {
+   "t": "h4",
+   "text": "Classification Outcomes"
+  },
+  {
+   "t": "ul",
+   "items": [
+    "<strong>India</strong>: Class C (Moderate-high risk; inaccurate readings affect medication dosing)",
+    "<strong>FDA</strong>: Class II (Special controls for accuracy; 510(k) required)",
+    "<strong>EU MDR</strong>: Class IIb (In vitro diagnostic aspect + clinical decision impact)"
+   ]
+  },
+  {
+   "t": "p",
+   "html": "<strong>Rationale</strong>: Although minimally invasive, glucose meters directly influence critical treatment decisions (insulin dosing). Inaccurate readings can lead to hypoglycemia or hyperglycemia with serious health consequences."
+  },
+  {
+   "t": "p",
+   "html": "Example 3.3 – Implantable Cardiac Pacemaker"
+  },
+  {
+   "t": "p",
+   "html": "<strong>Device Description</strong>: Permanent implantable pacemaker for managing cardiac arrhythmias."
+  },
+  {
+   "t": "h4",
+   "text": "Classification Analysis"
+  },
+  {
+   "t": "p",
+   "html": "Criterion Assessment"
+  },
+  {
+   "t": "p",
+   "html": "<strong>Invasiveness </strong>Surgically implanted"
+  },
+  {
+   "t": "p",
+   "html": "<strong>Duration </strong>Long-term (years to lifetime) <strong>Body System </strong>Central circulatory system (heart) <strong>Technology </strong>Active implantable electronic device"
+  },
+  {
+   "t": "p",
+   "html": "<strong>Intended Purpose </strong>Life-sustaining (prevents bradycardia-related death)"
+  },
+  {
+   "t": "h4",
+   "text": "Classification Outcomes"
+  },
+  {
+   "t": "ul",
+   "items": [
+    "<strong>India</strong>: Class D (Highest risk; life-sustaining implant)",
+    "<strong>FDA</strong>: Class III (PMA required; life-sustaining device)",
+    "<strong>EU MDR</strong>: Class III (Active implantable, life-supporting)"
+   ]
+  },
+  {
+   "t": "p",
+   "html": "<strong>Rationale</strong>: Pacemakers represent the highest risk category due to:"
+  },
+  {
+   "t": "ul",
+   "items": [
+    "Life-sustaining function (device failure can cause death)",
+    "Long-term implantation in central circulation",
+    "Active electronic function requiring battery and complex algorithms",
+    "Invasive implantation procedure",
+    "Limited reversibility"
+   ]
+  },
+  {
+   "t": "p",
+   "html": "Example 3.4 – Surgical Sutures (Non-Absorbable)"
+  },
+  {
+   "t": "p",
+   "html": "<strong>Device Description</strong>: Non-absorbable synthetic sutures for tissue closure."
+  },
+  {
+   "t": "h4",
+   "text": "Classification Analysis"
+  },
+  {
+   "t": "p",
+   "html": "Criterion Assessment"
+  },
+  {
+   "t": "p",
+   "html": "<strong>Invasiveness </strong>Invasive (tissue penetration)"
+  },
+  {
+   "t": "p",
+   "html": "<strong>Duration </strong>Long-term (permanent until removal) <strong>Body System </strong>Various (depends on surgical site) <strong>Technology </strong>Passive material"
+  },
+  {
+   "t": "p",
+   "html": "<strong>Intended Purpose </strong>Wound closure (critical for healing)"
+  },
+  {
+   "t": "h4",
+   "text": "Classification Outcomes"
+  },
+  {
+   "t": "ul",
+   "items": [
+    "<strong>India</strong>: Class B or C (depends on anatomical location)",
+    "<strong>FDA</strong>: Class II or III (depends on anatomical location and indications)",
+    "<strong>EU MDR</strong>: Class IIa or IIb (depends on anatomical location)"
+   ]
+  },
+  {
+   "t": "p",
+   "html": "<strong>Rationale</strong>: Classification varies based on surgical site:"
+  },
+  {
+   "t": "ul",
+   "items": [
+    "<strong>Lower risk</strong>: Superficial tissue closure (skin)",
+    "<strong>Higher risk</strong>: Deep tissue, cardiovascular applications Example 3.5 – Software-Based AI Diagnostic Tool"
+   ]
+  },
+  {
+   "t": "p",
+   "html": "<strong>Device Description</strong>: AI algorithm that analyzes chest X-rays to detect pneumonia."
+  },
+  {
+   "t": "h4",
+   "text": "Classification Analysis"
+  },
+  {
+   "t": "p",
+   "html": "Criterion Assessment"
+  },
+  {
+   "t": "p",
+   "html": "<strong>Invasiveness </strong>Non-invasive (software only)"
+  },
+  {
+   "t": "p",
+   "html": "<strong>Duration </strong>N/A (software)"
+  },
+  {
+   "t": "p",
+   "html": "<strong>Body System </strong>Respiratory (diagnostic information)"
+  },
+  {
+   "t": "p",
+   "html": "<strong>Technology </strong>Software as a Medical Device (SaMD)"
+  },
+  {
+   "t": "p",
+   "html": "<strong>Intended Purpose </strong>Diagnostic decision support (influences treatment)"
+  },
+  {
+   "t": "h4",
+   "text": "Classification Outcomes"
+  },
+  {
+   "t": "ul",
+   "items": [
+    "<strong>India</strong>: Class B or C (depending on whether it informs or drives decisions)",
+    "<strong>FDA</strong>: Class II or III (depending on clinical significance per SaMD framework)",
+    "<strong>EU MDR</strong>: Class IIa or IIb (Rule 11 – diagnostic software)"
+   ]
+  },
+  {
+   "t": "p",
+   "html": "<strong>Rationale</strong>: SaMD classification depends heavily on:"
+  },
+  {
+   "t": "ul",
+   "items": [
+    "<strong>Clinical significance of information</strong>: Does it inform, drive, or diagnose?",
+    "<strong>Clinical situation</strong>: Screening vs. critical care",
+    "<strong>Consequences of incorrect information</strong>: Missed pneumonia diagnosis could delay treatment"
+   ]
+  },
+  {
+   "t": "fig",
+   "src": "images/ch03_fig07.jpg",
+   "w": 500,
+   "h": 354,
+   "num": "3.7",
+   "caption": "Classification Decision Tree Example Description: Flowchart for classifying a generic medical device:"
+  },
+  {
+   "t": "p",
+   "html": "<strong>Start</strong>: Is device invasive?"
+  },
+  {
+   "t": "ul",
+   "items": [
+    "<strong>No </strong>→ Non-invasive → Duration of contact? → Transient? → Class I/A",
+    "<strong>Yes </strong>→ Invasive → Duration?",
+    "Transient → Class I/A or II/B",
+    "Short-term → Class II/B or IIa",
+    "Long-term → Body system affected?",
+    "Peripheral → Class IIa/IIb or B/C",
+    "Central circulation/CNS → Class III or D"
+   ]
+  },
+  {
+   "t": "p",
+   "html": "Each decision point has clear YES/NO branches leading to final classification."
+  },
+  {
+   "t": "box",
+   "kind": "case",
+   "label": "Case Study 3.1",
+   "title": "Why Is a Ventilator Class C/D?",
+   "blocks": [
+    {
+     "t": "p",
+     "html": "Background"
+    },
+    {
+     "t": "p",
+     "html": "Mechanical ventilators provide respiratory support to patients unable to breathe adequately on their own. Understanding ventilator classification illustrates risk-based regulatory logic."
+    },
+    {
+     "t": "p",
+     "html": "Device Description"
+    },
+    {
+     "t": "p",
+     "html": "<strong>Function</strong>: Delivers controlled breaths to patients, managing:"
+    },
+    {
+     "t": "ul",
+     "items": [
+      "Tidal volume",
+      "Respiratory rate",
+      "Oxygen concentration",
+      "Pressure limits"
+     ]
+    },
+    {
+     "t": "p",
+     "html": "<strong>Technology</strong>: Complex electronic system with:"
+    },
+    {
+     "t": "ul",
+     "items": [
+      "Microprocessor control",
+      "Multiple sensors",
+      "Alarm systems",
+      "Patient interface circuits Risk Analysis"
+     ]
+    },
+    {
+     "t": "p",
+     "html": "<strong>Life-Sustaining Function: </strong>Ventilators directly support life in patients unable to breathe independently. Device failure or malfunction can result in:"
+    },
+    {
+     "t": "ul",
+     "items": [
+      "Hypoxia (oxygen deprivation)",
+      "Hypercapnia (CO₂ retention)",
+      "Barotrauma (pressure injury)",
+      "Death within minutes"
+     ]
+    },
+    {
+     "t": "p",
+     "html": "<strong>Complex Technology: </strong>Ventilators involve sophisticated technology with multiple potential failure modes:"
+    },
+    {
+     "t": "ul",
+     "items": [
+      "Software errors in control algorithms",
+      "Mechanical valve failures",
+      "Sensor inaccuracies",
+      "Power supply interruptions",
+      "Gas delivery malfunctions"
+     ]
+    },
+    {
+     "t": "p",
+     "html": "<strong>Critical Patient Population: </strong>Ventilated patients are typically:"
+    },
+    {
+     "t": "ul",
+     "items": [
+      "Critically ill",
+      "Unable to communicate distress",
+      "Dependent on continuous monitoring",
+      "Vulnerable to rapid deterioration"
+     ]
+    },
+    {
+     "t": "p",
+     "html": "<strong>Invasive Interface: </strong>Ventilation requires:"
+    },
+    {
+     "t": "ul",
+     "items": [
+      "Endotracheal intubation (invasive airway)",
+      "Direct connection to respiratory system",
+      "Sealed patient circuit (infection risk) Regulatory Requirements"
+     ]
+    },
+    {
+     "t": "h4",
+     "text": "Testing Requirements"
+    },
+    {
+     "t": "ul",
+     "items": [
+      "Electrical safety (IEC 60601-1)",
+      "Electromagnetic compatibility",
+      "Performance verification (volume/pressure accuracy)",
+      "Alarm system validation",
+      "Software validation (IEC 62304)",
+      "Usability testing",
+      "Biocompatibility of patient-contacting components"
+     ]
+    },
+    {
+     "t": "h4",
+     "text": "Clinical Evidence"
+    },
+    {
+     "t": "ul",
+     "items": [
+      "Performance data in target patient populations",
+      "Comparison to existing ventilators",
+      "Safety data from clinical use",
+      "Post-market surveillance results"
+     ]
+    },
+    {
+     "t": "h4",
+     "text": "Quality Management"
+    },
+    {
+     "t": "ul",
+     "items": [
+      "ISO 13485 certification mandatory",
+      "Design controls rigorously enforced",
+      "Risk management per ISO 14971",
+      "Manufacturing process validation",
+      "Supplier controls for critical components Classification Outcomes"
+     ]
+    },
+    {
+     "t": "p",
+     "html": "<strong>India</strong>: Class C or D (depending on sophistication and patient population)"
+    },
+    {
+     "t": "ul",
+     "items": [
+      "Class C: General use ventilators",
+      "Class D: High-frequency or specialized ventilators"
+     ]
+    },
+    {
+     "t": "p",
+     "html": "<strong>FDA</strong>: Class II (510(k) required with comprehensive testing) or Class III (PMA if novel technology)"
+    },
+    {
+     "t": "ul",
+     "items": [
+      "Most ventilators: Class II with special controls",
+      "Life-supporting novel ventilators: May require PMA"
+     ]
+    },
+    {
+     "t": "p",
+     "html": "<strong>EU MDR</strong>: Class IIb (Moderate-high risk, life-supporting)"
+    },
+    {
+     "t": "ul",
+     "items": [
+      "Comprehensive technical documentation",
+      "Clinical evaluation mandatory",
+      "Notified Body conformity assessment"
+     ]
+    }
+   ]
+  },
+  {
+   "t": "h3",
+   "text": "Key Lesson"
+  },
+  {
+   "t": "p",
+   "html": "Ventilator classification as moderate-high to high risk is justified because:"
+  },
+  {
+   "t": "ul",
+   "items": [
+    "<strong>Failure consequence is catastrophic </strong>– Death within minutes",
+    "<strong>Complex technology with multiple failure modes</strong>",
+    "<strong>Critical patient population</strong>",
+    "<strong>Invasive respiratory connection</strong>",
+    "<strong>Continuous life-support function</strong>"
+   ]
+  },
+  {
+   "t": "p",
+   "html": "This case study demonstrates why risk-based classification places life-supporting devices in higher regulatory categories despite being non-implantable."
+  },
+  {
+   "t": "box",
+   "kind": "insight",
+   "label": "Industry Insight 3.1",
+   "title": "",
+   "blocks": [
+    {
+     "t": "p",
+     "html": "Import Dependency and Manufacturing Opportunities in India"
+    },
+    {
+     "t": "p",
+     "html": "India's medical device market presents a unique landscape characterized by significant import dependency, particularly for high-risk devices."
+    },
+    {
+     "t": "h4",
+     "text": "Current Market Statistics"
+    },
+    {
+     "t": "ul",
+     "items": [
+      "Over <strong>90% of Class C and D devices </strong>in India are imported",
+      "Primary import sources: USA, Germany, China, Japan",
+      "Domestic manufacturers dominate Class A and B categories",
+      "Growing emphasis on \"Make in India\" initiatives"
+     ]
+    },
+    {
+     "t": "h4",
+     "text": "Reasons for Import Dependency"
+    },
+    {
+     "t": "ul",
+     "items": [
+      "<strong>Technology Gap</strong>: High-risk devices require advanced manufacturing capabilities, precision engineering, and extensive R&amp;D infrastructure not widely available domestically.",
+      "<strong>Clinical Data Requirements</strong>: Class C/D devices need comprehensive clinical evidence, often requiring multi-center trials that are resource-intensive.",
+      "<strong>Capital Investment</strong>: Manufacturing facilities for implants and life-supporting devices require substantial investment in:",
+      "Cleanroom infrastructure",
+      "Specialized equipment",
+      "Skilled workforce",
+      "Quality systems",
+      "<strong>Regulatory Expertise</strong>: Complex regulatory pathways for high-risk devices demand specialized knowledge and experience."
+     ]
+    },
+    {
+     "t": "h4",
+     "text": "Opportunities for Growth"
+    },
+    {
+     "t": "p",
+     "html": "<strong>Government Initiatives:</strong>"
+    },
+    {
+     "t": "ul",
+     "items": [
+      "<strong>Production Linked Incentive (PLI) Scheme</strong>: Financial incentives for domestic manufacturing",
+      "<strong>MedTech Parks</strong>: Dedicated infrastructure zones with regulatory support",
+      "<strong>Skill Development Programs</strong>: Training workforce in medical device technologies",
+      "<strong>Regulatory Streamlining</strong>: Improved timelines and transparency in approval processes"
+     ]
+    },
+    {
+     "t": "h4",
+     "text": "Emerging Domestic Capabilities"
+    },
+    {
+     "t": "ul",
+     "items": [
+      "Increasing number of ISO 13485-certified manufacturers",
+      "Growing R&amp;D capabilities in academic and industrial settings",
+      "Notified Bodies establishing in India for conformity assessment",
+      "Clinical trial infrastructure development"
+     ]
+    },
+    {
+     "t": "h4",
+     "text": "Market Potential"
+    },
+    {
+     "t": "ul",
+     "items": [
+      "India's medical device market projected to reach <strong>USD 50 billion by 2030</strong>",
+      "Growing domestic demand driven by:",
+      "Expanding healthcare infrastructure",
+      "Aging population",
+      "Increasing burden of chronic diseases",
+      "Health insurance coverage expansion"
+     ]
+    },
+    {
+     "t": "h4",
+     "text": "Career Implications"
+    },
+    {
+     "t": "p",
+     "html": "This import-export dynamic creates significant employment opportunities in:"
+    },
+    {
+     "t": "ul",
+     "items": [
+      "<strong>Regulatory Affairs</strong>: Navigating import licensing, international approvals",
+      "<strong>Supply Chain Management</strong>: Import logistics, distribution",
+      "<strong>Quality Assurance</strong>: Conformity assessment, auditing",
+      "<strong>Clinical Research</strong>: Conducting bridging studies, PMCF",
+      "<strong>Manufacturing Engineering</strong>: Building domestic production capabilities",
+      "<strong>Business Development</strong>: Partnering strategies, market access"
+     ]
+    },
+    {
+     "t": "p",
+     "html": "Students entering the medical device field should understand this landscape, as it shapes career pathways and industry needs."
+    }
+   ]
+  },
+  {
+   "t": "h3",
+   "text": "US FDA System"
+  },
+  {
+   "t": "ul",
+   "items": [
+    "Three classes (I, II, III)",
+    "Class I: General controls, mostly 510(k) exempt",
+    "Class II: 510(k) clearance, substantial equivalence",
+    "Class III: PMA with clinical trials"
+   ]
+  },
+  {
+   "t": "h3",
+   "text": "EU MDR System"
+  },
+  {
+   "t": "ul",
+   "items": [
+    "Four classes (I, IIa, IIb, III)",
+    "Subcategories for Class I (Is, Im, Ir)",
+    "Notified Body involvement for most devices",
+    "Stringent clinical evidence requirements"
+   ]
+  },
+  {
+   "t": "h3",
+   "text": "India MDR 2017 System"
+  },
+  {
+   "t": "ul",
+   "items": [
+    "Four classes (A, B, C, D)",
+    "State vs. Central licensing authority",
+    "IMDRF-aligned classification rules",
+    "Notified Body assessment for Classes B, C, D"
+   ]
+  },
+  {
+   "t": "h2",
+   "text": "Comparative Analysis",
+   "num": "3.4"
+  },
+  {
+   "t": "ul",
+   "items": [
+    "Similar risk philosophies across jurisdictions",
+    "Variations in approval pathways and timelines",
+    "Clinical evidence requirements escalate with risk",
+    "Post-market obligations tied to classification"
+   ]
+  },
+  {
+   "t": "h2",
+   "text": "Practical Applications",
+   "num": "3.5"
+  },
+  {
+   "t": "ul",
+   "items": [
+    "Classification determines market strategy",
+    "Multiple factors influence final classification",
+    "Same device may have different classes in different regions",
+    "Understanding classification essential for regulatory planning"
+   ]
+  },
+  {
+   "t": "h4",
+   "text": "Skills Developed"
+  },
+  {
+   "t": "p",
+   "html": "Upon completing this chapter, learners should be able to:"
+  },
+  {
+   "t": "ul",
+   "items": [
+    "Assess device risk profiles",
+    "Determine appropriate classification across jurisdictions",
+    "Understand regulatory pathway implications",
+    "Plan regulatory strategies based on classification",
+    "Communicate classification rationale clearly"
+   ]
+  },
+  {
+   "t": "h4",
+   "text": "Next Steps"
+  },
+  {
+   "t": "p",
+   "html": "The foundation established in this chapter on classification will be essential as we progress to:"
+  },
+  {
+   "t": "ul",
+   "items": [
+    "<strong>Chapter 4</strong>: Device lifecycle and development processes",
+    "<strong>Chapter 12</strong>: Regulatory requirements and approval pathways",
+    "<strong>Chapter 14</strong>: Clinical evaluation and clinical trials"
+   ]
+  },
+  {
+   "t": "p",
+   "html": "Understanding classification is not merely an academic exercise—it is a practical skill that directly impacts:"
+  },
+  {
+   "t": "ul",
+   "items": [
+    "Device development timelines",
+    "Resource allocation for testing and clinical studies",
+    "Market access strategies",
+    "Post-market compliance obligations",
+    "Career opportunities in regulatory affairs"
+   ]
+  }
+ ],
+ "glossary": [
+  [
+   "510(k)",
+   "FDA premarket notification process for demonstrating substantial equivalence to a legally marketed predicate device (Class II and some Class I devices)."
+  ],
+  [
+   "CE Marking",
+   "European conformity marking indicating device compliance with applicable EU MDR requirements and authorization for market placement in European Economic Area."
+  ],
+  [
+   "Central Licensing Authority (CLA)",
+   "CDSCO authority responsible for licensing Class C and D medical devices in India."
+  ],
+  [
+   "Classification",
+   "Systematic categorization of medical devices based on risk to determine appropriate regulatory controls."
+  ],
+  [
+   "Conformity Assessment",
+   "Process of evaluating whether a device meets specified requirements, typically conducted by Notified Bodies in EU and India."
+  ],
+  [
+   "CDSCO",
+   "Central Drugs Standard Control Organization; India's national regulatory authority for medical devices and pharmaceuticals."
+  ],
+  [
+   "Device Master File (DMF)",
+   "Comprehensive document containing device description, specifications, manufacturing processes, and safety/performance data; required for India licensing."
+  ],
+  [
+   "Duration of Contact",
+   "Length of time device remains in contact with patient's body; key classification criterion (transient, short-term, long-term)."
+  ],
+  [
+   "EU MDR",
+   "European Union Medical Device Regulation (2017/745); comprehensive regulatory framework replacing previous Medical Device Directive."
+  ],
+  [
+   "FDA",
+   "United States Food and Drug Administration; federal agency responsible for medical device regulation through Center for Devices and Radiological Health (CDRH)."
+  ],
+  [
+   "Intended Purpose",
+   "Manufacturer's stated objective for device use; determines device classification and applicable regulatory requirements."
+  ],
+  [
+   "Invasiveness",
+   "Degree to which device penetrates body surfaces or enters body cavities; fundamental classification criterion."
+  ],
+  [
+   "ISO 13485",
+   "International standard for medical device quality management systems; required for manufacturing medical devices."
+  ],
+  [
+   "Notified Body (NB)",
+   "Independent organization designated by competent authority to conduct conformity assessments under EU MDR or India MDR."
+  ],
+  [
+   "Plant Master File (PMF)",
+   "Document describing manufacturing facility, equipment, quality systems, and personnel qualifications; required for India licensing."
+  ],
+  [
+   "Premarket Approval (PMA)",
+   "FDA's most stringent premarket review process, required for Class III devices, involving comprehensive clinical and technical data evaluation."
+  ],
+  [
+   "Risk-Based Classification",
+   "Approach to device categorization based on potential harm to patients, considering multiple risk factors."
+  ],
+  [
+   "Software as a Medical Device (SaMD)",
+   "Software intended for medical purposes that operates independently of hardware medical devices; subject to risk-based classification."
+  ],
+  [
+   "State Licensing Authority (SLA)",
+   "State-level regulatory authority in India responsible for licensing Class A and B medical devices."
+  ],
+  [
+   "Substantial Equivalence",
+   "FDA concept demonstrating new device (Class II) is as safe and effective as legally marketed predicate device; basis for 510(k) clearance."
+  ]
+ ],
+ "recap_intro": "Essential Takeaways:",
+ "recap_items": [
+  "<strong>Key Concepts Covered</strong>",
+  "<strong>Classification Principles</strong>",
+  "Risk-based approach universally adopted",
+  "Criteria: invasiveness, duration, body system, technology, intended purpose",
+  "Higher risk → greater regulatory scrutiny",
+  "Classification is <strong>risk-based </strong>and determines regulatory pathway",
+  "<strong>Three major systems</strong>: FDA (I/II/III), EU MDR (I/IIa/IIb/III), India (A/B/C/D)",
+  "<strong>Key criteria</strong>: Invasiveness, duration, body system, technology, intended use",
+  "<strong>Higher risk </strong>= more stringent requirements (clinical data, approval time, cost)",
+  "<strong>Classification affects</strong>",
+  "Market approval pathway",
+  "Testing requirements",
+  "Clinical evidence needs",
+  "Post-market obligations",
+  "Manufacturing controls",
+  "Understanding classification is <strong>essential for</strong>:",
+  "Regulatory strategy",
+  "Product development",
+  "Market access planning",
+  "Compliance management",
+  "Career success in medical devices"
+ ],
+ "references": [
+  {
+   "group": null,
+   "text": "Central Drugs Standard Control Organization (CDSCO). (2017). Medical Device Rules, 2017. Government of India, Ministry of Health and Family Welfare."
+  },
+  {
+   "group": null,
+   "text": "European Parliament and Council. (2017). Regulation (EU) 2017/745 on Medical Devices (MDR). Official Journal of the European Union."
+  },
+  {
+   "group": null,
+   "text": "International Medical Device Regulators Forum (IMDRF). IMDRF Guidance Documents on Medical Device Classification. Available at: http://www.imdrf.org"
+  },
+  {
+   "group": null,
+   "text": "U.S. Food and Drug Administration. Code of Federal Regulations, Title 21: Food and Drugs, Part 860 – Medical Device Classification Procedures. U.S. Government Publishing Office."
+  },
+  {
+   "group": null,
+   "text": "U.S. Food and Drug Administration. Device Classification Database. Available at: https://www.fda.gov/medical-devices"
+  },
+  {
+   "group": null,
+   "text": "International Organization for Standardization. (2016). ISO 13485:2016 – Medical Devices – Quality Management Systems."
+  },
+  {
+   "group": null,
+   "text": "International Organization for Standardization. (2019). ISO 14971:2019 – Medical Devices – Application of Risk Management to Medical Devices."
+  },
+  {
+   "group": null,
+   "text": "European Commission. MEDDEV 2.4/1 Rev. 9 – Guidelines on Medical Device Classification. (2016)."
+  },
+  {
+   "group": null,
+   "text": "U.S. Food and Drug Administration. Classify Your Medical Device. FDA Guidance Document. Available at: https://www.fda.gov/medical-devices/overview-device-regulation/classify-your-medical-device"
+  },
+  {
+   "group": null,
+   "text": "World Health Organization (WHO). Medical Device Regulations: Global Overview and Guiding Principles. (2003)."
+  }
+ ]
+}

@@ -1,0 +1,2637 @@
+{
+ "num": 7,
+ "id": "ch07",
+ "title": "Materials Used in Medical Devices",
+ "subtitle": "Metals • Polymers • Ceramics • Composites • Biomaterials • Biocompatibility • ISO 10993",
+ "overview": [
+  "Materials science forms the foundation of medical device design and performance. The selection of appropriate materials directly impacts device safety, efficacy, biocompatibility, and longevity. This chapter provides comprehensive coverage of material categories used in medical devices, including metals, polymers, ceramics, composites, and emerging biomaterials. The chapter examines material properties, selection criteria, applications, advantages, limitations, and critical biocompatibility evaluation requirements under ISO 10993. Understanding material science is essential for engineers, quality professionals, regulatory specialists, and R&amp;D personnel involved in medical device development."
+ ],
+ "clos": [
+  "Identify the major material categories used in medical device manufacturing and their distinguishing characteristics.",
+  "Describe the mechanical, chemical, and biological properties of metals, polymers, ceramics, and composites used in medical applications.",
+  "Explain how material selection impacts device performance, safety, and patient outcomes.",
+  "Interpret ISO 10993 biocompatibility testing requirements and evaluation frameworks.",
+  "Classify medical devices based on their primary material composition and intended use.",
+  "Evaluate material suitability for specific medical applications considering mechanical requirements, biocompatibility, and sterilization compatibility.",
+  "Recognize material-related risks and implement appropriate control measures during device development.",
+  "Apply material selection criteria to real-world device design challenges."
+ ],
+ "keywords": [
+  "Biomaterial",
+  "biocompatibility",
+  "stainless steel",
+  "titanium alloy",
+  "polymer",
+  "polyethylene",
+  "polyurethane",
+  "silicone",
+  "ceramic",
+  "hydroxyapatite",
+  "composite material",
+  "ISO 10993",
+  "cytotoxicity",
+  "hemocompatibility",
+  "mechanical properties",
+  "corrosion resistance"
+ ],
+ "roadmap": [
+  "Introduction to biomaterials",
+  "Material property requirements",
+  "Metallic biomaterials",
+  "Polymeric biomaterials",
+  "Ceramic biomaterials",
+  "Composite materials",
+  "Natural biomaterials",
+  "Material selection criteria",
+  "ISO 10993 biocompatibility framework",
+  "Material testing requirements",
+  "Device-material examples",
+  "Case studies",
+  "Chapter summary",
+  "Glossary"
+ ],
+ "blocks": [
+  {
+   "t": "ul",
+   "items": [
+    "References"
+   ]
+  },
+  {
+   "t": "h2",
+   "text": "Introduction to Biomaterials",
+   "num": "7.1"
+  },
+  {
+   "t": "ul",
+   "items": [
+    "<strong>Definition and Scope</strong>"
+   ]
+  },
+  {
+   "t": "p",
+   "html": "A <strong>biomaterial </strong>is defined as any material, natural or synthetic, that comprises whole or part of a living structure or biomedical device which performs, augments, or replaces a natural function. Biomaterials are engineered to interact with biological systems for medical purposes—either therapeutic (treating, augmenting, repairing, or replacing a tissue function) or diagnostic."
+  },
+  {
+   "t": "h4",
+   "text": "Key Characteristics of Biomaterials"
+  },
+  {
+   "t": "p",
+   "html": "Biomaterials used in medical devices must exhibit:"
+  },
+  {
+   "t": "ul",
+   "items": [
+    "<strong>Biocompatibility</strong>: Non-toxic and non-inflammatory interaction with biological tissues",
+    "<strong>Chemical stability</strong>: Resistance to degradation in physiological environments",
+    "<strong>Sterilizability</strong>: Ability to withstand sterilization processes without property degradation",
+    "<strong>Non-toxicity</strong>: No release of harmful substances",
+    "<strong>Appropriate mechanical properties</strong>: Matching or complementing tissue characteristics",
+    "<strong>Corrosion/degradation resistance</strong>: Maintaining integrity throughout intended lifespan",
+    "<strong>Manufacturability</strong>: Feasibility of cost-effective production at scale"
+   ]
+  },
+  {
+   "t": "h3",
+   "text": "Medical Device Applications"
+  },
+  {
+   "t": "p",
+   "html": "Biomaterials enable a diverse range of medical applications:"
+  },
+  {
+   "t": "h4",
+   "text": "Implantable Devices"
+  },
+  {
+   "t": "ul",
+   "items": [
+    "Orthopedic implants (hip, knee, spinal)",
+    "Cardiovascular devices (stents, heart valves, pacemakers)",
+    "Dental implants and restorations",
+    "Surgical meshes and fixation devices"
+   ]
+  },
+  {
+   "t": "h4",
+   "text": "Diagnostic Devices"
+  },
+  {
+   "t": "ul",
+   "items": [
+    "Biosensors and electrodes",
+    "Imaging contrast agents",
+    "In vitro diagnostic platforms",
+    "Laboratory consumables"
+   ]
+  },
+  {
+   "t": "h4",
+   "text": "Surgical Instruments"
+  },
+  {
+   "t": "ul",
+   "items": [
+    "Cutting and dissection tools",
+    "Endoscopic devices",
+    "Minimally invasive instruments",
+    "Robotic surgical components"
+   ]
+  },
+  {
+   "t": "h4",
+   "text": "External Contact Devices"
+  },
+  {
+   "t": "ul",
+   "items": [
+    "Catheters and guidewires",
+    "Wound dressings and bandages",
+    "Contact lenses",
+    "Hearing aids and prosthetics"
+   ]
+  },
+  {
+   "t": "fig",
+   "src": "images/ch07_fig01.jpg",
+   "w": 601,
+   "h": 266,
+   "num": "7.1",
+   "caption": "Biomaterial Classification Tree"
+  },
+  {
+   "t": "p",
+   "html": "<strong>Description:</strong>"
+  },
+  {
+   "t": "p",
+   "html": "Hierarchical tree diagram with main trunk labeled \"Biomaterials\" branching into five major categories:"
+  },
+  {
+   "t": "ul",
+   "items": [
+    "<strong>Metals </strong>(further branches: Stainless Steel, Titanium, Cobalt-Chrome, Nitinol)",
+    "<strong>Polymers </strong>(branches: Polyethylene, Polypropylene, PMMA, Silicone, Polyurethane)",
+    "<strong>Ceramics </strong>(branches: Alumina, Zirconia, Hydroxyapatite, Bioactive Glass)",
+    "<strong>Composites </strong>(branches: Carbon Fiber Reinforced, Ceramic-Polymer, Metal-Polymer)",
+    "<strong>Natural Biomaterials </strong>(branches: Collagen, Chitosan, Alginate, Hyaluronic Acid)"
+   ]
+  },
+  {
+   "t": "h3",
+   "text": "Essential Material Properties for Medical Devices"
+  },
+  {
+   "t": "p",
+   "html": "Material selection requires comprehensive evaluation of multiple property categories that collectively determine device performance and safety."
+  },
+  {
+   "t": "h3",
+   "text": "Mechanical Properties"
+  },
+  {
+   "t": "ul",
+   "items": [
+    "<strong>Tensile Strength</strong>",
+    "<strong>Definition</strong>: Maximum stress material can withstand while being stretched before breaking",
+    "<strong>Clinical Relevance</strong>: Critical for load-bearing implants, sutures, catheter strength",
+    "<strong>Measurement</strong>: Uniaxial tensile testing per ASTM standards"
+   ]
+  },
+  {
+   "t": "h3",
+   "text": "Compressive Strength"
+  },
+  {
+   "t": "ul",
+   "items": [
+    "<strong>Definition</strong>: Material's capacity to withstand axial pushing forces",
+    "<strong>Clinical Relevance</strong>: Essential for bone substitutes, spinal implants, joint components",
+    "<strong>Testing</strong>: ASTM D695 compression testing"
+   ]
+  },
+  {
+   "t": "h3",
+   "text": "Elastic Modulus (Young's Modulus)"
+  },
+  {
+   "t": "ul",
+   "items": [
+    "<strong>Definition</strong>: Ratio of stress to strain in elastic deformation region",
+    "<strong>Clinical Relevance</strong>: Material stiffness; mismatch with tissue can cause stress shielding",
+    "<strong>Bone</strong>: ~20 GPa; <strong>Titanium</strong>: ~110 GPa; <strong>Stainless Steel</strong>: ~200 GPa"
+   ]
+  },
+  {
+   "t": "h3",
+   "text": "Flexibility and Elasticity"
+  },
+  {
+   "t": "ul",
+   "items": [
+    "<strong>Definition</strong>: Ability to deform and return to original shape",
+    "<strong>Clinical Relevance</strong>: Catheters, vascular stents, soft tissue implants",
+    "<strong>Measurement</strong>: Flexural testing, bend testing protocols"
+   ]
+  },
+  {
+   "t": "h3",
+   "text": "Hardness"
+  },
+  {
+   "t": "ul",
+   "items": [
+    "<strong>Definition</strong>: Resistance to permanent surface deformation",
+    "<strong>Clinical Relevance</strong>: Wear resistance in articulating surfaces (hip/knee joints)",
+    "<strong>Measurement</strong>: Vickers, Rockwell, or Brinell hardness testing"
+   ]
+  },
+  {
+   "t": "h3",
+   "text": "Wear Resistance"
+  },
+  {
+   "t": "ul",
+   "items": [
+    "<strong>Definition</strong>: Ability to withstand mechanical abrasion and erosion",
+    "<strong>Clinical Relevance</strong>: Critical for joint replacement surfaces",
+    "<strong>Testing</strong>: Pin-on-disk, hip simulator testing"
+   ]
+  },
+  {
+   "t": "h3",
+   "text": "Fatigue Resistance"
+  },
+  {
+   "t": "ul",
+   "items": [
+    "<strong>Definition</strong>: Ability to withstand cyclic loading without failure",
+    "<strong>Clinical Relevance</strong>: Pacemaker leads (400+ million cycles), joint implants",
+    "<strong>Testing</strong>: Cyclic fatigue testing per ISO 7206 (orthopedic implants)"
+   ]
+  },
+  {
+   "t": "h3",
+   "text": "Fracture Toughness"
+  },
+  {
+   "t": "ul",
+   "items": [
+    "<strong>Definition</strong>: Resistance to crack propagation",
+    "<strong>Clinical Relevance</strong>: Prevents catastrophic implant failure",
+    "<strong>Measurement</strong>: K_IC testing"
+   ]
+  },
+  {
+   "t": "h3",
+   "text": "Chemical Properties"
+  },
+  {
+   "t": "ul",
+   "items": [
+    "<strong>Corrosion Resistance</strong>",
+    "<strong>Body Fluid Composition</strong>: Chloride ions (Cl⁻), proteins, pH 7.35-7.45",
+    "<strong>Corrosion Types</strong>: Uniform, pitting, crevice, galvanic, stress corrosion cracking",
+    "<strong>Testing</strong>: ASTM F2129 (cyclic potentiodynamic polarization)"
+   ]
+  },
+  {
+   "t": "h3",
+   "text": "Chemical Stability"
+  },
+  {
+   "t": "ul",
+   "items": [
+    "<strong>Requirements</strong>: No degradation, dissolution, or oxidation in physiological conditions",
+    "<strong>Evaluation</strong>: Accelerated aging, extractables/leachables studies",
+    "<strong>Standards</strong>: ISO 10993-13 (identification and quantification of degradation products)"
+   ]
+  },
+  {
+   "t": "h3",
+   "text": "Oxidative Stability"
+  },
+  {
+   "t": "ul",
+   "items": [
+    "<strong>Relevance</strong>: Polymer degradation, metal oxide layer formation",
+    "<strong>Impact</strong>: Material property changes over time",
+    "<strong>Testing</strong>: Oxidative aging protocols"
+   ]
+  },
+  {
+   "t": "h3",
+   "text": "Biological Properties"
+  },
+  {
+   "t": "ul",
+   "items": [
+    "<strong>Biocompatibility</strong>",
+    "<strong>Definition</strong>: Ability to perform with appropriate host response in specific application",
+    "<strong>Evaluation</strong>: Comprehensive ISO 10993 testing battery",
+    "<strong>Categories</strong>: Non-toxic, non-inflammatory, non-allergenic, non-carcinogenic"
+   ]
+  },
+  {
+   "t": "h3",
+   "text": "Hemocompatibility"
+  },
+  {
+   "t": "ul",
+   "items": [
+    "<strong>Definition</strong>: Compatibility with blood without inducing thrombosis or hemolysis",
+    "<strong>Critical for</strong>: Cardiovascular devices, blood-contacting surfaces",
+    "<strong>Testing</strong>: ISO 10993-4 (blood interactions)"
+   ]
+  },
+  {
+   "t": "h3",
+   "text": "Inflammatory Response"
+  },
+  {
+   "t": "ul",
+   "items": [
+    "<strong>Acute Inflammation</strong>: Immediate tissue reaction to foreign material",
+    "<strong>Chronic Inflammation</strong>: Persistent immune response",
+    "<strong>Testing</strong>: ISO 10993-6 (local effects after implantation)"
+   ]
+  },
+  {
+   "t": "h3",
+   "text": "Immune Response"
+  },
+  {
+   "t": "ul",
+   "items": [
+    "<strong>Sensitization</strong>: Allergic reactions",
+    "<strong>Immunogenicity</strong>: Activation of immune system",
+    "<strong>Testing</strong>: ISO 10993-10 (sensitization testing)"
+   ]
+  },
+  {
+   "t": "h3",
+   "text": "Sterilization Compatibility"
+  },
+  {
+   "t": "p",
+   "html": "Materials must withstand selected sterilization methods without degradation:"
+  },
+  {
+   "t": "h4",
+   "text": "Steam (Autoclaving)"
+  },
+  {
+   "t": "ul",
+   "items": [
+    "<strong>Temperature</strong>: 121-134°C",
+    "<strong>Compatible</strong>: Metals, glass, some polymers",
+    "<strong>Incompatible</strong>: Heat-sensitive polymers, electronics"
+   ]
+  },
+  {
+   "t": "h4",
+   "text": "Ethylene Oxide (ETO)"
+  },
+  {
+   "t": "ul",
+   "items": [
+    "<strong>Temperature</strong>: 37-63°C",
+    "<strong>Compatible</strong>: Most polymers, electronics",
+    "<strong>Consideration</strong>: Residual ETO absorption and outgassing"
+   ]
+  },
+  {
+   "t": "h4",
+   "text": "Gamma Radiation"
+  },
+  {
+   "t": "ul",
+   "items": [
+    "<strong>Dose</strong>: Typically 25 kGy",
+    "<strong>Compatible</strong>: Many plastics",
+    "<strong>Incompatible</strong>: PTFE (degradation), some UHMWPE formulations"
+   ]
+  },
+  {
+   "t": "h4",
+   "text": "Electron Beam (E-beam)"
+  },
+  {
+   "t": "ul",
+   "items": [
+    "<strong>Similar to Gamma </strong>but faster processing",
+    "<strong>Material considerations</strong>: Similar to gamma radiation effects"
+   ]
+  },
+  {
+   "t": "h2",
+   "text": "Metallic Biomaterials",
+   "num": "7.2"
+  },
+  {
+   "t": "p",
+   "html": "Metals are widely utilized in medical devices due to their excellent mechanical properties, particularly for load-bearing and structural applications."
+  },
+  {
+   "t": "h4",
+   "text": "Stainless Steel (SS 316L) Composition"
+  },
+  {
+   "t": "ul",
+   "items": [
+    "Iron-Chromium-Nickel-Molybdenum alloy",
+    "<strong>SS 316L</strong>: Low carbon variant (&lt;0.03% C) for improved corrosion resistance"
+   ]
+  },
+  {
+   "t": "h4",
+   "text": "Properties"
+  },
+  {
+   "t": "ul",
+   "items": [
+    "<strong>Tensile Strength</strong>: 480-620 MPa",
+    "<strong>Elastic Modulus</strong>: ~200 GPa",
+    "<strong>Density</strong>: 8.0 g/cm³",
+    "<strong>Corrosion Resistance</strong>: Good in passive oxide layer formation",
+    "<strong>Cost</strong>: Economical compared to titanium and cobalt-chrome"
+   ]
+  },
+  {
+   "t": "h4",
+   "text": "Advantages"
+  },
+  {
+   "t": "ul",
+   "items": [
+    "High strength-to-weight ratio",
+    "Easily sterilizable (all methods)",
+    "Cost-effective for temporary implants",
+    "Excellent machinability",
+    "Well-established manufacturing processes"
+   ]
+  },
+  {
+   "t": "h4",
+   "text": "Limitations"
+  },
+  {
+   "t": "ul",
+   "items": [
+    "Potential nickel sensitivity in some patients",
+    "Lower corrosion resistance than titanium",
+    "Higher elastic modulus than bone (stress shielding risk)",
+    "Not ideal for long-term implantation"
+   ]
+  },
+  {
+   "t": "h4",
+   "text": "Medical Applications"
+  },
+  {
+   "t": "ul",
+   "items": [
+    "<strong>Surgical Instruments</strong>: Scalpels, forceps, scissors, retractors",
+    "<strong>Temporary Implants</strong>: Bone screws, plates, intramedullary nails",
+    "<strong>Needles</strong>: Hypodermic, biopsy, spinal",
+    "<strong>Orthodontic Devices</strong>: Brackets, wires",
+    "<strong>Cardiovascular</strong>: Some stent designs (being phased out)"
+   ]
+  },
+  {
+   "t": "h3",
+   "text": "Titanium and Titanium Alloys"
+  },
+  {
+   "t": "p",
+   "html": "<strong>Pure Titanium (Commercially Pure - CP Ti):</strong>"
+  },
+  {
+   "t": "p",
+   "html": "<strong>Grades</strong>: Grade 1 (most pure) through Grade 4 (highest strength)"
+  },
+  {
+   "t": "h4",
+   "text": "Titanium Alloys"
+  },
+  {
+   "t": "p",
+   "html": "<strong>Ti-6Al-4V (Grade 5)</strong>: Most commonly used titanium alloy"
+  },
+  {
+   "t": "ul",
+   "items": [
+    "<strong>Composition</strong>: 6% Aluminum, 4% Vanadium, balance Titanium"
+   ]
+  },
+  {
+   "t": "p",
+   "html": "<strong>Ti-6Al-4V ELI (Extra Low Interstitial)</strong>: Enhanced biocompatibility for implants"
+  },
+  {
+   "t": "h4",
+   "text": "Properties"
+  },
+  {
+   "t": "ul",
+   "items": [
+    "<strong>Tensile Strength</strong>: 900-1100 MPa (Ti-6Al-4V)",
+    "<strong>Elastic Modulus</strong>: ~110 GPa (closer to bone than stainless steel)",
+    "<strong>Density</strong>: 4.5 g/cm³ (45% lighter than steel)",
+    "<strong>Corrosion Resistance</strong>: Excellent; stable TiO₂ passive layer",
+    "<strong>Biocompatibility</strong>: Exceptional; osseointegration capability"
+   ]
+  },
+  {
+   "t": "h4",
+   "text": "Advantages"
+  },
+  {
+   "t": "ul",
+   "items": [
+    "<strong>Superior biocompatibility</strong>: Minimal tissue reaction",
+    "<strong>Excellent corrosion resistance</strong>: Stable in physiological environment",
+    "<strong>Osseointegration</strong>: Direct bone bonding without fibrous tissue layer",
+    "<strong>Lightweight</strong>: Reduces stress on surrounding tissues",
+    "<strong>MRI compatible</strong>: Non-ferromagnetic",
+    "<strong>Lower modulus</strong>: Reduces stress shielding compared to steel"
+   ]
+  },
+  {
+   "t": "h4",
+   "text": "Limitations"
+  },
+  {
+   "t": "ul",
+   "items": [
+    "<strong>Higher cost</strong>: 3-5x more expensive than stainless steel",
+    "<strong>Poor wear resistance</strong>: Not suitable for articulating surfaces without coating",
+    "<strong>Difficult machining</strong>: Requires specialized equipment and techniques",
+    "<strong>Notch sensitivity</strong>: Susceptible to fatigue crack initiation at stress concentrators"
+   ]
+  },
+  {
+   "t": "h4",
+   "text": "Medical Applications"
+  },
+  {
+   "t": "ul",
+   "items": [
+    "<strong>Orthopedic Implants</strong>: Hip stems, knee components, spinal cages, trauma plates",
+    "<strong>Dental Implants</strong>: Endosseous fixtures, abutments",
+    "<strong>Pacemaker/ICD Casings</strong>: Hermetic enclosures for electronics",
+    "<strong>Surgical Instruments</strong>: Premium instruments requiring lightness",
+    "<strong>Craniofacial Implants</strong>: Skull plates, orbital floor reconstruction",
+    "<strong>Spinal Fixation</strong>: Pedicle screws, rods, interbody cages"
+   ]
+  },
+  {
+   "t": "h4",
+   "text": "Cobalt-Chromium (Co-Cr) Alloys Common Alloys"
+  },
+  {
+   "t": "ul",
+   "items": [
+    "<strong>Co-Cr-Mo (F75)</strong>: Cast alloy",
+    "<strong>Co-Cr-W-Ni (F90)</strong>: Wrought alloy",
+    "<strong>Co-Ni-Cr-Mo (F562)</strong>: High strength, age-hardenable"
+   ]
+  },
+  {
+   "t": "h4",
+   "text": "Properties"
+  },
+  {
+   "t": "ul",
+   "items": [
+    "<strong>Tensile Strength</strong>: 650-1400 MPa (depending on processing)",
+    "<strong>Elastic Modulus</strong>: ~230 GPa",
+    "<strong>Hardness</strong>: Very high (excellent wear resistance)",
+    "<strong>Corrosion Resistance</strong>: Excellent",
+    "<strong>Biocompatibility</strong>: Good"
+   ]
+  },
+  {
+   "t": "h4",
+   "text": "Advantages"
+  },
+  {
+   "t": "ul",
+   "items": [
+    "<strong>Exceptional wear resistance</strong>: Best for articulating joint surfaces",
+    "<strong>High strength</strong>: Supports high mechanical loads",
+    "<strong>Excellent corrosion resistance</strong>: Stable chromium oxide layer",
+    "<strong>Good biocompatibility</strong>: Low ion release",
+    "<strong>Magnetic susceptibility</strong>: Lower than stainless steel"
+   ]
+  },
+  {
+   "t": "h4",
+   "text": "Limitations"
+  },
+  {
+   "t": "ul",
+   "items": [
+    "<strong>High elastic modulus</strong>: Stress shielding potential",
+    "<strong>Difficult to machine</strong>: Requires specialized tooling",
+    "<strong>Cost</strong>: Expensive materials and processing",
+    "<strong>Potential metal ion release</strong>: Cobalt and chromium ions (controversial)"
+   ]
+  },
+  {
+   "t": "h4",
+   "text": "Medical Applications"
+  },
+  {
+   "t": "ul",
+   "items": [
+    "<strong>Total Joint Replacements</strong>: Femoral heads, acetabular cups, knee articulating surfaces",
+    "<strong>Dental Prosthetics</strong>: Crowns, bridges, removable partial denture frameworks",
+    "<strong>Cardiovascular Stents</strong>: Some drug-eluting stent platforms",
+    "<strong>Heart Valve Components</strong>: Mechanical heart valve housings"
+   ]
+  },
+  {
+   "t": "h4",
+   "text": "Nitinol (Nickel-Titanium Alloy) Composition"
+  },
+  {
+   "t": "ul",
+   "items": [
+    "~55% Nickel, ~45% Titanium (composition critical for properties)"
+   ]
+  },
+  {
+   "t": "h4",
+   "text": "Unique Properties"
+  },
+  {
+   "t": "p",
+   "html": "<strong>Shape Memory Effect (SME):</strong>"
+  },
+  {
+   "t": "ul",
+   "items": [
+    "Material \"remembers\" original shape",
+    "Returns to pre-deformed shape upon heating above transformation temperature"
+   ]
+  },
+  {
+   "t": "h4",
+   "text": "Superelasticity (Pseudoelasticity)"
+  },
+  {
+   "t": "ul",
+   "items": [
+    "Undergoes large elastic deformation (up to 8-10%)",
+    "Returns to original shape upon unloading at body temperature"
+   ]
+  },
+  {
+   "t": "h4",
+   "text": "Properties"
+  },
+  {
+   "t": "ul",
+   "items": [
+    "<strong>Tensile Strength</strong>: 800-1600 MPa",
+    "<strong>Elastic Modulus</strong>: 28-83 GPa (varies with phase)",
+    "<strong>Biocompatibility</strong>: Good when properly processed (oxide layer critical)",
+    "<strong>Corrosion Resistance</strong>: Excellent with proper surface treatment"
+   ]
+  },
+  {
+   "t": "h4",
+   "text": "Medical Applications"
+  },
+  {
+   "t": "ul",
+   "items": [
+    "<strong>Cardiovascular Stents</strong>: Self-expanding vascular stents",
+    "<strong>Orthodontic Archwires</strong>: Constant gentle force application",
+    "<strong>Guidewires</strong>: Flexible navigation through vasculature",
+    "<strong>Surgical Instruments</strong>: Graspers, retrievers, laparoscopic tools",
+    "<strong>Orthopedic Staples</strong>: Shape memory bone fixation"
+   ]
+  },
+  {
+   "t": "fig",
+   "src": "images/ch07_fig02.jpg",
+   "w": 601,
+   "h": 311,
+   "num": "7.2",
+   "caption": "Metallic Biomaterial Applications Chart"
+  },
+  {
+   "t": "p",
+   "html": "<strong>Description:</strong>"
+  },
+  {
+   "t": "p",
+   "html": "Comparative bar chart showing:"
+  },
+  {
+   "t": "ul",
+   "items": [
+    "<strong>X-axis</strong>: Application categories (Surgical Instruments, Temporary Implants, Long-term Implants, Cardiovascular, Dental)",
+    "<strong>Y-axis</strong>: Relative usage frequency (%)",
+    "<strong>Color-coded bars </strong>for each metal: Stainless Steel, Titanium, Cobalt-Chrome, Nitinol",
+    "Annotations showing key advantages for each application"
+   ]
+  },
+  {
+   "t": "h2",
+   "text": "Polymeric Biomaterials",
+   "num": "7.3"
+  },
+  {
+   "t": "p",
+   "html": "Polymers are the most widely used materials in medical devices due to their versatility, processability, and range of properties."
+  },
+  {
+   "t": "h3",
+   "text": "Polyethylene (PE) and Ultra-High Molecular Weight Polyethylene (UHMWPE)"
+  },
+  {
+   "t": "p",
+   "html": "<strong>Standard Polyethylene:</strong>"
+  },
+  {
+   "t": "ul",
+   "items": [
+    "<strong>Types</strong>: LDPE (Low Density), HDPE (High Density)",
+    "<strong>Applications</strong>: Packaging, tubing, containers <strong>UHMWPE (Ultra-High Molecular Weight Polyethylene): Properties:</strong>",
+    "<strong>Molecular Weight</strong>: 3-6 million g/mol (vs. ~500,000 for HDPE)",
+    "<strong>Exceptional wear resistance</strong>: Best polymer for articulating surfaces",
+    "<strong>Impact strength</strong>: Outstanding toughness",
+    "<strong>Low friction coefficient</strong>: Self-lubricating properties",
+    "<strong>Biocompatibility</strong>: Excellent",
+    "<strong>Chemical resistance</strong>: Inert in body fluids"
+   ]
+  },
+  {
+   "t": "h4",
+   "text": "Medical Applications"
+  },
+  {
+   "t": "ul",
+   "items": [
+    "<strong>Joint Replacement Bearings</strong>: Acetabular liners (hip), tibial inserts (knee)",
+    "<strong>Spinal Disc Components</strong>: Artificial disc articulating surfaces",
+    "<strong>Facial Reconstruction</strong>: Orbital floor implants, craniofacial augmentation"
+   ]
+  },
+  {
+   "t": "h4",
+   "text": "Considerations"
+  },
+  {
+   "t": "ul",
+   "items": [
+    "<strong>Oxidation susceptibility</strong>: Requires antioxidant stabilization or crosslinking",
+    "<strong>Wear particle generation</strong>: Osteolysis concern (ongoing research)",
+    "<strong>Sterilization effects</strong>: Gamma radiation can cause property changes"
+   ]
+  },
+  {
+   "t": "h4",
+   "text": "Polypropylene (PP) Properties"
+  },
+  {
+   "t": "ul",
+   "items": [
+    "<strong>Tensile Strength</strong>: 30-40 MPa",
+    "<strong>Chemical resistance</strong>: Excellent",
+    "<strong>Sterilization compatibility</strong>: Autoclavable, gamma, ETO",
+    "<strong>Cost</strong>: Very economical",
+    "<strong>Processing</strong>: Easy injection molding"
+   ]
+  },
+  {
+   "t": "h4",
+   "text": "Medical Applications"
+  },
+  {
+   "t": "ul",
+   "items": [
+    "<strong>Syringes</strong>: Barrel and plunger components",
+    "<strong>Laboratory Consumables</strong>: Pipette tips, centrifuge tubes, specimen containers",
+    "<strong>Surgical Mesh</strong>: Hernia repair, pelvic organ prolapse",
+    "<strong>IV Fluid Containers</strong>: Bags and bottles",
+    "<strong>Catheter Components</strong>: Connectors, hubs"
+   ]
+  },
+  {
+   "t": "h4",
+   "text": "Polyvinyl Chloride (PVC) Properties"
+  },
+  {
+   "t": "ul",
+   "items": [
+    "<strong>Flexibility</strong>: With plasticizer addition (typically DEHP)",
+    "<strong>Transparency</strong>: Excellent visibility of contents/fluids",
+    "<strong>Cost</strong>: Very economical",
+    "<strong>Sterilization</strong>: ETO, gamma (not autoclavable)"
+   ]
+  },
+  {
+   "t": "h4",
+   "text": "Medical Applications"
+  },
+  {
+   "t": "ul",
+   "items": [
+    "<strong>Blood Bags</strong>: Collection, storage, and transfusion",
+    "<strong>IV Tubing and Sets</strong>: Fluid delivery systems",
+    "<strong>Dialysis Tubing</strong>: Blood circuits",
+    "<strong>Feeding Tubes</strong>: Enteral nutrition delivery",
+    "<strong>Endotracheal Tubes</strong>: Airway management"
+   ]
+  },
+  {
+   "t": "h4",
+   "text": "Concerns"
+  },
+  {
+   "t": "ul",
+   "items": [
+    "<strong>Plasticizer leaching</strong>: DEHP migration into blood products/lipid solutions",
+    "<strong>Alternatives</strong>: DEHP-free formulations (DINCH, TOTM) increasingly used"
+   ]
+  },
+  {
+   "t": "h4",
+   "text": "Polyurethane (PU) Types"
+  },
+  {
+   "t": "ul",
+   "items": [
+    "<strong>Thermoplastic Polyurethane (TPU)</strong>: Melt-processable",
+    "<strong>Thermoset Polyurethane</strong>: Crosslinked structure"
+   ]
+  },
+  {
+   "t": "h4",
+   "text": "Properties"
+  },
+  {
+   "t": "ul",
+   "items": [
+    "<strong>Flexibility range</strong>: Soft elastomeric to rigid plastic",
+    "<strong>Biocompatibility</strong>: Excellent (medical grades)",
+    "<strong>Hemocompatibility</strong>: Good for blood contact",
+    "<strong>Abrasion resistance</strong>: Superior to many polymers",
+    "<strong>Elastic recovery</strong>: Excellent"
+   ]
+  },
+  {
+   "t": "h4",
+   "text": "Medical Applications"
+  },
+  {
+   "t": "ul",
+   "items": [
+    "<strong>Long-term Catheters</strong>: Central venous, urinary",
+    "<strong>Wound Dressings</strong>: Flexible, breathable films",
+    "<strong>Cardiac Assist Devices</strong>: Diaphragms, blood pumps",
+    "<strong>Vascular Grafts</strong>: Small diameter prostheses",
+    "<strong>Pacemaker Lead Insulation</strong>: Flexible, biocompatible coating"
+   ]
+  },
+  {
+   "t": "h3",
+   "text": "Silicone Rubber (Polydimethylsiloxane - PDMS)"
+  },
+  {
+   "t": "p",
+   "html": "<strong>Properties:</strong>"
+  },
+  {
+   "t": "ul",
+   "items": [
+    "<strong>Temperature stability</strong>: -55°C to +200°C",
+    "<strong>Biocompatibility</strong>: Excellent, minimal tissue reaction",
+    "<strong>Flexibility</strong>: Maintains properties over wide temperature range",
+    "<strong>Chemical inertness</strong>: Resistant to body fluids",
+    "<strong>Permeability</strong>: Gas permeable (oxygen, CO₂)",
+    "<strong>Sterilization</strong>: All methods compatible"
+   ]
+  },
+  {
+   "t": "h4",
+   "text": "Medical Applications"
+  },
+  {
+   "t": "ul",
+   "items": [
+    "<strong>Pacemaker Leads</strong>: Insulation coating",
+    "<strong>Catheters</strong>: Foley, feeding tubes",
+    "<strong>Breast Implants</strong>: Silicone gel-filled prostheses",
+    "<strong>Contact Lenses</strong>: Soft lenses (silicone hydrogels)",
+    "<strong>Shunts</strong>: Hydrocephalus drainage",
+    "<strong>Wound Dressings</strong>: Gel sheets for scar management",
+    "<strong>Drug Delivery</strong>: Implantable sustained-release systems"
+   ]
+  },
+  {
+   "t": "h4",
+   "text": "Grades"
+  },
+  {
+   "t": "ul",
+   "items": [
+    "<strong>Medical Grade Silicone</strong>: USP Class VI, ISO 10993 compliant",
+    "<strong>Implant Grade</strong>: Highest purity for long-term implantation"
+   ]
+  },
+  {
+   "t": "h4",
+   "text": "Polymethyl Methacrylate (PMMA) Properties"
+  },
+  {
+   "t": "ul",
+   "items": [
+    "<strong>Transparency</strong>: Excellent optical clarity (\"optical grade\")",
+    "<strong>Rigidity</strong>: Hard, glassy polymer",
+    "<strong>Biocompatibility</strong>: Good",
+    "<strong>Exothermic curing</strong>: Polymerization generates heat"
+   ]
+  },
+  {
+   "t": "h4",
+   "text": "Medical Applications"
+  },
+  {
+   "t": "ul",
+   "items": [
+    "<strong>Bone Cement</strong>: Orthopedic implant fixation (with barium sulfate radiopacifier)",
+    "<strong>Intraocular Lenses (IOLs)</strong>: Cataract surgery implants",
+    "<strong>Dentures</strong>: Acrylic denture base material",
+    "<strong>Spinal Augmentation</strong>: Vertebroplasty, kyphoplasty"
+   ]
+  },
+  {
+   "t": "h4",
+   "text": "Polytetrafluoroethylene (PTFE) and Expanded PTFE (ePTFE) Properties"
+  },
+  {
+   "t": "ul",
+   "items": [
+    "<strong>Chemical inertness</strong>: Most chemically resistant polymer",
+    "<strong>Low friction</strong>: Self-lubricating (lowest coefficient of friction)",
+    "<strong>Temperature stability</strong>: -200°C to +260°C",
+    "<strong>Biocompatibility</strong>: Excellent",
+    "<strong>Non-stick</strong>: No adhesion properties"
+   ]
+  },
+  {
+   "t": "h4",
+   "text": "ePTFE (Expanded PTFE)"
+  },
+  {
+   "t": "ul",
+   "items": [
+    "<strong>Microporous structure</strong>: Allows tissue ingrowth",
+    "<strong>Flexibility</strong>: Improved over solid PTFE"
+   ]
+  },
+  {
+   "t": "h4",
+   "text": "Medical Applications"
+  },
+  {
+   "t": "ul",
+   "items": [
+    "<strong>Vascular Grafts</strong>: Large diameter arterial replacement (ePTFE)",
+    "<strong>Cardiovascular Patches</strong>: Pericardial reconstruction, septal defect repair",
+    "<strong>Sutures</strong>: Non-absorbable (Gore-Tex®)",
+    "<strong>Catheter Linings</strong>: Lubricious inner coatings",
+    "<strong>Surgical Meshes</strong>: Hernia repair (with tissue ingrowth)"
+   ]
+  },
+  {
+   "t": "fig",
+   "src": "images/ch07_fig03.jpg",
+   "w": 478,
+   "h": 288,
+   "num": "7.3",
+   "caption": "Polymer Property Comparison Chart"
+  },
+  {
+   "t": "p",
+   "html": "<strong>Description:</strong>"
+  },
+  {
+   "t": "p",
+   "html": "Multi-axis radar/spider chart comparing six polymers (PE, PP, PVC, PU, Silicone, PMMA) across five properties:"
+  },
+  {
+   "t": "ul",
+   "items": [
+    "<strong>Flexibility </strong>(0-10 scale)",
+    "<strong>Biocompatibility </strong>(0-10 scale)",
+    "<strong>Durability </strong>(0-10 scale)",
+    "<strong>Chemical Resistance </strong>(0-10 scale)",
+    "<strong>Cost-Effectiveness </strong>(0-10 scale) Each polymer shown as different colored polygon overlay"
+   ]
+  },
+  {
+   "t": "h2",
+   "text": "Ceramic Biomaterials",
+   "num": "7.4"
+  },
+  {
+   "t": "p",
+   "html": "Ceramics offer unique properties including extreme hardness, chemical inertness, and biological activity, making them valuable for specific medical applications."
+  },
+  {
+   "t": "h3",
+   "text": "Classification of Bioceramics"
+  },
+  {
+   "t": "ul",
+   "items": [
+    "<strong>Bioinert Ceramics</strong>",
+    "<strong>Definition</strong>: Minimal interaction with surrounding tissue",
+    "<strong>Examples</strong>: Alumina, Zirconia, Carbon (pyrolytic)"
+   ]
+  },
+  {
+   "t": "h3",
+   "text": "Bioactive Ceramics"
+  },
+  {
+   "t": "ul",
+   "items": [
+    "<strong>Definition</strong>: Form chemical bonds with bone tissue",
+    "<strong>Examples</strong>: Hydroxyapatite, Bioactive glass, Calcium phosphates"
+   ]
+  },
+  {
+   "t": "h3",
+   "text": "Bioresorbable Ceramics"
+  },
+  {
+   "t": "ul",
+   "items": [
+    "<strong>Definition</strong>: Gradually dissolve and are replaced by natural tissue",
+    "<strong>Examples</strong>: Tricalcium phosphate (TCP), Biphasic calcium phosphate"
+   ]
+  },
+  {
+   "t": "h4",
+   "text": "Alumina (Aluminum Oxide - Al₂O₃) Properties"
+  },
+  {
+   "t": "ul",
+   "items": [
+    "<strong>Hardness</strong>: Extremely high (Vickers hardness ~2000)",
+    "<strong>Wear Resistance</strong>: Excellent",
+    "<strong>Compressive Strength</strong>: ~4000 MPa",
+    "<strong>Elastic Modulus</strong>: ~380 GPa",
+    "<strong>Biocompatibility</strong>: Excellent (bioinert)",
+    "<strong>Chemical Stability</strong>: Inert in body fluids"
+   ]
+  },
+  {
+   "t": "h4",
+   "text": "Medical Applications"
+  },
+  {
+   "t": "ul",
+   "items": [
+    "<strong>Hip Joint Femoral Heads</strong>: Articulating against polyethylene or alumina",
+    "<strong>Knee Joint Components</strong>: Wear-resistant surfaces",
+    "<strong>Dental Implant Abutments</strong>: Aesthetic anterior tooth region",
+    "<strong>Bone Screws</strong>: High-strength fixation"
+   ]
+  },
+  {
+   "t": "h4",
+   "text": "Advantages"
+  },
+  {
+   "t": "ul",
+   "items": [
+    "Minimal wear particle generation",
+    "No metal ion release",
+    "Excellent long-term stability"
+   ]
+  },
+  {
+   "t": "h4",
+   "text": "Limitations"
+  },
+  {
+   "t": "ul",
+   "items": [
+    "<strong>Brittleness</strong>: Susceptible to catastrophic fracture",
+    "<strong>Notch sensitivity</strong>: Stress concentrations critical",
+    "<strong>Difficult processing</strong>: Requires sintering at high temperatures (&gt;1600°C)"
+   ]
+  },
+  {
+   "t": "h4",
+   "text": "Zirconia (Zirconium Oxide - ZrO₂) Properties"
+  },
+  {
+   "t": "ul",
+   "items": [
+    "<strong>Toughness</strong>: Higher than alumina (transformation toughening mechanism)",
+    "<strong>Strength</strong>: Flexural strength ~1000 MPa",
+    "<strong>Hardness</strong>: High (Vickers hardness ~1200)",
+    "<strong>Biocompatibility</strong>: Excellent",
+    "<strong>Aesthetics</strong>: White color (tooth-like appearance)"
+   ]
+  },
+  {
+   "t": "h4",
+   "text": "Medical Applications"
+  },
+  {
+   "t": "ul",
+   "items": [
+    "<strong>Dental Crowns and Bridges</strong>: Full-contour restorations",
+    "<strong>Dental Implant Abutments</strong>: Metal-free aesthetics",
+    "<strong>Hip Joint Femoral Heads</strong>: Alternative to alumina",
+    "<strong>Orthodontic Brackets</strong>: Aesthetic anterior brackets"
+   ]
+  },
+  {
+   "t": "h4",
+   "text": "Advantages"
+  },
+  {
+   "t": "ul",
+   "items": [
+    "Superior toughness compared to alumina",
+    "Excellent aesthetic properties",
+    "Lower elastic modulus than alumina"
+   ]
+  },
+  {
+   "t": "h4",
+   "text": "Hydroxyapatite (HA) - Ca₁₀(PO₄)₆(OH)₂ Properties"
+  },
+  {
+   "t": "ul",
+   "items": [
+    "<strong>Bioactivity</strong>: Directly bonds to bone (osseoconductive)",
+    "<strong>Chemical Similarity</strong>: Mimics natural bone mineral",
+    "<strong>Porosity</strong>: Can be engineered for bone ingrowth",
+    "<strong>Mechanical Properties</strong>: Lower than metals/alumina"
+   ]
+  },
+  {
+   "t": "h4",
+   "text": "Medical Applications"
+  },
+  {
+   "t": "ul",
+   "items": [
+    "<strong>Orthopedic Implant Coatings</strong>: Titanium implants with HA coating for enhanced bone bonding",
+    "<strong>Dental Implant Coatings</strong>: Improved osseointegration",
+    "<strong>Bone Void Fillers</strong>: Granules or blocks for bone grafting",
+    "<strong>Bone Graft Substitutes</strong>: Porous scaffolds",
+    "<strong>Spinal Fusion Cages</strong>: Coating for enhanced fusion"
+   ]
+  },
+  {
+   "t": "h4",
+   "text": "Processing Methods"
+  },
+  {
+   "t": "ul",
+   "items": [
+    "<strong>Plasma Spraying</strong>: Most common coating technique",
+    "<strong>Sol-Gel</strong>: Thin, dense coatings",
+    "<strong>Electrophoretic Deposition</strong>: Uniform coating"
+   ]
+  },
+  {
+   "t": "h4",
+   "text": "Bioactive Glass Composition"
+  },
+  {
+   "t": "ul",
+   "items": [
+    "SiO₂-CaO-Na₂O-P₂O₅ system (various formulations)"
+   ]
+  },
+  {
+   "t": "h4",
+   "text": "Properties"
+  },
+  {
+   "t": "ul",
+   "items": [
+    "<strong>Bioactivity</strong>: Forms hydroxycarbonate apatite layer in body fluids",
+    "<strong>Bonding</strong>: Chemical bond with both bone and soft tissue",
+    "<strong>Antibacterial</strong>: Some compositions exhibit antimicrobial properties"
+   ]
+  },
+  {
+   "t": "h4",
+   "text": "Medical Applications"
+  },
+  {
+   "t": "ul",
+   "items": [
+    "<strong>Bone Grafting</strong>: Particulate form for bone defect filling",
+    "<strong>Periodontal Regeneration</strong>: Dental bone regeneration",
+    "<strong>Middle Ear Prostheses</strong>: Ossicular chain reconstruction",
+    "<strong>Bioactive Coatings</strong>: Implant surface modification"
+   ]
+  },
+  {
+   "t": "fig",
+   "src": "images/ch07_fig04.jpg",
+   "w": 472,
+   "h": 264,
+   "num": "7.4",
+   "caption": "Ceramic Biomaterial Classification"
+  },
+  {
+   "t": "p",
+   "html": "<strong>Description:</strong>"
+  },
+  {
+   "t": "p",
+   "html": "Venn diagram showing three overlapping circles:"
+  },
+  {
+   "t": "ul",
+   "items": [
+    "<strong>Circle 1 (Bioinert)</strong>: Alumina, Zirconia, Pyrolytic Carbon - labelled \"Minimal tissue interaction, mechanical function\"",
+    "<strong>Circle 2 (Bioactive)</strong>: Hydroxyapatite, Bioactive Glass - labelled \"Chemical bonding with bone\"",
+    "<strong>Circle 3 (Bioresorbable)</strong>: TCP, Calcium phosphates - labelled \"Gradual resorption and replacement\"",
+    "Overlap zones showing combined properties"
+   ]
+  },
+  {
+   "t": "h2",
+   "text": "Composite Biomaterials",
+   "num": "7.5"
+  },
+  {
+   "t": "p",
+   "html": "Composite materials combine two or more constituent materials to achieve properties not attainable by individual components alone."
+  },
+  {
+   "t": "h3",
+   "text": "Fiber-Reinforced Composites"
+  },
+  {
+   "t": "p",
+   "html": "<strong>Carbon Fiber Reinforced Polymers (CFRP) Composition:</strong>"
+  },
+  {
+   "t": "ul",
+   "items": [
+    "<strong>Matrix</strong>: Epoxy resin, PEEK (polyetheretherketone)",
+    "<strong>Reinforcement</strong>: Carbon fibers (continuous or discontinuous)"
+   ]
+  },
+  {
+   "t": "h4",
+   "text": "Properties"
+  },
+  {
+   "t": "ul",
+   "items": [
+    "<strong>High strength-to-weight ratio</strong>: Comparable to metals but much lighter",
+    "<strong>Radiolucency</strong>: Transparent to X-rays (imaging advantage)",
+    "<strong>Elastic modulus</strong>: Tailorable (can match bone: 10-30 GPa)",
+    "<strong>Fatigue resistance</strong>: Excellent"
+   ]
+  },
+  {
+   "t": "h4",
+   "text": "Medical Applications"
+  },
+  {
+   "t": "ul",
+   "items": [
+    "<strong>Orthopedic Implants</strong>: Femoral stems, fracture plates, spinal rods",
+    "<strong>External Fixation</strong>: Lightweight frames",
+    "<strong>Prosthetic Limbs</strong>: Socket components, structural elements",
+    "<strong>Surgical Instruments</strong>: Lightweight handles, frames"
+   ]
+  },
+  {
+   "t": "h4",
+   "text": "Glass Fiber Reinforced Polymers Applications"
+  },
+  {
+   "t": "ul",
+   "items": [
+    "<strong>Dental Posts</strong>: Root canal reinforcement",
+    "<strong>Temporary Splints</strong>: Bone fracture immobilization"
+   ]
+  },
+  {
+   "t": "h3",
+   "text": "Particle-Reinforced Composites Dental Composites"
+  },
+  {
+   "t": "p",
+   "html": "<strong>Composition:</strong>"
+  },
+  {
+   "t": "ul",
+   "items": [
+    "<strong>Matrix</strong>: BisGMA, UDMA, or TEGDMA resins",
+    "<strong>Filler</strong>: Silica, glass particles, zirconia (50-80% by volume)"
+   ]
+  },
+  {
+   "t": "h4",
+   "text": "Applications"
+  },
+  {
+   "t": "ul",
+   "items": [
+    "<strong>Direct Restorations</strong>: Tooth-colored fillings",
+    "<strong>Indirect Restorations</strong>: Inlays, onlays, veneers",
+    "<strong>Dental Cements</strong>: Adhesive bonding agents"
+   ]
+  },
+  {
+   "t": "h4",
+   "text": "Bone Cement Composites Composition"
+  },
+  {
+   "t": "ul",
+   "items": [
+    "<strong>PMMA matrix </strong>+ <strong>Barium sulfate or zirconia </strong>(radiopacifier)"
+   ]
+  },
+  {
+   "t": "h4",
+   "text": "Application"
+  },
+  {
+   "t": "ul",
+   "items": [
+    "<strong>Joint Replacement Fixation</strong>: Cemented hip and knee prostheses"
+   ]
+  },
+  {
+   "t": "h3",
+   "text": "Natural-Synthetic Hybrid Composites Collagen-HA Composites"
+  },
+  {
+   "t": "p",
+   "html": "<strong>Composition:</strong>"
+  },
+  {
+   "t": "ul",
+   "items": [
+    "Collagen scaffold + Hydroxyapatite particles",
+    "Mimics natural bone composition (collagen + mineral)"
+   ]
+  },
+  {
+   "t": "h4",
+   "text": "Applications"
+  },
+  {
+   "t": "ul",
+   "items": [
+    "<strong>Bone Tissue Engineering</strong>: Scaffolds for bone regeneration",
+    "<strong>Guided Bone Regeneration</strong>: Dental/craniofacial applications"
+   ]
+  },
+  {
+   "t": "h2",
+   "text": "Natural Biomaterials",
+   "num": "7.6"
+  },
+  {
+   "t": "p",
+   "html": "Natural biomaterials derived from biological sources offer excellent biocompatibility and biological recognition."
+  },
+  {
+   "t": "h3",
+   "text": "Collagen"
+  },
+  {
+   "t": "p",
+   "html": "<strong>Source: </strong>Animal tissues (bovine, porcine, marine)"
+  },
+  {
+   "t": "h4",
+   "text": "Properties"
+  },
+  {
+   "t": "ul",
+   "items": [
+    "Most abundant protein in human body",
+    "Biocompatible and biodegradable",
+    "Promotes cell adhesion and proliferation"
+   ]
+  },
+  {
+   "t": "h4",
+   "text": "Medical Applications"
+  },
+  {
+   "t": "ul",
+   "items": [
+    "<strong>Wound Dressings</strong>: Chronic wound management",
+    "<strong>Hemostatic Agents</strong>: Surgical bleeding control",
+    "<strong>Tissue Engineering Scaffolds</strong>: Skin, cartilage, bone regeneration",
+    "<strong>Drug Delivery Matrices</strong>: Sustained release systems",
+    "<strong>Ophthalmic Applications</strong>: Corneal shields"
+   ]
+  },
+  {
+   "t": "h3",
+   "text": "Chitosan"
+  },
+  {
+   "t": "p",
+   "html": "<strong>Source: </strong>De-acetylated chitin from crustacean shells"
+  },
+  {
+   "t": "h4",
+   "text": "Properties"
+  },
+  {
+   "t": "ul",
+   "items": [
+    "Biocompatible, biodegradable, non-toxic",
+    "Antimicrobial activity",
+    "Hemostatic properties",
+    "Mucoadhesive"
+   ]
+  },
+  {
+   "t": "h4",
+   "text": "Medical Applications"
+  },
+  {
+   "t": "ul",
+   "items": [
+    "<strong>Wound Dressings</strong>: Antimicrobial bandages",
+    "<strong>Drug Delivery</strong>: Controlled release formulations",
+    "<strong>Tissue Engineering</strong>: Scaffold material",
+    "<strong>Hemostatic Agents</strong>: Surgical bleeding control"
+   ]
+  },
+  {
+   "t": "h3",
+   "text": "Alginate"
+  },
+  {
+   "t": "p",
+   "html": "<strong>Source: </strong>Brown seaweed (algae)"
+  },
+  {
+   "t": "h4",
+   "text": "Properties"
+  },
+  {
+   "t": "ul",
+   "items": [
+    "Forms hydrogels in presence of divalent cations (Ca²⁺)",
+    "Biocompatible",
+    "Easy processing"
+   ]
+  },
+  {
+   "t": "h4",
+   "text": "Medical Applications"
+  },
+  {
+   "t": "ul",
+   "items": [
+    "<strong>Wound Dressings</strong>: Moist wound healing",
+    "<strong>Cell Encapsulation</strong>: Tissue engineering, cell therapy",
+    "<strong>Drug Delivery</strong>: Hydrogel-based systems",
+    "<strong>Dental Impression Materials</strong>: Molds for dental prosthetics"
+   ]
+  },
+  {
+   "t": "h3",
+   "text": "Hyaluronic Acid (Hyaluronan)"
+  },
+  {
+   "t": "p",
+   "html": "<strong>Source: </strong>Rooster combs, bacterial fermentation, human umbilical cord"
+  },
+  {
+   "t": "h4",
+   "text": "Properties"
+  },
+  {
+   "t": "ul",
+   "items": [
+    "Natural component of extracellular matrix",
+    "Viscoelastic properties",
+    "Biocompatible, biodegradable"
+   ]
+  },
+  {
+   "t": "h4",
+   "text": "Medical Applications"
+  },
+  {
+   "t": "ul",
+   "items": [
+    "<strong>Ophthalmic Surgery</strong>: Viscoelastic during cataract surgery",
+    "<strong>Orthopedic Viscosupplementation</strong>: Osteoarthritis treatment",
+    "<strong>Dermal Fillers</strong>: Aesthetic facial augmentation",
+    "<strong>Wound Healing</strong>: Advanced wound dressings"
+   ]
+  },
+  {
+   "t": "h2",
+   "text": "Material Selection Criteria",
+   "num": "7.7"
+  },
+  {
+   "t": "p",
+   "html": "Material selection is a systematic process considering multiple factors:"
+  },
+  {
+   "t": "h3",
+   "text": "Primary Selection Factors"
+  },
+  {
+   "t": "ul",
+   "items": [
+    "<strong>Intended Use and Function</strong>",
+    "Load-bearing vs. non-load-bearing",
+    "Temporary vs. permanent",
+    "Surface contact vs. implantable",
+    "Exposure duration (transient, short-term, long-term)"
+   ]
+  },
+  {
+   "t": "h3",
+   "text": "Anatomical Location"
+  },
+  {
+   "t": "ul",
+   "items": [
+    "Bone, soft tissue, blood contact",
+    "High-stress vs. low-stress environment",
+    "Articulating vs. non-articulating"
+   ]
+  },
+  {
+   "t": "h3",
+   "text": "Mechanical Requirements"
+  },
+  {
+   "t": "ul",
+   "items": [
+    "Strength, stiffness, flexibility",
+    "Fatigue life expectancy",
+    "Wear resistance (if applicable)"
+   ]
+  },
+  {
+   "t": "h2",
+   "text": "Biocompatibility",
+   "num": "7.8"
+  },
+  {
+   "t": "ul",
+   "items": [
+    "Tissue reaction (local and systemic)",
+    "Immune response potential",
+    "Sensitization/allergy risk"
+   ]
+  },
+  {
+   "t": "h3",
+   "text": "Sterilization Method"
+  },
+  {
+   "t": "ul",
+   "items": [
+    "Heat, radiation, chemical compatibility",
+    "Property stability post-sterilization"
+   ]
+  },
+  {
+   "t": "h3",
+   "text": "Manufacturability"
+  },
+  {
+   "t": "ul",
+   "items": [
+    "Processing capability (molding, machining, forming)",
+    "Scalability for mass production",
+    "Quality control feasibility"
+   ]
+  },
+  {
+   "t": "h3",
+   "text": "Regulatory Pathway"
+  },
+  {
+   "t": "ul",
+   "items": [
+    "Predicate device materials (510(k) pathway)",
+    "Testing requirements (ISO 10993)",
+    "Clinical data needs"
+   ]
+  },
+  {
+   "t": "h3",
+   "text": "Cost Considerations"
+  },
+  {
+   "t": "ul",
+   "items": [
+    "Material cost",
+    "Processing cost",
+    "Total cost of ownership"
+   ]
+  },
+  {
+   "t": "h3",
+   "text": "ISO 10993: Biological Evaluation of Medical Devices"
+  },
+  {
+   "t": "p",
+   "html": "ISO 10993 is the international standard for biocompatibility assessment of medical devices."
+  },
+  {
+   "t": "h3",
+   "text": "ISO 10993 Framework"
+  },
+  {
+   "t": "p",
+   "html": "The standard consists of multiple parts covering different aspects of biological evaluation:"
+  },
+  {
+   "t": "h4",
+   "text": "Key ISO 10993 Parts"
+  },
+  {
+   "t": "ul",
+   "items": [
+    "<strong>ISO 10993-1</strong>: Evaluation and testing within a risk management process",
+    "<strong>ISO 10993-4</strong>: Selection of tests for interactions with blood",
+    "<strong>ISO 10993-5</strong>: Tests for in vitro cytotoxicity",
+    "<strong>ISO 10993-6</strong>: Tests for local effects after implantation",
+    "<strong>ISO 10993-10</strong>: Tests for irritation and skin sensitization",
+    "<strong>ISO 10993-11</strong>: Tests for systemic toxicity",
+    "<strong>ISO 10993-12</strong>: Sample preparation and reference materials",
+    "<strong>ISO 10993-13</strong>: Identification and quantification of degradation products",
+    "<strong>ISO 10993-18</strong>: Chemical characterization of materials"
+   ]
+  },
+  {
+   "t": "h3",
+   "text": "Device Categorization"
+  },
+  {
+   "t": "p",
+   "html": "Devices are categorized by:"
+  },
+  {
+   "t": "h4",
+   "text": "Body Contact Duration"
+  },
+  {
+   "t": "ul",
+   "items": [
+    "<strong>Limited </strong>(≤24 hours)",
+    "<strong>Prolonged </strong>(&gt;24 hours to 30 days)",
+    "<strong>Permanent </strong>(&gt;30 days)"
+   ]
+  },
+  {
+   "t": "h4",
+   "text": "Type of Body Contact"
+  },
+  {
+   "t": "ul",
+   "items": [
+    "<strong>Surface Contact</strong>: Skin, mucosal membranes, breached surfaces",
+    "<strong>External Communicating</strong>: Blood path indirect, tissue/bone/dentin, circulating blood",
+    "<strong>Implant Devices</strong>: Tissue/bone, blood"
+   ]
+  },
+  {
+   "t": "h3",
+   "text": "Biocompatibility Testing Matrix"
+  },
+  {
+   "t": "p",
+   "html": "Required tests depend on device categorization:"
+  },
+  {
+   "t": "fig",
+   "src": "images/ch07_fig05.jpg",
+   "w": 526,
+   "h": 340,
+   "num": "7.5",
+   "caption": "ISO 10993 Testing Selection Matrix"
+  },
+  {
+   "t": "p",
+   "html": "<strong>Description:</strong>"
+  },
+  {
+   "t": "p",
+   "html": "Complex decision matrix table with:"
+  },
+  {
+   "t": "ul",
+   "items": [
+    "<strong>Rows</strong>: Body contact types (Surface: Skin, Mucosal Membrane, Breached Surface; External Communicating: Blood Indirect, Tissue/Bone, Circulating Blood; Implant: Tissue/Bone, Blood)",
+    "<strong>Columns</strong>: Contact duration (Limited ≤24h, Prolonged &gt;24h-30d, Permanent &gt;30d)",
+    "<strong>Cell colors</strong>: Testing requirements coded (Green = Required, Yellow = May be needed based on risk, White = Not required)",
+    "<strong>Tests listed</strong>: Cytotoxicity, Sensitization, Irritation, Systemic Toxicity, Subchronic Toxicity, Genotoxicity, Implantation, Hemocompatibility"
+   ]
+  },
+  {
+   "t": "h3",
+   "text": "Common Biocompatibility Tests"
+  },
+  {
+   "t": "ul",
+   "items": [
+    "<strong>Cytotoxicity (ISO 10993-5)</strong>"
+   ]
+  },
+  {
+   "t": "p",
+   "html": "<strong>Purpose: </strong>Detect cell damage or cell death caused by device materials/extracts"
+  },
+  {
+   "t": "h4",
+   "text": "Methods"
+  },
+  {
+   "t": "ul",
+   "items": [
+    "<strong>MTT assay</strong>: Mitochondrial activity measurement",
+    "<strong>Neutral Red assay</strong>: Lysosomal function",
+    "<strong>Direct contact method</strong>: Device placed directly on cell culture"
+   ]
+  },
+  {
+   "t": "p",
+   "html": "<strong>Acceptance: </strong>&gt;70% cell viability typically required"
+  },
+  {
+   "t": "h3",
+   "text": "Sensitization (ISO 10993-10)"
+  },
+  {
+   "t": "p",
+   "html": "<strong>Purpose: </strong>Detect delayed-type hypersensitivity (allergic) reactions"
+  },
+  {
+   "t": "h4",
+   "text": "Methods"
+  },
+  {
+   "t": "ul",
+   "items": [
+    "<strong>Guinea Pig Maximization Test (GPMT)</strong>",
+    "<strong>Local Lymph Node Assay (LLNA) </strong>(alternative, fewer animals)"
+   ]
+  },
+  {
+   "t": "p",
+   "html": "<strong>Endpoint: </strong>Absence of allergic reaction"
+  },
+  {
+   "t": "ul",
+   "items": [
+    "<strong>Irritation/Intracutaneous Reactivity (ISO 10993-10) Purpose: </strong>Assess potential to cause skin or tissue irritation <strong>Methods:</strong>",
+    "<strong>Primary Skin Irritation Test</strong>: Dermal application",
+    "<strong>Intracutaneous Reactivity Test</strong>: Intradermal injection"
+   ]
+  },
+  {
+   "t": "p",
+   "html": "<strong>Scoring: </strong>Erythema and edema evaluated"
+  },
+  {
+   "t": "h3",
+   "text": "Systemic Toxicity (Acute) (ISO 10993-11)"
+  },
+  {
+   "t": "p",
+   "html": "<strong>Purpose: </strong>Detect adverse systemic effects from single or multiple exposures"
+  },
+  {
+   "t": "h4",
+   "text": "Method"
+  },
+  {
+   "t": "ul",
+   "items": [
+    "Extract injection into mice or rabbits",
+    "Observation period: 72 hours"
+   ]
+  },
+  {
+   "t": "p",
+   "html": "<strong>Endpoints: </strong>Weight change, behavior, organ toxicity"
+  },
+  {
+   "t": "ul",
+   "items": [
+    "<strong>Hemocompatibility (ISO 10993-4) Purpose: </strong>Evaluate blood interaction properties <strong>Tests include:</strong>",
+    "<strong>Hemolysis</strong>: Red blood cell lysis",
+    "<strong>Thrombosis</strong>: Clot formation potential",
+    "<strong>Coagulation</strong>: Effects on clotting cascade",
+    "<strong>Platelet activation</strong>: Platelet adhesion/aggregation",
+    "<strong>Complement activation</strong>: Immune system activation"
+   ]
+  },
+  {
+   "t": "p",
+   "html": "<strong>Critical for: </strong>Blood-contacting devices (catheters, stents, heart valves, blood bags)"
+  },
+  {
+   "t": "h3",
+   "text": "Genotoxicity (ISO 10993-3)"
+  },
+  {
+   "t": "p",
+   "html": "<strong>Purpose: </strong>Detect DNA damage potential (mutations, chromosomal aberrations)"
+  },
+  {
+   "t": "h4",
+   "text": "Tests"
+  },
+  {
+   "t": "ul",
+   "items": [
+    "<strong>Ames Test</strong>: Bacterial reverse mutation",
+    "<strong>Chromosomal Aberration Test</strong>: Structural chromosome damage",
+    "<strong>Mouse Micronucleus Test</strong>: In vivo genotoxicity",
+    "<strong>Chronic Toxicity/Carcinogenicity (ISO 10993-3) Purpose: </strong>Assess long-term effects including cancer potential"
+   ]
+  },
+  {
+   "t": "h4",
+   "text": "Methods"
+  },
+  {
+   "t": "ul",
+   "items": [
+    "Long-term animal studies (typically rodents)",
+    "Duration: 90 days (subchronic) to 2 years (chronic/carcinogenicity)"
+   ]
+  },
+  {
+   "t": "p",
+   "html": "<strong>Required for: </strong>Long-term implantable devices (&gt;30 days)"
+  },
+  {
+   "t": "h3",
+   "text": "Implantation Testing (ISO 10993-6)"
+  },
+  {
+   "t": "p",
+   "html": "<strong>Purpose: </strong>Evaluate local tissue response to implanted materials"
+  },
+  {
+   "t": "h4",
+   "text": "Method"
+  },
+  {
+   "t": "ul",
+   "items": [
+    "Material implanted in rabbit or rat muscle/bone",
+    "Evaluation: 1, 4, 12, and 26 weeks (depending on intended duration)"
+   ]
+  },
+  {
+   "t": "h4",
+   "text": "Assessment"
+  },
+  {
+   "t": "ul",
+   "items": [
+    "Capsule formation",
+    "Inflammatory cell infiltration",
+    "Tissue necrosis",
+    "Tissue integration",
+    "<strong>Device-Material Application Examples</strong>"
+   ]
+  },
+  {
+   "t": "p",
+   "html": "<strong>Table 7.1 -- Common Medical Devices and Their Primary Materials</strong>"
+  },
+  {
+   "t": "p",
+   "html": "<strong>Device Category</strong>"
+  },
+  {
+   "t": "p",
+   "html": "<strong>Device Example</strong>"
+  },
+  {
+   "t": "p",
+   "html": "<strong>Primary Material(s) Material Selection Rationale</strong>"
+  },
+  {
+   "t": "p",
+   "html": "<strong>Injectable </strong>Syringe barrel Polypropylene (PP) Clarity, chemical resistance,"
+  },
+  {
+   "t": "p",
+   "html": "autoclavable, cost-effective"
+  },
+  {
+   "t": "p",
+   "html": "Strength, sharpness"
+  },
+  {
+   "t": "p",
+   "html": "<strong>Injectable </strong>Needle Stainless Steel 304/316L"
+  },
+  {
+   "t": "p",
+   "html": "<strong>Vascular </strong>IV catheter Polyurethane, FEP (fluorinated"
+  },
+  {
+   "t": "p",
+   "html": "polymer)"
+  },
+  {
+   "t": "p",
+   "html": "Nitinol, Cobalt-Chromium,"
+  },
+  {
+   "t": "p",
+   "html": "retention, corrosion resistance"
+  },
+  {
+   "t": "p",
+   "html": "Flexibility, biocompatibility, kink resistance, thromboresistance"
+  },
+  {
+   "t": "p",
+   "html": "Superelasticity, radial"
+  },
+  {
+   "t": "p",
+   "html": "<strong>Vascular </strong>Coronary stent"
+  },
+  {
+   "t": "p",
+   "html": "Pacemaker"
+  },
+  {
+   "t": "p",
+   "html": "Stainless Steel"
+  },
+  {
+   "t": "p",
+   "html": "strength, low profile, MRI compatibility"
+  },
+  {
+   "t": "p",
+   "html": "Biocompatibility, hermetic"
+  },
+  {
+   "t": "h3",
+   "text": "Cardiac"
+  },
+  {
+   "t": "p",
+   "html": "housing Titanium alloy (Ti-6Al-4V)"
+  },
+  {
+   "t": "p",
+   "html": "seal, lightweight, MRI conditional"
+  },
+  {
+   "t": "p",
+   "html": "<strong>Cardiac </strong>Pacemaker lead"
+  },
+  {
+   "t": "p",
+   "html": "insulation"
+  },
+  {
+   "t": "p",
+   "html": "Silicone, Polyurethane Flexibility, biocompatibility, fatigue"
+  },
+  {
+   "t": "h3",
+   "text": "Device Category"
+  },
+  {
+   "t": "p",
+   "html": "<strong>Device Example</strong>"
+  },
+  {
+   "t": "p",
+   "html": "Hip femoral"
+  },
+  {
+   "t": "h3",
+   "text": "Primary Material(s) Material Selection Rationale"
+  },
+  {
+   "t": "p",
+   "html": "resistance, electrical insulation"
+  },
+  {
+   "t": "p",
+   "html": "High strength,"
+  },
+  {
+   "t": "h3",
+   "text": "Orthopedic"
+  },
+  {
+   "t": "p",
+   "html": "stem Titanium alloy, Cobalt-Chrome"
+  },
+  {
+   "t": "p",
+   "html": "osseointegration (Ti), corrosion resistance"
+  },
+  {
+   "t": "p",
+   "html": "<strong>Orthopedic </strong>Hip acetabular"
+  },
+  {
+   "t": "p",
+   "html": "liner"
+  },
+  {
+   "t": "p",
+   "html": "<strong>Orthopedic </strong>Knee femoral"
+  },
+  {
+   "t": "p",
+   "html": "component"
+  },
+  {
+   "t": "p",
+   "html": "Bone"
+  },
+  {
+   "t": "p",
+   "html": "UHMWPE (crosslinked) Wear resistance, low"
+  },
+  {
+   "t": "p",
+   "html": "friction, impact toughness"
+  },
+  {
+   "t": "p",
+   "html": "Cobalt-Chrome alloy Hardness, wear resistance,"
+  },
+  {
+   "t": "p",
+   "html": "high polish, load-bearing"
+  },
+  {
+   "t": "p",
+   "html": "Strength, corrosion"
+  },
+  {
+   "t": "h3",
+   "text": "Orthopedic"
+  },
+  {
+   "t": "p",
+   "html": "screws/plates Stainless Steel 316L, Titanium"
+  },
+  {
+   "t": "p",
+   "html": "resistance, MRI compatibility (Ti), cost (SS)"
+  },
+  {
+   "t": "h3",
+   "text": "Dental"
+  },
+  {
+   "t": "p",
+   "html": "Endosseous implant"
+  },
+  {
+   "t": "p",
+   "html": "Implant"
+  },
+  {
+   "t": "p",
+   "html": "Commercially Pure Titanium (CP Ti)"
+  },
+  {
+   "t": "p",
+   "html": "Osseointegration, biocompatibility, corrosion resistance"
+  },
+  {
+   "t": "p",
+   "html": "Strength, aesthetics"
+  },
+  {
+   "t": "h3",
+   "text": "Dental"
+  },
+  {
+   "t": "p",
+   "html": "abutment Titanium, Zirconia"
+  },
+  {
+   "t": "p",
+   "html": "(zirconia), tissue compatibility"
+  },
+  {
+   "t": "p",
+   "html": "<strong>Dental</strong>"
+  },
+  {
+   "t": "p",
+   "html": "<strong>Ophthalmic</strong>"
+  },
+  {
+   "t": "p",
+   "html": "<strong>Wound Care</strong>"
+  },
+  {
+   "t": "p",
+   "html": "Crown restoration"
+  },
+  {
+   "t": "p",
+   "html": "Intraocular lens (IOL)"
+  },
+  {
+   "t": "p",
+   "html": "Hydrocolloid dressing"
+  },
+  {
+   "t": "p",
+   "html": "Antimicrobial"
+  },
+  {
+   "t": "p",
+   "html": "Zirconia, Porcelain-fused-to-metal, Lithium disilicate"
+  },
+  {
+   "t": "p",
+   "html": "PMMA, Acrylic (hydrophobic/hydrophilic), Silicone"
+  },
+  {
+   "t": "p",
+   "html": "Carboxymethylcellulose, Gelatin, Pectin"
+  },
+  {
+   "t": "p",
+   "html": "Aesthetics, strength, biocompatibility, wear characteristics"
+  },
+  {
+   "t": "p",
+   "html": "Optical clarity, foldability, biocompatibility, uveal compatibility"
+  },
+  {
+   "t": "p",
+   "html": "Moisture retention, autolytic debridement, barrier protection"
+  },
+  {
+   "t": "p",
+   "html": "Broad-spectrum"
+  },
+  {
+   "t": "h3",
+   "text": "Wound Care"
+  },
+  {
+   "t": "p",
+   "html": "<strong>Catheter</strong>"
+  },
+  {
+   "t": "p",
+   "html": "dressing Silver-impregnated foam/fabric"
+  },
+  {
+   "t": "p",
+   "html": "Urinary (Foley) Silicone, Latex (coated) catheter"
+  },
+  {
+   "t": "p",
+   "html": "antimicrobial, biocompatibility"
+  },
+  {
+   "t": "p",
+   "html": "Biocompatibility, flexibility, comfort, infection resistance"
+  },
+  {
+   "t": "p",
+   "html": "<strong>Diagnostic </strong>Blood collection tube"
+  },
+  {
+   "t": "p",
+   "html": "PET (polyethylene terephthalate)"
+  },
+  {
+   "t": "p",
+   "html": "Chemical inertness, clarity, additive compatibility"
+  },
+  {
+   "t": "p",
+   "html": "<strong>Device Category</strong>"
+  },
+  {
+   "t": "p",
+   "html": "<strong>Device Example</strong>"
+  },
+  {
+   "t": "p",
+   "html": "<strong>Primary Material(s) Material Selection Rationale</strong>"
+  },
+  {
+   "t": "p",
+   "html": "<strong>Surgical</strong>"
+  },
+  {
+   "t": "p",
+   "html": "<strong>Surgical</strong>"
+  },
+  {
+   "t": "p",
+   "html": "Sutures (absorbable)"
+  },
+  {
+   "t": "p",
+   "html": "Sutures (non-absorbable)"
+  },
+  {
+   "t": "p",
+   "html": "PGA (polyglycolic acid), PDO (polydioxanone), Catgut"
+  },
+  {
+   "t": "p",
+   "html": "Polypropylene, Polyester, Silk, PTFE"
+  },
+  {
+   "t": "p",
+   "html": "Controlled degradation, tensile strength retention, tissue reaction"
+  },
+  {
+   "t": "p",
+   "html": "Permanent strength, minimal tissue reaction, handling characteristics"
+  },
+  {
+   "t": "box",
+   "kind": "case",
+   "label": "Case Study 7.1",
+   "title": "Metal-on-Metal Hip Implant Failure Background:",
+   "blocks": [
+    {
+     "t": "p",
+     "html": "In the early 2000s, metal-on-metal (MoM) hip implants gained popularity due to:"
+    },
+    {
+     "t": "ul",
+     "items": [
+      "Low wear rates in laboratory testing",
+      "Large femoral head sizes (improved stability, reduced dislocation)",
+      "Theoretical durability advantages over metal-on-polyethylene"
+     ]
+    },
+    {
+     "t": "h4",
+     "text": "Design"
+    },
+    {
+     "t": "ul",
+     "items": [
+      "<strong>Femoral Head</strong>: Cobalt-Chromium alloy",
+      "<strong>Acetabular Cup</strong>: Cobalt-Chromium alloy",
+      "<strong>Bearing Surface</strong>: Hard-on-hard articulation"
+     ]
+    },
+    {
+     "t": "h4",
+     "text": "Clinical Problems Identified"
+    },
+    {
+     "t": "ul",
+     "items": [
+      "<strong>Metallosis:</strong>",
+      "Elevated serum cobalt and chromium ion levels",
+      "Local tissue accumulation of metal particles"
+     ]
+    },
+    {
+     "t": "h4",
+     "text": "Adverse Local Tissue Reactions (ALTR)"
+    },
+    {
+     "t": "ul",
+     "items": [
+      "Pseudotumor formation (inflammatory masses)",
+      "Tissue necrosis",
+      "Osteolysis (bone destruction)"
+     ]
+    },
+    {
+     "t": "h4",
+     "text": "Early Implant Failure"
+    },
+    {
+     "t": "ul",
+     "items": [
+      "Revision rates significantly higher than conventional implants",
+      "Failures within 5-7 years (vs. 15-20 year expected lifespan)"
+     ]
+    },
+    {
+     "t": "p",
+     "html": "<strong>Root Causes:</strong>"
+    },
+    {
+     "t": "p",
+     "html": "<strong>Material-Related Factors:</strong>"
+    },
+    {
+     "t": "ul",
+     "items": [
+      "<strong>Tribology Failure:</strong>",
+      "<strong>Edge Loading</strong>: Improper component positioning → increased wear at bearing edges",
+      "<strong>Micromotion</strong>: Insufficient fixation → fretting corrosion",
+      "<strong>Wear Particle Generation</strong>: Nanometer-sized metal particles → biological response"
+     ]
+    },
+    {
+     "t": "h4",
+     "text": "Corrosion"
+    },
+    {
+     "t": "ul",
+     "items": [
+      "<strong>Galvanic Corrosion</strong>: Between modular taper junctions",
+      "<strong>Crevice Corrosion</strong>: In head-neck interface",
+      "<strong>Ion Release</strong>: Chromium and cobalt dissolution in physiological environment"
+     ]
+    },
+    {
+     "t": "h4",
+     "text": "Biological Response"
+    },
+    {
+     "t": "ul",
+     "items": [
+      "<strong>Type IV Hypersensitivity</strong>: Delayed allergic reaction to metal ions",
+      "<strong>Inflammatory Cascade</strong>: Metal particle and ion-induced inflammation",
+      "<strong>Macrophage Activation</strong>: Chronic inflammation → tissue destruction"
+     ]
+    },
+    {
+     "t": "h4",
+     "text": "Design-Related Factors"
+    },
+    {
+     "t": "ul",
+     "items": [
+      "<strong>Inadequate Preclinical Testing</strong>: Short-term simulator studies didn't predict long-term clinical issues",
+      "<strong>Insufficient Clinical Data</strong>: Rushed market entry without adequate clinical trials",
+      "<strong>Patient Selection</strong>: Used in younger, active patients (higher demands)"
+     ]
+    },
+    {
+     "t": "h4",
+     "text": "Regulatory Response"
+    },
+    {
+     "t": "p",
+     "html": "<strong>Global Actions:</strong>"
+    },
+    {
+     "t": "ul",
+     "items": [
+      "<strong>2010</strong>: UK MHRA (Medicines and Healthcare products Regulatory Agency) issued safety alert",
+      "<strong>2011</strong>: FDA ordered post-market surveillance studies",
+      "<strong>2013</strong>: EU Competent Authorities recommended against use in certain patient populations",
+      "<strong>Multiple Manufacturers</strong>: Voluntary market withdrawals and recalls"
+     ]
+    },
+    {
+     "t": "h4",
+     "text": "Enhanced Requirements"
+    },
+    {
+     "t": "ul",
+     "items": [
+      "Mandatory reporting of metal ion levels",
+      "Regular patient monitoring (serum testing, imaging)",
+      "Stricter premarket clinical data requirements"
+     ]
+    },
+    {
+     "t": "h4",
+     "text": "Lessons Learned"
+    },
+    {
+     "t": "ul",
+     "items": [
+      "<strong>Material Selection:</strong>",
+      "<strong>Material combinations matter</strong>: Hard-on-hard bearings require perfect tribology",
+      "<strong>Long-term testing essential</strong>: Accelerated wear tests don't capture all failure modes",
+      "<strong>Biological response unpredictable</strong>: Laboratory biocompatibility tests insufficient for complex tribocorrosion scenarios"
+     ]
+    },
+    {
+     "t": "h4",
+     "text": "Clinical Evaluation"
+    },
+    {
+     "t": "ul",
+     "items": [
+      "<strong>Adequate sample size</strong>: Clinical trials must include diverse patient populations",
+      "<strong>Sufficient follow-up</strong>: Minimum 5-10 years for joint replacement validation",
+      "<strong>Post-market surveillance</strong>: Continuous monitoring after market approval essential"
+     ]
+    },
+    {
+     "t": "h4",
+     "text": "Risk Management"
+    },
+    {
+     "t": "ul",
+     "items": [
+      "<strong>Worst-case analysis</strong>: Edge loading and malposition scenarios must be evaluated",
+      "<strong>Patient factors</strong>: Age, activity level, anatomy impact device performance",
+      "<strong>Alternative materials</strong>: Return to proven materials (ceramic, highly crosslinked polyethylene)"
+     ]
+    },
+    {
+     "t": "h4",
+     "text": "Current Practice"
+    },
+    {
+     "t": "p",
+     "html": "Modern hip replacements predominantly use:"
+    },
+    {
+     "t": "ul",
+     "items": [
+      "<strong>Metal head + UHMWPE liner</strong>: Proven track record",
+      "<strong>Ceramic head + Ceramic liner</strong>: For younger, active patients",
+      "<strong>Ceramic head + UHMWPE liner</strong>: Reduced polyethylene wear"
+     ]
+    },
+    {
+     "t": "p",
+     "html": "<strong>MoM implants</strong>: Reserved for specific cases with strict patient selection and intensive monitoring"
+    }
+   ]
+  },
+  {
+   "t": "box",
+   "kind": "insight",
+   "label": "Industry Insight 7.1",
+   "title": "",
+   "blocks": [
+    {
+     "t": "p",
+     "html": "<strong>Market Perspective</strong>: Over <strong>70% of medical devices manufactured in India </strong>utilize <strong>polymers as the primary material</strong>, reflecting the versatility, cost-effectiveness, and processability of synthetic polymers for medical applications. This dominance is particularly evident in disposable devices (syringes, catheters, IV sets), diagnostic consumables, and packaging materials. The growing domestic medical device manufacturing sector offers significant career opportunities for materials engineers, polymer scientists, quality control specialists, and biocompatibility testing professionals who understand both material properties and regulatory requirements."
+    }
+   ]
+  }
+ ],
+ "glossary": [
+  [
+   "Bioactive Material",
+   "Material that elicits a specific biological response resulting in bond formation between tissue and material."
+  ],
+  [
+   "Biocompatibility",
+   "Ability of a material to perform with appropriate host response in specific application."
+  ],
+  [
+   "Biomaterial",
+   "Material used in medical devices that interfaces with biological systems."
+  ],
+  [
+   "Bioresorbable",
+   "Material that gradually dissolves and is absorbed/eliminated by the body."
+  ],
+  [
+   "CFRP (Carbon Fiber Reinforced Polymer)",
+   "Composite material with carbon fiber reinforcement in polymer matrix."
+  ],
+  [
+   "Corrosion Resistance",
+   "Material's ability to withstand degradation in physiological environment."
+  ],
+  [
+   "Cytotoxicity",
+   "Ability of a substance to cause cell damage or death."
+  ],
+  [
+   "Elastic Modulus (Young's Modulus)",
+   "Measure of material stiffness; ratio of stress to strain."
+  ],
+  [
+   "Hemocompatibility",
+   "Compatibility with blood without inducing thrombosis, hemolysis, or immune response."
+  ],
+  [
+   "Hydroxyapatite (HA)",
+   "Calcium phosphate ceramic chemically similar to bone mineral; Ca₁₀(PO₄)₆(OH)₂."
+  ],
+  [
+   "ISO 10993",
+   "International standard series for biological evaluation of medical devices."
+  ],
+  [
+   "Osseointegration",
+   "Direct structural and functional connection between bone and implant surface."
+  ],
+  [
+   "UHMWPE (Ultra-High Molecular Weight Polyethylene)",
+   "High-performance polyethylene with molecular weight 3-6 million g/mol; excellent wear resistance."
+  ],
+  [
+   "Sensitization",
+   "Allergic response following repeated exposure to material or degradation products."
+  ],
+  [
+   "Tribology",
+   "Study of friction, wear, and lubrication; critical for articulating joint surfaces."
+  ]
+ ],
+ "recap_intro": "Questions",
+ "recap_items": [
+  "<strong>Biomaterials </strong>must exhibit biocompatibility, appropriate mechanical properties, chemical stability, and sterilization compatibility to ensure device safety and performance",
+  "<strong>Metallic biomaterials </strong>(stainless steel, titanium, cobalt-chromium, nitinol) offer excellent mechanical properties for load-bearing and structural applications, with trade-offs in corrosion resistance, biocompatibility, and cost",
+  "<strong>Polymeric biomaterials </strong>(polyethylene, polypropylene, PVC, polyurethane, silicone, PMMA, PTFE) provide versatility, processability, and wide-ranging properties suitable for diverse applications from disposables to long-term implants",
+  "<strong>Ceramic biomaterials </strong>(alumina, zirconia, hydroxyapatite, bioactive glass) offer unique advantages including extreme hardness, wear resistance, chemical inertness, and bioactivity for bone bonding",
+  "<strong>Composite materials </strong>combine multiple constituents to achieve superior or tailored properties not attainable by individual materials",
+  "<strong>Natural biomaterials </strong>(collagen, chitosan, alginate, hyaluronic acid) derived from biological sources offer excellent biocompatibility and biological recognition for tissue engineering and regenerative medicine",
+  "<strong>Material selection </strong>requires systematic consideration of intended use, mechanical requirements, biocompatibility, sterilization compatibility, manufacturability, regulatory pathway, and cost",
+  "<strong>ISO 10993 </strong>provides the international framework for biocompatibility evaluation, with testing requirements determined by device categorization (contact type and duration)",
+  "Understanding material properties, selection criteria, and biocompatibility evaluation is fundamental to successful medical device development and ensuring patient safety throughout the device lifecycle.",
+  "Compare the advantages and limitations of titanium versus stainless steel for orthopedic implants.",
+  "Why is UHMWPE the preferred bearing surface material in total joint replacements?",
+  "Explain the difference between bioinert and bioactive ceramics with examples.",
+  "What factors contributed to the failure of metal-on-metal hip implants?",
+  "How does the ISO 10993 framework determine which biocompatibility tests are required for a specific device?",
+  "Why are natural biomaterials advantageous for tissue engineering applications?",
+  "What are the key considerations when selecting materials for blood-contacting devices?"
+ ],
+ "references": [
+  {
+   "group": null,
+   "text": "ISO 10993 Series -- Biological evaluation of medical devices (Parts 1-20)"
+  },
+  {
+   "group": null,
+   "text": "ASTM F136-13 -- Standard Specification for Wrought Titanium-6Aluminum- 4Vanadium ELI (Extra Low Interstitial) Alloy for Surgical Implant Applications"
+  },
+  {
+   "group": null,
+   "text": "ASTM F138-19 -- Standard Specification for Wrought 18Chromium-14Nickel- 2.5Molybdenum Stainless Steel Bar and Wire for Surgical Implants"
+  },
+  {
+   "group": null,
+   "text": "ASTM F75-18 -- Standard Specification for Cobalt-28 Chromium-6 Molybdenum Alloy Castings and Casting Alloy for Surgical Implants"
+  },
+  {
+   "group": null,
+   "text": "ISO 5832 Series -- Implants for surgery -- Metallic materials"
+  },
+  {
+   "group": null,
+   "text": "ISO 5833:2002 -- Implants for surgery -- Acrylic resin cements (PMMA bone cement)"
+  },
+  {
+   "group": null,
+   "text": "ISO 7206 Series -- Implants for surgery -- Partial and total hip joint prostheses (testing standards)"
+  },
+  {
+   "group": null,
+   "text": "Buddy D. Ratner et al. -- Biomaterials Science: An Introduction to Materials in Medicine, 4th Edition, Academic Press, 2020"
+  },
+  {
+   "group": null,
+   "text": "Joon Park, R.S. Lakes -- Biomaterials: An Introduction, 3rd Edition, Springer, 2007"
+  },
+  {
+   "group": null,
+   "text": "FDA Guidance -- Use of International Standard ISO 10993-1, \"Biological evaluation of medical devices - Part 1: Evaluation and testing within a risk management process\" (2020)"
+  },
+  {
+   "group": null,
+   "text": "Williams, D.F. -- \"On the mechanisms of biocompatibility,\" Biomaterials, 2008, 29(20), 2941-2953"
+  },
+  {
+   "group": null,
+   "text": "Kurtz, S.M. -- UHMWPE Biomaterials Handbook: Ultra High Molecular Weight Polyethylene in Total Joint Replacement and Medical Devices, 3rd Edition, Elsevier, 2016"
+  }
+ ]
+}

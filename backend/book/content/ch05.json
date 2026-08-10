@@ -1,0 +1,1780 @@
+{
+ "num": 5,
+ "id": "ch05",
+ "title": "Quality Management Systems (QMS) in Medical Devices",
+ "subtitle": "",
+ "overview": [
+  "Quality Management Systems (QMS) form the backbone of medical device manufacturing, ensuring that devices are consistently designed, manufactured, and controlled to meet regulatory and customer requirements. This chapter provides a comprehensive examination of ISO 13485—the international standard for medical device QMS—including its structure, documentation hierarchy, core processes, and regulatory integration. Students will learn how QMS principles translate into practical quality assurance activities that protect patient safety and ensure regulatory compliance."
+ ],
+ "clos": [
+  "Explain the purpose and importance of Quality Management Systems in medical device manufacturing.",
+  "Describe the structure and key clauses of ISO 13485:2016.",
+  "Differentiate between quality manuals, procedures, work instructions, and records within the documentation hierarchy.",
+  "Implement document control, change control, and version management processes.",
+  "Apply CAPA (Corrective and Preventive Action), nonconformance management, and root cause analysis methodologies.",
+  "Describe validation, calibration, and process control requirements for medical devices.",
+  "Conduct internal audits and participate in management reviews effectively.",
+  "Recognize the integration of risk-based thinking throughout QMS processes."
+ ],
+ "keywords": [
+  "Quality Management System (QMS)",
+  "ISO 13485",
+  "Standard Operating Procedure (SOP)",
+  "Corrective and Preventive Action (CAPA)",
+  "Nonconformance Report (NCR)",
+  "calibration",
+  "validation",
+  "risk-based approach",
+  "document control",
+  "internal audit",
+  "management review",
+  "process control"
+ ],
+ "roadmap": [
+  "Introduction to",
+  "QMS",
+  "ISO 13485 structure and clauses",
+  "Documentation hierarchy and pyramid",
+  "Document and record control systems",
+  "Risk-based approach in",
+  "QMS",
+  "Validation and verification processes",
+  "Nonconformance and",
+  "CAPA systems",
+  "Internal audit procedures",
+  "Management review processes",
+  "Supplier quality management",
+  "Training and competency requirements"
+ ],
+ "blocks": [
+  {
+   "t": "ul",
+   "items": [
+    "Case studies and industry insights",
+    "Glossary and quick recap",
+    "References"
+   ]
+  },
+  {
+   "t": "h2",
+   "text": "Introduction to Quality Management Systems (QMS)",
+   "num": "5.1"
+  },
+  {
+   "t": "p",
+   "html": "A <strong>Quality Management System (QMS) </strong>is a formalized framework of policies, processes, procedures, and resources required to meet quality objectives and regulatory requirements. For medical devices, QMS ensures that products consistently meet:"
+  },
+  {
+   "t": "ul",
+   "items": [
+    "<strong>Safety requirements </strong>for patient protection",
+    "<strong>Performance specifications </strong>for intended use",
+    "<strong>Regulatory requirements </strong>across global markets",
+    "<strong>Customer expectations </strong>for reliability and efficacy Medical device QMS compliance is mandatory under:",
+    "<strong>ISO 13485:2016 </strong>(International standard for medical device quality management)",
+    "<strong>FDA 21 CFR Part 820 </strong>(Quality System Regulation - QSR in the United States)",
+    "<strong>EU MDR 2017/745 Annexes IX and XI </strong>(European Union requirements)",
+    "<strong>MDR 2017 </strong>(Medical Device Rules in India)"
+   ]
+  },
+  {
+   "t": "h2",
+   "text": "The Role of QMS in Patient Safety",
+   "num": "5.2"
+  },
+  {
+   "t": "p",
+   "html": "Unlike general manufacturing, medical device production directly impacts human health. A robust QMS prevents:"
+  },
+  {
+   "t": "ul",
+   "items": [
+    "Device failures during use",
+    "Contamination and infection",
+    "Performance degradation",
+    "Regulatory non-compliance",
+    "Market recalls and patient harm"
+   ]
+  },
+  {
+   "t": "fig",
+   "src": "images/ch05_fig01.jpg",
+   "w": 435,
+   "h": 264,
+   "num": "5.1",
+   "caption": "Core Functions of QMS (Placeholder)"
+  },
+  {
+   "t": "p",
+   "html": "<strong>Description:</strong>"
+  },
+  {
+   "t": "p",
+   "html": "A circular diagram with \"QMS\" at the center, connected to six surrounding elements: \"Safety Assurance,\" \"Performance Consistency,\" \"Regulatory Compliance,\" \"Risk Management,\" \"Customer Satisfaction,\" and \"Continuous Improvement.\" Arrows indicate bidirectional relationships between QMS and each element."
+  },
+  {
+   "t": "h2",
+   "text": "ISO 13485:2016 -- The Global QMS Standard",
+   "num": "5.3"
+  },
+  {
+   "t": "p",
+   "html": "ISO 13485 is the internationally recognized quality management standard specifically designed for medical devices and related services. While it shares foundational principles with ISO 9001 (general quality management), ISO 13485 includes medical device-specific requirements."
+  },
+  {
+   "t": "h3",
+   "text": "Key Distinguishing Features"
+  },
+  {
+   "t": "p",
+   "html": "ISO 13485 emphasizes:"
+  },
+  {
+   "t": "ul",
+   "items": [
+    "<strong>Risk-based approach </strong>throughout the product lifecycle",
+    "<strong>Comprehensive documentation </strong>for traceability and compliance",
+    "<strong>Product and component traceability </strong>from raw materials to end-user",
+    "<strong>Management responsibility </strong>for quality policy and objectives",
+    "<strong>Regulatory compliance </strong>as a core quality objective",
+    "<strong>Validation requirements </strong>for processes affecting product quality"
+   ]
+  },
+  {
+   "t": "h3",
+   "text": "Structure of ISO 13485"
+  },
+  {
+   "t": "p",
+   "html": "The standard follows a process-based structure organized into ten clauses:"
+  },
+  {
+   "t": "h3",
+   "text": "Clause 1: Scope"
+  },
+  {
+   "t": "p",
+   "html": "Defines applicability to medical device organizations."
+  },
+  {
+   "t": "h3",
+   "text": "Clause 2: Normative References"
+  },
+  {
+   "t": "p",
+   "html": "References ISO 9000 quality management fundamentals."
+  },
+  {
+   "t": "h3",
+   "text": "Clause 3: Terms and Definitions"
+  },
+  {
+   "t": "p",
+   "html": "Establishes terminology aligned with ISO 9000."
+  },
+  {
+   "t": "h3",
+   "text": "Clause 4: Quality Management System"
+  },
+  {
+   "t": "p",
+   "html": "General QMS requirements, documentation, and control."
+  },
+  {
+   "t": "h3",
+   "text": "Clause 5: Management Responsibility"
+  },
+  {
+   "t": "p",
+   "html": "Leadership commitment, quality policy, planning, and communication."
+  },
+  {
+   "t": "h3",
+   "text": "Clause 6: Resource Management"
+  },
+  {
+   "t": "p",
+   "html": "Human resources, infrastructure, and work environment."
+  },
+  {
+   "t": "h3",
+   "text": "Clause 7: Product Realization"
+  },
+  {
+   "t": "p",
+   "html": "Planning, design, purchasing, production, and control."
+  },
+  {
+   "t": "h3",
+   "text": "Clause 8: Measurement, Analysis, and Improvement"
+  },
+  {
+   "t": "p",
+   "html": "Monitoring, measurement, analysis, and continual improvement processes."
+  },
+  {
+   "t": "p",
+   "html": "<strong>Clauses 9 &amp; 10: Not applicable in ISO 13485:2016 </strong>(differ from ISO 9001:2015 structure)"
+  },
+  {
+   "t": "fig",
+   "src": "images/ch05_fig02.jpg",
+   "w": 415,
+   "h": 235,
+   "num": "5.2",
+   "caption": "ISO 13485 Clause Structure"
+  },
+  {
+   "t": "p",
+   "html": "<strong>Description:</strong>"
+  },
+  {
+   "t": "p",
+   "html": "A vertical flowchart displaying the hierarchical structure of ISO 13485 clauses from Clause 4 (foundation) through Clause 8 (improvement), with brief descriptions for each clause level. Use different colors to distinguish management clauses (4-6) from operational clauses (7-8)."
+  },
+  {
+   "t": "h2",
+   "text": "Documentation Hierarchy -- The QMS Pyramid",
+   "num": "5.4"
+  },
+  {
+   "t": "p",
+   "html": "Effective QMS relies on a structured documentation system that provides clarity at every organizational level. The documentation pyramid consists of four hierarchical levels:"
+  },
+  {
+   "t": "h3",
+   "text": "Level 1: Quality Manual (QM)"
+  },
+  {
+   "t": "p",
+   "html": "The <strong>Quality Manual </strong>is the highest-level document that: Defines the organization's quality policy"
+  },
+  {
+   "t": "ul",
+   "items": [
+    "Describes the scope of the QMS",
+    "References applicable regulatory standards",
+    "Outlines the structure of the QMS",
+    "Identifies interactions between processes"
+   ]
+  },
+  {
+   "t": "h4",
+   "text": "Typical sections include"
+  },
+  {
+   "t": "ul",
+   "items": [
+    "Company overview and quality policy",
+    "Organizational structure",
+    "Process interaction map",
+    "Regulatory compliance statement",
+    "Documentation and record control overview"
+   ]
+  },
+  {
+   "t": "h3",
+   "text": "Level 2: Standard Operating Procedures (SOPs)"
+  },
+  {
+   "t": "p",
+   "html": "<strong>SOPs </strong>provide detailed instructions on how to execute key processes:"
+  },
+  {
+   "t": "ul",
+   "items": [
+    "Define responsibilities and authorities",
+    "Specify process steps and sequences",
+    "Include acceptance criteria",
+    "Reference related documents",
+    "Define record-keeping requirements"
+   ]
+  },
+  {
+   "t": "h4",
+   "text": "Examples"
+  },
+  {
+   "t": "ul",
+   "items": [
+    "SOP for Document Control",
+    "SOP for Internal Audit",
+    "SOP for CAPA Management",
+    "SOP for Supplier Evaluation"
+   ]
+  },
+  {
+   "t": "h3",
+   "text": "Level 3: Work Instructions (WIs)"
+  },
+  {
+   "t": "p",
+   "html": "<strong>Work Instructions </strong>provide step-by-step guidance for specific tasks:"
+  },
+  {
+   "t": "ul",
+   "items": [
+    "Detailed operator instructions",
+    "Equipment operating procedures",
+    "Testing methodologies",
+    "Assembly sequences",
+    "Visual aids and diagrams"
+   ]
+  },
+  {
+   "t": "h4",
+   "text": "Examples"
+  },
+  {
+   "t": "ul",
+   "items": [
+    "WI for Injection Molding Machine Operation",
+    "WI for Sterilization Load Preparation",
+    "WI for Visual Inspection of Catheters"
+   ]
+  },
+  {
+   "t": "h3",
+   "text": "Level 4: Records and Forms"
+  },
+  {
+   "t": "p",
+   "html": "<strong>Records </strong>provide objective evidence of QMS implementation:"
+  },
+  {
+   "t": "ul",
+   "items": [
+    "Completed forms and checklists",
+    "Test results and certificates",
+    "Training records",
+    "Audit reports",
+    "Batch manufacturing records"
+   ]
+  },
+  {
+   "t": "fig",
+   "src": "images/ch05_fig03.jpg",
+   "w": 450,
+   "h": 264,
+   "num": "5.3",
+   "caption": "QMS Documentation Pyramid"
+  },
+  {
+   "t": "p",
+   "html": "<strong>Description:</strong>"
+  },
+  {
+   "t": "p",
+   "html": "A four-tier pyramid diagram illustrating the documentation hierarchy:"
+  },
+  {
+   "t": "ul",
+   "items": [
+    "<strong>Top tier (Level 1): </strong>Quality Manual — smallest section, labelled \"What &amp; Why\"",
+    "<strong>Second tier (Level 2): </strong>Standard Operating Procedures (SOPs) — labelled \"How\"",
+    "<strong>Third tier (Level 3): </strong>Work Instructions (WIs) — labelled \"Detailed Steps\"",
+    "<strong>Bottom tier (Level 4): </strong>Records &amp; Forms — largest section, labelled \"Evidence\" Use color gradients to show increasing detail from top to bottom."
+   ]
+  },
+  {
+   "t": "box",
+   "kind": "example",
+   "label": "Example Box 5.1",
+   "title": "Documentation Hierarchy for Sterilization Process Scenario: Managing the sterilization process for medical devices",
+   "blocks": [
+    {
+     "t": "h4",
+     "text": "Level 1 Quality Manual"
+    },
+    {
+     "t": "p",
+     "html": "<strong>Section 7.5.6 states:</strong> \"The organization shall validate and control sterilization processes in accordance with ISO 11135 for ETO sterilization.\""
+    },
+    {
+     "t": "h4",
+     "text": "Level 2 SOP"
+    },
+    {
+     "t": "p",
+     "html": "<strong>SOP-PROD-015:</strong> ETO Sterilization Process"
+    },
+    {
+     "t": "ul",
+     "items": [
+      "Purpose, scope, responsibilities",
+      "Process parameters and controls",
+      "Validation requirements",
+      "Record maintenance"
+     ]
+    },
+    {
+     "t": "h4",
+     "text": "Level 3 Work Instruction"
+    },
+    {
+     "t": "p",
+     "html": "<strong>WI-STER-003:</strong> Loading of ETO Sterilizer"
+    },
+    {
+     "t": "ul",
+     "items": [
+      "Step 1: Verify sterilizer chamber is clean",
+      "Step 2: Load product according to load pattern diagram",
+      "Step 3: Place biological indicators at specified locations",
+      "Step 4: Close chamber and initiate cycle",
+      "Step 5: Record cycle parameters on Form F-STER-001"
+     ]
+    },
+    {
+     "t": "h4",
+     "text": "Level 4 - Records"
+    },
+    {
+     "t": "ul",
+     "items": [
+      "<em>Form F-STER-001: </em>ETO Sterilization Cycle Log",
+      "<em>Form F-STER-002: </em>Biological Indicator Test Results",
+      "<em>Certificate: </em>Sterilization Cycle Completion Certificate"
+     ]
+    },
+    {
+     "t": "p",
+     "html": "<strong>Outcome: </strong>This hierarchical structure ensures that sterilization is performed consistently, with complete traceability and regulatory compliance."
+    }
+   ]
+  },
+  {
+   "t": "h2",
+   "text": "Document and Record Control",
+   "num": "5.5"
+  },
+  {
+   "t": "p",
+   "html": "Effective document and record control is fundamental to QMS compliance and is explicitly required by ISO 13485 Clause 4.2."
+  },
+  {
+   "t": "h3",
+   "text": "Document Control Requirements"
+  },
+  {
+   "t": "p",
+   "html": "All QMS documents must be:"
+  },
+  {
+   "t": "ul",
+   "items": [
+    "<strong>Approved </strong>before issuance by authorized personnel",
+    "<strong>Version-controlled </strong>with clear revision history",
+    "<strong>Distributed </strong>in a controlled manner to prevent use of obsolete documents",
+    "<strong>Reviewed periodically </strong>and updated as needed",
+    "<strong>Accessible </strong>at points of use",
+    "<strong>Legible and identifiable </strong>with clear document numbers",
+    "<strong>Archived </strong>properly when superseded"
+   ]
+  },
+  {
+   "t": "h4",
+   "text": "Document Control Process Flow"
+  },
+  {
+   "t": "ul",
+   "items": [
+    "<strong>Creation/Revision: </strong>Author prepares or revises document",
+    "<strong>Review: </strong>Subject matter experts review for technical accuracy",
+    "<strong>Approval: </strong>Quality/Management approves document",
+    "<strong>Distribution: </strong>Controlled copies distributed to relevant personnel",
+    "<strong>Training: </strong>Users trained on new/revised procedures",
+    "<strong>Implementation: </strong>Document effective date communicated",
+    "<strong>Obsolete Removal: </strong>Previous versions withdrawn and archived"
+   ]
+  },
+  {
+   "t": "h3",
+   "text": "Record Control Requirements"
+  },
+  {
+   "t": "p",
+   "html": "<strong>Records </strong>provide evidence of QMS effectiveness and regulatory compliance. Record control ensures:"
+  },
+  {
+   "t": "ul",
+   "items": [
+    "<strong>Legibility: </strong>Records remain readable throughout retention period",
+    "<strong>Identification: </strong>Clear traceability to product, process, or activity",
+    "<strong>Storage: </strong>Protected from damage, deterioration, or loss",
+    "<strong>Retrieval: </strong>Easily accessible when needed",
+    "<strong>Retention: </strong>Maintained for specified periods (often lifetime of device + specified years)",
+    "<strong>Disposition: </strong>Secure destruction after retention period"
+   ]
+  },
+  {
+   "t": "h4",
+   "text": "Common Record Types in Medical Device Manufacturing"
+  },
+  {
+   "t": "ul",
+   "items": [
+    "Device History Records (DHR)",
+    "Batch Manufacturing Records (BMR)",
+    "Calibration certificates",
+    "Training records",
+    "Audit reports",
+    "CAPA records",
+    "Complaint logs",
+    "Test reports",
+    "Supplier evaluation records"
+   ]
+  },
+  {
+   "t": "h3",
+   "text": "Safety Note 5.1"
+  },
+  {
+   "t": "p",
+   "html": "<strong>Inadequate record control is a leading cause of FDA warning letters and regulatory non-compliance. </strong>Organizations must establish robust systems for creating, maintaining, and retrieving quality records throughout the required retention periods."
+  },
+  {
+   "t": "h2",
+   "text": "Risk-Based Approach in QMS",
+   "num": "5.6"
+  },
+  {
+   "t": "p",
+   "html": "ISO 13485 mandates integration of risk management (per ISO 14971) throughout QMS processes. This risk-based approach ensures that quality activities are proportional to potential patient harm."
+  },
+  {
+   "t": "h3",
+   "text": "Risk Integration Across QMS Elements"
+  },
+  {
+   "t": "p",
+   "html": "Risk management interfaces with QMS at multiple points:"
+  },
+  {
+   "t": "h3",
+   "text": "Design and Development (Clause 7.3)"
+  },
+  {
+   "t": "ul",
+   "items": [
+    "Hazard identification during design",
+    "Design risk controls and verification",
+    "Risk-benefit analysis for design decisions"
+   ]
+  },
+  {
+   "t": "h3",
+   "text": "Purchasing (Clause 7.4)"
+  },
+  {
+   "t": "ul",
+   "items": [
+    "Supplier risk evaluation",
+    "Critical supplier qualification",
+    "Raw material risk assessment"
+   ]
+  },
+  {
+   "t": "h3",
+   "text": "Production and Service Provision (Clause 7.5)"
+  },
+  {
+   "t": "ul",
+   "items": [
+    "Process risk analysis (FMEA)",
+    "Critical process validation",
+    "In-process risk monitoring"
+   ]
+  },
+  {
+   "t": "h3",
+   "text": "Measurement, Analysis, and Improvement (Clause 8)"
+  },
+  {
+   "t": "ul",
+   "items": [
+    "Post-market surveillance for risk signals",
+    "Complaint trend analysis for emerging risks",
+    "CAPA for risk reduction"
+   ]
+  },
+  {
+   "t": "h3",
+   "text": "Risk-Based Decision Making"
+  },
+  {
+   "t": "p",
+   "html": "Organizations must apply risk principles when determining:"
+  },
+  {
+   "t": "ul",
+   "items": [
+    "Depth of supplier audits",
+    "Frequency of equipment calibration",
+    "Extent of process validation",
+    "Sampling plans for inspection",
+    "Severity of nonconformance",
+    "CAPA prioritization"
+   ]
+  },
+  {
+   "t": "fig",
+   "src": "images/ch05_fig04.jpg",
+   "w": 432,
+   "h": 264,
+   "num": "5.4",
+   "caption": ""
+  },
+  {
+   "t": "h4",
+   "text": "Description"
+  },
+  {
+   "t": "h3",
+   "text": "Diagram 5.1 -- Risk Integration in QMS Processes"
+  },
+  {
+   "t": "p",
+   "html": "A hub-and-spoke diagram with \"Risk Management (ISO 14971)\" at the center, with bidirectional arrows connecting to eight surrounding process boxes:"
+  },
+  {
+   "t": "ul",
+   "items": [
+    "Design Controls",
+    "Supplier Management",
+    "Manufacturing Process Control",
+    "Equipment Qualification",
+    "Product Testing",
+    "CAPA System",
+    "Post-Market Surveillance",
+    "Change Management"
+   ]
+  },
+  {
+   "t": "h2",
+   "text": "Supplier Quality Management",
+   "num": "5.7"
+  },
+  {
+   "t": "p",
+   "html": "Medical device manufacturers depend on suppliers for raw materials, components, and services. ISO 13485 Clause 7.4 requires systematic supplier control."
+  },
+  {
+   "t": "h3",
+   "text": "Supplier Evaluation and Selection"
+  },
+  {
+   "t": "p",
+   "html": "Suppliers must be evaluated based on:"
+  },
+  {
+   "t": "ul",
+   "items": [
+    "<strong>Quality capability </strong>(ISO 13485 certification preferred)",
+    "<strong>Technical competence </strong>for the specific product/service"
+   ]
+  },
+  {
+   "t": "h3",
+   "text": "Regulatory compliance history"
+  },
+  {
+   "t": "ul",
+   "items": [
+    "<strong>Financial stability</strong>",
+    "<strong>Past performance </strong>(if existing supplier)"
+   ]
+  },
+  {
+   "t": "h4",
+   "text": "Evaluation Methods"
+  },
+  {
+   "t": "ul",
+   "items": [
+    "Document review (certificates, test reports)",
+    "Sample evaluation and testing",
+    "On-site audits (for critical suppliers)",
+    "Reference checks",
+    "Risk-based assessment"
+   ]
+  },
+  {
+   "t": "h3",
+   "text": "Approved Supplier List (ASL)"
+  },
+  {
+   "t": "p",
+   "html": "Organizations maintain an <strong>Approved Supplier List </strong>documenting:"
+  },
+  {
+   "t": "ul",
+   "items": [
+    "Supplier name and contact information",
+    "Products/services supplied",
+    "Approval date and expiry",
+    "Risk classification",
+    "Re-evaluation frequency",
+    "Certification status"
+   ]
+  },
+  {
+   "t": "h3",
+   "text": "Supplier Monitoring and Re-evaluation"
+  },
+  {
+   "t": "p",
+   "html": "Ongoing supplier performance monitoring includes:"
+  },
+  {
+   "t": "ul",
+   "items": [
+    "<strong>Quality metrics: </strong>Defect rates, nonconformance trends, on-time delivery",
+    "<strong>Audit programs: </strong>Periodic on-site or document audits",
+    "<strong>Complaint tracking: </strong>Issues related to supplier materials",
+    "<strong>Corrective action: </strong>Supplier CAPA for quality issues",
+    "<strong>Re-qualification: </strong>Periodic re-evaluation per defined schedule"
+   ]
+  },
+  {
+   "t": "h4",
+   "text": "Critical Supplier Categories"
+  },
+  {
+   "t": "p",
+   "html": "<strong>Category A: Critical Suppliers</strong>"
+  },
+  {
+   "t": "p",
+   "html": "Supply materials directly affecting device safety/performance (e.g., biocompatible polymers, sterile packaging). Require frequent audits and rigorous controls."
+  },
+  {
+   "t": "h3",
+   "text": "Category B: Important suppliers"
+  },
+  {
+   "t": "p",
+   "html": "Supply materials affecting quality but with lower risk (e.g., labeling materials, non-critical components). Require regular monitoring."
+  },
+  {
+   "t": "h3",
+   "text": "Category C: General Suppliers"
+  },
+  {
+   "t": "p",
+   "html": "Supply commodity items with minimal quality impact (e.g., office supplies, non-product packaging). Require basic qualification only."
+  },
+  {
+   "t": "h2",
+   "text": "Validation and Verification Processes",
+   "num": "5.8"
+  },
+  {
+   "t": "p",
+   "html": "Validation and verification are critical QMS activities ensuring that processes and products consistently meet specifications."
+  },
+  {
+   "t": "h3",
+   "text": "Process Validation"
+  },
+  {
+   "t": "p",
+   "html": "<strong>Process validation </strong>provides documented evidence that a process consistently produces results meeting predetermined specifications."
+  },
+  {
+   "t": "h4",
+   "text": "Types of validation"
+  },
+  {
+   "t": "p",
+   "html": "<strong>1. Prospective va;idation: </strong>Performed before routine production, typically for new processes. Involves running multiple production batches under qualified conditions."
+  },
+  {
+   "t": "p",
+   "html": "<strong>2. Concurrent Validation </strong>Performed during routine production when prospective validation is not feasible. Requires enhanced monitoring and documentation."
+  },
+  {
+   "t": "p",
+   "html": "<strong>3. Retrospective Validation </strong>Uses historical data to demonstrate process capability. Limited applicability under modern regulations."
+  },
+  {
+   "t": "h4",
+   "text": "Validation Activities"
+  },
+  {
+   "t": "p",
+   "html": "<strong>Installation Qualification (IQ)</strong>"
+  },
+  {
+   "t": "p",
+   "html": "Verifies that equipment is installed correctly per specifications:"
+  },
+  {
+   "t": "ul",
+   "items": [
+    "Utility connections verified",
+    "Safety features functional",
+    "Documentation complete"
+   ]
+  },
+  {
+   "t": "h3",
+   "text": "Operational Qualification (OQ)"
+  },
+  {
+   "t": "p",
+   "html": "Demonstrates that equipment operates correctly across its operating range:"
+  },
+  {
+   "t": "ul",
+   "items": [
+    "Parameters tested at specified limits",
+    "Control systems verified",
+    "Alarm functions tested"
+   ]
+  },
+  {
+   "t": "h3",
+   "text": "Performance Qualification (PQ)"
+  },
+  {
+   "t": "p",
+   "html": "Confirms that the process consistently produces acceptable product:"
+  },
+  {
+   "t": "ul",
+   "items": [
+    "Multiple production runs performed",
+    "Product tested against specifications",
+    "Process capability demonstrated"
+   ]
+  },
+  {
+   "t": "h3",
+   "text": "Common Processes Requiring Validation Sterilization Processes"
+  },
+  {
+   "t": "p",
+   "html": "All sterilization methods (ETO, gamma, steam) require rigorous validation per ISO 11135, ISO 11137, or ISO 17665."
+  },
+  {
+   "t": "h3",
+   "text": "Cleaning Processes"
+  },
+  {
+   "t": "p",
+   "html": "Cleaning validation ensures effective removal of contaminants without leaving harmful residues."
+  },
+  {
+   "t": "h3",
+   "text": "Software Validation"
+  },
+  {
+   "t": "p",
+   "html": "Software used in production, quality control, or device functionality requires validation per IEC 62304."
+  },
+  {
+   "t": "h3",
+   "text": "Molding and Forming Processes"
+  },
+  {
+   "t": "p",
+   "html": "Injection molding, extrusion, and other molding processes require validation to ensure dimensional and functional consistency."
+  },
+  {
+   "t": "h3",
+   "text": "Verification Activities"
+  },
+  {
+   "t": "p",
+   "html": "<strong>Verification </strong>confirms that design outputs meet design input specifications. Examples:"
+  },
+  {
+   "t": "ul",
+   "items": [
+    "Dimensional inspection against drawings",
+    "Tensile testing against specification",
+    "Electrical safety testing per IEC 60601",
+    "Software unit testing against requirements"
+   ]
+  },
+  {
+   "t": "h3",
+   "text": "Safety Note 5.2"
+  },
+  {
+   "t": "p",
+   "html": "<strong>High-risk device processes—particularly sterilization, packaging, and critical assembly operations—must always undergo formal validation. </strong>Process validation cannot be skipped or abbreviated, as unvalidated processes pose direct risks to patient safety."
+  },
+  {
+   "t": "h3",
+   "text": "Nonconformance Management and CAPA"
+  },
+  {
+   "t": "p",
+   "html": "Effective handling of nonconformances and systematic corrective/preventive action are cornerstones of continuous improvement."
+  },
+  {
+   "t": "h2",
+   "text": "Nonconformance Report (NCR)",
+   "num": "5.9"
+  },
+  {
+   "t": "p",
+   "html": "A <strong>Nonconformance Report (NCR) </strong>documents any instance where a product, process, or system fails to meet requirements."
+  },
+  {
+   "t": "h4",
+   "text": "Common Nonconformance Examples"
+  },
+  {
+   "t": "ul",
+   "items": [
+    "Product dimensions outside specification",
+    "Failed sterility or biocompatibility test",
+    "Incomplete documentation",
+    "Equipment malfunction",
+    "Procedure not followed",
+    "Training not completed"
+   ]
+  },
+  {
+   "t": "h4",
+   "text": "NCR Process Flow"
+  },
+  {
+   "t": "ul",
+   "items": [
+    "<strong>Detection: </strong>Nonconformance identified during inspection or audit",
+    "<strong>Documentation: </strong>NCR form completed with details",
+    "<strong>Evaluation: </strong>Quality team assesses severity and impact",
+    "<strong>Disposition: </strong>Determine action (rework, scrap, use-as-is, return to supplier)",
+    "<strong>Investigation: </strong>Root cause analysis initiated",
+    "<strong>CAPA: </strong>Corrective/preventive actions defined",
+    "<strong>Verification: </strong>CAPA effectiveness verified",
+    "<strong>Closure: </strong>NCR formally closed with approvals"
+   ]
+  },
+  {
+   "t": "h3",
+   "text": "CAPA (Corrective and Preventive Action)"
+  },
+  {
+   "t": "p",
+   "html": "<strong>CAPA </strong>is a systematic approach to identify, investigate, and eliminate sources of nonconformances."
+  },
+  {
+   "t": "h3",
+   "text": "Corrective Action"
+  },
+  {
+   "t": "p",
+   "html": "Addresses existing problems to prevent recurrence."
+  },
+  {
+   "t": "h4",
+   "text": "Example"
+  },
+  {
+   "t": "p",
+   "html": "A batch of catheters fails burst pressure testing."
+  },
+  {
+   "t": "h4",
+   "text": "Corrective Actions"
+  },
+  {
+   "t": "ul",
+   "items": [
+    "Identify root cause (incorrect extrusion temperature)",
+    "Adjust process parameters",
+    "Retrain operators",
+    "Implement additional in-process checks"
+   ]
+  },
+  {
+   "t": "h3",
+   "text": "Preventive Action"
+  },
+  {
+   "t": "p",
+   "html": "Addresses potential problems before they occur."
+  },
+  {
+   "t": "h4",
+   "text": "Example"
+  },
+  {
+   "t": "p",
+   "html": "Analysis of complaint trends shows increasing reports of packaging seal failures."
+  },
+  {
+   "t": "h4",
+   "text": "Preventive Actions"
+  },
+  {
+   "t": "ul",
+   "items": [
+    "Investigate seal strength before failures escalate",
+    "Identify potential causes (aging heat sealer)",
+    "Replace heat sealer preventively",
+    "Establish preventive maintenance schedule"
+   ]
+  },
+  {
+   "t": "h4",
+   "text": "Root Cause Analysis (RCA) Methods"
+  },
+  {
+   "t": "ul",
+   "items": [
+    "<strong>5 Whys</strong>"
+   ]
+  },
+  {
+   "t": "p",
+   "html": "Simple iterative technique asking \"Why?\" five times to reach root cause."
+  },
+  {
+   "t": "ul",
+   "items": [
+    "<strong>Fishbone Diagram (Ishikawa) </strong>Visual tool organizing potential causes into categories (Man, Machine, Material, Method, Measurement, Environment)."
+   ]
+  },
+  {
+   "t": "h3",
+   "text": "Failure Mode and Effects Analysis (FMEA)"
+  },
+  {
+   "t": "p",
+   "html": "Systematic analysis of potential failures, their effects, and risk priority."
+  },
+  {
+   "t": "h3",
+   "text": "Fault Tree Analysis (FTA)"
+  },
+  {
+   "t": "p",
+   "html": "Logical diagram showing relationships between system failure and contributing factors."
+  },
+  {
+   "t": "fig",
+   "src": "images/ch05_fig05.jpg",
+   "w": 442,
+   "h": 302,
+   "num": "5.5",
+   "caption": "CAPA Process Flowchart (Placeholder)"
+  },
+  {
+   "t": "p",
+   "html": "<strong>Description:</strong>"
+  },
+  {
+   "t": "p",
+   "html": "A detailed flowchart showing the CAPA lifecycle:"
+  },
+  {
+   "t": "ul",
+   "items": [
+    "<strong>Identify Issue </strong>(from NCR, audit, complaint, risk assessment)",
+    "<strong>Investigate Root Cause </strong>(RCA methods applied)",
+    "<strong>Develop Action Plan </strong>(define corrective/preventive actions)",
+    "<strong>Implement Actions </strong>(execute with assigned responsibilities)",
+    "<strong>Verify Effectiveness </strong>(confirm actions resolved issue)",
+    "<strong>Close CAPA </strong>(document completion and approvals)",
+    "<strong>Monitor Trends </strong>(ongoing surveillance for recurrence)"
+   ]
+  },
+  {
+   "t": "p",
+   "html": "Use decision points to show evaluation of effectiveness before closure."
+  },
+  {
+   "t": "h3",
+   "text": "Calibration and Equipment Management"
+  },
+  {
+   "t": "p",
+   "html": "Accurate measurements are fundamental to quality assurance. ISO 13485 Clause 7.6 requires equipment management and calibration."
+  },
+  {
+   "t": "h3",
+   "text": "Equipment Requiring Calibration"
+  },
+  {
+   "t": "p",
+   "html": "All equipment used for measuring or monitoring product characteristics must be calibrated:"
+  },
+  {
+   "t": "ul",
+   "items": [
+    "<strong>Dimensional measurement: </strong>Micrometre’s, calliper’s, gauges, CMMs",
+    "<strong>Weighing: </strong>Analytical balances, scales",
+    "<strong>Temperature: </strong>Thermometers, temperature probes, ovens, autoclaves",
+    "<strong>Pressure: </strong>Pressure gauges, manometers",
+    "<strong>Electrical: </strong>Multimeters, safety analyzers, oscilloscopes",
+    "<strong>Time: </strong>Timers, stopwatches (for process timing)"
+   ]
+  },
+  {
+   "t": "h3",
+   "text": "Calibration Requirements Traceability"
+  },
+  {
+   "t": "p",
+   "html": "Calibration must be traceable to:"
+  },
+  {
+   "t": "ul",
+   "items": [
+    "International standards (SI units)",
+    "National standards (e.g., NIST in USA, NPL in India)",
+    "Accredited calibration laboratories (ISO/IEC 17025)"
+   ]
+  },
+  {
+   "t": "h3",
+   "text": "Calibration Records"
+  },
+  {
+   "t": "p",
+   "html": "Each calibrated instrument must have:"
+  },
+  {
+   "t": "ul",
+   "items": [
+    "Unique identification number",
+    "Calibration certificate with data",
+    "Calibration due date clearly marked",
+    "Calibration status label (green = valid, yellow = near due, red = overdue)",
+    "Historical calibration records <strong>Calibration Frequency </strong>Determined by:",
+    "Manufacturer recommendations",
+    "Historical stability data",
+    "Criticality of measurement",
+    "Regulatory requirements"
+   ]
+  },
+  {
+   "t": "h3",
+   "text": "Out-of-Calibration (OOC) Protocol"
+  },
+  {
+   "t": "p",
+   "html": "When equipment is found out of specification during calibration:"
+  },
+  {
+   "t": "ul",
+   "items": [
+    "Quarantine equipment immediately",
+    "Evaluate impact on previously tested products",
+    "Initiate NCR/CAPA process",
+    "Adjust calibration frequency if needed",
+    "Document investigation and actions"
+   ]
+  },
+  {
+   "t": "h2",
+   "text": "Internal Audits",
+   "num": "5.10"
+  },
+  {
+   "t": "p",
+   "html": "Internal audits (Clause 8.2.4) provide independent evaluation of QMS effectiveness and regulatory compliance."
+  },
+  {
+   "t": "h3",
+   "text": "Audit Planning"
+  },
+  {
+   "t": "p",
+   "html": "Organizations must:"
+  },
+  {
+   "t": "p",
+   "html": "Develop annual audit schedule"
+  },
+  {
+   "t": "ul",
+   "items": [
+    "Assign qualified internal auditors",
+    "Define audit scope and objectives",
+    "Ensure auditor independence (auditors do not audit their own work)"
+   ]
+  },
+  {
+   "t": "h3",
+   "text": "Audit Frequency"
+  },
+  {
+   "t": "p",
+   "html": "Based on:"
+  },
+  {
+   "t": "ul",
+   "items": [
+    "Risk level of process/area",
+    "Past performance",
+    "Regulatory requirements",
+    "Changes to processes or personnel"
+   ]
+  },
+  {
+   "t": "h4",
+   "text": "Audit Execution Audit Process Steps"
+  },
+  {
+   "t": "ul",
+   "items": [
+    "<strong>Opening Meeting: </strong>Introduce audit team, confirm scope, review logistics",
+    "<strong>Document Review: </strong>Examine procedures, records, and documentation",
+    "<strong>Interviews: </strong>Discuss processes with personnel",
+    "<strong>Observations: </strong>Observe work practices and activities",
+    "<strong>Evidence Collection: </strong>Gather objective evidence of compliance",
+    "<strong>Finding Classification: </strong>Identify major nonconformities, minor nonconformities, and observations",
+    "<strong>Closing Meeting: </strong>Present findings, discuss corrective actions",
+    "<strong>Audit Report: </strong>Document findings, evidence, and recommendations"
+   ]
+  },
+  {
+   "t": "h3",
+   "text": "Audit Finding Categories"
+  },
+  {
+   "t": "p",
+   "html": "<strong>Major Nonconformity (Major NC) </strong>Significant failure to meet requirements that could impact product safety or regulatory compliance."
+  },
+  {
+   "t": "p",
+   "html": "<strong>Example: </strong>Critical process not validated"
+  },
+  {
+   "t": "h3",
+   "text": "Minor Nonconformity (Minor NC)"
+  },
+  {
+   "t": "p",
+   "html": "Isolated lapse or failure that does not significantly impact overall QMS effectiveness."
+  },
+  {
+   "t": "p",
+   "html": "<strong>Example: </strong>Missing signature on a single batch record"
+  },
+  {
+   "t": "h3",
+   "text": "Observation"
+  },
+  {
+   "t": "p",
+   "html": "Potential issue that does not constitute a nonconformance but warrants attention."
+  },
+  {
+   "t": "p",
+   "html": "<strong>Example: </strong>Inconsistent documentation practices across departments"
+  },
+  {
+   "t": "h3",
+   "text": "Audit Follow-Up"
+  },
+  {
+   "t": "ul",
+   "items": [
+    "Auditee develops corrective action plan with timelines",
+    "Auditor verifies implementation of corrective actions",
+    "Effectiveness of actions evaluated during subsequent audits",
+    "Audit results reported to management review"
+   ]
+  },
+  {
+   "t": "h2",
+   "text": "Management Review",
+   "num": "5.11"
+  },
+  {
+   "t": "p",
+   "html": "Top management must review the QMS at planned intervals (Clause 5.6) to ensure continuing suitability, adequacy, and effectiveness."
+  },
+  {
+   "t": "h3",
+   "text": "Management Review Inputs"
+  },
+  {
+   "t": "p",
+   "html": "The review must include evaluation of:"
+  },
+  {
+   "t": "ul",
+   "items": [
+    "<strong>Audit results </strong>(internal and external audits)",
+    "<strong>Customer feedback and complaints</strong>",
+    "<strong>Process performance and product conformity</strong>",
+    "<strong>Status of corrective and preventive actions</strong>",
+    "<strong>Follow-up actions from previous management reviews</strong>",
+    "<strong>Changes that could affect the QMS</strong>",
+    "<strong>Recommendations for improvement</strong>",
+    "<strong>New or revised regulatory requirements</strong>",
+    "<strong>Post-market surveillance data</strong>",
+    "<strong>Risk management activities and results</strong>",
+    "<strong>Management Review Outputs</strong>"
+   ]
+  },
+  {
+   "t": "p",
+   "html": "Management review generates decisions and actions including:"
+  },
+  {
+   "t": "ul",
+   "items": [
+    "<strong>Resource allocation </strong>for QMS improvement",
+    "<strong>Quality objectives </strong>for the upcoming period"
+   ]
+  },
+  {
+   "t": "h3",
+   "text": "Product and process improvements"
+  },
+  {
+   "t": "ul",
+   "items": [
+    "<strong>QMS updates </strong>to address identified issues",
+    "<strong>Training needs </strong>identified",
+    "<strong>Infrastructure improvements </strong>required"
+   ]
+  },
+  {
+   "t": "h3",
+   "text": "Management Review Frequency"
+  },
+  {
+   "t": "ul",
+   "items": [
+    "Typically conducted annually at minimum",
+    "Additional reviews triggered by major changes, audits, or regulatory events",
+    "Documented in management review reports",
+    "Minutes distributed to relevant stakeholders"
+   ]
+  },
+  {
+   "t": "h2",
+   "text": "Training and Competency Management",
+   "num": "5.12"
+  },
+  {
+   "t": "p",
+   "html": "Personnel competency directly affects product quality and patient safety. ISO 13485 Clause 6.2 requires systematic training management."
+  },
+  {
+   "t": "h3",
+   "text": "Training Requirements"
+  },
+  {
+   "t": "p",
+   "html": "All personnel must receive training in:"
+  },
+  {
+   "t": "ul",
+   "items": [
+    "<strong>Company quality policy and procedures</strong>",
+    "<strong>Job-specific SOPs and work instructions</strong>",
+    "<strong>Safety and hygiene practices</strong>",
+    "<strong>GMP (Good Manufacturing Practices) for medical devices</strong>",
+    "<strong>Cleanroom behavior </strong>(if applicable)",
+    "<strong>Risk management principles</strong>",
+    "<strong>Regulatory awareness</strong>",
+    "<strong>Training Process Training Lifecycle:</strong>",
+    "<strong>Needs Assessment: </strong>Identify training requirements based on job role",
+    "<strong>Training Delivery: </strong>Classroom, on-the-job, e-learning, or external courses",
+    "<strong>Competency Evaluation: </strong>Testing, observation, or performance assessment",
+    "<strong>Documentation: </strong>Training records maintained per regulatory requirements",
+    "<strong>Retraining: </strong>Periodic refresher training and training on changes",
+    "<strong>Effectiveness Evaluation: </strong>Assess impact of training on performance"
+   ]
+  },
+  {
+   "t": "h3",
+   "text": "Training Records"
+  },
+  {
+   "t": "p",
+   "html": "Must include:"
+  },
+  {
+   "t": "ul",
+   "items": [
+    "Employee name and identification",
+    "Training topic and date",
+    "Trainer name and qualification",
+    "Training duration",
+    "Evaluation method and results",
+    "Signature of trainee and trainer",
+    "Competency certification"
+   ]
+  },
+  {
+   "t": "h4",
+   "text": "Special Training Requirements"
+  },
+  {
+   "t": "ul",
+   "items": [
+    "<strong>Quality Auditors: </strong>ISO 13485 lead auditor training",
+    "<strong>Design Engineers: </strong>Design controls and risk management",
+    "<strong>Sterile Manufacturing Staff: </strong>Aseptic techniques and gowning",
+    "<strong>QC Personnel: </strong>Test method validation and equipment use"
+   ]
+  },
+  {
+   "t": "box",
+   "kind": "case",
+   "label": "Case Study 5.1",
+   "title": "CAPA for Sterility Failure",
+   "blocks": [
+    {
+     "t": "p",
+     "html": "<strong>Background</strong>"
+    },
+    {
+     "t": "p",
+     "html": "A manufacturer of single-use catheters experienced a sterility test failure during routine testing of a production batch. The failed batch contained 10,000 units ready for distribution."
+    }
+   ]
+  },
+  {
+   "t": "h3",
+   "text": "Problem Identification"
+  },
+  {
+   "t": "ul",
+   "items": [
+    "Sterility testing per USP &lt;71&gt; showed microbial growth in 2 out of 10 test samples",
+    "Batch immediately quarantined and distribution halted",
+    "NCR initiated: NCR-2024-0342"
+   ]
+  },
+  {
+   "t": "p",
+   "html": "<strong>Investigation Process</strong>"
+  },
+  {
+   "t": "p",
+   "html": "<strong>Root Cause Analysis (5 Whys):</strong>"
+  },
+  {
+   "t": "p",
+   "html": "<strong>Q1: Why did sterility test fail?</strong>"
+  },
+  {
+   "t": "p",
+   "html": "A1: Microbial contamination present in final product"
+  },
+  {
+   "t": "h3",
+   "text": "Q2: Why was contamination present?"
+  },
+  {
+   "t": "p",
+   "html": "A2: Sterile barrier integrity compromised"
+  },
+  {
+   "t": "h3",
+   "text": "Q3: Why was barrier compromised?"
+  },
+  {
+   "t": "p",
+   "html": "A3: Packaging seals were weak at specific locations"
+  },
+  {
+   "t": "h3",
+   "text": "Q4: Why were seals weak?"
+  },
+  {
+   "t": "p",
+   "html": "A4: Heat sealer temperature was 5°C below specification"
+  },
+  {
+   "t": "p",
+   "html": "<strong>Q5: Why was temperature low? </strong>A5: Sealer heating element was failing and required replacement; operator did not recognize the drift in temperature"
+  },
+  {
+   "t": "h4",
+   "text": "Root Cause Identified"
+  },
+  {
+   "t": "ul",
+   "items": [
+    "Inadequate preventive maintenance of heat sealing equipment",
+    "Insufficient operator training to recognize temperature deviations"
+   ]
+  },
+  {
+   "t": "h4",
+   "text": "Corrective Actions Implemented Immediate Actions"
+  },
+  {
+   "t": "ul",
+   "items": [
+    "Quarantined and scrapped the affected batch (10,000 units)",
+    "Replaced heat sealer heating element",
+    "Recalibrated heat sealer and verified performance"
+   ]
+  },
+  {
+   "t": "h4",
+   "text": "Short-term Corrective Actions"
+  },
+  {
+   "t": "ul",
+   "items": [
+    "Retrained all packaging operators on temperature monitoring",
+    "Implemented hourly temperature checks during sealing operations",
+    "Validated sealing process with new heating element (IQ/OQ/PQ)"
+   ]
+  },
+  {
+   "t": "h4",
+   "text": "Long-term Corrective Actions"
+  },
+  {
+   "t": "ul",
+   "items": [
+    "Established preventive maintenance schedule for all heat sealers (quarterly inspection)",
+    "Installed continuous temperature monitoring system with alarms",
+    "Updated work instructions to include temperature verification steps"
+   ]
+  },
+  {
+   "t": "h3",
+   "text": "Preventive Actions"
+  },
+  {
+   "t": "ul",
+   "items": [
+    "Extended preventive maintenance program to all heat-sealing equipment across facility",
+    "Implemented automated data logging for all critical process parameters",
+    "Enhanced operator training program with focus on equipment monitoring"
+   ]
+  },
+  {
+   "t": "h3",
+   "text": "Verification of Effectiveness"
+  },
+  {
+   "t": "ul",
+   "items": [
+    "Three consecutive production batches successfully passed sterility testing",
+    "No seal integrity failures observed over 6-month monitoring period",
+    "Operator competency assessments showed improved understanding",
+    "Preventive maintenance program reviewed and found effective"
+   ]
+  },
+  {
+   "t": "h3",
+   "text": "Outcome"
+  },
+  {
+   "t": "p",
+   "html": "The systematic CAPA approach identified and eliminated the root cause, preventing future sterility failures. Estimated cost savings from prevented recalls exceeded $500,000 annually."
+  },
+  {
+   "t": "h3",
+   "text": "Lessons Learned"
+  },
+  {
+   "t": "ul",
+   "items": [
+    "<strong>Preventive maintenance is critical </strong>for processes affecting product sterility",
+    "<strong>Operator training must include troubleshooting </strong>and recognition of abnormal conditions",
+    "<strong>Automated monitoring systems </strong>reduce human error and provide real-time alerts",
+    "<strong>Documentation and trending </strong>enable early detection of process drift"
+   ]
+  },
+  {
+   "t": "box",
+   "kind": "insight",
+   "label": "Industry Insight 5.1",
+   "title": "",
+   "blocks": [
+    {
+     "t": "p",
+     "html": "<strong>Global Impact of QMS Deficiencies</strong>"
+    },
+    {
+     "t": "p",
+     "html": "According to FDA and global regulatory data, <strong>inadequate Quality Management Systems account for over 50% of medical device recalls worldwide</strong>. The most common QMS-related deficiencies include:"
+    },
+    {
+     "t": "ul",
+     "items": [
+      "<strong>Insufficient design controls </strong>(30% of recalls)",
+      "<strong>Inadequate CAPA systems </strong>(25% of recalls)",
+      "<strong>Poor supplier controls </strong>(18% of recalls)",
+      "<strong>Inadequate validation </strong>(15% of recalls)",
+      "<strong>Documentation and record control issues </strong>(12% of recalls)"
+     ]
+    }
+   ]
+  },
+  {
+   "t": "h3",
+   "text": "Economic Impact"
+  },
+  {
+   "t": "ul",
+   "items": [
+    "Average cost of a Class I recall: <strong>$5-10 million USD</strong>",
+    "Average cost of implementing robust QMS: <strong>$200,000-500,000 USD annually</strong>",
+    "Return on investment for QMS: <strong>10:1 or greater Career Opportunities</strong>"
+   ]
+  },
+  {
+   "t": "p",
+   "html": "The global demand for QMS professionals in medical devices is growing at <strong>12-15% annually</strong>. Key roles include:"
+  },
+  {
+   "t": "ul",
+   "items": [
+    "QMS Manager/Director",
+    "Internal Auditor (ISO 13485)",
+    "CAPA Coordinator",
+    "Document Control Specialist",
+    "Validation Engineer",
+    "Supplier Quality Engineer Organizations with mature QMS demonstrate:",
+    "40% fewer customer complaints",
+    "60% reduction in nonconformances",
+    "30% faster regulatory approval times",
+    "Higher customer satisfaction and market reputation"
+   ]
+  }
+ ],
+ "glossary": [
+  [
+   "Approved Supplier List (ASL)",
+   "Documented list of suppliers approved for providing materials, components, or services based on evaluation criteria."
+  ],
+  [
+   "Calibration",
+   "Process of verifying and adjusting measuring equipment to ensure accuracy against known standards."
+  ],
+  [
+   "CAPA (Corrective and Preventive Action)",
+   "Systematic process to eliminate causes of existing nonconformities (corrective) and prevent potential nonconformities (preventive)."
+  ],
+  [
+   "Competency",
+   "Demonstrated ability to apply knowledge and skills to achieve intended results."
+  ],
+  [
+   "Device History Record (DHR)",
+   "Compilation of records documenting the manufacturing history of a finished device."
+  ],
+  [
+   "Document Control",
+   "Systematic management of document creation, review, approval, distribution, and archival."
+  ],
+  [
+   "Internal Audit",
+   "Systematic, independent examination of QMS processes to determine effectiveness and compliance."
+  ],
+  [
+   "ISO 13485",
+   "International standard specifying requirements for quality management systems in medical device organizations."
+  ],
+  [
+   "Management Review",
+   "Periodic evaluation of QMS by top management to ensure continuing suitability, adequacy, and effectiveness."
+  ],
+  [
+   "Nonconformance Report (NCR)",
+   "Document identifying and describing a failure to meet specified requirements."
+  ],
+  [
+   "Performance Qualification (PQ)",
+   "Documented verification that a process consistently produces product meeting all specifications under actual production conditions."
+  ],
+  [
+   "Quality Management System (QMS)",
+   "Coordinated activities to direct and control an organization with regard to quality."
+  ],
+  [
+   "Quality Manual (QM)",
+   "Highest-level QMS document describing quality policy, scope, and QMS structure."
+  ],
+  [
+   "Risk-Based Approach",
+   "Decision-making methodology that considers potential risks when determining QMS activities and controls."
+  ],
+  [
+   "Root Cause Analysis (RCA)",
+   "Investigative process to identify fundamental cause(s) of a problem."
+  ],
+  [
+   "Standard Operating Procedure (SOP)",
+   "Detailed written instructions to achieve uniformity in performing specific functions or processes."
+  ],
+  [
+   "Validation",
+   "Documented evidence that a process consistently produces results meeting predetermined specifications."
+  ],
+  [
+   "Verification",
+   "Confirmation through objective evidence that specified requirements have been met."
+  ],
+  [
+   "Work Instruction (WI)",
+   "Detailed, step-by-step instructions for completing a specific task"
+  ]
+ ],
+ "recap_intro": "This chapter provided comprehensive coverage of Quality Management Systems for medical devices, emphasizing:",
+ "recap_items": [
+  "<strong>ISO 13485 structure </strong>as the foundation for device quality assurance",
+  "<strong>Documentation hierarchy </strong>from quality manuals through records",
+  "<strong>Risk-based approach </strong>integrated throughout QMS processes",
+  "<strong>CAPA systems </strong>for systematic problem resolution and prevention",
+  "<strong>Validation and verification </strong>ensuring process and product quality",
+  "<strong>Supplier management </strong>for controlling external dependencies",
+  "<strong>Internal audits and management reviews </strong>for continuous improvement",
+  "<strong>Training and competency </strong>as critical success factors",
+  "Mastery of these QMS principles provides the foundation for careers in quality assurance, regulatory affairs, manufacturing, and management within the medical device industry. Organizations with robust QMS demonstrate superior product quality, regulatory compliance, and market success."
+ ],
+ "references": [
+  {
+   "group": null,
+   "text": "ISO 13485:2016 -- Medical devices -- Quality management systems -- Requirements for regulatory purposes"
+  },
+  {
+   "group": null,
+   "text": "ISO 14971:2019 -- Medical devices -- Application of risk management to medical devices"
+  },
+  {
+   "group": null,
+   "text": "FDA 21 CFR Part 820 -- Quality System Regulation (United States)"
+  },
+  {
+   "group": null,
+   "text": "EU MDR 2017/745 -- Medical Device Regulation (European Union), Annexes IX and XI"
+  },
+  {
+   "group": null,
+   "text": "CDSCO MDR 2017 -- Medical Device Rules (India)"
+  },
+  {
+   "group": null,
+   "text": "ISO 9000:2015 -- Quality management systems -- Fundamentals and vocabulary"
+  },
+  {
+   "group": null,
+   "text": "ISO 19011:2018 -- Guidelines for auditing management systems"
+  },
+  {
+   "group": null,
+   "text": "GHTF Study Group 3 -- Quality Management System Process Validation Guidance"
+  },
+  {
+   "group": null,
+   "text": "FDA Guidance -- Quality System Regulation; Medical Device Reporting and Corrections and Removals"
+  },
+  {
+   "group": null,
+   "text": "MDSAP Companion Document -- Medical Device Single Audit Program Audit Approach"
+  }
+ ]
+}

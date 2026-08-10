@@ -1,0 +1,3536 @@
+{
+ "num": 11,
+ "id": "ch11",
+ "title": "Quality Control & Testing of Medical Devices",
+ "subtitle": "Mechanical • Electrical • Chemical • Biological • Microbiological • Packaging • Sterilization Testing",
+ "overview": [
+  "Quality Control (QC) ensures that medical devices meet safety, performance, and regulatory standards before reaching patients. This chapter provides comprehensive coverage of testing methodologies across mechanical, electrical, chemical, microbiological, and packaging domains. It explains sampling strategies, acceptance criteria, test standards, documentation requirements, and their integration into manufacturing workflows. Mastery of QC principles is essential for careers in testing laboratories, manufacturing quality, regulatory compliance, and device validation."
+ ],
+ "clos": [
+  "Explain the role and importance of Quality Control in medical device manufacturing.",
+  "Identify appropriate QC tests for different device types and materials.",
+  "Perform fundamental QC tests following established protocols.",
+  "Interpret test results against acceptance criteria and specifications.",
+  "Understand international test standards including ISO, ASTM, IEC, and USP.",
+  "Explain sterilization validation including bioburden, SAL, and residue testing.",
+  "Describe packaging validation methodologies and integrity testing.",
+  "Maintain comprehensive QC documentation including test reports and calibration records."
+ ],
+ "keywords": [
+  "Quality control",
+  "mechanical testing",
+  "electrical safety",
+  "bioburden",
+  "sterility testing",
+  "SAL",
+  "ISO 11135",
+  "ISO 10993",
+  "tensile strength",
+  "leak testing",
+  "packaging validation",
+  "IEC 60601",
+  "acceptance criteria",
+  "sampling plan"
+ ],
+ "roadmap": [
+  "Introduction to",
+  "Quality",
+  "Control",
+  "QC workflow in manufacturing",
+  "Mechanical testing methods",
+  "Electrical safety testing",
+  "Chemical and material characterization",
+  "Microbiological testing",
+  "Sterilization validation",
+  "Packaging and seal integrity testing",
+  "Sampling plans and acceptance criteria",
+  "QC documentation systems",
+  "Industry case studies",
+  "Chapter summary"
+ ],
+ "blocks": [
+  {
+   "t": "h2",
+   "text": "11.1 Introduction to Quality Control",
+   "num": "11.1"
+  },
+  {
+   "t": "ul",
+   "items": [
+    "Quality Control (QC) represents the operational verification that manufactured medical devices conform to predetermined specifications and regulatory requirements. QC activities ensure:",
+    "<strong>Product safety </strong>-- devices do not pose unacceptable risks",
+    "<strong>Performance consistency </strong>-- devices function as intended",
+    "<strong>Regulatory compliance </strong>-- adherence to applicable standards",
+    "<strong>Patient protection </strong>-- prevention of defective devices reaching end-users",
+    "QC is mandated under:",
+    "<strong>ISO 13485:2016 </strong>(Quality Management Systems for Medical Devices)",
+    "<strong>FDA 21 CFR 820 </strong>(Quality System Regulation)",
+    "<strong>EU MDR 2017/745 </strong>(Medical Device Regulation)",
+    "<strong>India MDR 2017 </strong>(Medical Devices Rules)"
+   ]
+  },
+  {
+   "t": "h3",
+   "text": "QC vs. QA: Understanding the Distinction"
+  },
+  {
+   "t": "ul",
+   "items": [
+    "<strong>Aspect </strong> <strong>Quality Control (QC) </strong> <strong>Quality Assurance (QA)</strong>",
+    "<strong>Focus </strong> Product testing Process design",
+    "<strong>Timing </strong> During/after production Before/during production",
+    "<strong>Nature </strong> Detection-oriented Prevention-oriented",
+    "<strong>Activities </strong> Testing, inspection Audits, process validation",
+    "<strong>Outcome </strong> Accept/reject decisions System improvements"
+   ]
+  },
+  {
+   "t": "fig",
+   "src": "images/ch11_fig01.jpg",
+   "w": 720,
+   "h": 269,
+   "num": "11.1",
+   "caption": "QC Position in Manufacturing Flow"
+  },
+  {
+   "t": "h4",
+   "text": "Description"
+  },
+  {
+   "t": "p",
+   "html": "<strong>Linear flowchart showing:</strong> Raw Materials → Incoming Inspection → Processing → In- Process QC → Final Product Testing → Sterilization Validation → Packaging QC → Batch Release → Market"
+  },
+  {
+   "t": "h2",
+   "text": "11.2 QC Workflow in Medical Device Manufacturing",
+   "num": "11.2"
+  },
+  {
+   "t": "ul",
+   "items": [
+    "A comprehensive QC system encompasses multiple checkpoints:"
+   ]
+  },
+  {
+   "t": "h3",
+   "text": "11.2.1 Incoming Material Inspection"
+  },
+  {
+   "t": "ul",
+   "items": [
+    "Verification of raw materials and components before production:",
+    "Dimensional checks",
+    "Material certificates review",
+    "Visual inspection for defects",
+    "Supplier quality records verification",
+    "Certificate of Analysis (CoA) evaluation"
+   ]
+  },
+  {
+   "t": "h2",
+   "text": "11.2.2 In-Process Quality Control",
+   "num": "11.3"
+  },
+  {
+   "t": "ul",
+   "items": [
+    "Real-time monitoring during manufacturing:",
+    "First-article inspection",
+    "Process parameter verification (temperature, pressure, time)",
+    "Dimensional sampling at defined intervals",
+    "Visual defect detection",
+    "Equipment calibration status verification"
+   ]
+  },
+  {
+   "t": "h3",
+   "text": "11.2.3 Finished Device Testing"
+  },
+  {
+   "t": "ul",
+   "items": [
+    "Comprehensive evaluation of completed devices:",
+    "Functional performance testing",
+    "Safety testing (mechanical, electrical, biological)",
+    "Dimensional and cosmetic inspection",
+    "Packaging integrity verification"
+   ]
+  },
+  {
+   "t": "h2",
+   "text": "11.2.4 Sterilization Validation",
+   "num": "11.4"
+  },
+  {
+   "t": "ul",
+   "items": [
+    "For sterile devices:",
+    "Bioburden assessment pre-sterilization",
+    "Sterilization process monitoring",
+    "Sterility testing post-sterilization",
+    "Residue testing (for EtO sterilization)"
+   ]
+  },
+  {
+   "t": "h3",
+   "text": "11.2.5 Packaging Validation"
+  },
+  {
+   "t": "ul",
+   "items": [
+    "Ensuring sterile barrier integrity:",
+    "Seal strength testing",
+    "Package integrity testing",
+    "Accelerated aging studies",
+    "Transportation simulation"
+   ]
+  },
+  {
+   "t": "h3",
+   "text": "11.2.6 Batch Release Decision"
+  },
+  {
+   "t": "ul",
+   "items": [
+    "Final review before market distribution:",
+    "Compilation of all QC data",
+    "Review against specifications",
+    "Regulatory compliance verification",
+    "Authorization by qualified personnel"
+   ]
+  },
+  {
+   "t": "h2",
+   "text": "11.3 Mechanical Testing",
+   "num": "11.5"
+  },
+  {
+   "t": "ul",
+   "items": [
+    "Mechanical tests evaluate the physical performance and durability of medical devices under simulated use conditions."
+   ]
+  },
+  {
+   "t": "h3",
+   "text": "11.3.1 Tensile Testing"
+  },
+  {
+   "t": "ul",
+   "items": [
+    "<strong>Purpose: </strong>Measures material strength under pulling force."
+   ]
+  },
+  {
+   "t": "h4",
+   "text": "Applicable to"
+  },
+  {
+   "t": "ul",
+   "items": [
+    "Catheters and tubing",
+    "Sutures and surgical mesh",
+    "Packaging materials",
+    "Elastomeric components (seals, gaskets)"
+   ]
+  },
+  {
+   "t": "h4",
+   "text": "Parameters Measured"
+  },
+  {
+   "t": "ul",
+   "items": [
+    "<strong>Tensile strength </strong>-- maximum stress before failure (MPa or N/mm²)",
+    "<strong>Elongation at break </strong>-- percentage increase in length before rupture",
+    "<strong>Young's modulus </strong>-- material stiffness (slope of stress-strain curve)",
+    "<strong>Yield point </strong>-- stress at which permanent deformation begins"
+   ]
+  },
+  {
+   "t": "h4",
+   "text": "Test Standards"
+  },
+  {
+   "t": "ul",
+   "items": [
+    "ISO 37 (Rubber and elastomers)",
+    "ASTM D638 (Plastics)",
+    "ASTM D882 (Thin plastic sheeting)",
+    "<strong>Equipment: </strong>Universal Testing Machine (UTM) with appropriate grips and load cells."
+   ]
+  },
+  {
+   "t": "fig",
+   "src": "images/ch11_fig02.jpg",
+   "w": 380,
+   "h": 343,
+   "num": "11.2",
+   "caption": "Tensile Testing Setup"
+  },
+  {
+   "t": "h4",
+   "text": "Description"
+  },
+  {
+   "t": "p",
+   "html": "Diagram showing a Universal Testing Machine with specimen clamped between upper and lower grips, load cell above, and extensometer attached to specimen. Arrows indicate direction of pulling force."
+  },
+  {
+   "t": "h4",
+   "text": "Acceptance Criteria Example"
+  },
+  {
+   "t": "p",
+   "html": "<strong>For a polyurethane catheter:</strong> Tensile strength ≥ 15 MPa, Elongation ≥ 300%"
+  },
+  {
+   "t": "h3",
+   "text": "11.3.2 Compression Testing"
+  },
+  {
+   "t": "ul",
+   "items": [
+    "<strong>Purpose: </strong>Evaluates resistance to crushing or compressive forces."
+   ]
+  },
+  {
+   "t": "h4",
+   "text": "Applicable to"
+  },
+  {
+   "t": "ul",
+   "items": [
+    "Syringe plungers",
+    "Orthopedic implants (vertebral spacers, bone screws)",
+    "Pill dispensers",
+    "Container closures"
+   ]
+  },
+  {
+   "t": "h4",
+   "text": "Parameters Measured"
+  },
+  {
+   "t": "ul",
+   "items": [
+    "Compressive strength",
+    "Deformation at specific loads",
+    "Buckling resistance"
+   ]
+  },
+  {
+   "t": "h4",
+   "text": "Test Standards"
+  },
+  {
+   "t": "ul",
+   "items": [
+    "ASTM D695 (Rigid plastics)",
+    "ISO 604 (Plastics compression)"
+   ]
+  },
+  {
+   "t": "h3",
+   "text": "11.3.3 Burst Pressure Testing"
+  },
+  {
+   "t": "ul",
+   "items": [
+    "<strong>Purpose: </strong>Determines maximum internal pressure before device failure."
+   ]
+  },
+  {
+   "t": "h4",
+   "text": "Critical for"
+  },
+  {
+   "t": "ul",
+   "items": [
+    "Catheters (balloon catheters, drainage catheters)",
+    "Intravenous tubing",
+    "Blood pressure cuffs",
+    "Inflatable medical devices"
+   ]
+  },
+  {
+   "t": "h4",
+   "text": "Test Method"
+  },
+  {
+   "t": "ul",
+   "items": [
+    "Connect device to pressure source",
+    "Fill with water or air (as per standard)",
+    "Gradually increase pressure at controlled rate",
+    "Record pressure at burst point",
+    "Examine failure mode"
+   ]
+  },
+  {
+   "t": "h4",
+   "text": "Test Standards"
+  },
+  {
+   "t": "ul",
+   "items": [
+    "ISO 10555 series (Intravascular catheters)",
+    "ISO 80369 series (Small-bore connectors)"
+   ]
+  },
+  {
+   "t": "h4",
+   "text": "Safety Factor"
+  },
+  {
+   "t": "p",
+   "html": "Typically, burst pressure should be 3-5× the rated working pressure."
+  },
+  {
+   "t": "h4",
+   "text": "Acceptance Criteria Example"
+  },
+  {
+   "t": "p",
+   "html": "For a catheter rated at 20 atm working pressure: Burst pressure ≥ 60 atm"
+  },
+  {
+   "t": "h3",
+   "text": "11.3.4 Kink Resistance Testing"
+  },
+  {
+   "t": "ul",
+   "items": [
+    "<strong>Purpose: </strong>Assesses ability to maintain flow despite bending."
+   ]
+  },
+  {
+   "t": "h4",
+   "text": "Applicable to"
+  },
+  {
+   "t": "ul",
+   "items": [
+    "Catheters",
+    "Endotracheal tubes",
+    "Drainage tubes",
+    "IV lines"
+   ]
+  },
+  {
+   "t": "h4",
+   "text": "Test Method"
+  },
+  {
+   "t": "ul",
+   "items": [
+    "Bend device at specified radius",
+    "Maintain bend for defined duration",
+    "Measure flow reduction",
+    "Inspect for permanent deformation"
+   ]
+  },
+  {
+   "t": "h4",
+   "text": "Acceptance Criteria"
+  },
+  {
+   "t": "p",
+   "html": "Flow reduction &lt; 20% at 90° bend with specified radius."
+  },
+  {
+   "t": "h3",
+   "text": "11.3.5 Fatigue Testing"
+  },
+  {
+   "t": "ul",
+   "items": [
+    "<strong>Purpose: </strong>Simulates repeated use cycles to predict device lifespan."
+   ]
+  },
+  {
+   "t": "h4",
+   "text": "Critical for"
+  },
+  {
+   "t": "ul",
+   "items": [
+    "Pacemaker leads (millions of cardiac cycles)",
+    "Orthopedic implants (walking cycles)",
+    "Heart valve prostheses (hundreds of millions of cardiac cycles)",
+    "Surgical staplers (actuation cycles)"
+   ]
+  },
+  {
+   "t": "h4",
+   "text": "Test Standards"
+  },
+  {
+   "t": "ul",
+   "items": [
+    "ISO 5840 (Heart valve prostheses -- fatigue)",
+    "ASTM F1717 (Spinal implant constructs)",
+    "ISO 14243 (Total knee joint prostheses)"
+   ]
+  },
+  {
+   "t": "h4",
+   "text": "Test Duration"
+  },
+  {
+   "t": "p",
+   "html": "Often exceeds 10 million cycles for implantable devices."
+  },
+  {
+   "t": "h3",
+   "text": "Safety Note 11.1"
+  },
+  {
+   "t": "ul",
+   "items": [
+    "Fatigue failure is the leading cause of long-term implant failures. Devices must demonstrate fatigue resistance exceeding expected service life by a minimum safety factor of 2×."
+   ]
+  },
+  {
+   "t": "box",
+   "kind": "example",
+   "label": "Example Box 11.1",
+   "title": "Hip Implant Fatigue Testing",
+   "blocks": [
+    {
+     "t": "ul",
+     "items": [
+      "A femoral stem must withstand 10 million loading cycles simulating 10 years of walking. Test protocol applies 3,000 N peak load at 5 Hz for approximately 23 days continuous operation."
+     ]
+    }
+   ]
+  },
+  {
+   "t": "h3",
+   "text": "11.3.6 Wear Testing"
+  },
+  {
+   "t": "ul",
+   "items": [
+    "<strong>Purpose: </strong>Evaluates material loss due to friction in articulating components."
+   ]
+  },
+  {
+   "t": "h4",
+   "text": "Applicable to"
+  },
+  {
+   "t": "ul",
+   "items": [
+    "Joint replacements (hip, knee, shoulder)",
+    "Dental restorations",
+    "Surgical instruments with moving parts"
+   ]
+  },
+  {
+   "t": "h4",
+   "text": "Test Method"
+  },
+  {
+   "t": "ul",
+   "items": [
+    "Joint simulators replicate physiological motion",
+    "Gravimetric measurement of material loss",
+    "Particle analysis of wear debris"
+   ]
+  },
+  {
+   "t": "h4",
+   "text": "Test Standards"
+  },
+  {
+   "t": "ul",
+   "items": [
+    "ISO 14242 (Hip joint prostheses)",
+    "ISO 14243 (Knee joint prostheses)"
+   ]
+  },
+  {
+   "t": "h2",
+   "text": "11.4 Electrical Safety Testing (IEC 60601 Series)",
+   "num": "11.6"
+  },
+  {
+   "t": "ul",
+   "items": [
+    "Electrical safety testing ensures that powered medical devices do not pose electrical hazards to patients or operators."
+   ]
+  },
+  {
+   "t": "h4",
+   "text": "Applicable to"
+  },
+  {
+   "t": "ul",
+   "items": [
+    "Patient monitors",
+    "Defibrillators",
+    "Electrosurgical units",
+    "Infusion pumps",
+    "Imaging equipment (X-ray, ultrasound)",
+    "Home-care electrical devices"
+   ]
+  },
+  {
+   "t": "h3",
+   "text": "11.4.1 Key Electrical Safety Tests"
+  },
+  {
+   "t": "ul",
+   "items": [
+    "<strong>A. Earth/Ground Continuity</strong>",
+    "<strong>Purpose: </strong>Verifies protective earth connection integrity."
+   ]
+  },
+  {
+   "t": "h4",
+   "text": "Acceptance Criteria"
+  },
+  {
+   "t": "p",
+   "html": "Resistance &lt; 0.2 Ω for Class I equipment."
+  },
+  {
+   "t": "h3",
+   "text": "B. Insulation Resistance"
+  },
+  {
+   "t": "ul",
+   "items": [
+    "<strong>Purpose: </strong>Measures resistance between live parts and accessible metal.",
+    "<strong>Test Voltage: </strong>500 VDC for most devices."
+   ]
+  },
+  {
+   "t": "h4",
+   "text": "Acceptance Criteria"
+  },
+  {
+   "t": "p",
+   "html": "≥ 2 MΩ for equipment in normal condition."
+  },
+  {
+   "t": "h3",
+   "text": "C. Leakage Current Testing"
+  },
+  {
+   "t": "ul",
+   "items": [
+    "<strong>Types:</strong>",
+    "<strong>Earth leakage current </strong>-- current flowing through protective earth",
+    "<strong>Touch/enclosure leakage current </strong>-- current through accessible parts",
+    "<strong>Patient leakage current </strong>-- current through patient-applied parts"
+   ]
+  },
+  {
+   "t": "h4",
+   "text": "Acceptance Limits (Normal Condition, Type B Equipment)"
+  },
+  {
+   "t": "ul",
+   "items": [
+    "Earth leakage: ≤ 0.5 mA",
+    "Touch leakage: ≤ 0.1 mA",
+    "Patient leakage: ≤ 0.1 mA"
+   ]
+  },
+  {
+   "t": "h4",
+   "text": "Test Conditions"
+  },
+  {
+   "t": "ul",
+   "items": [
+    "Normal polarity and reverse polarity",
+    "With and without earth connection",
+    "At normal and 110% rated voltage"
+   ]
+  },
+  {
+   "t": "h3",
+   "text": "D. Dielectric Strength (Hi-Pot Test)"
+  },
+  {
+   "t": "ul",
+   "items": [
+    "<strong>Purpose: </strong>Verifies insulation can withstand overvoltage conditions."
+   ]
+  },
+  {
+   "t": "h4",
+   "text": "Test Method"
+  },
+  {
+   "t": "ul",
+   "items": [
+    "Apply high voltage (typically 1,000-4,000 VAC) between live parts and earth",
+    "Hold for 1 minute",
+    "No breakdown or excessive leakage permitted"
+   ]
+  },
+  {
+   "t": "fig",
+   "src": "images/ch11_fig03.jpg",
+   "w": 434,
+   "h": 264,
+   "num": "11.3",
+   "caption": "Electrical Safety Test Setup"
+  },
+  {
+   "t": "h4",
+   "text": "Description"
+  },
+  {
+   "t": "p",
+   "html": "Diagram showing medical device under test connected to Electrical Safety Analyzer. Connections shown for earth continuity probe, leakage current measurement circuit, and patient simulator. Display panel shows real-time measurements."
+  },
+  {
+   "t": "h3",
+   "text": "11.4.2 Electromagnetic Compatibility (EMC) Testing"
+  },
+  {
+   "t": "ul",
+   "items": [
+    "<strong>Purpose: </strong>Ensures device does not emit excessive electromagnetic interference and is immune to external interference."
+   ]
+  },
+  {
+   "t": "h4",
+   "text": "Test Standards"
+  },
+  {
+   "t": "ul",
+   "items": [
+    "IEC 60601-1-2 (EMC requirements for medical electrical equipment)"
+   ]
+  },
+  {
+   "t": "h4",
+   "text": "Tests Include"
+  },
+  {
+   "t": "ul",
+   "items": [
+    "<strong>Emissions:</strong>",
+    "Radiated RF emissions",
+    "Conducted emissions"
+   ]
+  },
+  {
+   "t": "h4",
+   "text": "Immunity"
+  },
+  {
+   "t": "ul",
+   "items": [
+    "Electrostatic discharge (ESD)",
+    "Radiated RF immunity",
+    "Electrical fast transient bursts",
+    "Surge immunity",
+    "Voltage dips and interruptions"
+   ]
+  },
+  {
+   "t": "h2",
+   "text": "11.5 Chemical and Material Testing",
+   "num": "11.7"
+  },
+  {
+   "t": "ul",
+   "items": [
+    "Chemical characterization ensures materials meet specifications and regulatory requirements."
+   ]
+  },
+  {
+   "t": "h3",
+   "text": "11.5.1 Chemical Composition Analysis"
+  },
+  {
+   "t": "ul",
+   "items": [
+    "<strong>A. Fourier Transform Infrared Spectroscopy (FTIR)</strong>",
+    "<strong>Purpose: </strong>Identifies polymer types and detects contaminants."
+   ]
+  },
+  {
+   "t": "h4",
+   "text": "Applications"
+  },
+  {
+   "t": "ul",
+   "items": [
+    "Raw material verification",
+    "Defect analysis (discoloration, brittleness)",
+    "Contamination identification"
+   ]
+  },
+  {
+   "t": "h3",
+   "text": "B. Differential Scanning Calorimetry (DSC)"
+  },
+  {
+   "t": "ul",
+   "items": [
+    "<strong>Purpose: </strong>Measures thermal properties (melting point, glass transition temperature)."
+   ]
+  },
+  {
+   "t": "h4",
+   "text": "Applications"
+  },
+  {
+   "t": "ul",
+   "items": [
+    "Material identification",
+    "Crystallinity determination",
+    "Thermal stability assessment"
+   ]
+  },
+  {
+   "t": "h3",
+   "text": "C. Thermogravimetric Analysis (TGA)"
+  },
+  {
+   "t": "ul",
+   "items": [
+    "<strong>Purpose: </strong>Measures mass loss with temperature increase."
+   ]
+  },
+  {
+   "t": "h4",
+   "text": "Applications"
+  },
+  {
+   "t": "ul",
+   "items": [
+    "Filler content determination",
+    "Thermal decomposition characterization",
+    "Moisture content analysis"
+   ]
+  },
+  {
+   "t": "h3",
+   "text": "D. X-Ray Diffraction (XRD)"
+  },
+  {
+   "t": "ul",
+   "items": [
+    "<strong>Purpose: </strong>Identifies crystalline structures in metals and ceramics."
+   ]
+  },
+  {
+   "t": "h4",
+   "text": "Applications"
+  },
+  {
+   "t": "ul",
+   "items": [
+    "Phase identification in implant alloys",
+    "Ceramic coating analysis"
+   ]
+  },
+  {
+   "t": "h3",
+   "text": "11.5.2 Extractables and Leachables (E&amp;L) Studies"
+  },
+  {
+   "t": "ul",
+   "items": [
+    "<strong>Purpose: </strong>Identifies and quantifies chemicals that may migrate from device materials into contacting fluids or tissues."
+   ]
+  },
+  {
+   "t": "h4",
+   "text": "Regulatory Requirement"
+  },
+  {
+   "t": "p",
+   "html": "Critical for devices contacting blood, tissue, or pharmaceutical formulations."
+  },
+  {
+   "t": "h4",
+   "text": "Methods"
+  },
+  {
+   "t": "ul",
+   "items": [
+    "<strong>Extraction studies </strong>-- aggressive solvent extraction to identify potential leachables",
+    "<strong>Leaching studies </strong>-- simulated-use conditions to quantify actual leachables"
+   ]
+  },
+  {
+   "t": "h4",
+   "text": "Analytical Techniques"
+  },
+  {
+   "t": "ul",
+   "items": [
+    "Gas Chromatography-Mass Spectrometry (GC-MS)",
+    "Liquid Chromatography-Mass Spectrometry (LC-MS)",
+    "Inductively Coupled Plasma-Mass Spectrometry (ICP-MS) for metals"
+   ]
+  },
+  {
+   "t": "h4",
+   "text": "Acceptance Criteria"
+  },
+  {
+   "t": "p",
+   "html": "Individual leachables below safety concern threshold (typically &lt; 0.1-1.5 μg/day depending on exposure duration)."
+  },
+  {
+   "t": "h3",
+   "text": "11.6 Biological and Biocompatibility Testing (ISO 10993)"
+  },
+  {
+   "t": "ul",
+   "items": [
+    "Biological testing evaluates device materials for potential adverse biological effects. Covered comprehensively in <strong>Chapter 8</strong>, key tests include:"
+   ]
+  },
+  {
+   "t": "h3",
+   "text": "Cytotoxicity Testing (ISO 10993-5)"
+  },
+  {
+   "t": "ul",
+   "items": [
+    "Assesses cell death or inhibition using in vitro cell cultures exposed to device extracts."
+   ]
+  },
+  {
+   "t": "h3",
+   "text": "Sensitization Testing (ISO 10993-10)"
+  },
+  {
+   "t": "ul",
+   "items": [
+    "Evaluates allergic potential using guinea pig maximization test or local lymph node assay."
+   ]
+  },
+  {
+   "t": "h3",
+   "text": "Irritation Testing (ISO 10993-10 &amp; 10993-23)"
+  },
+  {
+   "t": "ul",
+   "items": [
+    "Assesses skin and mucous membrane irritation potential."
+   ]
+  },
+  {
+   "t": "h3",
+   "text": "Systemic Toxicity Testing (ISO 10993-11)"
+  },
+  {
+   "t": "ul",
+   "items": [
+    "Evaluates acute, subacute, or chronic toxicity via injection of device extracts."
+   ]
+  },
+  {
+   "t": "h3",
+   "text": "Hemocompatibility Testing (ISO 10993-4)"
+  },
+  {
+   "t": "ul",
+   "items": [
+    "Critical for blood-contacting devices:",
+    "Hemolysis (red blood cell destruction)",
+    "Thrombogenicity (clot formation)",
+    "Complement activation",
+    "Platelet interactions"
+   ]
+  },
+  {
+   "t": "h3",
+   "text": "Implantation Testing (ISO 10993-6)"
+  },
+  {
+   "t": "ul",
+   "items": [
+    "Assesses local tissue response for implantable devices through animal studies."
+   ]
+  },
+  {
+   "t": "h3",
+   "text": "Genotoxicity Testing (ISO 10993-3)"
+  },
+  {
+   "t": "ul",
+   "items": [
+    "Evaluates DNA damage potential using bacterial mutation assays and chromosome aberration tests."
+   ]
+  },
+  {
+   "t": "h3",
+   "text": "Carcinogenicity Testing (ISO 10993-3)"
+  },
+  {
+   "t": "ul",
+   "items": [
+    "Required for long-term implants (&gt;30 days) when genotoxicity concerns exist."
+   ]
+  },
+  {
+   "t": "h2",
+   "text": "11.7 Microbiological Testing",
+   "num": "11.8"
+  },
+  {
+   "t": "ul",
+   "items": [
+    "Microbiological testing ensures sterile devices are free from viable microorganisms and non-sterile devices meet bioburden limits."
+   ]
+  },
+  {
+   "t": "h3",
+   "text": "11.7.1 Bioburden Testing (ISO 11737-1)"
+  },
+  {
+   "t": "ul",
+   "items": [
+    "<strong>Definition:</strong>"
+   ]
+  },
+  {
+   "t": "p",
+   "html": "Bioburden is the population of viable microorganisms on a product and/or package before sterilization."
+  },
+  {
+   "t": "h4",
+   "text": "Purpose"
+  },
+  {
+   "t": "ul",
+   "items": [
+    "Establishes baseline microbial load",
+    "Monitors manufacturing environmental control",
+    "Validates sterilization process effectiveness",
+    "Ensures compliance with regulatory limits"
+   ]
+  },
+  {
+   "t": "h4",
+   "text": "Test Method"
+  },
+  {
+   "t": "ul",
+   "items": [
+    "<strong>Sample Preparation:</strong>",
+    "Aseptically collect representative samples from production lot",
+    "Sample size per ISO 11737-1 or validated internal protocol",
+    "Document environmental conditions and manufacturing date"
+   ]
+  },
+  {
+   "t": "h4",
+   "text": "Extraction"
+  },
+  {
+   "t": "ul",
+   "items": [
+    "Place device or device portions in sterile extraction fluid:",
+    "<strong>Aqueous extractants: </strong>Buffered sodium chloride-peptone solution, phosphate-buffered saline (PBS), Letheen broth",
+    "<strong>Volume: </strong>Sufficient to submerge device (typically ≥ 50 mL)",
+    "Perform validated extraction:",
+    "<strong>Sonication: </strong>30-60 minutes at controlled frequency (typically 40 kHz)",
+    "<strong>Vortexing: </strong>1-2 minutes with periodic intervals",
+    "<strong>Shaking: </strong>30-60 minutes on rotary shaker",
+    "<strong>Temperature: </strong>Room temperature (20-25°C) or 30-35°C per validation",
+    "Ensure extraction efficiency validated to recover ≥ 50% of test microorganisms"
+   ]
+  },
+  {
+   "t": "h4",
+   "text": "Membrane Filtration"
+  },
+  {
+   "t": "ul",
+   "items": [
+    "Filter extraction fluid through 0.45 μm (or 0.22 μm) cellulose membrane",
+    "Rinse membrane with sterile buffer (minimum 100 mL)",
+    "Aseptically transfer membrane to appropriate culture media",
+    "<strong>Culture Methods:</strong>",
+    "<strong>Dual Media System (Recommended):</strong>",
+    "<strong>Medium </strong> <strong>Target Organisms </strong> <strong>Incubation</strong>",
+    "<strong>Soybean Casein Digest Agar</strong>"
+   ]
+  },
+  {
+   "t": "p",
+   "html": "<strong>(SCDA/TSA)</strong>"
+  },
+  {
+   "t": "ul",
+   "items": [
+    "<strong>Fluid Thioglycollate Medium (FTM)</strong>",
+    "Aerobic bacteria,"
+   ]
+  },
+  {
+   "t": "p",
+   "html": "fungi"
+  },
+  {
+   "t": "ul",
+   "items": [
+    "Aerobic and anaerobic bacteria",
+    "30-35°C for 3-5"
+   ]
+  },
+  {
+   "t": "p",
+   "html": "days"
+  },
+  {
+   "t": "ul",
+   "items": [
+    "30-35°C for 3-5"
+   ]
+  },
+  {
+   "t": "p",
+   "html": "days"
+  },
+  {
+   "t": "ul",
+   "items": [
+    "<strong>Alternative: </strong>Tryptic Soy Agar (TSA) + Sabouraud Dextrose Agar (SDA) for enhanced fungal recovery."
+   ]
+  },
+  {
+   "t": "h4",
+   "text": "Enumeration"
+  },
+  {
+   "t": "ul",
+   "items": [
+    "Count visible colonies on each membrane",
+    "Calculate total bioburden: <strong>(Colonies counted × Dilution factor) / Surface area tested</strong>",
+    "Express as <strong>CFU/device </strong>or <strong>CFU/100 cm²</strong>",
+    "If counts exceed countable range (&gt;250 CFU), dilute extract and retest"
+   ]
+  },
+  {
+   "t": "h4",
+   "text": "Identification (If Required)"
+  },
+  {
+   "t": "ul",
+   "items": [
+    "Gram staining",
+    "Biochemical testing",
+    "Molecular methods (16S rRNA sequencing)",
+    "Document predominant organisms for trending"
+   ]
+  },
+  {
+   "t": "h4",
+   "text": "Acceptance Criteria"
+  },
+  {
+   "t": "ul",
+   "items": [
+    "<strong>Device Type </strong> <strong>Typical Bioburden Limit</strong>",
+    "<strong>Non-implantable devices </strong> ≤ 1,000 CFU/device",
+    "<strong>Implantable devices (pre-sterilization) </strong> ≤ 100 CFU/device",
+    "<strong>Intraocular devices </strong> ≤ 10 CFU/device",
+    "<strong>Clean room-assembled devices </strong> ≤ 50 CFU/device",
+    "<strong>Note: </strong>Actual limits must be validated and justified based on sterilization process capability."
+   ]
+  },
+  {
+   "t": "h4",
+   "text": "Frequency"
+  },
+  {
+   "t": "ul",
+   "items": [
+    "Routine testing: Per lot or validated sampling plan (e.g., ISO 2859 AQL)",
+    "Change control: After process changes affecting bioburden",
+    "Investigation: When out-of-specification results occur"
+   ]
+  },
+  {
+   "t": "h4",
+   "text": "Documentation"
+  },
+  {
+   "t": "ul",
+   "items": [
+    "Test date, analyst, environmental conditions",
+    "Sample identification (lot/batch number)",
+    "Extraction method and efficiency verification",
+    "Incubation conditions and duration",
+    "Colony counts with photos/images",
+    "Identification results if performed",
+    "Calculated bioburden per device",
+    "Trend analysis and deviations from historical data"
+   ]
+  },
+  {
+   "t": "h3",
+   "text": "11.7.2 Sterility Testing (USP &lt;71&gt;, ISO 11737-2, Ph. Eur. 2.6.1)"
+  },
+  {
+   "t": "ul",
+   "items": [
+    "<strong>Purpose:</strong>"
+   ]
+  },
+  {
+   "t": "p",
+   "html": "Confirms absence of viable microorganisms in terminally sterilized devices and aseptically manufactured products."
+  },
+  {
+   "t": "h4",
+   "text": "Regulatory Requirement"
+  },
+  {
+   "t": "p",
+   "html": "Mandatory for all devices labeled \"STERILE\"."
+  },
+  {
+   "t": "ul",
+   "items": [
+    "<strong>Test Methods:</strong>",
+    "<strong>Method 1: Direct Inoculation</strong>",
+    "<strong>Procedure:</strong>",
+    "Aseptically transfer entire device or portions into culture media:",
+    "<strong>Fluid Thioglycollate Medium (FTM): </strong>100-200 mL per container",
+    "<strong>Soybean Casein Digest Medium (SCDM/TSB): </strong>100-200 mL per container",
+    "Incubate:",
+    "FTM: 30-35°C for 14 days",
+    "SCDM: 20-25°C for 14 days",
+    "Observe daily for turbidity (microbial growth)",
+    "Subculture any turbid containers for identification"
+   ]
+  },
+  {
+   "t": "h4",
+   "text": "Limitations"
+  },
+  {
+   "t": "p",
+   "html": "Suitable only for small devices or sample portions. Not applicable for devices containing antimicrobial substances without validation."
+  },
+  {
+   "t": "h3",
+   "text": "Method 2: Membrane Filtration"
+  },
+  {
+   "t": "ul",
+   "items": [
+    "<strong>Procedure:</strong>",
+    "Rinse device with sterile extraction fluid (minimum 500 mL):",
+    "<strong>Aqueous: </strong>PBS, buffered sodium chloride-peptone solution",
+    "<strong>Oily: </strong>Isopropyl myristate with Polysorbate 80",
+    "Filter entire rinse through 0.45 μm cellulose membrane",
+    "Rinse membrane with additional sterile buffer (≥ 100 mL)",
+    "Aseptically divide membrane and transfer portions to:",
+    "<strong>FTM: </strong>One-half of membrane",
+    "<strong>SCDM: </strong>One-half of membrane",
+    "Incubate as per Method 1",
+    "Observe and subculture as above"
+   ]
+  },
+  {
+   "t": "h4",
+   "text": "Advantages"
+  },
+  {
+   "t": "p",
+   "html": "Suitable for large devices, removes antimicrobial substances during rinsing, higher sensitivity."
+  },
+  {
+   "t": "h4",
+   "text": "Sample Size"
+  },
+  {
+   "t": "ul",
+   "items": [
+    "Per <strong>ISO 11737-2 </strong>and <strong>USP &lt;71&gt;</strong>:",
+    "Minimum <strong>20 samples </strong>per lot for routine release testing",
+    "Sample size may be reduced with validated parametric release (e.g., EtO sterilization with biological indicators)",
+    "<strong>Interpretation:</strong>",
+    "<strong>Result </strong> <strong>Interpretation </strong> <strong>Action</strong>",
+    "<strong>No growth in all containers after 14 days</strong>",
+    "<strong>PASS -- Sterile </strong> Release lot"
+   ]
+  },
+  {
+   "t": "h3",
+   "text": "Growth in ≥ 1 container FAIL -- Non-"
+  },
+  {
+   "t": "p",
+   "html": "<strong>sterile</strong>"
+  },
+  {
+   "t": "ul",
+   "items": [
+    "Reject lot, investigate"
+   ]
+  },
+  {
+   "t": "p",
+   "html": "root cause"
+  },
+  {
+   "t": "ul",
+   "items": [
+    "<strong>Result </strong> <strong>Interpretation </strong> <strong>Action</strong>",
+    "<strong>Suspected contamination</strong>"
+   ]
+  },
+  {
+   "t": "p",
+   "html": "<strong>during testing</strong>"
+  },
+  {
+   "t": "ul",
+   "items": [
+    "<strong>Retest authorized</strong>",
+    "<strong>Positive Control:</strong>",
+    "Repeat with fresh samples (one-time only)",
+    "Inoculate media with known organisms (e.g., <em>Bacillus subtilis</em>, <em>Candida albicans</em>) to verify media growth-promoting properties."
+   ]
+  },
+  {
+   "t": "h4",
+   "text": "Negative Control"
+  },
+  {
+   "t": "ul",
+   "items": [
+    "Incubate uninoculated media to verify sterility of media and environment"
+   ]
+  },
+  {
+   "t": "h3",
+   "text": "11.7.3 Sterility Assurance Level (SAL)"
+  },
+  {
+   "t": "ul",
+   "items": [
+    "<strong>Definition:</strong>"
+   ]
+  },
+  {
+   "t": "p",
+   "html": "SAL is the probability of a single viable microorganism being present on a device after sterilization."
+  },
+  {
+   "t": "h4",
+   "text": "Standard SAL Targets"
+  },
+  {
+   "t": "ul",
+   "items": [
+    "<strong>Device Category </strong> <strong>Required SAL</strong>",
+    "<strong>Implantable devices </strong> <strong>10⁻⁶ </strong>(1 in 1,000,000 probability of non-sterility)"
+   ]
+  },
+  {
+   "t": "h3",
+   "text": "Surgical instruments 10⁻⁶"
+  },
+  {
+   "t": "ul",
+   "items": [
+    "<strong>Fluid-path devices </strong> <strong>10⁻⁶</strong>",
+    "<strong>Non-critical devices </strong> <strong>10⁻³ </strong>(acceptable in some cases with justification)",
+    "<strong>Sterilization Process Validation: </strong>SAL of 10⁻⁶ achieved through validated processes (EtO, gamma, steam) using biological indicators and defined overkill or bioburden-based approaches."
+   ]
+  },
+  {
+   "t": "h3",
+   "text": "11.7.4 Bacterial Endotoxin Testing (BET) -- LAL Test"
+  },
+  {
+   "t": "ul",
+   "items": [
+    "<strong>Purpose:</strong>"
+   ]
+  },
+  {
+   "t": "p",
+   "html": "Detects presence of endotoxins (lipopolysaccharides from Gram-negative bacteria) on devices contacting blood, cerebrospinal fluid, or lymphatic system."
+  },
+  {
+   "t": "h4",
+   "text": "Test Standards"
+  },
+  {
+   "t": "ul",
+   "items": [
+    "USP &lt;85&gt; Bacterial Endotoxins Test",
+    "ISO 10993-11 (Systemic toxicity)",
+    "FDA Guidance on Pyrogenicity Testing",
+    "<strong>Test Methods:</strong>",
+    "<strong>A. Gel-Clot Method (Most Common)</strong>",
+    "<strong>Principle:</strong>"
+   ]
+  },
+  {
+   "t": "p",
+   "html": "Limulus Amebocyte Lysate (LAL) from horseshoe crab blood forms gel in presence of endotoxins."
+  },
+  {
+   "t": "h4",
+   "text": "Procedure"
+  },
+  {
+   "t": "ul",
+   "items": [
+    "Extract device with sterile, pyrogen-free water (USP grade)",
+    "Incubate extract at appropriate temperature (typically 37°C for 1 hour)",
+    "Mix extract aliquots with LAL reagent",
+    "Incubate at 37°C for 60 minutes",
+    "Invert tubes:",
+    "<strong>Positive: </strong>Firm gel formation (fails to flow when inverted)",
+    "<strong>Negative: </strong>No gel (contents flow)"
+   ]
+  },
+  {
+   "t": "h4",
+   "text": "Sensitivity"
+  },
+  {
+   "t": "p",
+   "html": "Typically 0.03-0.25 EU/mL depending on LAL lot."
+  },
+  {
+   "t": "h3",
+   "text": "B. Chromogenic and Turbidimetric Methods"
+  },
+  {
+   "t": "ul",
+   "items": [
+    "<strong>Advantages:</strong>"
+   ]
+  },
+  {
+   "t": "p",
+   "html": "Quantitative results, automated reading, shorter test time."
+  },
+  {
+   "t": "h4",
+   "text": "Endotoxin Limits"
+  },
+  {
+   "t": "ul",
+   "items": [
+    "Per FDA and USP, maximum acceptable endotoxin limit calculated as:"
+   ]
+  },
+  {
+   "t": "h3",
+   "text": "Endotoxin Limit (EU/device) = K / M"
+  },
+  {
+   "t": "ul",
+   "items": [
+    "Where:",
+    "<strong>K </strong>= Threshold pyrogenic dose = 5.0 EU/kg body weight/hour",
+    "<strong>M </strong>= Maximum device surface area contacting blood or CSF (in m²)"
+   ]
+  },
+  {
+   "t": "h4",
+   "text": "Example"
+  },
+  {
+   "t": "p",
+   "html": "For a catheter with 0.02 m² blood-contacting surface: Limit = (5.0 EU/kg × 70 kg) /"
+  },
+  {
+   "t": "p",
+   "html": "0.02 m² = <strong>17,500 EU/device</strong>"
+  },
+  {
+   "t": "ul",
+   "items": [
+    "However, practical limits are often much lower (e.g., <strong>≤ 0.5 EU/mL of extract </strong>or <strong>≤ 20 EU/device</strong>) based on device type and risk."
+   ]
+  },
+  {
+   "t": "h4",
+   "text": "Acceptance Criteria"
+  },
+  {
+   "t": "p",
+   "html": "Endotoxin level below established limit for device classification."
+  },
+  {
+   "t": "h3",
+   "text": "11.7.5 Environmental Monitoring (Cleanroom Microbiology)"
+  },
+  {
+   "t": "ul",
+   "items": [
+    "Environmental monitoring ensures manufacturing environments maintain acceptable microbial and particulate levels.",
+    "<strong>Methods:</strong>",
+    "<strong>A. Settle Plates (Passive Monitoring)</strong>",
+    "<strong>Procedure:</strong>",
+    "Expose agar plates (TSA, SDA) in production areas",
+    "Exposure duration: Typically 4 hours",
+    "Incubate plates: 30-35°C for 3-5 days",
+    "Count colonies and calculate CFU/plate/4 hours"
+   ]
+  },
+  {
+   "t": "h4",
+   "text": "Acceptance Criteria"
+  },
+  {
+   "t": "ul",
+   "items": [
+    "<strong>ISO Cleanroom Class </strong> <strong>CFU/Plate (90 mm, 4 hours)</strong>",
+    "<strong>ISO 5 (Grade A) </strong> &lt; 1 CFU",
+    "<strong>ISO 7 (Grade C) </strong> &lt; 50 CFU",
+    "<strong>ISO 8 (Grade D) </strong> &lt; 100 CFU"
+   ]
+  },
+  {
+   "t": "h3",
+   "text": "B. Active Air Sampling"
+  },
+  {
+   "t": "ul",
+   "items": [
+    "<strong>Equipment:</strong>"
+   ]
+  },
+  {
+   "t": "p",
+   "html": "Microbial air samplers (e.g., Andersen impactors, slit-to-agar samplers)."
+  },
+  {
+   "t": "h4",
+   "text": "Procedure"
+  },
+  {
+   "t": "ul",
+   "items": [
+    "Sample specified air volume (typically 1,000 liters)",
+    "Microorganisms impact directly onto agar",
+    "Incubate and count colonies",
+    "Calculate CFU/m³"
+   ]
+  },
+  {
+   "t": "h4",
+   "text": "Acceptance Criteria"
+  },
+  {
+   "t": "ul",
+   "items": [
+    "<strong>ISO Cleanroom Class </strong> <strong>CFU/m³</strong>",
+    "<strong>ISO 5 </strong> &lt; 1 CFU",
+    "<strong>ISO 7 </strong> &lt; 10 CFU",
+    "<strong>ISO 8 </strong> &lt; 100 CFU"
+   ]
+  },
+  {
+   "t": "h3",
+   "text": "C. Surface Monitoring (Contact Plates, Swabs)"
+  },
+  {
+   "t": "ul",
+   "items": [
+    "<strong>Contact Plates:</strong>",
+    "Press agar plate against surface (10 cm² contact area)",
+    "Incubate and count colonies",
+    "Calculate CFU/contact plate"
+   ]
+  },
+  {
+   "t": "h4",
+   "text": "Swabs"
+  },
+  {
+   "t": "ul",
+   "items": [
+    "Swab defined area (e.g., 25 cm²) with sterile moistened swab",
+    "Immerse swab in extraction buffer",
+    "Vortex, plate, incubate",
+    "Count and calculate CFU/cm²"
+   ]
+  },
+  {
+   "t": "h4",
+   "text": "Acceptance Criteria"
+  },
+  {
+   "t": "ul",
+   "items": [
+    "<strong>ISO Class </strong> <strong>CFU/Contact Plate</strong>",
+    "<strong>ISO 5 </strong> &lt; 1 CFU",
+    "<strong>ISO 7 </strong> &lt; 5 CFU",
+    "<strong>ISO 8 </strong> &lt; 10 CFU"
+   ]
+  },
+  {
+   "t": "h4",
+   "text": "Frequency"
+  },
+  {
+   "t": "ul",
+   "items": [
+    "Daily or per shift in critical areas",
+    "Weekly in less critical areas",
+    "After major cleaning or maintenance",
+    "Change control verification"
+   ]
+  },
+  {
+   "t": "h3",
+   "text": "Safety Note 11.2"
+  },
+  {
+   "t": "ul",
+   "items": [
+    "Microbiological contamination is the leading cause of sterile device recalls. Robust environmental monitoring, bioburden control, and validated sterilization processes are non-negotiable for patient safety."
+   ]
+  },
+  {
+   "t": "h3",
+   "text": "11.8 Sterilization Validation"
+  },
+  {
+   "t": "ul",
+   "items": [
+    "Sterilization validation ensures that the sterilization process consistently achieves the required Sterility Assurance Level (SAL) of 10⁻⁶ for critical medical devices. Validation is mandatory before routine production and must be revalidated following significant process or product changes."
+   ]
+  },
+  {
+   "t": "h3",
+   "text": "11.8.1 Ethylene Oxide (EtO) Sterilization Validation (ISO 11135)"
+  },
+  {
+   "t": "ul",
+   "items": [
+    "Ethylene oxide sterilization is widely used for heat-sensitive and moisture-sensitive medical devices including polymers, electronics, and complex assemblies.",
+    "<strong>Process Parameters:</strong>",
+    "<strong>Parameter </strong> <strong>Typical Range </strong> <strong>Critical Impact</strong>",
+    "<strong>EtO Concentration</strong>",
+    "450-1,200 mg/L Microbial kill rate",
+    "<strong>Temperature </strong> 37-63°C Reaction kinetics",
+    "<strong>Relative Humidity </strong> 40-80% EtO penetration",
+    "<strong>Pressure </strong> Sub-atmospheric or positive",
+    "Gas distribution",
+    "<strong>Exposure Time </strong> 1-6 hours Sterilization efficacy"
+   ]
+  },
+  {
+   "t": "h4",
+   "text": "Validation Protocol"
+  },
+  {
+   "t": "ul",
+   "items": [
+    "<strong>Installation Qualification (IQ)</strong>",
+    "Verify sterilizer specifications (chamber volume, temperature range, pressure capabilities)",
+    "Confirm utility connections (gas supply, vacuum system, exhaust)",
+    "Calibrate instrumentation (temperature probes, pressure gauges, humidity sensors)",
+    "Document safety systems (gas leak detectors, emergency shutdown)"
+   ]
+  },
+  {
+   "t": "h3",
+   "text": "Operational Qualification (OQ)"
+  },
+  {
+   "t": "ul",
+   "items": [
+    "<strong>Empty chamber studies: </strong>Verify chamber achieves target parameters without product",
+    "<strong>Temperature distribution: </strong>Place thermocouples throughout chamber, map temperature uniformity (typically ± 3°C)",
+    "<strong>Humidity distribution: </strong>Verify relative humidity uniformity (typically ± 10%)",
+    "<strong>Gas concentration verification: </strong>Confirm EtO concentration accuracy",
+    "<strong>Leak rate testing: </strong>Ensure chamber maintains vacuum integrity"
+   ]
+  },
+  {
+   "t": "h3",
+   "text": "Performance Qualification (PQ)"
+  },
+  {
+   "t": "ul",
+   "items": [
+    "<strong>Full load configuration: </strong>Load sterilizer with maximum product density per routine use"
+   ]
+  },
+  {
+   "t": "h4",
+   "text": "Biological indicator (BI) placement"
+  },
+  {
+   "t": "ul",
+   "items": [
+    "Use <em>Bacillus atrophaeus </em>spores (minimum population 10⁶ CFU)",
+    "Place BIs at coldest spots identified during OQ",
+    "Include BIs in most challenging product locations (lumen centers, nested packaging)",
+    "Minimum 10 BIs per load, strategically distributed"
+   ]
+  },
+  {
+   "t": "h4",
+   "text": "Fractional cycle approach (Half-cycle method)"
+  },
+  {
+   "t": "ul",
+   "items": [
+    "Run cycle at 50% of intended exposure time",
+    "Retrieve BIs and culture",
+    "<strong>Acceptance: </strong>No BI growth after half-cycle demonstrates overkill validation"
+   ]
+  },
+  {
+   "t": "h4",
+   "text": "Full cycle verification"
+  },
+  {
+   "t": "ul",
+   "items": [
+    "Run three consecutive full-cycle loads",
+    "Culture all BIs",
+    "<strong>Acceptance: </strong>Zero BI growth in all three runs",
+    "<strong>Sterility testing: </strong>Test product samples per USP &lt;71&gt; or ISO 11737-2"
+   ]
+  },
+  {
+   "t": "h3",
+   "text": "EtO Residue Testing (ISO 10993-7)"
+  },
+  {
+   "t": "ul",
+   "items": [
+    "Ethylene oxide and its reaction products (ethylene chlorohydrin, ethylene glycol) are toxic and must be reduced to safe levels before device use.",
+    "<strong>Residue Limits:</strong>",
+    "<strong>Patient Exposure </strong> <strong>EtO Limit </strong> <strong>ECH</strong>"
+   ]
+  },
+  {
+   "t": "p",
+   "html": "<strong>Limit</strong>"
+  },
+  {
+   "t": "ul",
+   "items": [
+    "<strong>EG Limit</strong>"
+   ]
+  },
+  {
+   "t": "table",
+   "num": "11.1",
+   "caption": "EtO Residue Testing (ISO 10993-7)",
+   "rows": [
+    [
+     "Limited exposure (< 24 hours)",
+     "10 mg/device",
+     "25 mg/device",
+     "250 mg/device"
+    ],
+    [
+     "Prolonged exposure (24",
+     "4",
+     "9",
+     "60"
+    ],
+    [
+     "hours - 30 days)",
+     "mg/device",
+     "mg/device",
+     "mg/device"
+    ],
+    [
+     "Permanent contact (>",
+     "4",
+     "9",
+     "60"
+    ],
+    [
+     "30 days)",
+     "mg/device",
+     "mg/device",
+     "mg/device"
+    ]
+   ]
+  },
+  {
+   "t": "ul",
+   "items": [
+    "<strong>Test Method:</strong>",
+    "<strong>Extraction: </strong>Place device in sealed container, heat to 60°C for 24 hours",
+    "<strong>Headspace analysis: </strong>Gas Chromatography with Flame Ionization Detection (GC-FID)",
+    "<strong>Quantification: </strong>Compare peak areas against calibrated standards"
+   ]
+  },
+  {
+   "t": "h4",
+   "text": "Aeration Requirements"
+  },
+  {
+   "t": "ul",
+   "items": [
+    "Ambient aeration: 7-14 days at 20-25°C",
+    "Heated aeration: 8-12 hours at 50-60°C (preferred for faster turnaround)",
+    "Validation must demonstrate residue reduction below limits"
+   ]
+  },
+  {
+   "t": "h3",
+   "text": "11.8.2 Gamma Radiation Sterilization Validation (ISO 11137 Series)"
+  },
+  {
+   "t": "ul",
+   "items": [
+    "Gamma irradiation uses high-energy photons from Cobalt-60 or Cesium-137 sources. It penetrates packaging and products, making it ideal for pre-packaged disposable devices."
+   ]
+  },
+  {
+   "t": "h4",
+   "text": "Process Parameters"
+  },
+  {
+   "t": "ul",
+   "items": [
+    "<strong>Parameter </strong> <strong>Typical Value </strong> <strong>Notes</strong>",
+    "<strong>Sterilization Dose </strong> 25 kGy Standard dose for SAL"
+   ]
+  },
+  {
+   "t": "p",
+   "html": "10⁻⁶"
+  },
+  {
+   "t": "ul",
+   "items": [
+    "<strong>Dose Rate </strong> 0.5-10 kGy/hour",
+    "Facility-dependent",
+    "<strong>Dose Uniformity Ratio</strong>"
+   ]
+  },
+  {
+   "t": "p",
+   "html": "<strong>(DUR)</strong>"
+  },
+  {
+   "t": "ul",
+   "items": [
+    "<strong>Validation Approaches:</strong>",
+    "≤ 1.3 Max dose / Min dose",
+    "<strong>Method 1: Bioburden-Based Dose Setting (ISO 11137-2)</strong>",
+    "<strong>Procedure:</strong>",
+    "<strong>Bioburden determination:</strong>",
+    "Test minimum 10 samples per lot",
+    "Calculate average bioburden (CFU/device)",
+    "Determine Standard Deviation of Individual (SDI)"
+   ]
+  },
+  {
+   "t": "h4",
+   "text": "Verification dose calculation"
+  },
+  {
+   "t": "ul",
+   "items": [
+    "Based on bioburden and target SAL",
+    "Typically 2-10 kGy for verification"
+   ]
+  },
+  {
+   "t": "h4",
+   "text": "Dose verification"
+  },
+  {
+   "t": "ul",
+   "items": [
+    "Irradiate samples at verification dose",
+    "Perform sterility testing",
+    "<strong>Acceptance: </strong>≤ 2 positive sterility tests in 20 samples (for SAL 10⁻² verification)"
+   ]
+  },
+  {
+   "t": "h4",
+   "text": "Sterilization dose establishment"
+  },
+  {
+   "t": "ul",
+   "items": [
+    "Use ISO 11137-2 lookup tables",
+    "Apply appropriate safety factors",
+    "Typical result: 25 kGy minimum dose"
+   ]
+  },
+  {
+   "t": "h3",
+   "text": "Method 2A: Overkill Approach (ISO 11137-2)"
+  },
+  {
+   "t": "ul",
+   "items": [
+    "<strong>Application:</strong>"
+   ]
+  },
+  {
+   "t": "p",
+   "html": "Used when bioburden is low and consistent (&lt; 1,000 CFU/device)."
+  },
+  {
+   "t": "h4",
+   "text": "Procedure"
+  },
+  {
+   "t": "ul",
+   "items": [
+    "Establish maximum bioburden through historical data (minimum 3 consecutive lots)",
+    "Select sterilization dose from ISO 11137-2 Table 5 based on bioburden",
+    "Perform sterility testing on irradiated samples",
+    "<strong>Standard dose: </strong>25 kGy (most common for overkill method)"
+   ]
+  },
+  {
+   "t": "h3",
+   "text": "Dose Mapping (Dose Distribution Study)"
+  },
+  {
+   "t": "ul",
+   "items": [
+    "<strong>Purpose:</strong>"
+   ]
+  },
+  {
+   "t": "p",
+   "html": "Identify maximum and minimum dose zones within product configuration."
+  },
+  {
+   "t": "h4",
+   "text": "Procedure"
+  },
+  {
+   "t": "ul",
+   "items": [
+    "Load product in routine configuration (boxes, pallets, containers)",
+    "Place dosimeters (e.g., radiochromic films, alanine pellets) throughout load:",
+    "Minimum 20 dosimeters per load configuration",
+    "Strategic placement at suspected high/low dose areas",
+    "Include center, edges, top, bottom positions",
+    "Irradiate load at target dose",
+    "Read dosimeters using spectrophotometry or Electron Spin Resonance (ESR)",
+    "Calculate DUR: <strong>DUR = D_max / D_min</strong>",
+    "<strong>Acceptance: </strong>DUR ≤ 1.3 for routine sterilization"
+   ]
+  },
+  {
+   "t": "h4",
+   "text": "Routine Monitoring"
+  },
+  {
+   "t": "ul",
+   "items": [
+    "Place dosimeters in each production load",
+    "Verify dose falls within validated range (typically min dose to 1.3× min dose)",
+    "Document dose delivery records for traceability"
+   ]
+  },
+  {
+   "t": "h4",
+   "text": "Material Compatibility"
+  },
+  {
+   "t": "ul",
+   "items": [
+    "Not all materials tolerate gamma radiation:",
+    "<strong>Compatible: </strong>Polyethylene, polypropylene, PVC, nylon, stainless steel",
+    "<strong>Degradation risk: </strong>Polycarbonate (yellowing), PTFE (brittleness), natural rubber",
+    "Material testing required: mechanical properties, appearance, functionality post-irradiation"
+   ]
+  },
+  {
+   "t": "h3",
+   "text": "11.8.3 Steam Sterilization Validation (ISO 17665)"
+  },
+  {
+   "t": "ul",
+   "items": [
+    "Steam sterilization (autoclaving) uses saturated steam under pressure for heat-stable devices including surgical instruments, metal implants, and glass containers.",
+    "<strong>Process Parameters:</strong>",
+    "<strong>Cycle Type </strong> <strong>Temperature </strong> <strong>Pressure </strong> <strong>Exposure</strong>"
+   ]
+  },
+  {
+   "t": "p",
+   "html": "<strong>Time</strong>"
+  },
+  {
+   "t": "ul",
+   "items": [
+    "<strong>Gravity displacement</strong>",
+    "<strong>Gravity displacement</strong>"
+   ]
+  },
+  {
+   "t": "p",
+   "html": "121°C 15 psig (103 kPa)"
+  },
+  {
+   "t": "p",
+   "html": "132°C 27 psig (186 kPa)"
+  },
+  {
+   "t": "ul",
+   "items": [
+    "15-30"
+   ]
+  },
+  {
+   "t": "p",
+   "html": "minutes"
+  },
+  {
+   "t": "ul",
+   "items": [
+    "10-15"
+   ]
+  },
+  {
+   "t": "p",
+   "html": "minutes"
+  },
+  {
+   "t": "ul",
+   "items": [
+    "<strong>Pre-vacuum</strong>"
+   ]
+  },
+  {
+   "t": "p",
+   "html": "<strong>(Prevac)</strong>"
+  },
+  {
+   "t": "ul",
+   "items": [
+    "<strong>Validation Protocol:</strong>"
+   ]
+  },
+  {
+   "t": "p",
+   "html": "132-135°C 27-30 psig 3-4 minutes"
+  },
+  {
+   "t": "h3",
+   "text": "Installation Qualification (IQ)"
+  },
+  {
+   "t": "ul",
+   "items": [
+    "Verify autoclave specifications, safety interlocks, door seals",
+    "Calibrate temperature probes, pressure gauges, timers",
+    "Confirm utility supply (steam quality, water quality, compressed air)"
+   ]
+  },
+  {
+   "t": "h3",
+   "text": "Operational Qualification (OQ)"
+  },
+  {
+   "t": "ul",
+   "items": [
+    "<strong>Temperature distribution (Empty chamber):</strong>",
+    "Place thermocouples throughout chamber (minimum 12 locations)",
+    "Run cycle and record temperature at all points",
+    "<strong>Acceptance: </strong>All probes within ± 1°C of set point during exposure"
+   ]
+  },
+  {
+   "t": "h4",
+   "text": "Air removal efficiency (Bowie-Dick Test for Prevac)"
+  },
+  {
+   "t": "ul",
+   "items": [
+    "Use Bowie-Dick test pack or equivalent",
+    "<strong>Acceptance: </strong>Uniform color change across test sheet (indicates complete air removal)"
+   ]
+  },
+  {
+   "t": "h4",
+   "text": "Steam penetration"
+  },
+  {
+   "t": "ul",
+   "items": [
+    "Place thermocouples inside packaged product simulators",
+    "Verify temperature reaches set point in all locations"
+   ]
+  },
+  {
+   "t": "h3",
+   "text": "Performance Qualification (PQ)"
+  },
+  {
+   "t": "ul",
+   "items": [
+    "<strong>Full load configuration:</strong>",
+    "Load autoclave per routine practice (maximum density)",
+    "Place biological indicators (<em>Geobacillus stearothermophilus </em>spores, population ≥ 10⁶)",
+    "Include BIs at coldest spots and inside most challenging products"
+   ]
+  },
+  {
+   "t": "h4",
+   "text": "BI culture"
+  },
+  {
+   "t": "ul",
+   "items": [
+    "Incubate BIs at 55-60°C for 7 days in Soybean-Casein Digest Broth",
+    "<strong>Acceptance: </strong>No growth in all BIs from three consecutive successful cycles"
+   ]
+  },
+  {
+   "t": "h4",
+   "text": "Physical measurements"
+  },
+  {
+   "t": "ul",
+   "items": [
+    "Record temperature, pressure, time for all three PQ runs",
+    "Verify parameters within specifications"
+   ]
+  },
+  {
+   "t": "h4",
+   "text": "Routine Monitoring"
+  },
+  {
+   "t": "ul",
+   "items": [
+    "<strong>Every cycle: </strong>Record time, temperature, pressure (chart recorders or electronic logs)",
+    "<strong>Daily: </strong>Run Bowie-Dick test (for prevac cycles)",
+    "<strong>Weekly: </strong>Run biological indicator in load",
+    "<strong>Monthly: </strong>Chemical integrator testing"
+   ]
+  },
+  {
+   "t": "fig",
+   "src": "images/ch11_fig04.jpg",
+   "w": 425,
+   "h": 321,
+   "num": "11.4",
+   "caption": "Sterilization Validation Workflow"
+  },
+  {
+   "t": "ul",
+   "items": [
+    "<strong>Description:</strong>"
+   ]
+  },
+  {
+   "t": "p",
+   "html": "Flowchart showing parallel paths for EtO, Gamma, and Steam validation:"
+  },
+  {
+   "t": "ul",
+   "items": [
+    "<strong>All Methods: </strong>IQ (Equipment verification) → OQ (Empty chamber studies, parameter mapping) → PQ (Full load, biological indicators, product samples)",
+    "<strong>EtO Branch: </strong>Includes additional box for \"Residue Testing &amp; Aeration Validation\"",
+    "<strong>Gamma Branch: </strong>Includes \"Dose Mapping\" and \"Material Compatibility Studies\"",
+    "<strong>Steam Branch: </strong>Includes \"Bowie-Dick Test\" and \"Steam Penetration Studies\"",
+    "All converge to: <strong>Routine Monitoring → Periodic Requalification</strong>"
+   ]
+  },
+  {
+   "t": "h2",
+   "text": "11.9 Packaging and Seal Integrity Testing",
+   "num": "11.9"
+  },
+  {
+   "t": "ul",
+   "items": [
+    "Packaging protects devices from physical damage and maintains sterility for sterile products. Validation ensures packaging performs its intended function throughout the product shelf life."
+   ]
+  },
+  {
+   "t": "h3",
+   "text": "11.9.1 Seal Strength Testing (ASTM F88)"
+  },
+  {
+   "t": "ul",
+   "items": [
+    "<strong>Purpose:</strong>"
+   ]
+  },
+  {
+   "t": "p",
+   "html": "Quantifies the force required to separate a flexible-flexible or flexible-rigid seal."
+  },
+  {
+   "t": "h4",
+   "text": "Test Method"
+  },
+  {
+   "t": "ul",
+   "items": [
+    "Cut specimen to standard width (typically 25.4 mm / 1 inch)",
+    "Mount specimen ends in tensile tester grips",
+    "Pull apart at constant rate (typically 254 mm/min)",
+    "Record peak force and failure mode"
+   ]
+  },
+  {
+   "t": "h4",
+   "text": "Acceptance Criteria"
+  },
+  {
+   "t": "ul",
+   "items": [
+    "<strong>Minimum seal strength: </strong>Manufacturer-specified (typically 1.5-3.0 N per 25.4 mm width)",
+    "<strong>Failure mode: </strong>Acceptable modes include:",
+    "<strong>Peel seal failure </strong>(cohesive failure within seal layer)",
+    "<strong>Delamination </strong>(acceptable if within seal area)"
+   ]
+  },
+  {
+   "t": "h4",
+   "text": "Unacceptable modes"
+  },
+  {
+   "t": "ul",
+   "items": [
+    "<strong>Tray fracture </strong>(brittle failure outside seal)",
+    "<strong>Seal separation at tray surface </strong>(adhesive failure indicating weak seal)"
+   ]
+  },
+  {
+   "t": "h4",
+   "text": "Test Frequency"
+  },
+  {
+   "t": "ul",
+   "items": [
+    "Seal validation: Test representative samples from process validation lots (minimum n=10 per configuration)",
+    "Routine monitoring: Per sampling plan (e.g., 3 samples per production shift or per 500 units)"
+   ]
+  },
+  {
+   "t": "h3",
+   "text": "11.9.2 Burst Testing (ASTM F2054)"
+  },
+  {
+   "t": "ul",
+   "items": [
+    "<strong>Purpose:</strong>"
+   ]
+  },
+  {
+   "t": "p",
+   "html": "Determines package integrity under internal pressure stress."
+  },
+  {
+   "t": "h4",
+   "text": "Test Method"
+  },
+  {
+   "t": "ul",
+   "items": [
+    "Place sealed package in test chamber",
+    "Gradually increase internal air pressure at controlled rate (e.g., 1 kPa/second)",
+    "Visually or acoustically detect burst point",
+    "Record burst pressure and failure location"
+   ]
+  },
+  {
+   "t": "h4",
+   "text": "Acceptance Criteria"
+  },
+  {
+   "t": "ul",
+   "items": [
+    "<strong>Minimum burst pressure: </strong>Typically 30-70 kPa depending on package size and design",
+    "Package must withstand anticipated distribution stresses with safety factor ≥ 2×"
+   ]
+  },
+  {
+   "t": "h3",
+   "text": "11.9.3 Dye Penetration Test (ASTM F1929)"
+  },
+  {
+   "t": "ul",
+   "items": [
+    "<strong>Purpose:</strong>"
+   ]
+  },
+  {
+   "t": "p",
+   "html": "Detects microscopic channels or leaks in package seals that could compromise sterility."
+  },
+  {
+   "t": "h4",
+   "text": "Test Method"
+  },
+  {
+   "t": "ul",
+   "items": [
+    "Prepare dye solution (typically 1% aqueous methylene blue or fluorescent dye)",
+    "Submerge sealed package in dye solution",
+    "Apply vacuum (typically -27 kPa) for 5 minutes",
+    "Release vacuum, maintain package in dye for additional 5 minutes",
+    "Remove package, rinse exterior thoroughly",
+    "Open package and inspect interior for dye penetration using white background (visual) or UV light (fluorescent)"
+   ]
+  },
+  {
+   "t": "h4",
+   "text": "Acceptance Criteria"
+  },
+  {
+   "t": "ul",
+   "items": [
+    "<strong>No dye penetration </strong>detected on interior surfaces or device",
+    "Test multiple samples (minimum n=10) per packaging configuration"
+   ]
+  },
+  {
+   "t": "h4",
+   "text": "Limitations"
+  },
+  {
+   "t": "ul",
+   "items": [
+    "Qualitative (pass/fail) only",
+    "Does not quantify leak size",
+    "Not suitable for porous packaging materials"
+   ]
+  },
+  {
+   "t": "h3",
+   "text": "11.9.4 Bubble Leak Test (ASTM F2096)"
+  },
+  {
+   "t": "ul",
+   "items": [
+    "<strong>Purpose:</strong>"
+   ]
+  },
+  {
+   "t": "p",
+   "html": "Detects and locates gross leaks in flexible and semi-rigid packages."
+  },
+  {
+   "t": "h4",
+   "text": "Test Method"
+  },
+  {
+   "t": "ul",
+   "items": [
+    "Submerge sealed package in water bath (with wetting agent if needed)",
+    "Apply vacuum (typically -27 to -70 kPa)",
+    "Observe for continuous stream of bubbles from package",
+    "Document leak location if detected"
+   ]
+  },
+  {
+   "t": "h4",
+   "text": "Acceptance Criteria"
+  },
+  {
+   "t": "ul",
+   "items": [
+    "<strong>No continuous bubble streams </strong>(indicating gross leaks)",
+    "Isolated single bubbles may be acceptable (air trapped in material folds)",
+    "Test minimum 10 samples per configuration",
+    "<strong>Sensitivity: </strong>Detects leaks ≥ 50 microns. Not suitable for detecting pinholes or micro-channels."
+   ]
+  },
+  {
+   "t": "h3",
+   "text": "11.9.5 Vacuum Decay Test (Non-Destructive)"
+  },
+  {
+   "t": "ul",
+   "items": [
+    "<strong>Purpose:</strong>"
+   ]
+  },
+  {
+   "t": "p",
+   "html": "Quantitatively detects leaks in rigid and semi-rigid packages without destroying the package."
+  },
+  {
+   "t": "h4",
+   "text": "Test Method"
+  },
+  {
+   "t": "ul",
+   "items": [
+    "Place package in sealed test chamber",
+    "Evacuate chamber to specified vacuum level",
+    "Isolate chamber from vacuum source",
+    "Measure pressure increase over time (typically 5-10 seconds)",
+    "Compare pressure rise against acceptance limits"
+   ]
+  },
+  {
+   "t": "h4",
+   "text": "Acceptance Criteria"
+  },
+  {
+   "t": "ul",
+   "items": [
+    "Pressure rise &lt; established limit (device-specific, typically &lt; 0.1 kPa over 10 seconds for small packages)",
+    "Non-leaking packages show minimal pressure rise due to outgassing only"
+   ]
+  },
+  {
+   "t": "h4",
+   "text": "Advantages"
+  },
+  {
+   "t": "ul",
+   "items": [
+    "Non-destructive (packages can be released for use)",
+    "Quantitative",
+    "Automated",
+    "High sensitivity (detects leaks as small as 5-10 microns)"
+   ]
+  },
+  {
+   "t": "h4",
+   "text": "Applications"
+  },
+  {
+   "t": "ul",
+   "items": [
+    "100% inspection of critical high-value devices (e.g., implantable pacemakers)",
+    "Routine validation samples"
+   ]
+  },
+  {
+   "t": "h3",
+   "text": "11.9.6 Accelerated Aging Studies (ASTM F1980)"
+  },
+  {
+   "t": "ul",
+   "items": [
+    "<strong>Purpose:</strong>"
+   ]
+  },
+  {
+   "t": "p",
+   "html": "Simulates real-time aging to establish device shelf life or validate package performance over time."
+  },
+  {
+   "t": "h4",
+   "text": "Theory"
+  },
+  {
+   "t": "ul",
+   "items": [
+    "Accelerated aging uses elevated temperature to increase reaction rates per Arrhenius equation:"
+   ]
+  },
+  {
+   "t": "h3",
+   "text": "Aging Factor (AF) = Q₁₀^((T_accelerated - T_real-time)/10)"
+  },
+  {
+   "t": "ul",
+   "items": [
+    "Where:",
+    "<strong>Q₁₀ </strong>= Aging coefficient (typically 2.0 for medical packaging materials)",
+    "<strong>T_accelerated </strong>= Elevated test temperature (°C)",
+    "<strong>T_real-time </strong>= Ambient storage temperature (typically 25°C)"
+   ]
+  },
+  {
+   "t": "h4",
+   "text": "Common Aging Protocols"
+  },
+  {
+   "t": "ul",
+   "items": [
+    "<strong>Real-Time Shelf Life </strong> <strong>Accelerated Condition </strong> <strong>Accelerated Duration</strong>",
+    "<strong>1 year </strong> 55°C 14 days",
+    "<strong>2 years </strong> 55°C 28 days",
+    "<strong>3 years </strong> 55°C 42 days",
+    "<strong>5 years </strong> 55°C 70 days",
+    "<strong>Alternative: </strong>60°C reduces duration but requires justification of Q₁₀ = 2.0 validity at higher temperature."
+   ]
+  },
+  {
+   "t": "h4",
+   "text": "Test Protocol"
+  },
+  {
+   "t": "ul",
+   "items": [
+    "<strong>Sample Preparation:</strong>",
+    "Package devices per routine procedure",
+    "Sterilize using validated method",
+    "Store samples in controlled accelerated aging chamber (temperature ± 2°C, humidity controlled if relevant)",
+    "Include control samples stored at ambient conditions"
+   ]
+  },
+  {
+   "t": "h4",
+   "text": "Test Schedule"
+  },
+  {
+   "t": "ul",
+   "items": [
+    "<strong>Time zero: </strong>Test packaging integrity before aging (baseline)",
+    "<strong>Intermediate points: </strong>Test samples at 25%, 50%, 75% of accelerated aging duration (optional but recommended)",
+    "<strong>Final point: </strong>Test samples at completion of accelerated aging"
+   ]
+  },
+  {
+   "t": "h4",
+   "text": "Tests Performed"
+  },
+  {
+   "t": "ul",
+   "items": [
+    "<strong>Seal strength </strong>(ASTM F88)",
+    "<strong>Burst test </strong>(ASTM F2054)",
+    "<strong>Dye penetration </strong>(ASTM F1929)",
+    "<strong>Package observation </strong>(visual inspection for discoloration, brittleness, seal degradation)",
+    "<strong>Sterility maintenance </strong>(sterility testing per USP &lt;71&gt; on subset of samples)"
+   ]
+  },
+  {
+   "t": "h4",
+   "text": "Acceptance Criteria"
+  },
+  {
+   "t": "ul",
+   "items": [
+    "Aged samples meet same specifications as time-zero samples",
+    "No sterility failures",
+    "No significant degradation trends",
+    "<strong>Sample Size: </strong>Minimum 10 samples per test point (per ASTM F1980 guidance)."
+   ]
+  },
+  {
+   "t": "h4",
+   "text": "Real-Time Aging (Confirmatory Study)"
+  },
+  {
+   "t": "ul",
+   "items": [
+    "Accelerated aging must be confirmed with real-time aging:",
+    "Store samples at labeled storage conditions (typically 15-30°C)",
+    "Test at regular intervals (6 months, 1 year, 2 years, etc.)",
+    "Continue until claimed shelf life is reached",
+    "<strong>Acceptance: </strong>Real-time data must support accelerated aging conclusions"
+   ]
+  },
+  {
+   "t": "h3",
+   "text": "11.9.7 Package Transportation Testing (ASTM D4169)"
+  },
+  {
+   "t": "ul",
+   "items": [
+    "<strong>Purpose:</strong>"
+   ]
+  },
+  {
+   "t": "p",
+   "html": "Simulates distribution hazards (vibration, shock, compression, temperature/humidity extremes) to ensure packaging protects device integrity."
+  },
+  {
+   "t": "ul",
+   "items": [
+    "<strong>Test Sequence (Distribution Cycle 13 - Parcel Shipment):</strong>",
+    "<strong>Test Element </strong> <strong>Simulation </strong> <strong>Parameters</strong>",
+    "<strong>Random Vibration</strong>",
+    "Vehicle transport 0.52 Grms, 1 hour per axis (3"
+   ]
+  },
+  {
+   "t": "p",
+   "html": "axes)"
+  },
+  {
+   "t": "ul",
+   "items": [
+    "<strong>Shock </strong> Handling drops 76 cm drop height, flat, edge,"
+   ]
+  },
+  {
+   "t": "p",
+   "html": "corner orientations"
+  },
+  {
+   "t": "ul",
+   "items": [
+    "<strong>Compression </strong> Warehouse stacking",
+    "Load = (Stacking height × Package weight), 24 hours"
+   ]
+  },
+  {
+   "t": "h3",
+   "text": "Temperature Cycling"
+  },
+  {
+   "t": "ul",
+   "items": [
+    "<strong>Post-Test Evaluation:</strong>",
+    "Environmental extremes",
+    "-18°C to 60°C, multiple cycles",
+    "Inspect packaging for damage (tears, punctures, seal failures)",
+    "Perform seal strength, dye penetration, or burst tests",
+    "Inspect device for physical damage or functional defects",
+    "Perform sterility testing on subset of samples"
+   ]
+  },
+  {
+   "t": "h4",
+   "text": "Acceptance Criteria"
+  },
+  {
+   "t": "ul",
+   "items": [
+    "No package failures compromising sterility barrier",
+    "No device damage affecting safety or performance",
+    "All post-transportation tests meet specifications"
+   ]
+  },
+  {
+   "t": "h3",
+   "text": "Safety Note 11.3"
+  },
+  {
+   "t": "ul",
+   "items": [
+    "Packaging failure is the second leading cause of sterile device recalls (after manufacturing defects). Comprehensive packaging validation including accelerated aging and transportation testing is essential for ensuring product reaches patients in sterile, functional condition."
+   ]
+  },
+  {
+   "t": "h2",
+   "text": "11.10 Sampling Plans and Acceptance Criteria",
+   "num": "11.10"
+  },
+  {
+   "t": "ul",
+   "items": [
+    "Statistical sampling enables efficient quality control while maintaining confidence in product quality."
+   ]
+  },
+  {
+   "t": "h3",
+   "text": "11.10.1 Acceptance Sampling per ISO 2859-1"
+  },
+  {
+   "t": "ul",
+   "items": [
+    "<strong>Acceptable Quality Level (AQL) System:</strong>",
+    "AQL represents the maximum percentage of defective units considered acceptable in a lot."
+   ]
+  },
+  {
+   "t": "h4",
+   "text": "Common AQL Values for Medical Devices"
+  },
+  {
+   "t": "ul",
+   "items": [
+    "<strong>Defect Type </strong> <strong>Typical AQL</strong>",
+    "<strong>Critical defects </strong>(affect safety) <strong>0% or 0.065% </strong>(zero tolerance or"
+   ]
+  },
+  {
+   "t": "p",
+   "html": "extremely low)"
+  },
+  {
+   "t": "h3",
+   "text": "Defect Type Typical AQL"
+  },
+  {
+   "t": "ul",
+   "items": [
+    "<strong>Major defects </strong>(affect function) <strong>1.0% to 2.5%</strong>",
+    "<strong>Minor defects </strong>(cosmetic, non-functional)"
+   ]
+  },
+  {
+   "t": "h4",
+   "text": "Inspection Levels"
+  },
+  {
+   "t": "ul",
+   "items": [
+    "<strong>4.0% to 6.5%</strong>",
+    "<strong>General Inspection Level II </strong>(most common): Balances sample size and confidence",
+    "<strong>Level I</strong>: Reduced sample size (less stringent)",
+    "<strong>Level III</strong>: Increased sample size (more stringent)"
+   ]
+  },
+  {
+   "t": "h4",
+   "text": "Sampling Example"
+  },
+  {
+   "t": "ul",
+   "items": [
+    "<strong>Scenario: </strong>Inspecting lot of 500 syringes for major defects with AQL = 2.5%, General Level II, Normal Inspection"
+   ]
+  },
+  {
+   "t": "h4",
+   "text": "Per ISO 2859-1 Table"
+  },
+  {
+   "t": "ul",
+   "items": [
+    "<strong>Sample size code: </strong>J",
+    "<strong>Sample size (n): </strong>80 units",
+    "<strong>Acceptance number (Ac): </strong>5 defects",
+    "<strong>Rejection number (Re): </strong>6 defects"
+   ]
+  },
+  {
+   "t": "h4",
+   "text": "Decision Rule"
+  },
+  {
+   "t": "ul",
+   "items": [
+    "If ≤ 5 defective units found in 80 samples → <strong>Accept lot</strong>",
+    "If ≥ 6 defective units found → <strong>Reject lot</strong>"
+   ]
+  },
+  {
+   "t": "h4",
+   "text": "Switching Rules"
+  },
+  {
+   "t": "ul",
+   "items": [
+    "<strong>Condition </strong> <strong>Action</strong>",
+    "<strong>5 consecutive lots accepted </strong> Switch to <strong>Reduced Inspection </strong>(smaller"
+   ]
+  },
+  {
+   "t": "p",
+   "html": "sample size)"
+  },
+  {
+   "t": "ul",
+   "items": [
+    "<strong>2 out of 5 lots rejected </strong> Switch to <strong>Tightened Inspection </strong>(same"
+   ]
+  },
+  {
+   "t": "p",
+   "html": "sample, lower Ac)"
+  },
+  {
+   "t": "h3",
+   "text": "10 consecutive lots rejected under tightened"
+  },
+  {
+   "t": "ul",
+   "items": [
+    "<strong>Discontinue inspection </strong>(halt production, investigate systemic issues)"
+   ]
+  },
+  {
+   "t": "h3",
+   "text": "11.10.2 Acceptance Criteria Development"
+  },
+  {
+   "t": "ul",
+   "items": [
+    "Acceptance criteria must be based on:"
+   ]
+  },
+  {
+   "t": "h4",
+   "text": "Design Specifications"
+  },
+  {
+   "t": "ul",
+   "items": [
+    "Engineering requirements from design inputs",
+    "Safety margins and failure modes analysis"
+   ]
+  },
+  {
+   "t": "h4",
+   "text": "Regulatory Standards"
+  },
+  {
+   "t": "ul",
+   "items": [
+    "IEC 60601 leakage current limits",
+    "ISO 10993 biocompatibility thresholds",
+    "ISO 11135/11137 sterility requirements"
+   ]
+  },
+  {
+   "t": "h4",
+   "text": "Process Capability Studies"
+  },
+  {
+   "t": "ul",
+   "items": [
+    "Collect data from validation batches (minimum 30 samples)",
+    "Calculate process mean (X̄) and standard deviation (σ)",
+    "Determine process capability indices:"
+   ]
+  },
+  {
+   "t": "h3",
+   "text": "Cpk = min[(USL - X̄) / 3σ, (X̄ - LSL) / 3σ]"
+  },
+  {
+   "t": "ul",
+   "items": [
+    "Where:",
+    "<strong>USL </strong>= Upper Specification Limit",
+    "<strong>LSL </strong>= Lower Specification Limit"
+   ]
+  },
+  {
+   "t": "h4",
+   "text": "Interpretation"
+  },
+  {
+   "t": "ul",
+   "items": [
+    "<strong>Cpk ≥ 1.33: </strong>Process capable (target for medical devices)",
+    "<strong>Cpk &lt; 1.0: </strong>Process incapable (high defect risk)"
+   ]
+  },
+  {
+   "t": "box",
+   "kind": "example",
+   "label": "Example Box 11.2",
+   "title": "Setting Burst Pressure Acceptance Criteria",
+   "blocks": [
+    {
+     "t": "ul",
+     "items": [
+      "A catheter design requires withstanding 15 atm working pressure.",
+      "<strong>Design Specification: </strong>Burst pressure ≥ 45 atm (3× safety factor)"
+     ]
+    },
+    {
+     "t": "h4",
+     "text": "Process Capability Study"
+    },
+    {
+     "t": "ul",
+     "items": [
+      "Test 50 validation samples",
+      "Mean burst pressure: 52 atm",
+      "Standard deviation: 3 atm",
+      "Cpk = (52 - 45) / (3 × 3) = 0.78",
+      "<strong>Analysis: </strong>Cpk &lt; 1.0 indicates process incapable. <strong>Action required:</strong>",
+      "Optimize extrusion parameters to increase mean",
+      "Reduce process variation (better temperature control)",
+      "Retest until Cpk ≥ 1.33 achieved",
+      "<strong>Final Acceptance Criterion: </strong>Burst pressure ≥ 45 atm with demonstrated Cpk ≥ 1.33"
+     ]
+    }
+   ]
+  },
+  {
+   "t": "h3",
+   "text": "11.11 QC Documentation and Records"
+  },
+  {
+   "t": "ul",
+   "items": [
+    "Comprehensive documentation ensures traceability, regulatory compliance, and continuous improvement.",
+    "<strong>11.11.1 Essential QC Documents</strong>",
+    "<strong>1. Device History Record (DHR)</strong>",
+    "<strong>Content:</strong>",
+    "Batch/lot number",
+    "Manufacturing date",
+    "Raw material lot numbers",
+    "Equipment used (with calibration status)",
+    "Process parameters (temperature, pressure, time)",
+    "In-process QC results",
+    "Final QC test results",
+    "Sterilization records",
+    "Packaging validation data",
+    "Deviations and their resolutions",
+    "Release authorization signatures",
+    "<strong>Retention: </strong>Per regulatory requirements (typically 2 years post-device lifetime or as specified by local regulations)"
+   ]
+  },
+  {
+   "t": "h3",
+   "text": "2. Test Reports and Certificates"
+  },
+  {
+   "t": "ul",
+   "items": [
+    "Each QC test generates report including:",
+    "Sample identification (lot, date code, serial number)",
+    "Test method reference (ISO, ASTM, internal SOP)",
+    "Test date and analyst name",
+    "Equipment used (ID number, calibration status)",
+    "Raw data (measurements, observations, photos)",
+    "Calculations",
+    "Result interpretation (Pass/Fail against acceptance criteria)",
+    "Approval signatures"
+   ]
+  },
+  {
+   "t": "h3",
+   "text": "3. Calibration Records"
+  },
+  {
+   "t": "ul",
+   "items": [
+    "<strong>For Each Calibrated Instrument:</strong>",
+    "Equipment ID and description",
+    "Calibration procedure reference",
+    "Calibration date and next due date",
+    "Calibration standard traceability (NIST, national standards)",
+    "As-found and as-left values",
+    "Adjustments made",
+    "Calibration certificate",
+    "Out-of-tolerance investigations (if applicable)"
+   ]
+  },
+  {
+   "t": "h4",
+   "text": "Calibration Frequency"
+  },
+  {
+   "t": "p",
+   "html": "Typically annual, but may be more frequent based on usage and criticality. Critical instruments (e.g., leakage current analyzers, pressure gauges) may require quarterly or semi-annual calibration."
+  },
+  {
+   "t": "h3",
+   "text": "4. Environmental Monitoring Records"
+  },
+  {
+   "t": "ul",
+   "items": [
+    "Cleanroom particle counts (per ISO 14644-2)",
+    "Temperature and humidity logs",
+    "Differential pressure recordings",
+    "Microbial settle plates and active air sampling results",
+    "Trend analysis and out-of-specification investigations"
+   ]
+  },
+  {
+   "t": "h3",
+   "text": "5. Batch Manufacturing Record (BMR)"
+  },
+  {
+   "t": "ul",
+   "items": [
+    "Master document containing:",
+    "Complete production instructions",
+    "Material specifications",
+    "Process parameters with tolerances",
+    "In-process inspection points",
+    "QC hold points",
+    "Release criteria"
+   ]
+  },
+  {
+   "t": "h3",
+   "text": "6. Non-Conformance Reports (NCR)"
+  },
+  {
+   "t": "ul",
+   "items": [
+    "Documented when product/process fails specifications:",
+    "Description of non-conformance",
+    "Impact assessment (safety, performance, regulatory)",
+    "Disposition (rework, scrap, use-as-is, return to supplier)",
+    "Root cause analysis",
+    "CAPA reference",
+    "Authorization signatures"
+   ]
+  },
+  {
+   "t": "h3",
+   "text": "7. CAPA (Corrective and Preventive Action) Records"
+  },
+  {
+   "t": "ul",
+   "items": [
+    "Linked to NCRs, complaints, audits:",
+    "Problem description",
+    "Root cause analysis (5 Whys, Fishbone diagram, Fault Tree Analysis)",
+    "Corrective action plan with timelines",
+    "Verification of effectiveness",
+    "Preventive actions to avoid recurrence",
+    "Closure approval"
+   ]
+  },
+  {
+   "t": "h3",
+   "text": "11.11.2 Electronic Quality Management Systems (eQMS)"
+  },
+  {
+   "t": "ul",
+   "items": [
+    "Modern QC operations increasingly use electronic systems:"
+   ]
+  },
+  {
+   "t": "h4",
+   "text": "Benefits"
+  },
+  {
+   "t": "ul",
+   "items": [
+    "Real-time data capture and trending",
+    "Automated workflows and approvals",
+    "Integration with manufacturing execution systems (MES)",
+    "Statistical process control (SPC) charting",
+    "Audit trail integrity (21 CFR Part 11 compliance)",
+    "Remote access for multi-site operations"
+   ]
+  },
+  {
+   "t": "h4",
+   "text": "Common eQMS Platforms"
+  },
+  {
+   "t": "ul",
+   "items": [
+    "TrackWise (Sparta Systems)",
+    "MasterControl",
+    "Veeva Vault QMS",
+    "Arena PLM"
+   ]
+  },
+  {
+   "t": "fig",
+   "src": "images/ch11_fig05.jpg",
+   "w": 451,
+   "h": 317,
+   "num": "11.5",
+   "caption": "QC Documentation Flow"
+  },
+  {
+   "t": "ul",
+   "items": [
+    "<strong>Description:</strong>"
+   ]
+  },
+  {
+   "t": "p",
+   "html": "Flowchart showing document hierarchy and relationships:"
+  },
+  {
+   "t": "ul",
+   "items": [
+    "<strong>Top Level: </strong>Quality Manual",
+    "<strong>Second Level: </strong>QC Procedures (SOPs)",
+    "<strong>Third Level: </strong>Work Instructions, Test Methods",
+    "<strong>Fourth Level: </strong>Forms, Templates",
+    "<strong>Data Flow: </strong>Test Results → DHR → Batch Record → Electronic Archive",
+    "<strong>Supporting Systems: </strong>Calibration Records, Environmental Monitoring, CAPA System (shown as side branches feeding into main flow)",
+    "<strong>11.12 Industry Case Studies</strong>"
+   ]
+  },
+  {
+   "t": "box",
+   "kind": "case",
+   "label": "Case Study 11.1",
+   "title": "Catheter Burst Pressure Failure Investigation",
+   "blocks": [
+    {
+     "t": "ul",
+     "items": [
+      "<strong>Background:</strong>",
+      "A manufacturer of urinary catheters received customer complaints regarding catheter balloon bursting during inflation at 10 atm (within rated pressure)."
+     ]
+    },
+    {
+     "t": "h4",
+     "text": "QC Investigation"
+    },
+    {
+     "t": "ul",
+     "items": [
+      "<strong>Step 1: Immediate Action</strong>",
+      "Quarantine remaining inventory from affected lots",
+      "Conduct burst pressure testing on retained samples"
+     ]
+    }
+   ]
+  },
+  {
+   "t": "h3",
+   "text": "Step 2: Root Cause Analysis"
+  },
+  {
+   "t": "ul",
+   "items": [
+    "<strong>Test Results:</strong>",
+    "Retained samples: Burst pressure 35-40 atm (specification: ≥ 45 atm)",
+    "Historical data: Previous lots consistently exceeded 50 atm"
+   ]
+  },
+  {
+   "t": "h4",
+   "text": "Process Review"
+  },
+  {
+   "t": "ul",
+   "items": [
+    "Extrusion temperature log review revealed deviation on affected production dates",
+    "Temperature dropped 15°C below specification for 3 hours due to heater malfunction",
+    "Out-of-specification condition not detected due to inadequate in-process monitoring"
+   ]
+  },
+  {
+   "t": "h4",
+   "text": "Material Analysis"
+  },
+  {
+   "t": "ul",
+   "items": [
+    "FTIR confirmed correct polymer",
+    "DSC showed reduced crystallinity (indicating insufficient heat history)"
+   ]
+  },
+  {
+   "t": "h4",
+   "text": "Root Causes Identified"
+  },
+  {
+   "t": "ul",
+   "items": [
+    "<strong>Primary: </strong>Extrusion temperature deviation resulted in weaker balloon material",
+    "<strong>Contributing: </strong>Lack of real-time temperature monitoring and alarming",
+    "<strong>Contributing: </strong>Inadequate frequency of in-process burst pressure testing"
+   ]
+  },
+  {
+   "t": "h4",
+   "text": "Corrective Actions"
+  },
+  {
+   "t": "ul",
+   "items": [
+    "<strong>Immediate:</strong>",
+    "Voluntary recall of affected lots (2,500 units)",
+    "Customer notification and replacement program"
+   ]
+  },
+  {
+   "t": "h4",
+   "text": "Long-Term"
+  },
+  {
+   "t": "ul",
+   "items": [
+    "Install continuous temperature monitoring with out-of-range alarms",
+    "Increase in-process burst pressure testing from 1/shift to 1/hour",
+    "Implement Statistical Process Control (SPC) charting for burst pressure",
+    "Retrain operators on deviation documentation and escalation",
+    "Quarterly review of critical process parameters and monitoring systems"
+   ]
+  },
+  {
+   "t": "h4",
+   "text": "Preventive Actions"
+  },
+  {
+   "t": "ul",
+   "items": [
+    "Extend temperature monitoring and alarming to all extrusion lines",
+    "Develop automated data logging system for critical parameters",
+    "Implement risk-based in-process inspection frequency determination"
+   ]
+  },
+  {
+   "t": "h4",
+   "text": "Outcome"
+  },
+  {
+   "t": "ul",
+   "items": [
+    "No patient injuries reported",
+    "Process Cpk improved from 0.9 to 1.5 post-corrective actions",
+    "Zero burst pressure failures in 18 months post-CAPA implementation"
+   ]
+  },
+  {
+   "t": "h4",
+   "text": "Lessons Learned"
+  },
+  {
+   "t": "ul",
+   "items": [
+    "<strong>Real-time monitoring </strong>of critical process parameters is essential",
+    "<strong>Adequate in-process inspection frequency </strong>based on process stability",
+    "<strong>Robust escalation procedures </strong>for out-of-specification conditions",
+    "<strong>CAPA effectiveness verification </strong>through statistical evidence"
+   ]
+  },
+  {
+   "t": "box",
+   "kind": "case",
+   "label": "Case Study 11.2",
+   "title": "Sterility Failure Due to Inadequate Environmental Monitoring",
+   "blocks": [
+    {
+     "t": "ul",
+     "items": [
+      "<strong>Background:</strong>",
+      "A manufacturer of sterile surgical gloves received notification of patient surgical site infections potentially linked to their product."
+     ]
+    },
+    {
+     "t": "h4",
+     "text": "Investigation"
+    },
+    {
+     "t": "ul",
+     "items": [
+      "<strong>Sterility Testing:</strong>",
+      "Retained samples from implicated lots: 3/20 samples failed sterility test (growth in FTM)",
+      "Organism identification: <em>Bacillus cereus </em>(environmental contaminant)"
+     ]
+    },
+    {
+     "t": "h4",
+     "text": "Environmental Monitoring Review"
+    },
+    {
+     "t": "ul",
+     "items": [
+      "Settle plate data: ISO 7 area showing 150-200 CFU/plate (specification: &lt; 50 CFU)",
+      "Trend analysis: Gradual increase over 3 months prior to failure, but remained below alert limit until recent spike",
+      "No CAPA initiated during upward trend"
+     ]
+    },
+    {
+     "t": "h4",
+     "text": "Root Cause"
+    },
+    {
+     "t": "ul",
+     "items": [
+      "HVAC filter replacement overdue by 6 weeks",
+      "Increased bioburden from malfunctioning air filtration",
+      "Inadequate alert limits (set too high, no action at 2× normal levels)"
+     ]
+    },
+    {
+     "t": "h4",
+     "text": "Corrective Actions"
+    },
+    {
+     "t": "ul",
+     "items": [
+      "Immediate HVAC system maintenance and HEPA filter replacement",
+      "Enhanced environmental monitoring frequency (daily instead of weekly in critical areas)",
+      "Revised alert and action limits based on statistical trending (mean + 2SD for alert, mean"
+     ]
+    },
+    {
+     "t": "p",
+     "html": "+ 3SD for action)"
+    },
+    {
+     "t": "ul",
+     "items": [
+      "Quarterly HEPA integrity testing",
+      "Re-sterilization of all inventory manufactured during affected period"
+     ]
+    },
+    {
+     "t": "h4",
+     "text": "Outcome"
+    },
+    {
+     "t": "ul",
+     "items": [
+      "15,000 units recalled and re-sterilized",
+      "Environmental monitoring stabilized (&lt; 20 CFU/plate consistently)",
+      "No subsequent sterility failures"
+     ]
+    },
+    {
+     "t": "h4",
+     "text": "Key Takeaways"
+    },
+    {
+     "t": "ul",
+     "items": [
+      "<strong>Trending analysis </strong>is as important as individual test results",
+      "<strong>Alert limits </strong>must trigger investigation before reaching action limits",
+      "<strong>Preventive maintenance </strong>schedules must be strictly followed for critical systems"
+     ]
+    }
+   ]
+  },
+  {
+   "t": "h3",
+   "text": "11.13 Summary and Key Takeaways"
+  },
+  {
+   "t": "ul",
+   "items": [
+    "Quality Control testing is the cornerstone of medical device safety, ensuring every device reaching patients meets rigorous safety, performance, and regulatory standards. This chapter covered:"
+   ]
+  },
+  {
+   "t": "h4",
+   "text": "Core QC Principles"
+  },
+  {
+   "t": "ul",
+   "items": [
+    "Multi-stage inspection strategy (incoming, in-process, finished product)",
+    "Risk-based testing aligned with device classification",
+    "Statistical sampling and acceptance criteria based on AQL",
+    "Comprehensive documentation and traceability"
+   ]
+  },
+  {
+   "t": "h4",
+   "text": "Testing Domains"
+  },
+  {
+   "t": "ul",
+   "items": [
+    "<strong>Mechanical Testing: </strong>Tensile, compression, burst, fatigue, wear",
+    "<strong>Electrical Safety: </strong>Leakage current, insulation, dielectric strength, EMC",
+    "<strong>Chemical Analysis: </strong>FTIR, DSC, TGA, extractables/leachables",
+    "<strong>Microbiological: </strong>Bioburden, sterility, en",
+    "Continue",
+    "11:42 AM",
+    "dotoxin, environmental monitoring",
+    "<strong>Sterilization Validation: </strong>EtO, gamma, steam processes with biological indicators",
+    "<strong>Packaging: </strong>Seal strength, burst, dye penetration, accelerated aging"
+   ]
+  },
+  {
+   "t": "h4",
+   "text": "Critical Success Factors"
+  },
+  {
+   "t": "ul",
+   "items": [
+    "<strong>Standard Operating Procedures </strong>aligned with international test standards",
+    "<strong>Calibrated equipment </strong>with documented traceability",
+    "<strong>Trained personnel </strong>with documented competency",
+    "<strong>Statistical rigor </strong>in sampling and acceptance decisions",
+    "<strong>Robust documentation </strong>enabling full traceability",
+    "<strong>Continuous improvement </strong>through CAPA and trend analysis"
+   ]
+  },
+  {
+   "t": "box",
+   "kind": "insight",
+   "label": "Industry Insight 11.1",
+   "title": "",
+   "blocks": [
+    {
+     "t": "ul",
+     "items": [
+      "QC and testing represent <strong>30-50% of total manufacturing costs </strong>for high-risk medical devices (Class III/D). However, this investment is essential: <strong>robust QC prevents recalls</strong>, protects patients, and maintains regulatory compliance. Organizations with mature QC systems experience <strong>50-70% fewer market complaints </strong>and <strong>80% fewer recalls </strong>compared to industry averages."
+     ]
+    }
+   ]
+  },
+  {
+   "t": "h3",
+   "text": "Leakage Current"
+  },
+  {
+   "t": "ul",
+   "items": [
+    "<strong>Tensile Strength</strong>",
+    "Unwanted electrical current flowing from device to patient or"
+   ]
+  },
+  {
+   "t": "p",
+   "html": "ground"
+  },
+  {
+   "t": "ul",
+   "items": [
+    "Maximum stress material withstands before breaking under"
+   ]
+  },
+  {
+   "t": "p",
+   "html": "tension"
+  },
+  {
+   "t": "h3",
+   "text": "Term Definition"
+  },
+  {
+   "t": "ul",
+   "items": [
+    "<strong>Cpk </strong> Process capability index measuring ability to meet"
+   ]
+  },
+  {
+   "t": "p",
+   "html": "specifications"
+  },
+  {
+   "t": "ul",
+   "items": [
+    "<strong>DHR </strong> Device History Record -- complete production and QC"
+   ]
+  },
+  {
+   "t": "p",
+   "html": "documentation for specific lot"
+  },
+  {
+   "t": "ul",
+   "items": [
+    "<strong>CAPA </strong> Corrective and Preventive Action -- systematic approach to"
+   ]
+  },
+  {
+   "t": "p",
+   "html": "eliminate problem causes"
+  },
+  {
+   "t": "h3",
+   "text": "Fatigue Testing"
+  },
+  {
+   "t": "ul",
+   "items": [
+    "<strong>Burst Pressure</strong>",
+    "Cyclic loading test simulating long-term device use",
+    "Maximum internal pressure before device rupture"
+   ]
+  }
+ ],
+ "glossary": [
+  [
+   "Bioburden",
+   "Population of viable microorganisms on a product before sterilization"
+  ],
+  [
+   "AQL",
+   "Acceptable Quality Limit -- maximum tolerable defect percentage in a lot"
+  ],
+  [
+   "SAL",
+   "Sterility Assurance Level -- probability of viable microorganism presence (typically 10⁻⁶)"
+  ]
+ ],
+ "recap_intro": "",
+ "recap_items": [
+  "This chapter provided comprehensive coverage of Quality Control testing methodologies essential for medical device manufacturing. Students learned:",
+  "QC workflow integration in production",
+  "Mechanical, electrical, chemical, and biological testing principles",
+  "Sterilization validation for EtO, gamma, and steam processes",
+  "Packaging validation including accelerated aging",
+  "Statistical sampling plans and acceptance criteria",
+  "Documentation requirements and record-keeping systems",
+  "Real-world case studies demonstrating QC importance",
+  "<strong>Next Chapter Preview: </strong>Chapter 12 explores regulatory requirements across global markets (India MDR 2017, US FDA, EU MDR), including classification systems, approval pathways, and compliance documentation."
+ ],
+ "references": [
+  {
+   "group": "International Standards",
+   "text": "ISO 13485:2016 -- Medical devices -- Quality management systems"
+  },
+  {
+   "group": "International Standards",
+   "text": "ISO 11135:2014 -- Sterilization of health-care products -- Ethylene oxide"
+  },
+  {
+   "group": "International Standards",
+   "text": "ISO 11137 series -- Sterilization of health care products -- Radiation"
+  },
+  {
+   "group": "International Standards",
+   "text": "ISO 17665 series -- Sterilization of health care products -- Moist heat"
+  },
+  {
+   "group": "International Standards",
+   "text": "ISO 11737-1:2018 -- Microbial methods -- Enumeration of microorganisms"
+  },
+  {
+   "group": "International Standards",
+   "text": "ISO 10993 series -- Biological evaluation of medical devices"
+  },
+  {
+   "group": "International Standards",
+   "text": "IEC 60601-1:2012 -- Medical electrical equipment -- General requirements for safety"
+  },
+  {
+   "group": "International Standards",
+   "text": "ISO 2859-1:1999 -- Sampling procedures for inspection by attributes"
+  },
+  {
+   "group": "ASTM Standards",
+   "text": "ASTM F88 -- Standard test method for seal strength of flexible barrier materials"
+  },
+  {
+   "group": "ASTM Standards",
+   "text": "ASTM F1980 -- Standard guide for accelerated aging of sterile barrier systems"
+  },
+  {
+   "group": "ASTM Standards",
+   "text": "ASTM F2054 -- Standard test method for burst testing of flexible package seals"
+  },
+  {
+   "group": "ASTM Standards",
+   "text": "ASTM D638 -- Standard test method for tensile properties of plastics"
+  },
+  {
+   "group": "ASTM Standards",
+   "text": "ASTM D4169 -- Standard practice for performance testing of shipping containers"
+  },
+  {
+   "group": "Regulatory Guidance",
+   "text": "FDA 21 CFR Part 820 -- Quality System Regulation"
+  },
+  {
+   "group": "Regulatory Guidance",
+   "text": "EU MDR 2017/745 -- Medical Device Regulation"
+  },
+  {
+   "group": "Regulatory Guidance",
+   "text": "India MDR 2017 -- Medical Devices Rules"
+  },
+  {
+   "group": "Regulatory Guidance",
+   "text": "USP <71> Sterility Tests"
+  },
+  {
+   "group": "Regulatory Guidance",
+   "text": "USP <85> Bacterial Endotoxins Test"
+  },
+  {
+   "group": "Industry Resources",
+   "text": "AAMI TIR series (Technical Information Reports)"
+  },
+  {
+   "group": "Industry Resources",
+   "text": "FDA Guidance Documents on Device Testing"
+  },
+  {
+   "group": "Industry Resources",
+   "text": "IMDRF Guidelines on QMS and Testing"
+  }
+ ]
+}

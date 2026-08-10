@@ -1,0 +1,2052 @@
+{
+ "num": 9,
+ "id": "ch09",
+ "title": "Design & Development of Medical Devices",
+ "subtitle": "Engineering Design • Usability • Prototyping • Risk Management • Documentation",
+ "overview": [
+  "This chapter presents a comprehensive exploration of the medical device design and development process. It encompasses the systematic progression from initial concept through to market-ready product, covering design inputs and outputs, risk-based design methodologies, usability engineering, human factors integration, product specifications, prototyping techniques, design reviews, and documentation requirements. This phase represents the most critical stage in transforming a medical need into a functional, safe, and effective device, as design decisions made during this stage determine approximately 80% of a device's safety profile and performance characteristics."
+ ],
+ "clos": [
+  "Explain the systematic stages of medical device design and development processes.",
+  "Create comprehensive design inputs and outputs for various device classifications.",
+  "Apply risk management principles (ISO 14971) throughout the design lifecycle.",
+  "Understand and implement usability engineering and human factors methodologies.",
+  "Develop engineering prototypes using appropriate materials and manufacturing processes.",
+  "Document design processes in compliance with FDA QSR and ISO 13485 requirements.",
+  "Conduct design verification and validation activities with appropriate methodologies.",
+  "Perform structured design reviews and maintain comprehensive Design History Files (DHF)."
+ ],
+ "keywords": [
+  "Design input",
+  "design output",
+  "DHF",
+  "specification",
+  "usability engineering",
+  "human factors",
+  "prototyping",
+  "design review",
+  "verification",
+  "validation",
+  "risk control",
+  "IEC 62366",
+  "design controls",
+  "traceability matrix"
+ ],
+ "roadmap": [
+  "The chapter follows a logical progression through the following topics:",
+  "Introduction to device design",
+  "Design control regulatory requirements",
+  "Translating user needs into design inputs",
+  "Creating measurable design outputs",
+  "Human factors and usability engineering",
+  "Risk-based design approaches",
+  "Prototyping methodologies and techniques",
+  "Conducting effective design reviews",
+  "Verification and validation processes",
+  "Comprehensive documentation (DHF, DMR, Technical",
+  "Files)",
+  "Practical design workflow examples",
+  "Industry case studies"
+ ],
+ "blocks": [
+  {
+   "t": "ul",
+   "items": [
+    "Chapter glossary",
+    "Quick recap and key takeaways"
+   ]
+  },
+  {
+   "t": "h2",
+   "text": "Introduction",
+   "num": "9.1"
+  },
+  {
+   "t": "p",
+   "html": "Medical device design represents a <strong>structured, documented, and risk-based engineering process </strong>that integrates multiple disciplines and considerations. This process serves as the critical bridge connecting:"
+  },
+  {
+   "t": "ul",
+   "items": [
+    "<strong>Engineering principles </strong>with clinical needs",
+    "<strong>User requirements </strong>with technical specifications",
+    "<strong>Regulatory mandates </strong>with practical implementation",
+    "<strong>Manufacturing feasibility </strong>with product performance"
+   ]
+  },
+  {
+   "t": "p",
+   "html": "The design phase fundamentally determines device safety, effectiveness, and market success. Research indicates that decisions made during design account for <strong>approximately 80% of a device's final safety and performance characteristics</strong>, while representing only a fraction of the total product development cost."
+  },
+  {
+   "t": "p",
+   "html": "Both ISO 13485 (Quality Management Systems for Medical Devices) and FDA 21 CFR 820 (Quality System Regulation) mandate the implementation of formal <strong>Design Controls </strong>to ensure systematic, traceable, and compliant development processes."
+  },
+  {
+   "t": "h2",
+   "text": "Design Controls (FDA and ISO Requirements)",
+   "num": "9.2"
+  },
+  {
+   "t": "p",
+   "html": "Design controls constitute a systematic framework ensuring that medical devices:"
+  },
+  {
+   "t": "ul",
+   "items": [
+    "Meet documented user needs and intended uses",
+    "Maintain safety throughout their lifecycle",
+    "Demonstrate effectiveness for their intended purpose",
+    "Maintain comprehensive documentation and traceability"
+   ]
+  },
+  {
+   "t": "h3",
+   "text": "Core Elements of Design Controls"
+  },
+  {
+   "t": "p",
+   "html": "The design control framework encompasses eight interconnected elements:"
+  },
+  {
+   "t": "ul",
+   "items": [
+    "<strong>Design Planning </strong>-- Establishing the design and development plan",
+    "<strong>Design Inputs </strong>-- Defining requirements and specifications",
+    "<strong>Design Outputs </strong>-- Creating design solutions and documentation",
+    "<strong>Design Review </strong>-- Conducting formal evaluations at critical stages",
+    "<strong>Design Verification </strong>-- Confirming outputs meet input requirements",
+    "<strong>Design Validation </strong>-- Ensuring the device meets user needs",
+    "<strong>Design Transfer </strong>-- Transitioning from development to production",
+    "<strong>Design Changes </strong>-- Managing modifications throughout the lifecycle",
+    "<strong>Design History File (DHF) </strong>-- Maintaining comprehensive documentation"
+   ]
+  },
+  {
+   "t": "fig",
+   "src": "images/ch09_fig01.jpg",
+   "w": 402,
+   "h": 463,
+   "num": "9.1",
+   "caption": "Design Control Framework"
+  },
+  {
+   "t": "p",
+   "html": "<strong>Description:</strong>"
+  },
+  {
+   "t": "p",
+   "html": "A process flow diagram illustrating the design control cycle. The diagram shows a linear progression from \"User Needs\" through \"Design Inputs,\" \"Design Outputs,\" \"Design Verification,\" \"Design Validation,\" and \"Design Transfer,\" culminating in \"Final Device.\""
+  },
+  {
+   "t": "p",
+   "html": "Feedback loops connect each stage back to earlier phases, demonstrating iterative refinement. The entire process is enclosed within a box labeled \"Design History File (DHF)\" to indicate comprehensive documentation requirements."
+  },
+  {
+   "t": "h3",
+   "text": "Step 1 -- Identifying and Documenting User Needs"
+  },
+  {
+   "t": "p",
+   "html": "User needs represent the foundation of successful device design. These needs originate from multiple sources and must be systematically gathered, analyzed, and documented."
+  },
+  {
+   "t": "h3",
+   "text": "Sources of User Needs"
+  },
+  {
+   "t": "ul",
+   "items": [
+    "<strong>Clinical practitioners </strong>(physicians, surgeons, nurses)",
+    "<strong>Patients </strong>and end-users",
+    "<strong>Healthcare facilities </strong>(hospitals, clinics)",
+    "<strong>Regulatory guidelines </strong>and standards",
+    "<strong>Market research </strong>and competitive analysis",
+    "<strong>Complaint data </strong>from existing devices",
+    "<strong>Post-market surveillance </strong>findings <strong>Characteristics of Well-Defined User Needs </strong>Effective user needs statements are:",
+    "<strong>Clear and unambiguous </strong>-- Easily understood by all stakeholders",
+    "<strong>Focused on problems </strong>-- Not prescribing solutions",
+    "<strong>Measurable </strong>-- Capable of verification",
+    "<strong>Clinically relevant </strong>-- Addressing real healthcare challenges",
+    "<strong>Prioritized </strong>-- Ranked by importance and criticality"
+   ]
+  },
+  {
+   "t": "box",
+   "kind": "example",
+   "label": "Example Box 9.1",
+   "title": "User Need for Oxygen Concentrator",
+   "blocks": [
+    {
+     "t": "p",
+     "html": "<strong>User Need Statement: </strong>\"The device must operate continuously and safely for a minimum of 8 hours without overheating, to support patients requiring prolonged oxygen therapy in home-care settings.\""
+    },
+    {
+     "t": "h4",
+     "text": "Key Elements"
+    },
+    {
+     "t": "ul",
+     "items": [
+      "<strong>Performance requirement: </strong>8-hour continuous operation",
+      "<strong>Safety requirement: </strong>No overheating",
+      "<strong>User context: </strong>Home-care environment",
+      "<strong>Clinical rationale: </strong>Prolonged oxygen therapy support"
+     ]
+    }
+   ]
+  },
+  {
+   "t": "h3",
+   "text": "Step 2 -- Creating Design Inputs"
+  },
+  {
+   "t": "p",
+   "html": "Design inputs transform user needs into precise, measurable engineering requirements. This translation process requires careful consideration of technical feasibility, regulatory requirements, and safety standards."
+  },
+  {
+   "t": "h3",
+   "text": "Categories of Design Inputs"
+  },
+  {
+   "t": "ul",
+   "items": [
+    "<strong>Functional Requirements</strong>",
+    "Performance specifications",
+    "Operational parameters",
+    "Feature descriptions"
+   ]
+  },
+  {
+   "t": "h3",
+   "text": "Performance Criteria"
+  },
+  {
+   "t": "ul",
+   "items": [
+    "Accuracy specifications",
+    "Reliability requirements",
+    "Durability standards"
+   ]
+  },
+  {
+   "t": "h3",
+   "text": "Regulatory Requirements"
+  },
+  {
+   "t": "ul",
+   "items": [
+    "Applicable standards (IEC, ISO, ASTM)",
+    "Essential Principles compliance",
+    "Regional regulatory mandates"
+   ]
+  },
+  {
+   "t": "h3",
+   "text": "Safety Requirements"
+  },
+  {
+   "t": "ul",
+   "items": [
+    "Risk mitigation measures",
+    "Protective features",
+    "Alarm specifications"
+   ]
+  },
+  {
+   "t": "h3",
+   "text": "Biocompatibility Requirements"
+  },
+  {
+   "t": "ul",
+   "items": [
+    "Material selection criteria (ISO 10993)",
+    "Biological safety testing needs",
+    "Sterilization compatibility"
+   ]
+  },
+  {
+   "t": "h3",
+   "text": "Environmental Requirements"
+  },
+  {
+   "t": "ul",
+   "items": [
+    "Operating conditions",
+    "Storage conditions",
+    "Transport requirements"
+   ]
+  },
+  {
+   "t": "fig",
+   "src": "images/ch09_fig02.jpg",
+   "w": 423,
+   "h": 414,
+   "num": "9.2",
+   "caption": "User Needs to Design Inputs Translation"
+  },
+  {
+   "t": "p",
+   "html": "<strong>Description:</strong>"
+  },
+  {
+   "t": "p",
+   "html": "A two-column comparison diagram with an arrow connecting them. The left column, labeled \"User Need,\" contains example statements in natural language. The right column, labeled \"Design Input (Engineering Requirement),\" shows the corresponding technical specifications. For example:"
+  },
+  {
+   "t": "ul",
+   "items": [
+    "User Need: \"Easy to hold\" → Design Input: \"Grip diameter: 25-30mm; Surface texture: Ra &lt; 1.6μm\"",
+    "User Need: \"Lightweight\" → Design Input: \"Maximum device weight: 150g ± 10g\""
+   ]
+  },
+  {
+   "t": "h3",
+   "text": "Design Input Example -- Urinary Catheter"
+  },
+  {
+   "t": "p",
+   "html": "<strong>User Need Design Input (Specification)</strong>"
+  },
+  {
+   "t": "p",
+   "html": "Flexible and easy to insert Bend radius ≤ 15mm under 5N force Safe for long-term body contact Material must meet ISO 10993-1, -5, -10"
+  },
+  {
+   "t": "p",
+   "html": "Smooth surface for patient comfort Surface lubricity coefficient ≥ 0.85 Resistant to kinking Minimum kink radius: 10mm without occlusion"
+  },
+  {
+   "t": "p",
+   "html": "Compatible with standard connectors Luer-lock connector per ISO 594-1"
+  },
+  {
+   "t": "h3",
+   "text": "Characteristics of Quality Design Inputs"
+  },
+  {
+   "t": "p",
+   "html": "Design inputs must be:"
+  },
+  {
+   "t": "ul",
+   "items": [
+    "<strong>Specific </strong>-- Quantified with measurable parameters",
+    "<strong>Complete </strong>-- Addressing all aspects of device performance",
+    "<strong>Unambiguous </strong>-- Clear interpretation by development team",
+    "<strong>Traceable </strong>-- Linked to originating user needs",
+    "<strong>Verifiable </strong>-- Testable through objective methods",
+    "<strong>Reviewed and approved </strong>-- Formally evaluated by cross-functional team"
+   ]
+  },
+  {
+   "t": "h3",
+   "text": "Step 3 -- Design Outputs"
+  },
+  {
+   "t": "p",
+   "html": "Design outputs represent the tangible results of the design process, translating requirements into actual design solutions. These outputs form the basis for device manufacturing and verification activities."
+  },
+  {
+   "t": "h3",
+   "text": "Types of Design Outputs"
+  },
+  {
+   "t": "ul",
+   "items": [
+    "<strong>Engineering Drawings</strong>",
+    "Detailed part drawings with dimensions and tolerances",
+    "Assembly drawings showing component relationships",
+    "Exploded views for assembly guidance"
+   ]
+  },
+  {
+   "t": "h3",
+   "text": "Schematics and Diagrams"
+  },
+  {
+   "t": "ul",
+   "items": [
+    "Electrical circuit schematics",
+    "Pneumatic/hydraulic system diagrams",
+    "Software architecture diagrams"
+   ]
+  },
+  {
+   "t": "h3",
+   "text": "Material Specifications"
+  },
+  {
+   "t": "ul",
+   "items": [
+    "Material selection with justification",
+    "Supplier specifications and standards",
+    "Biocompatibility documentation"
+   ]
+  },
+  {
+   "t": "h3",
+   "text": "Software Documentation"
+  },
+  {
+   "t": "ul",
+   "items": [
+    "Source code and architecture",
+    "Software requirements specification (SRS)",
+    "Software design specification (SDS)",
+    "Software validation protocols"
+   ]
+  },
+  {
+   "t": "h3",
+   "text": "Manufacturing Instructions"
+  },
+  {
+   "t": "ul",
+   "items": [
+    "Process flow diagrams",
+    "Work instructions and standard operating procedures (SOPs)",
+    "Assembly sequences"
+   ]
+  },
+  {
+   "t": "h3",
+   "text": "Packaging Design"
+  },
+  {
+   "t": "ul",
+   "items": [
+    "Sterile barrier system specifications",
+    "Labeling and artwork",
+    "Packaging validation protocols"
+   ]
+  },
+  {
+   "t": "h3",
+   "text": "Instructions for Use (IFU)"
+  },
+  {
+   "t": "ul",
+   "items": [
+    "User manual",
+    "Quick start guides",
+    "Safety warnings and precautions"
+   ]
+  },
+  {
+   "t": "h3",
+   "text": "Design Output Quality Criteria"
+  },
+  {
+   "t": "p",
+   "html": "All design outputs must:"
+  },
+  {
+   "t": "ul",
+   "items": [
+    "<strong>Meet design input requirements </strong>-- Direct traceability",
+    "<strong>Be measurable or testable </strong>-- Enable objective verification",
+    "<strong>Include acceptance criteria </strong>-- Define pass/fail thresholds",
+    "<strong>Reference applicable standards </strong>-- Demonstrate compliance",
+    "<strong>Be properly documented </strong>-- Maintain in DHF",
+    "<strong>Undergo formal review </strong>-- Cross-functional approval"
+   ]
+  },
+  {
+   "t": "h3",
+   "text": "Example Design Outputs for ECG Machine"
+  },
+  {
+   "t": "p",
+   "html": "<strong>Design Output Specification</strong>"
+  },
+  {
+   "t": "p",
+   "html": "Lead wire length 200 cm ± 5 cm"
+  },
+  {
+   "t": "p",
+   "html": "Display resolution 1280 × 720 pixels, 10-inch diagonal Battery capacity 3000 mAh minimum, lithium-ion polymer Sampling rate 1000 samples/second per channel Input impedance ≥ 10 MΩ at 10 Hz"
+  },
+  {
+   "t": "p",
+   "html": "Common mode rejection ratio ≥ 100 dB at 50/60 Hz Operating temperature 10°C to 40°C"
+  },
+  {
+   "t": "p",
+   "html": "Storage temperature -20°C to 60°C"
+  },
+  {
+   "t": "h2",
+   "text": "Step 4 -- Human Factors and Usability Engineering",
+   "num": "9.3"
+  },
+  {
+   "t": "p",
+   "html": "Human factors engineering (HFE) and usability engineering are critical disciplines ensuring that medical devices are safe, effective, and intuitive to use. Poor usability represents a significant source of use errors, which can lead to patient harm."
+  },
+  {
+   "t": "h3",
+   "text": "Regulatory Framework"
+  },
+  {
+   "t": "p",
+   "html": "Usability engineering is mandated by:"
+  },
+  {
+   "t": "ul",
+   "items": [
+    "<strong>IEC 62366-1: </strong>Application of usability engineering to medical devices",
+    "<strong>FDA Human Factors Guidance: </strong>Applying Human Factors and Usability Engineering to Medical Devices",
+    "<strong>ISO 14971: </strong>Integration of use-related risks into risk management"
+   ]
+  },
+  {
+   "t": "h3",
+   "text": "Key Usability Principles"
+  },
+  {
+   "t": "ul",
+   "items": [
+    "<strong>User-Centered Design</strong>",
+    "Involve actual users throughout development",
+    "Understand user characteristics and environments",
+    "Design for diverse user populations"
+   ]
+  },
+  {
+   "t": "h3",
+   "text": "Error Prevention"
+  },
+  {
+   "t": "ul",
+   "items": [
+    "Minimize opportunities for use errors",
+    "Provide clear feedback mechanisms",
+    "Implement forcing functions where appropriate"
+   ]
+  },
+  {
+   "t": "h3",
+   "text": "Intuitive Interfaces"
+  },
+  {
+   "t": "ul",
+   "items": [
+    "Leverage existing mental models",
+    "Maintain consistency with established conventions",
+    "Minimize cognitive load"
+   ]
+  },
+  {
+   "t": "h3",
+   "text": "Clear Communication"
+  },
+  {
+   "t": "ul",
+   "items": [
+    "Use unambiguous labels and instructions",
+    "Provide visual and auditory feedback",
+    "Ensure critical information is prominent"
+   ]
+  },
+  {
+   "t": "h3",
+   "text": "Usability Engineering Process"
+  },
+  {
+   "t": "p",
+   "html": "The systematic usability engineering process includes:"
+  },
+  {
+   "t": "h3",
+   "text": "Use Specification"
+  },
+  {
+   "t": "ul",
+   "items": [
+    "Define intended users, use environments, and use scenarios",
+    "Identify user interface characteristics"
+   ]
+  },
+  {
+   "t": "h3",
+   "text": "User Interface Design"
+  },
+  {
+   "t": "ul",
+   "items": [
+    "Create preliminary designs",
+    "Apply human factors principles",
+    "Develop prototypes"
+   ]
+  },
+  {
+   "t": "h3",
+   "text": "Use-Related Risk Analysis"
+  },
+  {
+   "t": "ul",
+   "items": [
+    "Identify potential use errors",
+    "Analyze causes and consequences",
+    "Determine risk control measures"
+   ]
+  },
+  {
+   "t": "h3",
+   "text": "Formative Evaluation"
+  },
+  {
+   "t": "ul",
+   "items": [
+    "Test prototypes with representative users",
+    "Identify usability problems",
+    "Iterate design solutions"
+   ]
+  },
+  {
+   "t": "h3",
+   "text": "Summative Evaluation"
+  },
+  {
+   "t": "ul",
+   "items": [
+    "Conduct validation testing with final design",
+    "Verify use-related risks are acceptably controlled",
+    "Document residual risks"
+   ]
+  },
+  {
+   "t": "h3",
+   "text": "Common Usability Design Features"
+  },
+  {
+   "t": "ul",
+   "items": [
+    "<strong>Color-coded ports and connectors </strong>-- Prevent misconnections",
+    "<strong>Anti-slip handles and grips </strong>-- Improve device control",
+    "<strong>Audible and visual alarms </strong>-- Enhance situational awareness",
+    "<strong>Large, high-contrast displays </strong>-- Accommodate users with vision limitations",
+    "<strong>Simplified workflows </strong>-- Reduce training requirements",
+    "<strong>Standardized symbols (ISO 15223-1) </strong>-- Universal understanding"
+   ]
+  },
+  {
+   "t": "fig",
+   "src": "images/ch09_fig03.jpg",
+   "w": 403,
+   "h": 264,
+   "num": "9.3",
+   "caption": "Usability Engineering Lifecycle"
+  },
+  {
+   "t": "p",
+   "html": "<strong>Description:</strong>"
+  },
+  {
+   "t": "p",
+   "html": "A circular process diagram illustrating the iterative nature of usability engineering. The cycle includes: \"User Research &amp; Observation\" → \"Requirements Definition\" → \"Preliminary Design\" → \"Prototype Development\" → \"Formative Testing\" → \"Design Refinement\" →"
+  },
+  {
+   "t": "p",
+   "html": "\"Final Design\" → \"Summative Validation\" → \"Post-Market Surveillance,\" with arrows indicating both forward progression and feedback loops back to earlier stages."
+  },
+  {
+   "t": "h3",
+   "text": "Safety Note 9.1"
+  },
+  {
+   "t": "p",
+   "html": "<strong>Usability-related failures account for approximately 70% of all medical device recalls in developed markets. </strong>Therefore, incorporating human factors engineering early in the design process is not optional—it is essential for patient safety and regulatory compliance."
+  },
+  {
+   "t": "h3",
+   "text": "Step 5 -- Risk-Based Design (ISO 14971)"
+  },
+  {
+   "t": "p",
+   "html": "Risk management must be integrated throughout the entire design process, not added as an afterthought. ISO 14971 provides the internationally recognized framework for medical device risk management."
+  },
+  {
+   "t": "h3",
+   "text": "Risk Management Process Steps"
+  },
+  {
+   "t": "ul",
+   "items": [
+    "<strong>Risk Analysis</strong>",
+    "<strong>Hazard Identification: </strong>Systematically identify potential sources of harm",
+    "<strong>Risk Estimation: </strong>Evaluate severity and probability of each identified risk"
+   ]
+  },
+  {
+   "t": "h3",
+   "text": "Risk Evaluation"
+  },
+  {
+   "t": "ul",
+   "items": [
+    "Compare estimated risks against acceptance criteria",
+    "Determine which risks require control measures"
+   ]
+  },
+  {
+   "t": "h3",
+   "text": "Risk Control"
+  },
+  {
+   "t": "ul",
+   "items": [
+    "Implement control measures following the hierarchy:",
+    "Inherent safety by design",
+    "Protective measures in the device",
+    "Information for safety (warnings, training)"
+   ]
+  },
+  {
+   "t": "h3",
+   "text": "Residual Risk Assessment"
+  },
+  {
+   "t": "ul",
+   "items": [
+    "Evaluate risks remaining after control implementation",
+    "Ensure residual risks are acceptable"
+   ]
+  },
+  {
+   "t": "h3",
+   "text": "Benefit-Risk Analysis"
+  },
+  {
+   "t": "ul",
+   "items": [
+    "Compare overall residual risk to anticipated benefits",
+    "Justify that benefits outweigh risks"
+   ]
+  },
+  {
+   "t": "h3",
+   "text": "Risk Management Report"
+  },
+  {
+   "t": "ul",
+   "items": [
+    "Document risk management activities",
+    "Maintain throughout device lifecycle"
+   ]
+  },
+  {
+   "t": "h3",
+   "text": "Risk Control Hierarchy"
+  },
+  {
+   "t": "p",
+   "html": "The most effective risk controls address hazards at the design level:"
+  },
+  {
+   "t": "h3",
+   "text": "Priority 1: Inherent Safety by Design"
+  },
+  {
+   "t": "ul",
+   "items": [
+    "Eliminate hazards through design choices",
+    "Select safer materials and technologies",
+    "Design out potential failure modes"
+   ]
+  },
+  {
+   "t": "h3",
+   "text": "Priority 2: Protective Measures"
+  },
+  {
+   "t": "ul",
+   "items": [
+    "Add guards, shields, or protective features",
+    "Implement redundant safety systems",
+    "Include alarms and indicators"
+   ]
+  },
+  {
+   "t": "h3",
+   "text": "Priority 3: Information for Safety"
+  },
+  {
+   "t": "ul",
+   "items": [
+    "Provide warnings and cautions in labeling",
+    "Develop comprehensive training programs",
+    "Create clear instructions for use"
+   ]
+  },
+  {
+   "t": "h3",
+   "text": "Risk Documentation"
+  },
+  {
+   "t": "p",
+   "html": "Required risk management documentation includes:"
+  },
+  {
+   "t": "ul",
+   "items": [
+    "<strong>Risk Management Plan </strong>-- Strategy and methodology",
+    "<strong>Risk Management File </strong>-- Comprehensive risk records",
+    "<strong>Traceability Matrix </strong>-- Links hazards to controls to verification",
+    "<strong>Risk Management Report </strong>-- Summary for review and approval"
+   ]
+  },
+  {
+   "t": "h3",
+   "text": "Safety Note 9.2"
+  },
+  {
+   "t": "p",
+   "html": "<strong>Risk control MUST be integrated into device design from the earliest stages. </strong>Attempting to add risk controls after design completion typically results in less effective solutions, increased costs, and potential regulatory non-compliance."
+  },
+  {
+   "t": "h3",
+   "text": "Step 6 -- Prototyping"
+  },
+  {
+   "t": "p",
+   "html": "Prototyping represents the physical realization of design concepts, enabling evaluation, testing, and refinement before committing to full-scale production."
+  },
+  {
+   "t": "h3",
+   "text": "Types of Prototypes"
+  },
+  {
+   "t": "ul",
+   "items": [
+    "<strong>Concept Prototype (Proof of Concept)</strong>"
+   ]
+  },
+  {
+   "t": "p",
+   "html": "<strong>Purpose: </strong>Demonstrate feasibility of basic function"
+  },
+  {
+   "t": "h4",
+   "text": "Characteristics"
+  },
+  {
+   "t": "ul",
+   "items": [
+    "Rough appearance acceptable",
+    "Focuses on core functionality",
+    "May use substitute materials",
+    "Enables initial stakeholder feedback"
+   ]
+  },
+  {
+   "t": "h4",
+   "text": "Methods"
+  },
+  {
+   "t": "ul",
+   "items": [
+    "3D printing (FDM, SLA)",
+    "Foam models",
+    "Basic functional mock-ups"
+   ]
+  },
+  {
+   "t": "h3",
+   "text": "Engineering Prototype (Alpha Prototype)"
+  },
+  {
+   "t": "p",
+   "html": "<strong>Purpose: </strong>Evaluate performance against specifications"
+  },
+  {
+   "t": "h4",
+   "text": "Characteristics"
+  },
+  {
+   "t": "ul",
+   "items": [
+    "Closer to final design",
+    "Made from actual or equivalent materials",
+    "Suitable for verification testing",
+    "Incorporates design iterations"
+   ]
+  },
+  {
+   "t": "h4",
+   "text": "Methods"
+  },
+  {
+   "t": "ul",
+   "items": [
+    "CNC machining",
+    "Injection molding (limited runs)",
+    "PCB prototyping",
+    "Functional electronics integration"
+   ]
+  },
+  {
+   "t": "h3",
+   "text": "Pre-Production Prototype (Beta Prototype)"
+  },
+  {
+   "t": "p",
+   "html": "<strong>Purpose: </strong>Validate final design and manufacturing process"
+  },
+  {
+   "t": "h4",
+   "text": "Characteristics"
+  },
+  {
+   "t": "ul",
+   "items": [
+    "Manufactured using production processes",
+    "Final materials and components",
+    "Used for validation testing",
+    "Supports regulatory submissions"
+   ]
+  },
+  {
+   "t": "h4",
+   "text": "Methods"
+  },
+  {
+   "t": "ul",
+   "items": [
+    "Production tooling (pilot runs)",
+    "Qualified suppliers",
+    "Full assembly processes",
+    "Complete labeling and packaging <strong>Common Prototyping Methods Additive Manufacturing (3D Printing) Technologies:</strong>",
+    "<strong>Fused Deposition Modeling (FDM) </strong>-- Thermoplastic prototypes",
+    "<strong>Stereolithography (SLA) </strong>-- High-resolution polymer parts",
+    "<strong>Selective Laser Sintering (SLS) </strong>-- Functional plastic components",
+    "<strong>Metal 3D Printing </strong>-- Titanium and stainless steel prototypes"
+   ]
+  },
+  {
+   "t": "h4",
+   "text": "Advantages"
+  },
+  {
+   "t": "ul",
+   "items": [
+    "Rapid iteration",
+    "Complex geometries possible",
+    "Cost-effective for low volumes",
+    "Multiple materials available"
+   ]
+  },
+  {
+   "t": "h3",
+   "text": "Subtractive Manufacturing"
+  },
+  {
+   "t": "ul",
+   "items": [
+    "<strong>CNC Machining </strong>-- Precision metal and plastic parts",
+    "<strong>Laser Cutting </strong>-- Flat components and panels",
+    "<strong>Wire EDM </strong>-- Complex metal geometries"
+   ]
+  },
+  {
+   "t": "h3",
+   "text": "Other Methods"
+  },
+  {
+   "t": "ul",
+   "items": [
+    "<strong>Silicone Molding </strong>-- Soft components and seals",
+    "<strong>Thermoforming </strong>-- Housing and covers",
+    "<strong>Vacuum Casting </strong>-- Multiple identical prototypes"
+   ]
+  },
+  {
+   "t": "fig",
+   "src": "images/ch09_fig04.jpg",
+   "w": 601,
+   "h": 203,
+   "num": "9.4",
+   "caption": "Prototype Development Stages"
+  },
+  {
+   "t": "p",
+   "html": "<strong>Description:</strong>"
+  },
+  {
+   "t": "p",
+   "html": "A three-stage progression diagram showing increasing fidelity:"
+  },
+  {
+   "t": "ul",
+   "items": [
+    "<strong>Stage 1: </strong>\"Concept Prototype\" with simple block diagram representation",
+    "<strong>Stage 2: </strong>\"Engineering Prototype\" with more detailed technical drawing",
+    "<strong>Stage 3: </strong>\"Pre-Production Prototype\" with photo-realistic rendering Arrows between stages indicate \"Iterate &amp; Refine\" with feedback loops showing \"Testing Results\" feeding back to earlier stages."
+   ]
+  },
+  {
+   "t": "h3",
+   "text": "Step 7 -- Design Reviews"
+  },
+  {
+   "t": "p",
+   "html": "Design reviews are formal, documented evaluations conducted at planned intervals throughout the design process. These reviews ensure design completeness, compliance, and readiness to proceed to subsequent phases."
+  },
+  {
+   "t": "h3",
+   "text": "Purpose of Design Reviews"
+  },
+  {
+   "t": "ul",
+   "items": [
+    "<strong>Evaluate design progress </strong>against plan",
+    "<strong>Identify potential problems </strong>early",
+    "<strong>Ensure requirements are met</strong>",
+    "<strong>Verify risk management integration</strong>",
+    "<strong>Assess manufacturing feasibility</strong>",
+    "<strong>Confirm regulatory compliance</strong>",
+    "<strong>Authorize progression </strong>to next phase"
+   ]
+  },
+  {
+   "t": "h3",
+   "text": "Review Team Composition"
+  },
+  {
+   "t": "p",
+   "html": "Effective design reviews require cross-functional participation:"
+  },
+  {
+   "t": "ul",
+   "items": [
+    "<strong>Engineering </strong>-- Design feasibility and technical adequacy",
+    "<strong>Quality Assurance </strong>-- Compliance and documentation",
+    "<strong>Regulatory Affairs </strong>-- Regulatory strategy and submissions",
+    "<strong>Manufacturing </strong>-- Producibility and process capability",
+    "<strong>Clinical/Medical </strong>-- Clinical appropriateness and safety",
+    "<strong>Marketing/Product Management </strong>-- Market requirements and usability",
+    "<strong>Service/Support </strong>-- Maintainability and support requirements"
+   ]
+  },
+  {
+   "t": "h3",
+   "text": "Types of Design Reviews"
+  },
+  {
+   "t": "ul",
+   "items": [
+    "<strong>Preliminary Design Review</strong>",
+    "Conducted after initial design concept",
+    "Evaluates feasibility and approach",
+    "Reviews design inputs and initial outputs"
+   ]
+  },
+  {
+   "t": "h3",
+   "text": "Critical Design Review"
+  },
+  {
+   "t": "ul",
+   "items": [
+    "Conducted before finalizing design",
+    "Comprehensive evaluation of design outputs",
+    "Reviews verification and validation plans"
+   ]
+  },
+  {
+   "t": "h3",
+   "text": "Final Design Review"
+  },
+  {
+   "t": "ul",
+   "items": [
+    "Conducted before design transfer",
+    "Confirms design completion and readiness for production",
+    "Reviews all verification and validation results"
+   ]
+  },
+  {
+   "t": "h3",
+   "text": "Design Review Documentation"
+  },
+  {
+   "t": "p",
+   "html": "Each review must produce:"
+  },
+  {
+   "t": "ul",
+   "items": [
+    "<strong>Design Review Agenda </strong>-- Topics to be covered",
+    "<strong>Design Review Minutes </strong>-- Decisions and discussions",
+    "<strong>Action Items </strong>-- Issues requiring resolution",
+    "<strong>Design Review Report </strong>-- Formal summary and approval",
+    "<strong>Follow-up Documentation </strong>-- Closure of action items"
+   ]
+  },
+  {
+   "t": "p",
+   "html": "All review records are maintained in the Design History File (DHF)."
+  },
+  {
+   "t": "h2",
+   "text": "Step 8 -- Verification and Validation",
+   "num": "9.4"
+  },
+  {
+   "t": "p",
+   "html": "Verification and validation represent distinct but complementary activities that ensure design quality and device safety."
+  },
+  {
+   "t": "h3",
+   "text": "Design Verification"
+  },
+  {
+   "t": "p",
+   "html": "<strong>Definition: </strong>Confirmation that design outputs meet design input requirements."
+  },
+  {
+   "t": "p",
+   "html": "<strong>Key Question: </strong><em>\"Did we build the device right?\"</em>"
+  },
+  {
+   "t": "p",
+   "html": "<strong>Focus: </strong>Testing against specifications"
+  },
+  {
+   "t": "h4",
+   "text": "Examples of Verification Activities"
+  },
+  {
+   "t": "ul",
+   "items": [
+    "<strong>Dimensional Verification</strong>",
+    "Measure critical dimensions",
+    "Compare against engineering drawings",
+    "Verify tolerances are met"
+   ]
+  },
+  {
+   "t": "h3",
+   "text": "Electrical Safety Testing"
+  },
+  {
+   "t": "ul",
+   "items": [
+    "Leakage current measurement",
+    "Insulation resistance",
+    "Grounding continuity",
+    "EMC testing (IEC 60601-1-2)"
+   ]
+  },
+  {
+   "t": "h3",
+   "text": "Mechanical Performance Testing"
+  },
+  {
+   "t": "ul",
+   "items": [
+    "Tensile strength",
+    "Burst pressure",
+    "Fatigue life",
+    "Wear resistance"
+   ]
+  },
+  {
+   "t": "h3",
+   "text": "Software Verification"
+  },
+  {
+   "t": "ul",
+   "items": [
+    "Unit testing",
+    "Integration testing",
+    "Requirements traceability",
+    "Code reviews and static analysis"
+   ]
+  },
+  {
+   "t": "h3",
+   "text": "Bench Testing"
+  },
+  {
+   "t": "ul",
+   "items": [
+    "Functional performance",
+    "Accuracy and precision",
+    "Response time",
+    "Operating range verification"
+   ]
+  },
+  {
+   "t": "h3",
+   "text": "Design Validation"
+  },
+  {
+   "t": "p",
+   "html": "<strong>Definition: </strong>Confirmation that the device meets user needs and intended uses under actual or simulated use conditions."
+  },
+  {
+   "t": "p",
+   "html": "<strong>Key Question: </strong><em>\"Did we build the right device?\" </em><strong>Focus: </strong>Testing against user needs in realistic conditions <strong>Examples of Validation Activities:</strong>"
+  },
+  {
+   "t": "h3",
+   "text": "Usability Validation"
+  },
+  {
+   "t": "ul",
+   "items": [
+    "Summative usability testing with representative users",
+    "Simulated use scenarios",
+    "Use error identification and mitigation verification"
+   ]
+  },
+  {
+   "t": "h3",
+   "text": "Clinical Evaluation"
+  },
+  {
+   "t": "ul",
+   "items": [
+    "Clinical investigations (if required)",
+    "Clinical literature review",
+    "Clinical performance testing",
+    "Post-market clinical follow-up (PMCF) planning"
+   ]
+  },
+  {
+   "t": "h3",
+   "text": "Simulated Use Testing"
+  },
+  {
+   "t": "ul",
+   "items": [
+    "Testing in representative environments",
+    "User acceptance evaluation",
+    "Workflow integration assessment",
+    "<strong>Animal Testing </strong>(when applicable)",
+    "Biocompatibility confirmation",
+    "Implant performance",
+    "Surgical technique evaluation"
+   ]
+  },
+  {
+   "t": "h3",
+   "text": "Process Validation"
+  },
+  {
+   "t": "ul",
+   "items": [
+    "Manufacturing process capability",
+    "Sterilization validation",
+    "Packaging validation"
+   ]
+  },
+  {
+   "t": "fig",
+   "src": "images/ch09_fig05.jpg",
+   "w": 393,
+   "h": 380,
+   "num": "9.5",
+   "caption": "Verification vs. Validation"
+  },
+  {
+   "t": "p",
+   "html": "<strong>Description:</strong>"
+  },
+  {
+   "t": "p",
+   "html": "A side-by-side comparison diagram with two parallel columns:"
+  },
+  {
+   "t": "h4",
+   "text": "Left Column (Verification)"
+  },
+  {
+   "t": "ul",
+   "items": [
+    "Header: \"Verification: Specification Testing\"",
+    "Box 1: \"Design Inputs (Requirements)\"",
+    "Arrow down to Box 2: \"Design Outputs (Specifications)\"",
+    "Arrow down to Box 3: \"Testing Against Specs\"",
+    "Example tests listed: Dimensional check, Electrical safety, Material testing"
+   ]
+  },
+  {
+   "t": "h4",
+   "text": "Right Column (Validation)"
+  },
+  {
+   "t": "ul",
+   "items": [
+    "Header: \"Validation: User Need Testing\"",
+    "Box 1: \"User Needs\"",
+    "Arrow down to Box 2: \"Complete Device\"",
+    "Arrow down to Box 3: \"Testing in Use Environment\"",
+    "Example tests listed: Usability testing, Clinical evaluation, Simulated use Both columns converge at bottom: \"Design Transfer to Manufacturing\" <strong>Verification and Validation Documentation</strong>"
+   ]
+  },
+  {
+   "t": "p",
+   "html": "Required documentation includes:"
+  },
+  {
+   "t": "ul",
+   "items": [
+    "<strong>V&amp;V Plan </strong>-- Strategy and test protocols",
+    "<strong>Test Protocols </strong>-- Detailed procedures and acceptance criteria",
+    "<strong>Test Reports </strong>-- Results and data analysis",
+    "<strong>Traceability Matrix </strong>-- Links requirements to tests to results",
+    "<strong>V&amp;V Summary Report </strong>-- Overall conclusions and approval"
+   ]
+  },
+  {
+   "t": "h3",
+   "text": "9.11 Step 9 -- Design Transfer"
+  },
+  {
+   "t": "p",
+   "html": "Design transfer represents the formal transition of device design from research and development to manufacturing. This critical phase ensures that production processes can consistently manufacture devices meeting design specifications."
+  },
+  {
+   "t": "h3",
+   "text": "Design Transfer Objectives"
+  },
+  {
+   "t": "ul",
+   "items": [
+    "<strong>Establish manufacturing capability </strong>to produce design consistently",
+    "<strong>Transfer complete design knowledge </strong>to production team",
+    "<strong>Validate all production processes</strong>",
+    "<strong>Qualify manufacturing equipment</strong>",
+    "<strong>Approve suppliers and materials</strong>",
+    "<strong>Train production personnel</strong>",
+    "<strong>Create Device Master Record (DMR) Design Transfer Activities</strong>",
+    "<strong>Process Development and Optimization</strong>",
+    "Establish process parameters and ranges",
+    "Determine process capability (Cpk analysis)",
+    "Identify critical process parameters",
+    "Develop control strategies"
+   ]
+  },
+  {
+   "t": "h4",
+   "text": "Process Validation Installation Qualification (IQ)"
+  },
+  {
+   "t": "ul",
+   "items": [
+    "Verify equipment installed per specifications",
+    "Document equipment and utilities",
+    "Confirm calibration and preventive maintenance programs"
+   ]
+  },
+  {
+   "t": "h4",
+   "text": "Operational Qualification (OQ)"
+  },
+  {
+   "t": "ul",
+   "items": [
+    "Challenge equipment at operational limits",
+    "Verify process parameters achievable and controllable",
+    "Confirm alarm and shutdown functions"
+   ]
+  },
+  {
+   "t": "h4",
+   "text": "Performance Qualification (PQ)"
+  },
+  {
+   "t": "ul",
+   "items": [
+    "Demonstrate consistent process performance",
+    "Produce devices meeting all specifications",
+    "Typically requires three consecutive successful runs",
+    "Statistical analysis of results"
+   ]
+  },
+  {
+   "t": "h3",
+   "text": "Equipment Qualification"
+  },
+  {
+   "t": "ul",
+   "items": [
+    "Manufacturing equipment",
+    "Test equipment",
+    "Environmental monitoring systems",
+    "Quality control instruments"
+   ]
+  },
+  {
+   "t": "h3",
+   "text": "Supplier Qualification"
+  },
+  {
+   "t": "ul",
+   "items": [
+    "Evaluate supplier quality systems",
+    "Approve incoming materials and components",
+    "Establish acceptance criteria and testing",
+    "Conduct supplier audits when appropriate"
+   ]
+  },
+  {
+   "t": "h3",
+   "text": "Training"
+  },
+  {
+   "t": "ul",
+   "items": [
+    "Develop training programs and materials",
+    "Train production personnel on processes and work instructions",
+    "Document training completion and competency",
+    "Establish ongoing training programs"
+   ]
+  },
+  {
+   "t": "h3",
+   "text": "Design Transfer Outputs Device Master Record (DMR)"
+  },
+  {
+   "t": "p",
+   "html": "The DMR is the complete set of documents defining device specifications and production processes:"
+  },
+  {
+   "t": "ul",
+   "items": [
+    "<strong>Device specifications</strong>",
+    "<strong>Manufacturing procedures</strong>",
+    "<strong>Process control procedures</strong>",
+    "<strong>Quality assurance procedures</strong>",
+    "<strong>Packaging and labeling specifications</strong>",
+    "<strong>Installation, service, and maintenance procedures Standard Operating Procedures (SOPs)</strong>",
+    "Manufacturing process SOPs",
+    "Quality control testing SOPs",
+    "Equipment operation and maintenance SOPs",
+    "Material handling and storage SOPs"
+   ]
+  },
+  {
+   "t": "h3",
+   "text": "Work Instructions"
+  },
+  {
+   "t": "ul",
+   "items": [
+    "Step-by-step assembly instructions",
+    "Inspection procedures",
+    "Equipment setup instructions",
+    "Troubleshooting guides"
+   ]
+  },
+  {
+   "t": "fig",
+   "src": "images/ch09_fig06.jpg",
+   "w": 601,
+   "h": 289,
+   "num": "9.6",
+   "caption": "Design Transfer Process Flow"
+  },
+  {
+   "t": "p",
+   "html": "<strong>Description:</strong>"
+  },
+  {
+   "t": "p",
+   "html": "<strong>A horizontal process flow diagram showing:</strong> \"R&amp;D Design Complete\" → \"Process Development\" → \"Equipment Qualification (IQ/OQ/PQ)\" → \"Supplier Qualification\" → \"Process Validation\" → \"Personnel Training\" → \"DMR Creation\" → \"Production Release\""
+  },
+  {
+   "t": "p",
+   "html": "Each step has a small checklist icon below indicating required documentation."
+  },
+  {
+   "t": "h3",
+   "text": "9.12 Step 10 -- Design Documentation"
+  },
+  {
+   "t": "p",
+   "html": "Comprehensive documentation is fundamental to design control compliance and forms the foundation for regulatory submissions, audits, and continuous improvement."
+  },
+  {
+   "t": "h3",
+   "text": "Design History File (DHF)"
+  },
+  {
+   "t": "p",
+   "html": "The DHF contains or references all design-related documentation demonstrating that the design was developed according to the approved design plan."
+  },
+  {
+   "t": "h4",
+   "text": "DHF Contents"
+  },
+  {
+   "t": "ul",
+   "items": [
+    "<strong>Design Planning</strong>",
+    "Design and development plan",
+    "Resource allocation",
+    "Organizational responsibilities"
+   ]
+  },
+  {
+   "t": "h2",
+   "text": "Design Inputs",
+   "num": "9.5"
+  },
+  {
+   "t": "ul",
+   "items": [
+    "User needs documentation",
+    "Requirements specifications",
+    "Standards and regulations referenced"
+   ]
+  },
+  {
+   "t": "h2",
+   "text": "Design Outputs",
+   "num": "9.6"
+  },
+  {
+   "t": "ul",
+   "items": [
+    "Drawings and specifications",
+    "Software documentation",
+    "Bill of materials (BOM)",
+    "Labeling and IFU"
+   ]
+  },
+  {
+   "t": "h3",
+   "text": "Design Review Records"
+  },
+  {
+   "t": "ul",
+   "items": [
+    "Review meeting minutes",
+    "Review reports and approvals",
+    "Action items and resolutions"
+   ]
+  },
+  {
+   "t": "h3",
+   "text": "Verification and Validation"
+  },
+  {
+   "t": "ul",
+   "items": [
+    "Test plans and protocols",
+    "Test reports and data",
+    "Traceability matrices",
+    "V&amp;V summary report"
+   ]
+  },
+  {
+   "t": "h3",
+   "text": "Risk Management"
+  },
+  {
+   "t": "ul",
+   "items": [
+    "Risk management plan",
+    "Risk analysis and evaluation",
+    "Risk control measures",
+    "Risk management report"
+   ]
+  },
+  {
+   "t": "h3",
+   "text": "Design Transfer"
+  },
+  {
+   "t": "ul",
+   "items": [
+    "Transfer protocol and report",
+    "Process validation documentation",
+    "Training records"
+   ]
+  },
+  {
+   "t": "h3",
+   "text": "Design Changes"
+  },
+  {
+   "t": "ul",
+   "items": [
+    "Change requests and approvals",
+    "Impact assessments",
+    "Implementation records"
+   ]
+  },
+  {
+   "t": "h3",
+   "text": "Device Master Record (DMR)"
+  },
+  {
+   "t": "p",
+   "html": "The DMR contains the manufacturing information required to produce devices conforming to design specifications. While the DHF documents <em>how the device was designed</em>, the DMR documents <em>how to manufacture it</em>."
+  },
+  {
+   "t": "h4",
+   "text": "DMR Contents"
+  },
+  {
+   "t": "ul",
+   "items": [
+    "Device specifications and drawings",
+    "Manufacturing procedures and work instructions",
+    "Process parameters and controls",
+    "Quality control procedures and specifications",
+    "Packaging and labeling specifications",
+    "Equipment and facility requirements"
+   ]
+  },
+  {
+   "t": "h3",
+   "text": "Technical File / Design Dossier (EU MDR)"
+  },
+  {
+   "t": "p",
+   "html": "Required for CE marking under EU MDR Annex II and Annex III, the Technical File provides comprehensive device information:"
+  },
+  {
+   "t": "ul",
+   "items": [
+    "Device description and specifications",
+    "Design and manufacturing information",
+    "General safety and performance requirements (GSPR) checklist",
+    "Risk management documentation",
+    "Verification and validation reports",
+    "Clinical evaluation report (CER)",
+    "Post-market surveillance plan",
+    "Instructions for use and labeling"
+   ]
+  },
+  {
+   "t": "fig",
+   "src": "images/ch09_fig07.jpg",
+   "w": 319,
+   "h": 264,
+   "num": "9.7",
+   "caption": "Documentation Hierarchy"
+  },
+  {
+   "t": "p",
+   "html": "<strong>Description:</strong>"
+  },
+  {
+   "t": "p",
+   "html": "A three-tier pyramid diagram showing documentation relationships:"
+  },
+  {
+   "t": "h4",
+   "text": "Top Tier (Strategic Level)"
+  },
+  {
+   "t": "ul",
+   "items": [
+    "\"Design History File (DHF)\"",
+    "\"Complete design development record\""
+   ]
+  },
+  {
+   "t": "h4",
+   "text": "Middle Tier (Tactical Level)"
+  },
+  {
+   "t": "ul",
+   "items": [
+    "\"Device Master Record (DMR)\"",
+    "\"Manufacturing procedures and specifications\""
+   ]
+  },
+  {
+   "t": "h4",
+   "text": "Bottom Tier (Operational Level)"
+  },
+  {
+   "t": "ul",
+   "items": [
+    "\"Technical File / Design Dossier\"",
+    "\"Regulatory submission documentation\""
+   ]
+  },
+  {
+   "t": "p",
+   "html": "<strong>Arrows indicate information flow:</strong> DHF feeds into DMR, both feed into Technical File."
+  },
+  {
+   "t": "box",
+   "kind": "case",
+   "label": "Case Study 9.1",
+   "title": "Infusion Pump Failure Due to Poor Usability Design Background",
+   "blocks": [
+    {
+     "t": "p",
+     "html": "A major medical device manufacturer launched a new line of smart infusion pumps intended to reduce medication errors in hospital settings. Despite extensive bench testing showing excellent technical performance, post-market surveillance revealed an alarming rate of use errors leading to incorrect medication dosing."
+    }
+   ]
+  },
+  {
+   "t": "h3",
+   "text": "Problem Description"
+  },
+  {
+   "t": "p",
+   "html": "Within six months of market launch, the manufacturer received multiple reports of adverse events:"
+  },
+  {
+   "t": "ul",
+   "items": [
+    "23 incidents of over-infusion (excess drug delivery)",
+    "17 incidents of under-infusion (insufficient drug delivery)",
+    "5 serious injuries requiring medical intervention",
+    "Numerous reports of user confusion and frustration"
+   ]
+  },
+  {
+   "t": "h3",
+   "text": "Root Cause Analysis"
+  },
+  {
+   "t": "p",
+   "html": "Investigation revealed critical usability failures:"
+  },
+  {
+   "t": "h3",
+   "text": "Display Ambiguity"
+  },
+  {
+   "t": "ul",
+   "items": [
+    "Drug dosage units were displayed in a small font",
+    "Units could be easily misread (mg/hr vs. mcg/hr)",
+    "No visual distinction between different measurement scales"
+   ]
+  },
+  {
+   "t": "h3",
+   "text": "Workflow Mismatch"
+  },
+  {
+   "t": "ul",
+   "items": [
+    "Interface required 8-step navigation to program common infusions",
+    "Critical parameters buried in sub-menus",
+    "Counter-intuitive to established nursing workflows"
+   ]
+  },
+  {
+   "t": "h3",
+   "text": "Inadequate Alarms"
+  },
+  {
+   "t": "ul",
+   "items": [
+    "Alarm tones for serious errors sounded similar to routine notifications",
+    "Visual indicators lacked appropriate prominence",
+    "Users reported \"alarm fatigue\" leading to reduced responsiveness"
+   ]
+  },
+  {
+   "t": "h3",
+   "text": "Insufficient Usability Testing"
+  },
+  {
+   "t": "ul",
+   "items": [
+    "Formative testing conducted only with engineers familiar with the design",
+    "Summative validation testing lacked representative user diversity",
+    "Actual clinical environment factors not adequately simulated"
+   ]
+  },
+  {
+   "t": "h3",
+   "text": "Corrective Actions"
+  },
+  {
+   "t": "p",
+   "html": "The manufacturer implemented comprehensive design improvements:"
+  },
+  {
+   "t": "h4",
+   "text": "Immediate Actions"
+  },
+  {
+   "t": "ul",
+   "items": [
+    "Field Safety Corrective Action (FSCA) issued",
+    "Software update to improve display clarity",
+    "Enhanced training for clinical users",
+    "Additional warning labels"
+   ]
+  },
+  {
+   "t": "h4",
+   "text": "Long-Term Design Changes"
+  },
+  {
+   "t": "ul",
+   "items": [
+    "Complete interface redesign following IEC 62366-1",
+    "Large, high-contrast display showing units prominently",
+    "Reduced programming steps from 8 to 3 for common infusions",
+    "Differentiated alarm tones and visual indicators",
+    "Color-coding for critical parameters"
+   ]
+  },
+  {
+   "t": "h4",
+   "text": "Process Improvements"
+  },
+  {
+   "t": "ul",
+   "items": [
+    "Established comprehensive usability testing program",
+    "Recruited diverse user panels representing actual clinical staff",
+    "Created simulated-use environment replicating hospital conditions",
+    "Integrated human factors throughout development process",
+    "Implemented formative testing at early prototype stages"
+   ]
+  },
+  {
+   "t": "h3",
+   "text": "Lessons Learned"
+  },
+  {
+   "t": "ul",
+   "items": [
+    "<strong>Usability engineering cannot be an afterthought </strong>-- Must be integrated from initial concept through final design",
+    "<strong>Representative users must participate in testing </strong>-- Engineers and developers are not appropriate surrogates",
+    "<strong>Realistic use environments matter </strong>-- Laboratory testing cannot fully predict real-world performance",
+    "<strong>Clear communication of critical information is paramount </strong>-- Design must minimize cognitive load during high-stress situations",
+    "<strong>Regulatory compliance requires demonstrated usability </strong>-- IEC 62366-1 and FDA Human Factors guidance are not optional"
+   ]
+  },
+  {
+   "t": "h3",
+   "text": "Impact"
+  },
+  {
+   "t": "p",
+   "html": "This case resulted in:"
+  },
+  {
+   "t": "ul",
+   "items": [
+    "Over $50 million in recall and remediation costs",
+    "Significant reputational damage",
+    "Enhanced FDA scrutiny for subsequent device submissions",
+    "Industry-wide recognition of critical importance of human factors engineering"
+   ]
+  },
+  {
+   "t": "p",
+   "html": "<strong>Key Takeaway: </strong>This case demonstrates that <strong>technical performance alone is insufficient </strong>-- devices must be designed with deep understanding of actual users, their capabilities, their limitations, and their real-world working conditions."
+  },
+  {
+   "t": "box",
+   "kind": "insight",
+   "label": "Industry Insight 9.1",
+   "title": "",
+   "blocks": [
+    {
+     "t": "p",
+     "html": "Research and regulatory data consistently demonstrate that:"
+    },
+    {
+     "t": "p",
+     "html": "Approximately 30% of all medical device recalls globally are attributed to design-related issues, including:"
+    },
+    {
+     "t": "ul",
+     "items": [
+      "Inadequate verification and validation",
+      "Insufficient risk analysis",
+      "Poor usability design",
+      "Material or component selection errors",
+      "Manufacturing process incompatibility not identified during design"
+     ]
+    },
+    {
+     "t": "h4",
+     "text": "Cost of Design Failures"
+    },
+    {
+     "t": "ul",
+     "items": [
+      "Average recall cost: $1-10 million (depending on device class)",
+      "Average litigation cost per incident: $500,000-$5 million",
+      "Reputational damage: Immeasurable but long-lasting",
+      "Regulatory consequences: Increased scrutiny, consent decrees, warning letters"
+     ]
+    },
+    {
+     "t": "p",
+     "html": "<strong>Return on Investment in Design Quality: </strong>Studies show that investing in robust design processes, including comprehensive verification, validation, and usability testing, reduces total product lifecycle costs by 40-60% compared to designs requiring extensive post-market corrections."
+    },
+    {
+     "t": "p",
+     "html": "Continue"
+    },
+    {
+     "t": "p",
+     "html": "10:18 PM"
+    },
+    {
+     "t": "h4",
+     "text": "Design Process Time Distribution"
+    },
+    {
+     "t": "ul",
+     "items": [
+      "Initial concept and feasibility: 5-10%",
+      "Design and development: 30-40%",
+      "Verification and validation: 25-35%",
+      "Design transfer and scale-up: 15-25%",
+      "Regulatory review and approval: Variable (depends on jurisdiction)"
+     ]
+    },
+    {
+     "t": "p",
+     "html": "These data underscore the critical importance of disciplined, systematic design processes and the integration of risk management and human factors from the earliest design stages."
+    }
+   ]
+  }
+ ],
+ "glossary": [
+  [
+   "CAPA (Corrective and Preventive Action)",
+   "Systematic approach to addressing problems and preventing recurrence"
+  ],
+  [
+   "Design Controls",
+   "Systematic measures ensuring design output meets design input requirements"
+  ],
+  [
+   "Design History File (DHF)",
+   "Compilation of records documenting design development"
+  ],
+  [
+   "Design Input",
+   "Physical and performance requirements forming basis for device design"
+  ],
+  [
+   "Design Output",
+   "Results of design effort at each phase, including drawings, specifications, and documentation"
+  ],
+  [
+   "Design Review",
+   "Formal, documented evaluation of design results"
+  ],
+  [
+   "Device Master Record (DMR)",
+   "Compilation of manufacturing procedures and specifications Formative Evaluation -- Usability testing conducted during development to improve design Human Factors Engineering -- Application of human capabilities and limitations to design IEC 62366-1 -- International standard for usability engineering of medical devices"
+  ],
+  [
+   "ISO 14971",
+   "International standard for risk management of medical devices"
+  ],
+  [
+   "Prototype",
+   "Preliminary model used to evaluate design"
+  ],
+  [
+   "Risk Management",
+   "Systematic application of policies, procedures, and practices to risk analysis, evaluation, control, and monitoring"
+  ],
+  [
+   "Summative Evaluation",
+   "Usability testing conducted to validate final design"
+  ],
+  [
+   "Traceability Matrix",
+   "Documentation linking requirements, design, tests, and results"
+  ],
+  [
+   "Usability Engineering",
+   "Systematic approach to ensuring device is safe and effective for intended users"
+  ],
+  [
+   "Validation",
+   "Confirmation that device meets user needs under actual use conditions"
+  ],
+  [
+   "Verification",
+   "Confirmation that design output meets design input requirements"
+  ]
+ ],
+ "recap_intro": "This chapter presented a comprehensive overview of medical device design and development, emphasizing that successful device design requires:",
+ "recap_items": [
+  "<strong>Systematic Process</strong>",
+  "Following structured design controls per ISO 13485 and FDA 21 CFR 820",
+  "Maintaining comprehensive documentation throughout development",
+  "Conducting formal reviews at critical decision points",
+  "<strong>User-Centered Approach</strong>",
+  "Translating user needs into measurable design inputs",
+  "Applying human factors engineering principles",
+  "Conducting usability testing with representative users",
+  "<strong>Risk-Based Thinking</strong>",
+  "Integrating risk management throughout design process per ISO 14971",
+  "Prioritizing inherent safety by design",
+  "Documenting residual risks and benefit-risk analysis",
+  "<strong>Quality Verification</strong>",
+  "Systematically verifying design outputs meet specifications",
+  "Validating devices meet user needs in actual use conditions",
+  "Ensuring manufacturing capability through design transfer",
+  "<strong>Complete Documentation</strong>",
+  "Maintaining Design History File (DHF)",
+  "Creating comprehensive Device Master Record (DMR)",
+  "Preparing Technical Files for regulatory submissions",
+  "The design phase determines approximately 80% of device safety and performance characteristics, making it the most critical stage of medical device development. Disciplined application of design controls, human factors engineering, and risk management principles is essential for creating safe, effective, and successful medical devices."
+ ],
+ "references": [
+  {
+   "group": null,
+   "text": "FDA. (2023). Design Control Guidance for Medical Device Manufacturers. U.S. Food and Drug Administration, Center for Devices and Radiological Health."
+  },
+  {
+   "group": null,
+   "text": "FDA. (2016). Applying Human Factors and Usability Engineering to Medical Devices: Guidance for Industry and FDA Staff. U.S. Food and Drug Administration."
+  },
+  {
+   "group": null,
+   "text": "International Organization for Standardization. (2016). ISO 13485:2016 -- Medical devices -- Quality management systems -- Requirements for regulatory purposes."
+  },
+  {
+   "group": null,
+   "text": "International Electrotechnical Commission. (2015). IEC 62366-1:2015 -- Medical devices -- Part 1: Application of usability engineering to medical devices."
+  },
+  {
+   "group": null,
+   "text": "International Organization for Standardization. (2019). ISO 14971:2019 -- Medical devices -- Application of risk management to medical devices."
+  },
+  {
+   "group": null,
+   "text": "U.S. Food and Drug Administration. 21 CFR Part 820 -- Quality System Regulation."
+  },
+  {
+   "group": null,
+   "text": "European Commission. (2017). Regulation (EU) 2017/745 -- Medical Devices Regulation (MDR), Annex I and Annex II."
+  },
+  {
+   "group": null,
+   "text": "Association for the Advancement of Medical Instrumentation (AAMI). (2018)."
+  },
+  {
+   "group": null,
+   "text": "ANSI/AAMI HE75:2018 -- Human factors engineering -- Design of medical devices."
+  },
+  {
+   "group": null,
+   "text": "International Medical Device Regulators Forum (IMDRF). (2019). Software as a Medical Device (SaMD): Application of Quality Management System."
+  },
+  {
+   "group": null,
+   "text": "International Organization for Standardization. (2020). ISO 15223-1:2020 -- Medical devices -- Symbols to be used with information to be supplied by the manufacturer."
+  }
+ ]
+}

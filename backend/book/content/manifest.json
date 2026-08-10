@@ -1,0 +1,1137 @@
+{
+ "chapters": [
+  {
+   "num": 1,
+   "id": "ch01",
+   "title": "Introduction to Medical Devices",
+   "subtitle": "",
+   "figures": [
+    [
+     "1.1",
+     "Levels of Invasiveness"
+    ],
+    [
+     "1.2",
+     "Duration based classification"
+    ],
+    [
+     "1.3",
+     "FDA Classification Flowchart"
+    ],
+    [
+     "1.4",
+     "EU MDR Classification Pyramid"
+    ],
+    [
+     "1.5",
+     "India MDR 2017 Risk Ladder"
+    ],
+    [
+     "1.6",
+     "Device Category Grid"
+    ],
+    [
+     "1.7",
+     "Cleanroom Flow Layout"
+    ]
+   ],
+   "tables": [],
+   "sections": [
+    "Definition of a Medical Device",
+    "Difference Between Medical Devices and Drugs",
+    "Global Classification Systems",
+    "European Union MDR Classification System",
+    "Cleanroom Basics",
+    "Quality Management Systems (QMS)"
+   ],
+   "glossary_count": 15,
+   "references_count": 6
+  },
+  {
+   "num": 2,
+   "id": "ch02",
+   "title": "Structure of the Medical Device Industry",
+   "subtitle": "Industry Ecosystem • Manufacturing • Regulation • Distribution • Healthcare Delivery • Post- Market Services",
+   "figures": [
+    [
+     "2.1",
+     "Medical Device Industry Ecosystem Map"
+    ],
+    [
+     "2.2",
+     "Device Manufacturing Process Flowchart"
+    ],
+    [
+     "2.3",
+     "Medical Device Testing Laboratory Structure"
+    ],
+    [
+     "2.4",
+     "Healthcare Device Utilization Pathway"
+    ]
+   ],
+   "tables": [],
+   "sections": [
+    "Manufacturing Sector",
+    "Regulatory and Compliance Sector",
+    "Quality Assurance and Testing Sector",
+    "Distribution and Supply Chain Sector",
+    "Healthcare Provider Sector",
+    "Post-Market Servicing and Surveillance Sector"
+   ],
+   "glossary_count": 10,
+   "references_count": 9
+  },
+  {
+   "num": 3,
+   "id": "ch03",
+   "title": "Classification of Medical Devices",
+   "subtitle": "Risk-Based Classification • Global Regulatory Systems • FDA • EU MDR • India MDR 2017",
+   "figures": [
+    [
+     "3.1",
+     "Levels of Invasiveness and Associated Risk"
+    ],
+    [
+     "3.2",
+     "Duration-Based Risk Classification Description: Three-column comparative table with visual timeline:"
+    ],
+    [
+     "3.3",
+     "Classification Criteria Overview"
+    ],
+    [
+     "3.4",
+     "FDA Three-Tier Classification System Description: Vertical ascending pyramid diagram showing three tiers: Base (Class I - Green):"
+    ],
+    [
+     "3.5",
+     "(untitled figure)"
+    ],
+    [
+     "3.6",
+     "India MDR 2017 Risk Classification Ladder Description: Vertical ladder diagram with four ascending rungs:"
+    ],
+    [
+     "3.7",
+     "Classification Decision Tree Example Description: Flowchart for classifying a generic medical device:"
+    ]
+   ],
+   "tables": [
+    [
+     "3.1",
+     "Class Is, Im, Ir"
+    ],
+    [
+     "3.2",
+     "★ Class IIb – Moderate to High Risk Devices"
+    ],
+    [
+     "3.3",
+     "Requirements"
+    ],
+    [
+     "3.4",
+     "Examples of Class C Devices"
+    ],
+    [
+     "3.5",
+     "Examples of Class D Devices"
+    ]
+   ],
+   "sections": [
+    "US FDA Classification System",
+    "India MDR 2017 Classification System",
+    "Device Classification Examples and Case Studies",
+    "Comparative Analysis",
+    "Practical Applications"
+   ],
+   "glossary_count": 20,
+   "references_count": 10
+  },
+  {
+   "num": 4,
+   "id": "ch04",
+   "title": "Medical Device Lifecycle & Development Process",
+   "subtitle": "Design Controls • Verification & Validation • Risk Management • Clinical Evaluation • Regulatory Approval • Manufacturing Transfer • Post-Market Surveillance",
+   "figures": [
+    [
+     "4.1",
+     "Medical Device Lifecycle Circular Model"
+    ],
+    [
+     "4.2",
+     "Design Control Process Flow"
+    ],
+    [
+     "4.3",
+     "Prototype Evolution Pathway"
+    ],
+    [
+     "4.4",
+     "Verification vs. Validation Conceptual Model"
+    ],
+    [
+     "4.5",
+     "ISO 14971 Risk Management Process Flow"
+    ],
+    [
+     "4.6",
+     "Global Regulatory Approval Pathways Comparison Description:"
+    ],
+    [
+     "4.7",
+     "Manufacturing Documentation Pyramid"
+    ],
+    [
+     "4.8",
+     "Post-Market Surveillance Cycle"
+    ]
+   ],
+   "tables": [
+    [
+     "4.1",
+     "Residual Risks"
+    ]
+   ],
+   "sections": [
+    "Regulatory Foundations",
+    "Phase 1 -- Concept Development &amp; Feasibility Assessment",
+    "Phase 2 -- Design &amp; Development (Design Controls)",
+    "Phase 3 -- Prototyping Strategies",
+    "Phase 4 -- Verification and Validation (V&amp;V)",
+    "Phase 5 -- Risk Management Integration (ISO 14971:2019)",
+    "Phase 6 -- Clinical Evaluation",
+    "Phase 7 -- Regulatory Submission and Approval",
+    "Phase 8 -- Manufacturing Transfer and Process Validation",
+    "Phase 9 -- Market Launch and Commercialization",
+    "Phase 10 -- Post-Market Surveillance (PMS) and Continuous Improvement",
+    "Device Lifecycle Documentation Architecture"
+   ],
+   "glossary_count": 14,
+   "references_count": 16
+  },
+  {
+   "num": 5,
+   "id": "ch05",
+   "title": "Quality Management Systems (QMS) in Medical Devices",
+   "subtitle": "",
+   "figures": [
+    [
+     "5.1",
+     "Core Functions of QMS (Placeholder)"
+    ],
+    [
+     "5.2",
+     "ISO 13485 Clause Structure"
+    ],
+    [
+     "5.3",
+     "QMS Documentation Pyramid"
+    ],
+    [
+     "5.4",
+     "(untitled figure)"
+    ],
+    [
+     "5.5",
+     "CAPA Process Flowchart (Placeholder)"
+    ]
+   ],
+   "tables": [],
+   "sections": [
+    "Introduction to Quality Management Systems (QMS)",
+    "The Role of QMS in Patient Safety",
+    "ISO 13485:2016 -- The Global QMS Standard",
+    "Documentation Hierarchy -- The QMS Pyramid",
+    "Document and Record Control",
+    "Risk-Based Approach in QMS",
+    "Supplier Quality Management",
+    "Validation and Verification Processes",
+    "Nonconformance Report (NCR)",
+    "Internal Audits",
+    "Management Review",
+    "Training and Competency Management"
+   ],
+   "glossary_count": 19,
+   "references_count": 10
+  },
+  {
+   "num": 6,
+   "id": "ch06",
+   "title": "Cleanrooms & Sterile Manufacturing Environment",
+   "subtitle": "ISO 14644 • HVAC Systems • Environmental Monitoring • Contamination Control • Sterilization Fundamentals",
+   "figures": [
+    [
+     "6.1",
+     "Basic Cleanroom Layout"
+    ],
+    [
+     "6.2",
+     "ISO Cleanroom Classification Pyramid"
+    ],
+    [
+     "6.3",
+     "Laminar vs. Turbulent Airflow Patterns"
+    ],
+    [
+     "6.4",
+     "HVAC System Cycle"
+    ],
+    [
+     "6.5",
+     "Gowning Procedure Steps (Placeholder)"
+    ],
+    [
+     "6.6",
+     "Environmental Monitoring Program Flow"
+    ],
+    [
+     "6.7",
+     "Sterilization Method Selection Flowchart"
+    ]
+   ],
+   "tables": [
+    [
+     "6.1",
+     "ISO 14644 Classification"
+    ],
+    [
+     "6.2",
+     "EU GMP Grades"
+    ],
+    [
+     "6.3",
+     "ISO Class Minimum ACH Typical ACH Range"
+    ]
+   ],
+   "sections": [
+    "Introduction to Cleanrooms",
+    "Cleanroom Classification Systems",
+    "EU GMP Grade Classification",
+    "HVAC System Components",
+    "Environmental Monitoring Programs"
+   ],
+   "glossary_count": 10,
+   "references_count": 10
+  },
+  {
+   "num": 7,
+   "id": "ch07",
+   "title": "Materials Used in Medical Devices",
+   "subtitle": "Metals • Polymers • Ceramics • Composites • Biomaterials • Biocompatibility • ISO 10993",
+   "figures": [
+    [
+     "7.1",
+     "Biomaterial Classification Tree"
+    ],
+    [
+     "7.2",
+     "Metallic Biomaterial Applications Chart"
+    ],
+    [
+     "7.3",
+     "Polymer Property Comparison Chart"
+    ],
+    [
+     "7.4",
+     "Ceramic Biomaterial Classification"
+    ],
+    [
+     "7.5",
+     "ISO 10993 Testing Selection Matrix"
+    ]
+   ],
+   "tables": [],
+   "sections": [
+    "Introduction to Biomaterials",
+    "Metallic Biomaterials",
+    "Polymeric Biomaterials",
+    "Ceramic Biomaterials",
+    "Composite Biomaterials",
+    "Natural Biomaterials",
+    "Material Selection Criteria",
+    "Biocompatibility"
+   ],
+   "glossary_count": 15,
+   "references_count": 12
+  },
+  {
+   "num": 8,
+   "id": "ch08",
+   "title": "Biomechanics & Biocompatibility of Medical Devices",
+   "subtitle": "Stress • Strain • Fatigue • Wear • Tissue Response • ISO 10993 • Material-Body Interactions",
+   "figures": [
+    [
+     "8.1",
+     "(untitled figure)"
+    ],
+    [
+     "8.2",
+     "(untitled figure)"
+    ],
+    [
+     "8.3",
+     "Stress-Strain Curve Description: A comprehensive stress-strain curve displaying:"
+    ],
+    [
+     "8.4",
+     "Forces on a Hip Implant Description: Anatomical diagram of hip implant showing:"
+    ],
+    [
+     "8.5",
+     "Wear Mechanisms Description: Three-panel illustration showing:"
+    ],
+    [
+     "8.6",
+     "Biocompatibility Requirements"
+    ],
+    [
+     "8.7",
+     "(untitled figure)"
+    ]
+   ],
+   "tables": [],
+   "sections": [
+    "Introduction",
+    "Fundamental Biomechanical Concepts",
+    "Forces Acting on Medical Devices",
+    "Mechanical Properties of Device Materials",
+    "Failure Mechanisms in Medical Devices",
+    "Body-Device Interactions",
+    "ISO 10993 Biological Evaluation Framework",
+    "Special Considerations for Different Device Types"
+   ],
+   "glossary_count": 18,
+   "references_count": 10
+  },
+  {
+   "num": 9,
+   "id": "ch09",
+   "title": "Design & Development of Medical Devices",
+   "subtitle": "Engineering Design • Usability • Prototyping • Risk Management • Documentation",
+   "figures": [
+    [
+     "9.1",
+     "Design Control Framework"
+    ],
+    [
+     "9.2",
+     "User Needs to Design Inputs Translation"
+    ],
+    [
+     "9.3",
+     "Usability Engineering Lifecycle"
+    ],
+    [
+     "9.4",
+     "Prototype Development Stages"
+    ],
+    [
+     "9.5",
+     "Verification vs. Validation"
+    ],
+    [
+     "9.6",
+     "Design Transfer Process Flow"
+    ],
+    [
+     "9.7",
+     "Documentation Hierarchy"
+    ]
+   ],
+   "tables": [],
+   "sections": [
+    "Introduction",
+    "Design Controls (FDA and ISO Requirements)",
+    "Step 4 -- Human Factors and Usability Engineering",
+    "Step 8 -- Verification and Validation",
+    "Design Inputs",
+    "Design Outputs"
+   ],
+   "glossary_count": 15,
+   "references_count": 11
+  },
+  {
+   "num": 10,
+   "id": "ch10",
+   "title": "Manufacturing of Medical Devices",
+   "subtitle": "Production Processes • Quality Control • Equipment • Validation • Industrial Best Practices",
+   "figures": [
+    [
+     "10.1",
+     "Medical Device Production Flow Overview"
+    ],
+    [
+     "10.2",
+     "Injection Molding Process Schematic"
+    ],
+    [
+     "10.3",
+     "Medical Tubing Extrusion Line"
+    ],
+    [
+     "10.4",
+     "CNC Machining Process Flow"
+    ],
+    [
+     "10.5",
+     "Metal Processing Workflow"
+    ],
+    [
+     "10.6",
+     "Medical Device Assembly Line Layout"
+    ],
+    [
+     "10.7",
+     "ETO Sterilization Cycle Profile"
+    ],
+    [
+     "10.8",
+     "Example Medical Device Label Layout"
+    ],
+    [
+     "10.9",
+     "In-Process Quality Control Flow"
+    ],
+    [
+     "10.10",
+     "Medical Device Factory Layout"
+    ]
+   ],
+   "tables": [
+    [
+     "10.1",
+     "Common Defects and Mitigation"
+    ],
+    [
+     "10.2",
+     "Performance Testing Requirements"
+    ],
+    [
+     "10.3",
+     "Device Contact ETO (ppm) Ethylene Chlorohydrin (ppm) Ethylene Glycol (ppm)"
+    ]
+   ],
+   "sections": [
+    "Introduction to Medical Device Manufacturing",
+    "Primary Process Categories",
+    "Metal Fabrication Processes",
+    "Assembly and Joining Operations",
+    "Polymer Component Manufacturing",
+    "Metal Component Fabrication",
+    "Tubing and Catheter Manufacturing",
+    "Packaging and Labeling Operations",
+    "In-Process Quality Control",
+    "Factory Layout and Material Flow",
+    "Manufacturing Documentation Systems"
+   ],
+   "glossary_count": 13,
+   "references_count": 17
+  },
+  {
+   "num": 11,
+   "id": "ch11",
+   "title": "Quality Control & Testing of Medical Devices",
+   "subtitle": "Mechanical • Electrical • Chemical • Biological • Microbiological • Packaging • Sterilization Testing",
+   "figures": [
+    [
+     "11.1",
+     "QC Position in Manufacturing Flow"
+    ],
+    [
+     "11.2",
+     "Tensile Testing Setup"
+    ],
+    [
+     "11.3",
+     "Electrical Safety Test Setup"
+    ],
+    [
+     "11.4",
+     "Sterilization Validation Workflow"
+    ],
+    [
+     "11.5",
+     "QC Documentation Flow"
+    ]
+   ],
+   "tables": [
+    [
+     "11.1",
+     "EtO Residue Testing (ISO 10993-7)"
+    ]
+   ],
+   "sections": [
+    "11.1 Introduction to Quality Control",
+    "11.2 QC Workflow in Medical Device Manufacturing",
+    "11.2.2 In-Process Quality Control",
+    "11.2.4 Sterilization Validation",
+    "11.3 Mechanical Testing",
+    "11.4 Electrical Safety Testing (IEC 60601 Series)",
+    "11.5 Chemical and Material Testing",
+    "11.7 Microbiological Testing",
+    "11.9 Packaging and Seal Integrity Testing",
+    "11.10 Sampling Plans and Acceptance Criteria"
+   ],
+   "glossary_count": 3,
+   "references_count": 21
+  },
+  {
+   "num": 12,
+   "id": "ch12",
+   "title": "Regulatory Requirements for Medical Devices",
+   "subtitle": "India MDR 2017 • US FDA • EU MDR • IMDRF • Global Pathways",
+   "figures": [
+    [
+     "12.1",
+     "Fundamental Goals of Medical Device Regulation Description:"
+    ],
+    [
+     "12.2",
+     "India MDR Risk-Based Classification Pyramid"
+    ],
+    [
+     "12.3",
+     "India Class C/D Approval Process Flowchart"
+    ],
+    [
+     "12.4",
+     "FDA Three-Tier Classification System"
+    ],
+    [
+     "12.5",
+     "FDA Regulatory Pathways Decision Tree"
+    ],
+    [
+     "12.6",
+     "EU MDR Four-Tier Classification Pyramid"
+    ],
+    [
+     "12.7",
+     "EU MDR Clinical Evaluation Process"
+    ],
+    [
+     "12.8",
+     "CE Marking Process Timeline"
+    ],
+    [
+     "12.9",
+     "UDI Label Example"
+    ],
+    [
+     "12.10",
+     "Global Vigilance Reporting Timeline Comparison (Placeholder) Description:"
+    ]
+   ],
+   "tables": [],
+   "sections": [
+    "Introduction to Medical Device Regulation",
+    "Device performance and clinical efficacy validation",
+    "India -- Medical Device Rules (MDR) 2017",
+    "CDSCO Approval Pathways Class A and B Devices",
+    "United States -- FDA Regulatory System",
+    "European Union -- Medical Device Regulation (MDR) 2017/745",
+    "Technical Documentation Requirements (Annex II)",
+    "Post-Market Surveillance and Vigilance"
+   ],
+   "glossary_count": 19,
+   "references_count": 11
+  },
+  {
+   "num": 13,
+   "id": "ch13",
+   "title": "Software as a Medical Device (SaMD), AI/ML Devices & Digital Health Regulation",
+   "subtitle": "SaMD • AI/ML • CDSCO Guidance • FDA • EU MDR • Cybersecurity • Validation",
+   "figures": [
+    [
+     "13.1",
+     "Evolution of Software in Healthcare"
+    ],
+    [
+     "13.2",
+     "SaMD Concept Framework"
+    ],
+    [
+     "13.3",
+     "Medical Software Classification Tree"
+    ],
+    [
+     "13.4",
+     "Global SaMD Regulatory Framework Alignment"
+    ],
+    [
+     "13.5",
+     "Global Software Classification Comparison Matrix Description:"
+    ],
+    [
+     "13.6",
+     "AI/ML Device Development and Validation Lifecycle Description:"
+    ],
+    [
+     "13.7",
+     "AI/ML Regulatory Approval Process Comparison Description:"
+    ],
+    [
+     "13.8",
+     "Medical Software Cybersecurity Framework"
+    ],
+    [
+     "13.9",
+     "IEC 62304 Software Lifecycle V-Model"
+    ],
+    [
+     "13.10",
+     "Software V&V Traceability Matrix"
+    ],
+    [
+     "13.11",
+     "SaMD Documentation Pyramid"
+    ],
+    [
+     "13.12",
+     "SaMD/AI Device Market Landscape"
+    ],
+    [
+     "13.13",
+     "Ethical Framework for AI Medical Devices"
+    ],
+    [
+     "13.14",
+     "Algorithm Bias Prevention Framework"
+    ]
+   ],
+   "tables": [
+    [
+     "13.1",
+     "Regulatory Focus"
+    ],
+    [
+     "13.2",
+     "Table 13.2 -- IMDRF SaMD Risk Matrix"
+    ],
+    [
+     "13.3",
+     "Other Specialties"
+    ]
+   ],
+   "sections": [
+    "Introduction to Software in Healthcare",
+    "What is Software as a Medical Device (SaMD)?",
+    "SaMD versus SiMD (Software in a Medical Device)",
+    "Types of Medical Software",
+    "Global Regulatory Definitions and Frameworks",
+    "Risk-Based Classification of SaMD",
+    "Table 13.2 -- IMDRF SaMD Risk Matrix",
+    "AI/ML-Based Medical Devices",
+    "Definition and Scope",
+    "Cybersecurity Requirements for Medical Software",
+    "Software Development Lifecycle (SDLC) -- IEC 62304",
+    "Software Verification and Validation (V&amp;V)"
+   ],
+   "glossary_count": 19,
+   "references_count": 27
+  },
+  {
+   "num": 14,
+   "id": "ch14",
+   "title": "Clinical Evaluation & Clinical Trials for Medical Devices",
+   "subtitle": "Safety • Performance • Clinical Data • CER • PMS • Protocols • Evidence-Based Medicine",
+   "figures": [
+    [
+     "14.1",
+     "Clinical Evaluation Decision Tree"
+    ],
+    [
+     "14.2",
+     "Clinical Evidence Hierarchy"
+    ],
+    [
+     "14.3",
+     "CER Development Process Flow"
+    ],
+    [
+     "14.4",
+     "CDSCO Clinical Investigation Approval Process"
+    ],
+    [
+     "14.5",
+     "FDA Clinical Study Pathways Comparison"
+    ],
+    [
+     "14.6",
+     "EU MDR Clinical Investigation Timeline"
+    ],
+    [
+     "14.7",
+     "Clinical Development Pathway"
+    ],
+    [
+     "14.8",
+     "Clinical Study Design Framework"
+    ],
+    [
+     "14.9",
+     "Informed Consent Process Flow"
+    ],
+    [
+     "14.10",
+     "(untitled figure)"
+    ],
+    [
+     "14.11",
+     "Clinical Data Flow"
+    ],
+    [
+     "14.12",
+     "Adverse Event Management Flow"
+    ],
+    [
+     "14.13",
+     "PMCF Lifecycle Integration"
+    ],
+    [
+     "14.14",
+     "MoM Hip Implant Timeline"
+    ]
+   ],
+   "tables": [],
+   "sections": [
+    "Introduction to Clinical Evaluation",
+    "Purpose of Clinical Evaluation",
+    "Clinical Utility Demonstration",
+    "When is Clinical Evaluation Required?",
+    "Sources and Types of Clinical Data",
+    "India -- CDSCO Clinical Investigation Requirements",
+    "United States -- FDA Clinical Study Requirements",
+    "European Union -- EU MDR Clinical Evaluation Framework",
+    "Clinical Investigation Plan (CIP)",
+    "Types of Clinical Studies for Medical Devices",
+    "Clinical Study Design and Protocol Development",
+    "Ethics and Informed Consent",
+    "Good Clinical Practice (GCP) Principles -- ISO 14155"
+   ],
+   "glossary_count": 19,
+   "references_count": 2
+  },
+  {
+   "num": 15,
+   "id": "ch15",
+   "title": "Post-Market Surveillance (PMS), Vigilance & Recalls",
+   "subtitle": "Monitoring • Complaint Handling • Adverse Events • FSCA • CAPA • Risk Management",
+   "figures": [
+    [
+     "15.1",
+     "Post-Market Surveillance Lifecycle"
+    ],
+    [
+     "15.2",
+     "Complaint Handling Process Flowchart"
+    ],
+    [
+     "15.3",
+     "Global Vigilance Reporting Timeline Comparison"
+    ],
+    [
+     "15.4",
+     "Recall Decision and Implementation Flow"
+    ]
+   ],
+   "tables": [],
+   "sections": [
+    "Introduction to Post-Market Surveillance",
+    "Objectives and Scope of Post-Market Surveillance",
+    "Complaint Handling Systems",
+    "Vigilance and Adverse Event Reporting",
+    "Post-Market Surveillance Documentation",
+    "Trend Analysis and Safety Signal Detection",
+    "Field Safety Corrective Actions (FSCA)",
+    "CAPA Documentation Requirements"
+   ],
+   "glossary_count": 18,
+   "references_count": 10
+  },
+  {
+   "num": 16,
+   "id": "ch16",
+   "title": "Packaging, Labeling & UDI Requirements",
+   "subtitle": "Sterile Barrier Systems • Shelf Life • Seal Integrity • Labeling Compliance • Global UDI Rules",
+   "figures": [
+    [
+     "16.1",
+     "Functions of Medical Device Packaging"
+    ],
+    [
+     "16.2",
+     "Packaging Hierarchy"
+    ],
+    [
+     "16.3",
+     "Packaging Material Selection Matrix"
+    ],
+    [
+     "16.4",
+     "Sterile Barrier System Components"
+    ],
+    [
+     "16.5",
+     "Peel Strength Testing Setup"
+    ],
+    [
+     "16.6",
+     "Packaging Validation Workflow"
+    ],
+    [
+     "16.7",
+     "Shelf-Life Determination Strategy"
+    ],
+    [
+     "16.8",
+     "Example Medical Device Label Layout"
+    ],
+    [
+     "16.9",
+     "UDI Structure and Components"
+    ],
+    [
+     "16.10",
+     "UDI Implementation Timeline by Device Risk"
+    ],
+    [
+     "16.11",
+     "Medical Device Symbol Reference Chart (Placeholder) Description:"
+    ],
+    [
+     "16.12",
+     "Corrective Action Implementation Timeline (Placeholder) Description:"
+    ]
+   ],
+   "tables": [],
+   "sections": [
+    "Introduction to Medical Device Packaging",
+    "Classification of Packaging Types",
+    "Sterile Barrier Systems (SBS)",
+    "Packaging Validation and Testing (ISO 11607-2)",
+    "Shelf-Life Determination",
+    "Shelf-Life Documentation Requirements",
+    "Global Labeling Symbols and Harmonization"
+   ],
+   "glossary_count": 37,
+   "references_count": 33
+  },
+  {
+   "num": 17,
+   "id": "ch17",
+   "title": "Import, Export & Supply Chain Management",
+   "subtitle": "Licensing • Logistics • Cold Chain • Distribution • Customs • Global Trade • Inventory Control",
+   "figures": [
+    [
+     "17.1",
+     "Medical Device Supply Chain Ecosystem"
+    ],
+    [
+     "17.2",
+     "Import License Application Workflow Description: A vertical flowchart with decision points showing:"
+    ],
+    [
+     "17.3",
+     "End-to-End Supply Chain Workflow"
+    ],
+    [
+     "17.4",
+     "Warehouse Layout and Zoning"
+    ],
+    [
+     "17.5",
+     "Cold Chain Logistics Flow"
+    ]
+   ],
+   "tables": [
+    [
+     "17.1",
+     "Risk Assessment Framework Risk Matrix"
+    ]
+   ],
+   "sections": [
+    "Introduction to Medical Device Supply Chain",
+    "Supply Chain Components and Workflows",
+    "Storage and Warehousing Requirements",
+    "Logistics and Transportation Management",
+    "Inventory Control Techniques",
+    "Documentation Requirements in Supply Chain",
+    "Risk Identification and Mitigation in Supply Chain",
+    "Case Studies and Industry Insights"
+   ],
+   "glossary_count": 12,
+   "references_count": 10
+  },
+  {
+   "num": 18,
+   "id": "ch18",
+   "title": "Emerging Technologies in Medical Devices",
+   "subtitle": "3D Printing • Robotics • Nanotechnology • Wearables • IoMT • XR/VR/AR • Smart Implants • Regenerative Medicine",
+   "figures": [
+    [
+     "18.1",
+     "Future Device Innovation Ecosystem"
+    ],
+    [
+     "18.2",
+     "3D Printing Workflow for Medical Devices"
+    ],
+    [
+     "18.3",
+     "Bioprinting Process Overview"
+    ],
+    [
+     "18.4",
+     "Robotic Surgery System Architecture"
+    ],
+    [
+     "18.5",
+     "Nanotechnology in Medicine"
+    ],
+    [
+     "18.6",
+     "Wearable Device Ecosystem"
+    ],
+    [
+     "18.7",
+     "IoMT Network Architecture"
+    ],
+    [
+     "18.8",
+     "Extended Reality in Healthcare"
+    ],
+    [
+     "18.9",
+     "Smart Implant Architecture"
+    ],
+    [
+     "18.10",
+     "Tissue Engineering Paradigm"
+    ],
+    [
+     "18.11",
+     "AI-Powered Device Architecture"
+    ],
+    [
+     "18.12",
+     "Cybersecurity Framework for Medical Devices"
+    ]
+   ],
+   "tables": [],
+   "sections": [
+    "Introduction to Emerging Technologies",
+    "Bioprinting and Tissue Engineering",
+    "Robotics in Medical Devices",
+    "Wearable Devices and Remote Patient Monitoring",
+    "Internet of Medical Things (IoMT)",
+    "Challenges",
+    "Extended Reality Technologies (XR/VR/AR)",
+    "Smart Implants and Connected Devices",
+    "AI-Powered and Cloud-Connected Medical Devices",
+    "Industry Case Studies"
+   ],
+   "glossary_count": 21,
+   "references_count": 15
+  },
+  {
+   "num": 19,
+   "id": "ch19",
+   "title": "Healthcare Data, AI Analytics & Interoperability",
+   "subtitle": "",
+   "figures": [
+    [
+     "19.1",
+     "Healthcare Data Ecosystem Architecture"
+    ],
+    [
+     "19.2",
+     "ABDM Ecosystem Architecture"
+    ],
+    [
+     "19.3",
+     "FHIR-Based Interoperability Architecture"
+    ],
+    [
+     "19.4",
+     "IEEE 11073 Device Integration"
+    ],
+    [
+     "19.5",
+     "AI/ML Analytics Pipeline"
+    ],
+    [
+     "19.6",
+     "IoMT Ecosystem Architecture"
+    ],
+    [
+     "19.7",
+     "Healthcare Cloud Architecture"
+    ],
+    [
+     "19.8",
+     "Health Information Exchange Architecture"
+    ]
+   ],
+   "tables": [],
+   "sections": [
+    "Introduction to Healthcare Data Ecosystems",
+    "The Digital Health Data Challenge",
+    "The Interoperability Imperative",
+    "Types and Sources of Healthcare Data",
+    "Table 19.1 -- Healthcare Data Classification Matrix",
+    "Electronic Health Records (EHR) and Electronic Medical Records (EMR)",
+    "Interoperability Standards and Frameworks",
+    "HL7 Messaging Standards",
+    "Fast Healthcare Interoperability Resources (FHIR)",
+    "DICOM for Medical Imaging",
+    "IEEE 11073 for Personal Health Devices"
+   ],
+   "glossary_count": 25,
+   "references_count": 15
+  },
+  {
+   "num": 20,
+   "id": "ch20",
+   "title": "Career Pathways, Job Roles & Skill Development",
+   "subtitle": "Industry Roles • Competencies • Roadmaps • Skill Matrix • Training Pathways • Professional Development",
+   "figures": [
+    [
+     "20.1",
+     "Medical Device Industry Career Ecosystem"
+    ],
+    [
+     "20.2",
+     "Career Categories in Medical Devices"
+    ],
+    [
+     "20.3",
+     "Job Roles by Functional Department"
+    ],
+    [
+     "20.4",
+     "Career Progression Ladder"
+    ],
+    [
+     "20.5",
+     "Emerging Career Trends in MedTech"
+    ]
+   ],
+   "tables": [],
+   "sections": [
+    "Introduction",
+    "Research &amp; Development (R&amp;D)",
+    "Core Job Categories",
+    "Detailed Job Role Descriptions",
+    "Skill Matrix and Competency Frameworks",
+    "Professional Certifications and Training Programs",
+    "Emerging Job Trends and Future Opportunities",
+    "Building Employability and Professional Networks"
+   ],
+   "glossary_count": 10,
+   "references_count": 8
+  }
+ ]
+}

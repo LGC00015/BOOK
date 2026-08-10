@@ -1,0 +1,2315 @@
+{
+ "num": 8,
+ "id": "ch08",
+ "title": "Biomechanics & Biocompatibility of Medical Devices",
+ "subtitle": "Stress • Strain • Fatigue • Wear • Tissue Response • ISO 10993 • Material-Body Interactions",
+ "overview": [
+  "Biomechanics examines how medical devices interact with human tissues under mechanical forces, while biocompatibility focuses on biological responses to device materials. Together, these disciplines determine whether a device performs safely without causing harmful reactions. This chapter integrates engineering principles—including stress, strain, fatigue, and wear—with biological responses such as inflammation, immune reactions, and tissue integration. Understanding these concepts is essential for designing safe, effective, and durable medical devices."
+ ],
+ "clos": [
+  "Explain fundamental biomechanical principles relevant to medical device design and function.",
+  "Define and differentiate between stress, strain, elasticity, plasticity, and fatigue.",
+  "Analyze how mechanical forces affect implant performance and longevity.",
+  "Identify common failure mechanisms including wear, corrosion, and fatigue failure.",
+  "Interpret biocompatibility principles and tissue response mechanisms.",
+  "Apply ISO 10993 biological evaluation framework to device safety assessment.",
+  "Evaluate device safety based on integrated mechanical and biological factors.",
+  "Recognize the clinical implications of biomechanical and biocompatibility failures."
+ ],
+ "keywords": [
+  "Biomechanics",
+  "stress",
+  "strain",
+  "Young's modulus",
+  "fatigue",
+  "wear",
+  "corrosion",
+  "biocompatibility",
+  "ISO 10993",
+  "inflammation",
+  "tissue response",
+  "osseointegration",
+  "cytotoxicity",
+  "hemocompatibility"
+ ],
+ "roadmap": [
+  "Introduction to biomechanics and biocompatibility",
+  "Fundamental biomechanical concepts",
+  "Forces acting on medical devices",
+  "Mechanical properties of device materials",
+  "Failure mechanisms in medical devices",
+  "Wear and corrosion phenomena",
+  "Biocompatibility principles",
+  "Body-device interactions",
+  "ISO 10993 biological evaluation framework",
+  "Special considerations by device type",
+  "Case studies",
+  "Glossary",
+  "Quick recap",
+  "References"
+ ],
+ "blocks": [
+  {
+   "t": "h2",
+   "text": "Introduction",
+   "num": "8.1"
+  },
+  {
+   "t": "p",
+   "html": "Medical devices must simultaneously meet two critical requirements: they must withstand mechanical forces within the human body without breaking, deforming, or failing, and they must not trigger harmful biological reactions. The integration of biomechanics and biocompatibility is fundamental to device safety and efficacy."
+  },
+  {
+   "t": "h4",
+   "text": "Real-World Examples"
+  },
+  {
+   "t": "p",
+   "html": "<strong>Hip Implant:</strong>"
+  },
+  {
+   "t": "p",
+   "html": "Must support body weight (biomechanical requirement)"
+  },
+  {
+   "t": "p",
+   "html": "Must integrate with bone without causing inflammation (biocompatibility requirement)"
+  },
+  {
+   "t": "h4",
+   "text": "Pacemaker Lead"
+  },
+  {
+   "t": "p",
+   "html": "Must bend repeatedly with cardiac motion (biomechanical requirement) Must not cause thrombosis or inflammation (biocompatibility requirement)"
+  },
+  {
+   "t": "p",
+   "html": "The convergence of biomechanics and biocompatibility forms the foundation of safe and effective medical device design."
+  },
+  {
+   "t": "h2",
+   "text": "Fundamental Biomechanical Concepts",
+   "num": "8.2"
+  },
+  {
+   "t": "p",
+   "html": "Understanding basic mechanical principles is essential for evaluating device performance under physiological conditions."
+  },
+  {
+   "t": "h3",
+   "text": "Stress (σ)"
+  },
+  {
+   "t": "p",
+   "html": "<strong>Definition: </strong>Force applied per unit area."
+  },
+  {
+   "t": "h4",
+   "text": "Formula"
+  },
+  {
+   "t": "p",
+   "html": "𝐹"
+  },
+  {
+   "t": "fig",
+   "src": "images/ch08_fig01.jpg",
+   "w": 21,
+   "h": 3,
+   "num": "8.1",
+   "caption": ""
+  },
+  {
+   "t": "p",
+   "html": "𝜎 ="
+  },
+  {
+   "t": "p",
+   "html": "𝐴"
+  },
+  {
+   "t": "p",
+   "html": "Where:"
+  },
+  {
+   "t": "p",
+   "html": "σ = Stress (Pa or N/m²)"
+  },
+  {
+   "t": "p",
+   "html": "F = Applied force (N)"
+  },
+  {
+   "t": "p",
+   "html": "A = Cross-sectional area (m²)"
+  },
+  {
+   "t": "p",
+   "html": "<strong>Units: </strong>Pascals (Pa), Megapascals (MPa), or Gigapascals (GPa)"
+  },
+  {
+   "t": "h3",
+   "text": "Strain (ε)"
+  },
+  {
+   "t": "p",
+   "html": "<strong>Definition: </strong>Deformation of material relative to its original length."
+  },
+  {
+   "t": "h4",
+   "text": "Formula"
+  },
+  {
+   "t": "p",
+   "html": "𝜖 ="
+  },
+  {
+   "t": "p",
+   "html": "Δ𝐿"
+  },
+  {
+   "t": "p",
+   "html": "𝐿0"
+  },
+  {
+   "t": "p",
+   "html": "Where:"
+  },
+  {
+   "t": "p",
+   "html": "ε = Strain (dimensionless or %) ΔL = Change in length (m)"
+  },
+  {
+   "t": "p",
+   "html": "L₀ = Original length (m)"
+  },
+  {
+   "t": "p",
+   "html": "<strong>Units: </strong>Dimensionless ratio or percentage"
+  },
+  {
+   "t": "h3",
+   "text": "Elastic Region"
+  },
+  {
+   "t": "p",
+   "html": "The material returns to its original shape when stress is removed. Deformation is reversible and temporary."
+  },
+  {
+   "t": "h3",
+   "text": "Plastic Region"
+  },
+  {
+   "t": "p",
+   "html": "The material undergoes permanent deformation. The original shape cannot be recovered even after stress removal."
+  },
+  {
+   "t": "h3",
+   "text": "Young's Modulus (E)"
+  },
+  {
+   "t": "p",
+   "html": "<strong>Definition: </strong>Measure of material stiffness, representing the ratio of stress to strain in the elastic region."
+  },
+  {
+   "t": "h4",
+   "text": "Formula"
+  },
+  {
+   "t": "p",
+   "html": "𝜎"
+  },
+  {
+   "t": "fig",
+   "src": "images/ch08_fig02.jpg",
+   "w": 20,
+   "h": 2,
+   "num": "8.2",
+   "caption": ""
+  },
+  {
+   "t": "p",
+   "html": "𝐸 ="
+  },
+  {
+   "t": "p",
+   "html": "𝜖"
+  },
+  {
+   "t": "h4",
+   "text": "Significance"
+  },
+  {
+   "t": "p",
+   "html": "Higher modulus = Stiffer material Lower modulus = More flexible material"
+  },
+  {
+   "t": "fig",
+   "src": "images/ch08_fig03.jpg",
+   "w": 401,
+   "h": 264,
+   "num": "8.3",
+   "caption": "Stress-Strain Curve Description: A comprehensive stress-strain curve displaying:"
+  },
+  {
+   "t": "p",
+   "html": "Linear elastic region (slope = Young's modulus)"
+  },
+  {
+   "t": "p",
+   "html": "Yield point (transition from elastic to plastic behavior) Plastic deformation region"
+  },
+  {
+   "t": "p",
+   "html": "Ultimate tensile strength (maximum stress before failure) Fracture point (material failure)"
+  },
+  {
+   "t": "p",
+   "html": "Annotations showing elastic recovery vs. permanent deformation"
+  },
+  {
+   "t": "box",
+   "kind": "example",
+   "label": "Example Box 8.1",
+   "title": "Stress Shielding in Orthopedic Implants",
+   "blocks": [
+    {
+     "t": "p",
+     "html": "<strong>Clinical Problem: </strong>Titanium has a Young's modulus (~110 GPa) significantly higher than cortical bone (~18 GPa). When a titanium implant bears load, it shields the surrounding bone from normal stress."
+    },
+    {
+     "t": "p",
+     "html": "<strong>Consequence: </strong>Bone remodels according to Wolff's Law—reduced mechanical stress leads to bone resorption and weakening around the implant."
+    },
+    {
+     "t": "h4",
+     "text": "Solution"
+    },
+    {
+     "t": "p",
+     "html": "Design implants with porosity to reduce effective stiffness Use materials with modulus closer to bone"
+    },
+    {
+     "t": "p",
+     "html": "Optimize implant geometry to distribute stress more physiologically"
+    }
+   ]
+  },
+  {
+   "t": "h2",
+   "text": "Forces Acting on Medical Devices",
+   "num": "8.3"
+  },
+  {
+   "t": "p",
+   "html": "Medical devices experience complex loading conditions in the human body."
+  },
+  {
+   "t": "h3",
+   "text": "Types of Forces"
+  },
+  {
+   "t": "ul",
+   "items": [
+    "<strong>Compression</strong>"
+   ]
+  },
+  {
+   "t": "p",
+   "html": "Force that squashes or compresses material Examples: Hip joint implants, vertebral implants"
+  },
+  {
+   "t": "h3",
+   "text": "Tension"
+  },
+  {
+   "t": "p",
+   "html": "Force that stretches or elongates material Examples: Sutures, catheter tubing"
+  },
+  {
+   "t": "h3",
+   "text": "Shear"
+  },
+  {
+   "t": "p",
+   "html": "Force parallel to material surface causing sliding Examples: Bone screws, joint surfaces"
+  },
+  {
+   "t": "h3",
+   "text": "Bending"
+  },
+  {
+   "t": "p",
+   "html": "Combination of tension and compression Examples: Pacemaker leads, dental implants"
+  },
+  {
+   "t": "h3",
+   "text": "Torsion"
+  },
+  {
+   "t": "p",
+   "html": "<strong>Twisting force around an axis Examples:</strong> Screws, catheter guidewires"
+  },
+  {
+   "t": "h3",
+   "text": "Cyclic Loading"
+  },
+  {
+   "t": "p",
+   "html": "Repeated application of force"
+  },
+  {
+   "t": "p",
+   "html": "<strong>Examples:</strong> Heart valves, orthopedic implants"
+  },
+  {
+   "t": "h4",
+   "text": "Device-Specific Loading Examples Heart Valves"
+  },
+  {
+   "t": "p",
+   "html": "Experience over 40 million cycles per year Must withstand cyclic opening/closing forces Require excellent fatigue resistance <strong>Catheters:</strong>"
+  },
+  {
+   "t": "p",
+   "html": "Subject to bending during insertion and navigation Experience torsional forces during manipulation Must resist kinking under compression"
+  },
+  {
+   "t": "h4",
+   "text": "Dental Implants"
+  },
+  {
+   "t": "p",
+   "html": "Bear compressive forces during chewing (100-300 N) Experience shear forces during lateral jaw movement Must distribute stress to surrounding bone"
+  },
+  {
+   "t": "h4",
+   "text": "Coronary Stents"
+  },
+  {
+   "t": "p",
+   "html": "Subject to radial compression from vessel walls Experience cyclic bending with cardiac motion Must maintain patency under dynamic loading"
+  },
+  {
+   "t": "fig",
+   "src": "images/ch08_fig04.jpg",
+   "w": 450,
+   "h": 302,
+   "num": "8.4",
+   "caption": "Forces on a Hip Implant Description: Anatomical diagram of hip implant showing:"
+  },
+  {
+   "t": "p",
+   "html": "Vertical compressive forces from body weight (arrows pointing downward) Shear forces at bone-implant interface (horizontal arrows) Rotational/torsional forces during walking (curved arrows)"
+  },
+  {
+   "t": "p",
+   "html": "Force magnitudes labeled (typically 3-5× body weight during walking) Stress concentration zones highlighted in red"
+  },
+  {
+   "t": "h2",
+   "text": "Mechanical Properties of Device Materials",
+   "num": "8.4"
+  },
+  {
+   "t": "p",
+   "html": "Understanding material properties enables appropriate material selection for specific applications."
+  },
+  {
+   "t": "h3",
+   "text": "Strength"
+  },
+  {
+   "t": "p",
+   "html": "<strong>Definition: </strong>Maximum stress a material can withstand without failure."
+  },
+  {
+   "t": "h4",
+   "text": "Types"
+  },
+  {
+   "t": "p",
+   "html": "<strong>Tensile strength: </strong>Resistance to pulling forces <strong>Compressive strength: </strong>Resistance to crushing forces <strong>Shear strength: </strong>Resistance to sliding forces"
+  },
+  {
+   "t": "h3",
+   "text": "Toughness"
+  },
+  {
+   "t": "p",
+   "html": "<strong>Definition: </strong>Ability to absorb energy before fracture; resistance to crack propagation."
+  },
+  {
+   "t": "p",
+   "html": "<strong>Clinical Significance: </strong>Tough materials prevent catastrophic brittle failure."
+  },
+  {
+   "t": "h3",
+   "text": "Hardness"
+  },
+  {
+   "t": "p",
+   "html": "<strong>Definition: </strong>Resistance to surface deformation, indentation, or scratching."
+  },
+  {
+   "t": "h4",
+   "text": "Measurement Methods"
+  },
+  {
+   "t": "p",
+   "html": "Rockwell hardness Vickers hardness Brinell hardness"
+  },
+  {
+   "t": "h3",
+   "text": "Ductility"
+  },
+  {
+   "t": "p",
+   "html": "<strong>Definition: </strong>Ability to undergo plastic deformation without fracturing."
+  },
+  {
+   "t": "h4",
+   "text": "Characteristics"
+  },
+  {
+   "t": "p",
+   "html": "High ductility = Material can be drawn into wires Low ductility = Brittle behavior"
+  },
+  {
+   "t": "h3",
+   "text": "Fatigue Resistance"
+  },
+  {
+   "t": "p",
+   "html": "<strong>Definition: </strong>Ability to withstand repeated loading cycles without failure."
+  },
+  {
+   "t": "p",
+   "html": "<strong>Clinical Importance: </strong>Critical for long-term implants and devices experiencing cyclic loading."
+  },
+  {
+   "t": "h3",
+   "text": "Table 8.1 -- Mechanical Properties of Common Device Materials"
+  },
+  {
+   "t": "p",
+   "html": "<strong>Applications</strong>"
+  },
+  {
+   "t": "p",
+   "html": "Polyethylene (UHMWPE)"
+  },
+  {
+   "t": "p",
+   "html": "Reference tissue"
+  },
+  {
+   "t": "p",
+   "html": "Instruments, temporary implants"
+  },
+  {
+   "t": "p",
+   "html": "Orthopedic implants, dental"
+  },
+  {
+   "t": "p",
+   "html": "Joint replacements"
+  },
+  {
+   "t": "p",
+   "html": "0.8 40-50 Joint bearings"
+  },
+  {
+   "t": "p",
+   "html": "Silicone Rubber 0.001-0.05 7-10 Catheters, soft tissue"
+  },
+  {
+   "t": "h3",
+   "text": "Safety Note 8.1"
+  },
+  {
+   "t": "p",
+   "html": "<strong>Critical Observation: </strong>Fatigue failure is the most common failure mode for: Orthopedic implants (hip stems, bone plates)"
+  },
+  {
+   "t": "p",
+   "html": "Pacemaker leads Dental implants Cardiovascular stents"
+  },
+  {
+   "t": "p",
+   "html": "<strong>Implication: </strong>Devices must undergo rigorous fatigue testing simulating years of physiological use before clinical deployment."
+  },
+  {
+   "t": "h2",
+   "text": "Failure Mechanisms in Medical Devices",
+   "num": "8.5"
+  },
+  {
+   "t": "p",
+   "html": "Understanding failure modes is essential for risk management and device improvement."
+  },
+  {
+   "t": "h4",
+   "text": "Mechanical Failure Characteristics"
+  },
+  {
+   "t": "p",
+   "html": "Sudden fracture or breakage"
+  },
+  {
+   "t": "p",
+   "html": "Plastic deformation beyond functional limits Crack formation and propagation <strong>Examples:</strong>"
+  },
+  {
+   "t": "p",
+   "html": "Bone plate fracture Catheter rupture Implant stem breakage"
+  },
+  {
+   "t": "h4",
+   "text": "Fatigue Failure Definition"
+  },
+  {
+   "t": "p",
+   "html": "Progressive structural damage under repeated cyclic loading, occurring at stress levels below the material's yield strength."
+  },
+  {
+   "t": "h4",
+   "text": "Mechanism"
+  },
+  {
+   "t": "p",
+   "html": "Crack initiation at surface defects or stress concentrations Gradual crack propagation with each loading cycle"
+  },
+  {
+   "t": "p",
+   "html": "Sudden catastrophic failure when crack reaches critical size"
+  },
+  {
+   "t": "h4",
+   "text": "Clinical Examples"
+  },
+  {
+   "t": "p",
+   "html": "Pacemaker lead fracture after millions of cardiac cycles Hip implant stem fracture after years of use"
+  },
+  {
+   "t": "p",
+   "html": "Dental implant screw failure"
+  },
+  {
+   "t": "h4",
+   "text": "Prevention Strategies"
+  },
+  {
+   "t": "p",
+   "html": "Surface finishing to eliminate stress concentrators Material selection with high fatigue limit"
+  },
+  {
+   "t": "p",
+   "html": "Design optimization to minimize stress concentrations"
+  },
+  {
+   "t": "h4",
+   "text": "Creep Definition"
+  },
+  {
+   "t": "p",
+   "html": "Time-dependent, progressive plastic deformation under constant stress, particularly at elevated temperatures."
+  },
+  {
+   "t": "h4",
+   "text": "Characteristics"
+  },
+  {
+   "t": "p",
+   "html": "Occurs over extended periods"
+  },
+  {
+   "t": "p",
+   "html": "More pronounced in polymeric materials Temperature-dependent phenomenon <strong>Clinical Relevance:</strong>"
+  },
+  {
+   "t": "p",
+   "html": "Polyethylene wear in joint replacements Catheter dimensional changes over time Polymer component degradation"
+  },
+  {
+   "t": "h4",
+   "text": "Wear Definition"
+  },
+  {
+   "t": "p",
+   "html": "Progressive material loss from surfaces in relative motion due to friction."
+  },
+  {
+   "t": "h4",
+   "text": "Clinical Importance"
+  },
+  {
+   "t": "p",
+   "html": "Critical consideration for joint replacements where articulating surfaces generate wear debris."
+  },
+  {
+   "t": "h3",
+   "text": "Detailed discussion continues in Section 8.6"
+  },
+  {
+   "t": "fig",
+   "src": "images/ch08_fig05.jpg",
+   "w": 601,
+   "h": 320,
+   "num": "8.5",
+   "caption": "Wear Mechanisms Description: Three-panel illustration showing:"
+  },
+  {
+   "t": "h4",
+   "text": "Panel 1 - Abrasive Wear"
+  },
+  {
+   "t": "p",
+   "html": "Hard particles or asperities plowing through softer surface Material removal as grooves or scratches"
+  },
+  {
+   "t": "p",
+   "html": "<strong>Example:</strong> Third-body particles in joint space"
+  },
+  {
+   "t": "h4",
+   "text": "Panel 2 - Adhesive Wear"
+  },
+  {
+   "t": "p",
+   "html": "Surface asperities welding together under pressure Material transfer between surfaces"
+  },
+  {
+   "t": "p",
+   "html": "<strong>Example:</strong> Metal-on-metal implant surfaces"
+  },
+  {
+   "t": "h4",
+   "text": "Panel 3 - Fatigue Wear"
+  },
+  {
+   "t": "p",
+   "html": "Repeated stress cycles causing surface/subsurface cracks Material detachment as particles"
+  },
+  {
+   "t": "p",
+   "html": "<strong>Example:</strong> Polyethylene delamination in hip implants"
+  },
+  {
+   "t": "ul",
+   "items": [
+    "<strong>Wear and Corrosion in Medical Implants</strong>",
+    "<strong>Wear Mechanisms</strong>",
+    "<strong>Abrasive Wear</strong>"
+   ]
+  },
+  {
+   "t": "p",
+   "html": "<strong>Mechanism: </strong>Hard particles or rough surfaces remove material through mechanical action."
+  },
+  {
+   "t": "h4",
+   "text": "Sources in Body"
+  },
+  {
+   "t": "p",
+   "html": "Bone cement particles Metal debris"
+  },
+  {
+   "t": "p",
+   "html": "Ceramic fragments"
+  },
+  {
+   "t": "h3",
+   "text": "Adhesive Wear"
+  },
+  {
+   "t": "p",
+   "html": "<strong>Mechanism: </strong>Surface contact points temporarily weld, then tear apart, transferring material."
+  },
+  {
+   "t": "p",
+   "html": "<strong>Common In: </strong>Metal-on-metal articulations"
+  },
+  {
+   "t": "h3",
+   "text": "Fatigue Wear"
+  },
+  {
+   "t": "p",
+   "html": "<strong>Mechanism: </strong>Cyclic stress leads to crack formation and particle generation."
+  },
+  {
+   "t": "p",
+   "html": "<strong>Example: </strong>Polyethylene delamination in total joint replacements"
+  },
+  {
+   "t": "h3",
+   "text": "Corrosive Wear (Tribocorrosion)"
+  },
+  {
+   "t": "p",
+   "html": "<strong>Mechanism: </strong>Combined mechanical wear and electrochemical corrosion."
+  },
+  {
+   "t": "p",
+   "html": "<strong>Result: </strong>Accelerated material degradation"
+  },
+  {
+   "t": "h4",
+   "text": "Clinical Significance of Wear Osteolysis"
+  },
+  {
+   "t": "p",
+   "html": "Wear particles trigger inflammatory response Bone resorption around implant"
+  },
+  {
+   "t": "p",
+   "html": "Implant loosening and failure"
+  },
+  {
+   "t": "h4",
+   "text": "Revision Surgery"
+  },
+  {
+   "t": "p",
+   "html": "Excessive wear necessitates implant replacement Increased patient morbidity"
+  },
+  {
+   "t": "p",
+   "html": "Higher healthcare costs"
+  },
+  {
+   "t": "h3",
+   "text": "Corrosion in Medical Implants"
+  },
+  {
+   "t": "p",
+   "html": "<strong>Definition:</strong>"
+  },
+  {
+   "t": "p",
+   "html": "Electrochemical degradation of metals in physiological environment."
+  },
+  {
+   "t": "h4",
+   "text": "Types of Corrosion"
+  },
+  {
+   "t": "ul",
+   "items": [
+    "<strong>Uniform Corrosion </strong>Even surface degradation Relatively predictable Slower rate"
+   ]
+  },
+  {
+   "t": "h3",
+   "text": "Pitting Corrosion"
+  },
+  {
+   "t": "p",
+   "html": "Localized attack creating cavities Initiates at surface defects"
+  },
+  {
+   "t": "p",
+   "html": "Particularly dangerous as it can penetrate deeply"
+  },
+  {
+   "t": "p",
+   "html": "<strong>Susceptible Materials: </strong>Stainless steel in chloride-rich bodily fluids"
+  },
+  {
+   "t": "h3",
+   "text": "Galvanic Corrosion"
+  },
+  {
+   "t": "p",
+   "html": "Occurs when dissimilar metals contact in electrolyte More active metal corrodes preferentially"
+  },
+  {
+   "t": "p",
+   "html": "Common at modular junctions"
+  },
+  {
+   "t": "p",
+   "html": "<strong>Example: </strong>Stainless steel screw in titanium plate"
+  },
+  {
+   "t": "h3",
+   "text": "Crevice Corrosion"
+  },
+  {
+   "t": "p",
+   "html": "Occurs in confined spaces with limited oxygen Common at implant interfaces"
+  },
+  {
+   "t": "p",
+   "html": "Accelerated under low-oxygen conditions"
+  },
+  {
+   "t": "p",
+   "html": "<strong>Example: </strong>Screw-plate interfaces, modular implant junctions"
+  },
+  {
+   "t": "h3",
+   "text": "Fretting Corrosion"
+  },
+  {
+   "t": "p",
+   "html": "Combined mechanical wear and corrosion Occurs at micromotion interfaces Generates particulate debris"
+  },
+  {
+   "t": "p",
+   "html": "<strong>Example: </strong>Modular hip implant taper junctions"
+  },
+  {
+   "t": "p",
+   "html": "<strong>Table 8.2 -- Corrosion Resistance of Implant Metals</strong>"
+  },
+  {
+   "t": "p",
+   "html": "<strong>Material Corrosion Resistance</strong>"
+  },
+  {
+   "t": "p",
+   "html": "<strong>Mechanism Clinical Use</strong>"
+  },
+  {
+   "t": "p",
+   "html": "Stainless Steel 316L"
+  },
+  {
+   "t": "p",
+   "html": "Moderate Prone to pitting in saline"
+  },
+  {
+   "t": "p",
+   "html": "Short-term implants, instruments"
+  },
+  {
+   "t": "h3",
+   "text": "Material Corrosion Resistance"
+  },
+  {
+   "t": "p",
+   "html": "<strong>Mechanism Clinical Use</strong>"
+  },
+  {
+   "t": "p",
+   "html": "Titanium &amp; Alloys"
+  },
+  {
+   "t": "p",
+   "html": "Excellent Stable oxide layer (TiO₂)"
+  },
+  {
+   "t": "p",
+   "html": "Long-term implants, bone integration"
+  },
+  {
+   "t": "p",
+   "html": "Cobalt-Chrome Very Good Chromium oxide"
+  },
+  {
+   "t": "p",
+   "html": "passivation"
+  },
+  {
+   "t": "p",
+   "html": "Joint replacements"
+  },
+  {
+   "t": "p",
+   "html": "Nitinol Good Titanium oxide forms Stents, guidewires Tantalum Excellent Dense oxide layer Bone scaffolds, markers"
+  },
+  {
+   "t": "box",
+   "kind": "example",
+   "label": "Example Box 8.2",
+   "title": "Material Selection Case Study",
+   "blocks": [
+    {
+     "t": "p",
+     "html": "<strong>Clinical Scenario: </strong>Selection of material for permanent orthopedic implant in load-bearing application."
+    },
+    {
+     "t": "h4",
+     "text": "Options Considered"
+    },
+    {
+     "t": "p",
+     "html": "Stainless Steel 316L"
+    },
+    {
+     "t": "p",
+     "html": "Titanium Grade 5 (Ti-6Al-4V)"
+    },
+    {
+     "t": "h4",
+     "text": "Evaluation"
+    },
+    {
+     "t": "p",
+     "html": "<strong>Stainless Steel:</strong>"
+    },
+    {
+     "t": "ul",
+     "items": [
+      "High strength",
+      "Lower cost"
+     ]
+    },
+    {
+     "t": "p",
+     "html": "✗ Prone to pitting corrosion in chloride environment"
+    },
+    {
+     "t": "p",
+     "html": "✗ Higher elastic modulus (stress shielding concern)"
+    },
+    {
+     "t": "h4",
+     "text": "Titanium Alloy"
+    },
+    {
+     "t": "ul",
+     "items": [
+      "Excellent corrosion resistance",
+      "Superior biocompatibility",
+      "Lower modulus (reduced stress shielding)",
+      "Osseointegration capability"
+     ]
+    },
+    {
+     "t": "p",
+     "html": "✗ Higher cost"
+    },
+    {
+     "t": "p",
+     "html": "<strong>Decision: </strong>Titanium Grade 5 selected for long-term implant due to superior corrosion resistance and biological integration, despite higher cost."
+    }
+   ]
+  },
+  {
+   "t": "h3",
+   "text": "Introduction to Biocompatibility"
+  },
+  {
+   "t": "ul",
+   "items": [
+    "<strong>Definition</strong>"
+   ]
+  },
+  {
+   "t": "p",
+   "html": "<strong>Biocompatibility </strong>is the ability of a material to perform with an appropriate host response in a specific application."
+  },
+  {
+   "t": "h4",
+   "text": "Key Concept"
+  },
+  {
+   "t": "p",
+   "html": "Biocompatibility is not an inherent material property but depends on: Material characteristics"
+  },
+  {
+   "t": "p",
+   "html": "Device design Duration of contact Application site Patient factors"
+  },
+  {
+   "t": "h3",
+   "text": "Essential Requirements"
+  },
+  {
+   "t": "p",
+   "html": "A biocompatible material must demonstrate:"
+  },
+  {
+   "t": "p",
+   "html": "<strong>Non-toxicity: </strong>Does not release harmful substances"
+  },
+  {
+   "t": "p",
+   "html": "<strong>Non-inflammatory: </strong>Does not trigger excessive immune response"
+  },
+  {
+   "t": "p",
+   "html": "<strong>Non-thrombogenic: </strong>Does not promote blood clotting (for blood-contacting devices)"
+  },
+  {
+   "t": "p",
+   "html": "<strong>Non-carcinogenic: </strong>Does not induce cancer"
+  },
+  {
+   "t": "p",
+   "html": "<strong>Chemical stability: </strong>Maintains properties in physiological environment"
+  },
+  {
+   "t": "p",
+   "html": "<strong>Non-immunogenic: </strong>Does not trigger immune rejection"
+  },
+  {
+   "t": "p",
+   "html": "<strong>Sterility maintenance: </strong>Can be effectively sterilized"
+  },
+  {
+   "t": "fig",
+   "src": "images/ch08_fig06.jpg",
+   "w": 456,
+   "h": 302,
+   "num": "8.6",
+   "caption": "Biocompatibility Requirements"
+  },
+  {
+   "t": "p",
+   "html": "<strong>Description: </strong>Central hexagon labeled \"Biocompatibility\" with six surrounding elements:"
+  },
+  {
+   "t": "p",
+   "html": "<strong>Cytotoxicity Testing </strong>(cell-level safety)"
+  },
+  {
+   "t": "p",
+   "html": "<strong>Sensitization Assessment </strong>(allergic potential) <strong>Irritation/Reactivity </strong>(local tissue response) <strong>Hemocompatibility </strong>(blood compatibility) <strong>Systemic Toxicity </strong>(whole-body effects)"
+  },
+  {
+   "t": "p",
+   "html": "<strong>Implantation Response </strong>(long-term tissue integration)"
+  },
+  {
+   "t": "p",
+   "html": "Color-coded arrows indicating severity assessment: Green (pass), Yellow (conditional), Red (fail)"
+  },
+  {
+   "t": "h2",
+   "text": "Body-Device Interactions",
+   "num": "8.6"
+  },
+  {
+   "t": "p",
+   "html": "The human body's response to medical devices ranges from beneficial integration to harmful rejection."
+  },
+  {
+   "t": "h3",
+   "text": "Positive Interactions"
+  },
+  {
+   "t": "ul",
+   "items": [
+    "<strong>Osseointegration</strong>"
+   ]
+  },
+  {
+   "t": "p",
+   "html": "<strong>Definition: </strong>Direct structural and functional connection between living bone and implant surface."
+  },
+  {
+   "t": "h4",
+   "text": "Mechanism"
+  },
+  {
+   "t": "p",
+   "html": "Titanium forms stable oxide layer (TiO₂) Bone cells attach to oxide surface"
+  },
+  {
+   "t": "p",
+   "html": "Bone matrix deposited directly on implant Mechanical interlocking develops <strong>Applications:</strong>"
+  },
+  {
+   "t": "p",
+   "html": "Dental implants Orthopedic implants"
+  },
+  {
+   "t": "p",
+   "html": "Bone-anchored hearing aids"
+  },
+  {
+   "t": "h4",
+   "text": "Success Factors"
+  },
+  {
+   "t": "p",
+   "html": "Surface roughness (promotes cell attachment)"
+  },
+  {
+   "t": "p",
+   "html": "Chemical composition (titanium or hydroxyapatite-coated) Implant stability during healing"
+  },
+  {
+   "t": "p",
+   "html": "Adequate blood supply"
+  },
+  {
+   "t": "h3",
+   "text": "Stable Fibrous Encapsulation"
+  },
+  {
+   "t": "p",
+   "html": "<strong>Definition: </strong>Thin, non-inflammatory fibrous capsule forms around implant."
+  },
+  {
+   "t": "h4",
+   "text": "Characteristics"
+  },
+  {
+   "t": "p",
+   "html": "Minimal foreign body reaction Does not impair device function"
+  },
+  {
+   "t": "p",
+   "html": "Provides mechanical stability"
+  },
+  {
+   "t": "h4",
+   "text": "Examples"
+  },
+  {
+   "t": "p",
+   "html": "Pacemaker generators"
+  },
+  {
+   "t": "p",
+   "html": "Silicone breast implants (when properly designed)"
+  },
+  {
+   "t": "h3",
+   "text": "Negative Interactions"
+  },
+  {
+   "t": "ul",
+   "items": [
+    "<strong>Acute Inflammation</strong>"
+   ]
+  },
+  {
+   "t": "p",
+   "html": "<strong>Timeline: </strong>Hours to days post-implantation"
+  },
+  {
+   "t": "h4",
+   "text": "Mechanism"
+  },
+  {
+   "t": "p",
+   "html": "Neutrophil infiltration"
+  },
+  {
+   "t": "p",
+   "html": "Release of inflammatory mediators Tissue swelling and redness <strong>Causes:</strong>"
+  },
+  {
+   "t": "p",
+   "html": "Surgical trauma"
+  },
+  {
+   "t": "p",
+   "html": "Material-induced irritation Contamination"
+  },
+  {
+   "t": "ul",
+   "items": [
+    "<strong>Chronic Inflammation Timeline: </strong>Weeks to months <strong>Mechanism:</strong>"
+   ]
+  },
+  {
+   "t": "p",
+   "html": "Persistent presence of macrophages and lymphocytes Continuous release of inflammatory cytokines Tissue destruction"
+  },
+  {
+   "t": "h4",
+   "text": "Consequences"
+  },
+  {
+   "t": "p",
+   "html": "Implant loosening Pain"
+  },
+  {
+   "t": "p",
+   "html": "Device failure"
+  },
+  {
+   "t": "h4",
+   "text": "Fibrosis (Excessive Scarring) Characteristics"
+  },
+  {
+   "t": "p",
+   "html": "Thick, dense fibrous capsule Can impair device function May cause pain or discomfort <strong>Examples:</strong>"
+  },
+  {
+   "t": "p",
+   "html": "Breast implant capsular contracture"
+  },
+  {
+   "t": "p",
+   "html": "Pacemaker lead fibrosis"
+  },
+  {
+   "t": "h4",
+   "text": "Thrombosis Risk Devices"
+  },
+  {
+   "t": "p",
+   "html": "Cardiovascular implants Catheters"
+  },
+  {
+   "t": "p",
+   "html": "Heart valves"
+  },
+  {
+   "t": "h4",
+   "text": "Mechanism"
+  },
+  {
+   "t": "p",
+   "html": "Protein adsorption on device surface Platelet adhesion and activation Coagulation cascade initiation <strong>Prevention:</strong>"
+  },
+  {
+   "t": "p",
+   "html": "Hemocompatible surface coatings Optimized surface smoothness Anticoagulant therapy"
+  },
+  {
+   "t": "h4",
+   "text": "Infection Risk Factors"
+  },
+  {
+   "t": "p",
+   "html": "Bacterial contamination during surgery Biofilm formation on device surface Immunocompromised patients"
+  },
+  {
+   "t": "h4",
+   "text": "Serious Consequences"
+  },
+  {
+   "t": "p",
+   "html": "Device removal required Extended antibiotic therapy Potential sepsis"
+  },
+  {
+   "t": "h4",
+   "text": "Immune Response (Hypersensitivity) Mechanism"
+  },
+  {
+   "t": "p",
+   "html": "Recognition of device components as foreign antigens Antibody production"
+  },
+  {
+   "t": "p",
+   "html": "Immune-mediated tissue damage"
+  },
+  {
+   "t": "h4",
+   "text": "Common Allergens"
+  },
+  {
+   "t": "p",
+   "html": "Nickel (in some stainless steels) Chromium"
+  },
+  {
+   "t": "p",
+   "html": "Latex"
+  },
+  {
+   "t": "p",
+   "html": "Certain polymers"
+  },
+  {
+   "t": "box",
+   "kind": "example",
+   "label": "Example Box 8.3",
+   "title": "Catheter Material Selection",
+   "blocks": [
+    {
+     "t": "p",
+     "html": "<strong>Clinical Problem: </strong>Long-term central venous catheters may cause local irritation, thrombosis, and infection."
+    },
+    {
+     "t": "h4",
+     "text": "Material Comparison"
+    },
+    {
+     "t": "p",
+     "html": "<strong>PVC (Polyvinyl Chloride):</strong>"
+    },
+    {
+     "t": "p",
+     "html": "✗ Relatively stiff"
+    },
+    {
+     "t": "p",
+     "html": "✗ Higher thrombogenicity"
+    },
+    {
+     "t": "p",
+     "html": "✗ Greater tissue irritation"
+    },
+    {
+     "t": "p",
+     "html": "<strong>Use:</strong> Short-term applications only"
+    },
+    {
+     "t": "h4",
+     "text": "Silicone"
+    },
+    {
+     "t": "ul",
+     "items": [
+      "Very flexible",
+      "Excellent biocompatibility",
+      "Minimal tissue reaction",
+      "Lower infection rate"
+     ]
+    },
+    {
+     "t": "p",
+     "html": "<strong>Use:</strong> Preferred for long-term catheters"
+    },
+    {
+     "t": "h4",
+     "text": "Polyurethane"
+    },
+    {
+     "t": "ul",
+     "items": [
+      "Good flexibility",
+      "High tensile strength",
+      "Good biocompatibility"
+     ]
+    },
+    {
+     "t": "p",
+     "html": "<strong>Use:</strong> Intermediate-term applications"
+    },
+    {
+     "t": "p",
+     "html": "<strong>Optimal Selection: </strong>Silicone for long-term central lines due to superior biocompatibility and reduced irritation risk."
+    }
+   ]
+  },
+  {
+   "t": "h2",
+   "text": "ISO 10993 Biological Evaluation Framework",
+   "num": "8.7"
+  },
+  {
+   "t": "ul",
+   "items": [
+    "<strong>Overview</strong>"
+   ]
+  },
+  {
+   "t": "p",
+   "html": "<strong>ISO 10993 </strong>provides a systematic, internationally harmonized approach to biological safety testing of medical devices."
+  },
+  {
+   "t": "h4",
+   "text": "Standard Structure"
+  },
+  {
+   "t": "p",
+   "html": "<strong>ISO 10993-1:</strong> Evaluation and testing within a risk management process ISO 10993-2 to -22: Specific test methods"
+  },
+  {
+   "t": "h3",
+   "text": "Device Categorization"
+  },
+  {
+   "t": "p",
+   "html": "Testing requirements depend on:"
+  },
+  {
+   "t": "h3",
+   "text": "Nature of Body Contact"
+  },
+  {
+   "t": "p",
+   "html": "<strong>Surface contact: </strong>Skin, mucosal membrane, breached/compromised surfaces"
+  },
+  {
+   "t": "p",
+   "html": "<strong>External communicating: </strong>Blood path (indirect), tissue/bone/dentin (communicating), circulating blood"
+  },
+  {
+   "t": "p",
+   "html": "<strong>Implant: </strong>Tissue/bone, blood"
+  },
+  {
+   "t": "ul",
+   "items": [
+    "<strong>Duration of Contact Limited: </strong>≤ 24 hours"
+   ]
+  },
+  {
+   "t": "p",
+   "html": "<strong>Prolonged: </strong>&gt; 24 hours to ≤ 30 days"
+  },
+  {
+   "t": "p",
+   "html": "<strong>Permanent: </strong>&gt; 30 days"
+  },
+  {
+   "t": "h3",
+   "text": "Biological Tests in ISO 10993"
+  },
+  {
+   "t": "ul",
+   "items": [
+    "<strong>Cytotoxicity (ISO 10993-5) Purpose: </strong>Assess cell damage potential <strong>Method:</strong>"
+   ]
+  },
+  {
+   "t": "p",
+   "html": "Device extract exposed to cultured cells Cell viability measured"
+  },
+  {
+   "t": "p",
+   "html": "Lysis, membrane damage evaluated"
+  },
+  {
+   "t": "p",
+   "html": "<strong>Application: </strong>Required for all devices"
+  },
+  {
+   "t": "ul",
+   "items": [
+    "<strong>Sensitization (ISO 10993-10) Purpose: </strong>Detect allergic reaction potential <strong>Method:</strong>"
+   ]
+  },
+  {
+   "t": "p",
+   "html": "Guinea pig maximization test Local lymph node assay Repeated exposure protocol"
+  },
+  {
+   "t": "p",
+   "html": "<strong>Application: </strong>Devices with prolonged or repeated skin contact"
+  },
+  {
+   "t": "ul",
+   "items": [
+    "<strong>Irritation/Intracutaneous Reactivity (ISO 10993-10, 10993-23) Purpose: </strong>Assess local tissue irritation"
+   ]
+  },
+  {
+   "t": "h4",
+   "text": "Methods"
+  },
+  {
+   "t": "p",
+   "html": "Skin irritation test Intracutaneous injection Ocular irritation (if relevant)"
+  },
+  {
+   "t": "p",
+   "html": "<strong>Application: </strong>Skin-contacting and tissue-contacting devices"
+  },
+  {
+   "t": "h3",
+   "text": "Systemic Toxicity (ISO 10993-11)"
+  },
+  {
+   "t": "p",
+   "html": "<strong>Purpose: </strong>Evaluate whole-body effects"
+  },
+  {
+   "t": "h4",
+   "text": "Method"
+  },
+  {
+   "t": "p",
+   "html": "Extract administration (IV, IP, oral) Animal observation"
+  },
+  {
+   "t": "p",
+   "html": "Body weight, organ examination"
+  },
+  {
+   "t": "p",
+   "html": "<strong>Application: </strong>Devices with systemic exposure potential"
+  },
+  {
+   "t": "ul",
+   "items": [
+    "<strong>Genotoxicity (ISO 10993-3) Purpose: </strong>Detect DNA damage potential <strong>Tests:</strong>"
+   ]
+  },
+  {
+   "t": "p",
+   "html": "Bacterial reverse mutation (Ames test) Chromosome aberration Micronucleus test"
+  },
+  {
+   "t": "p",
+   "html": "<strong>Application: </strong>All implants and long-term devices"
+  },
+  {
+   "t": "ul",
+   "items": [
+    "<strong>Hemocompatibility (ISO 10993-4) Purpose: </strong>Assess blood compatibility <strong>Tests:</strong>"
+   ]
+  },
+  {
+   "t": "p",
+   "html": "Hemolysis (red blood cell damage) Thrombosis (clot formation) Platelet activation"
+  },
+  {
+   "t": "p",
+   "html": "Complement activation Coagulation effects"
+  },
+  {
+   "t": "p",
+   "html": "<strong>Application: </strong>Mandatory for blood-contacting devices"
+  },
+  {
+   "t": "h3",
+   "text": "Implantation (ISO 10993-6)"
+  },
+  {
+   "t": "p",
+   "html": "<strong>Purpose: </strong>Evaluate tissue response to implanted material"
+  },
+  {
+   "t": "h4",
+   "text": "Method"
+  },
+  {
+   "t": "p",
+   "html": "Material implanted in animals (typically rabbit or rodent) Histological examination at multiple timepoints"
+  },
+  {
+   "t": "p",
+   "html": "Capsule thickness, inflammation, necrosis assessed"
+  },
+  {
+   "t": "p",
+   "html": "<strong>Application: </strong>Required for implantable devices"
+  },
+  {
+   "t": "ul",
+   "items": [
+    "<strong>Chronic Toxicity (ISO 10993-11) Purpose: </strong>Long-term safety evaluation <strong>Duration: </strong>Typically 90 days to 2 years"
+   ]
+  },
+  {
+   "t": "p",
+   "html": "<strong>Application: </strong>Permanent implants"
+  },
+  {
+   "t": "ul",
+   "items": [
+    "<strong>Carcinogenicity (ISO 10993-3) Purpose: </strong>Assess cancer-causing potential <strong>Duration: </strong>Lifetime studies (18-24 months)"
+   ]
+  },
+  {
+   "t": "p",
+   "html": "<strong>Application: </strong>Permanent implants with specific risk factors"
+  },
+  {
+   "t": "ul",
+   "items": [
+    "<strong>Degradation Products (ISO 10993-9, 10993-13, 10993-14) Purpose: </strong>Identify and evaluate breakdown products <strong>Application: </strong>Absorbable/degradable devices"
+   ]
+  },
+  {
+   "t": "fig",
+   "src": "images/ch08_fig07.jpg",
+   "w": 497,
+   "h": 361,
+   "num": "8.7",
+   "caption": ""
+  },
+  {
+   "t": "p",
+   "html": "<strong>Diagram 8.1 -- ISO 10993 Test Selection Flowchart Description: </strong>Decision tree for biocompatibility testing:"
+  },
+  {
+   "t": "h3",
+   "text": "Level 1: Device Type Classification"
+  },
+  {
+   "t": "p",
+   "html": "<strong>Branching paths for:</strong> External devices, External communicating, Implant devices"
+  },
+  {
+   "t": "h3",
+   "text": "Level 2: Contact Duration"
+  },
+  {
+   "t": "p",
+   "html": "<strong>Sub-branches for:</strong> Limited (≤24h), Prolonged (24h-30d), Permanent (&gt;30d)"
+  },
+  {
+   "t": "h3",
+   "text": "Level 3: Body Contact Location"
+  },
+  {
+   "t": "p",
+   "html": "<strong>Further branches for:</strong> Skin, Mucosal membrane, Blood, Tissue, Bone"
+  },
+  {
+   "t": "h3",
+   "text": "Level 4: Required Tests Matrix"
+  },
+  {
+   "t": "p",
+   "html": "End nodes showing specific required tests for each device category"
+  },
+  {
+   "t": "p",
+   "html": "<strong>Color-coding:</strong> Green (always required), Yellow (risk-based decision), Blue (optional/informative)"
+  },
+  {
+   "t": "h4",
+   "text": "Example Paths Highlighted"
+  },
+  {
+   "t": "p",
+   "html": "Permanent tissue implant → Cytotoxicity + Sensitization + Implantation + Genotoxicity + Chronic toxicity"
+  },
+  {
+   "t": "p",
+   "html": "Short-term blood contact → Cytotoxicity + Hemocompatibility + Systemic toxicity"
+  },
+  {
+   "t": "h3",
+   "text": "Risk-Based Approach"
+  },
+  {
+   "t": "p",
+   "html": "Modern biocompatibility evaluation follows <strong>risk management principles (ISO 14971)</strong>"
+  },
+  {
+   "t": "p",
+   "html": "integrated with ISO 10993-1."
+  },
+  {
+   "t": "h4",
+   "text": "Key Principles"
+  },
+  {
+   "t": "p",
+   "html": "<strong>Existing Data Utilization:</strong>"
+  },
+  {
+   "t": "p",
+   "html": "Literature review Material safety databases"
+  },
+  {
+   "t": "p",
+   "html": "Previously tested similar devices"
+  },
+  {
+   "t": "h4",
+   "text": "Chemical Characterization"
+  },
+  {
+   "t": "p",
+   "html": "Material identification"
+  },
+  {
+   "t": "p",
+   "html": "Extractables and leachables analysis Toxicological risk assessment <strong>Biological Testing (when needed):</strong>"
+  },
+  {
+   "t": "p",
+   "html": "Conducted only if chemical characterization insufficient Tailored to specific device risks"
+  },
+  {
+   "t": "h4",
+   "text": "Post-Market Surveillance"
+  },
+  {
+   "t": "p",
+   "html": "Ongoing monitoring of real-world safety Adverse event tracking"
+  },
+  {
+   "t": "h2",
+   "text": "Special Considerations for Different Device Types",
+   "num": "8.8"
+  },
+  {
+   "t": "p",
+   "html": "Different device categories require specific biomechanical and biocompatibility considerations."
+  },
+  {
+   "t": "h4",
+   "text": "Orthopedic Implants Biomechanical Requirements"
+  },
+  {
+   "t": "p",
+   "html": "<strong>High mechanical strength: </strong>Must withstand body weight and dynamic forces"
+  },
+  {
+   "t": "p",
+   "html": "<strong>Fatigue resistance: </strong>Millions of loading cycles over implant lifetime"
+  },
+  {
+   "t": "p",
+   "html": "<strong>Elastic modulus matching: </strong>Minimize stress shielding"
+  },
+  {
+   "t": "p",
+   "html": "<strong>Wear resistance: </strong>Particularly for articulating surfaces"
+  },
+  {
+   "t": "h4",
+   "text": "Biocompatibility Requirements"
+  },
+  {
+   "t": "p",
+   "html": "<strong>Osseointegration: </strong>Titanium or hydroxyapatite coating"
+  },
+  {
+   "t": "p",
+   "html": "<strong>Corrosion resistance: </strong>Long-term stability in physiological environment"
+  },
+  {
+   "t": "p",
+   "html": "<strong>Minimal particle generation: </strong>Reduce osteolysis risk"
+  },
+  {
+   "t": "h4",
+   "text": "Common Materials"
+  },
+  {
+   "t": "p",
+   "html": "Titanium alloys (stems, plates) Cobalt-chrome (bearing surfaces) UHMWPE (bearing liners) Ceramics (femoral heads)"
+  },
+  {
+   "t": "h4",
+   "text": "Cardiovascular Devices Biomechanical Requirements"
+  },
+  {
+   "t": "p",
+   "html": "<strong>Flexibility: </strong>Navigate tortuous vasculature"
+  },
+  {
+   "t": "p",
+   "html": "<strong>Kink resistance: </strong>Maintain patency under bending"
+  },
+  {
+   "t": "p",
+   "html": "<strong>Radial strength (stents): </strong>Resist vessel collapse"
+  },
+  {
+   "t": "p",
+   "html": "<strong>Fatigue resistance: </strong>Withstand millions of cardiac cycles"
+  },
+  {
+   "t": "h4",
+   "text": "Biocompatibility Requirements"
+  },
+  {
+   "t": "p",
+   "html": "<strong>Hemocompatibility: </strong>Prevent thrombosis, minimize platelet activation <strong>Smooth surface: </strong>Reduce turbulent flow and clot formation <strong>Corrosion resistance: </strong>Essential in blood environment <strong>Endothelialization (stents): </strong>Promote vessel healing"
+  },
+  {
+   "t": "h4",
+   "text": "Common Materials"
+  },
+  {
+   "t": "p",
+   "html": "Nitinol (shape memory alloys)"
+  },
+  {
+   "t": "p",
+   "html": "Stainless steel (guidewires, some stents) Polymer coatings (drug-eluting stents) Pyrolytic carbon (heart valves)"
+  },
+  {
+   "t": "h4",
+   "text": "Catheters and Tubing Biomechanical Requirements"
+  },
+  {
+   "t": "p",
+   "html": "<strong>Flexibility: </strong>Ease of insertion and patient comfort <strong>Tensile strength: </strong>Resist breakage during manipulation <strong>Kink resistance: </strong>Maintain flow"
+  },
+  {
+   "t": "p",
+   "html": "<strong>Burst pressure resistance: </strong>Safety under pressure"
+  },
+  {
+   "t": "h4",
+   "text": "Biocompatibility Requirements"
+  },
+  {
+   "t": "p",
+   "html": "<strong>Chemical inertness: </strong>No leachables causing irritation"
+  },
+  {
+   "t": "p",
+   "html": "<strong>Low thrombogenicity: </strong>For vascular catheters"
+  },
+  {
+   "t": "p",
+   "html": "<strong>Minimal tissue reaction: </strong>Reduce inflammation and fibrosis"
+  },
+  {
+   "t": "p",
+   "html": "<strong>Lubricity: </strong>Smooth insertion"
+  },
+  {
+   "t": "h4",
+   "text": "Common Materials"
+  },
+  {
+   "t": "p",
+   "html": "Silicone (long-term catheters) Polyurethane (general purpose) PVC (short-term use)"
+  },
+  {
+   "t": "p",
+   "html": "PTFE (low-friction applications)"
+  },
+  {
+   "t": "h4",
+   "text": "Dental Devices Biomechanical Requirements"
+  },
+  {
+   "t": "p",
+   "html": "<strong>Wear resistance: </strong>Withstand masticatory forces (100-300 N)"
+  },
+  {
+   "t": "p",
+   "html": "<strong>Fatigue resistance: </strong>Millions of chewing cycles"
+  },
+  {
+   "t": "p",
+   "html": "<strong>High compressive strength: </strong>Prevent fracture"
+  },
+  {
+   "t": "p",
+   "html": "<strong>Aesthetic properties: </strong>Color, translucency matching natural teeth"
+  },
+  {
+   "t": "h4",
+   "text": "Biocompatibility Requirements"
+  },
+  {
+   "t": "p",
+   "html": "<strong>Osseointegration (implants): </strong>Titanium preferred <strong>Gingival compatibility: </strong>Minimal soft tissue irritation <strong>Non-toxicity: </strong>Critical for materials in oral environment <strong>Corrosion resistance: </strong>Saliva is corrosive"
+  },
+  {
+   "t": "h4",
+   "text": "Common Materials"
+  },
+  {
+   "t": "p",
+   "html": "Titanium (implants)"
+  },
+  {
+   "t": "p",
+   "html": "Porcelain (crowns, aesthetic restorations) Composite resins (fillings)"
+  },
+  {
+   "t": "p",
+   "html": "Zirconia (high-strength crowns)"
+  },
+  {
+   "t": "h3",
+   "text": "Integration of Biomechanics and Biocompatibility in Device Design"
+  },
+  {
+   "t": "p",
+   "html": "Successful device design requires simultaneous consideration of mechanical performance and biological safety."
+  },
+  {
+   "t": "h3",
+   "text": "Design Process Integration Stage 1: Requirements Definition"
+  },
+  {
+   "t": "p",
+   "html": "Define mechanical performance requirements Identify biocompatibility needs based on ISO 10993"
+  },
+  {
+   "t": "p",
+   "html": "Consider patient population and anatomical site"
+  },
+  {
+   "t": "h3",
+   "text": "Stage 2: Material Selection"
+  },
+  {
+   "t": "p",
+   "html": "Balance mechanical properties with biocompatibility Consider manufacturing feasibility"
+  },
+  {
+   "t": "p",
+   "html": "Evaluate sterilization compatibility"
+  },
+  {
+   "t": "h3",
+   "text": "Stage 3: Design Optimization"
+  },
+  {
+   "t": "p",
+   "html": "Finite element analysis (FEA) for stress distribution Fatigue life prediction"
+  },
+  {
+   "t": "p",
+   "html": "Surface modification for biocompatibility enhancement"
+  },
+  {
+   "t": "h3",
+   "text": "Stage 4: Testing &amp; Validation"
+  },
+  {
+   "t": "p",
+   "html": "Mechanical testing (tensile, compression, fatigue, wear) Biocompatibility testing per ISO 10993"
+  },
+  {
+   "t": "p",
+   "html": "Accelerated aging studies Clinical evaluation"
+  },
+  {
+   "t": "p",
+   "html": "<strong>Stage 5: Post-Market Monitoring </strong>Real-world performance data Adverse event tracking"
+  },
+  {
+   "t": "p",
+   "html": "Long-term outcome studies"
+  },
+  {
+   "t": "box",
+   "kind": "case",
+   "label": "Case Study 8.1",
+   "title": "Failure of Metal-on-Metal Hip Implants Background",
+   "blocks": [
+    {
+     "t": "p",
+     "html": "Metal-on-metal (MoM) hip implants were introduced in the 1990s-2000s as an alternative to metal-on-polyethylene designs, marketed for durability and suitability for younger, more active patients."
+    }
+   ]
+  },
+  {
+   "t": "h3",
+   "text": "Design Rationale"
+  },
+  {
+   "t": "p",
+   "html": "<strong>Biomechanical Advantages (Theoretical):</strong>"
+  },
+  {
+   "t": "p",
+   "html": "Low wear rates initially observed in laboratory testing"
+  },
+  {
+   "t": "p",
+   "html": "Large femoral heads possible (improved stability, reduced dislocation risk) Elimination of polyethylene wear debris"
+  },
+  {
+   "t": "h4",
+   "text": "Failure Mechanism Biomechanical Issues"
+  },
+  {
+   "t": "p",
+   "html": "<strong>Excessive Wear:</strong>"
+  },
+  {
+   "t": "p",
+   "html": "Initial \"run-in\" wear phase higher than expected Poor"
+  },
+  {
+   "t": "p",
+   "html": "Continue 7:07 PM"
+  },
+  {
+   "t": "p",
+   "html": "manufacturing tolerances increased friction Edge loading due to implant positioning <strong>Tribocorrosion:</strong>"
+  },
+  {
+   "t": "p",
+   "html": "Combined mechanical wear and electrochemical corrosion Accelerated at modular taper junctions"
+  },
+  {
+   "t": "p",
+   "html": "Generated metal ions and particles"
+  },
+  {
+   "t": "h4",
+   "text": "Biocompatibility Failures"
+  },
+  {
+   "t": "p",
+   "html": "<strong>Metal Ion Release:</strong>"
+  },
+  {
+   "t": "p",
+   "html": "Cobalt and chromium ions released into bloodstream Systemic elevation detected in blood and urine Potential systemic toxicity concerns"
+  },
+  {
+   "t": "h4",
+   "text": "Local Tissue Damage"
+  },
+  {
+   "t": "p",
+   "html": "Pseudotumor formation (Adverse Local Tissue Reaction - ALTR) Metallosis (metal staining of tissues)"
+  },
+  {
+   "t": "p",
+   "html": "Severe inflammation Tissue necrosis <strong>Immunological Response:</strong>"
+  },
+  {
+   "t": "p",
+   "html": "Type IV hypersensitivity reactions Delayed hypersensitivity to metal ions Lymphocytic infiltration"
+  },
+  {
+   "t": "h3",
+   "text": "Clinical Outcomes"
+  },
+  {
+   "t": "p",
+   "html": "High revision rates (up to 50% at 10 years for some designs) Patient pain and functional impairment"
+  },
+  {
+   "t": "p",
+   "html": "Psychological distress from metal toxicity concerns Massive global recalls"
+  },
+  {
+   "t": "h3",
+   "text": "Regulatory Response"
+  },
+  {
+   "t": "p",
+   "html": "<strong>FDA (2013): </strong>Issued safety communication requiring post-market surveillance"
+  },
+  {
+   "t": "p",
+   "html": "<strong>EU: </strong>Multiple devices withdrawn from market"
+  },
+  {
+   "t": "p",
+   "html": "<strong>MHRA (UK): </strong>Introduced enhanced monitoring guidelines"
+  },
+  {
+   "t": "h3",
+   "text": "Lessons Learned"
+  },
+  {
+   "t": "ul",
+   "items": [
+    "<strong>Comprehensive Pre-Market Testing Essential:</strong>"
+   ]
+  },
+  {
+   "t": "p",
+   "html": "Laboratory wear testing must simulate worst-case clinical conditions Long-term biocompatibility assessment for wear products"
+  },
+  {
+   "t": "p",
+   "html": "Consider edge loading and non-ideal positioning"
+  },
+  {
+   "t": "h4",
+   "text": "Material Selection Critical"
+  },
+  {
+   "t": "p",
+   "html": "Biocompatibility cannot be assumed based solely on constituent materials Wear products may have different biological response than bulk material Corrosion products require specific toxicological evaluation"
+  },
+  {
+   "t": "h4",
+   "text": "Post-Market Surveillance Vital"
+  },
+  {
+   "t": "p",
+   "html": "Early warning systems for detecting emerging safety signals Patient registries for long-term outcome tracking"
+  },
+  {
+   "t": "p",
+   "html": "Rapid regulatory response mechanisms"
+  },
+  {
+   "t": "h4",
+   "text": "Benefit-Risk Assessment"
+  },
+  {
+   "t": "p",
+   "html": "Theoretical advantages must be validated in clinical use Marketing claims require robust clinical evidence Patient selection criteria must be evidence-based <strong>Current Practice</strong>"
+  },
+  {
+   "t": "p",
+   "html": "MoM hip implants largely abandoned"
+  },
+  {
+   "t": "p",
+   "html": "Renewed focus on ceramic-on-ceramic and ceramic-on-polyethylene bearings Enhanced regulatory scrutiny for novel bearing surfaces"
+  },
+  {
+   "t": "p",
+   "html": "Mandatory post-market clinical follow-up (EU MDR)"
+  },
+  {
+   "t": "box",
+   "kind": "insight",
+   "label": "Industry Insight 8.1",
+   "title": "",
+   "blocks": [
+    {
+     "t": "p",
+     "html": "<strong>Global Device Recall Analysis:</strong>"
+    },
+    {
+     "t": "p",
+     "html": "According to international medical device vigilance databases:"
+    },
+    {
+     "t": "p",
+     "html": "<strong>40-50% of device recalls </strong>involve biomechanical or biocompatibility issues"
+    },
+    {
+     "t": "p",
+     "html": "<strong>Top Mechanical Failures: </strong>Fatigue fracture, wear, corrosion"
+    },
+    {
+     "t": "p",
+     "html": "<strong>Top Biological Failures: </strong>Cytotoxicity, sensitization, inflammation"
+    },
+    {
+     "t": "h4",
+     "text": "Economic Impact"
+    },
+    {
+     "t": "p",
+     "html": "<strong>Average cost of high-risk device recall:</strong> USD 50-100 million Total global recall costs exceed USD 4 billion annually Litigation costs can exceed recall expenses"
+    },
+    {
+     "t": "h4",
+     "text": "Prevention Focus"
+    },
+    {
+     "t": "p",
+     "html": "Enhanced design verification and validation Risk-based biocompatibility testing Accelerated aging and fatigue testing"
+    },
+    {
+     "t": "p",
+     "html": "Real-world evidence collection"
+    },
+    {
+     "t": "p",
+     "html": "This data underscores the critical importance of integrated biomechanical and biocompatibility evaluation throughout device development."
+    }
+   ]
+  }
+ ],
+ "glossary": [
+  [
+   "Adhesive Wear",
+   "Material transfer between surfaces due to localized welding under pressure."
+  ],
+  [
+   "Biocompatibility",
+   "Ability of a material to perform with appropriate host response in specific application."
+  ],
+  [
+   "Creep",
+   "Time-dependent plastic deformation under constant stress."
+  ],
+  [
+   "Cytotoxicity",
+   "Ability of a substance to cause cell damage or death."
+  ],
+  [
+   "Elastic Deformation",
+   "Reversible material deformation; returns to original shape when stress removed."
+  ],
+  [
+   "Fatigue",
+   "Progressive structural damage under repeated cyclic loading below yield strength."
+  ],
+  [
+   "Galvanic Corrosion",
+   "Electrochemical corrosion occurring when dissimilar metals contact in electrolyte."
+  ],
+  [
+   "Hemocompatibility",
+   "Compatibility of material with blood; minimal adverse effects on blood components."
+  ],
+  [
+   "Modulus of Elasticity (Young's Modulus)",
+   "Ratio of stress to strain in elastic region; measure of stiffness."
+  ],
+  [
+   "Osseointegration",
+   "Direct structural and functional connection between living bone and implant surface."
+  ],
+  [
+   "Plastic Deformation",
+   "Permanent material deformation; does not return to original shape."
+  ],
+  [
+   "Strain",
+   "Deformation of material relative to original length."
+  ],
+  [
+   "Stress",
+   "Force per unit area applied to material."
+  ],
+  [
+   "Stress Shielding",
+   "Reduction in bone density due to implant bearing excessive load, reducing stress on adjacent bone."
+  ],
+  [
+   "Tribocorrosion",
+   "Combined wear and corrosion damage in mechanical contact with corrosive environment."
+  ],
+  [
+   "Ultimate Tensile Strength",
+   "Maximum stress material can withstand before failure."
+  ],
+  [
+   "Wear",
+   "Progressive material loss from surfaces in relative motion."
+  ],
+  [
+   "Yield Point",
+   "Stress level at which permanent (plastic) deformation begins."
+  ]
+ ],
+ "recap_intro": "This chapter provided comprehensive coverage of biomechanics and biocompatibility principles essential for medical device development:",
+ "recap_items": [
+  "<strong>Biomechanical Concepts</strong>",
+  "Fundamental stress-strain relationships and material properties Forces acting on devices in physiological environments Failure mechanisms including fatigue, wear, and corrosion Material selection based on mechanical requirements <strong>Biocompatibility Principles:</strong>",
+  "Body-device interaction mechanisms (positive and negative) ISO 10993 biological evaluation framework",
+  "Risk-based biocompatibility assessment strategies Device-specific considerations",
+  "<strong>Integration</strong>",
+  "Simultaneous mechanical and biological performance requirements Case study analysis of clinical failures",
+  "Design process incorporating both disciplines Post-market surveillance importance",
+  "These foundational principles enable engineers, quality professionals, and regulatory specialists to design, evaluate, and monitor medical devices that are both mechanically robust and biologically safe throughout their lifecycle."
+ ],
+ "references": [
+  {
+   "group": null,
+   "text": "ISO 10993 Series (2018). Biological evaluation of medical devices. International Organization for Standardization."
+  },
+  {
+   "group": null,
+   "text": "ISO 14971:2019. Medical devices -- Application of risk management to medical devices."
+  },
+  {
+   "group": null,
+   "text": "ISO 7206-4:2010. Implants for surgery -- Partial and total hip joint prostheses -- Part 4: Determination of endurance properties and performance of stemmed femoral components."
+  },
+  {
+   "group": null,
+   "text": "FDA Guidance (2020). Use of International Standard ISO 10993-1, Biological evaluation of medical devices - Part 1: Evaluation and testing within a risk management process."
+  },
+  {
+   "group": null,
+   "text": "ASTM F2129-19. Standard test method for conducting cyclic potentiodynamic polarization measurements to determine the corrosion susceptibility of small implant devices."
+  },
+  {
+   "group": null,
+   "text": "Williams, D.F. (2008). On the mechanisms of biocompatibility. Biomaterials, 29(20), 2941- 2953."
+  },
+  {
+   "group": null,
+   "text": "Ratner, B.D., Hoffman, A.S., Schoen, F.J., & Lemons, J.E. (Eds.). (2013). Biomaterials Science: An Introduction to Materials in Medicine (3rd ed.). Academic Press."
+  },
+  {
+   "group": null,
+   "text": "Park, J.B., & Lakes, R.S. (2007). Biomaterials: An Introduction (3rd ed.). Springer."
+  },
+  {
+   "group": null,
+   "text": "EU MDR 2017/745. Regulation on medical devices. Annex I: General Safety and Performance Requirements."
+  },
+  {
+   "group": null,
+   "text": "Langton, D.J., et al. (2011). Adverse reaction to metal debris following hip resurfacing. The Journal of Bone and Joint Surgery, 93-B(2), 164-171."
+  }
+ ]
+}

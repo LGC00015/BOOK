@@ -1,0 +1,1617 @@
+{
+ "num": 6,
+ "id": "ch06",
+ "title": "Cleanrooms & Sterile Manufacturing Environment",
+ "subtitle": "ISO 14644 • HVAC Systems • Environmental Monitoring • Contamination Control • Sterilization Fundamentals",
+ "overview": [
+  "Cleanrooms are specially designed controlled environments essential for manufacturing sterile and sensitive medical devices. This chapter provides comprehensive coverage of cleanroom classifications, airflow systems, HVAC requirements, environmental monitoring protocols, contamination control strategies, personnel gowning procedures, validation processes, and fundamental sterilization methods. Understanding cleanroom operations is critical for producing implants, catheters, syringes, in vitro diagnostic (IVD) kits, and all sterile medical devices that directly impact patient safety."
+ ],
+ "clos": [
+  "Explain cleanroom concepts and classification systems (ISO 14644, EU GMP Grades).",
+  "Describe airflow patterns, pressure differentials, and HVAC control mechanisms.",
+  "Understand contamination sources and implement appropriate control methods.",
+  "Demonstrate correct gowning and degowning procedures for cleanroom entry.",
+  "Interpret environmental monitoring requirements and establish monitoring programs.",
+  "Explain cleanroom validation and qualification protocols (IQ, OQ, PQ).",
+  "Differentiate between sterilization methods (ETO, Gamma, Steam) and their applications.",
+  "Recognize critical safety requirements in sterile manufacturing environments."
+ ],
+ "keywords": [
+  "Cleanroom",
+  "ISO 14644",
+  "laminar flow",
+  "HEPA filter",
+  "HVAC",
+  "environmental monitoring",
+  "bioburden",
+  "contamination control",
+  "ETO sterilization",
+  "gamma radiation",
+  "pressure differential",
+  "gowning protocol",
+  "particle count"
+ ],
+ "roadmap": [
+  "Introduction to cleanrooms",
+  "Need for controlled environments",
+  "ISO 14644 classification system",
+  "EU GMP Grade classification",
+  "HEPA filtration and airflow concepts",
+  "HVAC system components",
+  "Pressure differential management",
+  "Personnel gowning procedures",
+  "Contamination sources and control",
+  "Environmental monitoring programs",
+  "Cleanroom validation protocols",
+  "Sterilization fundamentals",
+  "Case studies",
+  "Chapter summary"
+ ],
+ "blocks": [
+  {
+   "t": "ul",
+   "items": [
+    "Glossary",
+    "References"
+   ]
+  },
+  {
+   "t": "h2",
+   "text": "Introduction to Cleanrooms",
+   "num": "6.1"
+  },
+  {
+   "t": "p",
+   "html": "A <strong>cleanroom </strong>is a specially engineered enclosed space where environmental parameters including temperature, humidity, air velocity, pressure, and particulate matter concentration are controlled and maintained within strictly defined limits. These controlled environments are fundamental to ensuring product quality, patient safety, and regulatory compliance in medical device manufacturing."
+  },
+  {
+   "t": "h3",
+   "text": "Applications in Medical Device Manufacturing"
+  },
+  {
+   "t": "p",
+   "html": "Cleanrooms are mandatory for manufacturing:"
+  },
+  {
+   "t": "ul",
+   "items": [
+    "Syringes and needles",
+    "Implantable devices (pacemakers, stents, prosthetics)",
+    "Catheters and guidewires",
+    "In vitro diagnostic (IVD) cartridges and test kits",
+    "Surgical disposables (drapes, gowns, gloves)",
+    "Wound care dressings and bandages",
+    "Sterile pharmaceutical preparations",
+    "Contact lenses and ophthalmic devices"
+   ]
+  },
+  {
+   "t": "h3",
+   "text": "Critical Functions of Cleanrooms"
+  },
+  {
+   "t": "p",
+   "html": "Cleanrooms ensure:"
+  },
+  {
+   "t": "ul",
+   "items": [
+    "<strong>Product sterility</strong>: Prevention of microbial contamination",
+    "<strong>Quality consistency</strong>: Controlled manufacturing conditions",
+    "<strong>Patient safety</strong>: Elimination of contamination risks",
+    "<strong>Regulatory compliance</strong>: Meeting ISO 13485, MDR 2017, FDA, and EU MDR requirements",
+    "<strong>Process reliability</strong>: Stable environmental conditions"
+   ]
+  },
+  {
+   "t": "fig",
+   "src": "images/ch06_fig01.jpg",
+   "w": 601,
+   "h": 142,
+   "num": "6.1",
+   "caption": "Basic Cleanroom Layout"
+  },
+  {
+   "t": "p",
+   "html": "<strong>Description:</strong>"
+  },
+  {
+   "t": "p",
+   "html": "Sequential room layout diagram showing contamination control progression: Personnel Entry → Gowning Room → Air Shower → Grade D Area → Grade C Area → Grade B Background → Grade A Laminar Flow Zone (critical manufacturing area)."
+  },
+  {
+   "t": "h3",
+   "text": "Why Cleanrooms Are Essential"
+  },
+  {
+   "t": "ul",
+   "items": [
+    "<strong>Contamination Prevention</strong>"
+   ]
+  },
+  {
+   "t": "p",
+   "html": "Cleanrooms prevent multiple types of contamination:"
+  },
+  {
+   "t": "ul",
+   "items": [
+    "<strong>Microbial contamination</strong>: Bacteria, fungi, viruses",
+    "<strong>Particulate contamination</strong>: Dust, fibers, skin cells",
+    "<strong>Cross-contamination</strong>: Transfer between products or materials",
+    "<strong>Chemical contamination</strong>: Volatile compounds, cleaning residues",
+    "<strong>Product degradation</strong>: Environmental damage to sensitive materials"
+   ]
+  },
+  {
+   "t": "h3",
+   "text": "Regulatory Requirements"
+  },
+  {
+   "t": "p",
+   "html": "Cleanroom operations must comply with:"
+  },
+  {
+   "t": "ul",
+   "items": [
+    "<strong>ISO 14644 </strong>series (cleanroom classification and monitoring)",
+    "<strong>ISO 13485 </strong>(Quality Management Systems for medical devices)",
+    "<strong>EU GMP Annex 1 </strong>(Manufacture of Sterile Medicinal Products)",
+    "<strong>MDR 2017 Schedule IV </strong>(Good Manufacturing Practices requirements)",
+    "<strong>FDA 21 CFR 820 </strong>(Quality System Regulation)"
+   ]
+  },
+  {
+   "t": "h3",
+   "text": "Quality Assurance"
+  },
+  {
+   "t": "p",
+   "html": "Cleanrooms provide:"
+  },
+  {
+   "t": "ul",
+   "items": [
+    "Reproducible manufacturing conditions",
+    "Validated environmental controls",
+    "Documented quality parameters",
+    "Traceable production records",
+    "Risk mitigation strategies"
+   ]
+  },
+  {
+   "t": "h2",
+   "text": "Cleanroom Classification Systems",
+   "num": "6.2"
+  },
+  {
+   "t": "p",
+   "html": "Cleanrooms are classified based on the maximum permitted concentration of airborne particles of specified sizes per cubic meter of air."
+  },
+  {
+   "t": "h3",
+   "text": "ISO 14644 Classification"
+  },
+  {
+   "t": "p",
+   "html": "ISO 14644-1 is the internationally recognized standard for cleanroom classification. It defines nine cleanroom classes (ISO Class 1 through ISO Class 9) based on particle concentration."
+  },
+  {
+   "t": "p",
+   "html": "<strong>Key ISO Classes for Medical Device Manufacturing:</strong>"
+  },
+  {
+   "t": "p",
+   "html": "<strong>ISO Class Maximum Particles/m³ (≥0.5 μm) Typical Application</strong>"
+  },
+  {
+   "t": "table",
+   "num": "6.1",
+   "caption": "ISO 14644 Classification",
+   "rows": [
+    [
+     "ISO Class 5",
+     "3,520",
+     "Laminar flow hoods, critical assembly"
+    ],
+    [
+     "ISO Class 6",
+     "35,200",
+     "Sensitive component assembly"
+    ],
+    [
+     "ISO Class 7",
+     "352,000",
+     "General device assembly"
+    ],
+    [
+     "ISO Class 8",
+     "3,520,000",
+     "Packaging and support areas"
+    ]
+   ]
+  },
+  {
+   "t": "p",
+   "html": "<strong>Lower ISO class numbers indicate cleaner environments.</strong>"
+  },
+  {
+   "t": "fig",
+   "src": "images/ch06_fig02.jpg",
+   "w": 480,
+   "h": 340,
+   "num": "6.2",
+   "caption": "ISO Cleanroom Classification Pyramid"
+  },
+  {
+   "t": "p",
+   "html": "<strong>Description:</strong>"
+  },
+  {
+   "t": "p",
+   "html": "Inverted pyramid diagram showing:"
+  },
+  {
+   "t": "ul",
+   "items": [
+    "Top (smallest): ISO Class 5 (Cleanest, most controlled)",
+    "Middle layers: ISO Class 6, ISO Class 7",
+    "Bottom (largest): ISO Class 8 (Less controlled)",
+    "Arrow indicating \"Increasing cleanliness\" from bottom to top",
+    "Particle concentration values labeled for each level"
+   ]
+  },
+  {
+   "t": "h2",
+   "text": "EU GMP Grade Classification",
+   "num": "6.3"
+  },
+  {
+   "t": "p",
+   "html": "The European Union Good Manufacturing Practice guidelines classify cleanrooms into four grades for sterile product manufacturing:"
+  },
+  {
+   "t": "h4",
+   "text": "EU GMP Grades"
+  },
+  {
+   "t": "ul",
+   "items": [
+    "<strong>Grade A</strong>: Laminar airflow zones for high-risk operations (filling, aseptic connections)",
+    "<strong>Grade B</strong>: Background environment for Grade A zones",
+    "<strong>Grade C</strong>: Clean areas for less critical production stages",
+    "<strong>Grade D</strong>: General preparation and support areas"
+   ]
+  },
+  {
+   "t": "p",
+   "html": "<strong>Comparison Table: ISO vs. EU GMP</strong>"
+  },
+  {
+   "t": "p",
+   "html": "<strong>EU GMP</strong>"
+  },
+  {
+   "t": "p",
+   "html": "<strong>Grade</strong>"
+  },
+  {
+   "t": "p",
+   "html": "<strong>Equivalent ISO Class</strong>"
+  },
+  {
+   "t": "p",
+   "html": "<strong>Application Example</strong>"
+  },
+  {
+   "t": "table",
+   "num": "6.2",
+   "caption": "EU GMP Grades",
+   "rows": [
+    [
+     "Grade A",
+     "ISO Class 5",
+     "Aseptic filling, critical assembly under laminar flow"
+    ],
+    [
+     "Grade B",
+     "ISO Class 5",
+     "Background for Grade A operations"
+    ],
+    [
+     "Grade C",
+     "ISO Class 7",
+     "Component preparation, general assembly"
+    ],
+    [
+     "Grade D",
+     "ISO Class 8",
+     "Material preparation, packaging"
+    ]
+   ]
+  },
+  {
+   "t": "p",
+   "html": "<strong>Note</strong>: EU GMP classifications include both \"at rest\" (no activity) and \"in operation\" (during manufacturing) particle limits."
+  },
+  {
+   "t": "h3",
+   "text": "Airflow Systems and HEPA Filtration"
+  },
+  {
+   "t": "ul",
+   "items": [
+    "<strong>HEPA Filters</strong>"
+   ]
+  },
+  {
+   "t": "p",
+   "html": "<strong>HEPA (High Efficiency Particulate Air) </strong>filters are the foundation of cleanroom air purification systems."
+  },
+  {
+   "t": "h4",
+   "text": "HEPA Filter Specifications"
+  },
+  {
+   "t": "ul",
+   "items": [
+    "Removes <strong>≥99.97% </strong>of particles <strong>≥0.3 micrometers </strong>in diameter",
+    "Filter media typically made of randomly arranged fiberglass fibers",
+    "Particle capture mechanisms: interception, impaction, diffusion",
+    "Must be integrity tested regularly (DOP test, photometric scanning)"
+   ]
+  },
+  {
+   "t": "h4",
+   "text": "ULPA Filters"
+  },
+  {
+   "t": "p",
+   "html": "For ultra-clean applications, <strong>ULPA (Ultra-Low Penetration Air) </strong>filters provide:"
+  },
+  {
+   "t": "ul",
+   "items": [
+    "<strong>≥99.999% </strong>efficiency at 0.1-0.2 micrometers",
+    "Used in ISO Class 5 and higher cleanliness requirements"
+   ]
+  },
+  {
+   "t": "h3",
+   "text": "Airflow Patterns"
+  },
+  {
+   "t": "p",
+   "html": "Two primary airflow patterns are used in cleanrooms:"
+  },
+  {
+   "t": "h4",
+   "text": "Laminar (Unidirectional) Airflow Characteristics"
+  },
+  {
+   "t": "ul",
+   "items": [
+    "Air moves in parallel streamlines at uniform velocity",
+    "Typically 0.36–0.54 m/s (70–106 ft/min)",
+    "Used in ISO Class 5 zones",
+    "Vertical or horizontal flow configurations"
+   ]
+  },
+  {
+   "t": "h4",
+   "text": "Applications"
+  },
+  {
+   "t": "ul",
+   "items": [
+    "Laminar flow hoods",
+    "Filling and dispensing areas",
+    "Critical aseptic operations"
+   ]
+  },
+  {
+   "t": "h4",
+   "text": "Turbulent (Non-Unidirectional) Airflow Characteristics"
+  },
+  {
+   "t": "ul",
+   "items": [
+    "Mixed air circulation patterns",
+    "Air changes per hour (ACH) determine cleanliness",
+    "More economical than laminar flow",
+    "Used in ISO Class 7 and 8 areas"
+   ]
+  },
+  {
+   "t": "h4",
+   "text": "Applications"
+  },
+  {
+   "t": "ul",
+   "items": [
+    "General manufacturing areas",
+    "Component preparation zones"
+   ]
+  },
+  {
+   "t": "fig",
+   "src": "images/ch06_fig03.jpg",
+   "w": 509,
+   "h": 296,
+   "num": "6.3",
+   "caption": "Laminar vs. Turbulent Airflow Patterns"
+  },
+  {
+   "t": "p",
+   "html": "<strong>Description:</strong>"
+  },
+  {
+   "t": "p",
+   "html": "Side-by-side comparison diagram:"
+  },
+  {
+   "t": "ul",
+   "items": [
+    "<strong>Left panel (Laminar)</strong>: Straight, parallel arrows flowing uniformly downward/across",
+    "<strong>Right panel (Turbulent)</strong>: Swirling, mixed arrow patterns showing air circulation",
+    "Labels indicating velocity, flow characteristics, and typical ISO class usage"
+   ]
+  },
+  {
+   "t": "h3",
+   "text": "HVAC Systems in Cleanroom Facilities"
+  },
+  {
+   "t": "p",
+   "html": "The <strong>HVAC (Heating, Ventilation, and Air Conditioning) </strong>system is critical for maintaining cleanroom environmental parameters."
+  },
+  {
+   "t": "h2",
+   "text": "HVAC System Components",
+   "num": "6.4"
+  },
+  {
+   "t": "ul",
+   "items": [
+    "<strong>Air Handling Units (AHU)</strong>",
+    "Supply fan systems",
+    "Cooling/heating coils",
+    "Humidity control systems",
+    "Pre-filters and final filters (HEPA/ULPA)"
+   ]
+  },
+  {
+   "t": "h3",
+   "text": "Distribution System"
+  },
+  {
+   "t": "ul",
+   "items": [
+    "Supply air ducts",
+    "Diffusers and grilles",
+    "Return air ducts",
+    "Exhaust systems"
+   ]
+  },
+  {
+   "t": "h3",
+   "text": "Control Systems"
+  },
+  {
+   "t": "ul",
+   "items": [
+    "Temperature sensors",
+    "Humidity sensors",
+    "Pressure transducers",
+    "Building Management System (BMS)"
+   ]
+  },
+  {
+   "t": "h4",
+   "text": "Critical HVAC Parameters Temperature Control"
+  },
+  {
+   "t": "ul",
+   "items": [
+    "<strong>Typical range</strong>: 20–24°C (68–75°F)",
+    "<strong>Tolerance</strong>: ±2°C",
+    "<strong>Purpose</strong>: Personnel comfort, process stability, equipment operation"
+   ]
+  },
+  {
+   "t": "h4",
+   "text": "Humidity Control"
+  },
+  {
+   "t": "ul",
+   "items": [
+    "<strong>Typical range</strong>: 40–60% Relative Humidity (RH)"
+   ]
+  },
+  {
+   "t": "h4",
+   "text": "Purpose"
+  },
+  {
+   "t": "ul",
+   "items": [
+    "Prevents electrostatic discharge",
+    "Inhibits microbial growth",
+    "Maintains material properties",
+    "Ensures operator comfort"
+   ]
+  },
+  {
+   "t": "h4",
+   "text": "Air Changes Per Hour (ACH)"
+  },
+  {
+   "t": "p",
+   "html": "Air change rates vary by cleanroom classification:"
+  },
+  {
+   "t": "h3",
+   "text": "ISO Class Minimum ACH Typical ACH Range"
+  },
+  {
+   "t": "table",
+   "num": "6.3",
+   "caption": "ISO Class Minimum ACH Typical ACH Range",
+   "rows": [
+    [
+     "ISO Class 5",
+     "240",
+     "240–600"
+    ],
+    [
+     "ISO Class 6",
+     "90",
+     "90–180"
+    ],
+    [
+     "ISO Class 7",
+     "30",
+     "40–60"
+    ],
+    [
+     "ISO Class 8",
+     "15",
+     "20–40"
+    ]
+   ]
+  },
+  {
+   "t": "p",
+   "html": "<strong>ACH Definition</strong>: Complete replacement of cleanroom air volume per hour."
+  },
+  {
+   "t": "fig",
+   "src": "images/ch06_fig04.jpg",
+   "w": 477,
+   "h": 302,
+   "num": "6.4",
+   "caption": "HVAC System Cycle"
+  },
+  {
+   "t": "p",
+   "html": "<strong>Description:</strong>"
+  },
+  {
+   "t": "p",
+   "html": "<strong>Circular flow diagram showing:</strong> Air Handling Unit (AHU) → Pre-filtration → Cooling/Heating Coils → Humidification → HEPA Filtration → Supply to Cleanroom → Return Air Duct → Back to AHU (with labels for temperature, humidity, and filtration stages)"
+  },
+  {
+   "t": "h3",
+   "text": "Differential Pressure Management"
+  },
+  {
+   "t": "ul",
+   "items": [
+    "<strong>Pressure Cascade Concept</strong>"
+   ]
+  },
+  {
+   "t": "p",
+   "html": "Differential pressure (ΔP) maintains directional airflow from cleaner to less clean areas, preventing contamination ingress."
+  },
+  {
+   "t": "h4",
+   "text": "Pressure Gradient Principles"
+  },
+  {
+   "t": "ul",
+   "items": [
+    "Air flows from <strong>high pressure → low pressure</strong>",
+    "Cleanest areas maintained at highest pressure",
+    "Pressure decreases progressively toward external environment",
+    "Prevents backflow of contaminated air"
+   ]
+  },
+  {
+   "t": "h4",
+   "text": "Typical Pressure Differentials"
+  },
+  {
+   "t": "ul",
+   "items": [
+    "Between adjacent cleanroom grades: <strong>+10 to +15 Pascals (Pa)</strong>",
+    "Cleanroom to corridor: <strong>+10 to +20 Pa</strong>",
+    "Cleanroom to external environment: <strong>+15 to +25 Pa</strong>"
+   ]
+  },
+  {
+   "t": "h4",
+   "text": "Pressure Monitoring Monitoring Requirements"
+  },
+  {
+   "t": "ul",
+   "items": [
+    "Continuous pressure monitoring using differential pressure gauges",
+    "Visual indicators (magnahelic gauges) at entry points",
+    "BMS integration with alarm systems",
+    "Daily verification and documentation",
+    "Trending analysis for system performance"
+   ]
+  },
+  {
+   "t": "h4",
+   "text": "Pressure Failure Consequences"
+  },
+  {
+   "t": "ul",
+   "items": [
+    "Contamination infiltration",
+    "Loss of cleanroom classification",
+    "Product quality compromise",
+    "Regulatory non-compliance",
+    "Batch rejection risk"
+   ]
+  },
+  {
+   "t": "h3",
+   "text": "Personnel Gowning and Behavior Control"
+  },
+  {
+   "t": "ul",
+   "items": [
+    "<strong>Human Contamination Sources</strong>"
+   ]
+  },
+  {
+   "t": "p",
+   "html": "Personnel are the <strong>primary source of contamination </strong>in cleanrooms:"
+  },
+  {
+   "t": "h4",
+   "text": "Contamination Generated by Humans"
+  },
+  {
+   "t": "ul",
+   "items": [
+    "<strong>Skin particles</strong>: 1,000–10,000 particles/minute (walking)",
+    "<strong>Respiratory aerosols</strong>: Bacteria, viruses, moisture droplets",
+    "<strong>Hair and dandruff</strong>: Continuous shedding",
+    "<strong>Microorganisms</strong>: 10–100 million viable organisms on skin surface",
+    "<strong>Cosmetics, perfumes</strong>: Volatile organic compounds (VOCs)"
+   ]
+  },
+  {
+   "t": "h4",
+   "text": "Gowning Components Complete Gowning Ensemble"
+  },
+  {
+   "t": "ul",
+   "items": [
+    "<strong>Shoe covers/dedicated cleanroom shoes</strong>",
+    "<strong>Hair cover/bouffant cap </strong>(fully covering hair)",
+    "<strong>Beard cover </strong>(if applicable)",
+    "<strong>Face mask </strong>(covering nose and mouth)",
+    "<strong>Cleanroom coverall/gown </strong>(non-shedding material)",
+    "<strong>Gloves </strong>(sterile for critical areas)",
+    "<strong>Safety glasses/goggles </strong>(if required)"
+   ]
+  },
+  {
+   "t": "h4",
+   "text": "Material Requirements"
+  },
+  {
+   "t": "ul",
+   "items": [
+    "Low particle-generating fabrics",
+    "Antistatic properties",
+    "Breathable yet protective",
+    "Autoclavable or disposable",
+    "Lint-free construction",
+    "<strong>Gowning Procedure</strong>"
+   ]
+  },
+  {
+   "t": "p",
+   "html": "<strong>Step-by-Step Gowning Protocol:</strong>"
+  },
+  {
+   "t": "fig",
+   "src": "images/ch06_fig05.jpg",
+   "w": 500,
+   "h": 264,
+   "num": "6.5",
+   "caption": "Gowning Procedure Steps (Placeholder)"
+  },
+  {
+   "t": "p",
+   "html": "<strong>Description:</strong>"
+  },
+  {
+   "t": "p",
+   "html": "Sequential illustrated steps showing:"
+  },
+  {
+   "t": "ul",
+   "items": [
+    "<strong>Step 1</strong>: Remove personal items (watches, jewelry, mobile phones)",
+    "<strong>Step 2</strong>: Wear shoe covers or change to dedicated cleanroom shoes",
+    "<strong>Step 3</strong>: Don hair cover, ensuring complete hair coverage",
+    "<strong>Step 4</strong>: Apply face mask, covering nose and mouth completely",
+    "<strong>Step 5</strong>: Perform hand washing and sanitization",
+    "<strong>Step 6</strong>: Don cleanroom coverall in designated gowning area",
+    "<strong>Step 7</strong>: Apply sterile gloves (for Grade A/B areas)",
+    "<strong>Step 8</strong>: Pass through air shower before cleanroom entry"
+   ]
+  },
+  {
+   "t": "h4",
+   "text": "Personnel Behavior Requirements Prohibited Actions"
+  },
+  {
+   "t": "ul",
+   "items": [
+    "Touching face, hair, or exposed skin",
+    "Eating, drinking, or chewing gum",
+    "Applying cosmetics or perfumes",
+    "Wearing jewelry or watches",
+    "Using personal electronic devices",
+    "Excessive movement or talking",
+    "Sitting on non-approved surfaces"
+   ]
+  },
+  {
+   "t": "h4",
+   "text": "Required Practices"
+  },
+  {
+   "t": "ul",
+   "items": [
+    "Slow, deliberate movements",
+    "Speaking only when necessary",
+    "Using designated writing materials",
+    "Following established traffic patterns",
+    "Proper waste disposal procedures",
+    "Immediate reporting of garment damage"
+   ]
+  },
+  {
+   "t": "h3",
+   "text": "Safety Note 6.1"
+  },
+  {
+   "t": "p",
+   "html": "<strong>Critical Reminder</strong>: Human beings are the single largest contamination source in cleanroom environments. Strict adherence to gowning protocols and behavioral controls is essential for maintaining cleanroom integrity and ensuring product quality."
+  },
+  {
+   "t": "ul",
+   "items": [
+    "<strong>Contamination Sources and Control Strategies</strong>",
+    "<strong>Primary Contamination Sources</strong>",
+    "<strong>Personnel (40-80% of contamination)</strong>",
+    "Skin particles and microorganisms",
+    "Respiratory aerosols",
+    "Personal care products"
+   ]
+  },
+  {
+   "t": "h3",
+   "text": "Equipment and Machinery"
+  },
+  {
+   "t": "ul",
+   "items": [
+    "Wear particles from moving parts",
+    "Lubricants and oils",
+    "Cleaning residues"
+   ]
+  },
+  {
+   "t": "h3",
+   "text": "Raw Materials and Components"
+  },
+  {
+   "t": "ul",
+   "items": [
+    "Incoming particle contamination",
+    "Packaging materials",
+    "Chemical residues"
+   ]
+  },
+  {
+   "t": "h3",
+   "text": "External Air Supply"
+  },
+  {
+   "t": "ul",
+   "items": [
+    "Inadequate filtration",
+    "HVAC system failures",
+    "External environmental factors"
+   ]
+  },
+  {
+   "t": "h3",
+   "text": "Facility Infrastructure"
+  },
+  {
+   "t": "ul",
+   "items": [
+    "Wall and ceiling particle shedding",
+    "Flooring degradation",
+    "Damaged surfaces"
+   ]
+  },
+  {
+   "t": "h3",
+   "text": "Tools and Containers"
+  },
+  {
+   "t": "ul",
+   "items": [
+    "Improper cleaning",
+    "Material incompatibility",
+    "Wear and deterioration"
+   ]
+  },
+  {
+   "t": "h4",
+   "text": "Contamination Control Methods Engineering Controls"
+  },
+  {
+   "t": "ul",
+   "items": [
+    "HEPA/ULPA filtration systems",
+    "Laminar flow workstations",
+    "Positive pressure maintenance",
+    "Material airlocks and pass-throughs",
+    "Sealed surfaces and coved corners",
+    "Antistatic flooring and surfaces"
+   ]
+  },
+  {
+   "t": "h4",
+   "text": "Administrative Controls"
+  },
+  {
+   "t": "ul",
+   "items": [
+    "Standard Operating Procedures (SOPs)",
+    "Personnel training programs",
+    "Material flow management",
+    "Cleaning and sanitization schedules",
+    "Access restriction protocols",
+    "Gowning compliance monitoring"
+   ]
+  },
+  {
+   "t": "h4",
+   "text": "Cleaning and Sanitization"
+  },
+  {
+   "t": "ul",
+   "items": [
+    "Daily cleaning protocols",
+    "Disinfectant rotation (prevent resistance)",
+    "Critical surface monitoring",
+    "Validated cleaning procedures",
+    "Cleaning verification testing"
+   ]
+  },
+  {
+   "t": "h2",
+   "text": "Environmental Monitoring Programs",
+   "num": "6.5"
+  },
+  {
+   "t": "p",
+   "html": "Environmental monitoring (EM) provides objective evidence of cleanroom performance and control effectiveness."
+  },
+  {
+   "t": "h3",
+   "text": "Types of Environmental Monitoring"
+  },
+  {
+   "t": "ul",
+   "items": [
+    "<strong>Particulate Monitoring</strong>"
+   ]
+  },
+  {
+   "t": "p",
+   "html": "<strong>Method</strong>: Laser particle counters <strong>Measurement</strong>: Particle concentration per cubic meter <strong>Frequency</strong>:"
+  },
+  {
+   "t": "ul",
+   "items": [
+    "Continuous: ISO Class 5 areas",
+    "Periodic: ISO Class 7/8 areas (weekly/monthly)"
+   ]
+  },
+  {
+   "t": "p",
+   "html": "<strong>Acceptance Criteria</strong>: Per ISO 14644-1 classification limits"
+  },
+  {
+   "t": "h3",
+   "text": "Microbial Monitoring"
+  },
+  {
+   "t": "p",
+   "html": "Microbiological testing methods:"
+  },
+  {
+   "t": "h3",
+   "text": "Settle Plates (Passive Air Sampling)"
+  },
+  {
+   "t": "ul",
+   "items": [
+    "Petri dishes exposed to air for specified time (1-4 hours)",
+    "Measures gravitational particle settlement",
+    "Simple, inexpensive method"
+   ]
+  },
+  {
+   "t": "h3",
+   "text": "Active Air Sampling"
+  },
+  {
+   "t": "ul",
+   "items": [
+    "Volumetric air samplers",
+    "Draws known air volume through collection media",
+    "More quantitative than settle plates"
+   ]
+  },
+  {
+   "t": "h3",
+   "text": "Surface Contact Plates"
+  },
+  {
+   "t": "ul",
+   "items": [
+    "Direct contact with surfaces",
+    "RODAC (Replicate Organism Detection and Counting) plates",
+    "Assesses cleaning effectiveness"
+   ]
+  },
+  {
+   "t": "h3",
+   "text": "Swab Sampling"
+  },
+  {
+   "t": "ul",
+   "items": [
+    "For irregular surfaces",
+    "Hard-to-reach areas",
+    "Quantitative microbial recovery"
+   ]
+  },
+  {
+   "t": "h4",
+   "text": "Incubation Conditions"
+  },
+  {
+   "t": "ul",
+   "items": [
+    "<strong>Bacterial growth</strong>: 30-35°C for 48-72 hours",
+    "<strong>Fungal growth</strong>: 20-25°C for 5-7 days"
+   ]
+  },
+  {
+   "t": "h3",
+   "text": "Environmental Parameters Monitoring"
+  },
+  {
+   "t": "p",
+   "html": "Continuous monitoring of:"
+  },
+  {
+   "t": "ul",
+   "items": [
+    "<strong>Temperature</strong>: ±0.5°C accuracy",
+    "<strong>Relative Humidity</strong>: ±5% RH accuracy",
+    "<strong>Differential Pressure</strong>: ±1 Pa accuracy",
+    "<strong>Airflow Velocity</strong>: ±10% accuracy"
+   ]
+  },
+  {
+   "t": "h3",
+   "text": "Monitoring Frequency"
+  },
+  {
+   "t": "p",
+   "html": "<strong>Parameter ISO Class 5 ISO Class 7 ISO Class 8 </strong>Particles Continuous Weekly Monthly Viable (air) Daily Weekly Bi-weekly Surfaces Daily Weekly Bi-weekly Temperature Continuous Continuous Continuous"
+  },
+  {
+   "t": "p",
+   "html": "Pressure Continuous Continuous Continuous"
+  },
+  {
+   "t": "h4",
+   "text": "Alert and Action Limits Alert Limit"
+  },
+  {
+   "t": "ul",
+   "items": [
+    "Indicates potential drift from normal operating conditions",
+    "Requires investigation and documentation",
+    "Production may continue with increased monitoring"
+   ]
+  },
+  {
+   "t": "h4",
+   "text": "Action Limit"
+  },
+  {
+   "t": "ul",
+   "items": [
+    "Indicates loss of control",
+    "Requires immediate corrective action",
+    "Production must be stopped until resolved"
+   ]
+  },
+  {
+   "t": "fig",
+   "src": "images/ch06_fig06.jpg",
+   "w": 445,
+   "h": 302,
+   "num": "6.6",
+   "caption": "Environmental Monitoring Program Flow"
+  },
+  {
+   "t": "p",
+   "html": "<strong>Description:</strong>"
+  },
+  {
+   "t": "p",
+   "html": "Flowchart showing:"
+  },
+  {
+   "t": "p",
+   "html": "Sampling → Testing → Data Recording → Trending Analysis → Alert Limit Exceeded? (Yes"
+  },
+  {
+   "t": "p",
+   "html": "→ Investigation → CAPA) / (No → Continue Routine Monitoring) → Action Limit Exceeded?"
+  },
+  {
+   "t": "p",
+   "html": "→ Stop Production → Root Cause Analysis → CAPA → Verification → Resume Production"
+  },
+  {
+   "t": "h3",
+   "text": "Cleanroom Validation and Qualification"
+  },
+  {
+   "t": "p",
+   "html": "Validation demonstrates that cleanroom systems consistently perform as intended."
+  },
+  {
+   "t": "h3",
+   "text": "Qualification Stages"
+  },
+  {
+   "t": "ul",
+   "items": [
+    "<strong>Installation Qualification (IQ)</strong>"
+   ]
+  },
+  {
+   "t": "p",
+   "html": "<strong>Purpose</strong>: Verify correct installation per specifications"
+  },
+  {
+   "t": "h4",
+   "text": "Activities"
+  },
+  {
+   "t": "ul",
+   "items": [
+    "HEPA filter installation verification",
+    "Ductwork and sealing inspection",
+    "AHU component verification",
+    "Instrumentation calibration",
+    "Drawing/specification comparison",
+    "As-built documentation review"
+   ]
+  },
+  {
+   "t": "p",
+   "html": "<strong>Documentation</strong>: IQ Protocol and Report"
+  },
+  {
+   "t": "h3",
+   "text": "Operational Qualification (OQ)"
+  },
+  {
+   "t": "p",
+   "html": "<strong>Purpose</strong>: Verify system operates within specified parameters"
+  },
+  {
+   "t": "h4",
+   "text": "Testing Activities"
+  },
+  {
+   "t": "ul",
+   "items": [
+    "<strong>HEPA filter integrity testing </strong>(DOP/PAO test)",
+    "<strong>Airflow velocity measurements </strong>(anemometer)",
+    "<strong>Air change rate calculations</strong>",
+    "<strong>Pressure differential verification</strong>",
+    "<strong>Temperature and humidity mapping</strong>",
+    "<strong>Recovery testing </strong>(how quickly cleanroom recovers after disturbance)",
+    "<strong>Smoke visualization studies </strong>(airflow pattern verification) <strong>Acceptance Criteria</strong>: Must meet ISO 14644 classification requirements <strong>Documentation</strong>: OQ Protocol and Report"
+   ]
+  },
+  {
+   "t": "h3",
+   "text": "Performance Qualification (PQ)"
+  },
+  {
+   "t": "p",
+   "html": "<strong>Purpose</strong>: Verify system performs during actual production conditions"
+  },
+  {
+   "t": "h4",
+   "text": "Activities"
+  },
+  {
+   "t": "ul",
+   "items": [
+    "Classification testing with personnel present",
+    "Particle and microbial monitoring during operations",
+    "Process simulation studies",
+    "Worst-case scenario testing",
+    "Continued operations verification"
+   ]
+  },
+  {
+   "t": "p",
+   "html": "<strong>Duration</strong>: Typically 2-4 weeks of continuous monitoring"
+  },
+  {
+   "t": "p",
+   "html": "<strong>Documentation</strong>: PQ Protocol and Report"
+  },
+  {
+   "t": "h3",
+   "text": "Requalification Requirements"
+  },
+  {
+   "t": "p",
+   "html": "Cleanrooms must be requalified:"
+  },
+  {
+   "t": "ul",
+   "items": [
+    "<strong>Annually</strong>: Routine re-certification",
+    "<strong>After major modifications</strong>: HVAC changes, layout modifications",
+    "<strong>After HEPA filter replacement</strong>",
+    "<strong>Following contamination events</strong>",
+    "<strong>After extended shutdown periods</strong>",
+    "<strong>Sterilization Fundamentals</strong>"
+   ]
+  },
+  {
+   "t": "p",
+   "html": "Sterilization eliminates all viable microorganisms, including bacterial spores, from medical devices."
+  },
+  {
+   "t": "h3",
+   "text": "Sterilization Methods Overview"
+  },
+  {
+   "t": "ul",
+   "items": [
+    "<strong>Ethylene Oxide (ETO) Sterilization (ISO 11135) Mechanism</strong>: Alkylation of microbial DNA/RNA and proteins <strong>Advantages:</strong>",
+    "Suitable for heat-sensitive materials",
+    "Excellent material compatibility",
+    "Deep penetration capability",
+    "Effective for complex geometries"
+   ]
+  },
+  {
+   "t": "h4",
+   "text": "Applications"
+  },
+  {
+   "t": "ul",
+   "items": [
+    "Catheters and tubing",
+    "Electronic devices",
+    "Syringes with rubber components",
+    "Multi-material assemblies"
+   ]
+  },
+  {
+   "t": "h4",
+   "text": "Process Parameters"
+  },
+  {
+   "t": "ul",
+   "items": [
+    "Temperature: 37-63°C",
+    "Humidity: 30-80% RH",
+    "ETO concentration: 450-1200 mg/L",
+    "Exposure time: 1-6 hours",
+    "Aeration: 8-12 hours (removes residual ETO)"
+   ]
+  },
+  {
+   "t": "p",
+   "html": "<strong>Residual Testing</strong>: ISO 10993-7 limits for ETO and ethylene chlorohydrin (ECH)"
+  },
+  {
+   "t": "ul",
+   "items": [
+    "<strong>Gamma Radiation Sterilization (ISO 11137) Mechanism</strong>: Ionizing radiation damages microbial DNA <strong>Advantages:</strong>",
+    "No heat or moisture involved",
+    "Deep penetration",
+    "No toxic residues",
+    "Pre-packaged sterilization possible",
+    "High throughput"
+   ]
+  },
+  {
+   "t": "h4",
+   "text": "Applications"
+  },
+  {
+   "t": "ul",
+   "items": [
+    "Single-use plastics (syringes, IV sets)",
+    "Dressings and bandages",
+    "Surgical gloves",
+    "Implantable devices"
+   ]
+  },
+  {
+   "t": "p",
+   "html": "<strong>Typical Dose</strong>: 25 kGy (minimum sterilization dose)"
+  },
+  {
+   "t": "h4",
+   "text": "Considerations"
+  },
+  {
+   "t": "ul",
+   "items": [
+    "Material compatibility (some plastics degrade)",
+    "Color changes in some materials",
+    "Requires dosimetry studies",
+    "Expensive infrastructure"
+   ]
+  },
+  {
+   "t": "h3",
+   "text": "Steam Sterilization (Autoclaving) (ISO 17665)"
+  },
+  {
+   "t": "p",
+   "html": "<strong>Mechanism</strong>: Moist heat denatures proteins and disrupts cell membranes"
+  },
+  {
+   "t": "h4",
+   "text": "Advantages"
+  },
+  {
+   "t": "ul",
+   "items": [
+    "Fast cycle times",
+    "Cost-effective",
+    "Well-established method",
+    "No toxic residues",
+    "Environmentally friendly"
+   ]
+  },
+  {
+   "t": "h4",
+   "text": "Applications"
+  },
+  {
+   "t": "ul",
+   "items": [
+    "Stainless steel instruments",
+    "Heat-stable metal devices",
+    "Reusable surgical instruments",
+    "Laboratory glassware"
+   ]
+  },
+  {
+   "t": "h4",
+   "text": "Typical Cycles"
+  },
+  {
+   "t": "ul",
+   "items": [
+    "<strong>121°C for 15-30 minutes </strong>(gravity displacement)",
+    "<strong>132-134°C for 3-4 minutes </strong>(pre-vacuum cycle)"
+   ]
+  },
+  {
+   "t": "p",
+   "html": "<strong>Limitations</strong>: Not suitable"
+  },
+  {
+   "t": "fig",
+   "src": "images/ch06_fig07.jpg",
+   "w": 255,
+   "h": 278,
+   "num": "6.7",
+   "caption": "Sterilization Method Selection Flowchart"
+  },
+  {
+   "t": "p",
+   "html": "<strong>Description:</strong>"
+  },
+  {
+   "t": "p",
+   "html": "Decision tree flowchart:"
+  },
+  {
+   "t": "ul",
+   "items": [
+    "<strong>Start</strong>: Material heat-stable?",
+    "<strong>Yes </strong>→ Use Steam Sterilization (121°C or 134°C)",
+    "<strong>No </strong>→ Proceed to next decision"
+   ]
+  },
+  {
+   "t": "h3",
+   "text": "Material radiation-stable?"
+  },
+  {
+   "t": "ul",
+   "items": [
+    "<strong>Yes </strong>→ Use Gamma Radiation (25 kGy)",
+    "<strong>No </strong>→ Use Ethylene Oxide (ETO) Sterilization",
+    "Each path shows typical applications and considerations"
+   ]
+  },
+  {
+   "t": "h3",
+   "text": "Sterility Assurance Level (SAL)"
+  },
+  {
+   "t": "p",
+   "html": "<strong>Definition</strong>: Probability of a single viable microorganism present on a device after sterilization."
+  },
+  {
+   "t": "p",
+   "html": "<strong>Standard Requirement</strong>: <strong>SAL of 10⁻⁶ </strong>(one in one million chance of non-sterility)"
+  },
+  {
+   "t": "h4",
+   "text": "Validation Requirements"
+  },
+  {
+   "t": "ul",
+   "items": [
+    "Bioburden determination",
+    "Sterilization process validation",
+    "Routine monitoring and control",
+    "Documentation and trending"
+   ]
+  },
+  {
+   "t": "box",
+   "kind": "case",
+   "label": "Case Study 6.1",
+   "title": "Contamination Investigation in Catheter Assembly Background:",
+   "blocks": [
+    {
+     "t": "p",
+     "html": "A manufacturer of urinary catheters identified elevated bioburden levels during routine testing of finished products from their ISO Class 7 assembly area."
+    },
+    {
+     "t": "h4",
+     "text": "Investigation Findings"
+    },
+    {
+     "t": "ul",
+     "items": [
+      "<strong>Root Cause Analysis revealed:</strong>",
+      "HEPA filter in one supply diffuser showed 15% penetration (failed DOP test)",
+      "Damaged filter media due to improper maintenance procedure",
+      "Filter replacement schedule not followed"
+     ]
+    },
+    {
+     "t": "h4",
+     "text": "Contributing Factors"
+    },
+    {
+     "t": "ul",
+     "items": [
+      "Inadequate preventive maintenance documentation",
+      "Missing integrity test records for previous 6 months",
+      "Operator training gaps in environmental monitoring interpretation"
+     ]
+    },
+    {
+     "t": "h4",
+     "text": "Corrective Actions"
+    },
+    {
+     "t": "ul",
+     "items": [
+      "<strong>Immediate Actions:</strong>",
+      "Replace damaged HEPA filter",
+      "Quarantine affected production batches",
+      "Conduct full environmental monitoring assessment",
+      "Re-classify cleanroom after repairs"
+     ]
+    },
+    {
+     "t": "h4",
+     "text": "Long-term Corrective Actions"
+    },
+    {
+     "t": "ul",
+     "items": [
+      "Implement automated filter integrity testing quarterly",
+      "Revise maintenance procedures with detailed checklists",
+      "Enhance operator training on HEPA system maintenance",
+      "Install real-time particle monitoring with alarm integration"
+     ]
+    },
+    {
+     "t": "h4",
+     "text": "Preventive Actions"
+    },
+    {
+     "t": "ul",
+     "items": [
+      "Establish predictive maintenance program using pressure drop trending",
+      "Implement quarterly HEPA filter integrity testing protocol",
+      "Conduct annual refresher training for facilities team",
+      "Upgrade to real-time environmental monitoring system"
+     ]
+    },
+    {
+     "t": "h4",
+     "text": "Outcome"
+    },
+    {
+     "t": "ul",
+     "items": [
+      "Cleanroom re-qualified to ISO Class 7 specifications",
+      "No further contamination events in subsequent 12 months",
+      "Enhanced quality system recognition during regulatory audit"
+     ]
+    }
+   ]
+  },
+  {
+   "t": "box",
+   "kind": "insight",
+   "label": "Industry Insight 6.1",
+   "title": "",
+   "blocks": [
+    {
+     "t": "p",
+     "html": "<strong>Market Perspective</strong>: More than <strong>68% of sterile medical devices manufactured in India </strong>are produced in facilities with <strong>ISO Class 7 and ISO Class 8 </strong>cleanroom environments. This represents a significant opportunity for quality professionals, cleanroom engineers, and environmental monitoring specialists as the industry continues to expand domestic manufacturing capabilities under the \"Make in India\" initiative."
+    }
+   ]
+  }
+ ],
+ "glossary": [
+  [
+   "ACH (Air Changes Per Hour)",
+   "Number of times the total air volume in a cleanroom is replaced per hour."
+  ],
+  [
+   "Bioburden",
+   "The population of viable microorganisms on or in a product or package before sterilization."
+  ],
+  [
+   "Cleanroom",
+   "Controlled environment with specified limits for airborne particulate contamination."
+  ],
+  [
+   "Differential Pressure (ΔP)",
+   "Pressure difference between adjacent areas, typically 10- 15 Pa for cleanrooms."
+  ],
+  [
+   "Environmental Monitoring (EM)",
+   "Systematic sampling and testing program to verify cleanroom control effectiveness."
+  ],
+  [
+   "HEPA Filter",
+   "High Efficiency Particulate Air filter removing ≥99.97% of particles ≥0.3 μm."
+  ],
+  [
+   "HVAC",
+   "Heating, Ventilation, and Air Conditioning system controlling cleanroom environment."
+  ],
+  [
+   "ISO 14644",
+   "International standard defining cleanroom classification and monitoring requirements."
+  ],
+  [
+   "Laminar Flow",
+   "Unidirectional airflow pattern with uniform velocity, typically 0.36- 0.54 m/s."
+  ],
+  [
+   "SAL (Sterility Assurance Level)",
+   "Probability of a single viable microorganism remaining after sterilization, typically 10⁻⁶."
+  ]
+ ],
+ "recap_intro": "Questions",
+ "recap_items": [
+  "<strong>Cleanroom classification systems </strong>(ISO 14644, EU GMP Grades) define particle concentration limits and operational requirements",
+  "<strong>HEPA/ULPA filtration </strong>and appropriate <strong>airflow patterns </strong>(laminar vs. turbulent) form the foundation of contamination control",
+  "<strong>HVAC systems </strong>maintain critical parameters including temperature, humidity, air changes, and pressure differentials",
+  "<strong>Pressure cascade management </strong>prevents contamination ingress through directional airflow control",
+  "<strong>Personnel gowning protocols </strong>and behavioral controls minimize human-generated contamination",
+  "<strong>Comprehensive contamination sources </strong>must be identified and controlled through engineering and administrative measures",
+  "<strong>Environmental monitoring programs </strong>(particulate, microbial, and parametric) provide objective evidence of cleanroom performance",
+  "<strong>Validation protocols </strong>(IQ, OQ, PQ) ensure cleanroom systems consistently meet specifications",
+  "<strong>Sterilization methods </strong>(ETO, Gamma, Steam) must be selected based on device material compatibility and regulatory requirements",
+  "Understanding cleanroom design, operation, and validation is fundamental to careers in quality assurance, manufacturing, regulatory affairs, and facility management within the medical device industry.",
+  "What are the key differences between ISO Class 5 and ISO Class 8 cleanrooms?",
+  "Why is differential pressure critical in cleanroom operations?",
+  "What are the three stages of cleanroom validation, and what does each verify?",
+  "Compare and contrast ETO, Gamma, and Steam sterilization methods.",
+  "Why are personnel considered the primary source of cleanroom contamination?"
+ ],
+ "references": [
+  {
+   "group": null,
+   "text": "ISO 14644-1:2015 -- Cleanrooms and associated controlled environments -- Part 1: Classification of air cleanliness by particle concentration"
+  },
+  {
+   "group": null,
+   "text": "ISO 14644-2:2015 -- Cleanrooms and associated controlled environments -- Part 2: Monitoring to provide evidence of cleanroom performance"
+  },
+  {
+   "group": null,
+   "text": "ISO 13485:2016 -- Medical devices -- Quality management systems -- Requirements for regulatory purposes"
+  },
+  {
+   "group": null,
+   "text": "EU GMP Annex 1 -- Manufacture of Sterile Medicinal Products (Revised 2022)"
+  },
+  {
+   "group": null,
+   "text": "Indian Medical Device Rules 2017 -- Schedule IV: Good Manufacturing Practices requirements"
+  },
+  {
+   "group": null,
+   "text": "ISO 11135:2014 -- Sterilization of health-care products -- Ethylene oxide"
+  },
+  {
+   "group": null,
+   "text": "ISO 11137-1:2006 -- Sterilization of health care products -- Radiation"
+  },
+  {
+   "group": null,
+   "text": "ISO 17665-1:2006 -- Sterilization of health care products -- Moist heat"
+  },
+  {
+   "group": null,
+   "text": "PDA Technical Report No. 13 -- Fundamentals of an Environmental Monitoring Program (Revised 2014)"
+  },
+  {
+   "group": null,
+   "text": "FDA Guidance -- Sterile Drug Products Produced by Aseptic Processing — Current Good Manufacturing Practice (2004)"
+  }
+ ]
+}
