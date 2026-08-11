@@ -23,7 +23,7 @@ def standards_index_html():
         ("Medical Devices Rules, 2017 — G.S.R. 78(E)", "India", "Comprehensive risk-based device rules; Class A–D", "Ch 1, 3, 12"),
         ("National Medical Device Policy, 2023", "India", "Six-strategy sector policy; USD 50 bn ambition by 2030", "Ch 1, 2, 20"),
         ("Federal Food, Drug, and Cosmetic Act, as amended", "USA", "Statutory basis of FDA device authority; §201(h) definition", "Ch 1, 3, 12"),
-        ("21 CFR Part 820 — Quality System Regulation", "USA", "US GMP / quality system requirements for devices", "Ch 5, 9, 10, 12"),
+        ("21 CFR Part 820 — Quality Management System Regulation (QMSR)", "USA", "US quality system requirements; ISO 13485:2016 incorporated by reference (eff. 2 Feb 2026)", "Ch 5, 9, 10, 12"),
         ("Regulation (EU) 2017/745 (EU MDR)", "EU", "Device regulation; Classes I, IIa, IIb, III; CE marking", "Ch 1, 3, 12, 14"),
         ("ISO 13485:2016", "International", "QMS requirements for medical devices", "Ch 5, 9, 10, 11"),
         ("ISO 14971:2019", "International", "Application of risk management to medical devices", "Ch 5, 9, 13"),

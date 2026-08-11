@@ -224,6 +224,7 @@ def lists_html():
         ("NSQF", "National Skills Qualifications Framework"), ("LSSSDC", "Life Sciences Sector Skill Development Council"),
         ("PLI", "Production Linked Incentive (scheme)"), ("PMA", "Premarket Approval (US FDA)"),
         ("PMS", "Post-Market Surveillance"), ("QMS", "Quality Management System"),
+        ("QMSR", "Quality Management System Regulation (US FDA, 21 CFR Part 820)"),
         ("SaMD", "Software as a Medical Device"), ("SLA", "State Licensing Authority"),
         ("UDI", "Unique Device Identification"), ("WHO", "World Health Organization"),
     ]

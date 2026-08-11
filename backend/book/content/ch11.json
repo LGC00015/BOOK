@@ -64,7 +64,7 @@
     "<strong>Patient protection </strong>— prevention of defective devices reaching end-users",
     "QC is mandated under:",
     "<strong>ISO 13485:2016 </strong>(Quality Management Systems for Medical Devices)",
-    "<strong>FDA 21 CFR 820 </strong>(Quality System Regulation)",
+    "<strong>FDA 21 CFR Part 820 </strong>(Quality Management System Regulation, QMSR)",
     "<strong>EU MDR 2017/745 </strong>(Medical Device Regulation)",
     "<strong>India MDR 2017 </strong>(Medical Devices Rules)"
    ]
@@ -1787,7 +1787,7 @@
    "t": "ul",
    "items": [
     "<strong>Parameter </strong> <strong>Typical Value </strong> <strong>Notes</strong>",
-    "<strong>Sterilization Dose </strong> 25 kGy Standard dose for SAL"
+    "<strong>Sterilization Dose </strong> 25 kGy — commonly referenced dose; substantiated per ISO 11137 for the required SAL"
    ]
   },
   {
@@ -1851,7 +1851,7 @@
    "items": [
     "Use ISO 11137-2 lookup tables",
     "Apply appropriate safety factors",
-    "Typical result: 25 kGy minimum dose"
+    "Typical result: e.g., 25 kGy minimum dose (product- and bioburden-specific)"
    ]
   },
   {
@@ -1878,7 +1878,7 @@
     "Establish maximum bioburden through historical data (minimum 3 consecutive lots)",
     "Select sterilization dose from ISO 11137-2 Table 5 based on bioburden",
     "Perform sterility testing on irradiated samples",
-    "<strong>Standard dose: </strong>25 kGy (most common for overkill method)"
+    "<strong>Commonly referenced dose: </strong>25 kGy (VDmax/overkill substantiation per ISO 11137-2)"
    ]
   },
   {
@@ -3506,7 +3506,7 @@
   },
   {
    "group": "Regulatory Guidance",
-   "text": "FDA 21 CFR Part 820 — Quality System Regulation"
+   "text": "FDA 21 CFR Part 820 — Quality Management System Regulation (QMSR)"
   },
   {
    "group": "Regulatory Guidance",

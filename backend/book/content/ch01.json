@@ -639,7 +639,7 @@
    "t": "ul",
    "items": [
     "Establishment registration and device listing",
-    "Good Manufacturing Practices (GMP) / Quality System Regulation (QSR)",
+    "Good Manufacturing Practices (GMP) / Quality Management System Regulation (QMSR)",
     "Labeling requirements",
     "Adverse event reporting"
    ]
@@ -1826,7 +1826,7 @@
     },
     {
      "t": "p",
-     "html": "Over <strong>75% of high-risk medical devices (Class C and D) </strong>used in India are currently imported. This presents significant opportunities under the Government of India's <strong>\"Make in India\" </strong>initiative, which aims to:"
+     "html": "Over <strong>75% of high-risk medical devices (Class C and D) </strong>used in India are imported (industry estimates, c. 2024). This presents significant opportunities under the Government of India's <strong>\"Make in India\" </strong>initiative, which aims to:"
     },
     {
      "t": "ul",

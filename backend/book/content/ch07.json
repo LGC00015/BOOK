@@ -390,7 +390,7 @@
   {
    "t": "ul",
    "items": [
-    "<strong>Dose</strong>: Typically 25 kGy",
+    "<strong>Dose</strong>: commonly 25 kGy; the product-specific dose is established per ISO 11137",
     "<strong>Compatible</strong>: Many plastics",
     "<strong>Incompatible</strong>: PTFE (degradation), some UHMWPE formulations"
    ]

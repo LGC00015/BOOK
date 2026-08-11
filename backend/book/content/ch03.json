@@ -613,7 +613,7 @@
     "<strong>Establishment registration </strong>– Manufacturers must register facilities with FDA",
     "<strong>Device listing </strong>– All manufactured devices must be listed",
     "<strong>Premarket notification exemption </strong>– Most Class I devices are exempt from 510(k)",
-    "<strong>Good Manufacturing Practices (GMP) </strong>– Compliance with Quality System Regulation (QSR)",
+    "<strong>Good Manufacturing Practices (GMP) </strong>– Compliance with the Quality Management System Regulation (QMSR)",
     "<strong>Labeling requirements </strong>– Clear instructions and warnings",
     "<strong>Medical Device Reporting (MDR) </strong>– Adverse event reporting when applicable"
    ]
@@ -672,7 +672,7 @@
    "items": [
     "Medical Device Reporting (MDR) for serious adverse events",
     "Corrections and removals reporting",
-    "QSR compliance and FDA inspections"
+    "QMSR compliance and FDA inspections"
    ]
   },
   {
@@ -796,7 +796,7 @@
     "MDR (Medical Device Reporting)",
     "Corrections and removals reporting",
     "Post-market surveillance studies (if ordered)",
-    "QSR compliance"
+    "QMSR compliance"
    ]
   },
   {
@@ -2316,7 +2316,7 @@
     "<strong>Clinical Data Harmonization</strong>: Design clinical studies to meet requirements of multiple jurisdictions simultaneously when possible.",
     "<strong>Classification Differences</strong>: A device may fall into different classes across jurisdictions:",
     "Example: Blood glucose meters",
-    "FDA: Class II (510(k) required)",
+    "FDA: Class II (typically subject to 510(k); some device types are exempt)",
     "EU MDR: Often Class IIb",
     "India: Class C",
     "<strong>Documentation Synergies</strong>: Technical files prepared for EU MDR can often be adapted for India DMF/PMF with additions.",
@@ -2428,7 +2428,7 @@
    "t": "ul",
    "items": [
     "<strong>India</strong>: Class C (Moderate-high risk; inaccurate readings affect medication dosing)",
-    "<strong>FDA</strong>: Class II (Special controls for accuracy; 510(k) required)",
+    "<strong>FDA</strong>: Class II (Special controls for accuracy; typically subject to 510(k))",
     "<strong>EU MDR</strong>: Class IIb (In vitro diagnostic aspect + clinical decision impact)"
    ]
   },
@@ -2777,7 +2777,7 @@
     },
     {
      "t": "p",
-     "html": "<strong>FDA</strong>: Class II (510(k) required with comprehensive testing) or Class III (PMA if novel technology)"
+     "html": "<strong>FDA</strong>: Class II (510(k) typically required, with comprehensive testing) or Class III (PMA if novel technology)"
     },
     {
      "t": "ul",
@@ -2903,7 +2903,7 @@
     {
      "t": "ul",
      "items": [
-      "India's medical device market projected to reach <strong>USD 50 billion by 2030</strong>",
+      "India's medical device market projected in industry estimates (c. 2024) to reach <strong>approximately USD 50 billion by 2030</strong>",
       "Growing domestic demand driven by:",
       "Expanding healthcare infrastructure",
       "Aging population",

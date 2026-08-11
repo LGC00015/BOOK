@@ -85,7 +85,7 @@
     "<strong>ISO 11607-2:2019 </strong>– Packaging validation (Part 2: Validation requirements)",
     "<strong>ASTM standards </strong>– Transportation and aging protocols",
     "<strong>CDSCO MDR 2017 </strong>– Indian packaging and labeling requirements",
-    "<strong>FDA 21 CFR 820 </strong>– Quality System Regulation (packaging controls)",
+    "<strong>FDA 21 CFR Part 820 </strong>– Quality Management System Regulation (QMSR; packaging controls)",
     "<strong>EU MDR 2017/745 </strong>– General Safety and Performance Requirements"
    ]
   },
@@ -2888,7 +2888,7 @@
   },
   {
    "group": "International Standards",
-   "text": "21 CFR Part 820 – Quality System Regulation (US FDA)"
+   "text": "21 CFR Part 820 – Quality Management System Regulation (QMSR, US FDA)"
   },
   {
    "group": "International Standards",

@@ -72,7 +72,7 @@
     "<strong>Regulatory requirements </strong>across global markets",
     "<strong>Customer expectations </strong>for reliability and efficacy Medical device QMS compliance is mandatory under:",
     "<strong>ISO 13485:2016 </strong>(International standard for medical device quality management)",
-    "<strong>FDA 21 CFR Part 820 </strong>(Quality System Regulation - QSR in the United States)",
+    "<strong>FDA 21 CFR Part 820 </strong>(Quality Management System Regulation — QMSR, United States; incorporates ISO 13485:2016 by reference, effective 2 February 2026)",
     "<strong>EU MDR 2017/745 Annexes IX and XI </strong>(European Union requirements)",
     "<strong>MDR 2017 </strong>(Medical Device Rules in India)"
    ]
@@ -1689,7 +1689,7 @@
   },
   {
    "group": null,
-   "text": "FDA 21 CFR Part 820 — Quality System Regulation (United States)"
+   "text": "FDA 21 CFR Part 820 — Quality Management System Regulation (QMSR, United States)"
   },
   {
    "group": null,
@@ -1713,7 +1713,7 @@
   },
   {
    "group": null,
-   "text": "FDA Guidance — Quality System Regulation; Medical Device Reporting and Corrections and Removals"
+   "text": "FDA Guidance — Quality Management System Regulation (QMSR); Medical Device Reporting and Corrections and Removals"
   },
   {
    "group": null,

@@ -11,7 +11,7 @@
   "Explain device classification principles under CDSCO, FDA, and EU MDR regulatory systems.",
   "Identify appropriate regulatory approval pathways for different device risk classes.",
   "Prepare essential regulatory documentation including DMF, PMF, 510(k), and Technical Files.",
-  "Interpret mandatory quality management system requirements (ISO 13485, QSR).",
+  "Interpret mandatory quality management system requirements (ISO 13485, QMSR).",
   "Understand vigilance systems, post-market surveillance, and reporting obligations.",
   "Differentiate between market authorization pathways across regulatory regions.",
   "Analyze regulatory case studies demonstrating compliance challenges and best practices."
@@ -714,7 +714,7 @@
    "items": [
     "Most Class I devices are <strong>exempt from 510(k)</strong>",
     "Register establishment and list devices",
-    "Comply with Quality System Regulation (QSR) <strong>Class II — Special Controls (Moderate Risk) Regulatory Controls:</strong>",
+    "Comply with the Quality Management System Regulation (QMSR) <strong>Class II — Special Controls (Moderate Risk) Regulatory Controls:</strong>",
     "General controls plus:",
     "<strong>510(k) Premarket Notification </strong>(mandatory)",
     "Performance standards",
@@ -1043,11 +1043,11 @@
   },
   {
    "t": "h3",
-   "text": "Quality System Regulation (QSR) — 21 CFR Part 820"
+   "text": "Quality Management System Regulation (QMSR) — 21 CFR Part 820"
   },
   {
    "t": "p",
-   "html": "The QSR establishes comprehensive quality management requirements for device manufacturers."
+   "html": "The QMSR establishes comprehensive quality management requirements for device manufacturers."
   },
   {
    "t": "p",
@@ -1130,11 +1130,11 @@
   },
   {
    "t": "p",
-   "html": "<strong>Note: </strong>FDA is transitioning from QSR to <strong>Quality Management System Regulation (QMSR)</strong>"
+   "html": "<strong>Note: </strong>With effect from 2 February 2026, FDA replaced the former Quality System Regulation (QSR) with the <strong>Quality Management System Regulation (QMSR)</strong>"
   },
   {
    "t": "p",
-   "html": "aligned with ISO 13485:2016, improving harmonization with international standards."
+   "html": "The QMSR incorporates ISO 13485:2016 by reference, improving global harmonization with international standards."
   },
   {
    "t": "h2",
@@ -2197,15 +2197,15 @@
   },
   {
    "t": "p",
-   "html": "<strong>USA </strong>21 CFR Part 820 (QSR)"
+   "html": "<strong>USA </strong>21 CFR Part 820 (QMSR)"
   },
   {
    "t": "p",
-   "html": "Quality System Regulation"
+   "html": "Quality Management System Regulation (QMSR)"
   },
   {
    "t": "p",
-   "html": "Design controls mandatory; transitioning to QMSR"
+   "html": "Design controls mandatory; QMSR (ISO 13485-aligned) effective 2 February 2026"
   },
   {
    "t": "p",
@@ -3074,8 +3074,8 @@
    "Systematic process for monitoring device safety and performance after market introduction"
   ],
   [
-   "QSR (Quality System Regulation)",
-   "FDA regulation (21 CFR 820) establishing quality system requirements"
+   "QMSR (Quality Management System Regulation)",
+   "FDA quality system regulation (21 CFR Part 820); with effect from 2 February 2026 it incorporates ISO 13485:2016 by reference, replacing the former Quality System Regulation (QSR)"
   ],
   [
    "UDI (Unique Device Identification)",

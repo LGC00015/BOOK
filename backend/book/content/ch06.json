@@ -150,7 +150,7 @@
     "<strong>ISO 13485 </strong>(Quality Management Systems for medical devices)",
     "<strong>EU GMP Annex 1 </strong>(Manufacture of Sterile Medicinal Products)",
     "<strong>MDR 2017 Schedule IV </strong>(Good Manufacturing Practices requirements)",
-    "<strong>FDA 21 CFR 820 </strong>(Quality System Regulation)"
+    "<strong>FDA 21 CFR Part 820 </strong>(Quality Management System Regulation, QMSR)"
    ]
   },
   {
@@ -1158,7 +1158,7 @@
    "items": [
     "Temperature: 37-63°C",
     "Humidity: 30-80% RH",
-    "ETO concentration: 450-1200 mg/L",
+    "ETO concentration: typically 450–1200 mg/L (illustrative; validated cycle-specific per ISO 11135)",
     "Exposure time: 1-6 hours",
     "Aeration: 8-12 hours (removes residual ETO)"
    ]
@@ -1193,7 +1193,7 @@
   },
   {
    "t": "p",
-   "html": "<strong>Typical Dose</strong>: 25 kGy (minimum sterilization dose)"
+   "html": "<strong>Typical dose</strong>: 25 kGy is a commonly referenced example; the minimum sterilization dose must be established and validated for the specific product per ISO 11137"
   },
   {
    "t": "h4",
@@ -1273,7 +1273,7 @@
   {
    "t": "ul",
    "items": [
-    "<strong>Yes </strong>→ Use Gamma Radiation (25 kGy)",
+    "<strong>Yes </strong>→ Use gamma radiation (commonly 25 kGy; dose validated per ISO 11137)",
     "<strong>No </strong>→ Use Ethylene Oxide (ETO) Sterilization",
     "Each path shows typical applications and considerations"
    ]

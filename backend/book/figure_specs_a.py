@@ -131,7 +131,7 @@ SPECS_A = {
         rows=[["Low risk", "Class A — SLA licence", "Class I — mostly exempt", "Class I — self-declare"],
               ["Moderate", "Class B/C licences", "Class II — 510(k)", "IIa/IIb — notified body"],
               ["High risk", "Class D — CLA licence", "Class III — PMA", "Class III — full review"],
-              ["Clinical data", "Class C/D as required", "PMA requires trials", "III & implants: evidence"],
+              ["Clinical data", "Class C/D as required", "PMA: clinical data typically required", "III & implants: evidence"],
               ["Timeline", "6–12 months typical", "510(k) ~3–9 mo; PMA 1–3 yr", "6–18 months typical"]], rh=38),
     "4.7": dict(t="pyramid", cap="Manufacturing documentation pyramid",
         levels=[("Records (DHR)", "Evidence of what was made — batch records, test results"),

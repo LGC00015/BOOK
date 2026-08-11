@@ -795,6 +795,9 @@ def main():
     total_figs = sum(len(c["figures"]) for c in manifest["chapters"])
     total_tabs = sum(len(c["tables"]) for c in manifest["chapters"])
     print("\nTOTAL figures=%d tables=%d" % (total_figs, total_tabs))
+    # re-apply the QA corrections layer (controlled revision protocol)
+    import subprocess
+    subprocess.run([sys.executable, "/app/scripts/apply_qa.py"], check=False)
 
 
 if __name__ == "__main__":

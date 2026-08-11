@@ -12,7 +12,7 @@
   "Apply risk management principles (ISO 14971) throughout the design lifecycle.",
   "Understand and implement usability engineering and human factors methodologies.",
   "Develop engineering prototypes using appropriate materials and manufacturing processes.",
-  "Document design processes in compliance with FDA QSR and ISO 13485 requirements.",
+  "Document design processes in compliance with the FDA QMSR and ISO 13485 requirements.",
   "Conduct design verification and validation activities with appropriate methodologies.",
   "Perform structured design reviews and maintain comprehensive Design History Files (DHF)."
  ],
@@ -80,7 +80,7 @@
   },
   {
    "t": "p",
-   "html": "Both ISO 13485 (Quality Management Systems for Medical Devices) and FDA 21 CFR 820 (Quality System Regulation) mandate the implementation of formal <strong>Design Controls </strong>to ensure systematic, traceable, and compliant development processes."
+   "html": "Both ISO 13485 (Quality Management Systems for Medical Devices) and FDA 21 CFR Part 820 (Quality Management System Regulation, QMSR) mandate the implementation of formal <strong>Design Controls </strong>to ensure systematic, traceable, and compliant development processes."
   },
   {
    "t": "h2",
@@ -1955,7 +1955,7 @@
   },
   {
    "group": null,
-   "text": "U.S. Food and Drug Administration. 21 CFR Part 820 — Quality System Regulation."
+   "text": "U.S. Food and Drug Administration. 21 CFR Part 820 — Quality Management System Regulation (QMSR; formerly Quality System Regulation)."
   },
   {
    "group": null,

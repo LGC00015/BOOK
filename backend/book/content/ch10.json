@@ -61,7 +61,7 @@
    "items": [
     "<strong>ISO 13485:2016 </strong>– Medical devices quality management systems",
     "<strong>MDR 2017 (India) </strong>– Medical Device Rules, Schedule IV requirements",
-    "<strong>FDA 21 CFR Part 820 </strong>– Quality System Regulation (United States)",
+    "<strong>FDA 21 CFR Part 820 </strong>– Quality Management System Regulation (QMSR, United States)",
     "<strong>EU MDR 2017/745 </strong>– European Medical Device Regulation, Annex I"
    ]
   },
@@ -1447,7 +1447,7 @@
   {
    "t": "ul",
    "items": [
-    "Gas concentration: 450–1200 mg/L",
+    "Gas concentration: typically 450–1200 mg/L (illustrative; validated cycle-specific per ISO 11135)",
     "Temperature: 37–63°C",
     "Humidity: 40–80% RH",
     "Exposure time: 1.5–6 hours"
@@ -2739,7 +2739,7 @@
   },
   {
    "group": "International Standards",
-   "text": "FDA 21 CFR Part 820 – Quality System Regulation (United States)"
+   "text": "FDA 21 CFR Part 820 – Quality Management System Regulation (QMSR, United States)"
   },
   {
    "group": "International Standards",
