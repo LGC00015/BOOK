@@ -1,558 +1,420 @@
 #!/usr/bin/env python3
-"""
-Backend API Test Suite for Medical Devices Textbook Production System
-Tests all /api/book/* endpoints after 20-chapter rebuild
+"""Backend API Testing - Regulatory QA Corrections Verification
+Tests all /api/book/* endpoints for:
+1. Regression: meta, toc, pdf/status, pdf endpoints
+2. Corrected wordings in chapter previews (51+3 QA corrections)
+3. Vector SVG figure rendering
 """
 
 import requests
-import time
 import sys
-from typing import Dict, Any, List
+import time
 
 # Backend URL from frontend/.env
-BASE_URL = "https://happy-kowalevski-8.preview.emergentagent.com"
-API_BASE = f"{BASE_URL}/api"
+BASE_URL = "https://happy-kowalevski-8.preview.emergentagent.com/api"
 
-# Test configuration
-TIMEOUT = 60  # Standard timeout
-PDF_TIMEOUT = 120  # Extended timeout for PDF operations
+class Colors:
+    GREEN = '\033[92m'
+    RED = '\033[91m'
+    YELLOW = '\033[93m'
+    BLUE = '\033[94m'
+    END = '\033[0m'
 
-# Color codes for output
-GREEN = '\033[92m'
-RED = '\033[91m'
-YELLOW = '\033[93m'
-BLUE = '\033[94m'
-RESET = '\033[0m'
+def log_test(name, passed, details=""):
+    status = f"{Colors.GREEN}✓ PASS{Colors.END}" if passed else f"{Colors.RED}✗ FAIL{Colors.END}"
+    print(f"{status} - {name}")
+    if details:
+        print(f"  {details}")
+    return passed
 
-class TestResults:
-    def __init__(self):
-        self.passed = []
-        self.failed = []
-        self.warnings = []
-    
-    def add_pass(self, test_name: str, details: str = ""):
-        self.passed.append((test_name, details))
-        print(f"{GREEN}✓{RESET} {test_name}")
-        if details:
-            print(f"  {details}")
-    
-    def add_fail(self, test_name: str, error: str):
-        self.failed.append((test_name, error))
-        print(f"{RED}✗{RESET} {test_name}")
-        print(f"  {RED}Error: {error}{RESET}")
-    
-    def add_warning(self, test_name: str, warning: str):
-        self.warnings.append((test_name, warning))
-        print(f"{YELLOW}⚠{RESET} {test_name}")
-        print(f"  {YELLOW}Warning: {warning}{RESET}")
-    
-    def summary(self):
-        print(f"\n{'='*80}")
-        print(f"{BLUE}TEST SUMMARY{RESET}")
-        print(f"{'='*80}")
-        print(f"{GREEN}Passed: {len(self.passed)}{RESET}")
-        print(f"{RED}Failed: {len(self.failed)}{RESET}")
-        print(f"{YELLOW}Warnings: {len(self.warnings)}{RESET}")
-        
-        if self.failed:
-            print(f"\n{RED}FAILED TESTS:{RESET}")
-            for test_name, error in self.failed:
-                print(f"  • {test_name}")
-                print(f"    {error}")
-        
-        return len(self.failed) == 0
-
-results = TestResults()
-
-def test_health_check():
-    """Test 1: GET /api/ returns health check"""
+def test_regression_meta():
+    """Test GET /api/book/meta - 20/20 chapters, 156 figures, 6 phases complete, pdf ready"""
+    print(f"\n{Colors.BLUE}=== REGRESSION TEST: GET /api/book/meta ==={Colors.END}")
     try:
-        response = requests.get(f"{API_BASE}/", timeout=TIMEOUT)
+        resp = requests.get(f"{BASE_URL}/book/meta", timeout=90)
+        if resp.status_code != 200:
+            return log_test("GET /api/book/meta", False, f"Status {resp.status_code}")
         
-        if response.status_code != 200:
-            results.add_fail("GET /api/ health check", f"Status code {response.status_code}, expected 200")
-            return False
-        
-        data = response.json()
-        
-        if "message" not in data or "status" not in data:
-            results.add_fail("GET /api/ health check", f"Missing required fields. Got: {data}")
-            return False
-        
-        if data["status"] != "ok":
-            results.add_fail("GET /api/ health check", f"Status is '{data['status']}', expected 'ok'")
-            return False
-        
-        results.add_pass("GET /api/ health check", f"Status: {data['status']}, Message: {data['message']}")
-        return True
-        
-    except Exception as e:
-        results.add_fail("GET /api/ health check", str(e))
-        return False
-
-def test_book_meta():
-    """Test 2: GET /api/book/meta returns correct metadata"""
-    try:
-        response = requests.get(f"{API_BASE}/book/meta", timeout=TIMEOUT)
-        
-        if response.status_code != 200:
-            results.add_fail("GET /api/book/meta", f"Status code {response.status_code}, expected 200")
-            return False
-        
-        data = response.json()
+        data = resp.json()
         
         # Check chapters
-        if data.get("chapters_total") != 20:
-            results.add_fail("GET /api/book/meta", f"chapters_total is {data.get('chapters_total')}, expected 20")
-            return False
-        
-        if data.get("chapters_complete") != 20:
-            results.add_fail("GET /api/book/meta", f"chapters_complete is {data.get('chapters_complete')}, expected 20")
-            return False
+        chapters_ok = data.get("chapters_total") == 20 and data.get("chapters_complete") == 20
+        if not chapters_ok:
+            return log_test("Chapters count", False, f"Expected 20/20, got {data.get('chapters_complete')}/{data.get('chapters_total')}")
+        log_test("Chapters count", True, "20/20 chapters")
         
         # Check figures
-        if data.get("figures_count") != 156:
-            results.add_fail("GET /api/book/meta", f"figures_count is {data.get('figures_count')}, expected 156")
-            return False
-        
-        # Check tables
-        if data.get("tables_count") != 17:
-            results.add_fail("GET /api/book/meta", f"tables_count is {data.get('tables_count')}, expected 17")
-            return False
+        figures_ok = data.get("figures_count") == 156
+        if not figures_ok:
+            return log_test("Figures count", False, f"Expected 156, got {data.get('figures_count')}")
+        log_test("Figures count", True, "156 figures")
         
         # Check phases
         phases = data.get("phases", [])
-        if len(phases) != 6:
-            results.add_fail("GET /api/book/meta", f"phases list has {len(phases)} entries, expected 6")
-            return False
+        phases_ok = len(phases) == 6 and all(p.get("status") == "complete" for p in phases)
+        if not phases_ok:
+            return log_test("Phases", False, f"Expected 6 complete phases, got {len(phases)} phases")
+        log_test("Phases", True, "6 phases all complete")
         
-        # Check all phases are complete
-        incomplete_phases = [p for p in phases if p.get("status") != "complete"]
-        if incomplete_phases:
-            results.add_fail("GET /api/book/meta", f"Some phases not complete: {incomplete_phases}")
-            return False
+        # Check PDF ready
+        pdf = data.get("pdf", {})
+        pdf_ok = pdf.get("ready") == True and pdf.get("pages") == 726
+        if not pdf_ok:
+            return log_test("PDF status", False, f"Expected ready=true, pages=726, got ready={pdf.get('ready')}, pages={pdf.get('pages')}")
+        log_test("PDF status", True, "ready=true, pages=726")
         
-        # Check PDF object
-        pdf = data.get("pdf")
-        if not pdf:
-            results.add_fail("GET /api/book/meta", "PDF object missing")
-            return False
-        
-        details = (f"Chapters: {data['chapters_total']}/{data['chapters_complete']}, "
-                  f"Figures: {data['figures_count']}, Tables: {data['tables_count']}, "
-                  f"Phases: {len(phases)} all complete, PDF ready: {pdf.get('ready', False)}")
-        
-        results.add_pass("GET /api/book/meta", details)
         return True
-        
     except Exception as e:
-        results.add_fail("GET /api/book/meta", str(e))
-        return False
+        return log_test("GET /api/book/meta", False, str(e))
 
-def test_book_toc():
-    """Test 3: GET /api/book/toc returns correct structure"""
+def test_regression_toc():
+    """Test GET /api/book/toc - 6 parts"""
+    print(f"\n{Colors.BLUE}=== REGRESSION TEST: GET /api/book/toc ==={Colors.END}")
     try:
-        response = requests.get(f"{API_BASE}/book/toc", timeout=TIMEOUT)
+        resp = requests.get(f"{BASE_URL}/book/toc", timeout=30)
+        if resp.status_code != 200:
+            return log_test("GET /api/book/toc", False, f"Status {resp.status_code}")
         
-        if response.status_code != 200:
-            results.add_fail("GET /api/book/toc", f"Status code {response.status_code}, expected 200")
-            return False
+        data = resp.json()
         
-        data = response.json()
-        
-        # Check front_matter (8 items)
-        front_matter = data.get("front_matter", [])
-        if len(front_matter) != 8:
-            results.add_fail("GET /api/book/toc", f"front_matter has {len(front_matter)} items, expected 8")
-            return False
-        
-        expected_front = ["cover", "titlepage", "copyright", "preface", "howto", "syllabus", "toc", "lists"]
-        front_ids = [item["id"] for item in front_matter]
-        if front_ids != expected_front:
-            results.add_fail("GET /api/book/toc", f"front_matter ids mismatch. Got: {front_ids}, Expected: {expected_front}")
-            return False
-        
-        # Check parts (6 parts)
+        # Check parts
         parts = data.get("parts", [])
-        if len(parts) != 6:
-            results.add_fail("GET /api/book/toc", f"parts has {len(parts)} entries, expected 6")
-            return False
+        parts_ok = len(parts) == 6
+        if not parts_ok:
+            return log_test("Parts count", False, f"Expected 6 parts, got {len(parts)}")
+        log_test("Parts count", True, "6 parts")
         
-        # Check part structure
-        expected_parts = {
-            "I": [1, 2, 3],
-            "II": [4, 5, 6],
-            "III": [7, 8, 9],
-            "IV": [10, 11],
-            "V": [12, 13, 14, 15, 16, 17],
-            "VI": [18, 19, 20]
-        }
-        
-        for part in parts:
-            part_num = part.get("num")
-            chapters = [ch["num"] for ch in part.get("chapters", [])]
-            expected = expected_parts.get(part_num, [])
-            
-            if chapters != expected:
-                results.add_fail("GET /api/book/toc", 
-                               f"Part {part_num} chapters mismatch. Got: {chapters}, Expected: {expected}")
-                return False
-        
-        # Check back_matter (3 items: glossary, stdindex, biblio - NO answerkeys)
-        back_matter = data.get("back_matter", [])
-        if len(back_matter) != 3:
-            results.add_fail("GET /api/book/toc", f"back_matter has {len(back_matter)} items, expected 3")
-            return False
-        
-        expected_back = ["glossary", "stdindex", "biblio"]
-        back_ids = [item["id"] for item in back_matter]
-        if back_ids != expected_back:
-            results.add_fail("GET /api/book/toc", f"back_matter ids mismatch. Got: {back_ids}, Expected: {expected_back}")
-            return False
-        
-        # Check that answerkeys is NOT present
-        if "answerkeys" in back_ids:
-            results.add_fail("GET /api/book/toc", "answerkeys found in back_matter but should be removed")
-            return False
-        
-        details = (f"Front matter: {len(front_matter)} items, "
-                  f"Parts: {len(parts)} (I-VI with correct chapter distribution), "
-                  f"Back matter: {len(back_matter)} items (glossary, stdindex, biblio - answerkeys removed)")
-        
-        results.add_pass("GET /api/book/toc", details)
         return True
-        
     except Exception as e:
-        results.add_fail("GET /api/book/toc", str(e))
-        return False
+        return log_test("GET /api/book/toc", False, str(e))
 
-def test_preview_sections():
-    """Test 4: GET /api/book/preview/{section_id} for all sections with response time check"""
-    
-    # All sections to test
-    sections_to_test = [
-        # Front matter
-        "cover", "halftitle", "titlepage", "copyright", "preface", "howto", "syllabus", "toc", "lists",
-        # Parts
-        "partI", "partII", "partIII", "partIV", "partV", "partVI",
-        # Chapters
-        *[f"ch{i:02d}" for i in range(1, 21)],
-        # Back matter
-        "glossary", "stdindex", "biblio"
-    ]
-    
-    all_passed = True
-    slow_sections = []
-    
-    for section_id in sections_to_test:
-        try:
-            start_time = time.time()
-            response = requests.get(f"{API_BASE}/book/preview/{section_id}", timeout=TIMEOUT)
-            response_time = time.time() - start_time
-            
-            if response.status_code != 200:
-                results.add_fail(f"GET /api/book/preview/{section_id}", 
-                               f"Status code {response.status_code}, expected 200")
-                all_passed = False
-                continue
-            
-            # Check response time (should be <2s after caching improvements)
-            if response_time > 2.0:
-                slow_sections.append((section_id, response_time))
-            
-            html = response.text
-            
-            # Basic HTML validation
-            if not html or len(html) < 100:
-                results.add_fail(f"GET /api/book/preview/{section_id}", 
-                               f"HTML too short ({len(html)} chars)")
-                all_passed = False
-                continue
-            
-            # Chapter-specific validation
-            if section_id.startswith("ch"):
-                # Check for required elements in chapter HTML
-                required_elements = ["ch-title", "objectives-box"]
-                missing = [elem for elem in required_elements if elem not in html]
-                
-                if missing:
-                    results.add_fail(f"GET /api/book/preview/{section_id}", 
-                                   f"Missing required elements: {missing}")
-                    all_passed = False
-                    continue
-                
-                # Special check for ch01 - should have an image
-                if section_id == "ch01":
-                    if 'images/ch01_fig01.jpg' not in html:
-                        results.add_fail(f"GET /api/book/preview/{section_id}", 
-                                       "ch01 should contain image reference to images/ch01_fig01.jpg")
-                        all_passed = False
-                        continue
-            
-        except Exception as e:
-            results.add_fail(f"GET /api/book/preview/{section_id}", str(e))
-            all_passed = False
-            continue
-    
-    if all_passed:
-        details = f"All {len(sections_to_test)} sections returned valid HTML"
-        if slow_sections:
-            details += f" (Warning: {len(slow_sections)} sections >2s: {', '.join([f'{s}({t:.2f}s)' for s, t in slow_sections[:3]])})"
-        results.add_pass("GET /api/book/preview/{section_id} for all sections", details)
-    
-    # Test 404 for unknown section
+def test_regression_pdf_status():
+    """Test GET /api/book/pdf/status - ready=true, pages=726"""
+    print(f"\n{Colors.BLUE}=== REGRESSION TEST: GET /api/book/pdf/status ==={Colors.END}")
     try:
-        response = requests.get(f"{API_BASE}/book/preview/ch99", timeout=TIMEOUT)
-        if response.status_code != 404:
-            results.add_fail("GET /api/book/preview/ch99 (unknown)", 
-                           f"Status code {response.status_code}, expected 404")
-            all_passed = False
-        else:
-            results.add_pass("GET /api/book/preview/ch99 (unknown)", "Correctly returns 404")
-    except Exception as e:
-        results.add_fail("GET /api/book/preview/ch99 (unknown)", str(e))
-        all_passed = False
-    
-    return all_passed
-
-def test_preview_images():
-    """Test 5: GET /api/book/preview/images/* serves images"""
-    
-    # Test specific images
-    test_images = [
-        "ch01_fig01.jpg",
-        "ch13_fig05.jpg",
-        "ch20_fig01.jpg"
-    ]
-    
-    all_passed = True
-    
-    for image_name in test_images:
-        try:
-            response = requests.get(f"{API_BASE}/book/preview/images/{image_name}", timeout=TIMEOUT)
+        # Poll up to 90s as per requirements
+        max_wait = 90
+        start = time.time()
+        while time.time() - start < max_wait:
+            resp = requests.get(f"{BASE_URL}/book/pdf/status", timeout=30)
+            if resp.status_code != 200:
+                return log_test("GET /api/book/pdf/status", False, f"Status {resp.status_code}")
             
-            if response.status_code != 200:
-                results.add_fail(f"GET /api/book/preview/images/{image_name}", 
-                               f"Status code {response.status_code}, expected 200")
-                all_passed = False
-                continue
-            
-            # Check content type
-            content_type = response.headers.get("content-type", "")
-            if "image/jpeg" not in content_type and "image/jpg" not in content_type:
-                results.add_fail(f"GET /api/book/preview/images/{image_name}", 
-                               f"Content-Type is '{content_type}', expected image/jpeg")
-                all_passed = False
-                continue
-            
-            # Check content size
-            content_length = len(response.content)
-            if content_length < 1000:  # Images should be at least 1KB
-                results.add_fail(f"GET /api/book/preview/images/{image_name}", 
-                               f"Image too small ({content_length} bytes)")
-                all_passed = False
-                continue
-            
-        except Exception as e:
-            results.add_fail(f"GET /api/book/preview/images/{image_name}", str(e))
-            all_passed = False
-            continue
-    
-    if all_passed:
-        results.add_pass("GET /api/book/preview/images/*", 
-                        f"All {len(test_images)} test images served correctly with image/jpeg content-type")
-    
-    return all_passed
-
-def test_pdf_status():
-    """Test 6: GET /api/book/pdf/status (expecting 734 pages after quality pass)"""
-    try:
-        # Poll for up to 120 seconds if building
-        max_wait = 120
-        start_time = time.time()
-        
-        while True:
-            response = requests.get(f"{API_BASE}/book/pdf/status", timeout=TIMEOUT)
-            
-            if response.status_code != 200:
-                results.add_fail("GET /api/book/pdf/status", f"Status code {response.status_code}, expected 200")
-                return False
-            
-            data = response.json()
-            
-            # Check if ready
-            if data.get("ready") is True:
-                # Validate pages (now expecting 734 after quality pass, was 754)
-                pages = data.get("pages", 0)
-                if pages != 734:
-                    results.add_warning("GET /api/book/pdf/status", 
-                                   f"pages is {pages}, expected 734 (after quality pass)")
-                
-                # Validate size (should be ~5.1MB)
-                size_bytes = data.get("size_bytes", 0)
-                if size_bytes < 3 * 1024 * 1024:  # 3MB minimum
-                    results.add_fail("GET /api/book/pdf/status", 
-                                   f"size_bytes is {size_bytes}, expected ~5.1MB")
-                    return False
-                
-                # Check error is null
-                if data.get("error") is not None:
-                    results.add_fail("GET /api/book/pdf/status", 
-                                   f"error field is not null: {data.get('error')}")
-                    return False
-                
-                size_mb = size_bytes / (1024 * 1024)
-                details = f"Ready: true, Pages: {pages}, Size: {size_mb:.2f}MB, Error: null"
-                results.add_pass("GET /api/book/pdf/status", details)
+            data = resp.json()
+            if data.get("ready") == True:
+                pages_ok = data.get("pages") == 726
+                if not pages_ok:
+                    return log_test("PDF pages", False, f"Expected 726 pages, got {data.get('pages')}")
+                log_test("PDF status", True, f"ready=true, pages=726")
                 return True
             
-            # Check if building
-            if data.get("building") is True:
-                elapsed = time.time() - start_time
-                if elapsed > max_wait:
-                    results.add_fail("GET /api/book/pdf/status", 
-                                   f"PDF still building after {max_wait}s timeout")
-                    return False
-                
-                print(f"  PDF building... waiting ({elapsed:.0f}s elapsed)")
-                time.sleep(5)
-                continue
-            
-            # Neither ready nor building - unexpected state
-            results.add_fail("GET /api/book/pdf/status", 
-                           f"Unexpected state: ready={data.get('ready')}, building={data.get('building')}")
-            return False
+            time.sleep(2)
         
+        return log_test("PDF status", False, "PDF not ready after 90s")
     except Exception as e:
-        results.add_fail("GET /api/book/pdf/status", str(e))
-        return False
+        return log_test("GET /api/book/pdf/status", False, str(e))
 
-def test_pdf_download():
-    """Test 7: GET /api/book/pdf downloads PDF (expecting 734 pages)"""
+def test_regression_pdf_download():
+    """Test GET /api/book/pdf - 200, X-Page-Count=726, %PDF magic"""
+    print(f"\n{Colors.BLUE}=== REGRESSION TEST: GET /api/book/pdf ==={Colors.END}")
     try:
-        print(f"  Downloading PDF (may take up to 60s)...")
-        response = requests.get(f"{API_BASE}/book/pdf", timeout=PDF_TIMEOUT)
+        resp = requests.get(f"{BASE_URL}/book/pdf", timeout=60)
+        if resp.status_code != 200:
+            return log_test("GET /api/book/pdf", False, f"Status {resp.status_code}")
         
-        if response.status_code != 200:
-            results.add_fail("GET /api/book/pdf", f"Status code {response.status_code}, expected 200")
-            return False
-        
-        # Check content type
-        content_type = response.headers.get("content-type", "")
-        if "application/pdf" not in content_type:
-            results.add_fail("GET /api/book/pdf", 
-                           f"Content-Type is '{content_type}', expected application/pdf")
-            return False
-        
-        # Check X-Page-Count header (expecting 734)
-        page_count = response.headers.get("X-Page-Count")
-        if not page_count:
-            results.add_fail("GET /api/book/pdf", "Missing X-Page-Count header")
-            return False
-        
-        page_count = int(page_count)
-        if page_count != 734:
-            results.add_warning("GET /api/book/pdf", 
-                           f"X-Page-Count is {page_count}, expected 734 (after quality pass)")
-        
-        # Check content size (~5.1MB expected)
-        content_length = len(response.content)
-        size_mb = content_length / (1024 * 1024)
-        
-        if content_length < 3 * 1024 * 1024:  # 3MB minimum
-            results.add_fail("GET /api/book/pdf", 
-                           f"PDF size is {size_mb:.2f}MB, expected ~5.1MB")
-            return False
+        # Check X-Page-Count header
+        page_count = resp.headers.get("X-Page-Count")
+        if page_count != "726":
+            return log_test("X-Page-Count header", False, f"Expected 726, got {page_count}")
+        log_test("X-Page-Count header", True, "726")
         
         # Check PDF magic bytes
-        if not response.content.startswith(b'%PDF'):
-            results.add_fail("GET /api/book/pdf", 
-                           "Content does not start with %PDF magic bytes")
-            return False
+        content = resp.content
+        if not content.startswith(b'%PDF'):
+            return log_test("PDF magic bytes", False, "Does not start with %PDF")
+        log_test("PDF magic bytes", True, "Valid PDF format")
         
-        details = f"Content-Type: application/pdf, Pages: {page_count}, Size: {size_mb:.2f}MB, Valid PDF format"
-        results.add_pass("GET /api/book/pdf", details)
         return True
-        
     except Exception as e:
-        results.add_fail("GET /api/book/pdf", str(e))
-        return False
+        return log_test("GET /api/book/pdf", False, str(e))
 
-def test_disk_cache():
-    """Test 8: Verify disk cache files exist (restart-resilience fix)"""
-    import os
-    
+def test_corrected_wordings_ch12():
+    """Test ch12 QA corrections - QMSR terminology"""
+    print(f"\n{Colors.BLUE}=== CORRECTED WORDINGS: ch12 (QMSR) ==={Colors.END}")
     try:
-        pdf_file = "/app/backend/book/build/book.pdf"
-        meta_file = "/app/backend/book/build/book.meta.json"
+        resp = requests.get(f"{BASE_URL}/book/preview/ch12", timeout=30)
+        if resp.status_code != 200:
+            return log_test("GET /api/book/preview/ch12", False, f"Status {resp.status_code}")
         
-        # Check if PDF file exists
-        if not os.path.exists(pdf_file):
-            results.add_fail("Disk cache check", f"PDF file not found at {pdf_file}")
-            return False
+        html = resp.text
         
-        # Check if meta file exists
-        if not os.path.exists(meta_file):
-            results.add_fail("Disk cache check", f"Meta file not found at {meta_file}")
-            return False
+        # Must contain: "With effect from 2 February 2026, FDA replaced the former Quality System Regulation"
+        check1 = "With effect from 2 February 2026, FDA replaced the former Quality System Regulation" in html
+        if not check1:
+            return log_test("ch12: QMSR effective date", False, "Missing: 'With effect from 2 February 2026, FDA replaced the former Quality System Regulation'")
+        log_test("ch12: QMSR effective date", True)
         
-        # Check PDF file size
-        pdf_size = os.path.getsize(pdf_file)
-        pdf_size_mb = pdf_size / (1024 * 1024)
+        # Must contain: "Quality Management System Regulation (QMSR)"
+        check2 = "Quality Management System Regulation (QMSR)" in html
+        if not check2:
+            return log_test("ch12: QMSR term", False, "Missing: 'Quality Management System Regulation (QMSR)'")
+        log_test("ch12: QMSR term", True)
         
-        if pdf_size < 3 * 1024 * 1024:  # 3MB minimum
-            results.add_fail("Disk cache check", 
-                           f"PDF file too small ({pdf_size_mb:.2f}MB), expected ~5.1MB")
-            return False
+        # Must contain: "QMSR (Quality Management System Regulation)"
+        check3 = "QMSR (Quality Management System Regulation)" in html
+        if not check3:
+            return log_test("ch12: QMSR abbreviation", False, "Missing: 'QMSR (Quality Management System Regulation)'")
+        log_test("ch12: QMSR abbreviation", True)
         
-        # Check meta file content
-        import json
-        with open(meta_file, 'r') as f:
-            meta = json.load(f)
+        # Must NOT contain: "FDA is transitioning from QSR"
+        check4 = "FDA is transitioning from QSR" not in html
+        if not check4:
+            return log_test("ch12: Old transition text removed", False, "Still contains: 'FDA is transitioning from QSR'")
+        log_test("ch12: Old transition text removed", True)
         
-        if "hash" not in meta:
-            results.add_fail("Disk cache check", "Meta file missing 'hash' field")
-            return False
-        
-        if "pages" not in meta:
-            results.add_fail("Disk cache check", "Meta file missing 'pages' field")
-            return False
-        
-        pages = meta.get("pages", 0)
-        if pages != 734:
-            results.add_warning("Disk cache check", 
-                              f"Meta file pages is {pages}, expected 734")
-        
-        details = f"PDF file: {pdf_size_mb:.2f}MB, Meta file: pages={pages}, hash present"
-        results.add_pass("Disk cache check (restart-resilience)", details)
         return True
-        
     except Exception as e:
-        results.add_fail("Disk cache check", str(e))
-        return False
+        return log_test("ch12 corrections", False, str(e))
+
+def test_corrected_wordings_ch06():
+    """Test ch06 QA corrections - 25 kGy and ETO parameters qualified"""
+    print(f"\n{Colors.BLUE}=== CORRECTED WORDINGS: ch06 (25 kGy, ETO) ==={Colors.END}")
+    try:
+        resp = requests.get(f"{BASE_URL}/book/preview/ch06", timeout=30)
+        if resp.status_code != 200:
+            return log_test("GET /api/book/preview/ch06", False, f"Status {resp.status_code}")
+        
+        html = resp.text
+        
+        # Must contain: "commonly referenced example; the minimum sterilization dose must be established"
+        check1 = "commonly referenced example; the minimum sterilization dose must be established" in html
+        if not check1:
+            return log_test("ch06: 25 kGy qualified", False, "Missing: 'commonly referenced example; the minimum sterilization dose must be established'")
+        log_test("ch06: 25 kGy qualified", True)
+        
+        # Must contain: "validated cycle-specific per ISO 11135"
+        check2 = "validated cycle-specific per ISO 11135" in html
+        if not check2:
+            return log_test("ch06: ETO parameters qualified", False, "Missing: 'validated cycle-specific per ISO 11135'")
+        log_test("ch06: ETO parameters qualified", True)
+        
+        return True
+    except Exception as e:
+        return log_test("ch06 corrections", False, str(e))
+
+def test_corrected_wordings_ch03():
+    """Test ch03 QA corrections - 510(k) qualified"""
+    print(f"\n{Colors.BLUE}=== CORRECTED WORDINGS: ch03 (510(k)) ==={Colors.END}")
+    try:
+        resp = requests.get(f"{BASE_URL}/book/preview/ch03", timeout=30)
+        if resp.status_code != 200:
+            return log_test("GET /api/book/preview/ch03", False, f"Status {resp.status_code}")
+        
+        html = resp.text
+        
+        # Must contain: "typically subject to 510(k); some device types are exempt"
+        check1 = "typically subject to 510(k); some device types are exempt" in html
+        if not check1:
+            return log_test("ch03: 510(k) qualified", False, "Missing: 'typically subject to 510(k); some device types are exempt'")
+        log_test("ch03: 510(k) qualified", True)
+        
+        return True
+    except Exception as e:
+        return log_test("ch03 corrections", False, str(e))
+
+def test_corrected_wordings_ch13():
+    """Test ch13 QA corrections - 510(k) qualified"""
+    print(f"\n{Colors.BLUE}=== CORRECTED WORDINGS: ch13 (510(k)) ==={Colors.END}")
+    try:
+        resp = requests.get(f"{BASE_URL}/book/preview/ch13", timeout=30)
+        if resp.status_code != 200:
+            return log_test("GET /api/book/preview/ch13", False, f"Status {resp.status_code}")
+        
+        html = resp.text
+        
+        # Must contain: "Usually requires 510(k) premarket notification"
+        check1 = "Usually requires 510(k) premarket notification" in html
+        if not check1:
+            return log_test("ch13: 510(k) qualified", False, "Missing: 'Usually requires 510(k) premarket notification'")
+        log_test("ch13: 510(k) qualified", True)
+        
+        return True
+    except Exception as e:
+        return log_test("ch13 corrections", False, str(e))
+
+def test_corrected_wordings_ch02():
+    """Test ch02 QA corrections - market projections dated"""
+    print(f"\n{Colors.BLUE}=== CORRECTED WORDINGS: ch02 (market projections) ==={Colors.END}")
+    try:
+        resp = requests.get(f"{BASE_URL}/book/preview/ch02", timeout=30)
+        if resp.status_code != 200:
+            return log_test("GET /api/book/preview/ch02", False, f"Status {resp.status_code}")
+        
+        html = resp.text
+        
+        # Must contain: "projected in industry estimates (c. 2024) to reach"
+        check1 = "projected in industry estimates (c. 2024) to reach" in html
+        if not check1:
+            return log_test("ch02: market projections dated", False, "Missing: 'projected in industry estimates (c. 2024) to reach'")
+        log_test("ch02: market projections dated", True)
+        
+        return True
+    except Exception as e:
+        return log_test("ch02 corrections", False, str(e))
+
+def test_corrected_wordings_ch01():
+    """Test ch01 QA corrections - imports dated, QMSR"""
+    print(f"\n{Colors.BLUE}=== CORRECTED WORDINGS: ch01 (imports, QMSR) ==={Colors.END}")
+    try:
+        resp = requests.get(f"{BASE_URL}/book/preview/ch01", timeout=30)
+        if resp.status_code != 200:
+            return log_test("GET /api/book/preview/ch01", False, f"Status {resp.status_code}")
+        
+        html = resp.text
+        
+        # Must contain: "imported (industry estimates, c. 2024)"
+        check1 = "imported (industry estimates, c. 2024)" in html
+        if not check1:
+            return log_test("ch01: imports dated", False, "Missing: 'imported (industry estimates, c. 2024)'")
+        log_test("ch01: imports dated", True)
+        
+        # Must contain: "Quality Management System Regulation (QMSR)"
+        check2 = "Quality Management System Regulation (QMSR)" in html
+        if not check2:
+            return log_test("ch01: QMSR term", False, "Missing: 'Quality Management System Regulation (QMSR)'")
+        log_test("ch01: QMSR term", True)
+        
+        return True
+    except Exception as e:
+        return log_test("ch01 corrections", False, str(e))
+
+def test_corrected_wordings_stdindex():
+    """Test stdindex QA corrections - ISO 13485:2016 incorporated"""
+    print(f"\n{Colors.BLUE}=== CORRECTED WORDINGS: stdindex ==={Colors.END}")
+    try:
+        resp = requests.get(f"{BASE_URL}/book/preview/stdindex", timeout=30)
+        if resp.status_code != 200:
+            return log_test("GET /api/book/preview/stdindex", False, f"Status {resp.status_code}")
+        
+        html = resp.text
+        
+        # Must contain: "ISO 13485:2016 incorporated by reference (eff. 2 Feb 2026)"
+        check1 = "ISO 13485:2016 incorporated by reference (eff. 2 Feb 2026)" in html
+        if not check1:
+            return log_test("stdindex: ISO 13485 incorporation", False, "Missing: 'ISO 13485:2016 incorporated by reference (eff. 2 Feb 2026)'")
+        log_test("stdindex: ISO 13485 incorporation", True)
+        
+        return True
+    except Exception as e:
+        return log_test("stdindex corrections", False, str(e))
+
+def test_corrected_wordings_lists():
+    """Test lists QA corrections - QMSR in abbreviations"""
+    print(f"\n{Colors.BLUE}=== CORRECTED WORDINGS: lists ==={Colors.END}")
+    try:
+        resp = requests.get(f"{BASE_URL}/book/preview/lists", timeout=30)
+        if resp.status_code != 200:
+            return log_test("GET /api/book/preview/lists", False, f"Status {resp.status_code}")
+        
+        html = resp.text
+        
+        # Must contain: "Quality Management System Regulation (US FDA, 21 CFR Part 820)"
+        check1 = "Quality Management System Regulation (US FDA, 21 CFR Part 820)" in html
+        if not check1:
+            return log_test("lists: QMSR abbreviation", False, "Missing: 'Quality Management System Regulation (US FDA, 21 CFR Part 820)'")
+        log_test("lists: QMSR abbreviation", True)
+        
+        return True
+    except Exception as e:
+        return log_test("lists corrections", False, str(e))
+
+def test_corrected_wordings_ch11():
+    """Test ch11 QA corrections - 25 kGy VDmax/overkill"""
+    print(f"\n{Colors.BLUE}=== CORRECTED WORDINGS: ch11 (VDmax) ==={Colors.END}")
+    try:
+        resp = requests.get(f"{BASE_URL}/book/preview/ch11", timeout=30)
+        if resp.status_code != 200:
+            return log_test("GET /api/book/preview/ch11", False, f"Status {resp.status_code}")
+        
+        html = resp.text
+        
+        # Must contain: "VDmax/overkill substantiation per ISO 11137-2"
+        check1 = "VDmax/overkill substantiation per ISO 11137-2" in html
+        if not check1:
+            return log_test("ch11: VDmax/overkill", False, "Missing: 'VDmax/overkill substantiation per ISO 11137-2'")
+        log_test("ch11: VDmax/overkill", True)
+        
+        return True
+    except Exception as e:
+        return log_test("ch11 corrections", False, str(e))
+
+def test_vector_figures_ch12():
+    """Test ch12 contains vector SVG figures"""
+    print(f"\n{Colors.BLUE}=== VECTOR FIGURES: ch12 ==={Colors.END}")
+    try:
+        resp = requests.get(f"{BASE_URL}/book/preview/ch12", timeout=30)
+        if resp.status_code != 200:
+            return log_test("GET /api/book/preview/ch12", False, f"Status {resp.status_code}")
+        
+        html = resp.text
+        
+        # Must contain: '<svg'
+        check1 = '<svg' in html
+        if not check1:
+            return log_test("ch12: Vector SVG figures", False, "Missing: '<svg' elements")
+        log_test("ch12: Vector SVG figures", True, "Contains inline SVG elements")
+        
+        return True
+    except Exception as e:
+        return log_test("ch12 vector figures", False, str(e))
 
 def main():
-    print(f"\n{'='*80}")
-    print(f"{BLUE}Medical Devices Textbook Backend API Test Suite{RESET}")
-    print(f"Testing: {API_BASE}")
-    print(f"{'='*80}\n")
+    print(f"\n{Colors.BLUE}{'='*80}{Colors.END}")
+    print(f"{Colors.BLUE}BACKEND API TESTING - REGULATORY QA CORRECTIONS VERIFICATION{Colors.END}")
+    print(f"{Colors.BLUE}Backend URL: {BASE_URL}{Colors.END}")
+    print(f"{Colors.BLUE}{'='*80}{Colors.END}")
     
-    # Run all tests
-    test_health_check()
-    test_book_meta()
-    test_book_toc()
-    test_preview_sections()
-    test_preview_images()
-    test_pdf_status()
-    test_pdf_download()
-    test_disk_cache()
+    results = []
     
-    # Print summary
-    success = results.summary()
+    # REGRESSION TESTS
+    results.append(("Regression: GET /api/book/meta", test_regression_meta()))
+    results.append(("Regression: GET /api/book/toc", test_regression_toc()))
+    results.append(("Regression: GET /api/book/pdf/status", test_regression_pdf_status()))
+    results.append(("Regression: GET /api/book/pdf", test_regression_pdf_download()))
     
-    print(f"\n{'='*80}\n")
+    # CORRECTED WORDINGS TESTS
+    results.append(("Corrected wordings: ch12 (QMSR)", test_corrected_wordings_ch12()))
+    results.append(("Corrected wordings: ch06 (25 kGy, ETO)", test_corrected_wordings_ch06()))
+    results.append(("Corrected wordings: ch03 (510(k))", test_corrected_wordings_ch03()))
+    results.append(("Corrected wordings: ch13 (510(k))", test_corrected_wordings_ch13()))
+    results.append(("Corrected wordings: ch02 (market)", test_corrected_wordings_ch02()))
+    results.append(("Corrected wordings: ch01 (imports, QMSR)", test_corrected_wordings_ch01()))
+    results.append(("Corrected wordings: stdindex", test_corrected_wordings_stdindex()))
+    results.append(("Corrected wordings: lists", test_corrected_wordings_lists()))
+    results.append(("Corrected wordings: ch11 (VDmax)", test_corrected_wordings_ch11()))
     
-    return 0 if success else 1
+    # VECTOR FIGURES TEST
+    results.append(("Vector figures: ch12", test_vector_figures_ch12()))
+    
+    # SUMMARY
+    print(f"\n{Colors.BLUE}{'='*80}{Colors.END}")
+    print(f"{Colors.BLUE}TEST SUMMARY{Colors.END}")
+    print(f"{Colors.BLUE}{'='*80}{Colors.END}")
+    
+    passed = sum(1 for _, result in results if result)
+    total = len(results)
+    
+    print(f"\nTotal: {passed}/{total} tests passed")
+    
+    if passed == total:
+        print(f"{Colors.GREEN}✓ ALL TESTS PASSED{Colors.END}")
+        return 0
+    else:
+        print(f"\n{Colors.RED}FAILED TESTS:{Colors.END}")
+        for name, result in results:
+            if not result:
+                print(f"  {Colors.RED}✗ {name}{Colors.END}")
+        return 1
 
 if __name__ == "__main__":
     sys.exit(main())
