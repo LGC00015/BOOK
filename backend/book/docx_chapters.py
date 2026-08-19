@@ -50,8 +50,13 @@ def _table_html(b):
     for i, row in enumerate(rows):
         tag = "th" if i == 0 and len(rows) > 1 else "td"
         trs.append("<tr>" + "".join("<%s>%s</%s>" % (tag, esc(c), tag) for c in row) + "</tr>")
+    if len(rows) > 1:
+        # explicit thead so the header row repeats when a long table breaks across pages
+        body_html = "<thead>%s</thead><tbody>%s</tbody>" % (trs[0], "".join(trs[1:]))
+    else:
+        body_html = "".join(trs)
     return ('<div class="tablewrap"><div class="tabcaption">%s</div>'
-            '<table class="data">%s</table></div>') % (caption, "".join(trs))
+            '<table class="data">%s</table></div>') % (caption, body_html)
 
 
 def _inner_blocks_html(blocks):
@@ -167,7 +172,7 @@ def chapter_html(num, part_label):
         roadmap = '<div class="roadmap"><span class="kwlab">Chapter Roadmap</span> %s</div>' % chips
     return """
 <section class="chapter" id="%(id)s" data-running="Chapter %(num)d &middot; %(short)s">
-<div class="ch-opener">
+<div class="ch-opener" data-running="Chapter %(num)d &middot; %(short)s">
   <div class="ch-kicker">%(part)s &middot; Chapter %(num)d</div>
   <div class="ch-band">
     <div class="ch-num-cell"><div class="ch-num">%(num02)s</div></div>

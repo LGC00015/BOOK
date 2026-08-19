@@ -12,7 +12,7 @@ BOOK_META = {
     "publisher": "Emergent Academic Press",
     "year": "2026",
     "isbn": "ISBN 978-X-XXXXX-XXX-X (placeholder — assigned on registration)",
-    "syllabus_anchor": "PCI NEP 2020 B.Pharm — BP708T (Medical Devices, Elective)",
+    "syllabus_anchor": "B.Pharm and Allied Health Medical Devices curricula",
     "series": "Medical Devices Academic Ecosystem · Core Textbook",
 }
 
@@ -86,11 +86,11 @@ def part_divider_html(part):
         for c in chapters
     )
     return """
-<section class="part-divider" id="part%s">
+<section class="part-divider%s" id="part%s">
   <div class="pd-inner">
     <div class="pd-num">%s</div>
     <div class="pd-label">Part %s</div>
     <div class="pd-title">%s</div>
     <div class="pd-chapters">%s</div>
   </div>
-</section>""" % (part["num"], part["num"], part["num"], part["title"], ch_rows)
+</section>""" % (" first" if part["num"] == "I" else "", part["num"], part["num"], part["num"], part["title"], ch_rows)

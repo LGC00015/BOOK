@@ -39,25 +39,32 @@ and PDF pipeline retained.
 
 ## Environment note (fork gotcha)
 .env files were MISSING in this fork — recreated:
-frontend/.env → REACT_APP_BACKEND_URL=https://happy-kowalevski-8.preview.emergentagent.com, WDS_SOCKET_PORT=443
+frontend/.env → REACT_APP_BACKEND_URL=https://med-devices-layout.preview.emergentagent.com, WDS_SOCKET_PORT=443
 backend/.env → MONGO_URL=mongodb://localhost:27017, DB_NAME=medical_devices_book, CORS_ORIGINS=*
 (Mongo still unused — content is file-based.)
 
-## Status (Aug 2026 — FINAL EDITION)
-- All phases COMPLETE. Book: 726 A4 pages, ~3.5MB PDF, 20 chapters, 6 parts.
-- ALL 156 FIGURES are agent-generated vector SVG via backend/book/figkit.py (18 templates:
-  flow, vflow, cycle, pyramid, ladder, columns, hub, timeline, layers, matrix, decide, bars,
-  vmodel, curve, formulabox, zones, labelcard, profile) + figure_specs_a/b/c.py (one spec per
-  figure, keyed "1.1".."20.5", incl. clean captions used in chapter + List of Figures).
-  Manuscript JPEGs in book/images/ are UNUSED fallbacks now.
-- Typography: widows/orphans, teal list markers, framed .figure.vector panels.
-- Two-pass figure-prompt residue removal in extractor (h4/p "Description" anchors + chart-
-  narration anchors: FP_ANCHOR_P/FP_CONT_* rules). QA scan: 0 artifacts, 156/156 captions,
-  TOC cross-refs exact.
-- Robustness: sections lru_cached; preview via threadpool (~4ms); PDF disk cache
-  (book/build/book.pdf + content-hash meta) -> instant readiness after restarts; frontend
-  auto-download when typesetting finishes; PreviewPane loading/error states.
-- Tested: backend 100% (testing agent, iterations 3-4), frontend UI 100% (testing agent).
+## Status (Aug 2026 — LAYOUT v2.0, Product 1 compliance pass)
+- Book: 728 A4 pages (~3.7MB), 20 chapters, 6 parts. Manuscript frozen — layout-only pass.
+- §5 margins 22/20/22/22 mirrored; §7 type scale (body 10.5/14.7, H1 22, H2 14, H3 12, caps 9)
+  + lang="en" hyphenation; §9 alternating running heads (verso=chapter via data-running,
+  recto=live H2 via string-set sectitle, reset at .ch-opener) + mirrored bottom-outer folios
+  + "MEDICAL DEVICES" center identifier; §10 frontplain master (no folio on halftitle/title/
+  copyright), roman front matter, ARABIC RESTART AT 1 via @page divider-first counter-reset
+  (on .part-divider.first = partI; element-level counter-reset:page is IGNORED by WeasyPrint —
+  must be inside @page rule); §15 thead/tbody in manuscript tables; §21 orphans/widows 3;
+  §29 PDF metadata; §32 press variant GET /api/book/pdf?variant=press (3mm bleed + crop marks,
+  TrimBox=A4, on-demand + disk cache book_press.pdf); frontend has secondary "Press PDF" button.
+- §25 QA FLAG: "PCI BP708T" was hard-coded but absent from manuscript → genericized
+  ("Medical Devices (B.Pharm Elective)"); restore only on Project-Lead confirmation.
+- Preflight (all PASS): 156/156 figures, 20/20 TOC cross-refs exact (ch openers 3,29,49,...,647,
+  all recto), 0 orphan headings, clean blanks, all fonts embedded, 0 BP708T residue.
+  Full report: /app/PRODUCTION_NOTES.md.
+- Known: symbol glyphs (→ ≥ ₂ ₹ ✓ …) use embedded fallback fonts; PDF/X-1a/CMYK conversion is
+  printer-side (documented §33); ch03 "3.5 EU MDR" heading is an H3 source artifact (QA FLAG 2).
+
+## Previous status (vector SVG edition)
+- All 156 figures agent-generated vector SVG via figkit.py + figure_specs_a/b/c.py.
+- QA corrections layer (qa_corrections.py, 51+3 fixes) — QMSR/510(k)/25kGy/ETO/market dates.
 
 ## Known minor source-inherited artifacts (acceptable, fix on request)
 - ~6 "Description:" figure-prompt blocks remain near some figures; ch11 glossary mangled in

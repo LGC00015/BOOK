@@ -33,7 +33,7 @@ export default function CoverCard({ meta, onSelect }) {
           <div className="flex justify-between"><span className="text-slate-400">Edition</span><span className="text-slate-700 font-medium">{meta?.edition}</span></div>
           <div className="flex justify-between"><span className="text-slate-400">Format</span><span className="text-slate-700 font-medium">A4 · Full color · Print-ready</span></div>
           <div className="flex justify-between"><span className="text-slate-400">ISBN</span><span className="text-slate-700 font-medium">Ready for assignment</span></div>
-          <div className="flex justify-between"><span className="text-slate-400">Syllabus</span><span className="text-slate-700 font-medium">PCI BP708T</span></div>
+          <div className="flex justify-between"><span className="text-slate-400">Syllabus</span><span className="text-slate-700 font-medium">B.Pharm Elective</span></div>
         </div>
       </div>
     </div>

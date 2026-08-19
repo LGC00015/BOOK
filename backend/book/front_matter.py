@@ -22,8 +22,8 @@ def cover_html():
     <div class="cover-title">MEDICAL<br/>DEVICES<span class="accent">.</span></div>
     <div class="cover-subtitle">A Comprehensive Textbook for Pharmacy and Allied Health Sciences &mdash; from device history and classification to regulation, quality and practice.</div>
     <div class="cover-badges">
-      <span class="cover-badge">PCI NEP 2020 Aligned</span>
-      <span class="cover-badge">BP708T &middot; Medical Devices</span>
+      <span class="cover-badge">Pharmacy &amp; Allied Health Sciences</span>
+      <span class="cover-badge">Classification &middot; QMS &middot; Regulation</span>
       <span class="cover-badge">A4 Print Edition</span>
     </div>
     <div class="cover-author-block">
@@ -37,7 +37,7 @@ def cover_html():
 
 def halftitle_html():
     return """
-<section class="front-section halftitle" id="halftitle">
+<section class="front-section plain halftitle" id="halftitle">
   <h1>Medical Devices</h1>
   <p style="font-family:'Spectral';font-style:italic;color:#5B6770;">A Comprehensive Textbook for Pharmacy and Allied Health Sciences</p>
 </section>"""
@@ -45,7 +45,7 @@ def halftitle_html():
 
 def titlepage_html():
     return """
-<section class="front-section titlepage" id="titlepage">
+<section class="front-section plain titlepage" id="titlepage">
   <div class="tp-rule"></div>
   <h1>Medical Devices</h1>
   <h2>A Comprehensive Textbook for Pharmacy and Allied Health Sciences</h2>
@@ -63,7 +63,7 @@ def titlepage_html():
 
 def copyright_html():
     return """
-<section class="front-section copyrightpage" id="copyright">
+<section class="front-section plain copyrightpage" id="copyright">
   <p><strong>Medical Devices: A Comprehensive Textbook for Pharmacy and Allied Health Sciences</strong><br/>%(edition)s, %(year)s</p>
   <p>&copy; %(year)s %(author)s. All rights reserved.</p>
   <p class="isbn">%(isbn)s</p>
@@ -93,8 +93,9 @@ def preface_html():
   decades, pharmacy education treated devices as a footnote to medicines. That era is over.</p>
   <p>With the Medical Devices Rules 2017, India brought devices under a modern, risk-based regulatory
   system; with the National Medical Device Policy 2023, it declared the sector a national priority; and with
-  the NEP 2020-aligned PCI curriculum, <strong>Medical Devices (BP708T)</strong> entered the B.Pharm classroom as a
-  dedicated elective. This textbook was written to serve that course &mdash; and to go beyond it.</p>
+  the emergence of medical devices as a dedicated subject in modern pharmacy curricula, <strong>Medical
+  Devices</strong> entered the B.Pharm classroom as a dedicated elective. This textbook was written to serve
+  that course &mdash; and to go beyond it.</p>
   <p>Three convictions shaped this book:</p>
   <ul>
     <li><strong>Devices deserve rigour.</strong> Every chapter follows a disciplined architecture &mdash; chapter learning
@@ -156,8 +157,8 @@ def howto_html():
 def syllabus_html():
     return """
 <section class="front-section" id="syllabus">
-  <h1 class="fm-title">Syllabus Mapping &mdash; PCI BP708T (Medical Devices)</h1>
-  <p>The table maps the units of the PCI NEP 2020 B.Pharm elective <strong>BP708T &mdash; Medical Devices</strong> to the
+  <h1 class="fm-title">Syllabus Mapping &mdash; Medical Devices (B.Pharm Elective)</h1>
+  <p>The table maps the typical units of a B.Pharm <strong>Medical Devices</strong> elective to the
   chapters of this book. Chapters marked &ldquo;beyond syllabus&rdquo; extend coverage to full textbook depth for
   honours study, M.Pharm preparation and industry readiness.</p>
   <div class="tablewrap">
@@ -181,7 +182,7 @@ def syllabus_html():
 def toc_html():
     front_entries = [
         ("preface", "Preface"), ("howto", "How to Use This Book"),
-        ("syllabus", "Syllabus Mapping (PCI BP708T)"), ("lists", "Figures, Tables &amp; Abbreviations"),
+        ("syllabus", "Syllabus Mapping &mdash; Medical Devices Elective"), ("lists", "Figures, Tables &amp; Abbreviations"),
     ]
     rows = ['<div class="toc-part" style="margin-top:0;">Front Matter</div>']
     for sid, label in front_entries:

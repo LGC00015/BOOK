@@ -65,20 +65,32 @@ function App() {
     el?.scrollIntoView({ behavior: "smooth", block: id === "overview" ? "end" : "start" });
   };
 
-  const performDownload = async () => {
+  const performDownload = async (variant = "standard") => {
     setDownloading(true);
-    toast.loading("Preparing your A4 PDF…", { id: "pdf" });
+    const isPress = variant === "press";
+    toast.loading(
+      isPress
+        ? "Preparing the press PDF (3 mm bleed + crop marks) — first build can take ~45 s…"
+        : "Preparing your A4 PDF…",
+      { id: "pdf" }
+    );
     try {
-      const r = await axios.get(`${API}/book/pdf`, { responseType: "blob", timeout: 300000 });
+      const url_ = isPress ? `${API}/book/pdf?variant=press` : `${API}/book/pdf`;
+      const r = await axios.get(url_, { responseType: "blob", timeout: 300000 });
       const url = URL.createObjectURL(new Blob([r.data], { type: "application/pdf" }));
       const a = document.createElement("a");
       a.href = url;
-      a.download = "Medical_Devices_Complete_Textbook_A4.pdf";
+      a.download = isPress
+        ? "Medical_Devices_Textbook_A4_PRESS_3mm-bleed_cropmarks.pdf"
+        : "Medical_Devices_Complete_Textbook_A4.pdf";
       document.body.appendChild(a);
       a.click();
       a.remove();
       URL.revokeObjectURL(url);
-      toast.success(`Downloaded — ${r.headers["x-page-count"] || pdfStatus?.pages || ""} A4 pages typeset.`, { id: "pdf" });
+      toast.success(
+        `Downloaded — ${r.headers["x-page-count"] || pdfStatus?.pages || ""} A4 pages${isPress ? " with bleed & crop marks" : " typeset"}.`,
+        { id: "pdf" }
+      );
     } catch {
       toast.error("PDF download failed. Please try again.", { id: "pdf" });
     } finally {
@@ -120,25 +132,37 @@ function App() {
               {meta ? `${meta.title}: ${meta.subtitle}` : "Loading…"}
             </h1>
           </div>
-          <button
-            data-testid="pdf-download-btn"
-            onClick={downloadPdf}
-            disabled={downloading}
-            className="flex items-center gap-2 bg-[#0B1121] text-white text-sm font-semibold px-5 py-2.5 border border-[#0B1121] hover:bg-[#0F4C5C] hover:border-[#0F4C5C] transition-colors duration-150 disabled:opacity-60"
-          >
-            {downloading || (pdfStatus && !pdfReady) ? (
-              <SpinnerGap size={17} className="animate-spin" />
-            ) : (
-              <DownloadSimple size={17} weight="bold" />
-            )}
-            {downloading
-              ? "Downloading…"
-              : pdfReady
-              ? `Download A4 PDF (${pdfStatus.pages} pp)`
-              : pendingDownload
-              ? "Typesetting… download queued"
-              : "Typesetting… click to queue download"}
-          </button>
+          <div className="flex items-center gap-2">
+            <button
+              data-testid="pdf-press-btn"
+              onClick={() => pdfReady && !downloading && performDownload("press")}
+              disabled={downloading || !pdfReady}
+              title="Press-production variant: 3 mm bleed + crop marks (PDF trim box = A4)"
+              className="flex items-center gap-2 bg-white text-[#0B1121] text-sm font-semibold px-4 py-2.5 border border-slate-300 hover:border-[#0F4C5C] hover:text-[#0F4C5C] transition-colors duration-150 disabled:opacity-50"
+            >
+              <DownloadSimple size={16} weight="bold" />
+              Press PDF
+            </button>
+            <button
+              data-testid="pdf-download-btn"
+              onClick={downloadPdf}
+              disabled={downloading}
+              className="flex items-center gap-2 bg-[#0B1121] text-white text-sm font-semibold px-5 py-2.5 border border-[#0B1121] hover:bg-[#0F4C5C] hover:border-[#0F4C5C] transition-colors duration-150 disabled:opacity-60"
+            >
+              {downloading || (pdfStatus && !pdfReady) ? (
+                <SpinnerGap size={17} className="animate-spin" />
+              ) : (
+                <DownloadSimple size={17} weight="bold" />
+              )}
+              {downloading
+                ? "Downloading…"
+                : pdfReady
+                ? `Download A4 PDF (${pdfStatus.pages} pp)`
+                : pendingDownload
+                ? "Typesetting… download queued"
+                : "Typesetting… click to queue download"}
+            </button>
+          </div>
         </header>
 
         <div className="p-8 space-y-6">

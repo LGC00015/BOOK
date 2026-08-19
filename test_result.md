@@ -229,6 +229,62 @@ backend:
         agent: "testing"
         comment: "✓ ALL QA CORRECTIONS VERIFIED (14/14 tests passed) - Comprehensive verification completed for regulatory QA corrections. REGRESSION TESTS: (1) GET /api/book/meta returns 20/20 chapters, 156 figures, 6 phases complete, PDF ready=true pages=726. (2) GET /api/book/toc returns 6 parts. (3) GET /api/book/pdf/status returns ready=true, pages=726. (4) GET /api/book/pdf returns 200, X-Page-Count=726, valid %PDF magic bytes. CORRECTED WORDINGS VERIFIED: (5) ch12: 'With effect from 2 February 2026, FDA replaced the former Quality System Regulation' + 'Quality Management System Regulation (QMSR)' + 'QMSR (Quality Management System Regulation)' present, old 'FDA is transitioning from QSR' removed. (6) ch06: '25 kGy commonly referenced example; the minimum sterilization dose must be established' + 'validated cycle-specific per ISO 11135' present. (7) ch03: 'typically subject to 510(k); some device types are exempt' present. (8) ch13: 'Usually requires 510(k) premarket notification' present. (9) ch02: 'projected in industry estimates (c. 2024) to reach' present. (10) ch01: 'imported (industry estimates, c. 2024)' + 'Quality Management System Regulation (QMSR)' present. (11) stdindex: 'ISO 13485:2016 incorporated by reference (eff. 2 Feb 2026)' present. (12) lists: 'Quality Management System Regulation (US FDA, 21 CFR Part 820)' present. (13) ch11: 'VDmax/overkill substantiation per ISO 11137-2' present. (14) VECTOR FIGURES: ch12 contains inline '<svg' elements. All 51+3 QA corrections are correctly served via preview endpoints. No issues found."
 
+  - task: "Layout v2.0 (Product 1): margins/typography/running-heads/folio system + Arabic restart at Part I + press variant endpoint"
+    implemented: true
+    working: true
+    file: "backend/book/styles.py, backend/book/assembler.py, backend/server.py"
+    stuck_count: 0
+    priority: "high"
+    needs_retesting: false
+    status_history:
+      - working: "NA"
+        agent: "main"
+        comment: >
+          Product 1 layout compliance pass (manuscript frozen, design only). Book now 728 pages.
+          Changes: (1) margins 22mm gutter/20mm outer/22mm top+bottom mirrored; (2) type scale
+          body 10.5pt, H1 22, H2 14, H3 12, captions 9pt + lang=en hyphenation; (3) alternating
+          running heads (verso=chapter, recto=live section from h2 string-set) + mirrored folios;
+          (4) folio-free halftitle/titlepage/copyright, roman front matter, main text restarts at
+          Arabic 1 at partI divider (@page divider-first counter-reset); (5) manuscript tables now
+          thead/tbody; (6) PDF metadata embedded; (7) NEW GET /api/book/pdf?variant=press (3mm
+          bleed + crop marks, on-demand ~45s first build then disk-cached, X-Variant: press header);
+          (8) pdf/status now includes a "press" sub-object; (9) BP708T genericized everywhere
+          (QA FLAG: not in manuscript) — 0 occurrences expected in previews/TOC labels;
+          syllabus toc title is now "Syllabus Mapping". Manual preflight already passed:
+          156/156 figures, 20/20 TOC cross-refs exact, fonts embedded, 0 orphan headings.
+      - working: true
+        agent: "testing"
+        comment: >
+          ✓ ALL LAYOUT v2.0 TESTS PASSED (9/9 test scenarios, 60+ individual checks). Comprehensive
+          verification completed for Layout v2.0 typesetting pass. CRITICAL FINDINGS: (1) METADATA:
+          GET /api/book/meta returns chapters_total=20, chapters_complete=20, figures_count=156,
+          tables_count=17, 6 phases all complete, pdf.ready=true, pdf.pages=728 (was 726 - page
+          count changed due to new margins/typography as EXPECTED), syllabus_anchor="B.Pharm and
+          Allied Health Medical Devices curricula" (BP708T removed). (2) TOC: GET /api/book/toc
+          returns 6 parts (I=[1,2,3], II=[4,5,6], III=[7,8,9], IV=[10,11], V=[12..17], VI=[18,19,20]),
+          8 front matter items, 3 back matter items. Syllabus item title is "Syllabus Mapping"
+          (NOT "Syllabus Mapping (BP708T)"). (3) PDF STATUS: GET /api/book/pdf/status returns
+          ready=true, building=false, pages=728, size_bytes=3.55MB, error=null, AND NEW "press"
+          sub-object with ready=true, building=false, pages=728. (4) PDF DOWNLOAD: GET /api/book/pdf
+          returns 200, content-type=application/pdf, X-Page-Count=728, valid %PDF magic bytes.
+          (5) PRESS VARIANT (NEW): GET /api/book/pdf?variant=press returns 200, content-type=
+          application/pdf, X-Variant=press header, X-Page-Count=728, Content-Disposition filename
+          contains "PRESS" ("Medical_Devices_Textbook_A4_PRESS_3mm-bleed_cropmarks.pdf"), valid
+          %PDF format. (6) PREVIEW SECTIONS: All 16 tested sections (cover, halftitle, titlepage,
+          copyright, preface, syllabus, toc, lists, partI, ch01, ch03, ch12, ch20, glossary,
+          stdindex, biblio) return 200 with valid HTML. ch01 contains 7 inline <svg elements and
+          7 class="figure vector" wrappers. ch99 correctly returns 404. (7) BP708T REMOVAL: Verified
+          BP708T and PCI strings are NOT present in cover, titlepage, preface, syllabus, toc (10/10
+          checks passed). Syllabus preview contains "Medical Devices (B.Pharm Elective)". (8) LAYOUT
+          MARKERS: ch01 preview HTML contains data-running attribute (6 occurrences on section and
+          ch-opener); ch03 preview contains <thead> and <tbody> inside tables; full print CSS
+          contains "@page divider-first" and "string(sectitle)" (new page masters). (9) QA
+          CORRECTIONS INTACT: Verified ch12 contains "With effect from 2 February 2026" and
+          "Quality Management System Regulation (QMSR)"; ch06 contains "validated cycle-specific
+          per ISO 11135"; ch03 contains "typically subject to 510(k); some device types are exempt".
+          All regulatory QA corrections from iteration 5 are still intact. No issues found. Layout
+          v2.0 is production-ready.
+
 frontend:
   - task: "Dashboard shows 726 pages, 20/20 chapters, TOC with 6 parts, live preview iframes with vector SVG figures, PDF download"
     implemented: true
@@ -251,12 +307,11 @@ frontend:
 metadata:
   created_by: "main_agent"
   version: "2.0"
-  test_sequence: 7
+  test_sequence: 8
   run_ui: true
 
 test_plan:
-  current_focus:
-    - "Regulatory QA corrections verification complete - all 51+3 corrections verified"
+  current_focus: []
   stuck_tasks: []
   test_all: false
   test_priority: "high_first"
@@ -456,3 +511,83 @@ agent_communication:
       ✓ ch12 contains inline '<svg' elements (vector figures rendering correctly)
       
       No issues found. All regulatory QA corrections are production-ready and correctly served.
+
+  - agent: "main"
+    message: >
+      LAYOUT v2.0 PASS (iteration 6, Product 1 compliance): Typesetting-only pass, manuscript
+      content FROZEN. Book now 728 pages (was 726). Changes: (1) margins 22mm gutter/20mm outer/
+      22mm top+bottom mirrored; (2) type scale body 10.5pt, H1 22, H2 14, H3 12, captions 9pt +
+      lang=en hyphenation; (3) alternating running heads (verso=chapter, recto=live section from
+      h2 string-set) + mirrored folios; (4) folio-free halftitle/titlepage/copyright, roman front
+      matter, main text restarts at Arabic 1 at partI divider (@page divider-first counter-reset);
+      (5) manuscript tables now thead/tbody; (6) PDF metadata embedded; (7) NEW GET /api/book/pdf
+      ?variant=press (3mm bleed + crop marks, on-demand ~45s first build then disk-cached, X-Variant:
+      press header); (8) pdf/status now includes a "press" sub-object; (9) BP708T genericized
+      everywhere (QA FLAG: not in manuscript) — 0 occurrences expected in previews/TOC labels;
+      syllabus toc title is now "Syllabus Mapping". Manual preflight already passed: 156/156 figures,
+      20/20 TOC cross-refs exact, fonts embedded, 0 orphan headings. Backend needs comprehensive
+      testing of all 9 scenarios per review request.
+  - agent: "testing"
+    message: >
+      ✓ ALL LAYOUT v2.0 TESTS PASSED (9/9 test scenarios, 60+ individual checks) - Comprehensive
+      backend testing completed for Layout v2.0 typesetting pass. All test scenarios from review
+      request verified successfully. KEY FINDINGS:
+      
+      TEST 1 - METADATA (6/6 checks passed):
+      ✓ GET /api/book/meta returns chapters_total=20, chapters_complete=20, figures_count=156,
+        tables_count=17, 6 phases all complete
+      ✓ pdf.ready=true, pdf.pages=728 (was 726 - page count changed due to new margins/typography,
+        this is EXPECTED)
+      ✓ syllabus_anchor="B.Pharm and Allied Health Medical Devices curricula" (BP708T removed)
+      
+      TEST 2 - TOC (4/4 checks passed):
+      ✓ GET /api/book/toc returns 6 parts with correct chapter distribution:
+        I=[1,2,3], II=[4,5,6], III=[7,8,9], IV=[10,11], V=[12..17], VI=[18,19,20]
+      ✓ 8 front matter items, 3 back matter items
+      ✓ Syllabus item title is "Syllabus Mapping" (NOT "Syllabus Mapping (BP708T)")
+      
+      TEST 3 - PDF STATUS (6/6 checks passed):
+      ✓ GET /api/book/pdf/status returns ready=true, building=false, pages=728, size_bytes=3.55MB,
+        error=null
+      ✓ NEW "press" sub-object present with ready=true, building=false, pages=728
+      
+      TEST 4 - PDF DOWNLOAD (4/4 checks passed):
+      ✓ GET /api/book/pdf returns 200, content-type=application/pdf, X-Page-Count=728, valid %PDF
+        magic bytes
+      
+      TEST 5 - PRESS VARIANT (NEW, 6/6 checks passed):
+      ✓ GET /api/book/pdf?variant=press returns 200, content-type=application/pdf
+      ✓ X-Variant=press header present
+      ✓ X-Page-Count=728
+      ✓ Content-Disposition filename contains "PRESS": "Medical_Devices_Textbook_A4_PRESS_3mm-bleed_
+        cropmarks.pdf"
+      ✓ Valid %PDF format
+      
+      TEST 6 - PREVIEW SECTIONS REGRESSION (19/19 checks passed):
+      ✓ All 16 tested sections return 200 with valid HTML: cover, halftitle, titlepage, copyright,
+        preface, syllabus, toc, lists, partI, ch01, ch03, ch12, ch20, glossary, stdindex, biblio
+      ✓ ch01 contains 7 inline <svg elements and 7 class="figure vector" wrappers
+      ✓ ch99 correctly returns 404
+      
+      TEST 7 - BP708T REMOVAL (11/11 checks passed):
+      ✓ Verified BP708T and PCI strings are NOT present in cover, titlepage, preface, syllabus, toc
+        (10/10 checks passed)
+      ✓ Syllabus preview contains "Medical Devices (B.Pharm Elective)"
+      
+      TEST 8 - LAYOUT MARKERS (5/5 checks passed):
+      ✓ ch01 preview HTML contains data-running attribute (6 occurrences on section and ch-opener)
+      ✓ ch03 preview contains <thead> and <tbody> inside tables
+      ✓ Full print CSS contains "@page divider-first" and "string(sectitle)" (new page masters)
+      
+      TEST 9 - QA CORRECTIONS INTACT (4/4 checks passed):
+      ✓ ch12 contains "With effect from 2 February 2026" and "Quality Management System Regulation
+        (QMSR)"
+      ✓ ch06 contains "validated cycle-specific per ISO 11135"
+      ✓ ch03 contains "typically subject to 510(k); some device types are exempt"
+      ✓ All regulatory QA corrections from iteration 5 are still intact
+      
+      SUMMARY: All 9 test scenarios passed with 60+ individual checks. Page count change from 726
+      to 728 is EXPECTED due to new margins/typography. New press variant endpoint working correctly.
+      BP708T successfully removed from all front matter. Layout markers (data-running, thead/tbody,
+      @page divider-first) present in HTML. QA corrections intact. No issues found. Layout v2.0 is
+      production-ready.

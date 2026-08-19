@@ -22,45 +22,69 @@ PRINT_CSS = """
 
 * { box-sizing: border-box; }
 
-html { font-size: 10.2pt; }
+html { font-size: 10.5pt; }
 body {
   font-family: 'Spectral', serif;
   color: var(--ink);
-  line-height: 1.52;
+  line-height: 1.4;
   margin: 0;
   font-weight: 400;
   text-rendering: optimizeLegibility;
 }
 
-/* ---------- PAGE MASTERS ---------- */
+/* ---------- PAGE MASTERS (A4 · gutter 22mm / outer 20mm / top+bottom 22mm) ---------- */
 @page {
   size: A4;
-  margin: 20mm 16mm 20mm 20mm;
+  margin: 22mm 20mm 22mm 22mm; /* recto: inner(left)=22 gutter, outer(right)=20 */
 }
-@page :left { margin: 20mm 20mm 20mm 16mm; }
+@page :left { margin: 22mm 22mm 22mm 20mm; } /* verso: inner(right)=22 gutter, outer(left)=20 */
 
 @page cover { margin: 0; background: var(--teal-deep); }
 
 @page front {
-  margin: 22mm 18mm 22mm 20mm;
-  @bottom-center { content: counter(page, lower-roman); font-family: 'Manrope'; font-size: 8pt; color: #5B6770; }
+  margin: 22mm 20mm 22mm 22mm;
+  @bottom-center { content: counter(page, lower-roman); font-family: 'Manrope'; font-size: 9pt; color: #5B6770; }
+}
+@page front:left { margin: 22mm 22mm 22mm 20mm; }
+
+/* half-title / title / copyright: folio suppressed */
+@page frontplain {
+  margin: 22mm 20mm 22mm 22mm;
+  @bottom-center { content: ''; }
 }
 
+/* main text: alternating running heads —
+   verso (left) = chapter / part title · recto (right) = current section title */
 @page main {
-  @top-left { content: string(booktitle); font-family: 'Manrope'; font-weight: 600; font-size: 7pt; letter-spacing: 0.14em; text-transform: uppercase; color: #0F4C5C; }
-  @top-right { content: string(chaptertitle); font-family: 'Manrope'; font-size: 7pt; letter-spacing: 0.06em; color: #5B6770; }
-  @bottom-center { content: counter(page); font-family: 'Manrope'; font-weight: 600; font-size: 8.5pt; color: #0F4C5C; }
+  @bottom-center { content: 'MEDICAL DEVICES'; font-family: 'Manrope'; font-weight: 600; font-size: 6.3pt; letter-spacing: 0.22em; color: #9BB0B7; }
   @top-center { content: ''; }
 }
-@page main:first { @top-left { content: ''; } @top-right { content: ''; } }
+@page main:right {
+  @top-right { content: string(sectitle); font-family: 'Manrope'; font-size: 8.6pt; letter-spacing: 0.04em; color: #43555C; border-bottom: 0.5pt solid #C9D6DA; padding-bottom: 1.6mm; margin-bottom: 4mm; width: 100%; text-align: right; vertical-align: bottom; }
+  @bottom-right { content: counter(page); font-family: 'Manrope'; font-weight: 600; font-size: 9.5pt; color: #0F4C5C; }
+}
+@page main:left {
+  @top-left { content: string(chaptertitle); font-family: 'Manrope'; font-weight: 600; font-size: 8.6pt; letter-spacing: 0.08em; text-transform: uppercase; color: #0F4C5C; border-bottom: 0.5pt solid #C9D6DA; padding-bottom: 1.6mm; margin-bottom: 4mm; width: 100%; text-align: left; vertical-align: bottom; }
+  @bottom-left { content: counter(page); font-family: 'Manrope'; font-weight: 600; font-size: 9.5pt; color: #0F4C5C; }
+}
+@page main:first {
+  @top-left { content: ''; } @top-right { content: ''; }
+}
 
 @page divider { background: var(--teal-deep); margin: 0;
+  @bottom-center { content: ''; } @top-left { content: ''; } @top-right { content: ''; }
+}
+/* first divider only: restarts Arabic pagination at 1 for the main text */
+@page divider-first { background: var(--teal-deep); margin: 0; counter-reset: page 1;
   @bottom-center { content: ''; } @top-left { content: ''; } @top-right { content: ''; }
 }
 
 .cover-page { page: cover; }
 .front-section { page: front; break-before: right; }
+.front-section.plain { page: frontplain; }
 .part-divider { page: divider; break-before: right; }
+.part-divider.first { page: divider-first; }
+/* main text restarts Arabic pagination at 1 (front matter is roman) */
 .chapter, .backmatter-section { page: main; break-before: right; }
 
 /* ---------- COVER ---------- */
@@ -121,20 +145,22 @@ table.abbr td:first-child { font-family: 'Manrope'; font-weight: 600; color: var
 .pd-inner { position: absolute; top: 0; left: 0; padding: 30mm 24mm; width: 210mm; height: 297mm; }
 .pd-num { font-family: 'Manrope'; font-weight: 800; font-size: 64pt; color: #1C5A6B; line-height: 1; }
 .pd-label { font-family: 'Manrope'; font-weight: 600; font-size: 9pt; letter-spacing: 0.34em; text-transform: uppercase; color: #7FB6C4; margin-top: 4mm; }
-.pd-title { font-family: 'Manrope'; font-weight: 800; font-size: 26pt; color: #fff; margin-top: 6mm; line-height: 1.15; max-width: 150mm; }
+.pd-title { font-family: 'Manrope'; font-weight: 800; font-size: 28pt; color: #fff; margin-top: 6mm; line-height: 1.12; max-width: 154mm; }
 .pd-chapters { margin-top: 16mm; border-top: 1px solid #2C6B7C; padding-top: 8mm; }
 .pd-ch { font-family: 'Spectral'; font-size: 11pt; color: #BCD9E1; margin-bottom: 4mm; }
 .pd-ch .n { font-family: 'Manrope'; font-weight: 800; color: #8FD6E8; display: inline-block; min-width: 14mm; }
 
 /* ---------- CHAPTER OPENER ---------- */
 .chapter { string-set: chaptertitle attr(data-running); }
+/* opener lives only on the chapter's first page: resets the recto section string at each chapter start */
+.ch-opener { string-set: sectitle attr(data-running); }
 .ch-opener { border-bottom: 2.5pt solid var(--teal); padding-bottom: 7mm; margin-bottom: 8mm; }
 .ch-kicker { font-family: 'Manrope'; font-weight: 600; font-size: 8pt; letter-spacing: 0.3em; text-transform: uppercase; color: var(--muted); }
 .ch-band { display: table; width: 100%; margin-top: 4mm; }
 .ch-num-cell { display: table-cell; width: 26mm; vertical-align: top; }
 .ch-num { font-family: 'Manrope'; font-weight: 800; font-size: 46pt; color: var(--teal-soft); -weasy-text-stroke: 0; line-height: 0.9; color: #CFE1E6; }
 .ch-title-cell { display: table-cell; vertical-align: middle; padding-left: 5mm; border-left: 1pt solid var(--rule); }
-h1.ch-title { font-family: 'Manrope'; font-weight: 800; font-size: 21pt; line-height: 1.14; color: var(--ink); margin: 0; bookmark-level: 1; }
+h1.ch-title { font-family: 'Manrope'; font-weight: 800; font-size: 22pt; line-height: 1.14; color: var(--ink); margin: 0; bookmark-level: 1; }
 .ch-tagline { font-family: 'Spectral'; font-style: italic; font-size: 10.5pt; color: var(--muted); margin-top: 3mm; }
 
 .objectives-box { background: var(--teal-soft); border-left: 3pt solid var(--teal); padding: 5mm 6mm; margin: 6mm 0 7mm 0; break-inside: avoid; }
@@ -148,11 +174,11 @@ table.co-map th { font-family: 'Manrope'; font-weight: 600; font-size: 7.6pt; te
 table.co-map td { padding: 1.6mm 2.5mm; border-bottom: 0.5pt solid var(--rule); vertical-align: top; }
 
 /* ---------- BODY TYPOGRAPHY ---------- */
-h2.sec { font-family: 'Manrope'; font-weight: 800; font-size: 13.5pt; color: var(--teal); margin: 8mm 0 3.5mm 0; bookmark-level: 2; break-after: avoid; }
+h2.sec { font-family: 'Manrope'; font-weight: 800; font-size: 14pt; color: var(--teal); margin: 8mm 0 3.5mm 0; bookmark-level: 2; break-after: avoid; string-set: sectitle content(); }
 h2.sec .secnum { color: #9BB6BE; margin-right: 2.5mm; }
-h3.subsec { font-family: 'Manrope'; font-weight: 600; font-size: 10.8pt; color: var(--ink); margin: 5.5mm 0 2.5mm 0; bookmark-level: 3; break-after: avoid; }
-h4.minisec { font-family: 'Manrope'; font-weight: 600; font-size: 9.6pt; color: var(--blue); margin: 4mm 0 2mm 0; break-after: avoid; }
-p { margin: 0 0 3.2mm 0; text-align: justify; hyphens: auto; orphans: 2; widows: 2; }
+h3.subsec { font-family: 'Manrope'; font-weight: 600; font-size: 12pt; color: var(--ink); margin: 5.5mm 0 2.5mm 0; bookmark-level: 3; break-after: avoid; }
+h4.minisec { font-family: 'Manrope'; font-weight: 600; font-size: 10.5pt; color: var(--blue); margin: 4mm 0 2mm 0; break-after: avoid; }
+p { margin: 0 0 3.2mm 0; text-align: justify; hyphens: auto; orphans: 3; widows: 3; }
 p.lead { font-size: 11pt; color: #2A363C; }
 ul, ol { margin: 0 0 3.5mm 0; padding-left: 6mm; }
 li { margin-bottom: 1.4mm; text-align: justify; orphans: 2; widows: 2; }
@@ -167,7 +193,7 @@ strong { font-weight: 600; }
 .figure.vector svg { width: 100%; height: auto; }
 .figure.vector .figcaption { border-top: 0.6pt solid var(--rule); margin-top: 3mm; }
 .figure img { max-width: 86%; height: auto; border: 0.5pt solid var(--rule); }
-.figcaption { font-family: 'Manrope'; font-size: 8.4pt; color: var(--muted); text-align: left; margin-top: 2.5mm; border-top: 0.6pt solid var(--rule); padding-top: 1.8mm; }
+.figcaption { font-family: 'Manrope'; font-size: 9pt; line-height: 1.22; color: var(--muted); text-align: left; margin-top: 2.5mm; border-top: 0.6pt solid var(--rule); padding-top: 1.8mm; }
 .figcaption b { font-weight: 800; color: var(--teal); }
 
 /* ---------- KEYWORDS & ROADMAP ---------- */
@@ -182,16 +208,16 @@ strong { font-weight: 600; }
 
 /* ---------- TABLES ---------- */
 .tablewrap { margin: 5mm 0 6mm 0; break-inside: avoid; }
-.tabcaption { font-family: 'Manrope'; font-size: 8.4pt; color: var(--muted); margin-bottom: 2mm; }
+.tabcaption { font-family: 'Manrope'; font-size: 9pt; line-height: 1.22; color: var(--muted); margin-bottom: 2mm; break-after: avoid; }
 .tabcaption b { font-weight: 800; color: var(--teal); }
-table.data { width: 100%; border-collapse: collapse; font-size: 8.7pt; }
-table.data th { font-family: 'Manrope'; font-weight: 600; font-size: 8pt; background: var(--teal); color: #fff; padding: 2mm 2.5mm; text-align: left; }
+table.data { width: 100%; border-collapse: collapse; font-size: 8.8pt; }
+table.data th { font-family: 'Manrope'; font-weight: 600; font-size: 8.2pt; background: var(--teal); color: #fff; padding: 2mm 2.5mm; text-align: left; }
 table.data td { padding: 1.8mm 2.5mm; border-bottom: 0.5pt solid var(--rule); vertical-align: top; }
 table.data tr:nth-child(even) td { background: #F3F8F9; }
 table.data td.rowhead { font-family: 'Manrope'; font-weight: 600; color: var(--teal); }
 
 /* ---------- CALLOUT BOXES ---------- */
-.callout { border: 0.8pt solid; padding: 4mm 5mm; margin: 5mm 0; break-inside: avoid; font-size: 9.3pt; }
+.callout { border: 0.8pt solid; padding: 4mm 5mm; margin: 5mm 0; break-inside: avoid; font-size: 9.5pt; }
 .callout .co-head { font-family: 'Manrope'; font-weight: 800; font-size: 8.4pt; letter-spacing: 0.14em; text-transform: uppercase; margin: 0 0 2.2mm 0; }
 .callout p:last-child { margin-bottom: 0; }
 .callout.regulatory { border-color: var(--teal); background: #F0F7F8; }
@@ -206,12 +232,12 @@ table.data td.rowhead { font-family: 'Manrope'; font-weight: 600; color: var(--t
 /* ---------- CASE STUDY ---------- */
 .case-study { border: 1pt solid var(--plum); margin: 6mm 0; break-inside: avoid; }
 .case-study .cs-head { background: var(--plum); color: #fff; font-family: 'Manrope'; font-weight: 800; font-size: 9pt; letter-spacing: 0.1em; text-transform: uppercase; padding: 2.4mm 5mm; }
-.case-study .cs-body { padding: 4mm 5mm; font-size: 9.3pt; }
+.case-study .cs-body { padding: 4mm 5mm; font-size: 9.5pt; }
 .case-study .cs-q { font-family: 'Manrope'; font-weight: 600; font-size: 8.6pt; color: var(--plum); margin-top: 3mm; }
 .case-study .cs-analysis { border-top: 0.6pt dashed var(--plum); margin-top: 3mm; padding-top: 3mm; }
 
 /* ---------- SUMMARY & KEY TERMS ---------- */
-.summary-box { background: #F6F9FA; border-top: 2pt solid var(--teal); border-bottom: 2pt solid var(--teal); padding: 5mm 6mm; margin: 7mm 0; }
+.summary-box { background: #F6F9FA; border-top: 2pt solid var(--teal); border-bottom: 2pt solid var(--teal); padding: 5mm 6mm; margin: 7mm 0; break-inside: avoid; }
 .summary-box h3 { font-family: 'Manrope'; font-weight: 800; font-size: 10.5pt; text-transform: uppercase; letter-spacing: 0.12em; color: var(--teal); margin: 0 0 3mm 0; }
 .summary-box ul { font-size: 9.3pt; margin-bottom: 0; }
 .keyterms { margin: 5mm 0; }
@@ -256,8 +282,8 @@ table.qgate-t td { padding: 1.5mm 2.5mm; border-bottom: 0.5pt solid var(--rule);
 .stub-scope ul { font-size: 9.3pt; margin-bottom: 0; }
 
 /* ---------- BACK MATTER ---------- */
-.backmatter-section h1 { string-set: chaptertitle content(); }
-.glossary dl { font-size: 9.1pt; }
+.backmatter-section { string-set: chaptertitle attr(data-running), sectitle attr(data-running); }
+.glossary dl { font-size: 9.2pt; }
 .glossary dt { font-family: 'Manrope'; font-weight: 600; }
 .glossary dd { margin: 0 0 2.2mm 0; }
 table.stdindex { width: 100%; border-collapse: collapse; font-size: 8.8pt; }
@@ -270,7 +296,7 @@ table.stdindex td { padding: 1.6mm 2.5mm; border-bottom: 0.5pt solid var(--rule)
 
 PREVIEW_EXTRA_CSS = """
 body { background: #47555C; padding: 24px 0; }
-.sheet { width: 210mm; min-height: 297mm; margin: 0 auto 24px auto; background: #fff; box-shadow: 0 2px 14px rgba(0,0,0,0.35); padding: 20mm 18mm; }
+.sheet { width: 210mm; min-height: 297mm; margin: 0 auto 24px auto; background: #fff; box-shadow: 0 2px 14px rgba(0,0,0,0.35); padding: 22mm 20mm; }
 .sheet.dark { background: #093542; }
 .cover-page, .part-divider { width: 100%; height: 297mm; }
 .cover-inner, .pd-inner { position: relative; width: auto; height: auto; padding: 22mm 18mm; }

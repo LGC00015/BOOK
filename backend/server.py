@@ -52,7 +52,7 @@ async def book_toc():
         {"id": "copyright", "title": "Copyright"},
         {"id": "preface", "title": "Preface"},
         {"id": "howto", "title": "How to Use This Book"},
-        {"id": "syllabus", "title": "Syllabus Mapping (BP708T)"},
+        {"id": "syllabus", "title": "Syllabus Mapping"},
         {"id": "toc", "title": "Table of Contents"},
         {"id": "lists", "title": "Figures, Tables & Abbreviations"},
     ]
@@ -78,7 +78,18 @@ async def pdf_status():
 
 
 @api_router.get("/book/pdf")
-async def get_pdf():
+async def get_pdf(variant: str = "standard"):
+    if variant == "press":
+        pdf, pages = await run_in_threadpool(assembler.build_press_pdf_sync)
+        return Response(
+            content=pdf,
+            media_type="application/pdf",
+            headers={
+                "Content-Disposition": 'attachment; filename="Medical_Devices_Textbook_A4_PRESS_3mm-bleed_cropmarks.pdf"',
+                "X-Page-Count": str(pages),
+                "X-Variant": "press",
+            },
+        )
     pdf, pages = await run_in_threadpool(assembler.build_pdf_sync)
     return Response(
         content=pdf,

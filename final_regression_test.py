@@ -12,7 +12,7 @@ import os
 from pathlib import Path
 
 # Backend URL from frontend/.env
-BASE_URL = "https://happy-kowalevski-8.preview.emergentagent.com"
+BASE_URL = "https://med-devices-layout.preview.emergentagent.com"
 API_BASE = f"{BASE_URL}/api"
 
 # Expected values for this edition

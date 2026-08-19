@@ -65,7 +65,7 @@ export default function Sidebar({ meta, active, onNav }) {
       </div>
 
       <div className="px-6 py-4 border-t border-slate-200 text-[11px] text-slate-400 leading-relaxed">
-        {meta?.syllabus_anchor || "PCI NEP 2020 · BP708T"}
+        {meta?.syllabus_anchor || "B.Pharm Medical Devices"}
       </div>
     </aside>
   );
