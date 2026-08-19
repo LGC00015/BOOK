@@ -9,6 +9,22 @@ from .figure_specs import spec_for
 
 CONTENT_DIR = Path(__file__).parent / "content"
 
+# --- Production correction pass (layout-only, manuscript text untouched) ---
+# Chapter running-header overrides for titles too long for the header band (§9).
+RUNNING_OVERRIDES = {
+    13: "SaMD, AI/ML & Digital Health Regulation",
+}
+
+# Pseudo-table keep-groups: source tables flattened to paragraphs during extraction.
+# (start-anchor heading text prefix, end-anchor block text) — kept together on one page.
+PSEUDO_TABLE_KEEPS = [
+    ("Table 4.2 — Lifecycle Documentation Summary", "Ongoing per PMS data"),
+]
+
+# Case-study boxes taller than ~a page must be allowed to break internally,
+# otherwise they strand their preceding heading on a near-empty page.
+TALL_BOX_CHARS = 2000
+
 
 def esc(t):
     return (t or "").replace("&", "&amp;").replace("<", "&lt;").replace(">", "&gt;")
@@ -44,7 +60,13 @@ def _table_html(b):
     rows = b.get("rows") or []
     if not rows:
         return ""
-    cap = esc(b.get("caption") or "")
+    import re as _re
+    cap_raw = b.get("caption") or ""
+    # display-level dedupe: some source captions already begin with their own
+    # "Table N.N —" label; strip it so the bold label is not printed twice.
+    num = str(b.get("num") or "")
+    cap_disp = _re.sub(r"^\s*Table\s*%s\s*[—–:-]*\s*" % _re.escape(num), "", cap_raw).strip() or cap_raw
+    cap = esc(cap_disp)
     caption = "<b>Table %s</b>" % b["num"] + ("&nbsp; %s" % cap if cap else "")
     trs = []
     for i, row in enumerate(rows):
@@ -85,34 +107,87 @@ def _box_html(b):
     inner = _inner_blocks_html(b.get("blocks") or [])
     if kind == "case":
         head = label + (" &mdash; %s" % title if title else "")
-        return ('<div class="case-study"><div class="cs-head">%s</div>'
-                '<div class="cs-body">%s</div></div>') % (head, inner)
+        # near-page-height case studies must be breakable, or they strand the
+        # preceding heading on an almost-empty page (production correction)
+        approx_len = sum(
+            len(str(ib.get("html") or ib.get("text") or "")) + sum(len(i) for i in (ib.get("items") or []))
+            for ib in (b.get("blocks") or [])
+        )
+        tall = " tall" if approx_len > TALL_BOX_CHARS else ""
+        return ('<div class="case-study%s"><div class="cs-head">%s</div>'
+                '<div class="cs-body">%s</div></div>') % (tall, head, inner)
     cls = "industry" if kind == "insight" else "didyouknow"
     title_html = "<p><strong>%s</strong></p>" % title if title else ""
     return ('<div class="callout %s"><div class="co-head">%s</div>%s%s</div>'
             ) % (cls, label, title_html, inner)
 
 
+def _render_block(b):
+    t = b["t"]
+    if t == "h2":
+        return '<h2 class="sec"><span class="secnum">%s</span>%s</h2>' % (b.get("num", ""), b["text"])
+    if t == "h3":
+        return '<h3 class="subsec">%s</h3>' % b["text"]
+    if t == "h4":
+        return '<h4 class="minisec">%s</h4>' % b["text"]
+    if t == "p":
+        return "<p>%s</p>" % b["html"]
+    if t == "ul":
+        return "<ul>%s</ul>" % "".join("<li>%s</li>" % i for i in b["items"])
+    if t == "fig":
+        return _fig_html(b)
+    if t == "table":
+        return _table_html(b)
+    if t == "box":
+        return _box_html(b)
+    return ""
+
+
 def _blocks_html(blocks):
     out = []
-    for b in blocks:
+    i, n = 0, len(blocks)
+    while i < n:
+        b = blocks[i]
         t = b["t"]
-        if t == "h2":
-            out.append('<h2 class="sec"><span class="secnum">%s</span>%s</h2>' % (b.get("num", ""), b["text"]))
-        elif t == "h3":
-            out.append('<h3 class="subsec">%s</h3>' % b["text"])
-        elif t == "h4":
-            out.append('<h4 class="minisec">%s</h4>' % b["text"])
-        elif t == "p":
-            out.append("<p>%s</p>" % b["html"])
-        elif t == "ul":
-            out.append("<ul>%s</ul>" % "".join("<li>%s</li>" % i for i in b["items"]))
-        elif t == "fig":
-            out.append(_fig_html(b))
-        elif t == "table":
-            out.append(_table_html(b))
-        elif t == "box":
-            out.append(_box_html(b))
+        text = str(b.get("text") or "")
+
+        # (a) pseudo-table keep-group: heading anchor .. end-anchor paragraph kept on one page
+        end_anchor = None
+        if t in ("h2", "h3", "h4"):
+            for start, end in PSEUDO_TABLE_KEEPS:
+                if text.startswith(start):
+                    end_anchor = end
+                    break
+        if end_anchor:
+            grp = [_render_block(b)]
+            i += 1
+            while i < n:
+                nb = blocks[i]
+                if nb["t"] in ("box", "h2"):
+                    break
+                grp.append(_render_block(nb))
+                plain = str(nb.get("html") or nb.get("text") or "")
+                i += 1
+                if plain.strip().endswith(end_anchor):
+                    break
+            out.append('<div class="keepwith">%s</div>' % "".join(grp))
+            continue
+
+        # (b) keep a heading (and at most one short intervening p/ul) with its table
+        if t in ("h2", "h3", "h4"):
+            j = i + 1
+            mid = []
+            if j < n and blocks[j]["t"] in ("p", "ul"):
+                mid = [blocks[j]]
+                j += 1
+            if j < n and blocks[j]["t"] == "table":
+                unit = [_render_block(b)] + [_render_block(m) for m in mid] + [_render_block(blocks[j])]
+                out.append('<div class="keepwith">%s</div>' % "".join(unit))
+                i = j + 1
+                continue
+
+        out.append(_render_block(b))
+        i += 1
     return "".join(out)
 
 
@@ -197,7 +272,7 @@ def chapter_html(num, part_label):
         "id": ch["id"],
         "num": ch["num"],
         "num02": "%02d" % ch["num"],
-        "short": esc(ch["title"] if len(ch["title"]) <= 60 else ch["title"][:57] + "..."),
+        "short": esc(RUNNING_OVERRIDES.get(ch["num"]) or (ch["title"] if len(ch["title"]) <= 60 else ch["title"][:57] + "...")),
         "title": esc(ch["title"]),
         "tagline": tagline,
         "part": part_label,

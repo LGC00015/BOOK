@@ -135,7 +135,8 @@ h1.fm-title::after { content: ''; display: block; width: 22mm; height: 2pt; back
 
 /* ---------- LISTS OF FIGURES/TABLES/ABBREV ---------- */
 .lof-entry { font-size: 9.4pt; margin-bottom: 1.8mm; }
-.lof-entry .lof-num { font-family: 'Manrope'; font-weight: 600; color: var(--teal); display: inline-block; min-width: 16mm; }
+.lof-entry .lof-num { font-family: 'Manrope'; font-weight: 600; color: var(--teal); display: inline-block; min-width: 16mm; padding-right: 2.5mm; }
+.lof-entry .lof-tabnum { min-width: 21mm; }
 table.abbr { width: 100%; border-collapse: collapse; font-size: 9.2pt; }
 table.abbr td { padding: 1.3mm 2mm; border-bottom: 0.5pt solid #E3EBEE; vertical-align: top; }
 table.abbr td:first-child { font-family: 'Manrope'; font-weight: 600; color: var(--teal); width: 30mm; }
@@ -185,6 +186,8 @@ li { margin-bottom: 1.4mm; text-align: justify; orphans: 2; widows: 2; }
 ul > li::marker { color: var(--teal); }
 strong { font-weight: 600; }
 .wframe { font-family: 'Manrope'; font-weight: 800; font-size: 8pt; letter-spacing: 0.1em; text-transform: uppercase; color: #fff; background: var(--blue); display: inline-block; padding: 0.8mm 2.8mm; margin: 3mm 0 2mm 0; }
+/* production keep-unit: a heading (and its table / pseudo-table rows) stay on one page */
+.keepwith { break-inside: avoid; }
 
 /* ---------- FIGURES ---------- */
 .figure { margin: 5mm 0 6mm 0; break-inside: avoid; text-align: center; }
@@ -231,6 +234,11 @@ table.data td.rowhead { font-family: 'Manrope'; font-weight: 600; color: var(--t
 
 /* ---------- CASE STUDY ---------- */
 .case-study { border: 1pt solid var(--plum); margin: 6mm 0; break-inside: avoid; }
+/* near-page-height case studies may break internally (prevents stranded headings
+   and near-empty pages); the header band always stays with the opening body */
+.case-study.tall { break-inside: auto; }
+.case-study.tall .cs-head { break-after: avoid; }
+.case-study.tall .cs-body { orphans: 3; widows: 3; }
 .case-study .cs-head { background: var(--plum); color: #fff; font-family: 'Manrope'; font-weight: 800; font-size: 9pt; letter-spacing: 0.1em; text-transform: uppercase; padding: 2.4mm 5mm; }
 .case-study .cs-body { padding: 4mm 5mm; font-size: 9.5pt; }
 .case-study .cs-q { font-family: 'Manrope'; font-weight: 600; font-size: 8.6pt; color: var(--plum); margin-top: 3mm; }

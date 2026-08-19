@@ -95,6 +95,12 @@ _press_lock = threading.Lock()
 _press_cache = {"pdf": None, "pages": 0, "building": False, "error": None}
 PRESS_PDF_FILE = BUILD_DIR / "book_press.pdf"
 PRESS_META_FILE = BUILD_DIR / "book_press.meta.json"
+_pdfx_lock = threading.Lock()
+_pdfx_cache = {"pdf": None, "building": False, "error": None}
+PDFX_PDF_FILE = BUILD_DIR / "book_pdfx.pdf"
+PDFX_META_FILE = BUILD_DIR / "book_pdfx.meta.json"
+PDFX_DEF_FILE = BOOK_DIR / "pdfx_def.ps"
+GS_ICC_DIR = "/usr/share/color/icc/ghostscript/"
 
 
 def _content_hash():

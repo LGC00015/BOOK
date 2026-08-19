@@ -206,9 +206,16 @@ def toc_html():
 </section>""" % "\n".join(rows)
 
 
+def _lot_entry(n, t):
+    import re as _re
+    # display-level dedupe: strip a leading duplicated "Table N.N —" from the title
+    disp = _re.sub(r"^\s*Table\s*%s\s*[—–:-]*\s*" % _re.escape(n), "", t).strip() or t
+    return '<div class="lof-entry"><span class="lof-num lof-tabnum">Table %s</span>&mdash;&nbsp; %s</div>' % (n, disp)
+
+
 def lists_html():
     figs = "".join('<div class="lof-entry"><span class="lof-num">Fig. %s</span>%s</div>' % (n, t) for n, t in FIGURES)
-    tabs = "".join('<div class="lof-entry"><span class="lof-num">Table %s</span>%s</div>' % (n, t) for n, t in TABLES)
+    tabs = "".join(_lot_entry(n, t) for n, t in TABLES)
     abbr = [
         ("AI", "Artificial Intelligence"), ("AERB", "Atomic Energy Regulatory Board"),
         ("BIS", "Bureau of Indian Standards"), ("CDSCO", "Central Drugs Standard Control Organisation"),

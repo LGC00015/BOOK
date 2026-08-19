@@ -1,0 +1,22 @@
+%!
+% PDFX_def.ps — OutputIntent definition for the Medical Devices textbook press master.
+% Uses Ghostscript's shipped default CMYK ICC profile as the output condition.
+
+/ICCProfile (/usr/share/color/icc/ghostscript/default_cmyk.icc) def
+
+[ /Title (Medical Devices - A Comprehensive Textbook for Pharmacy and Allied Health Sciences)
+  /DOCINFO pdfmark
+
+[/_objdef {icc_PDFX} /type /stream /OBJ pdfmark
+[{icc_PDFX} <</N 4>> /PUT pdfmark
+[{icc_PDFX} ICCProfile (r) file /PUT pdfmark
+
+[/_objdef {OutputIntent_PDFX} /type /dict /OBJ pdfmark
+[{OutputIntent_PDFX} <<
+  /S /GTS_PDFX
+  /Type /OutputIntent
+  /DestOutputProfile {icc_PDFX}
+  /OutputConditionIdentifier (Custom CMYK)
+  /Info (Generic CMYK print condition - replace with printer ICC if supplied)
+>> /PUT pdfmark
+[{Catalog} <</OutputIntents [ {OutputIntent_PDFX} ]>> /PUT pdfmark
